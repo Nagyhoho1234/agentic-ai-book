@@ -116,8 +116,35 @@ Based on Codex GPT-5.4's identification of 6 missing topics, here are verified b
 - Why: Framework for organizational AI transformation, adaptable to university context.
 - [Stanford GSB](https://em-execed.stanford.edu/digital-transformation-ai-playbook)
 
-### Key Statistic
-BCG 2024 study: **70% of AI adoption challenges are people/process problems**, not technical — employee skepticism, lack of skills, process inertia, cultural pushback. This applies directly to faculty resistance.
+**"Governing the Machine: How to Navigate the Risks of AI and Unlock Its True Potential"**
+- Authors: Ray Eitel-Porter, Dr. Paul Dongha, Miriam Vogel
+- Publisher: Bloomsbury Business, October 2025
+- Why: Practical roadmap for AI governance. Nine core risk areas. More accessible than the Oxford Handbook. University administrators could adapt the frameworks directly.
+- [Amazon](https://www.amazon.com/Governing-Machine-navigate-unlock-potential/dp/139942629X)
+
+**"The Oxford Handbook of AI Governance"**
+- Editors: Bullock, Chen, Himmelreich, Hudson, Korinek, Young, Zhang
+- Publisher: Oxford University Press, 2024 (1,096 pages)
+- Why: THE authoritative reference on AI governance. Heavy but essential for grounding governance discussions.
+- [Oxford Academic](https://academic.oup.com/edited-volume/41989)
+
+### Key Reports (not books, but essential for procurement/policy)
+- **EDUCAUSE/ACE: AI Procurement in Higher Education** (2025) — practical procurement checklists. [EDUCAUSE](https://er.educause.edu/articles/2025/3/ai-procurement-in-higher-education-benefits-and-risks-of-emerging-tools)
+- **EU Model Contractual Clauses for AI Procurement (MCC-AI)** (March 2025) — legally binding for EU institutions including Debrecen. [IAPP Guide](https://iapp.org/news/a/eu-model-contractual-clauses-for-ai-procurement-a-practical-guide)
+- **HEAT-AI Framework** (Frontiers in Education, 2025) — risk-based AI classification for higher education, inspired by EU AI Act. [Frontiers](https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2025.1505370/full)
+- **Polish academics GenAI adoption study** (Springer, 2025) — Rogers' Diffusion of Innovations applied to 640 academics at 10 Polish universities. Central European context similar to Debrecen. [Springer](https://link.springer.com/article/10.1007/s10639-025-13835-8)
+
+### Free AI Literacy Resource
+**"Fostering AI Literacy: A Guide for Educators in Higher Education"**
+- Authors: Fang Yi, Jess Taggart, Bethany Mickel (University of Virginia)
+- Publisher: UVA Pressbooks, 2025 (Creative Commons BY-NC-SA)
+- Why: Free OER with interactive content. Dedicated chapter on "Critical Evaluation of AI Outputs." Directly usable at Debrecen.
+- [Full text free](https://pressbooks.library.virginia.edu/ai-literacy/)
+
+### Key Statistics
+- BCG 2024: **70% of AI adoption challenges are people/process problems**, not technical
+- EDUCAUSE 2024: **75% of HE institutions lack comprehensive digital strategies**; 55% cite data security as top AI concern
+- Polish study 2025: Rogers' diffusion model quantifies what drives and blocks faculty adoption in Central Europe
 
 ---
 
