@@ -63,9 +63,34 @@ Based on Codex GPT-5.4's identification of 6 missing topics, here are verified b
 - Publisher: Jossey-Bass/Wiley, 2024
 - Why: Adaptive learning systems, automated assessment, AI tutoring, educational data mining.
 
+**"Brave New Words: How AI Will Revolutionize Education"**
+- Author: Salman Khan (Khan Academy founder)
+- Publisher: Viking/Penguin, 2024
+- Why: The AI-as-Socratic-tutor vision (Khanmigo). Endorsed by Bill Gates, Sam Altman. Shows what personalized AI mentoring looks like at scale.
+- [Amazon](https://www.amazon.com/Brave-New-Words-Revolutionize-Education/dp/0593656954)
+
+**"Generative AI in Higher Education: The ChatGPT Effect"** (Open Access)
+- Editors: Cecilia Ka Yuk Chan, Tom Colloton
+- Publisher: Routledge, 2024 (CC-BY-NC-ND, free)
+- Why: Introduces the SARPS framework (Six Assessment Redesign Pivotal Strategies) and AI Assessment Integration Framework. Directly addresses the "homework apocalypse."
+- [Routledge](https://www.routledge.com/Generative-AI-in-Higher-Education-The-ChatGPT-Effect/Chan-Colloton/p/book/9781032599045) | [Open Access](https://library.oapen.org/handle/20.500.12657/88443)
+
+**"Second Handbook of Academic Integrity"**
+- Editor: Sarah Elaine Eaton
+- Publisher: Springer, 2024 (112 chapters)
+- Why: Introduces "postplagiarism" concept — hybrid human-AI writing will be the norm; trying to determine where human ends and AI begins is futile. Groundbreaking framework.
+- [Springer](https://link.springer.com/referencework/10.1007/978-3-031-54144-5)
+
+**"Teaching and Generative AI: Pedagogical Possibilities and Productive Tensions"** (Open Access)
+- Editors: Beth Buyserie, Travis N. Thurston
+- Publisher: Utah State University, 2024 (35 chapters, CC-BY-NC-ND)
+- Why: 35 interdisciplinary chapters, free. Excellent for collecting practical examples from diverse fields.
+- [USU Open Access](https://digitalcommons.usu.edu/teachingai/)
+
 ### Key Resources
 - UNESCO AI in Education framework — [UNESCO](https://www.unesco.org/en/digital-education/artificial-intelligence)
 - Anthropic's "Claude for Education" documentation (Northeastern case study)
+- Ethan Mollick's "The Homework Apocalypse" essay series — [One Useful Thing](https://www.oneusefulthing.org/p/the-homework-apocalypse)
 
 ---
 
@@ -190,12 +215,18 @@ The opacity of AI outputs prevents users from inspecting premises, evidence, or 
 
 ---
 
-## Priority Purchase List (Top 5 books to acquire)
+## Priority Purchase List (Top 8 books to acquire)
 
-| # | Book | Why |
-|---|---|---|
-| 1 | **Teaching with AI** (Bowen, 2nd ed., 2024) | Fills biggest gap — scientists ARE teachers |
-| 2 | **AI Snake Oil** (Narayanan & Kapoor, 2024) | Best resource for integrity + evidence quality |
-| 3 | **The AI Revolution in Medicine** (Lee et al., 2023) | Discipline-specific model for healthcare faculty |
-| 4 | **EUA: Adopting AI for Universities** (2024/2025) | European institutional adoption framework |
-| 5 | **Artificial Intelligence for Science** (World Scientific, 2024) | Cross-discipline AI applications reference |
+| # | Book | Fills Gap | Cost |
+|---|---|---|---|
+| 1 | **Teaching with AI** (Bowen, 2nd ed., JHU Press 2024) | Teaching & supervision — biggest gap | ~$30 |
+| 2 | **AI Snake Oil** (Narayanan & Kapoor, Princeton 2024) | Research integrity + evidence quality — Nature "top 10" | ~$25 |
+| 3 | **The AI Revolution in Medicine** (Lee et al., Pearson 2023) | Discipline-specific model for medical faculty | ~$30 |
+| 4 | **Brave New Words** (Salman Khan, Viking 2024) | AI-as-tutor vision, personalized mentoring | ~$28 |
+| 5 | **Second Handbook of Academic Integrity** (Eaton, Springer 2024) | "Postplagiarism" framework, 112 chapters | ~$300* |
+| 6 | **Artificial Intelligence for Science** (World Scientific, 2024) | Cross-discipline AI applications reference | ~$50 |
+| 7 | **Generative AI in Higher Education** (Chan & Colloton, Routledge 2024) | Assessment redesign (SARPS framework) | **Free** |
+| 8 | **EUA: Adopting AI for Universities** (2024/2025) | European institutional adoption framework | **Free** |
+
+*Springer Handbook — check if available through university library subscription.
+Two books on this list are free/open-access.
