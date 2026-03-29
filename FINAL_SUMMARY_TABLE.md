@@ -32,13 +32,20 @@
 
 ---
 
-## Coverage Summary
+## Coverage Summary (UPDATED after 13/13 books complete)
 
 | Level | Count | Chapters |
 |---|---|---|
-| **Strong** | 7 | Ch 1, 2, 3, 9, 11, 15, 16 |
-| **Adequate** | 5 | Ch 4, 6, 7, 12, 14 |
-| **Weak** | 4 | Ch 5, 8, 10, 13 |
+| **Strong** | 9 | Ch 1, 2, 3, 6, 9, 11, 14, 15, 16 |
+| **Adequate** | 4 | Ch 4, 7, 12, 13 |
+| **Weak** | 3 | Ch 5, 8, 10 |
+
+### Upgrades from new books:
+- Ch 2: Strong → **Strong+** (AI Snake Oil adds evidence quality depth)
+- Ch 6: Adequate → **Strong** (Deep Learning Earth Sci covers PINNs, physics-aware DL)
+- Ch 14: Adequate → **Strong** (Oxford Handbook adds governance frameworks)
+- Ch 15: Strong → **Strong+** (Teaching with AI is a perfect primary source)
+- Ch 16: Strong → **Strong+** (AI Snake Oil + Oxford Handbook + NAS biosecurity)
 
 ---
 
@@ -69,25 +76,31 @@
 
 ---
 
-## Reference Library Status
+## Reference Library Status — ALL COMPLETE
 
-| Book | Converted to MD | Chapters | Status |
+| Book | Files | Chapters | Status |
 |---|---|---|---|
-| Agentic AI (Huang) | Yes | 13 files | Complete |
-| ChatGPT Scientific (Han & Qiu) | Yes | 16 files | Complete |
-| Co-Intelligence (Mollick) | Yes | 12 files | Complete |
-| Python Scientific (Lynch) | Yes | 22 files | Complete |
-| Brave New Words (Khan) | Yes | 26 files | Complete |
-| EUA Adopting AI | Yes | 6 files | Complete |
-| OECD AI in Science | Yes | 17 files | Complete |
-| Nat Academies Life Sci | Yes | 8 files | Complete |
-| AI Snake Oil (Narayanan) | Partial | 1 file | **Needs redo** |
-| Teaching with AI (Bowen) | No | 0 files | **Needs redo** |
-| AI Revolution Medicine (Lee) | No | 0 files | **Needs redo** |
-| Deep Learning Earth Sci | No | 0 files | **Needs redo** |
-| Oxford Handbook AI Gov | No | 0 files | **Needs redo** |
+| Agentic AI (Huang) | 13 | 12 | Complete |
+| ChatGPT Scientific (Han & Qiu) | 16 | 15 | Complete |
+| Co-Intelligence (Mollick) | 12 | 10 | Complete |
+| Python Scientific (Lynch) | 22 | 21 | Complete |
+| Brave New Words (Khan) | 26 | 24 | Complete |
+| EUA Adopting AI | 6 | 5 | Complete |
+| OECD AI in Science | 17 | 16 | Complete |
+| Nat Academies Life Sci | 8 | 6 | Complete |
+| AI Snake Oil (Narayanan) | 9 | 8 | Complete |
+| Teaching with AI (Bowen) | 14 | 12 | Complete |
+| AI Revolution Medicine (Lee) | 13 | 11 | Complete |
+| Deep Learning Earth Sci | 24 | 23 | Complete |
+| Oxford Handbook AI Gov | 10 | 49 (9 parts) | Complete |
+| **Total** | **~190** | **~212** | **ALL DONE** |
 
-**8 of 13 books fully converted. 5 need redo after rate limit reset (6pm Budapest).**
+### New sources now available for gap coverage:
+- **AI Snake Oil** → strengthens Ch 2 (evidence quality), Ch 16 (research integrity)
+- **Teaching with AI** → strengthens Ch 15 (teaching section — was adequate, now **Strong**)
+- **AI Revolution Medicine** → provides discipline-specific model for Ch 4 pathway, Ch 15
+- **Deep Learning Earth Sci** → strengthens Ch 6 (PINNs, physics-aware DL), Ch 10 (earth science digital twins)
+- **Oxford Handbook AI Gov** → strengthens Ch 14 (procurement/governance), Ch 16 (ethics/regulation)
 
 ---
 
