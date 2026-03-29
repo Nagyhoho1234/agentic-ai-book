@@ -1,64 +1,91 @@
 # 3. Training
 
-**Source:** EUA (2026), *Adopting AI that serves the needs and values of universities*, pp. 15--19.
-
----
+**Pages:** 15--19 | **Source:** EUA Task-and-Finish Group on AI (January 2026)
 
 ## Comprehensive Summary
 
-This chapter explores how universities should approach AI training and literacy -- not only in terms of technical skills but also ethical, legal and strategic competencies. It addresses who should be trained, what they should learn, how training should be designed and delivered, and the challenge of managing the gap between theoretical expectations and practical realities.
+This chapter explores how universities should approach training for AI adoption, arguing that AI literacy is a key competence that can enrich learners' academic and professional lives. The chapter emphasises that training should go far beyond technical skills to encompass ethical, legal, strategic, and regulatory dimensions.
 
-### AI in the Curriculum -- A Common Base and Discipline-Specific Knowledge (p. 15)
+### AI in the Curriculum -- A Common Base and Discipline-Specific Knowledge
 
-AI literacy is a key competence that can enrich learners' academic and future professional lives, becoming integral to all scientific, economic and social endeavours. For institutions to successfully adopt or mainstream AI, they should consider three key questions: (1) What benefits are anticipated from the tool? (2) How might it impact its users? (3) Who requires training, and in which areas? Ultimately, AI literacy is about more than technical skills -- it is about guiding individuals and communities towards moderate and mindful use, based on the idea that not everything that is possible makes sense or is sensible. In certain disciplines such as astrophysics or computational chemistry, AI practices are well established. Similar trends are emerging in humanities and social sciences, where AI is transforming linguistics, history and philosophy. AI technologies should serve the specific goals of each department, research team or pedagogical initiative, maximising existing competence and encouraging boundary-pushing exploration. At the institutional level, working towards universal literacy should cultivate awareness of AI's capacity and limitations and, where appropriate, encourage deeper engagement. This aligns with European policy frameworks such as the Digital Competence Framework for Citizens (DigiComp 2.2).
+AI is becoming integral to all scientific, economic, and social endeavours. Universities should consider three key questions when adopting AI technologies:
 
-### Educating Beyond the Technical Skills (p. 16)
+1. What benefits are anticipated from the tool?
+2. How might it impact its users?
+3. Who requires training, and in which areas?
 
-At a societal level, the demand for AI skills is putting pressure on universities to ensure graduates enter the labour market with at least a basic understanding of the technologies. At the institutional level, users should be granted a large degree of autonomy in adopting AI technologies. Institutional or departmental attitudes and priorities will influence how new technologies are approached. The adoption of AI should be rooted in a digital culture that goes beyond technical capabilities -- digital, legal and AI literacy are all connected. Frameworks and mechanisms designed to encourage engagement should address the legal, strategic and regulatory aspects of AI. For instance, training modules can combine GDPR awareness with practical data-governance exercises. Open Science principles (including data accessibility and sharing) should not be jeopardised by exercising a non-reflective and pseudo-accurate mode of data protection. The ethical dimension is the one constant that can ensure longevity and adaptability of training programmes across disciplines and contexts.
+AI literacy is about more than technical readiness and developing practical skills. Training needs to guide individuals and communities towards moderate and mindful use, based on the principle that not everything that is possible makes sense or is sensible.
 
-### Finding and Scaling Use Cases -- Universities as Safe Spaces for Discovery (p. 17)
+**Discipline-specific integration** is crucial. In some disciplines (astrophysics, computational chemistry), AI practices are already well established. Similar trends are emerging in humanities and social sciences, where AI transforms areas such as linguistics, history, and philosophy. AI technologies should serve the specific goals of the relevant department, research team, or pedagogical initiative, maximising existing competence and encouraging boundary-pushing exploration.
 
-AI technologies are evolving quickly but have clear limitations. The challenge is determining which specific uses add value to institutional missions. Most small-scale pilots (e.g., AI avatars of teachers) have not yet taken off to the point of demanding universal attention or upskilling. Universities have therefore focused on formulating guidelines that encourage controlled and responsible experimentation. These guidelines have been welcomed by academic and student communities as they signal the importance attributed to responsible use. However, broad-brush principles are often criticised for providing too little instruction on how to safely integrate AI into operations and transactional tasks. As experimentation deepens, guidelines will need to be updated to reflect new technologies and probable uses. It will be critical that use-case experiments are evaluated based on impact outcomes (e.g., are students learning more or better?) rather than adoption metrics (e.g., how many students use the learning assistant?).
+At the same time, baseline AI literacy needs to be built across the entire university community in parallel -- students, administrators, leadership, and academics should all acquire sufficient knowledge to contribute meaningfully to the debate.
 
-### Demystifying AI -- Whose Job Is This? (p. 17)
+### Educating Beyond the Technical Skills
 
-Early responses to generative AI have been an opportunity for universities to reaffirm their values. The sector was quick to acknowledge the impact but emphasised that universities' approach to AI should be underpinned by respect for fundamental values. Universities are seen as key players in demystifying AI -- a crucial first step towards building understanding and digital literacy that gives users more than familiarity with interfaces, but insight into how the technologies work, what they can realistically achieve, and where their limitations lie. This enables users to make informed decisions about when and how AI adds value.
+The societal demand for AI skills puts pressure on universities to ensure employees enter the labour market with basic understanding. At the institutional level, working towards universal literacy should first cultivate awareness of AI's capacity and limitations, and where appropriate, encourage deeper engagement.
 
-### A Concerted Effort to Upskill -- Who Should Design and Deliver Training? (p. 18)
+Key principles:
+- Users should be granted a **large degree of autonomy** in adopting AI technologies; institutional or departmental attitudes and priorities will influence how technologies are approached
+- Building a **digital culture** supportive of responsible AI integration starts with educating users on the **ethical dimension**
+- Proficiency should be underpinned by understanding of limitations and risks (data inadequacy, inherent bias, environmental impact)
+- Training frameworks should address **legal, strategic, and regulatory aspects** of AI, not just technical skills
+- Training modules should combine GDPR awareness with practical data-governance exercises
+- Open Science principles (data accessibility and sharing) should not be jeopardised by non-reflective data protection practices
+- Technologies and the regulatory environment will evolve, requiring **flexibility** in training programme design; the ethical dimension is the constant that ensures longevity
 
-Many AI applications in the university context are at the limit of what might be considered responsible or compliant. Universities need to sit at the table alongside government and industry representatives to establish where the gaps are and design training that equips citizens to engage with AI safely and effectively. One approach is to design training programmes drawing on the combined expertise of various stakeholders. Universities might educate users on environmental or regulatory factors in partnership with civic organisations and public authorities. Skills training might be more usefully delivered in cooperation with industry partners. There is broad consensus on two points: (1) users (as opposed to developers) should be prioritised, and training should focus on where AI can be useful and discourage use where there is no clear benefit; (2) training should promote critical engagement with AI, enabling learners to use technology in ways that enhance their skills and agency rather than reducing their capacity to think independently.
+### Finding and Scaling Use Cases -- Universities as Safe Spaces for Discovery
 
-### Managing the Gap Between Theory and Practice (p. 19)
+AI technologies are evolving quickly but current models have clear limitations. The report makes a strong argument that concrete, ethical, technically and economically feasible use cases should drive the conversation rather than speculation about general AI capabilities.
 
-Successful change depends on the readiness of communities to adapt. Communities are more likely to embrace new technologies when they perceive them as beneficial and manageable, feel confident in their ability to use them, and are ready to adjust their workflows. While some foresee AI having a strong influence on university practices, the real impact on teaching, learning and research is still unclear. Early experiences suggest perceptions vary: some worry AI may reduce problem-solving skills, while others see potential to enhance critical thinking when used thoughtfully. Thoughtful use depends on competencies such as metacognition and reflective judgment, which often need to be developed through training and guided practice. If universities can sustain consistent, open dialogue on AI's possibilities and limitations, their communities will be better able to discern where technologies add value -- both to users' lives and institutional missions.
+Universities have focused on formulating guidelines for controlled and responsible experimentation. These have been welcomed but are often criticised for providing too little practical instruction on how to usefully and safely integrate AI into operations. As experimentation deepens, guidelines will need updating to reflect the proliferation of technologies.
 
----
+Use-case experiments should be evaluated based on **impact outcomes** (e.g., are students learning more or better?) rather than usage metrics (e.g., how many students use the learning assistant?).
+
+### Demystifying AI -- Whose Job Is This?
+
+Universities are seen as key players in demystifying AI. Demystification goes beyond familiarity with interfaces -- it means giving users insight into how technologies work, what they can realistically achieve, and where their limitations lie. This enables informed decisions about when and how AI adds value.
+
+Universities should sit at the table alongside government and industry representatives to establish where training gaps are and design training that equips citizens to engage with AI safely and effectively.
+
+### A Concerted Effort to Upskill -- Who Should Design and Deliver Training?
+
+Many AI applications in the university context are at the limit of what might be considered responsible or compliant. There is broad consensus on two points:
+
+1. **Users (as opposed to developers) should be prioritised** -- training should focus on where AI can be useful and discourage use where there is no clear benefit
+2. **Training should promote critical engagement** -- enabling learners to use technology in ways that enhance their skills and agency, rather than reducing their capacity to think independently
+
+Training programmes should draw on combined expertise of multiple stakeholders. Universities might partner with civic organisations and public authorities on environmental or regulatory factors, and with industry partners on specific skills training.
+
+### Managing the Gap Between Theory and Practice
+
+Successful change depends on the readiness of communities to adapt. Communities are more likely to embrace new technologies when they perceive them as beneficial and manageable, feel confident in their ability to use them, and are ready to adjust their workflows.
+
+While some foresee AI having a strong influence on university practices, the real impact on teaching, learning, and research is still unclear. Early experiences suggest perceptions vary: some worry AI may reduce problem-solving skills, while others see potential to enhance critical thinking when used thoughtfully.
+
+Thoughtful use depends on competencies such as **metacognition and reflective judgment** -- skills that often need to be developed through training and guided practice. Training will be central to reconciling different experiences and understanding the gap between theory and practice.
 
 ## Key Recommendations
 
-1. **Build universal AI literacy** across the entire university community -- students, academics, administrators and leadership -- not just technical users
-2. **Anchor training in discipline-specific contexts** while ensuring a common base of AI awareness for all
-3. **Go beyond technical skills** -- integrate ethical, legal (GDPR), strategic and regulatory dimensions into all AI training
-4. **Prioritise user-oriented training** over developer-oriented training; focus on where AI is useful and discourage use where benefits are unclear
-5. **Promote critical engagement** -- train people to use AI in ways that enhance agency and skills, not diminish independent thinking
-6. **Evaluate use cases by impact outcomes** (improved learning, better research) rather than adoption metrics (number of users)
-7. **Design training collaboratively** -- draw on combined expertise of university, government, industry and civic society stakeholders
-8. **Sustain open dialogue** on AI's possibilities and limitations to help communities discern where technologies add real value
-9. **Demystify AI** -- give users insight into how technologies work, what they achieve, and where they fail, not just how to use interfaces
-
----
+1. Build **baseline AI literacy** across the entire university community (students, academics, administrators, leadership)
+2. Develop **discipline-specific** AI training that serves the goals of each department, research team, or pedagogical initiative
+3. Go **beyond technical skills** -- integrate ethical, legal, strategic, and regulatory dimensions into all AI training
+4. Evaluate AI use cases based on **impact outcomes** rather than usage metrics
+5. **Demystify AI** by giving users genuine insight into how technologies work, their realistic capabilities, and their limitations
+6. Prioritise training for **users over developers** -- focus on where AI can be useful and discourage use where there is no clear benefit
+7. Promote **critical engagement** that enhances learners' skills and agency rather than reducing independent thinking
+8. Design training programmes that draw on **multi-stakeholder expertise** (universities, government, industry, civil society)
+9. Develop **metacognition and reflective judgment** competencies through training and guided practice
+10. Maintain **flexibility** in training programme design to accommodate evolving technologies and regulation
 
 ## Practical Takeaways for University Leaders
 
-- Do not wait for perfect clarity on AI's value before investing in training -- build foundational literacy now, update as experimentation deepens
-- Give departments and individual users autonomy to determine how AI fits their specific context, while ensuring institutional coherence on ethics and compliance
-- Partner with government agencies and industry to co-design training programmes that cover technical, ethical and regulatory dimensions
-- Evaluate AI pilot outcomes using impact-oriented metrics (are students learning better? is research quality improving?) not usage statistics
-- Recognise that AI training is also an opportunity to reinvest in foundational academic competencies: critical thinking, metacognition, reflective judgment
-- Design training to be adaptable -- technologies and regulatory contexts will continue to evolve rapidly
-- Communicate transparently about what AI can and cannot do; demystification is a precondition for responsible adoption
-
----
+- **Audit training needs** across the institution: who needs what level of AI literacy, and for what purpose?
+- **Avoid one-size-fits-all:** Tailor training to disciplinary contexts while ensuring a common ethical and literacy baseline
+- **Measure what matters:** Evaluate AI pilots and tools based on whether they improve learning or research outcomes, not just adoption rates
+- **Partner broadly:** Bring government, industry, and civil society into training programme design, particularly for regulatory and environmental aspects
+- **Invest in "human intelligence" skills:** Metacognition, reflective judgment, and critical thinking are the competencies that make AI use thoughtful rather than passive
+- **Update guidelines regularly:** As experimentation deepens and technologies proliferate, guidelines must evolve -- treat them as living documents
+- **Sustain open dialogue:** If universities can maintain consistent, open conversation about AI's possibilities and limitations, communities will be better able to discern where technologies add genuine value
 
 ## Notable Quotes
 

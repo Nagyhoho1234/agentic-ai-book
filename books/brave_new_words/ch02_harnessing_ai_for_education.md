@@ -4,32 +4,35 @@
 
 ## Comprehensive Summary
 
-This chapter dives deep into the technical and pedagogical decisions behind building Khanmigo on GPT-4. Khan describes the iterative process of testing GPT-4's capabilities across subjects -- math, reading comprehension, writing, science -- and discovering both its remarkable strengths and concerning weaknesses.
+This chapter details the technical and pedagogical development of Khanmigo. Khan describes how his team worked directly with OpenAI to fine-tune GPT-4 for educational use. The key innovation was "prompt engineering" -- crafting system-level instructions that told the AI to behave as a Socratic tutor with specific guardrails.
 
-The key innovation was designing the system prompt (the hidden instructions given to the AI before any student interaction) to enforce Socratic questioning. Khan provides examples of how the same math problem would be handled by raw ChatGPT (which simply gives the answer and steps) versus Khanmigo (which asks the student what they think the first step should be, checks their reasoning, and guides them toward the solution).
+Khan walks through specific examples of Khanmigo in action. In math, a student working on a quadratic equation doesn't just get the answer; Khanmigo asks "What have you tried so far?" and walks them through factoring step by step. The AI can identify specific misconceptions (e.g., sign errors, misapplied rules) and address them directly.
 
-Khan discusses the challenge of "hallucination" -- the tendency of LLMs to generate plausible-sounding but incorrect information. He describes how Khanmigo addresses this by grounding its responses in Khan Academy's verified content library and by being transparent about its limitations. When Khanmigo is unsure, it says so.
+The chapter discusses memory and context -- how Khanmigo maintains a record of what a student has been working on, their strengths and weaknesses, and their learning trajectory. This creates a persistent "relationship" between student and AI tutor that improves over time.
 
-The chapter also covers how GPT-4 handles reading comprehension differently from previous approaches. Rather than just asking multiple-choice questions about a passage, the AI can engage students in open-ended discussion about themes, character motivations, and connections to their own lives. Khan describes a demonstration where students could "talk to" literary characters -- for example, having a conversation with Jay Gatsby from *The Great Gatsby* about his motivations and regrets.
+Khan addresses the issue of hallucination -- when AI generates plausible-sounding but factually incorrect information. For Khanmigo, the team implemented multiple layers of verification, including grounding the AI's responses in Khan Academy's existing vetted content. The AI is also instructed to acknowledge uncertainty rather than bluff.
 
-The system was designed to work across Khan Academy's existing platform, integrating with video lessons, practice exercises, and teacher dashboards. Teachers can see what their students are asking the AI, how the AI responded, and where students are struggling.
+The chapter discusses the launch of Khanmigo at Khan Lab School and Khan World School, where real students began using it daily. Teachers reported that students were more engaged, asked deeper questions, and (critically) were not using it to cheat because the Socratic design made cheating difficult -- the AI simply would not give away answers.
+
+Khan describes how Khanmigo handles politically sensitive topics by presenting multiple perspectives and encouraging students to form their own views, rather than taking sides.
 
 ## Key Definitions
 
-- **System prompt:** The hidden instructions given to an LLM that shape its behavior, tone, and constraints. This is the primary mechanism for turning a general-purpose AI into a specialized educational tool.
-- **Hallucination:** When an AI generates information that is factually incorrect but presented with the same confidence as accurate information. A major challenge for educational applications.
-- **Grounding:** Connecting AI responses to verified content sources to reduce hallucination and improve accuracy.
-- **Reading comprehension (AI-enhanced):** Moving beyond multiple-choice testing to open-ended dialogue about texts, enabled by LLMs' conversational abilities.
+- **Prompt Engineering:** The practice of crafting instructions to an LLM to control its behavior, tone, and output. In Khanmigo's case, this includes instructions to use Socratic questioning and never give direct answers.
+- **Hallucination:** When an AI generates information that sounds authoritative but is factually wrong. A significant risk in educational contexts.
+- **Grounding:** Anchoring AI responses in verified source material (e.g., Khan Academy's content library) to reduce hallucination.
+- **Khan Lab School / Khan World School:** Physical and virtual schools founded by Sal Khan that serve as testbeds for new educational approaches, including Khanmigo.
 
 ## Practical Takeaways for Scientists
 
-1. **System prompts are the key design tool:** The difference between a useful and a harmful AI application often lies entirely in how the system prompt is written. Scientists creating AI tools for their labs should invest time in crafting detailed system prompts.
-2. **Hallucination is the central risk:** For any domain where accuracy matters (science, medicine, engineering), AI hallucination must be actively mitigated through grounding, verification, and transparent uncertainty communication.
-3. **AI can facilitate Socratic inquiry in any domain:** The technique of having AI ask questions rather than give answers could be applied to journal clubs, lab meetings, or thesis defenses -- the AI acts as a persistent, patient questioner.
-4. **Integration with existing workflows matters:** Khanmigo succeeded partly because it was embedded within Khan Academy's existing platform, not a standalone tool. AI tools for research are most effective when integrated into existing workflows (lab notebooks, data analysis pipelines, writing environments).
+- Prompt engineering is a critical skill for using AI effectively in any domain. Specific, well-structured instructions dramatically improve AI output quality.
+- Hallucination is a real risk. Always verify AI-generated claims against primary sources, especially for quantitative results.
+- Grounding AI responses in curated, domain-specific knowledge bases significantly reduces errors. Consider building vetted reference materials for your field.
+- AI tools that maintain context over time (memory of past interactions) are more valuable than stateless tools.
+- When using AI for sensitive or contested topics (e.g., interpreting disputed research findings), design prompts to present multiple perspectives.
 
 ## Notable References
 
-- Khan Academy's GPT-4 integration architecture.
-- The "talking to literary characters" demonstration (Jay Gatsby, etc.).
-- F. Scott Fitzgerald, *The Great Gatsby* (used as demonstration text).
+- Khan Lab School and Khan World School pilot programs
+- OpenAI GPT-4 prompt engineering documentation
+- Khan Academy content library as grounding source

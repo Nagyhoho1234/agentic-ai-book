@@ -4,30 +4,31 @@
 
 ## Comprehensive Summary
 
-This chapter describes the public launch of Khanmigo and the reaction from education stakeholders worldwide. Khan recounts the initial skepticism from educators, parents, and policymakers, and how demonstrations changed minds. He describes presenting at the U.S. Department of Education and to various school districts, showing how the AI tutor could support (not replace) teachers.
+This chapter covers the public launch and early reception of Khanmigo. Khan describes how universities like Arizona State University began integrating AI into their programs, recognizing that fighting the technology was futile and that teaching students to use it effectively was essential.
 
-Khan addresses the cheating concern head-on: rather than trying to detect AI-generated work (a losing battle, he argues), the solution is to redesign assignments and assessments so that AI becomes a transparent part of the process. He draws an analogy to open-book exams -- once students have access to information, the challenge shifts from memorization to application, synthesis, and critical thinking.
+Khan discusses the early partnership with school districts and the challenges of deploying AI at scale in educational settings. Key concerns from administrators included data privacy, age-appropriate content, and the digital divide (not all students have equal access to devices and internet).
 
-The chapter describes partnerships with Arizona State University, George Fox University, and other institutions that began integrating Khanmigo. Khan discusses how university professors who initially feared AI came to see it as an opportunity to move beyond lectures to more interactive, discussion-based teaching.
+The chapter explores how AI tutoring extends beyond traditional academic subjects. Khanmigo can serve as a writing coach, helping students develop essays through iterative feedback. It can also act as a debate partner, challenging students' arguments and helping them develop stronger reasoning skills.
 
-Khan also addresses the digital divide: the concern that AI tutoring will only benefit students who already have internet access and devices. He argues that while this is a real concern, the cost trajectory of AI and internet access suggests that within 5-10 years, AI tutoring will be accessible to nearly everyone with a smartphone. He draws parallels to how mobile banking leapfrogged traditional banking in developing countries.
+Khan describes positive feedback from diverse learners: English language learners who could get explanations in their native language while learning in English, students with learning differences who benefited from the AI's patience and ability to explain concepts in multiple ways, and advanced students who could accelerate beyond their grade level without waiting for the rest of the class.
+
+The chapter also addresses the initial reactions from universities and professors. Darren Hick, a professor at Furman University, describes catching a student who submitted a ChatGPT-generated essay, sparking campus-wide debate about academic integrity policies. Alexander Gil Fuentes at Columbia University took the opposite approach, integrating AI into his curriculum and finding that it enhanced rather than undermined learning.
 
 ## Key Definitions
 
-- **Flipped classroom:** A teaching model where students learn content at home (via video, reading, or AI tutoring) and use class time for interactive activities, discussion, and problem-solving. Khan Academy pioneered this approach.
-- **Digital divide:** The gap between those who have access to technology (internet, devices) and those who do not, which can exacerbate educational inequality.
-- **Open-book assessment:** Testing that allows access to resources, shifting the focus from memorization to higher-order thinking skills.
+- **Flipped Classroom:** An instructional model where students learn content at home (via video, reading, or AI interaction) and use classroom time for discussion, problem-solving, and hands-on activities.
+- **Digital Divide:** The gap between those who have access to modern computing technology and the internet and those who do not, particularly relevant for AI-dependent educational tools.
 
 ## Practical Takeaways for Scientists
 
-1. **Redesign assessments, do not try to police AI use:** This principle applies directly to graduate courses, qualifying exams, and lab reports. If students can use AI, design assessments that require synthesis, critical analysis, and original thought.
-2. **Demonstrations beat arguments:** Khan found that showing skeptics a live demo of Khanmigo was far more effective than theoretical arguments. Scientists advocating for AI adoption in their institutions should lead with demonstrations.
-3. **The cost trajectory matters:** AI computation costs are dropping by roughly 10x every few years. Tools that seem expensive today will be essentially free within a decade. Plan research infrastructure accordingly.
-4. **Leapfrogging is possible:** Just as developing countries skipped landlines for mobile phones, they may skip traditional educational infrastructure for AI-based learning. This has implications for international research collaborations and capacity building.
+- AI can serve diverse learners simultaneously: multilingual support, patience for repeated explanations, and acceleration for advanced learners.
+- Integration is more effective than prohibition. Institutions that embraced AI found it enhanced learning outcomes.
+- The "writing coach" model -- iterative AI feedback on drafts -- is directly applicable to scientific manuscript preparation.
+- Consider how AI tools can support equity in your research group: non-native speakers, students from different backgrounds, or those needing extra support can benefit from AI assistance.
 
 ## Notable References
 
-- U.S. Department of Education presentation on AI in education.
-- Arizona State University and George Fox University AI integration pilots.
-- Khan's 2011 TED Talk on the flipped classroom.
-- Ethan Mollick (Wharton) on three adjustments teachers need to make for generative AI.
+- Arizona State University AI integration programs
+- Darren Hick (Furman University) -- ChatGPT cheating detection case
+- Alexander Gil Fuentes (Columbia University) -- AI curriculum integration
+- University-level AI policy debates (2023)

@@ -4,31 +4,30 @@
 
 ## Comprehensive Summary
 
-This chapter explores one of Khanmigo's most innovative features: the ability to simulate conversations with historical figures. Students can "talk to" Harriet Tubman, George Washington, Rembrandt, Alexander Hamilton, and others, asking questions and engaging in dialogue that brings history to life.
+This chapter explores one of Khanmigo's most novel features: enabling students to have conversations with simulated historical figures. Khan describes how students can interact with AI versions of George Washington, Harriet Tubman, Alexander the Great, Aristotle, and others. The AI is programmed with extensive knowledge of the figure's life, times, beliefs, and speech patterns.
 
-Khan describes the development process and the critical design challenges. How do you ensure historical accuracy while making the experience engaging? The team built guardrails requiring the AI to stay in character, respond based on verified historical facts, and flag when it is speculating beyond the historical record. When asked a question outside the known historical facts, the AI character responds with something like "As a historical figure, I can only speak to what is documented about my life..."
+Khan demonstrates how a student can "interview" Harriet Tubman about her experiences on the Underground Railroad, or debate constitutional principles with a simulated Alexander Hamilton. The AI responds in character, drawing on historical knowledge while acknowledging the limits of what is known versus speculated.
 
-Khan recounts a *Washington Post* journalist's experience "interviewing" Harriet Tubman through Khanmigo. The journalist, Gillian Brockell, found the interaction "a little weird" but acknowledged that it brought history to life in ways that textbooks could not. The AI-Tubman discussed the Underground Railroad, her motivations, and her fears in first-person dialogue.
+The chapter addresses the significant ethical and accuracy concerns with historical simulations. Khan discusses the case of Gillian Brockell of the *Washington Post*, who tested Khanmigo's Harriet Tubman simulation and raised concerns about inaccuracies -- the AI had Tubman saying things that were not historically documented. Khan describes how the team added guardrails: the AI now clearly labels responses as "based on historical knowledge" versus "speculation," and it encourages students to verify claims with primary sources.
 
-The chapter also covers how Khanmigo handles the intersection of history and civics -- allowing students to debate constitutional questions with AI simulations of the Founding Fathers, explore the reasoning behind the Fourteenth Amendment, or discuss the causes of historical conflicts from multiple perspectives.
+Khan argues that despite these challenges, historical simulations represent a powerful pedagogical tool. Traditional history education often reduces complex, multidimensional figures to flat characters in textbooks. AI simulations can make history feel alive and personal, motivating students to learn more deeply.
 
-Khan acknowledges the risk of "hallucinated history" -- the AI generating plausible but incorrect historical details -- and describes how Khanmigo mitigates this through content grounding and by prompting students to verify AI-generated historical claims against primary sources.
+The chapter also covers how AI can support civics education by simulating debates about constitutional issues, presenting multiple perspectives on the Fourteenth Amendment, or helping students understand the historical context of current political debates.
 
 ## Key Definitions
 
-- **Historical figure simulation:** An AI application that allows students to converse with a character modeled on a historical person, grounded in verified historical facts.
-- **Hallucinated history:** When AI generates historically plausible but factually incorrect information about events, people, or time periods.
-- **Content grounding (historical):** Anchoring AI-generated historical dialogue to verified primary and secondary sources to maintain accuracy.
+- **Historical Simulation:** An AI-powered conversation where the model role-plays as a historical figure, drawing on documented historical knowledge.
+- **Guardrails (historical context):** Programmatic safeguards that ensure AI historical simulations distinguish between documented fact and reasonable speculation, and encourage source verification.
 
 ## Practical Takeaways for Scientists
 
-1. **AI-mediated engagement with primary sources:** This approach could be adapted for science education -- imagine "talking to" Darwin about his theory, Marie Curie about radioactivity, or Einstein about relativity, with the AI grounded in their actual writings.
-2. **The verification imperative:** Khanmigo's approach of encouraging students to verify AI-generated claims against primary sources is an excellent model for scientific training. AI should always be used as a starting point for inquiry, not an endpoint.
-3. **Multi-perspective analysis:** The ability to explore historical events from multiple viewpoints parallels the scientific practice of considering alternative hypotheses and interpretations.
-4. **Simulation as pedagogy:** The historical figure simulation model could be extended to scientific simulations -- AI-guided virtual experiments, field trips, or laboratory experiences.
+- AI simulations can be powerful teaching tools for any domain -- imagine students "interviewing" a simulated version of a famous scientist about their methodology and reasoning.
+- Always implement guardrails that distinguish between what is established fact and what is AI-generated speculation. This applies equally to scientific applications.
+- Encourage users to verify AI-generated historical or factual claims against primary sources -- a principle directly transferable to literature review and fact-checking in research.
+- The approach of making abstract knowledge "come alive" through interactive conversation has applications for science communication and public engagement.
 
 ## Notable References
 
-- Brockell, G. (2023). "We 'Interviewed' Harriet Tubman Using AI. It Got a Little Weird." *Washington Post*.
-- Khan Academy's historical figure simulation feature in Khanmigo.
-- Discussions of the Fourteenth Amendment and Constitutional history through AI.
+- Gillian Brockell, "We 'Interviewed' Harriet Tubman Using AI. It Got a Little Weird," *Washington Post*, July 14, 2023
+- Historical simulations: George Washington, Harriet Tubman, Alexander the Great, Aristotle, Alexander Hamilton
+- U.S. Constitution and Fourteenth Amendment as civics education examples

@@ -5,38 +5,44 @@
 
 ## Summary
 
-This overview chapter frames the entire volume by synthesising findings across all 29 contributed essays. It argues that AI is emerging as a potentially transformative general-purpose technology for science, comparable to the impact of the computer itself. AI can accelerate scientific discovery in fields ranging from drug development to materials science, mathematics, and climate modelling. However, the technology has significant limitations and policy challenges that must be addressed.
+This overview chapter frames the entire volume. It argues that AI is poised to become one of the most important general-purpose technologies in the history of science, comparable to the microscope, the computer, or statistics itself. At the same time, it highlights that AI's impact will be uneven across fields, institutions, and countries, and that proactive policy is essential to maximise AI's benefits for science while managing its risks.
 
-The chapter opens by documenting evidence that scientific progress may be becoming harder. Teams are growing larger, research costs are rising, and truly disruptive papers are becoming rarer as a share of total output. This creates an urgent need for tools that can help scientists navigate exponentially growing literatures, identify overlooked connections, and accelerate hypothesis generation.
+The chapter sets the scene by reviewing evidence that scientific progress may be getting harder: breakthrough ideas require larger teams, more capital, and longer time horizons. The number of scientific publications has been growing exponentially, but the number of truly novel scientific ideas grows only linearly. AI could help address this "burden of knowledge" by assisting with literature synthesis, hypothesis generation, experimental design, and data analysis.
 
-AI is already demonstrating value across many scientific domains. AlphaFold's protein structure predictions, AI-assisted drug candidate identification, materials discovery, mathematical conjecture generation, and particle physics event classification are all highlighted as major successes. But the chapter is careful to distinguish between AI as a tool for classification and pattern recognition (where it excels) and AI as a tool for genuine scientific understanding and causal explanation (where it remains weak).
+Nolan surveys AI's current uses in science across multiple fields -- drug discovery, protein folding (AlphaFold), materials science, mathematics, particle physics, climate science, and genomics. He notes that AI is already producing results that would have been impossible or impractical without it, but cautions that many of these applications are still at an early stage.
 
-Key limitations discussed include: the black-box nature of deep learning models; the need for large labelled datasets that many scientific fields cannot provide; problems of bias and reproducibility; the inability of statistical ML to handle symbolic reasoning, causality, and generalisation from sparse data; and the risk that AI amplifies existing biases in scientific publishing.
+The chapter identifies critical challenges: the black-box nature of deep learning, difficulty with causal reasoning, data scarcity in many scientific fields, algorithmic bias, the reproducibility crisis in AI research, the concentration of AI talent and compute resources in a small number of companies and countries, and the risk of a narrowing of AI research approaches.
 
 ## Key Policy Recommendations
 
-- **Invest in public AI infrastructure for science**: Governments need dedicated funding programmes for AI in scientific research, not just commercial AI development.
-- **Ensure equitable access to compute**: Create national and international shared computing resources so that smaller institutions and developing countries can participate.
-- **Support open data and FAIR principles**: AI for science depends on findable, accessible, interoperable, and re-usable data. Governments should mandate and fund open data infrastructure.
-- **Reform scientific incentive structures**: Move away from publication-count metrics toward rewarding reproducibility, replication studies, and open-source tool development.
-- **Promote diversity in AI research**: Counter the narrowing of AI methods toward deep learning by funding alternative approaches (symbolic AI, causal inference, model-driven methods).
-- **Build interdisciplinary capacity**: Create training programmes and career paths that combine domain science expertise with AI skills.
-- **Address data privacy challenges**: Support federated learning and other privacy-preserving approaches to enable AI use with sensitive data (e.g. health records).
+1. **Increase public investment in AI for science** -- Governments should treat AI for science as a strategic priority, funding not just AI research but also the complementary infrastructure (data, compute, training) needed to use AI effectively in scientific domains.
+
+2. **Build shared compute infrastructure** -- Academic researchers need access to high-performance computing resources comparable to those available in the private sector. National AI research clouds and shared facilities are essential.
+
+3. **Support FAIR data** -- Findable, Accessible, Interoperable, Reusable data are a prerequisite for AI in science. Governments should fund the creation and maintenance of high-quality scientific datasets.
+
+4. **Train the scientific workforce** -- Scientists need AI literacy, and AI researchers need domain knowledge. Interdisciplinary training programmes are critical.
+
+5. **Promote diversity in AI methods** -- Policy should guard against the dominance of a single paradigm (deep learning) by funding alternative approaches such as symbolic AI, causal inference, and hybrid methods.
+
+6. **Address the global divide** -- AI resources and talent are heavily concentrated in a few wealthy nations and companies. International cooperation and capacity building are essential to prevent a widening gap.
+
+7. **Reform research incentives** -- Publication-driven metrics may not reward the kinds of methodological innovation and rigorous evaluation that AI-enabled science demands. Incentives should reward reproducibility, open data, and practical clinical/societal impact.
 
 ## Practical Takeaways for Scientists and Institutions
 
-- AI tools are most effective when combined with domain expertise -- scientists should aim for hybrid human-AI workflows rather than expecting full automation.
-- Literature review, hypothesis generation, and experimental design are areas where AI tools can provide immediate productivity gains.
-- Researchers should be cautious about AI-generated results that lack interpretability -- always validate with domain knowledge and independent methods.
-- Institutions should invest in AI training for domain scientists, not just hire dedicated AI specialists.
-- Open data practices and code sharing are becoming prerequisites for leveraging AI effectively.
+- AI should be viewed as a partner tool, not a replacement for scientific reasoning. The most productive model is human-AI collaboration.
+- Scientists in all disciplines should develop basic AI literacy and consider how AI could accelerate their work, even in fields not traditionally associated with computation.
+- Research institutions should invest in interdisciplinary teams that pair domain scientists with AI/ML experts.
+- Open data practices and standardised benchmarks are essential for trustworthy AI-assisted science.
+- Researchers should be aware of the limitations of current AI methods -- particularly the risk of overfitting, hidden biases, and lack of causal understanding -- and design workflows that include human oversight.
 
 ## Notable Data and Statistics
 
-- Over 4,000 scientific papers are published daily in biomedicine alone.
+- More than 4,000 scientific papers are published every day in biomedicine alone.
 - An estimated 200,000 articles were written about COVID-19 during the pandemic.
-- The number of publications grows exponentially while the number of truly novel scientific ideas expands only linearly.
-- In 2020, 20% of AI papers on arXiv involved at least one private-sector researcher.
-- Private companies are ten times more likely to participate in AI research than in other arXiv research.
-- AlphaFold predicted structures for over 200 million proteins, covering nearly every known protein.
-- Nobel Prize winner Venki Ramakrishnan called AlphaFold "a stunning advance on the protein folding problem, a 50-year-old grand challenge in biology."
+- The number of scientific publications grows exponentially, but the number of novel scientific ideas grows only linearly.
+- AlphaFold predicted the 3D structure of over 200 million proteins, a task that would have taken experimental methods centuries.
+- In 2020, 20% of AI papers on arXiv involved at least one researcher affiliated with a private company (Google, Microsoft, IBM, Facebook, Amazon ranking highest).
+- 70% of AI research may be irreproducible (Ioannidis, 2022).
+- Only 6% of research published at top AI conferences explicitly stated which research questions were being answered; only 5% stated which hypotheses were tested.
