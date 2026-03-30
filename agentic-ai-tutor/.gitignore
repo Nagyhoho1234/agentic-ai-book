@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.env
+data/chroma_db/
+data/agenticai_tutor.db
+data/chunks/
+node_modules/
