@@ -97,6 +97,8 @@ python --version
 
 ## A.2 VS Code telepítés és beállítás
 
+![VS Code felület tudományos Python projekttel — tipikus elrendezés](images/appendix_a_vscode_layout.png)
+
 A Visual Studio Code (VS Code) egy ingyenes, nyílt forráskódú kódszerkesztő, amely kiválóan alkalmas AI-támogatott fejlesztésre.
 
 ### Telepítés
@@ -1411,6 +1413,8 @@ nvm use 20
 ```
 
 ---
+
+![Fejezetek és szükséges eszközök — vizuális áttekintés](images/appendix_a_chapter_tools_map.png)
 
 ## Összefoglalás: Mi kell az egyes fejezetekhez?
 

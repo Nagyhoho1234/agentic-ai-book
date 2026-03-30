@@ -13,6 +13,8 @@ Ez a prompt-könyvtár azért született, hogy ne kelljen minden alkalommal a nu
 
 ---
 
+![Prompt-kategóriák áttekintése — a könyvtár felépítése](images/appendix_b_prompt_categories.png)
+
 ## B.1 Irodalomáttekintés és szintézis
 
 ### B.1.1 Strukturált cikk-összefoglalás

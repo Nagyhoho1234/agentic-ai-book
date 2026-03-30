@@ -6,14 +6,14 @@ import rehypeKatex from 'rehype-katex';
 import 'katex/dist/katex.min.css';
 
 const AGENT_LABELS = {
-  rag: 'Textbook',
-  quiz: 'Quiz',
-  socratic: 'Socratic',
-  code_lab: 'Code Lab',
-  navigate: 'Navigation',
-  explain: 'Textbook',
-  selection: 'About Selection',
-  error: 'Error',
+  rag: 'Tankönyv',
+  quiz: 'Teszt',
+  socratic: 'Szókratikus',
+  code_lab: 'Kódlabor',
+  navigate: 'Navigáció',
+  explain: 'Tankönyv',
+  selection: 'Kijelölésről',
+  error: 'Hiba',
 };
 
 const AGENT_COLORS = {
@@ -52,9 +52,9 @@ export default function Chat({ messages, loading, onSend, placeholder, welcomeTi
           <div className="text-center py-16" style={{ color: 'var(--text-secondary)' }}>
             <div className="text-4xl mb-4">&#129302;</div>
             <h2 className="text-xl font-semibold mb-2" style={{ color: 'var(--text-primary)' }}>
-              {welcomeTitle || 'AgenticAI-Tutor'}
+              {welcomeTitle || 'Ágentikus AI Tutor'}
             </h2>
-            <p className="mb-2">{welcomeText || 'Ask me anything about AI for scientific research!'}</p>
+            <p className="mb-2">{welcomeText || 'Kérdezz bármit az AI tudományos alkalmazásairól!'}</p>
             <p className="text-sm mb-6">{welcomeSub || ''}</p>
             <div className="flex flex-wrap gap-2 justify-center max-w-lg mx-auto">
               {[
@@ -103,7 +103,7 @@ export default function Chat({ messages, loading, onSend, placeholder, welcomeTi
               </div>
               {msg.sources && msg.sources.length > 0 && (
                 <details className="mt-2 text-xs" style={{ color: 'var(--text-secondary)' }}>
-                  <summary className="cursor-pointer">Sources ({msg.sources.length})</summary>
+                  <summary className="cursor-pointer">Források ({msg.sources.length})</summary>
                   <ul className="mt-1 space-y-0.5">
                     {msg.sources.map((s, j) => (
                       <li key={j}>{s.chapter} (pp. {s.pages}) -- {(s.score * 100).toFixed(0)}%</li>
@@ -136,7 +136,7 @@ export default function Chat({ messages, loading, onSend, placeholder, welcomeTi
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder={placeholder || "Ask a question about AI for scientists..."}
+            placeholder={placeholder || "Kérdezz az AI tudományos alkalmazásairól..."}
             disabled={loading}
             className="flex-1 px-4 py-2.5 rounded-xl border outline-none transition-colors"
             style={{
@@ -151,7 +151,7 @@ export default function Chat({ messages, loading, onSend, placeholder, welcomeTi
             className="px-6 py-2.5 rounded-xl text-white font-medium transition-colors disabled:opacity-50 cursor-pointer"
             style={{ background: 'var(--accent)' }}
           >
-            Send
+            Küldés
           </button>
         </div>
       </form>

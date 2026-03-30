@@ -24,6 +24,8 @@ Ez a könyv ezt az űrt tölti be.
 
 ## Hogyan épül fel a könyv
 
+![A könyv felépítése — 5 rész, 16 fejezet áttekintő ábrája](images/ch00_book_structure.png)
+
 A könyv 5 részből és 16 fejezetből áll, fokozatosan növekvő komplexitással:
 
 - **I. rész (1–4. fejezet): Alapok** — Az AI-forradalom kontextusa, a társalgási AI elsajátítása, tudományos írás AI-val, adatelemzés kód nélkül. Ezek a fejezetek mindenki számára kötelezők.
@@ -51,6 +53,8 @@ A könyvhöz tartozik egy nyilvános GitHub-repository, amely tartalmazza:
 Az AI-eszközök villámgyorsan változnak. Egy nyomtatott könyv hat hónapon belül elavulhat — a társwebhely biztosítja, hogy mindig naprakész maradj.
 
 ## Mollick négy szabálya
+
+![Mollick négy szabálya — vizuális összefoglaló](images/ch00_mollick_rules.png)
 
 Ethan Mollick, a Wharton School professzora négy alapszabályt fogalmazott meg az AI hatékony használatához. Ez a négy szabály végigvonul az egész könyvön, mint vezérfonal:
 

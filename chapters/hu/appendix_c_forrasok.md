@@ -8,6 +8,8 @@ Az annotációk minden könyvnél jelzik, hogy milyen típusú olvasó számára
 
 ---
 
+![Ajánlott olvasmányok szakterület szerint — vizuális útmutató](images/appendix_c_reading_map.png)
+
 ## C.1 Ajánlott könyvek (annotált lista)
 
 ### Általános AI-stratégia és gondolkodásmód
