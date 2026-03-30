@@ -3,6 +3,7 @@
 
 **Hungarian-language AI-powered interactive learning platform for researchers**
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19327532.svg)](https://doi.org/10.5281/zenodo.19327532)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Language: Hungarian](https://img.shields.io/badge/Language-Hungarian-red.svg)](#)
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11+-green.svg)](https://python.org)

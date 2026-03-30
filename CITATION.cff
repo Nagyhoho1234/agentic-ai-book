@@ -9,8 +9,9 @@ authors:
     affiliation: "University of Debrecen"
 repository-code: "https://github.com/Nagyhoho1234/agentic-ai-book"
 url: "https://github.com/Nagyhoho1234/agentic-ai-book"
+doi: "10.5281/zenodo.19327532"
 license: MIT
-version: "1.0.0"
+version: "1.0.1"
 date-released: "2026-03-30"
 keywords:
   - agentic AI
