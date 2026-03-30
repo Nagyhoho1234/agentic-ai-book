@@ -63,7 +63,7 @@ async def handle_message(
             })
 
         # Format as readable text
-        lines = ["# Book Contents: Ágentikus AI Tudósoknak\n"]
+        lines = ["# A kutatási célú ágentikus AI 2026-ban — Helyzetkép és iránymutató\n"]
         for ch_num in sorted(chapters.keys()):
             from backend.rag.chunker import CHAPTER_TITLES, CHAPTER_PARTS
             title = CHAPTER_TITLES.get(ch_num, f"Chapter {ch_num}")

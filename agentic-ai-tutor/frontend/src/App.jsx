@@ -18,7 +18,7 @@ import { askAboutSelection } from './api/client';
 
 const STRINGS = {
   hu: {
-    title: 'Ágentikus AI Kutatóknak — Interaktív Tutor',
+    title: 'A kutatási célú ágentikus AI 2026-ban — Interaktív Tutor',
     readBook: 'Könyv',
     quiz: 'Teszt',
     cards: 'Kártyák',
@@ -31,14 +31,14 @@ const STRINGS = {
     settings: 'Beállítások',
   },
   en: {
-    title: 'Ágentikus AI Kutatóknak — Interaktív Tutor',
+    title: 'A kutatási célú ágentikus AI 2026-ban — Interaktív Tutor',
     readBook: 'Könyv',
     quiz: 'Teszt',
     cards: 'Kártyák',
     conceptMap: 'Térkép',
     newSession: 'Új munkamenet',
     askPlaceholder: 'Kérdezz az AI tudományos alkalmazásairól...',
-    welcome: 'Ágentikus AI Tutor',
+    welcome: 'A kutatási célú ágentikus AI 2026-ban',
     welcomeText: 'Kérdezz bármit az AI tudományos alkalmazásairól!',
     welcomeSub: 'A válaszok a tankönyvből származnak, mesterséges intelligenciával kiegészítve.',
     settings: 'Beállítások',

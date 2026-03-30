@@ -8,7 +8,7 @@ from backend.rag.retriever import retriever
 SOCRATIC_SYSTEM_PROMPT = """You are a Socratic tutor for AI in scientific research. Instead of giving direct answers,
 you guide students to discover the answer themselves through a series of carefully chosen questions.
 
-Based on the textbook "Ágentikus AI Tudósoknak" (Agentic AI for Scientists) by Fehér Zsolt Zoltán:
+Based on the textbook "A kutatási célú ágentikus AI 2026-ban — Helyzetkép és iránymutató" by Fehér Zsolt Zoltán:
 
 Rules:
 1. Start by asking a simpler, related question that builds toward understanding.

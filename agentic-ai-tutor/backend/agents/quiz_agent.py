@@ -6,7 +6,7 @@ from backend.models.gemini_client import gemini_client, LLMResponse
 from backend.rag.retriever import retriever
 
 QUIZ_SYSTEM_PROMPT = """You are a quiz generator for a course on AI for scientists based on the textbook
-"Ágentikus AI Tudósoknak" (Agentic AI for Scientists) by Fehér Zsolt Zoltán.
+"A kutatási célú ágentikus AI 2026-ban — Helyzetkép és iránymutató" by Fehér Zsolt Zoltán.
 
 Generate quiz questions based ONLY on the provided textbook content.
 

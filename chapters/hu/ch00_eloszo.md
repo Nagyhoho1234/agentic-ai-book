@@ -2,7 +2,7 @@
 
 ## Kinek szól ez a könyv
 
-Ha kutató vagy, oktató, MSc- vagy PhD-hallgató, tanszékvezető vagy dékán a Debreceni Egyetemen — vagy bármely magyar kutatóműhelyben —, akkor neked írtam ezt a könyvet. Nem programozóknak szól. Nem kell értened a Pythonhoz, nem kell tudnod, mi az a Docker, és nem kell ismerned a gépi tanulás matematikai alapjait. Elég, ha van egy kutatási kérdésed, egy adathalmazod, egy tantárgyad, amelyet jobbá akarsz tenni — és nyitott vagy arra, hogy egy új típusú eszközzel dolgozz.
+Ez a könyv mindenkinek szól, aki a tudományos kutatásban, az egyetemi oktatásban vagy a kutatásszervezésben dolgozik, és szeretné megérteni, hogyan alakítja át a mesterséges intelligencia ezeket a területeket. Nem kell értened a Pythonhoz, nem kell tudnod, mi az a Docker, és nem kell ismerned a gépi tanulás matematikai alapjait. Elég, ha van egy kutatási kérdésed, egy adathalmazod, egy tantárgyad, amelyet jobbá akarsz tenni — és nyitott vagy arra, hogy egy új típusú eszközzel dolgozz.
 
 Ez a könyv arról szól, hogyan használd az AI-t hatékonyan a saját kutatásodban, oktatásodban és intézményi munkádban anélkül, hogy szoftvermérnökké kellene válnod.
 

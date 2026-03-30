@@ -34,7 +34,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="AgenticAI-Tutor API",
-    description="RAG-based tutoring system for 'Ágentikus AI Tudósoknak'",
+    description="RAG-based tutoring system for 'A kutatási célú ágentikus AI 2026-ban — Helyzetkép és iránymutató'",
     version="0.1.0",
     lifespan=lifespan,
 )
@@ -450,7 +450,7 @@ async def book_summary(request: SummaryRequest):
 
     # Try to generate AI summary
     prompt = (
-        f"Summarize Chapter {chapter_num}: '{chapter_title}' from 'Ágentikus AI Tudósoknak'. "
+        f"Summarize Chapter {chapter_num}: '{chapter_title}' from 'A kutatási célú ágentikus AI 2026-ban'. "
         f"Write a concise summary (5-8 bullet points) covering the key concepts and takeaways. "
         f"Use markdown formatting.\n\n"
         f"Chapter content:\n{chapter_text[:4000]}"
