@@ -12,9 +12,9 @@
 
 ---
 
-## Nyitó jelenet: A nem létező hivatkozás
+## 16.1 Nyitó jelenet: A nem létező hivatkozás
 
-> **🖼️ Ábra: A hamis hivatkozás problémája — amikor az AI meggyőzően hazudik**
+> **🖼️ 16.1. ábra: A hamis hivatkozás problémája — amikor az AI meggyőzően hazudik**
 > *Illustration of a researcher looking confused at a paper with highlighted fake references, a magnifying glass revealing they do not exist, dramatic lighting style*
 
 Képzeld el a következő jelenetet. Egy fiatal posztdoktor az MTA Ökológiai Kutatóközpontjában dolgozik, és épp a klímaváltozás biodiverzitásra gyakorolt hatásáról ír egy összefoglaló cikket. A határidő szorít, és a bevezetésben szüksége lenne egy meggyőző hivatkozásra arról, hogy az elmúlt két évtizedben hogyan változott a rovarbiomassza Közép-Európában. Megkéri a nyelvi modellt: „Keress egy peer-reviewed hivatkozást a közép-európai rovarbiomassza csökkenéséről 2000 és 2020 között."
@@ -29,9 +29,9 @@ Ez a fejezet arról szól, hogy mit jelent tudósnak lenni egy olyan korban, ami
 
 ---
 
-## 16.1 Kutatási integritás az AI korában
+## 16.2 Kutatási integritás az AI korában
 
-### A hamis hivatkozások problémája
+### 16.2.1 A hamis hivatkozások problémája
 
 Az LLM-ek (Large Language Models) által generált hamis hivatkozások a tudományos integritás egyik legsúlyosabb és legelterjedtebb fenyegetését jelentik. A probléma gyökere egyszerű: a nyelvi modell nem adatbázisból keres, hanem szöveget generál. Amikor bibliográfiai adatokat kérsz, a modell a legvalószínűbb szósorozatot állítja össze — és egy valószerűen hangzó, de nem létező hivatkozás pontosan olyan valószínű kimenet, mint egy valódi.
 
@@ -44,7 +44,7 @@ A jelenség jól dokumentált. 2023-ban egy New York-i ügyvéd, Steven Schwartz
 3. **Ellenőrizd a szerzőt és a folyóiratot.** Az LLM gyakran valódi szerzőnéveket társít nem létező cikkekhez — egy olyan területen publikáló kutató nevét használja, amelyen a hivatkozás releváns lenne.
 4. **Figyelj a túl kerek állításokra.** Ha egy hivatkozás pontosan azt mondja, amit hallani akarsz, pontosan a megfelelő formában — gyanakodj. A valódi tudomány ritkán ilyen kényelmes.
 
-### AI-generált képmanipuláció és forensics
+### 16.2.2 AI-generált képmanipuláció és forensics
 
 A szöveges hallucináció mellett az AI-generált képek is komoly kihívást jelentenek a tudományos integritás számára. A helyzet 2024-2025 folyamán drámaian romlott:
 
@@ -60,7 +60,7 @@ A szöveges hallucináció mellett az AI-generált képek is komoly kihívást j
 - **Frekvencia-analízis.** A GAN-ek (Generative Adversarial Networks) és a diffúziós modellek jellegzetes mintákat hagynak a képek Fourier-spektrumában. Ezek az ujjlenyomatok emberi szemmel láthatatlanok, de algoritmikusan detektálhatók.
 - **Konzisztencia-ellenőrzés.** Egy valódi western blot-nak koherens háttérzaja van; egy generált képnek gyakran túl tiszta vagy irreálisan egyenletes a háttere.
 
-### Szintetikus adatok: amikor a generált adat valódinak tűnik
+### 16.2.3 Szintetikus adatok: amikor a generált adat valódinak tűnik
 
 A szintetikus adatgenerálás önmagában nem etikátlan — sőt, számos legitim alkalmazása van (adataugmentáció, privacy-megőrzés, ritka események szimulációja). A probléma akkor keletkezik, amikor szintetikus adatokat valódi mérési adatként mutatnak be.
 
@@ -72,7 +72,7 @@ A kockázat különösen magas azokban a tudományterületeken, ahol:
 
 A védekezés első vonala az adatproveniencia (data provenance) dokumentálása. Minden publikált adathalmaznál egyértelműen jelezni kell, hogy a) nyers mérési adat, b) feldolgozott adat, c) szimulált/szintetikus adat, vagy d) augmentált adat. Ezeket a kategóriákat nem szabad összekeverni.
 
-### Detekciós eszközök és korlátaik
+### 16.2.4 Detekciós eszközök és korlátaik
 
 2025-2026-ban számos eszköz áll rendelkezésre az AI-generált tartalom detektálására, de mindegyiknek komoly korlátai vannak:
 
@@ -92,7 +92,7 @@ A védekezés első vonala az adatproveniencia (data provenance) dokumentálása
 
 **A lényeges felismerés:** Egyetlen detekciós eszköz sem helyettesíti az emberi szakértői bírálat (peer review) és az eredeti adatokhoz való hozzáférés szükségességét. A detekciós eszközök jelzőrendszerek, nem ítélkező bírók.
 
-### A posztplágium (postplagiarism) fogalma
+### 16.2.5 A posztplágium (postplagiarism) fogalma
 
 A hagyományos plágium definíciója egyszerű volt: valaki más szövegét sajátjaként tüntetted fel. Az AI korában ez a fogalom összeomlott. Ha egy kutató megkéri a Claude-ot, hogy írjon egy bekezdést, majd átszerkeszti, kinek a szövege az? Nem másolt senkitől — de nem is ő írta. Nem a modellé sem — a modell nem szerző, nincs szándéka. Egy szürke zónában vagyunk, amelyet a korábbi szabályok nem tudnak kezelni.
 
@@ -114,7 +114,7 @@ A hagyományos plágium definíciója egyszerű volt: valaki más szövegét saj
 
 Eaton posztplágium-keretrendszere azért fontos, mert kiutat mutat a „tiltani vs. engedni" bináris vitából. Nem azt mondja, hogy az AI-használat rendben van, és nem is azt, hogy tilos. Azt mondja: **az AI-használat az új valóság, és ennek a valóságnak új etikai normákra van szüksége.**
 
-### LLM-aláírások a tudományos irodalomban: a számok
+### 16.2.6 LLM-aláírások a tudományos irodalomban: a számok
 
 A probléma nem elméleti. Andrew Gray (University College London) 2024-es tanulmánya kimutatta, hogy a PubMed adatbázisban 2024 első felében megjelent cikkek körülbelül **13,5%-a mutatott LLM-használatra utaló nyelvi mintákat** — ez hozzávetőlegesen **200 000 tudományos cikket** jelent egyetlen félév alatt, egyetlen adatbázisban.
 
@@ -126,7 +126,7 @@ A detekciós módszer nem szövegelemző szoftverekre, hanem lexikális mintáza
 
 Fontos: ezek a számok nem azt jelentik, hogy 200 000 tanulmányt teljes egészében AI írta. A legtöbb esetben valószínűleg részleges AI-asszisztenciáról van szó — egyes bekezdések, összefoglalók, bevezetések átírásáról. De maga a skála döbbenetes, és azt mutatja, hogy az AI-használat a tudományos írásban nem marginális jelenség, hanem tömeges gyakorlat.
 
-### Biobiztonsági kockázatok: az AI-asszisztált biológiai tervezés
+### 16.2.7 Biobiztonsági kockázatok: az AI-asszisztált biológiai tervezés
 
 A National Academies of Sciences, Engineering, and Medicine (NASEM) 2024-es jelentése részletesen vizsgálta az AI-alapú biológiai tervezés biztonsági kockázatait. A következtetéseik árnyaltak, és érdemes pontosan ismerni őket:
 
@@ -152,9 +152,9 @@ A 2018-as NASEM biobiztonsági keretrendszer négy dimenziót vizsgál: (1) a te
 
 ---
 
-## 16.2 AI etika a tudományos kutatásban
+## 16.3 AI etika a tudományos kutatásban
 
-### Szerzőség és attribúció: ki írta ezt a cikket?
+### 16.3.1 Szerzőség és attribúció: ki írta ezt a cikket?
 
 A tudományos szerzőség hagyományos kritériumait az **ICMJE (International Committee of Medical Journal Editors)** határozza meg. Az ICMJE négy feltételt szab a szerzőséghez:
 
@@ -169,7 +169,7 @@ A **CRediT (Contributor Roles Taxonomy)** rendszer ennél rugalmasabb keretet ad
 
 **A jelenlegi konszenzus (2026):** Az AI-t nem lehet szerzőként feltüntetni, de az AI-használatot kötelező nyilatkozni. A kérdés nem az „AI-t használtam-e?", hanem: „Hogyan, mire, milyen mértékben használtam, és hogyan ellenőriztem az eredményt?"
 
-### Elfogultság az AI-generált elemzésben
+### 16.3.2 Elfogultság az AI-generált elemzésben
 
 Az AI-rendszerek elfogultságai (bias) a tudományos kutatásban különösen veszélyesek, mert a kutatók hajlamosak az AI-outputot objektív, „gépies" eredménynek tekinteni — holott az AI-output éppúgy torzított, mint a képzési adatok, amelyekből tanult.
 
@@ -191,7 +191,7 @@ Az AI-rendszerek elfogultságai (bias) a tudományos kutatásban különösen ve
 >
 > *Forrás: precagri 15. fejezet (15.8.2 „Algoritmikus elfogultság")*
 
-### Az EU AI Act: kockázati osztályozás és kutatói kötelezettségek
+### 16.3.3 Az EU AI Act: kockázati osztályozás és kutatói kötelezettségek
 
 Az Európai Unió **AI Act** (2024, a szigorúbb szabályok 2026-ban lépnek hatályba) az első átfogó AI-szabályozás a világon. A törvény kockázatalapú megközelítést alkalmaz:
 
@@ -224,7 +224,7 @@ Ha a kutatócsoportod AI-rendszert használ hallgatók értékelésére, tanulá
 
 Az EUA jelentése figyelmeztet: a szabályozás számos szürke zónát hagy nyitva. Például nem egyértelmű, hogy egy kutató, aki AI-t használ a saját adatelemzéséhez (nem hallgatói értékeléshez), milyen kategóriába esik. Az ajánlás: **kezdj el párbeszédet a nemzeti szabályozó hatóságokkal, mielőtt a szabályokat rád erőltetik.**
 
-### Folyóirat-politikák az AI-használatról (2026-os állapot)
+### 16.3.4 Folyóirat-politikák az AI-használatról (2026-os állapot)
 
 A tudományos kiadók AI-politikái gyorsan fejlődnek, de 2026-ra kialakult egy viszonylagos konszenzus:
 
@@ -273,12 +273,12 @@ A COPE, amely a kiadói etika legfőbb nemzetközi testülete, 2023-ban adott ki
 
 ---
 
-## 16.3 Reprodukálhatóság az AI korában
+## 16.4 Reprodukálhatóság az AI korában
 
-> **🖼️ Ábra: A reprodukálhatóság hat pillére AI-alapú kutatásban**
+> **🖼️ 16.2. ábra: A reprodukálhatóság hat pillére AI-alapú kutatásban**
 > *Six pillars supporting a temple labeled "Reprodukálható tudomány", each pillar with an icon: data, code, model, prompt, environment, documentation, classical architecture style*
 
-### A kihívás: nem-determinisztikus kimenetek
+### 16.4.1 A kihívás: nem-determinisztikus kimenetek
 
 A tudományos reprodukálhatóság (reproducibility) azt jelenti, hogy egy másik kutató, azonos módszereket és adatokat használva, azonos eredményre jut. Az AI-eszközök esetében ez alapvető kihívásba ütközik: **a nyelvi modellek nem-determinisztikusak.** Azonos prompt, azonos modell, azonos beállítások mellett is eltérő outputot kaphatunk.
 
@@ -290,7 +290,7 @@ Ennek három fő oka van:
 
 3. **Modellfrissítések.** A szolgáltatók (OpenAI, Anthropic, Google) folyamatosan frissítik a modelljeiket — gyakran anélkül, hogy részletes changelog-ot adnának. Egy prompt, amely januárban kiváló eredményt adott, márciusban egészen mást produkálhat. A probléma különösen súlyos, mert a korábbi modellverziók gyakran elérhetetlenné válnak. Az OpenAI 2023-ban három nap előzetes figyelmeztetéssel megszüntette a Codex modellt, és ezzel százas nagyságrendű akadémiai tanulmányt tett reprodukálhatatlanná egyik napról a másikra.
 
-### Amit dokumentálni kell: az AI-módszerek rögzítése
+### 16.4.2 Amit dokumentálni kell: az AI-módszerek rögzítése
 
 A reprodukálhatóság biztosításának minimális feltételei az AI-asszisztált kutatásban:
 
@@ -305,7 +305,7 @@ A reprodukálhatóság biztosításának minimális feltételei az AI-asszisztá
 | **Kontextus / ráépített tudás** | RAG-forrásanyag, custom instructions | Az AI kontextusa befolyásolja a kimenetet |
 | **Kimenet (teljes)** | Az AI nyers válasza, szerkesztés előtt | A „miből indultunk ki" dokumentálása |
 
-### Version pinning, prompt logging, seed fixing
+### 16.4.3 Version pinning, prompt logging, seed fixing
 
 **Version pinning** azt jelenti, hogy a kutatás során végig egy konkrét modellverzióhoz ragaszkodunk. Az Anthropic és az OpenAI API-k lehetővé teszik specifikus modellverziók megjelölését (pl. `claude-3-5-sonnet-20241022` a `claude-3-5-sonnet-latest` helyett). Használd mindig a pontos verziószámot, soha a „latest" aliast.
 
@@ -317,7 +317,7 @@ A reprodukálhatóság biztosításának minimális feltételei az AI-asszisztá
 
 **Seed fixing:** Néhány API lehetővé teszi a `seed` paraméter beállítását, amely (közel-)determinisztikus kimeneteket eredményez. Az OpenAI 2023 végén vezette be ezt a funkciót. Fontos: a seed nem garantál tökéletes reprodukálhatóságot (a modellfrissítések ezt felülírják), de ugyanazon verzión belül nagymértékben csökkenti a variabilitást.
 
-### Az „AI Methods" szekció: sablon a cikkeidhez
+### 16.4.4 Az „AI Methods" szekció: sablon a cikkeidhez
 
 Ajánlott sablon, amelyet a Methods szekcióban használhatsz:
 
@@ -337,7 +337,7 @@ Ajánlott sablon, amelyet a Methods szekcióban használhatsz:
 
 Ez a sablon nem csak a reprodukálhatóságot szolgálja, hanem a bírálóknak is megadja a szükséges kontextust ahhoz, hogy értékeljék, mennyire megbízhatóak az AI-asszisztált eredmények.
 
-### Promptok, konfigurációk és ágens-definíciók megosztása
+### 16.4.5 Promptok, konfigurációk és ágens-definíciók megosztása
 
 A nyílt tudomány (open science) elve az AI-korban azt jelenti, hogy a promptokat, a konfigurációs fájlokat és az ágens-definíciókat ugyanúgy meg kell osztani a publikációval, mint az adatokat és a kódot. Gyakorlati javaslatok:
 
@@ -356,9 +356,9 @@ A cél nem az, hogy minden prompt tökéletesen reprodukálja az eredeti kimenet
 
 ---
 
-## 16.4 Elvek a felelős AI-hoz
+## 16.5 Elvek a felelős AI-hoz
 
-### A NASA öt alapelve
+### 16.5.1 A NASA öt alapelve
 
 A NASA 2024-ben közzétett öt alapelvet a felelős AI-használathoz, amelyeket az „5T" keretrendszernek nevez. Bár eredetileg az űrkutatásra fejlesztették, a tudományos kutatás egészére alkalmazhatók:
 
@@ -372,7 +372,7 @@ A NASA 2024-ben közzétett öt alapelvet a felelős AI-használathoz, amelyeket
 
 5. **Techniques (Technikák).** A megfelelő technikákat kell alkalmazni a megfelelő feladatokra. Nem minden feladatra való az LLM, és nem minden AI-eszköz egyformán megbízható.
 
-### Mollick négy szabálya mint etikai korlátok
+### 16.5.2 Mollick négy szabálya mint etikai korlátok
 
 Ethan Mollick *Co-Intelligence* című könyvében négy alapszabályt fogalmazott meg az AI-használathoz, amelyeket a 2. fejezetben ismertettünk. Most etikai perspektívából vizsgáljuk őket:
 
@@ -384,7 +384,7 @@ Ethan Mollick *Co-Intelligence* című könyvében négy alapszabályt fogalmazo
 
 4. **„Addig kérdezd, amíg el nem éred a korlátait"** → Csak akkor tudod, mikor NE használd az AI-t, ha ismered a korlátait. Ez az etikai felelősség gyakorlati oldala: teszteld, próbáld ki, buktatsd meg — és a tapasztalataid alapján dönts arról, mire alkalmas és mire nem.
 
-### Az EUA értékalapú megközelítése
+### 16.5.3 Az EUA értékalapú megközelítése
 
 Az European University Association (EUA) 2026-os jelentése a felelős AI-adoptációt az egyetemek alapértékeire építi, nem külső szabályokra. Az EUA megközelítés lényege:
 
@@ -400,7 +400,7 @@ Az European University Association (EUA) 2026-os jelentése a felelős AI-adopt�
 
 4. **Az AI-elfogultság tudatosítása az AI-írástudás szerves része.** Az oktatóknak és a kutatóknak ismerniük kell az AI-rendszerek elfogultságait — kulturális, nyelvi, időbeli — és képeseknek kell lenniük ezeket felismerni és kezelni.
 
-### Építsd fel a saját AI-etikai keretrendszered (gyakorlati feladat)
+### 16.5.4 Építsd fel a saját AI-etikai keretrendszered (gyakorlati feladat)
 
 A nagy elvek hasznosak, de a napi gyakorlatban konkrét döntéseket kell hoznod. Az alábbi gyakorlat segít kialakítani a saját, személyes AI-etikai keretrendszered:
 
@@ -440,12 +440,12 @@ Ez a keretrendszer nem univerzális — a tiéd. A lényeg: legyen tudatos, legy
 
 ---
 
-## 16.5 Merre tart mindez?
+## 16.6 Merre tart mindez?
 
-> **🖼️ Ábra: Az AI jövője a tudományban — lehetőségek és kockázatok mérlege**
+> **🖼️ 16.3. ábra: Az AI jövője a tudományban — lehetőségek és kockázatok mérlege**
 > *Balance scale illustration with opportunities (discovery, efficiency, collaboration) on one side and risks (bias, hallucination, dependency) on the other, golden scale on dark background*
 
-### Mollick négy forgatókönyve
+### 16.6.1 Mollick négy forgatókönyve
 
 Ethan Mollick *Co-Intelligence* könyvének zárófejezetében négy forgatókönyvet vázol fel az AI jövőjéről. Ezek nem jóslatok, hanem gondolatkísérletek — de mindegyik reális lehetőség, és mindegyiknek mások a következményei a tudósok számára.
 
@@ -486,7 +486,7 @@ Erről a forgatókönyvről Mollick ezt mondja: „Senki nem tudja, hogy van-e e
 
 Mollick fontos megjegyzése: **a 4. forgatókönyvre való rögeszmes fókuszálás tehetetlenné tesz.** Ha mindent az AGI-lencséjén nézünk, az emberi döntések irrelevánsnak tűnnek. Pedig a valószínűbb forgatókönyvekben (1-3) az emberi döntéseink nagyon is számítanak.
 
-### Teljesen autonóm tudományos felfedezés: az AI Scientist
+### 16.6.2 Teljesen autonóm tudományos felfedezés: az AI Scientist
 
 2026-ban a Nature-ben jelent meg egy tanulmány az „AI Scientist" koncepcióról — egy olyan rendszerről, amely önállóan generál kutatási hipotéziseket, tervez kísérleteket, futtatja a szimulációkat, elemzi az eredményeket, és megírja a tanulmányt. A cikk széles körű vitát váltott ki.
 
@@ -503,7 +503,7 @@ Mollick fontos megjegyzése: **a 4. forgatókönyvre való rögeszmes fókuszál
 
 Az AI Scientist nem a tudós helyettesítése, hanem egy eszköz, amely — mint minden hatékony eszköz — erősíti és felgyorsítja a mögötte álló szándékot, legyen az jó vagy rossz.
 
-### A tudós szerepének átalakulása
+### 16.6.3 A tudós szerepének átalakulása
 
 A tudós szerepe az AI korában három fázisban változik:
 
@@ -518,7 +518,7 @@ A tudós és az AI partneri viszonyban dolgoznak. Az AI nem csak feladatokat haj
 
 A kulcskérdés nem az, hogy **melyik fázisba kerülsz**, hanem az, hogy **tudatosan navigálod-e az átmenetet.** Aki passzívan sodródik, az elveszíti az irányítást a saját kutatói gyakorlata felett. Aki tudatosan alakítja az ember-AI együttműködést, az erősebb kutatóvá válik.
 
-### A könyv befejezése után: az első lépések
+### 16.6.4 A könyv befejezése után: az első lépések
 
 Ez a könyv utolsó fejezete. Ha idáig eljutottál, rendelkezel az alapvető tudással ahhoz, hogy AI-t etikusan, hatékonyan és reprodukálhatóan használj a kutatásodban. De a tudás önmagában nem elég — a gyakorlat az, ami számít.
 
@@ -539,7 +539,7 @@ Maradj naprakész. Az AI-eszközök, a szabályozás és a közösségi normák 
 
 ---
 
-## Záró gondolatok: Eucatastrophe
+## 16.7 Záró gondolatok: Eucatastrophe
 
 Tolkien fogalmát használva — amelyet Mollick az AI kontextusába helyez — a **eucatastrophe** a katasztrófa ellentéte: „a boldog végkifejlet öröme, vagy pontosabban: a hirtelen, örömteli fordulat."
 
@@ -555,7 +555,7 @@ A döntés a tiéd.
 
 ---
 
-## Fogalomtár
+## 16.8 Fogalomtár
 
 | Fogalom | Definíció |
 |---------|-----------|
@@ -577,7 +577,7 @@ A döntés a tiéd.
 
 ---
 
-## Hivatkozások
+## 16.9 Hivatkozások
 
 - Eaton, S.E. (2023). Postplagiarism: Transdisciplinary Ethics of AI-Augmented Work. *International Journal for Educational Integrity*, 19(1), 23.
 - Gray, A. (2024). ChatGPT contamination: Estimating the prevalence of LLMs in the scholarly literature. *arXiv preprint*.

@@ -12,7 +12,7 @@
 
 ---
 
-## Nyitó jelenet: A Tisza nem var
+## 18.1 Nyitó jelenet: A Tisza nem var
 
 Képzeld el a következő helyzetet. 2024 marciusaban a kárpáti forrásvidéken harom egymást követő ciklonrendszer huz at. Az első nap 40 mm eso esik az ukran hegyvidéken, a második nap újabb 55 mm, a harmadikon a hóolvadás is beindul. A Tisza felso szakaszan Rahonal a vízszint órák alatt emelkedik, és az árhullám megkezdi útját lefele -- Tokaj, Tiszafured, Kiskor, Szolnok, Szeged fele. A magyar vízügyi szolgálatnak harom kérdésre kell válaszolnia, és gyorsan:
 
@@ -35,12 +35,12 @@ Ez a fejezet végigvezet azon, hogyan alkalmazható az Agentikus AI Tudosoknak k
 
 ---
 
-## 18.1 A víztudomány digitalis forradalma
+## 18.2 A víztudomány digitalis forradalma
 
-> **🖼️ Ábra: A hidroinformatika öt pillére és az AI kapcsolódási pontjai**
+> **🖼️ 18.1. ábra: A hidroinformatika öt pillére és az AI kapcsolódási pontjai**
 > *Five-pillar diagram showing hydrology, GIS, computational modeling, data science, and real-time systems, with AI connection lines between all pillars, water-themed color palette*
 
-### 18.1.1 Mitol hidroinformatika a hidroinformatika?
+### 18.2.1 Mitol hidroinformatika a hidroinformatika?
 
 A hidroinformatika nem egyszerű vízügy plusz informatika. A vízproblémák eredendoen terbeliek (egy adott vízgyűjtőre, talajretegre, mederszelvenyre vonatkoznak), eredendoen idősorjellegúek (orak, napok, evszakok, evtizedek alatt fejlodnek), és eredendoen adatigenyesek (műholdas adatok, terepi meresek, időjárási modellek és demografiai adatbázisok osszekapcsolasat igenylik). Ez a harom jellemző egyutt magyarazza, miért különösen alkalmas a víztudomány az AI-ra: a feladatok többsége nagy mennyisegu, heterogen, térbeli-időbeli adat feldolgozásat és osszefuzeset igenylo, iteratív munka -- vagyis pontosan az, amiben az AI kituno.
 
@@ -54,7 +54,7 @@ A hidroinformatika ot pillerre epul:
 | **Adattudomany** | Meresi adatok feldolgozása | Az AI epittet pipeline-okat (7. fejezet) |
 | **Valos ideju rendszerek** | Operativ előrejelzés, monitoring | Az AI digitális ikreket futtat (10. fejezet) |
 
-### 18.1.2 A kezi elemzéstol az autonóm modellezésig
+### 18.2.2 A kezi elemzéstol az autonóm modellezésig
 
 A víztudomány fejlődése az elmult évtizedekben négy fázison ment at:
 
@@ -70,12 +70,12 @@ Ez a fejezet a negyedik fazisrol szol.
 
 ---
 
-## 18.2 AI a hidrologiai adatgyűjtésben
+## 18.3 AI a hidrologiai adatgyűjtésben
 
-> **🖼️ Ábra: Vízügyi adat-pipeline — az OVF vízmércéktől a riasztási rendszerig**
+> **🖼️ 18.2. ábra: Vízügyi adat-pipeline — az OVF vízmércéktől a riasztási rendszerig**
 > *Flow diagram showing water data pipeline: gauging stations → data cleaning → transformation → analysis → dashboard/alerts, with Hungarian river map background, technical illustration*
 
-### 18.2.1 A vízügyi adatok sokfélesége
+### 18.3.1 A vízügyi adatok sokfélesége
 
 Mielott bármi modellt építenél, adatokra van szükséged. A víztudományban az adatforrások szokatlanul sokfélék:
 
@@ -91,7 +91,7 @@ Mielott bármi modellt építenél, adatokra van szükséged. A víztudományban
 
 A kihivas nem az, hogy ezek az adatok nem leterne -- hanem az, hogy mindegyik mas formatumban, mas koordináta-rendszerben, mas idofelbontással és mas minőségi szinttel érkezik. Az adategyesítés (data fusion) és a minőség-ellenőrzés (quality control) a hidrológus munkaidejanak jelentos reszet emészti fel.
 
-### 18.2.2 Pipeline-ok a vízügyi adatgyűjtéshez
+### 18.3.2 Pipeline-ok a vízügyi adatgyűjtéshez
 
 A 7. fejezetben megtanultad, hogyan epithetod fel az adat-pipeline-ok ot szakaszat: bevitel, tisztitas, transzformacio, elemzés, kimenet. A vízügyi kontextusban ez igy nez ki:
 
@@ -187,7 +187,7 @@ def check_alerts(db_path):
 
 Ez a peldakod természetesen egyszerűsitett -- az eles rendszerben kezelni kell a halozati hibakat, az API rate limit-et, a hianyzo adatokat és a naplozast. A lenyeg az, hogy az AI képes percek alatt letrehozni egy mukodo pipeline-vazat, amelyet aztán te tesztelsz és finomitasz.
 
-### 18.2.3 Minoseg-ellenorzes AI-val
+### 18.3.3 Minoseg-ellenorzes AI-val
 
 A vízügyi mérések minőség-ellenőrzése (quality control, QC) kritikus fontossagu. Egy hibas szenzor, amely 999 cm-es vízszintet jelent, vagy egy lefagyott csapadekmerő, amely hetekig nullat küld, hamis riasztast valthat ki vagy -- ami rosszabb -- elmarado riasztast. A hagyományos QC szabalyalapu: ha az érték egy eloirt tartományba esik és az elterese az elozo merestol nem haladja meg a kuszoberteket, elfogadjuk.
 
@@ -201,9 +201,9 @@ A 7. fejezet pipeline-architektúrájat alkalmazva a QC lépést a tisztitasi sz
 
 ---
 
-## 18.3 AI-támogatott terepanalízis
+## 18.4 AI-támogatott terepanalízis
 
-### 18.3.1 A vízgyűjtő-lehatárolás mint kódgenerálási feladat
+### 18.4.1 A vízgyűjtő-lehatárolás mint kódgenerálási feladat
 
 A 5. fejezetben megtanultad, hogyan használhatod az AI-t kódolási asszisztenskent. A víztudományban az egyik leggyakoribb feldolgozási lanc a vízgyűjtő-lehatárolás DEM-bol:
 
@@ -233,7 +233,7 @@ Az AI nehany masodperc alatt generálja a teljes szkriptet, beleertve az importo
 | Debuggolsz orakig | Az AI javitja a hibakat |
 | Egyetlen vízgyűjtőre | Az AI ciklussa terjeszti ki |
 
-### 18.3.2 LLM-ek a DEM-feldolgozás hibainak diagnosztizalasahoz
+### 18.4.2 LLM-ek a DEM-feldolgozás hibainak diagnosztizalasahoz
 
 A terepfeldolgozás gyakori problémaja, hogy a vízgyűjtő-lehatárolás nem felel meg a varakozasoknak: tul kicsi, tul nagy, vagy "furcsaan" nez ki a terepen. Az LLM-ek kivaloan alkalmasak a hiba diagnosztizalasara:
 
@@ -259,7 +259,7 @@ A terepfeldolgozás gyakori problémaja, hogy a vízgyűjtő-lehatárolás nem f
 
 Ez a fajta diagnosztikus gondolkodas -- amit a 24. fejezetben a HydroGIS konyv ágens AI-janal lattunk -- pontosan az, amire a tudos szükségel: nem újabb kodsort, hanem **megertesi tamogatast**.
 
-### 18.3.3 Vizhalozat-kinyeres és jellemzes
+### 18.4.3 Vizhalozat-kinyeres és jellemzes
 
 A vízgyűjtő-lehatárolás után a vizhalozat kinyerese kovetkezik. Az AI itt is segit: generálhat szkriptet, amely TauDEM-mel vagy WhiteboxTools-szal:
 
@@ -273,9 +273,9 @@ A lenyeg nem az, hogy az AI jobb programozó, mint te -- hanem az, hogy a felada
 
 ---
 
-## 18.4 Gepi tanulas a vízszint-előrejelzésben
+## 18.5 Gepi tanulas a vízszint-előrejelzésben
 
-### 18.4.1 Miért alkalmas az LSTM az arvizelőrejelzésre?
+### 18.5.1 Miért alkalmas az LSTM az arvizelőrejelzésre?
 
 Az arvizelőrejelzés lenyegeben idősor-probléma: a mult csapadek- és vízszint-adataiból kell elojejelezni a jovobelieket. A 6. fejezetben általánosan targyaltuk az AI-támogatott modellezést; itt a hidrologiai alkalmazást vesszuk részletesen.
 
@@ -285,7 +285,7 @@ A Long Short-Term Memory (LSTM) halozat különösen alkalmas erre a feladatra, 
 2. **Tobbresu bemenetet kezel.** Csapadek, homerseklet, felso szakaszi vizallás, talajnedvesseg, hovas -- mind parhuzamosan epithetok a modellbe.
 3. **Nem linearis osszefuggeset tanul.** A vízgyűjtő valasza a csapadekra nem linearis: szaraz talajon 10 mm eso alig okoz lefolyast, telitett talajon ugyanennyi arhullámot indithat.
 
-### 18.4.2 Szamitasi példa: vízszint-előrejelzés a Tiszan
+### 18.5.2 Szamitasi példa: vízszint-előrejelzés a Tiszan
 
 Vegyunk egy konkrét feladatot: napi vízszint-elojelezés a Tisza szolnoki szelvenyben, 1-3 napos eloretekentéssel.
 
@@ -321,7 +321,7 @@ Vegyunk egy konkrét feladatot: napi vízszint-elojelezés a Tisza szolnoki szel
 
 A 23. fejezet (HydroGIS) részletesen bemutatja, hogy egy ilyen LSTM-modell 0,87-os NSE-t erhet el a teszthalmazon -- jol megragadja az árvizi csúcsok idoziteset, bar szisztematikusan alulbecsuli a legnagyobb esemenyeket. Ez a korlat nem kizarolag az adatvezérelt megközelítésekre jellemző -- a fizikai alapu modellek is küszködnek a szélsőségekkel --, de az ML-modelleknkel különösen fontos felismerni, mert nincs fizikai korlat, amely megakadalyozna a valoszinütlen eredmenyeket.
 
-### 18.4.3 Talalajvízszint-elojelezés
+### 18.5.3 Talalajvízszint-elojelezés
 
 A talajvízszint-előrejelzés mas jellegú probléma. A felszin alatti vízszint változásai lassabbak (hetek-honapok), a bemeneti adatok ritkabbak (heti-havi meresek), és a fizikai osszefuggesek bonyolultabbak (a Darcy-torveny háromdimenziós heterogen kozegben ervenyes). Megis, a gepi tanulas itt is eredmenyes:
 
@@ -337,7 +337,7 @@ A 6. fejezet modellezési keretrendszeret koveteve:
 3. **Modelltanitas:** scikit-learn gradient boosting vagy XGBoost
 4. **Kiertekeles:** R2, RMSE, és -- ami különösen fontos -- a szaraz nyari kisviz-időszakok helyes elojelzesee
 
-### 18.4.4 Fizika-informalt gepi tanulas (PIML)
+### 18.5.4 Fizika-informalt gepi tanulas (PIML)
 
 A legigéeretesebb fejlemeny a fizika-informalt gepi tanulas (Physics-Informed Machine Learning, PIML), amely a fizikai egyenleteket a neuralis halozat veszteségfuggvenyebe epiti be. Ahelyett, hogy az LSTM szabadon tanulna tetszoleges osszefuggeseket, a veszeségfuggvenyben butetjuk azokat a megoldásokat, amelyek fizikailag lehetetlenek:
 
@@ -358,12 +358,12 @@ Ez a megközelítés ot az 5. fejezet (AI-támogatott kódgenerálás) és a 6. 
 
 ---
 
-## 18.5 Matematikai modellezés AI-val: egyenletektol a kodig
+## 18.6 Matematikai modellezés AI-val: egyenletektol a kodig
 
-> **🖼️ Ábra: A Tisza digitális ikre — valós idejű árhullám-szimuláció**
+> **🖼️ 18.3. ábra: A Tisza digitális ikre — valós idejű árhullám-szimuláció**
 > *3D visualization of the Tisza river basin digital twin, showing flood wave propagation with color-coded water levels, holographic style on dark background*
 
-### 18.5.1 A víztudomány alapegyenletei
+### 18.6.1 A víztudomány alapegyenletei
 
 A hidrologianak harom alapveto parciális differencialegyenlete van, amelyekkel a kutato rendszeresen talalkozik:
 
@@ -389,7 +389,7 @@ $$S_y \frac{\partial h}{\partial t} = \frac{\partial}{\partial x}\left(K h \frac
 
 ahol $S_y$ a fajlagos hozam, $h$ a vízszint, $K$ a szivargasi tenyezo, $W$ a forras/nyelo tagok (utanpotlas, szivattyas).
 
-### 18.5.2 AI mint matematikai fordító
+### 18.6.2 AI mint matematikai fordító
 
 A 6. fejezet bemutatta, hogyan hasznalhato az AI arra, hogy kutatasi kerdest matematikai formaba, majd kodra fordítson. A víztudományban ez igy nez ki a gyakorlatban:
 
@@ -407,7 +407,7 @@ Az AI a Boussinesq-egyenlet 2D veges differencia diszkretizaciojat generálja, a
 2. **Kerd meg az AI-t, magyarazza el a lepeseket.** "Miért eztet az idolepest valasztottad? Mi tortenik, ha a szivargasi tenyezo terben valtozik?"
 3. **Validald egyszerű esettel.** Kerd meg az AI-t, hogy futtasson egy egydimenziós analitikus megoldással osszevetheto tesztesetet.
 
-### 18.5.3 A Saint-Venant-egyenletek numerikus implementacioja
+### 18.6.3 A Saint-Venant-egyenletek numerikus implementacioja
 
 A Saint-Venant-egyenletek numerikus megoldásanak generálasa az egyik legösszetettebb feladat, amelyet LLM-től kerhetsz. A teljes egyenletrendszer (dinamikus hullam) numerikusan instabil lehet, ezert a vízügyben gyakran egyszerűsitett valtozatokat használnak:
 
@@ -435,9 +435,9 @@ Ez a fajta fizikai konzultació -- amit a 23. fejezet (HydroGIS) "MI mint a hidr
 
 ---
 
-## 18.6 Adat-pipeline-ok a hidrologiai monitoringhoz
+## 18.7 Adat-pipeline-ok a hidrologiai monitoringhoz
 
-### 18.6.1 Az operativ monitoring kihívásai
+### 18.7.1 Az operativ monitoring kihívásai
 
 Egy operativ vízügyi monitoring-rendszer nem egyszeri elemzés -- folyamatosan, automatikusan, megbizhataon kell mukodnie. A 7. fejezet pipeline-koncepcioját a vízügyi kontextusra alkalmazva az operativ pipeline-nak a következő kovetelményeknek kell megfelelnie:
 
@@ -449,7 +449,7 @@ Egy operativ vízügyi monitoring-rendszer nem egyszeri elemzés -- folyamatosan
 | **Megbizhatsag** | 99,9% uptime, automatikus ujraindulas hiba eseten |
 | **Skálazhatosag** | 100+ allomas, 10+ paraméter, eseemennyalapú felskalazas |
 
-### 18.6.2 A vízügyi monitoring pipeline felépítese
+### 18.7.2 A vízügyi monitoring pipeline felépítese
 
 Egy teljes vízügyi monitoring pipeline a 7. fejezet architektúrájat követi, de domain-specifikus elemekkel:
 
@@ -506,7 +506,7 @@ class HydroMonitoringPipeline:
 
 A pipeline-t a 7. fejezet segedprogramjaival (cron job, Airflow, Prefect) utemezed -- például órákeneti futatassal, külön napi batch-futatassal a műholdas adatokhoz.
 
-### 18.6.3 AI a pipeline-generálsaban
+### 18.7.3 AI a pipeline-generálsaban
 
 Az igazi attores az, amikor nem te irod a pipeline-t, hanem az AI-val iratod:
 
@@ -522,9 +522,9 @@ Az AI generálja a teljes Prefect-flow-t, a dekoratorokkal, a hibakezeléssel é
 
 ---
 
-## 18.7 RAG a vízügyi szabalyozashoz
+## 18.8 RAG a vízügyi szabalyozashoz
 
-### 18.7.1 A vízügyi jogi környezes bonyolultsaga
+### 18.8.1 A vízügyi jogi környezes bonyolultsaga
 
 A vízügyi munka nem csak fizika és modellezés -- a szabályozási koernyezt is ismerni kell. Magyarországon és az EU-ban a vízügyi jogszabalyok tobb retegu rendszert alkotnak:
 
@@ -540,7 +540,7 @@ A vízügyi munka nem csak fizika és modellezés -- a szabályozási koernyezt 
 
 Egy kutato, aki vízgyűjtő-gazdálkodási tervet keszit, vagy környezeti hatastanulmanyt ir, rendszeresen kell hivatkoznia ezekre a dokumentumokra. A hagyományos megközelítés: PDF-eket bongeszni, Ctrl+F-fel keresni. Ez lassúu és hibara hajlamos.
 
-### 18.7.2 RAG-rendszer vízügyi dokumentumokra
+### 18.8.2 RAG-rendszer vízügyi dokumentumokra
 
 A 9. fejezetben megtanultad, hogyan epithetoz RAG (Retrieval-Augmented Generation) rendszert. A vízügyi alkalmazás pontosan követi az ott leirt architektuarat:
 
@@ -581,9 +581,9 @@ A RAG-rendszer erteke nem az, hogy tokeletes jogi tanacsot ad -- hanem az, hogy 
 
 ---
 
-## 18.8 Hidrologiai digitális ikrek
+## 18.9 Hidrologiai digitális ikrek
 
-### 18.8.1 Mi a digitális iker a víztudományban?
+### 18.9.1 Mi a digitális iker a víztudományban?
 
 A 10. fejezet bevezette a digitalis iker (digital twin) fogalmat: egy fizikai rendszer virtualis masata, amely valos ideju szenzor-adatokkal szinkronban fut. A víztudományban a digitalis iker egy vízgyűjtő-szintű szimuláció, amely:
 
@@ -592,7 +592,7 @@ A 10. fejezet bevezette a digitalis iker (digital twin) fogalmat: egy fizikai re
 3. **Elorejeelez:** "mi tortenik, ha...?" kerdesekre valaszol
 4. **Tanul:** minden új mérés javitja a modell pontossagat
 
-### 18.8.2 Egy vízgyűjtő-szintű digitalis iker felépítése
+### 18.9.2 Egy vízgyűjtő-szintű digitalis iker felépítése
 
 Peldakent vegyuk a **Zala vízgyűjtő** -- a Balaton legnagyobb mellekfollyjaat --, amelyet a HydroGIS koonyv 24. fejezete is példaként hasznalt az agens-alapú kalibrálashoz.
 
@@ -642,7 +642,7 @@ A digitalis iker erteke a "mi tortenik, ha?" kerdesek megválaszolasaaban rejlik
 - **Mi tortenik, ha a Balaton szintje 20 cm-rel emelkedik?** A modell a megvaltozott peremfeltetelbol szamolja a hatteráramlást a Zala alluvilialis vizadojaaban.
 - **Mi tortenik, ha új termelokutat telepitenek Zalaegerszeg mellé?** A talajvíz-modul szamolja a leszivast és annak hatasát a Zala alaphozamara.
 
-### 18.8.3 Az AI szerepe a digitalis ikerben
+### 18.9.3 Az AI szerepe a digitalis ikerben
 
 A 10. fejezetben targyalt digitalis iker elveket a vízgyűjtőra alkalmazva az AI harom szintén mukodik:
 
@@ -654,9 +654,9 @@ A 10. fejezetben targyalt digitalis iker elveket a vízgyűjtőra alkalmazva az 
 
 ---
 
-## 18.9 AI ágensek az autonóm hidrologiai modellezésben
+## 18.10 AI ágensek az autonóm hidrologiai modellezésben
 
-### 18.9.1 A kalibrációs probléma mint agens-feladat
+### 18.10.1 A kalibrációs probléma mint agens-feladat
 
 A HydroGIS konyv 24. fejezete részletesen bemutatja, hogyan alkalmazható az ágens AI a hidrologiai modellek autonómo modellezésere. A lenyeget a kovetkezőkben foglaljuk ossze, és osszekapcsoljuk az "Agentikus AI Tudosoknak" koonyv 11. és 12. fejezetenek agens-architekturájaval.
 
@@ -681,7 +681,7 @@ Ez pontosan az a **tervezes--vegrehajas--ertekelés--iteráció** ciklus, amelye
 | **Memoria** | Korabbi paraméterkeszletek és teljesitmenyuk naploja |
 | **Iteracio** | Parametermodositas a diagnozis alapján |
 
-### 18.9.2 A HydroGIS 24. fejezet pelda-agense
+### 18.10.2 A HydroGIS 24. fejezet pelda-agense
 
 A HydroGIS konyv 24. fejezete egy teljes peldaval szemlelteti az agens-alapu kalibrációt: a **Zala folyo zalaegerszegi** vízgyűjtőjere alkalmazva a GR4J modellt. A pelda kovetkezményei az AI-ágensek megértése szemontjabol (11--12. fejezet):
 
@@ -707,7 +707,7 @@ Az ágens futtatja a modellt, kiszamolja az NSE-t (0,59 az első iterációban),
 | Dokumentalas | Keresesi naplo | Ervelesi naplo (természetes nyelven) |
 | Elfogadhato megoldás eléresi ideje | Orak | Percek |
 
-### 18.9.3 Agens epites a 12. fejezet keretrendszerevel
+### 18.10.3 Agens epites a 12. fejezet keretrendszerevel
 
 A 12. fejezetben megtanultad, hogyan epitesz AI ágenseket. A hidrologiai modellezési ágens a következő eszkozkeszlettel mukodik:
 
@@ -758,7 +758,7 @@ Szabalyok:
 
 A 12. fejezet lepesei szerint: (1) definiald az eszközöket, (2) ird meg a rendszer-promptot, (3) allitsd be a memoria-kezelest, (4) futtasd az agens-hurkot, (5) ellenorizd az eredményt.
 
-### 18.9.4 Multi-ágens rendszerek a vízgyűjtő-modellezésben
+### 18.10.4 Multi-ágens rendszerek a vízgyűjtő-modellezésben
 
 A 11. fejezet targyalta a multi-ágens rendszereket, ahol tobb ágens dolgozik egyutt. A vizgyujtö-modellezésben ez igy nez ki:
 
@@ -771,9 +771,9 @@ A négy ágens parhuzamosan és szekvencialisan dolgozik (az adat-ágens kesziti
 
 ---
 
-## 18.10 Magyar vizttudomanyi kontextus
+## 18.11 Magyar vizttudomanyi kontextus
 
-### 18.10.1 Magyarország egyedi hidrologiai helyzete
+### 18.11.1 Magyarország egyedi hidrologiai helyzete
 
 Magyarország vízügyi szemponttbol kulönleges helyzettben van:
 
@@ -783,7 +783,7 @@ Magyarország vízügyi szemponttbol kulönleges helyzettben van:
 - **Töltesrendszer:** Toöbb mint 4200 km elsödleges arvizveedelmi töoltes -- Europa egyik legsürübb rendszere.
 - **Talajvizfuggöseg:** Az Alfold telepuleseinek jelentős resze a sekely talajvízbol nyeri az ivovizet.
 
-### 18.10.2 A Tisza: Europá egyik legkomplexebb folyorendszere
+### 18.11.2 A Tisza: Europá egyik legkomplexebb folyorendszere
 
 A Tisza vízgyűjtője (157 186 km2) Ukrajna, Romania, Szlovakia, Magyarország és Szerbia területere terjed ki. Az archullamok a kárpáti forrasvidekrol erkeznek, és a lapos magyar szakaszon lassan, de annál pusztitobban vonulnak vegig.
 
@@ -798,7 +798,7 @@ AI-alkalmazási lehetőségek a Tiszan:
 | Operativ elojelzesi rendszser | Digitalis iker | 10. fejezet (digitalis iker) |
 | Modell-kalibráció | Agens AI | 11--12. fejezet (ágensek) |
 
-### 18.10.3 A Duna és Budapest
+### 18.11.3 A Duna és Budapest
 
 Budapest ivoviz-ellatásának mintegy felet parti szuresü kutak biztositjak a Duna menten. Ezek a rendszerek a felszíni és felszín alatti vizmodellezés osszekapcsolasat igenylik -- pontosan az a feladat, amelyre a digitalis iker (18.8. szakasz) alkalmas.
 
@@ -810,7 +810,7 @@ A 2013-as dunai árviz Budapestneel 891 cm-es tetöszintet produkalt. Az AI-tám
 4. **RAG-lekerdezees** a katasztrofaveedelmi protokollokrol (9. fejezet)
 5. **Agens** az elorejelezes és a töltés-terhelees összevetesere (11. fejezet)
 
-### 18.10.4 A Hortobagy és az Alfold talajvíze
+### 18.11.4 A Hortobagy és az Alfold talajvíze
 
 A Hortobagy -- UNESCO Vilagöoroksegi Helyszin -- a sekely talajvíztol fugg, amely fenntartja szikes mocsarait és pusztait. A víztudomány számára ket kulcskerdes:
 
@@ -819,7 +819,7 @@ A Hortobagy -- UNESCO Vilagöoroksegi Helyszin -- a sekely talajvíztol fugg, am
 
 A Debreceni Egyetem környezettudomaanyi kutatásainak kontextusa (amelyet a 6. fejezetben Kovacs Marta peldajan szemleltettunk) pontosan ez: a Hortobagy vizhaztartasat vizsgaalni az AI eszkozoeivel.
 
-### 18.10.5 Vizugyi intezmenyek és adatforrások
+### 18.11.5 Vizugyi intezmenyek és adatforrások
 
 | Intezmeny | Adatforrás | AI-alkalmazás |
 |-----------|------------|---------------|
@@ -831,9 +831,9 @@ A Debreceni Egyetem környezettudomaanyi kutatásainak kontextusa (amelyet a 6. 
 
 ---
 
-## 18.11 Gyakorlati feladatok
+## 18.12 Gyakorlati feladatok
 
-### 18.11.1 Feladat: Vízszint-monitoring pipeline
+### 18.12.1 Feladat: Vízszint-monitoring pipeline
 
 **Cél:** Építs egy automatizált pipeline-t, amely letölti és feldolgozza a Tisza három állomásának (Tokaj, Szolnok, Szeged) vízszintadatait.
 
@@ -853,7 +853,7 @@ A Debreceni Egyetem környezettudomaanyi kutatásainak kontextusa (amelyet a 6. 
 
 ---
 
-### 18.11.2 Feladat: Vízgyűjtő-lehatárolás AI-val
+### 18.12.2 Feladat: Vízgyűjtő-lehatárolás AI-val
 
 **Cél:** AI-asszisztens segítségével határolj le egy vízgyűjtőt DEM-ből.
 
@@ -869,7 +869,7 @@ A Debreceni Egyetem környezettudomaanyi kutatásainak kontextusa (amelyet a 6. 
 
 ---
 
-### 18.11.3 Feladat: LSTM vízszint-előrejelzés
+### 18.12.3 Feladat: LSTM vízszint-előrejelzés
 
 **Cél:** Építs egy egyszerű LSTM modellt, amely a Tisza szolnoki vízszintjét jelzi előre.
 
@@ -889,7 +889,7 @@ A Debreceni Egyetem környezettudomaanyi kutatásainak kontextusa (amelyet a 6. 
 
 ---
 
-### 18.11.4 Feladat: RAG chatbot vízügyi jogszabalyokhoz
+### 18.12.4 Feladat: RAG chatbot vízügyi jogszabalyokhoz
 
 **Cél:** Építs egy egyszerű RAG-rendszert a Víz Keretirányelv szövegére.
 
@@ -911,7 +911,7 @@ A Debreceni Egyetem környezettudomaanyi kutatásainak kontextusa (amelyet a 6. 
 
 ---
 
-### 18.11.5 Feladat: Hidrológiai kalibrációs ágens
+### 18.12.5 Feladat: Hidrológiai kalibrációs ágens
 
 **Cél:** Építs egy egyszerű ágens-hurkot, amely egy csapadék-lefolyás modellt kalibrál.
 
@@ -933,7 +933,7 @@ A Debreceni Egyetem környezettudomaanyi kutatásainak kontextusa (amelyet a 6. 
 
 ---
 
-## Összefoglalás
+## 18.13 Összefoglalás
 
 Ebben a fejezetben a könyv teljes eszköztárát a víztudományra alkalmaztuk:
 

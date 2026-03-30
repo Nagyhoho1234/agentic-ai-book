@@ -14,7 +14,7 @@
 
 ## 9.1 Amikor a ChatGPT nem ismeri a kutatásodat
 
-> **🖼️ Ábra: A RAG-pipeline lépései**
+> **🖼️ 9.1. ábra: A RAG-pipeline lépései**
 > *Vízszintes folyamatábra: Dokumentumok → Chunking (darabolás) → Embedding (vektorizálás) → Vektor-adatbázis → Keresés (retrieval) → LLM válaszgenerálás. Minden lépésnél rövid magyarázat.*
 
 
@@ -44,15 +44,15 @@ Erre a kérdésre két fundamentálisan különböző válasz létezik, és ebbe
 
 Mielőtt belevágnánk a részletekbe, definiáljuk a két kulcsfogalmat, amelyek köré ez a fejezet épül.
 
-### RAG --- Retrieval-Augmented Generation (visszakeresés-kiegészített generálás)
+### 9.2.1 RAG --- Retrieval-Augmented Generation (visszakeresés-kiegészített generálás)
 
 A **RAG (Retrieval-Augmented Generation)** egy olyan architektúra, amelyben az LLM nem a saját „fejéből" válaszol, hanem először visszakeres releváns szövegrészleteket egy külső tudásbázisból, majd ezek kontextusában fogalmazza meg a választ. Olyan ez, mintha a diákod vizsgán használhatná a jegyzeteit: nem kell mindent fejből tudnia, de tudnia kell, hol keresse és hogyan értelmezze az információt.
 
-### Fine-tuning (finomhangolás)
+### 9.2.2 Fine-tuning (finomhangolás)
 
 A **fine-tuning (finomhangolás)** ezzel szemben magát a modellt változtatja meg: további tanítópéldákat adunk neki, amelyekből megtanulja az adott terület nyelvét, struktúráját és mintáit. Ez olyan, mintha a diákot egy intenzív kurzusra küldenéd: utána már fejből tudja az anyagot, de a kurzus drága és időigényes.
 
-### Mikor melyiket használd?
+### 9.2.3 Mikor melyiket használd?
 
 | Szempont | RAG | Fine-tuning |
 |----------|-----|-------------|
@@ -684,7 +684,7 @@ Ez ellentmond annak a széles körben elterjedt tévhitnek, hogy a fine-tuning-h
 
 ## 9.7 Összefoglalás: a tudásgazdagítás döntési fája
 
-> **🖼️ Ábra: RAG vs. Fine-tuning vs. Prompt Engineering döntési fa**
+> **🖼️ 9.2. ábra: RAG vs. Fine-tuning vs. Prompt Engineering döntési fa**
 > *Döntési fa: "Van saját dokumentumgyűjteményed?" → "Változik-e gyakran?" → "Mekkora a költségvetésed?" Leveleken: RAG, Fine-tuning, Prompt Engineering, és azok kombinációi.*
 
 
@@ -722,7 +722,7 @@ A feladat: az LLM a saját adataimból válaszoljon
 
 ## 9.8 Kulcsfogalmak összefoglalása
 
-> **🖼️ Ábra: A RAG-rendszer komponensei és azok kapcsolatai**
+> **🖼️ 9.3. ábra: A RAG-rendszer komponensei és azok kapcsolatai**
 > *Rendszer-architektúra diagram: Felhasználói kérdés → Retriever → Vektor-adatbázis → Releváns chunk-ok → LLM → Válasz (forrás-hivatkozásokkal). Feedback-hurok jelölve.*
 
 
@@ -745,7 +745,7 @@ A feladat: az LLM a saját adataimból válaszoljon
 
 ---
 
-## Irodalom és további olvasmányok
+## 9.10 Irodalom és további olvasmányok
 
 - Lewis, P. et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. *NeurIPS*.
 - NASA SMD AI Initiative (2024). LLM Cookbook for Open Science. GitHub repository.

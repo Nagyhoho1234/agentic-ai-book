@@ -10,7 +10,7 @@
 > - **Szükséges eszközök:** Csak böngésző
 > - **Kapcsolódó fejezetek:** 2. fejezet (promptolás), 16. fejezet (etika és szerzői integritás)
 
-## Nyitó jelenet: Hajnali három, és a határidő holnap van
+## 3.1 Nyitó jelenet: Hajnali három, és a határidő holnap van
 
 Képzeld el a következő helyzetet. Nóra, egy debreceni környezettudományi kutató, három éve dolgozik a Tisza mikroplasztik-szennyezettségéről szóló kutatásán. Az eredmények megvannak, az adatok tiszták, a konklúzió erős. De a kéziratot az *Environmental Science & Technology*-nak kell benyújtania — angolul, anyanyelvi szinten, a folyóirat sajátos formátumában és hangnemében. Nóra angolul jól olvas, konferenciákon előad, de egy 8000 szavas kézirat stilisztikai csiszolása más kategória. A professzionális lektorálás 400-800 euró, a határidő pedig holnap.
 
@@ -20,17 +20,17 @@ Ez a fejezet végigvezet a tudományos írás és kommunikáció teljes folyamat
 
 ---
 
-## 3.1 Irodalomáttekintés AI-val
+## 3.2 Irodalomáttekintés AI-val
 
-### A probléma mérete
+### 3.2.1 A probléma mérete
 
 Naponta több mint 4000 új orvos-biológiai cikk jelenik meg. A természettudományok más területein sem jobb a helyzet. Egy átfogó irodalomáttekintés, ami 15 éve még egy-két hét intenzív munkával megoldható volt, ma fizikailag lehetetlen kézzel elvégezni. Nem azért, mert a kutatók lustábbak lennének — egyszerűen több a publikáció, mint amennyit emberi szem képes feldolgozni.
 
 Az AI nem helyettesíti a kritikus olvasást, de drámaian felgyorsítja az előszűrést: segít megtalálni a releváns cikkeket, összefoglalni a tartalmakat, kiemelni a kulcsmegállapításokat, és ami a legértékesebb — feltárni a diszciplínák közötti kapcsolatokat.
 
-### Cikkek összefoglalása
+### 3.2.2 Cikkek összefoglalása
 
-> **🖼️ Ábra: A progresszív promptolás munkafolyamata irodalomfeldolgozáshoz**
+> **🖼️ 3.1. ábra: A progresszív promptolás munkafolyamata irodalomfeldolgozáshoz**
 > *Tölcsér-diagram: általános kérdés → szűkítő kérdés → specifikus részlet. Minden lépésnél egy példa-prompt és az AI válaszának vázlata.*
 
 
@@ -56,7 +56,7 @@ Majd szűkíted:
 
 Ez a progresszív promptolás — általánosról a specifikusra haladva — sokkal mélyebb megértést ad, mint egyetlen kérdés.
 
-### Kulcsmegállapítások kiemelése
+### 3.2.3 Kulcsmegállapítások kiemelése
 
 Amikor sok cikket kell gyorsan áttekintened, az AI „szkennelő" képessége különösen hasznos:
 
@@ -67,7 +67,7 @@ Az LLM képes a „skimming and scanning" stratégiát alkalmazni — gyorsan az
 > **Ne csináld!**
 > Ne engedd, hogy az AI irja meg a keziratod erdemben uj reszet (bevezetes, targyalas, konkluzio) a te kozremeukodésed nelkul. Az AI remek szerkeszto, stilisztikai tanaacsado es osszefoglalo — de ha a gondolatmenetet is o irja, az a te tudomanyos hangod eltuneseet jelenti, es a biralok ezt eszik meg fogjak. Hasznald szerkesztesre, ne szerzosegre.
 
-### Kutatási rések azonosítása
+### 3.2.4 Kutatási rések azonosítása
 
 Ez az AI egyik legértékesebb képessége az irodalomfeldolgozásban — és egyben az egyik legkockázatosabb. Kérheted:
 
@@ -79,7 +79,7 @@ Az AI válasza jellemzően releváns és jól strukturált lesz, de két fontos 
 
 2. **A hallucinációs kockázat itt különösen magas.** Az AI „kutatási rés"-nek tüntethet fel valamit, amit valójában már részletesen vizsgáltak — csak éppen nem volt a kontextusablakában az a cikk. Mindig ellenőrizd a javasolt réseket a Scopus, Web of Science vagy Google Scholar segítségével.
 
-### Diszciplínák közötti kapcsolatok feltárása
+### 3.2.5 Diszciplínák közötti kapcsolatok feltárása
 
 A szemantikus elemzésen alapuló AI eszközök itt mutatják a legnagyobb erejüket. A hagyományos kulcsszavas keresés megköveteli, hogy ismerd a megfelelő terminológiát — de mi van, ha egy másik tudományterületen ugyanazt a problémát teljesen más szavakkal írják le?
 
@@ -99,9 +99,9 @@ Ahogy az OECD (2023) jelentése is kiemeli, a szemantikus elemzésen alapuló es
 
 ---
 
-## 3.2 Kézirat írása és szerkesztése
+## 3.3 Kézirat írása és szerkesztése
 
-### Nyelvi javítás: több mint nyelvtanellenőrzés
+### 3.3.1 Nyelvi javítás: több mint nyelvtanellenőrzés
 
 A legkézenfekvőbb és talán legértékesebb felhasználás: a kézirat nyelvi csiszolása. De az AI nem egyszerűen egy fejlettebb Grammarly — alapvető különbség, hogy *megmagyarázza* a javításait.
 
@@ -121,7 +121,7 @@ Ez a „javíts és magyarázd" megközelítés nem csak jobb szöveget eredmén
 
 Egyetlen mondat — öt javítás, mindegyik mögött konkrét stilisztikai vagy nyelvtani indok. Ha ezt 30 oldalon végigcsinálod, nemcsak jobb kéziratod lesz, hanem jobb íróvá is válsz.
 
-### Az érvelés átstrukturálása
+### 3.3.2 Az érvelés átstrukturálása
 
 Nemcsak a mondatok szintjén, hanem a bekezdések és fejezetek szintjén is kérhetsz segítséget:
 
@@ -129,13 +129,13 @@ Nemcsak a mondatok szintjén, hanem a bekezdések és fejezetek szintjén is ké
 
 Az AI különösen jó az ilyen makro-szintű szerkezeti problémák megoldásában, mert a kontextusablakában egyszerre látja az egész szekciót, és képes az összefüggéseket a szövegen belül újrarendezni.
 
-### Érthetőség javítása
+### 3.3.3 Érthetőség javítása
 
 A tudományos szöveg egyik legnagyobb csapdája a „curse of knowledge" — annyira benne vagy a témában, hogy nem veszed észre, amit neked magától értetődő, az az olvasó számára érthetetlen. Az AI külső szemként tud funkcionálni:
 
 > **Prompt:** *„Olvasd el ezt az Abstract-ot egy olyan biológus szemével, aki nem foglalkozik mikroplasztik-kutatással. Jelöld meg azokat a kifejezéseket vagy mondatokat, amelyek extra háttértudást igényelnek, és javasolj egyszerűbb megfogalmazást."*
 
-### A hangnem igazítása különböző folyóiratokhoz
+### 3.3.4 A hangnem igazítása különböző folyóiratokhoz
 
 Egy *Nature*-be szánt cikk hangnemben, struktúrában és terjedelemben gyökeresen különbözik egy *Water Research*-be írt szakcikktől. Az AI képes az adaptációra:
 
@@ -143,7 +143,7 @@ Egy *Nature*-be szánt cikk hangnemben, struktúrában és terjedelemben gyöker
 
 **Fontos figyelmeztetés:** az AI-val átírt szöveg soha nem a végleges verzió. A te szakértői ítéleted nélkülözhetetlen — az AI nem ismeri a te specifikus eredményeidet, a terület aktuális vitáit, vagy a bírálók várható kifogásait. Használd az AI-t mint egy rendkívül gyors és türelmes szerkesztőt, de a végső szó mindig a tiéd.
 
-### Fordítás és nyelvi akadályok lebontása
+### 3.3.5 Fordítás és nyelvi akadályok lebontása
 
 Külön kiemelendő, hogy az LLM-ek a fordításban is felülmúlják a hagyományos fordítóeszközöket (Google Translate, DeepL), különösen a szakterminológia kezelésében. Han és szerzőtársai (2024) összehasonlító tesztjei szerint a GPT-4 konzisztensebb és pontosabb fordítást adott szakszövegek esetén, mint bármelyik mainstream fordító.
 
@@ -153,17 +153,17 @@ Sőt, a promptjaidat is írhatod magyarul — az LLM-ek hasonló minőségű vá
 
 ---
 
-## 3.3 Hatásos cikkcímek készítése
+## 3.4 Hatásos cikkcímek készítése
 
-### Miért számít a cím?
+### 3.4.1 Miért számít a cím?
 
 A cím az első — és gyakran az egyetlen — dolog, amit egy potenciális olvasó lát. Egy jó cím tömör, informatív, és felkelti az érdeklődést. Egy rossz cím eltemethet egy egyébként kiváló kutatást. A hagyományos címadás időigényes, iteratív folyamat — az AI ezt néhány másodpercre csökkenti, és kreatív kiindulópontot ad.
 
-### A módszer
+### 3.4.2 A módszer
 
 > **Prompt:** *„Az alábbi kézirat-vázlat alapján javasolj 10 különböző címet a következő stílusokban: 3 formális, leíró címet; 3 kreatív, figyelemfelkeltő címet metaforával vagy szójátékkal; 2 kérdés formájú címet; 2 „kettőspontost" címet (alcímmel). A kutatás a Tisza folyó mikroplasztik-szennyezettségéről szól."*
 
-### Példák: előtte és utána
+### 3.4.3 Példák: előtte és utána
 
 | # | Eredeti (gyenge) cím | AI-asszisztált cím | Mi változott? |
 |---|---|---|---|
@@ -172,7 +172,7 @@ A cím az első — és gyakran az egyetlen — dolog, amit egy potenciális olv
 | 3 | „The Presence of Microplastic Particles in the Tisza" | „How polluted is Central Europe's forgotten river? A microplastic survey of the Tisza from source to confluence" | A kérdés forma meghívja az olvasót, a „forgotten river" érzelmeket kelt, a „source to confluence" a kutatás léptékét jelzi. |
 | 4 | „Analysis of Microplastics in a Hungarian River" | „The environmental paradox of flood control: Microplastic redistribution by regulated river flows in the Tisza Basin" | A „paradox" szó intellektuális feszültséget teremt, és az ár-vízvédelmi kontextus szélesebb olvasóközönséget szólít meg. |
 
-### Gyakorlati tanácsok
+### 3.4.4 Gyakorlati tanácsok
 
 - **Kérj több körben címeket.** Az első 10 javaslat után kérd: *„Most adj 5 még merészebbet"* vagy *„5 konzervatívabbat, amik biztosan átmennek egy bírálón."*
 - **Használd az AI javaslatait nyersanyagként.** Gyakran nem egy egész címet, hanem egy-egy szót vagy szerkezetet veszel át, és abból építed a végleges változatot.
@@ -180,15 +180,15 @@ A cím az első — és gyakran az egyetlen — dolog, amit egy potenciális olv
 
 ---
 
-## 3.4 Bírálói vélemények megválaszolása
+## 3.5 Bírálói vélemények megválaszolása
 
-### Miért az egyik legstresszesebb feladat?
+### 3.5.1 Miért az egyik legstresszesebb feladat?
 
 A peer review válasz egy sajátos műfaj: egyszerre kell diplomatikusnak és határozottnak lenned, elismerned a jogos kritikát és megvédened az álláspontodat, technikai részletekbe menned és mégis áttekinthetően írni. Ráadásul gyakran érzelmileg terhelt helyzetben — miután valaki keményen bírálta a munkádat.
 
 Han és szerzőtársai (2024) tesztjei szerint ez az AI egyik legimpozánsabb képessége: a modell „progresszív" érvelési stílusban építi fel a válaszokat, szisztematikusan sorakoztatja az érveket, és megőrzi a semleges, professzionális hangnemet — mindazt, amit egy stresszes kutató hajnali háromkor nehezen tud produkálni.
 
-### Stratégia: Pont-by-pont válasz sablon
+### 3.5.2 Stratégia: Pont-by-pont válasz sablon
 
 Az alábbi struktúra szinte minden folyóiratnál elfogadott, és az AI természetesen ebben a formátumban dolgozik:
 
@@ -204,7 +204,7 @@ Az alábbi struktúra szinte minden folyóiratnál elfogadott, és az AI termés
 
 Figyeld meg a válasz szerkezetét: elismerés → két konkrét ok → irodalmi hivatkozás → utalás a kézirat-módosításra. Ez az a struktúra, amit a bírálók látni akarnak.
 
-### Nehéz bírálói kommentek kezelése
+### 3.5.3 Nehéz bírálói kommentek kezelése
 
 Időnként a bíráló olyasmit kér, ami nem teljesíthető — például egy műszert, amihez nincs hozzáférésed, vagy egy kísérletet, ami a kutatás hatókörén kívül esik. Az AI itt különösen hasznos, mert képes „diplomatikus elutasítást" fogalmazni:
 
@@ -213,7 +213,7 @@ Időnként a bíráló olyasmit kér, ami nem teljesíthető — például egy m
 *AI-asszisztált válasz:*
 > We greatly appreciate the reviewer's suggestion to include XRF spectroscopy, which would indeed provide complementary elemental composition data. Unfortunately, our laboratory does not currently have access to an XRF spectrometer, and the project budget does not permit external analysis at this stage. To address this concern, we have strengthened our polymer identification by running duplicate Raman analyses and cross-referencing our spectra against the SLOPP library (Munno et al., 2020), achieving > 95% match confidence for all identified polymers. We have noted XRF analysis as a valuable direction for future research in the revised Discussion (lines 387–390). We believe this approach provides robust identification for the purposes of the current study.
 
-### Ellenséges hangnemű bírálatok kezelése
+### 3.5.4 Ellenséges hangnemű bírálatok kezelése
 
 Ritkán, de előfordul, hogy a bíráló hangja sértő vagy személyeskedő. Az AI ilyen helyzetben is megőrzi a professzionalizmust:
 
@@ -223,15 +223,15 @@ Ritkán, de előfordul, hogy a bíráló hangja sértő vagy személyeskedő. Az
 
 ---
 
-## 3.5 Hibák felismerése saját és mások munkájában
+## 3.6 Hibák felismerése saját és mások munkájában
 
-### A reprodukálhatósági válság kontextusa
+### 3.6.1 A reprodukálhatósági válság kontextusa
 
 Baker (2016) *Nature*-ben megjelent felmérésében 1500 tudós ismerte el, hogy nehézségeik vannak más kutatók eredményeinek reprodukálásával. A hibák — terminológiai pontatlanságoktól a matematikai elírásokon át a félreidézésekig — szisztematikusan jelen vannak a tudományos irodalomban.
 
 Az AI nem helyettesíti a szakértői ellenőrzést, de *kiegészíti* azt — és olyan hibákat is észrevehet, amelyeket az emberi szem a 43. átolvasásnál sem vesz észre.
 
-### Terminológiai és fogalmi hibák
+### 3.6.2 Terminológiai és fogalmi hibák
 
 > **Prompt:** *„Ellenőrizd az alábbi bekezdés kémiai és terminológiai pontosságát. Jelöld meg a hibás vagy pontatlan állításokat, és adj korrekt megfogalmazást hivatkozásokkal."*
 
@@ -239,13 +239,13 @@ Han és szerzőtársai (2024) tesztjei szerint az AI képes volt felismerni, hog
 
 **Tanulság:** Az AI hibakeresése hasznos, de *mindig kevert eredményt ad* — helyes javítások és újabb hibák keverékét. Soha ne fogadd el kritikai értékelés nélkül.
 
-### Matematikai és egyenlet-hibák
+### 3.6.3 Matematikai és egyenlet-hibák
 
 > **Prompt:** *„Ellenőrizd az alábbi kinetikai egyenleteket (pszeudo-első-rendű, pszeudo-másod-rendű, Elovich, intrapartikuláris diffúzió). Írd ki a helyes formákat, és jelöld, ha a kéziratban eltérés van."*
 
 Az AI megadta a helyes egyenleteket mind a négy modellre, de a linearizált pszeudo-másod-rendű egyenletben nem vette észre a hibát, sőt a saját javításában is hibázott — a természetes logaritmus helyett tízes alapú logaritmust használt. Ez a tipikus minta: az AI jobb a fogalmi hibák felismerésében, mint a matematikai részletekben.
 
-### Félreidézések (misquotation) ellenőrzése
+### 3.6.4 Félreidézések (misquotation) ellenőrzése
 
 Az egyik leginsidiosabb hiba a tudományos irodalomban: amikor egy szerző félreidézi a hivatkozott forrást — nem szándékosan, hanem mert emlékezetből írta, vagy rosszul értelmezett egy statisztikát.
 
@@ -253,7 +253,7 @@ Az egyik leginsidiosabb hiba a tudományos irodalomban: amikor egy szerző félr
 
 Az AI itt a legjobb, ha a hivatkozott cikkek is hozzáférhetők számára (nyílt hozzáférésű cikkek, vagy feltöltöd a PDF-eket). A félreidézések felderítése a tesztek során az AI egyik legmegbízhatóbb képességének bizonyult.
 
-### Gyakorlati munkafolyamat hibakereséshez
+### 3.6.5 Gyakorlati munkafolyamat hibakereséshez
 
 1. **Írd meg a kéziratot** (vagy a releváns szekciót).
 2. **Futtasd le az AI-t** a fenti promptokkal (terminológia, egyenletek, hivatkozások külön-külön).
@@ -263,9 +263,9 @@ Az AI itt a legjobb, ha a hivatkozott cikkek is hozzáférhetők számára (nyí
 
 ---
 
-## 3.6 Kutatási pályázatok és grant-javaslatok írása
+## 3.7 Kutatási pályázatok és grant-javaslatok írása
 
-### Ötletelés és ismerkedés egy új területtel
+### 3.7.1 Ötletelés és ismerkedés egy új területtel
 
 Amikor egy új kutatási irányt fontolgatsz — különösen egy interdiszciplináris projektet, ahol nem vagy otthon minden részdiszciplínában —, az AI ideális „felderítő" eszköz:
 
@@ -273,7 +273,7 @@ Amikor egy új kutatási irányt fontolgatsz — különösen egy interdiszcipli
 
 Az LLM válasza jellemzően részletesebb és célzottabb, mint egy Google-keresés eredménye, mert az interaktív kérdés-válasz formátum lehetővé teszi a fokozatos mélyítést. Ahogy Han és szerzőtársai (2024) tapasztalták: az AI nem ad forradalmi ötleteket, de a meglévő tudás szisztematikus aggregálásában — ami a pályázatírás kiindulópontja — kifejezetten hatékony.
 
-### Tudáshiányok feltérképezése
+### 3.7.2 Tudáshiányok feltérképezése
 
 A pályázat egyik legkritikusabb eleme a „knowledge gap" meggyőző bemutatása: miért szükséges ez a kutatás?
 
@@ -288,7 +288,7 @@ A pályázat egyik legkritikusabb eleme a „knowledge gap" meggyőző bemutatá
 
 Nem mind eredeti — de szisztematikus, és jó kiindulópont a pályázat „Significance" szekciójához.
 
-### Pályázati vázlat készítése
+### 3.7.3 Pályázati vázlat készítése
 
 A teljes munkafolyamat:
 
@@ -301,7 +301,7 @@ A teljes munkafolyamat:
 
 **Kritikus figyelmeztetés:** Az AI által generált hivatkozások a pályázati vázlatban jellemzően *fiktívek*. A modell ezt általában jelzi is, de ne hagyatkozz rá — minden egyes hivatkozást manuálisan ellenőrizz, vagy cseréld ki valós forrásokra. (A hivatkozás-hallucináció problémáját részletesen tárgyaljuk a 3.9-es alfejezetben.)
 
-### Pályázati szervezetek elvárásai
+### 3.7.4 Pályázati szervezetek elvárásai
 
 Fontos tudni, hogy a nagy pályázati szervezetek eltérő álláspontot képviselnek:
 
@@ -313,13 +313,13 @@ Fontos tudni, hogy a nagy pályázati szervezetek eltérő álláspontot képvis
 
 ---
 
-## 3.7 Tudománykommunikáció
+## 3.8 Tudománykommunikáció
 
-### Miért fontos — és miért nehéz?
+### 3.8.1 Miért fontos — és miért nehéz?
 
 A klímaváltozás, a környezetszennyezés, a járványok — mind olyan témák, ahol a közérthetőség nem luxus, hanem szükségszerűség. De egy kutató, aki napi 8 órát tölt szakcikkek írásával, ritkán képes átkapcsolni a „közérthető" módba. Az AI ebben az átkapcsolásban segít.
 
-### Népszerű tudományos cikk
+### 3.8.2 Népszerű tudományos cikk
 
 > **Prompt:** *„Írd át az alábbi kutatási cikk absztraktját népszerű tudományos cikké, amelyet egy Magyar Narancs / Qubit olvasó is megért. Maximum 500 szó, könnyed hangnem, személyes megszólítás, hasonlatok a mindennapi életből. Kerüld a szakkifejezéseket, vagy ha elkerülhetetlen, zárójelben magyarázd el."*
 
@@ -333,7 +333,7 @@ A klímaváltozás, a környezetszennyezés, a járványok — mind olyan témá
 
 Figyeld meg, hogy az AI automatikusan alkalmazta a hasonlatokat (bevásárlószatyor, joghurtos doboz), a személyes megszólítást, és a drámai szünetet („Nem látod, nem érzed, de ott vannak") — mindezt a szakmai pontosság megőrzése mellett.
 
-### Közösségi média
+### 3.8.3 Közösségi média
 
 > **Prompt:** *„Írj 3 Twitter/X posztot (max. 280 karakter) a fenti kutatásról. Legyen bennük 2-3 releváns hashtag és egy figyelemfelkeltő nyitómondat."*
 
@@ -346,13 +346,13 @@ Figyeld meg, hogy az AI automatikusan alkalmazta a hasonlatokat (bevásárlósza
 *AI javaslat 3:*
 > 500 km Tisza, több ezer vízminta, egy riasztó eredmény: a mikroplasztik mindenhol ott van. De mi következik ebből az élővilágra? 🐟 #TiszaKutatás #Környezetvédelem
 
-### Sajtóközlemény
+### 3.8.4 Sajtóközlemény
 
 > **Prompt:** *„Készíts egy 300 szavas sajtóközleményt az alábbi kutatási cikk alapján. Formátum: címsor, lead bekezdés (ki, mit, mikor, hol, miért), háttér, idézet a kutatásvezetőtől (fiktív, de reális hangnemben), a kutatás jelentősége, elérhetőség."*
 
 Ez különösen hasznos, ha az egyetemi kommunikációs osztállyal dolgozol, és szükséged van egy kiindulópontra, amit ők tovább csiszolhatnak.
 
-### Prezentációs vizuális elemek
+### 3.8.5 Prezentációs vizuális elemek
 
 Az AI képgeneráló eszközök (DALL-E, Midjourney, Stable Diffusion) forradalmasították a tudományos prezentációk vizuális világát. Nem a tudományos ábrák kiváltásáról van szó — az adatvizualizáció továbbra is a kutató feladata —, hanem a *kísérő vizuális elemekről*:
 
@@ -364,9 +364,9 @@ Az AI képgeneráló eszközök (DALL-E, Midjourney, Stable Diffusion) forradalm
 
 ---
 
-## 3.8 Kísérleti tervek és kérdőívek készítése AI-val
+## 3.9 Kísérleti tervek és kérdőívek készítése AI-val
 
-### Kísérlettervezés
+### 3.9.1 Kísérlettervezés
 
 Az AI nem csak szöveget ír — képes kísérleti protokollokat is generálni, amelyek jó kiindulópontot adnak, különösen ha egy új területre lépsz be.
 
@@ -389,7 +389,7 @@ Han és szerzőtársai (2024) tesztjei szerint a GPT-4 egy ilyen promptra részl
 3. Kérj releváns hivatkozásokat valóságellenőrzéshez
 4. Opcionálisan: kérj beszerzési listát (reagensek, műszerek, védőfelszerelés, QA/QC)
 
-### Kérdőív-készítés
+### 3.9.2 Kérdőív-készítés
 
 A társadalomtudományi és környezet-egészségügyi kutatásban a kérdőíves felmérések alapvető módszerek. Az AI meglepően jó kérdőív-tervezésben:
 
@@ -405,19 +405,19 @@ Az AI a szűkített változatban 40 kérdést generált 8 szekcióban, beleértv
 
 ---
 
-## 3.9 A hivatkozás-hallucináció problémája
+## 3.10 A hivatkozás-hallucináció problémája
 
-> **🖼️ Ábra: Hallucináció-felismerés ellenőrzőlistája**
+> **🖼️ 3.2. ábra: Hallucináció-felismerés ellenőrzőlistája**
 > *Folyamatábra: AI-hivatkozás → DOI ellenőrzés → Google Scholar keresés → Szerző-ellenőrzés. Piros és zöld ikonokkal jelölve a hamis és valós hivatkozásokat.*
 
 
-### Mi a probléma?
+### 3.10.1 Mi a probléma?
 
 Az LLM-ek egyik legjól dokumentált és legveszélyesebb korlátja a hivatkozás-hallucináció: a modell meggyőzően formázott, létezőnek *tűnő*, de valójában *kitalált* hivatkozásokat generál. Ez nem „hiba" a szó hagyományos értelmében — ez az LLM működésének fundamentális következménye. A modell nem „tud" dolgokat — valószínűségi alapon generálja a következő tokent, és egy hivatkozás formailag hasonlít egy másik hivatkozásra.
 
 A probléma súlyossága csökken: a korai modellekben (GPT-3.5) a hivatkozások 98%-a volt kitalált; a GPT-4-ben ez kb. 20%-ra csökkent (Mollick, 2024). De még 20% is elfogadhatatlanul magas a tudományos publikálásban, ahol egyetlen hamis hivatkozás a kézirat azonnali elutasításához vezethet.
 
-### Hogyan ismerd fel a kitalált hivatkozásokat?
+### 3.10.2 Hogyan ismerd fel a kitalált hivatkozásokat?
 
 **Vörös zászlók:**
 
@@ -431,7 +431,7 @@ A probléma súlyossága csökken: a korai modellekben (GPT-3.5) a hivatkozások
 
 5. **A cikk tartalma nem felel meg a hivatkozás kontextusának.** Ez a leginsidiosusabb: a hivatkozás létezik, de nem azt mondja, amit az AI állít róla — tehát az AI formailag jó hivatkozást ad, de *félreidézi*.
 
-### Megelőzési stratégiák
+### 3.10.3 Megelőzési stratégiák
 
 **1. Soha ne bízz meg AI-generált hivatkozásban ellenőrzés nélkül.**
 
@@ -464,15 +464,15 @@ A modellek egyre jobbak ebben az önreflexióban — jellemzően elismerik, ha e
 
 A Zotero, Mendeley vagy EndNote rendszerekbe csak manuálisan ellenőrzött hivatkozásokat vigyél be. Ha az AI javasol egy hivatkozást, *először* keresd meg a Scopus-ban, és *onnan* importáld a referencia-kezelőbe.
 
-### A Schwartz-eset tanulsága
+### 3.10.4 A Schwartz-eset tanulsága
 
 2023-ban Steven Schwartz ügyvéd a ChatGPT-vel kerestetett jogi precedenseket, és a bíróságon hat teljesen kitalált bírósági döntésre hivatkozott — ellenőrzés nélkül. Az eset szankciókhoz vezetett. A tudományos világban a következmény hasonlóan súlyos lehet: a kézirat elutasítása, az adott folyóiratnál való „tiltólistára" kerülés, és ami a legrosszabb — a tudományos reputáció tartós sérülése.
 
 ---
 
-## 3.10 Összefoglalás: a tudós marad a pilóta
+## 3.11 Összefoglalás: a tudós marad a pilóta
 
-> **🖼️ Ábra: Az AI szerepe a tudományos írás különböző fázisaiban**
+> **🖼️ 3.3. ábra: Az AI szerepe a tudományos írás különböző fázisaiban**
 > *Horizontális folyamatábra: Irodalomkutatás → Vázlat → Írás → Szerkesztés → Bírálói válasz. Minden fázisnál jelölve, hol segíthet az AI (zöld) és hol kell emberi kontroll (piros).*
 
 
@@ -498,7 +498,7 @@ Nóra, a nyitó jelenetünk kutatója, végül hajnali háromkor nem egyedül k�
 
 ---
 
-## Hivatkozások és források
+## 3.12 Hivatkozások és források
 
 - Baker, M. (2016). 1,500 scientists lift the lid on reproducibility. *Nature*, 533, 452–454.
 - Han, J., Qiu, W., & Lichtfouse, E. (2024). *ChatGPT in Scientific Research and Writing: A Beginner's Guide*. Springer Nature.

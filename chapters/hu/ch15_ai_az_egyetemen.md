@@ -24,7 +24,7 @@ Ez a fejezet a könyv egyik legfontosabb része, mert összekapcsolja az elméle
 
 ## 15.1 Egyetemi esettanulmányok -- Ki hogyan csinálja?
 
-> **🖼️ Ábra: Négy egyetem AI-stratégiája — UF, ASU, UTokyo, tuBIT**
+> **🖼️ 15.1. ábra: Négy egyetem AI-stratégiája — UF, ASU, UTokyo, tuBIT**
 > *Four university campus illustrations arranged in a grid, each with a flag and key AI initiative icon, colorful academic illustration style*
 
 Az AI intézményi integrációjára nincs egyetlen recept. Az alábbiakban négy radikálisan különböző, de egyformán sikeres megközelítést mutatunk be -- mindegyikből konkrét tanulságokkal a Debreceni Egyetem számára.
@@ -293,7 +293,7 @@ Nem kell választanod: a négy modell kiegészíti egymást, és a fejezet vég�
 
 ## 15.2 AI az oktatásban és témavezetésben
 
-> **🖼️ Ábra: AI az oktatásban — a hallgató, az oktató és az AI háromszöge**
+> **🖼️ 15.2. ábra: AI az oktatásban — a hallgató, az oktató és az AI háromszöge**
 > *Triangle diagram showing the relationship between student, instructor, and AI assistant, with arrows indicating feedback loops, modern educational design*
 
 ### 15.2.1 Kurzuselőkészítés AI-val
@@ -699,7 +699,7 @@ Az EUA figyelmeztet: az etikai dimenzió az egyetlen állandó egy gyorsan vált
 
 ## 15.4 Útiterv a Debreceni Egyetem számára
 
-> **🖼️ Ábra: AI-integrációs útiterv a Debreceni Egyetem számára — három fázis**
+> **🖼️ 15.3. ábra: AI-integrációs útiterv a Debreceni Egyetem számára — három fázis**
 > *Roadmap timeline showing three phases of AI integration at a Hungarian university: pilot projects, scaling, and institutional transformation, with campus illustration in background, clean infographic style*
 
 ### 15.4.1 Amink van: A jelenlegi helyzet
@@ -905,7 +905,7 @@ A könyv tehát nem csak a kutatóknak szól -- az intézményi átalakulás tan
 
 ---
 
-## Összefoglalás: A három legfontosabb üzenet
+## 15.5 Összefoglalás: A három legfontosabb üzenet
 
 **1. Az AI-integráció nem technikai projekt, hanem intézményi transzformáció.**
 A UF nem egy szuperszámítógépet vásárolt -- átalakította az egész egyetemet. A Helsinki nem egy kurzust készített -- egy társadalmi mozgalmat indított. A Northeastern nem egy szoftvert licenszelt -- egy design partnership-et kötött. A JHU nem egy modult adott hozzá -- egy teljes tanulási utat épített. Mindegyik esetben az intézményi elkötelezettség megelőzte a technikai implementációt.
@@ -918,9 +918,9 @@ A Komondor szuperszámítógép, az NVIDIA és Microsoft partnerségek, a Járm�
 
 ---
 
-## Hivatkozások és források
+## 15.6 Hivatkozások és források
 
-### Esettanulmányok
+### 15.6.1 Esettanulmányok
 
 - Southworth, J., Migliaccio, K., et al. (2023). Developing a model for AI Across the Curriculum: Transforming the higher education landscape via innovation in AI literacy. *Computers and Education: Artificial Intelligence*, 4, 100061.
 - University of Helsinki & Reaktor/MinnaLearn. Elements of AI. https://www.elementsofai.com/
@@ -928,23 +928,23 @@ A Komondor szuperszámítógép, az NVIDIA és Microsoft partnerségek, a Járm�
 - Anthropic (2025). Education Report: How Educators Use Claude. https://www.anthropic.com/news/anthropic-education-report-how-educators-use-claude
 - Johns Hopkins University. Certificate Program in Agentic AI. https://online.lifelonglearning.jhu.edu/jhu-certificate-program-agentic-ai
 
-### Értékelés és pedagógia
+### 15.6.2 Értékelés és pedagógia
 
 - Chan, C. K. Y. & Colloton, T. (2024). Assessment Redesign in the Age of AI. In: *Generative AI in Higher Education*.
 - Bowen, J. A. & Watson, C. E. (2024). *Teaching with AI: A Practical Guide to a New Era of Human Learning*. Johns Hopkins University Press.
 - Bloom, B. S. (1984). The 2 Sigma Problem: The Search for Methods of Group Instruction as Effective as One-to-One Tutoring. *Educational Researcher*, 13(6), 4-16.
 
-### AI és oktatás
+### 15.6.3 AI és oktatás
 
 - Khan, S. (2024). *Brave New Words: How AI Will Revolutionize Education (and Why That's a Good Thing)*. Viking.
 - Mollick, E. (2024). *Co-Intelligence: Living and Working with AI*. Portfolio/Penguin.
 - EUA Task-and-Finish Group on AI (2026). Training. In: *Adopting AI in Higher Education*, 3. fejezet.
 
-### Változásmenedzsment
+### 15.6.4 Változásmenedzsment
 
 - Rogers, E. M. (1962/2003). *Diffusion of Innovations* (5th ed.). Free Press.
 
-### Debreceni Egyetem
+### 15.6.5 Debreceni Egyetem
 
 - Debreceni Egyetem Informatikai Kar. https://inf.unideb.hu/en
 - Debreceni Egyetem AI irányelvek. https://btk.unideb.hu/sites/default/files/inline-files/Irányelvek%20a%20mesterséges%20intelligencia%20alapú%20rendszerek%20használatához%20a%20Debreceni%20Egyetemen_1.pdf

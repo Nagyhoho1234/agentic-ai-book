@@ -10,9 +10,9 @@
 > - **Szükséges eszközök:** Terminál + Python
 > - **Kapcsolódó fejezetek:** 5. fejezet (kódolás), 8. fejezet (vizuális programozás), 14. fejezet (AI labor)
 
-## Minden reggel ugyanaz a tizenöt lépés
+## 7.1 Minden reggel ugyanaz a tizenöt lépés
 
-> **🖼️ Ábra: A pipeline koncepció — öt szakasz**
+> **🖼️ 7.1. ábra: A pipeline koncepció — öt szakasz**
 > *Vízszintes folyamatábra: Bevitel → Tisztítás → Transzformáció → Elemzés → Kimenet. Minden szakasznál egy-egy ikon és rövid leírás, nyilak mutatják az adatáramlást.*
 
 
@@ -42,11 +42,11 @@ Ez a fejezet arról szól, hogyan alakíthatod az ilyen ismétlődő, kiszámít
 
 ---
 
-## A pipeline koncepció: öt szakasz
+## 7.2 A pipeline koncepció: öt szakasz
 
 Minden tudományos adat-pipeline öt alapvető szakaszra bontható. Egyes pipeline-ok egyszerűbbek (csak kettő-három szakasz), mások összetettebbek (egyes szakaszokon belül tucatnyi allépéssel), de az alapszerkezet mindig felismerhető.
 
-### A pipeline öt szakasza
+### 7.2.1 A pipeline öt szakasza
 
 ```
 ┌─────────────┐    ┌─────────────┐    ┌────────────────────┐    ┌────────────┐    ┌─────────────┐
@@ -88,11 +88,11 @@ Ha így bontod fel a saját munkafolyamatodat, azonnal láthatóvá válik, hol 
 > **Ne csináld!**
 > Ne automatizald a pipeline-t mindaddig, amig a munkafolyamatot kézzel legalabb egyszer vegig nem csinaltad es nem dokumentaltad. Ha nem erted pontosan, mit csinal az egyes lepes, az automatizalas nem gyorsitja, hanem elrejti a hibakat. Elso lepes: ird le a folyamatot lepesrol lepesre. Masodik lepes: automatizald.
 
-## Automatizálási lehetőségek azonosítása
+## 7.3 Automatizálási lehetőségek azonosítása
 
 Mielőtt nekiállnál pipeline-t építeni, érdemes végiggondolnod, mely feladataid érdemesek automatizálásra. Nem minden feladatot kell (vagy érdemes) automatizálni. Az alábbi ellenőrző lista segít a döntésben.
 
-### Ellenőrző lista: automatizáljam-e?
+### 7.3.1 Ellenőrző lista: automatizáljam-e?
 
 Adj minden kérdésre 0-tól 2-ig pontot (0 = nem jellemző, 1 = részben, 2 = teljesen):
 
@@ -115,7 +115,7 @@ Adj minden kérdésre 0-tól 2-ig pontot (0 = nem jellemző, 1 = részben, 2 = t
 
 Anna feladatánál a pontszám 15/16 lenne. Az ő esetében az automatizálás nem luxus, hanem szükségszerűség.
 
-### Tipikus tudományos feladatok, amelyek kiáltanak az automatizálásért
+### 7.3.2 Tipikus tudományos feladatok, amelyek kiáltanak az automatizálásért
 
 - **Napi/heti adatletöltés** külső forrásból (meteorológiai, hidrológiai, légszennyezettségi adatok)
 - **Műszeres mérések feldolgozása** (spektrométer, kromatográf, mikroszkóp kimenet)
@@ -127,11 +127,11 @@ Anna feladatánál a pontszám 15/16 lenne. Az ő esetében az automatizálás n
 
 ---
 
-## Adatbevitel: honnan jön az adat?
+## 7.4 Adatbevitel: honnan jön az adat?
 
 A pipeline első lépése mindig a bevitel. A tudományos adatok sokféle forrásból érkezhetnek, és mindegyiknek megvan a maga sajátossága.
 
-### Fájlok
+### 7.4.1 Fájlok
 
 A leggyakoribb eset: adatfájlok érkeznek valamilyen megosztott mappából, FTP szerverről, e-mail csatolmányként, vagy manuális letöltéssel.
 
@@ -146,7 +146,7 @@ A leggyakoribb eset: adatfájlok érkeznek valamilyen megosztott mappából, FTP
 
 **Tipp:** Ha az AI kódolási asszisztensed (5. fejezet) segítségével írsz beolvasó scriptet, mindig add meg a pontos formátumot. Például: *"Írj egy Python scriptet, ami beolvassa ezt a CSV-t, ahol a szeparátor pontosvessző, a tizedesjel vessző, és a dátum formátum ÉÉÉÉ.HH.NN."*
 
-### Adatbázisok
+### 7.4.2 Adatbázisok
 
 Sok kutatócsoport saját adatbázist tart fenn --- vagy intézményi rendszerhez csatlakozik.
 
@@ -154,7 +154,7 @@ Sok kutatócsoport saját adatbázist tart fenn --- vagy intézményi rendszerhe
 - **Tudományos adatbázisok**: UniProt (fehérjék), PDB (proteinstruktúrák), GenBank (genetikai szekvenciák), GBIF (biodiverzitás). Ezeknek általában API-juk is van.
 - **Intézményi repozitóriumok**: a Debreceni Egyetemen például a DEA (Debreceni Egyetemi Archívum) vagy a tanszéki fájlszerverek.
 
-### API-k (Application Programming Interfaces)
+### 7.4.3 API-k (Application Programming Interfaces)
 
 Az API-t az 5. fejezetben definiáltuk: egy gép számára készült felület, amelyen keresztül programból kérdezhetsz le adatokat. A tudományos adatforrások egyre gyakrabban kínálnak API-t.
 
@@ -172,7 +172,7 @@ Az API-t az 5. fejezetben definiáltuk: egy gép számára készült felület, a
 
 A NASA CMR különösen érdekes példa: a NASA LLM Cookbook-ja bemutatja, hogyan lehet természetes nyelvű kéréseket CMR API-lekérdezésekké alakítani. Például: *"Keress Landsat 8 műholdas felvételeket a Hortobágy felett 2025 júliusából"* --- ezt egy LLM-alapú ágens automatikusan lefordítja a megfelelő CMR API-hívásra, beleértve a földrajzi koordinátákat és az időszűrőt. Bár ez már az ágensek területe (11. fejezet-12), az alapkoncepció --- hogy programból kérdezel le adatot, nem kézzel böngészel weboldalakat --- a pipeline-ok sarokköve.
 
-### Szenzorok és IoT
+### 7.4.4 Szenzorok és IoT
 
 A tudományos mérőállomások egyre intelligensebbek. A modern IoT (Internet of Things) eszközök közvetlenül a felhőbe vagy egy helyi szerverre streamelnek adatot.
 
@@ -200,11 +200,11 @@ Debrecenben és a Tiszántúlon különösen releváns az agrár-IoT: a precízi
 
 ---
 
-## Tisztítás, validáció és minőségértékelés
+## 7.5 Tisztítás, validáció és minőségértékelés
 
 Az OECD tudományos AI-ról szóló jelentése és a National Academies adatminőségről szóló fejezete egyaránt hangsúlyozza: az adatminőség a tudományos AI-alkalmazások alapja. A mondás --- *"garbage in, garbage out"* --- sehol sem igazabb, mint az automatizált pipeline-okban. Ha a tisztítás rosszul működik, az elemzés is hibás lesz, és ami még rosszabb: automatikusan és észrevétlenül lesz hibás.
 
-### Hiányzó értékek
+### 7.5.1 Hiányzó értékek
 
 A hiányzó értékek (*missing values*) a tudományos adatok leggyakoribb problémája. Szenzor leáll, beteg kihagyja a kontrollvizsgálatot, kérdőív-kitöltő kihagy egy kérdést.
 
@@ -223,7 +223,7 @@ A hiányzó értékek (*missing values*) a tudományos adatok leggyakoribb probl
 
 **AI-asszisztált megközelítés:** Megkérheted az AI kódolási asszisztenst, hogy elemezze a hiányzó értékek mintázatát: *"Készíts egy hőtérképet, ami megmutatja, melyik szenzornál, melyik napszakban hiányzik a legtöbb adat. Használj missingno könyvtárat."* Ez segít eldönteni, hogy véletlenszerű-e a hiány, vagy szisztematikus probléma áll mögötte (pl. egy adott szenzor minden éjjel 2 és 4 óra között nem küld adatot).
 
-### Outlier-ek (kiugró értékek)
+### 7.5.2 Outlier-ek (kiugró értékek)
 
 Az outlier-ek kezelése tudományosan delikát kérdés. Egy kiugró érték lehet valódi tudományos felfedezés --- vagy lehet szenzor-hiba.
 
@@ -241,7 +241,7 @@ Az outlier-ek kezelése tudományosan delikát kérdés. Egy kiugró érték leh
 3. **Dokumentáld a döntést.** A pipeline naplójába írd bele, hány outlier-t detektáltál, és mit csináltál velük.
 4. **Légy konzervatív.** Inkább hagyd benne a gyanúsat, és a végén az elemzésnél szűrd ki, mint hogy elveszíts egy valódi jelenséget.
 
-### Formátum-standardizálás és séma-validáció
+### 7.5.3 Formátum-standardizálás és séma-validáció
 
 A "formátum-pokol" minden adatfeldolgozó rémálma. Íme a tipikus szituációk:
 
@@ -280,7 +280,7 @@ Ha a bejövő adatban a `temperature_c` oszlopban 999.9 jelenik meg (sok régi m
 >
 > *Forrás: precagri ch14, 14.2 és 14.8 „Adatgyűjtés: formátumok, protokollok és szabványok"*
 
-### Automatikus adatminőségi riportok
+### 7.5.4 Automatikus adatminőségi riportok
 
 Egy jól felépített pipeline minden futás végén generál egy rövid minőségi riportot:
 
@@ -311,7 +311,7 @@ Egy jól felépített pipeline minden futás végén generál egy rövid minős�
 
 Ez a riport automatikusan generálódik, elmenthető fájlba, elküldhető e-mailben, és hónapok, évek múlva is visszakereshető. Ha egy kolléga megkérdezi: "A márciusi adatodban volt szenzor-kiesés?" --- nem kell emlékezned, hanem visszanézed a riportot.
 
-### AI-asszisztált anomália-detektálás
+### 7.5.5 AI-asszisztált anomália-detektálás
 
 Az eddig leírt módszerek --- statisztikai küszöbök, fizikai korlátok, séma-validáció --- szabály-alapúak. Előre megmondod a gépnek, mit keressen. De mi van azokkal az anomáliákkal, amelyeket nem tudsz előre definiálni?
 
@@ -327,7 +327,7 @@ A National Academies jelentése kiemeli az adatproveniencia (data provenance) fo
 
 ---
 
-## Kötegelt feldolgozás nagy mennyiségben
+## 7.6 Kötegelt feldolgozás nagy mennyiségben
 
 Anna 12 állomás egynapos adatát dolgozza fel. De mi van, ha:
 
@@ -338,7 +338,7 @@ Anna 12 állomás egynapos adatát dolgozza fel. De mi van, ha:
 
 Ekkor már nem elég egy "script, ami végigmegy a fájlokon". Kötegelt feldolgozásra (*batch processing*) van szükség, és itt az automatizálás nem luxus, hanem az egyetlen lehetőség.
 
-### A kötegelt feldolgozás alapelvei
+### 7.6.1 A kötegelt feldolgozás alapelvei
 
 **1. Mappaalapú szervezés**
 
@@ -378,7 +378,7 @@ A Python `multiprocessing` könyvtára és a `concurrent.futures` modul lehetőv
 
 Hosszú futásoknál (pl. 30 éves adatsor újrafeldolgozása) érdemes ellenőrzőpontokat tenni: a pipeline minden tizedik nap feldolgozása után elmenti az állapotát. Ha a 247. napnál valamiért leáll (áramszünet, memória-hiba), nem kell elölről kezdenie, hanem a 240. naptól folytatja.
 
-### Esettanulmány: 30 éves meteorológiai archívum újrafeldolgozása
+### 7.6.2 Esettanulmány: 30 éves meteorológiai archívum újrafeldolgozása
 
 Tegyük fel, hogy Anna tanszéke kidolgozott egy javított kalibrációs algoritmust a régi hőmérsékleti szenzorokhoz. Ezt visszamenőlegesen alkalmazni kell az elmúlt 30 év összes adatára: 10,950 napi fájl, egyenként 1,440 mérés (10 perces felbontás), 12 állomás. Összesen: közel 190 millió mérés.
 
@@ -400,11 +400,11 @@ A pipeline lépései:
 
 ---
 
-## Ütemezett feladatok és monitorozás
+## 7.7 Ütemezett feladatok és monitorozás
 
 A pipeline megvan --- de ki indítja el? Ha Anna minden reggel kézzel, akkor nem automatizáltunk semmit, csak a lépéseket kódoltuk le. Az igazi automatizálás az, amikor a pipeline magától fut.
 
-### Ütemezett futtatás: cron job
+### 7.7.1 Ütemezett futtatás: cron job
 
 A `cron` (Linux/macOS) és a Task Scheduler (Windows) rendszerszintű ütemezők, amelyek időzítve indítanak programokat.
 
@@ -422,13 +422,13 @@ Anna pipeline-ja például így ütemezett: `0 7 * * * python /home/anna/pipelin
 
 Ez annyit jelent: minden nap reggel 7:00-kor a rendszer automatikusan elindítja a pipeline-t. Annának nem kell ott lennie. Ha szabadságon van, a pipeline akkor is fut. Ha beteget jelent, a pipeline akkor is fut.
 
-### Fájlfigyelők (watchdog)
+### 7.7.2 Fájlfigyelők (watchdog)
 
 Néha nem időzítve akarod indítani a pipeline-t, hanem akkor, amikor új adat érkezik. A "watchdog" (fájlfigyelő) monitorozza egy adott mappát, és ha új fájl jelenik meg benne, automatikusan elindítja a feldolgozást.
 
 **Tipikus forgatókönyv:** A laboratóriumi spektrométer minden mérés végén kiír egy `.csv` fájlt a `C:\spectrometer\output\` mappába. A watchdog figyeli ezt a mappát. Amint megjelenik egy új fájl, a pipeline automatikusan beolvassa, feldolgozza, és az eredményt beteszi az adatbázisba. A kutató a mérés befejezése után 30 másodperccel már látja az eredményt a webes dashboardon.
 
-### Monitorozás és riasztás
+### 7.7.3 Monitorozás és riasztás
 
 Az automatizált pipeline legnagyobb veszélye a *"csendben rosszul működés"*. A pipeline fut, nem ad hibát, de az eredmény rossz --- mert megváltozott az adatforrás formátuma, vagy egy szenzor tönkrement, és a hiánypótlás elfedte a problémát.
 
@@ -481,11 +481,11 @@ Ez már a haladóbb kategória, de az AI asszisztenssel egy egyszerű Streamlit 
 
 ---
 
-## Pipeline-eszközök: az egyszerűtől a komplexig
+## 7.8 Pipeline-eszközök: az egyszerűtől a komplexig
 
 A pipeline-építés eszköztára rendkívül széles. A kulcs: mindig a legegyszerűbb eszközzel kezdj, és csak akkor lépj tovább, ha valóban szükséges.
 
-### Első szint: egyszerű Python scriptek
+### 7.8.1 Első szint: egyszerű Python scriptek
 
 **Mikor elég?**
 - Egy kutató, egy projekt, néhány tucat fájl.
@@ -523,7 +523,7 @@ Ezt a `main()` függvény hívja sorrendben, és ha bármelyik lépés hibát do
 
 **Anna napi pipeline-ja tökéletesen megvalósítható egyetlen Python scripttel.** A legtöbb kutató számára ez az optimális szint.
 
-### Második szint: Dagster --- modern adat-orkesztrátor
+### 7.8.2 Második szint: Dagster --- modern adat-orkesztrátor
 
 **Mikor kell Dagster?**
 - Több, egymásra épülő pipeline van egy projekten belül.
@@ -563,7 +563,7 @@ A Dagster egy webes felületet (Dagit) ad, ahol:
 
 Ha egy egyszerű Python script elég, ne bonyolítsd Dagsterrel. A Dagster telepítése, tanulása és karbantartása többlet-erőforrás. Csak akkor éri meg, ha a pipeline-jaid komplexitása és a csapatmunka valóban igényli.
 
-### Harmadik szint: Nextflow --- tudományos munkafolyamatok
+### 7.8.3 Harmadik szint: Nextflow --- tudományos munkafolyamatok
 
 **Mikor kell Nextflow?**
 - Bioinformatikai pipeline (szekvenálási adatok feldolgozása).
@@ -592,7 +592,7 @@ A Nextflow egy munkafolyamat-kezelő rendszer, amelyet kifejezetten tudományos,
 
 Ha a pipeline-od teljesen Python-alapú, egyetlen gépen fut, és nem bioinformatikai --- akkor a Nextflow feleslegesen komplex. Használj egyszerű scriptet vagy Dagstert.
 
-### A megfelelő eszköz kiválasztása
+### 7.8.4 A megfelelő eszköz kiválasztása
 
 ```
                     ┌─────────────────────┐
@@ -643,15 +643,15 @@ Ha a pipeline-od teljesen Python-alapú, egyetlen gépen fut, és nem bioinforma
 
 ---
 
-## Reprodukálhatóság: hogy a pipeline holnap is ugyanazt csinálja
+## 7.9 Reprodukálhatóság: hogy a pipeline holnap is ugyanazt csinálja
 
-> **🖼️ Ábra: A reprodukálhatóság négy pillére**
+> **🖼️ 7.2. ábra: A reprodukálhatóság négy pillére**
 > *Négy oszlopos ábra: 1. Virtuális környezet (Python venv), 2. Dokumentáció (README), 3. Verziókezelés (Git), 4. Konténerizáció (Docker). Minden pillérnél rövid leírás és ikon.*
 
 
 A tudományos kutatás egyik legfontosabb alapelve a reprodukálhatóság: ha valaki más (vagy te magad egy év múlva) megismétli az elemzésedet, ugyanarra az eredményre kell jutnia. A pipeline-ok ebben hatalmas segítséget nyújtanak --- de csak akkor, ha tudatosan kezeled a környezetet, a dokumentációt és a függőségeket.
 
-### A "működik a gépemen" probléma
+### 7.9.1 A "működik a gépemen" probléma
 
 Tipikus szituáció: megírod a pipeline-t a saját laptopodra. Minden működik. Egy év múlva a kollegád megpróbálja futtatni, és nem megy, mert:
 
@@ -660,7 +660,7 @@ Tipikus szituáció: megírod a pipeline-t a saját laptopodra. Minden működik
 - A te géped Windows, a szervered Linux.
 - A Python verziód 3.11 volt, most 3.13 van, és valami megváltozott.
 
-### 1. Környezetkezelés: virtuális környezetek és requirements
+### 7.9.2 1. Környezetkezelés: virtuális környezetek és requirements
 
 A legegyszerűbb lépés: használj virtuális környezetet (*virtual environment*) és rögzítsd az összes függőséget.
 
@@ -672,7 +672,7 @@ Ami feltétlenül kell a pipeline mellé:
 - **Python verzió dokumentálása**: a `README`-ben vagy egy `.python-version` fájlban.
 - **Operációs rendszer és rendszerfüggőségek**: ha a pipeline Linux-specifikus, írd le.
 
-### 2. Dokumentáció: amit nem írsz le, azt elfelejted
+### 7.9.3 2. Dokumentáció: amit nem írsz le, azt elfelejted
 
 Egy jó pipeline mellé a következő dokumentáció kell:
 
@@ -698,7 +698,7 @@ Ez különösen fontos, ha az eredmények megváltoznak --- vissza kell tudnod k
 
 Ha a kódot jól írtad meg (érthető változónevek, kommentek a kulcspontokon), maga a kód dokumentálja az adatfeldolgozás logikáját. Ez sokkal megbízhatóbb, mint egy külön Word-dokumentum, ami könnyen elavulttá válik.
 
-### 3. Verziókezelés: Git
+### 7.9.4 3. Verziókezelés: Git
 
 Az 5. fejezetben bevezettük a Git verziókezelő rendszert. A pipeline-kód verziókezelése nem opcionális --- kötelező.
 
@@ -706,7 +706,7 @@ Az 5. fejezetben bevezettük a Git verziókezelő rendszert. A pipeline-kód ver
 - **Visszaállítható**: ha az új verzió hibás, egy paranccsal visszaállhatsz a régi verzióra.
 - **Elágazások (branch-ek)**: kipróbálhatsz egy új tisztítási algoritmust anélkül, hogy a működő pipeline-t elrontanád.
 
-### 4. Konténerizáció: a végső megoldás
+### 7.9.5 4. Konténerizáció: a végső megoldás
 
 Ha a virtuális környezet és a `requirements.txt` nem elég (mert rendszerszintű függőségek is vannak, vagy különböző operációs rendszerek között kell futtatni), a konténerizáció a megoldás. Ennek részleteit az A függelékben (Appendix A) tárgyaljuk, de az alapkoncepció fontos:
 
@@ -716,7 +716,7 @@ Egy **konténer** (container) az alkalmazásod teljes futtatási környezetét c
 
 ---
 
-## Gyakorlati útmutató: pipeline építése lépésről lépésre
+## 7.10 Gyakorlati útmutató: pipeline építése lépésről lépésre
 
 Foglaljuk össze a fejezet tanulságait egy gyakorlati útmutatóban. Ha holnap szeretnéd elkezdeni az első pipeline-odat, kövesd ezeket a lépéseket:
 
@@ -752,9 +752,9 @@ Legalább egy e-mail riasztás, ha a pipeline hibával áll meg.
 
 ---
 
-## Debreceni esettanulmány: a Tisza vízminőségi monitorozása
+## 7.11 Debreceni esettanulmány: a Tisza vízminőségi monitorozása
 
-> **🖼️ Ábra: A Tisza vízminőségi monitoring-pipeline architektúrája**
+> **🖼️ 7.3. ábra: A Tisza vízminőségi monitoring-pipeline architektúrája**
 > *Rendszer-architektúra diagram: Szenzorok (IoT) → Adatgyűjtés → Tisztítás és validálás → Adatbázis → Elemzés és riasztás → Dashboard. Dagster logo az orchestráció jelölésére.*
 
 
@@ -782,7 +782,7 @@ A Debreceni Egyetem Környezettudományi Tanszékén egy kutatócsoport a Tisza 
 
 ---
 
-## Összefoglalás
+## 7.12 Összefoglalás
 
 - A **pipeline** (adatfeldolgozási csővezeték) az ismétlődő adatfeldolgozási lépések automatizált láncolata: bevitel → tisztítás → transzformáció → elemzés → kimenet.
 - Az automatizálás nem csak időt takarít meg, hanem **csökkenti a hibákat** és **biztosítja a reprodukálhatóságot**.

@@ -28,7 +28,7 @@ Ez a fejezet arról szól, hogyan építhetsz ilyen ágenseket --- és ennél so
 
 ## 12.2 Ágenskeretrendszerek tudósoknak --- az összehasonlítás
 
-> **🖼️ Ábra: A négy fő ágenskeretrendszer összehasonlítása — CrewAI, LangGraph, AutoGen, Claude Agent SDK**
+> **🖼️ 12.1. ábra: A négy fő ágenskeretrendszer összehasonlítása — CrewAI, LangGraph, AutoGen, Claude Agent SDK**
 > *Four colored panels comparing agent frameworks, each with an icon and key characteristics, modern flat design infographic*
 
 Az elmúlt két évben robbanásszerűen nőtt az ágens-keretrendszerek száma. Ez egyszerre jó hír (van választék) és rossz hír (nehéz eligazodni). Ebben a szekcióban összehasonlítjuk a négy legfontosabb keretrendszert, amelyek tudományos munkához a legalkalmasabbak, és segítünk kiválasztani, melyik illik hozzád.
@@ -330,7 +330,7 @@ Ez az egyetlen hely a könyvben, ahol a négy keretrendszert egymás mellé tess
 
 ## 12.3 Első kutatási ágensek építése
 
-> **🖼️ Ábra: Irodalomkutató ágens-csapat munkafolyamata — keresés, olvasás, szintézis**
+> **🖼️ 12.2. ábra: Irodalomkutató ágens-csapat munkafolyamata — keresés, olvasás, szintézis**
 > *Three AI agent avatars in a research lab setting, one searching papers, one reading, one writing a synthesis, watercolor illustration style*
 
 Most jön a lényeg. Három komplett, működő ágens-rendszert építünk, amelyek valódi kutatási problémákat oldanak meg. Mindegyiknél lépésről lépésre haladunk, és a kód minden sorát megmagyarázom.
@@ -857,7 +857,7 @@ while True:
 
 Az előző fejezetben megismerkedtél az MCP (Model Context Protocol) fogalmával. Most nézzük meg, hogyan használod a gyakorlatban, hogy az ágenseid közvetlenül elérhessék a kutatási adataidat és eszközeidet.
 
-### Az MCP lényege, röviden
+### 12.4.1 Az MCP lényege, röviden
 
 Az MCP egy szabványos protokoll, amelyen keresztül az LLM-ek (és az ágensek) csatlakozhatnak külső adatforrásokhoz és eszközökhöz. Gondolj rá úgy, mint az USB-re: egy szabványos csatlakozó, amelyen bármi csatlakoztatható.
 
@@ -874,7 +874,7 @@ Az MCP egy szabványos protokoll, amelyen keresztül az LLM-ek (és az ágensek)
 └──────────────┘              └──────────────────────┘
 ```
 
-### 12.4.1 Fájlrendszer --- az ágens olvas és ír fájlokat
+### 12.4.2 Fájlrendszer --- az ágens olvas és ír fájlokat
 
 A legegyszerűbb MCP-használat: az ágens közvetlenül hozzáfér a fájljaidhoz. Nem kell copy-paste-elned az adatokat a chatablakba --- az ágens maga olvassa be, amit kell.
 
@@ -904,7 +904,7 @@ A legegyszerűbb MCP-használat: az ágens közvetlenül hozzáfér a fájljaidh
 
 Ezzel a Claude Desktop-ban futó ágens hozzáfér a `research_data` és `publications` mappáidhoz. **Fontos biztonsági szempont:** csak azokat a mappákat add meg, amelyekhez valóban hozzáférést akarsz adni. Ne add meg a teljes C: meghajtót!
 
-### 12.4.2 Adatbázisok --- az ágens lekérdezi a kutatási adatbázisodat
+### 12.4.3 Adatbázisok --- az ágens lekérdezi a kutatási adatbázisodat
 
 Ha a kutatócsoportod adatait adatbázisban (SQLite, PostgreSQL, MySQL) tároljátok, az MCP-n keresztül az ágens közvetlenül lekérdezheti az adatbázist.
 
@@ -931,7 +931,7 @@ Ha a kutatócsoportod adatait adatbázisban (SQLite, PostgreSQL, MySQL) tárolj�
 
 Az ágens SQL-lekérdezéseket generál és futtat --- te természetes nyelven kérdezed, ő a megfelelő SQL-t írja.
 
-### 12.4.3 API-k --- az ágens eléri a külső szolgáltatásokat
+### 12.4.4 API-k --- az ágens eléri a külső szolgáltatásokat
 
 Sok kutatási adatforrás API-n (Application Programming Interface) keresztül érhető el: PubMed, CrossRef, GBIF, Copernicus, USGS, OpenMeteo, és így tovább. MCP szerverek segítségével ezeket is elérhetővé teheted az ágensed számára.
 
@@ -973,7 +973,7 @@ Sok kutatási adatforrás API-n (Application Programming Interface) keresztül �
 }
 ```
 
-### 12.4.4 Műszerek és szenzorok --- az ágens a laborod részévé válik
+### 12.4.5 Műszerek és szenzorok --- az ágens a laborod részévé válik
 
 Ez a legizgalmasabb terület: az ágens közvetlen kapcsolatban áll a laboratóriumi műszerekkel vagy a terepi szenzorokkal. Ehhez általában egyedi MCP szervert kell írni (lásd a következő szekciót és a 13. fejezetet), de a koncepció egyszerű:
 
@@ -988,7 +988,7 @@ Ez a legizgalmasabb terület: az ágens közvetlen kapcsolatban áll a laborató
 
 **Valós példa:** Egy Debreceni kutatócsoport UV-Vis spektrofotométerének kimeneti adatait olvassa egy Python script, amely MCP szerveren keresztül elérhetővé teszi az ágens számára. A kutató annyit kérdez: „Mi az utolsó minta abszorbanciája 254 nm-en?" --- és az ágens közvetlenül a műszer aktuális kimenetéből válaszol.
 
-### 12.4.5 Több MCP szerver együttes használata
+### 12.4.6 Több MCP szerver együttes használata
 
 Az igazi erő abban van, amikor **több adatforrást kombinálsz**. Az ágens egyszerre éri el a fájljaidat, az adatbázist, a külső API-kat és a műszereidet:
 
@@ -1026,7 +1026,7 @@ Ezzel az ágens egy kérdésre, mint például „Hasonlítsd össze a legutóbb
 
 Ha a meglévő MCP szerverek nem fedik le az igényeidet --- és kutatóként valószínűleg nem fogják, mert minden labor egyedi ---, saját MCP szervert is írhatsz. Ez könnyebb, mint gondolnád.
 
-### Az alapstruktúra
+### 12.5.1 Az alapstruktúra
 
 Egy MCP szerver lényegében egy Python (vagy Node.js) program, amely:
 
@@ -1168,12 +1168,12 @@ Ez a szerver két eszközt biztosít: mérési adatok lekérdezését és mintai
 
 ## 12.6 Végponttól végpontig: ágentikus kutatási munkafolyamat
 
-> **🖼️ Ábra: Teljes kutatási ciklus ágensekkel — a hipotézistől a publikációig**
+> **🖼️ 12.3. ábra: Teljes kutatási ciklus ágensekkel — a hipotézistől a publikációig**
 > *Circular workflow diagram showing four phases: hypothesis generation, data processing, analysis, and report writing, with AI agent icons at each phase, blueprint style*
 
 Most, hogy ismered az egyes építőelemeket, nézzük meg, hogyan állnak össze egy **teljes kutatási ciklusban**. Az alábbi munkafolyamat bemutatja, hogyan támogathatják az ágensek a kutatás minden fázisát --- a hipotézistől a publikációig.
 
-### A teljes ciklus
+### 12.6.1 A teljes ciklus
 
 ```
 ┌────────────────────────────────────────────────────────────────────┐
@@ -1200,7 +1200,7 @@ Most, hogy ismered az egyes építőelemeket, nézzük meg, hogyan állnak össz
 └────────────────────────────────────────────────────────────────────┘
 ```
 
-### Részletes megvalósítás CrewAI-val
+### 12.6.2 Részletes megvalósítás CrewAI-val
 
 ```python
 # kutatas_workflow.py — Teljes kutatási ciklus ágens-csapattal
@@ -1364,7 +1364,7 @@ result = research_crew.kickoff(inputs={
 
 Ez a szekció a fejezet talán legfontosabb része. Az ágensek erősek, de **nem tévedhetetlenek** --- és a kutatásban a tévedés következményei súlyosak lehetnek. Egy rosszul értelmezett statisztikai eredmény, egy félreolvasott cikk, egy figyelmen kívül hagyott outlier: ezek mind tudományos hibákhoz vezethetnek.
 
-### A három szint
+### 12.7.1 A három szint
 
 ```
 ┌─────────────────────────────────────────────────────┐
@@ -1398,7 +1398,7 @@ Ez a szekció a fejezet talán legfontosabb része. Az ágensek erősek, de **ne
 └─────────────────────────────────────────────────────┘
 ```
 
-### Human-in-the-loop implementálása CrewAI-ban
+### 12.7.2 Human-in-the-loop implementálása CrewAI-ban
 
 A CrewAI lehetővé teszi, hogy egy feladat befejezése után az ágens **megvárja az emberi jóváhagyást** mielőtt a következő lépésre menne:
 
@@ -1416,7 +1416,7 @@ stats_task = Task(
 
 A `human_input=True` beállítással a feladat befejezése után a rendszer kiírja az eredményt és megvárja a te visszajelzésedet. Elfogadhatod, módosíthatod, vagy visszaküldeted az ágenssel.
 
-### Gyakorlati tanácsok az emberi felügyelethez
+### 12.7.3 Gyakorlati tanácsok az emberi felügyelethez
 
 1. **Minden statisztikai eredményt ellenőrizz.** Az LLM-ek nem kalkulátorok --- a számolásaik közelítők. Ha pontos statisztikát akarsz, adj az ágensnek Python-kódfuttató eszközt, és a kód kimenetét nézd, nem az LLM „fejszámolását".
 

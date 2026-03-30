@@ -36,7 +36,7 @@ Mielőtt bármit kérnél egy AI-tól, érdemes megérteni, mi történik a moto
 
 ### 2.2.1 Token — a nyelv legkisebb építőköve
 
-> **🖼️ Ábra: Tokenizáció szemléltetése magyar és angol nyelven**
+> **🖼️ 2.1. ábra: Tokenizáció szemléltetése magyar és angol nyelven**
 > *Összehasonlító ábra: a "hidrogeológiai vizsgálat" és "hydrogeological survey" szavak tokenekre bontása, színes dobozokkal jelölve az egyes tokeneket és azok számát.*
 
 
@@ -54,7 +54,7 @@ Ez a különbségtétel kritikus. Ahogy Narayanan és Kapoor fogalmaz: az LLM-ek
 
 ### 2.2.3 Kontextusablak — az AI „munkamemóriája"
 
-> **🖼️ Ábra: Kontextusablak-méretek összehasonlítása (2024–2026)**
+> **🖼️ 2.2. ábra: Kontextusablak-méretek összehasonlítása (2024–2026)**
 > *Vízszintes oszlopdiagram, amely a különböző modellek kontextusablak-méreteit mutatja: GPT-4 (8K–128K), Claude (200K–1M), Gemini (1M–2M). Mellette egy könyv-ikon, amely jelzi, hány oldalnái szöveget jelent.*
 
 
@@ -87,7 +87,7 @@ A hallucináció legveszélyesebb formája az, amelyik *majdnem* igaz. Ha a mode
 
 ## 2.3 A platformok tája 2026-ban
 
-> **🖼️ Ábra: A négy nagy AI-platform összehasonlító táblázata**
+> **🖼️ 2.3. ábra: A négy nagy AI-platform összehasonlító táblázata**
 > *Négy oszlopos összehasonlító infografika: Claude, ChatGPT, Gemini, Copilot — árak, kontextusablak, erősségek, tudományos felhasználási terület ikonokkal.*
 
 
@@ -739,7 +739,7 @@ A kilenc prompt-mintázat, amelyet a NASA anyaga alapján adaptáltunk:
 
 ---
 
-## Hivatkozások és további olvasmányok
+## 2.10 Hivatkozások és további olvasmányok
 
 - White, J., Fu, Q., Hays, S. et al. (2023). *A Prompt Pattern Catalog to Enhance Prompt Engineering with ChatGPT.* arXiv:2302.11382.
 - NASA Science Mission Directorate (2024). *LLM Cookbook for Open Science.* https://github.com/nasa-impact/smd-llm-workshop

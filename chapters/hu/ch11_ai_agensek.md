@@ -12,7 +12,7 @@
 
 ---
 
-## Nyitó jelenet: Amikor a kutató nem győzi egyedül
+## 11.1 Nyitó jelenet: Amikor a kutató nem győzi egyedül
 
 Képzeld el a következő helyzetet. Egy klimatológus az ELTE Meteorológiai Tanszékén dolgozik, és egy új tanulmányt készít az elmúlt húsz év európai hőhullámainak mintázatáról. A munkafolyamat a következő: először át kell néznie a szakirodalmat — legalább kétszáz friss publikációt a Web of Science-ből és a Scopusból. Aztán le kell töltenie a Copernicus Climate Data Store-ból a napi hőmérsékleti rácsadatokat, össze kell vetnie a WHO halálozási statisztikáival, le kell futtatnia egy klaszteranalízist, és végül meg kell írnia egy összefoglalót az eredményekről.
 
@@ -28,12 +28,12 @@ Ez a fejezet arról szól, hogy mi az AI ágens, hogyan működik, milyen archit
 
 ---
 
-## Az eszközöktől az ágensekig: az autonómia spektruma
+## 11.2 Az eszközöktől az ágensekig: az autonómia spektruma
 
-> **🖼️ Ábra: Az autonómia öt szintje — az egyszerű chatbottól az autonóm ágensig**
+> **🖼️ 11.1. ábra: Az autonómia öt szintje — az egyszerű chatbottól az autonóm ágensig**
 > *A futuristic infographic showing five ascending levels of AI autonomy, from a simple chatbox at level 1 to a fully autonomous multi-agent system at level 5, clean vector style, blue-purple gradient*
 
-### Az öt szint
+### 11.2.1 Az öt szint
 
 Mielőtt definiálnánk, mi az AI ágens, érdemes megérteni, hogy az AI-rendszerek egy **autonómia-spektrumon** helyezkednek el. Az OpenAI 2024-ben közzétett keretrendszere öt szintet különböztet meg, amelyek a mesterséges általános intelligencia (AGI) felé vezető utat jelölik ki:
 
@@ -53,7 +53,7 @@ Ez a keretrendszer nem csak elméleti érdekesség. A lényeg a gyakorlati kül�
 
 A különbség nem fokozati, hanem minőségi. Amikor átléped a 2. és 3. szint közötti határt, az AI-nak hirtelen szüksége van memóriára, tervezőképességre, eszközökre és önellenőrzésre — vagyis mindarra, amiről ez a fejezet szól.
 
-### A spektrum a gyakorlatban
+### 11.2.2 A spektrum a gyakorlatban
 
 Gondolj erre úgy, mint egy autó vezetési automatizáltsági szintjeire. A SAE-skálán a 0. szint a teljesen kézi vezetés, az 5. szint a teljesen önálló sofőr nélküli autó. A két végpont között vannak olyan szintek, ahol az ember és a gép megosztja a felelősséget — és pontosan ez a helyzet az AI-rendszereknél is.
 
@@ -61,9 +61,9 @@ A legtöbb tudós jelenleg az 1–2. szintén használja az AI-t: chatbotként, 
 
 ---
 
-## Mi az AI ágens? Huang tíz jellemzője
+## 11.3 Mi az AI ágens? Huang tíz jellemzője
 
-### A definíció
+### 11.3.1 A definíció
 
 > **AI ágens** (AI agent / agentic AI): egy magasan autonóm, adaptív és intelligens digitális entitás, amely képes **észlelni**, **gondolkodni**, **tanulni** és **cselekedni** komplex környezetekben — mindezt emberi beavatkozás minimális szintje mellett.
 
@@ -71,7 +71,7 @@ Ez az a fogalom, amelyet a könyv hátralévő részében is használni fogunk, 
 
 Ken Huang és szerzőtársai az *Agentic AI* című könyvükben (2025) tíz jellemzőt azonosítottak, amelyek megkülönböztetik a modern AI ágenseket a hagyományos szoftverektől. Ezek nem opcionális tulajdonságok — együttesen határozzák meg, hogy valami ágens-e vagy sem.
 
-### A tíz jellemző
+### 11.3.2 A tíz jellemző
 
 **1. Autonómia és kezdeményezőkészség** (Autonomy and Initiative)
 
@@ -113,18 +113,18 @@ Az ágens képes készségeit különböző szakterületek között transzferál
 
 Az ágens képes a fizikai világgal interakcióba lépni robotika és IoT-eszközök révén. Ez a jellemző a laboratóriumi automatizálásnál és a digitális ikreknél (10. fejezet) válik különösen relevánssá.
 
-### Egy fontos megkülönböztetés
+### 11.3.3 Egy fontos megkülönböztetés
 
 Nem minden AI-rendszer, amelyik „csinál valamit", ágens. Egy egyszerű szkript, amely minden nap letölt adatokat egy API-ból, automatizált, de nem ágens — nincs döntéshozatali képessége, nem alkalmazkodik, és nem ellenőrzi saját munkáját. Az ágens attól ágens, hogy **gondolkodik a cselekvéséről**, és képes **megváltoztatni a tervét** a tapasztalatai alapján.
 
 ---
 
-## A hétréteges ágens-architektúra
+## 11.4 A hétréteges ágens-architektúra
 
-> **🖼️ Ábra: A hétréteges ágens-architektúra referenciakerete**
+> **🖼️ 11.2. ábra: A hétréteges ágens-architektúra referenciakerete**
 > *Layered architecture diagram with seven horizontal layers labeled in Hungarian, from Foundation Models at the bottom to Agent Ecosystem at the top, each layer a different pastel color, isometric 3D style*
 
-### A referenciakeret
+### 11.4.1 A referenciakeret
 
 Huang és társai egy hétréteges referencia-architektúrát (7-layer AI agent architecture) javasoltak, amely rendszerezi az ágens-rendszerek felépítését. Ez az architektúra nem egy konkrét szoftver tervrajza, hanem egy **gondolkodási keret**: segít megérteni, hogy egy ágens-rendszer milyen funkcionális rétegekből áll, és melyik réteg miért felelős.
 
@@ -155,7 +155,7 @@ Huang és társai egy hétréteges referencia-architektúrát (7-layer AI agent 
 
 Nézzük meg egyenként, mit csinál minden réteg.
 
-### 1. réteg: Alapmodellek (Foundation Models)
+### 11.4.2 réteg: Alapmodellek (Foundation Models)
 
 Ez az ágens „agya" — a nagy nyelvi modell (LLM) vagy multimodális modell, amely a szöveges, képi és egyéb inputokat feldolgozza. Az alapmodell határozza meg az ágens alapvető képességeit: mennyire jól gondolkodik, mennyire kreatív, mekkora kontextust tud egyszerre kezelni.
 
@@ -168,7 +168,7 @@ A mai vezető modellek — GPT-4o, Claude Opus/Sonnet, Gemini, Llama, DeepSeek R
 
 Az alapmodell választása stratégiai döntés. Egy gyors, olcsó modell (például Claude Haiku vagy GPT-4o mini) elegendő rutinfeladatokra, míg komplex tudományos gondolkodáshoz erősebb modell kell (Claude Opus, o1, DeepSeek R1).
 
-### 2. réteg: Adatműveletek (Data Operations)
+### 11.4.3 réteg: Adatműveletek (Data Operations)
 
 Az ágens memóriája és tudásbázisa. Ez a réteg felelős azért, hogy az ágens ne csak a saját tanítási adataira támaszkodjon, hanem friss, aktuális, szakterületi információkhoz is hozzáférjen.
 
@@ -180,7 +180,7 @@ Kulcstechnológiák:
 
 A különbség a RAG és az Agentic RAG között szemléletes: a RAG olyan, mint amikor megkérsz valakit, hogy nézze meg a lexikont. Az Agentic RAG olyan, mint amikor a könyvtáros önállóan bejárja a polcokat, összevetít több forrást, visszamegy ellenőrizni, és csak akkor ad választ, amikor biztos benne.
 
-### 3. réteg: Ágens-keretrendszerek (Agent Frameworks)
+### 11.4.4 réteg: Ágens-keretrendszerek (Agent Frameworks)
 
 Ez a réteg az „operációs rendszer", amelyre az ágens épül. A keretrendszer biztosítja a tervezés, eszközhasználat, döntéshozatal és iteráció mechanizmusait.
 
@@ -197,14 +197,14 @@ A legfontosabb keretrendszerek 2025–2026-ban:
 
 A keretrendszer választása a feladattól függ. Nem kell egyet választanod és ahhoz ragaszkodnod — sok rendszer több keretrendszert is használ egyszerre, különböző feladatokra.
 
-### 4. réteg: Telepítés és infrastruktúra (Deployment and Infrastructure)
+### 11.4.5 réteg: Telepítés és infrastruktúra (Deployment and Infrastructure)
 
 Ahol az ágens fizikailag „él": felhőplatformok (AWS, Azure, GCP), GPU/TPU-gyorsítók, konténer-orkesztráció (Kubernetes), CI/CD-pipeline-ok. A tudósok számára ez a réteg nagyrészt láthatatlan — a felhőszolgáltatók és a keretrendszerek elvonatkoztatják —, de két dolog fontos:
 
 - **Költségek**: az ágens minden gondolkodási lépése API-hívás, ami pénzbe kerül. Erről a 14. fejezetben lesz szó részletesen.
 - **Latencia**: ha az ágens valós időben kell dolgozzon (például digitális iker vezérlése), a telepítési infrastruktúra sebessége kritikus.
 
-### 5. réteg: Kiértékelés és megfigyelhetőség (Evaluation and Observability)
+### 11.4.6 réteg: Kiértékelés és megfigyelhetőség (Evaluation and Observability)
 
 Hogyan tudod, hogy az ágens jól dolgozik? Ez a réteg biztosítja a monitorozást, a teljesítménymérést és a hibakeresést.
 
@@ -216,19 +216,19 @@ Kulcselemek:
 
 A tudós számára ez a réteg különösen fontos: ha az ágens eredményeit publikálni akarod, dokumentálnod kell a teljes munkafolyamatot. Az observability eszközök ezt automatikusan biztosítják.
 
-### 6. réteg: Biztonság és megfelelőség (Security and Compliance)
+### 11.4.7 réteg: Biztonság és megfelelőség (Security and Compliance)
 
 Ez a réteg átszövi az összes többit — ez nem egy „plafon", hanem egy „váz", amely minden rétegbe beépül. Lefedi a fenyegetésmodellezést, a sebezhetőségi elemzést, a szabályozási megfelelőséget (EU AI Act, GDPR, HIPAA) és az incidenskezelést.
 
 A biztonságról és annak konkrét fenyegetéseiről a fejezet későbbi részében, az OWASP Top 10 for AI Agents kapcsán részletesebben fogunk beszélni.
 
-### 7. réteg: Ágensökoszisztéma (Agent Ecosystem)
+### 11.4.8 réteg: Ágensökoszisztéma (Agent Ecosystem)
 
 A felső réteg: a valós alkalmazások, az integrációs platformok, a piacterek. Itt válik az ágens használhatóvá — itt csatlakozik a CRM-hez, az ERP-hez, a laboratóriumi információs rendszerhez, vagy éppen a tudós saját kutatási pipeline-jához.
 
 Az ökoszisztéma-réteg legfontosabb fejleménye 2025-ben az MCP (Model Context Protocol) és az A2A (Agent-to-Agent) protokoll, amelyekről hamarosan részletesen fogunk beszélni.
 
-### Mit jelent ez a gyakorlatban?
+### 11.4.9 Mit jelent ez a gyakorlatban?
 
 Nem kell mind a hét réteget magadnak felépítened. A legtöbb kutató a **3. rétegen** (keretrendszer) dolgozik, az **1–2. réteget** (modell, adatok) szolgáltatásként használja, a **4. réteget** (infrastruktúra) a felhőszolgáltató biztosítja, az **5. réteget** (kiértékelés) a keretrendszer beépítve hozza, és a **6–7. réteget** (biztonság, ökoszisztéma) intézményi szintén kezelik.
 
@@ -236,13 +236,13 @@ A hétréteges modell értéke abban áll, hogy ha valami nem működik, meg tud
 
 ---
 
-## Centaur és Cyborg: az ember-AI együttműködés két módja
+## 11.5 Centaur és Cyborg: az ember-AI együttműködés két módja
 
-### Mollick modellje
+### 11.5.1 Mollick modellje
 
 Ethan Mollick, a Wharton School professzora a *Co-Intelligence* című könyvében (2024) két alapvető módot ír le arra, hogyan dolgozhat együtt az ember és az AI. Ez a két mód nem csak az ágensekre vonatkozik, de az ágensek kontextusában különösen fontos megérteni a különbséget.
 
-### Centaur mód
+### 11.5.2 Centaur mód
 
 A **centaur** (centaur mode) a sakkból ered: a „centaur csapatok" — ahol ember és gép együtt játszik — többször legyőzték mind a legjobb embereket, mind a legjobb gépeket. A centaur munka lényege a **tiszta munkamegosztás**: az ember azt csinálja, amihez az ember jobb, a gép azt, amihez a gép.
 
@@ -255,20 +255,20 @@ Tudományos kontextusban a centaur mód így néz ki:
 
 A határ éles: te gondolkodsz, az ágens végrehajt. Mint a mitológiai kentaur — felül ember, alul ló —, a két fél egyértelműen elkülönül.
 
-### Cyborg mód
+### 11.5.3 Cyborg mód
 
 A **cyborg** (cyborg mode) radikálisan más: nincs éles határ ember és AI között. A kettő összefonódik a munkafolyamat minden pontján. Elkezdessz egy mondatot, az AI befejezi. Módosítod, az AI alternatívát javasol. Kérsz egy kritikát, az AI visszaír, te átírod az ágens javaslatai alapján.
 
 Mollick saját írási folyamatát írja le így: AI-perszónákat használt (Ozymandias a kritikus visszajelzésre, Mnemosyne a kreatív asszociációkra, Steve az átlagolvasó perspektívájára), és ezekkel folyamatos dialógusban dolgozott.
 
-### Melyiket válaszd?
+### 11.5.4 Melyiket válaszd?
 
 A válasz: **mindkettőt**, de különböző helyzetekben.
 
 - **Centaur mód** akkor jó, amikor a feladat jól szétválasztható emberi és gépi komponensekre. Adatgyűjtés, formázás, ellenőrzés — ezeket delegáld az ágensnek. Kreatív döntések, értelmezés, etikai mérlegelés — ezeket tartsd meg magadnak.
 - **Cyborg mód** akkor jó, amikor a feladat kreatív, iteratív, és a gondolkodás maga profitál az AI-val való együttműködésből. Hipotézisgenerálás, szövegírás, ötletelés — itt a szoros összefonódás hozza a legjobb eredményt.
 
-### A figyelmeztetés: „elalvás a volánnál"
+### 11.5.5 A figyelmeztetés: „elalvás a volánnál"
 
 Mollick és társai a Boston Consulting Group-pal végzett kutatásukban (mintegy 800 tanácsadóval, GPT-4-gyel) egy döbbenetes eredményt kaptak. Azoknál a feladatoknál, amelyekhez az AI jó volt, az AI-segített tanácsadók **minden mérhető dimenzióban** jobban teljesítettek. De volt egy feladat, amely az AI képességein kívül esett — egy trükkös statisztikai ítélet félrevezető adatokkal. AI nélkül a tanácsadók 84%-ban jól válaszoltak. AI-val? Csak 60-70%-ban.
 
@@ -278,9 +278,9 @@ Ez a jelenség az ágensekkel **fokozottan veszélyes**, mert az ágensek éppen
 
 ---
 
-## A ReACT pattern: Gondolat → Cselekvés → Megfigyelés
+## 11.6 A ReACT pattern: Gondolat → Cselekvés → Megfigyelés
 
-### A minta
+### 11.6.1 A minta
 
 A legtöbb modern AI ágens a **ReACT** (Reasoning + Acting) mintát követi, amelyet Shunyu Yao és szerzőtársai dolgoztak ki a Princeton Egyetemen (2022). A minta lényege egyszerű, de hatékony:
 
@@ -304,7 +304,7 @@ Ez a ciklus az ágens alapvető „gondolkodási ciklusa". Minden iterációban 
 
 A ReACT azért forradalmi, mert **összekapcsolja a gondolkodást a cselekvéssel**. A korábbi megközelítéseknél a gondolkodás (chain-of-thought prompting) és a cselekvés (tool use) külön-külön működött. A ReACT-nál az ágens gondolkodik, *miközben* cselekszik, és a cselekvés eredménye visszahat a gondolkodásra.
 
-### Kidolgozott példa: NASA CMR ágens
+### 11.6.2 Kidolgozott példa: NASA CMR ágens
 
 Tegyük fel, hogy egy űrkutatási ágenst építünk, amely a NASA Common Metadata Repository-jából (CMR) keres műholdas adatokat egy adott kutatási kérdéshez. A feladat: „Keress MODIS felszínhőmérsékleti adatokat a Kárpát-medence felett, 2023 nyaráról."
 
@@ -358,16 +358,16 @@ Figyeld meg, hogyan hozta meg az ágens a döntéseket **önállóan**: kiválas
 
 ---
 
-## MCP: Model Context Protocol — univerzális csatlakozó az AI és a világ között
+## 11.7 MCP: Model Context Protocol — univerzális csatlakozó az AI és a világ között
 
-> **🖼️ Ábra: Az MCP mint univerzális csatlakozó — az AI ágens és a külső eszközök kapcsolata**
+> **🖼️ 11.3. ábra: Az MCP mint univerzális csatlakozó — az AI ágens és a külső eszközök kapcsolata**
 > *Diagram showing an AI agent in the center connected via standardized MCP protocol adapters to databases, file systems, APIs, and lab instruments, clean technical illustration style*
 
-### A probléma
+### 11.7.1 A probléma
 
 Amikor az ágensek eszközöket akarnak használni — adatbázist keresni, fájlt letölteni, API-t hívni —, minden eszközhöz külön integrációt kell írni. Ha 10 AI-platformod és 10 eszközöd van, az 10 × 10 = 100 egyedi integráció. Ez nem skálázható.
 
-### A megoldás: az MCP
+### 11.7.2 A megoldás: az MCP
 
 Az **MCP** (Model Context Protocol) egy nyílt szabvány, amelyet az Anthropic fejlesztett ki 2024-ben. A legjobb analógia: az MCP az AI világ USB-csatlakozója. Ahogy az USB lehetővé tette, hogy bármilyen eszközt bármilyen számítógéphez csatlakoztass egyetlen szabvánnyal, az MCP lehetővé teszi, hogy bármilyen AI-modell bármilyen külső eszközzel vagy adatforrással kommunikáljon egyetlen protokollon keresztül.
 
@@ -377,7 +377,7 @@ Az MCP három alapkérdésre válaszol:
 2. **Mit csinálhatok?** (Tools — eszközök): konkrét műveletek egyértelmű bemenettel és kimenettel (issue létrehozása, keresés, fájlírás)
 3. **Hogyan beszélgetünk biztonságosan?** (Transport — szállítás): szabványos kérések hitelesítéssel, időtúllépéssel és hibakezeléssel
 
-### Hogyan működik?
+### 11.7.3 Hogyan működik?
 
 Az MCP kliens-szerver architektúrát használ:
 
@@ -386,7 +386,7 @@ Az MCP kliens-szerver architektúrát használ:
 
 A zseniális az egészben: **te továbbra is természetes nyelven írsz promptot**. Az AI automatikusan felfedezi, milyen eszközök állnak rendelkezésre, kiválasztja a megfelelőt, és korrektül formázott, hitelesített kérést küld.
 
-### A skála
+### 11.7.4 A skála
 
 2025–2026-ra az MCP ökoszisztéma robbanásszerűen nőtt:
 
@@ -395,7 +395,7 @@ A zseniális az egészben: **te továbbra is természetes nyelven írsz promptot
 - Szerverek léteznek szinte minden adatforráshoz: adatbázisok (PostgreSQL, MongoDB), felhőszolgáltatások (AWS, Azure), tudományos API-k (PubMed, arXiv, NASA CMR), projektmenedzsment (Jira, Linear), kommunikáció (Slack, Email) és még sok más
 - Helyi és távoli szerverek egyaránt lehetségesek: a helyi szerverek prototipizálásra és offline munkára, a távoli szerverek csapatmunkára és intézményi használatra ideálisak
 
-### Biztonsági megfontolások
+### 11.7.5 Biztonsági megfontolások
 
 Az MCP-vel kapcsolatos legfontosabb biztonsági kockázatok:
 
@@ -405,7 +405,7 @@ Az MCP-vel kapcsolatos legfontosabb biztonsági kockázatok:
 
 A VS Code és más kliensek védelmi mechanizmusokat alkalmaznak: első használatkor minden eszköz jóváhagyást kér, és a felhasználó eldöntheti, hogy egyszeri, munkamenet-szintű vagy állandó engedélyt ad.
 
-### Miért fontos ez a tudósoknak?
+### 11.7.6 Miért fontos ez a tudósoknak?
 
 Az MCP a tudományos munkafolyamatok szempontjából azért áttörés, mert megoldja a „minden adatforráshoz külön szkriptet kell írni" problémát. Egy jól konfigurált MCP-környezetben az ágens képes:
 
@@ -420,16 +420,16 @@ Mindezt egyetlen munkafolyamatban, természetes nyelven irányítva. Az MCP szer
 
 ---
 
-## A2A: Agent-to-Agent protokoll
+## 11.8 A2A: Agent-to-Agent protokoll
 
-### Amikor az ágensek egymással beszélnek
+### 11.8.1 Amikor az ágensek egymással beszélnek
 
 Míg az MCP az ágens-eszköz kommunikáció szabványa, az **A2A** (Agent-to-Agent) protokoll a Google által 2025-ben bevezetett nyílt szabvány az **ágensek közötti kommunikációra**. A két protokoll kiegészíti egymást:
 
 - **MCP**: ágens ↔ eszköz/adat (vertikális integráció)
 - **A2A**: ágens ↔ ágens (horizontális integráció)
 
-### Hogyan működik az A2A?
+### 11.8.2 Hogyan működik az A2A?
 
 Az A2A protokoll lehetővé teszi, hogy különböző keretrendszerekkel, különböző szolgáltatóknál, különböző szervezetékben futó ágensek szabványos módon kommunikáljanak egymással. Az A2A három kulcsfogalomra épül:
 
@@ -437,21 +437,21 @@ Az A2A protokoll lehetővé teszi, hogy különböző keretrendszerekkel, külö
 2. **Task** (feladat): a kommunikáció alapegysége — az egyik ágens feladatot ad a másiknak, amely állapotfrissítéseket küld vissza
 3. **Artifact** (műtermék): a feladat eredménye — fájl, adat, elemzés, összefoglaló
 
-### Miért van erre szükség?
+### 11.8.3 Miért van erre szükség?
 
 Képzeld el, hogy egy kutatóintézet három különböző ágenst használ: egy irodalomkereső ágenst (Claude-alapú), egy statisztikai elemző ágenst (saját fejlesztés, Llama-alapú) és egy ábraszerkesztő ágenst (GPT-4o-alapú). Az A2A nélkül ezeket kézzel kellene összekötni. Az A2A-val az irodalomkereső ágens automatikusan átadhatja az eredményeit az elemző ágensnek, amely az elkészült statisztikákat továbbítja az ábraszerkesztőnek — és az egész folyamat dokumentált, nyomon követhető és szabványos.
 
 ---
 
-## Multi-ágens rendszerek: amikor egy ágens nem elég
+## 11.9 Multi-ágens rendszerek: amikor egy ágens nem elég
 
-### Miért több ágens?
+### 11.9.1 Miért több ágens?
 
 Egy ágens sok mindent tud — de vannak feladatok, amelyek természetükből fakadóan meghaladják egyetlen ágens képességeit. Ilyenkor **multi-ágens rendszerre** (multi-agent system, MAS) van szükség.
 
 > **Multi-ágens rendszer** (multi-agent system, MAS): olyan számítógépes rendszer, amelyben több intelligens ágens interakcióba lép egymással egyéni vagy kollektív célok elérése érdekében. A rendszer komplex viselkedése az ágensek interakcióiból **emergensen** alakul ki — nem az egyes ágensek bonyolultságából.
 
-### Mikor kell multi-ágens rendszer?
+### 11.9.2 Mikor kell multi-ágens rendszer?
 
 | Szituáció | Miért kell MAS? |
 |---|---|
@@ -461,7 +461,7 @@ Egy ágens sok mindent tud — de vannak feladatok, amelyek természetükből fa
 | Különböző tudásbázisok szükségesek | Minden ágens a saját szakterületi tudásbázisával dolgozik |
 | Skálázhatóság | Igény szerint új ágenseket adhatsz hozzá a rendszerhez |
 
-### Koordináció: hogyan dolgoznak együtt?
+### 11.9.3 Koordináció: hogyan dolgoznak együtt?
 
 A multi-ágens rendszerek legnagyobb kihívása a koordináció. Három alapvető mechanizmus létezik:
 
@@ -490,7 +490,7 @@ Bizonyos szituációkban a versengés hatékonyabb, mint az együttműködés. P
 >
 > *Forrás: gis ch22, 21.3.4 „Többágenses rendszerek"*
 
-### Konfliktusmegoldás
+### 11.9.4 Konfliktusmegoldás
 
 Amikor több ágens dolgozik együtt, elkerülhetetlenül konfliktusok keletkeznek:
 
@@ -505,7 +505,7 @@ A konfliktusokat három szintén lehet kezelni:
 2. **Tárgyalás**: az ágensek maguk oldják meg az ellentétet licitálási vagy kompromisszumos mechanizmusokkal
 3. **Arbitrálás**: semleges harmadik fél (vagy hierarchiában felette álló ágens) dönt
 
-### Egy tudományos példa
+### 11.9.5 Egy tudományos példa
 
 Képzelj el egy multi-ágens rendszert, amely interdiszciplináris szakirodalmi áttekintést készít a mikroplasztik óceáni terjedéséről:
 
@@ -519,13 +519,13 @@ Ezek az ágensek párhuzamosan és iteratívan dolgoznak: az író ágens nem v�
 
 ---
 
-## Biztonság, guardrails és emberi felügyelet
+## 11.10 Biztonság, guardrails és emberi felügyelet
 
-### Miért különösen fontos az ágensbiztonság?
+### 11.10.1 Miért különösen fontos az ágensbiztonság?
 
 Az ágensek biztonsági kockázatai **minőségileg különböznek** a hagyományos AI-rendszerekétől. Egy chatbot legrosszabb esetben rossz választ ad. Egy ágens viszont **cselekszik**: fájlokat törölhet, e-maileket küldhet, adatbázisokat módosíthat, pénzt utalhat. Ha egy ágens rosszul működik vagy manipulálják, a kár nem elméleti, hanem valós.
 
-### OWASP Top 10 for AI Agents
+### 11.10.2 OWASP Top 10 for AI Agents
 
 Az OWASP (Open Web Application Security Project) 2025-ben kiadta az AI ágensek tíz legfontosabb biztonsági kockázatának listáját. Ezek a kockázatok minden ágensépítő és -használó kutatónak ismerősnek kell lenniük:
 
@@ -559,7 +559,7 @@ Ha az ágens tevékenysége nincs naplózva, utólag lehetetlen rekonstruálni, 
 **10. Alignment drift (Igazodási sodródás)**
 Idővel az ágens viselkedése eltávolodik az eredeti szándéktól — nem feltétlenül rosszindulatúan, hanem mert a környezet, az adatok vagy a visszacsatolási hurkok változtak. Ez a leginsidiosabb kockázat, mert fokozatosan, észrevétlenül történik.
 
-### Human-in-the-loop: az ember a hurokban
+### 11.10.3 Human-in-the-loop: az ember a hurokban
 
 A human-in-the-loop (HITL) megközelítés azt jelenti, hogy az ágens működési ciklusának **kritikus pontjain** emberi jóváhagyást kér. Ez nem jelenti, hogy minden lépésnél meg kell állnia — az éppen az ágens előnyét semmisítené meg. Ehelyett a HITL stratégiai:
 
@@ -570,7 +570,7 @@ A human-in-the-loop (HITL) megközelítés azt jelenti, hogy az ágens működé
 
 A jó ágens-rendszer lehetővé teszi, hogy a felhasználó **testreszabja** a HITL küszöbértékeket: egy tapasztalt felhasználó több autonómiát adhat, egy kezdő szigorúbb felügyeletet.
 
-### Guardrails: a korlátok
+### 11.10.4 Guardrails: a korlátok
 
 A guardrails (védőkorlátok) az ágensbe beépített korlátozások, amelyek megakadályozzák a nemkívánatos viselkedést:
 
@@ -580,9 +580,9 @@ A guardrails (védőkorlátok) az ágensbe beépített korlátozások, amelyek m
 
 ---
 
-## Az AI ágens gazdaságtan
+## 11.11 Az AI ágens gazdaságtan
 
-### A költségek realitása
+### 11.11.1 A költségek realitása
 
 Az ágensek nem ingyenesek. Minden gondolkodási lépés, minden eszközhasználat, minden iteráció API-hívásokat generál, amelyeknek ára van. Egy komplex kutatási feladat, ahol az ágens 50 iteráción megy keresztül, különböző eszközöket használ és nagy kontextusablakokat dolgoz fel, könnyen kerülhet több dollárba — vagy akár tízekbe.
 
@@ -600,7 +600,7 @@ A költségoptimalizálás stratégiái:
 - **Caching**: ismétlődő kérések eredményeinek tárolása
 - **Batching**: hasonló feladatok összevonása egyetlen kérésbe
 
-### Hozzáférés és méltányosság
+### 11.11.2 Hozzáférés és méltányosság
 
 Az ágensek gazdaságtana egy mélyebb kérdést is felvet: **ki engedheti meg magának az ágenseket?** A legfejlettebb ágensek drága modelleket, nagy számítási kapacitást és szakértő konfigurációt igényelnek. Ez azt jelenti, hogy a gazdagabb intézmények — amelyeknek több erőforrásuk van — hatékonyabb ágenseket használhatnak, ami **tovább növeli** az akadémiai világ meglévő egyenlőtlenségeit.
 
@@ -613,7 +613,7 @@ Az ellensúlyok:
 
 Az OpenAI 2025-ös „Economic Blueprint" dokumentuma egyenesen fogalmaz: az AI ágensek egy **új típusú gazdasági szereplőt** képviselnek. A kérdés nem az, hogy lesznek-e ágensek, hanem az, hogy ki fogja birtokolni, irányítani és szabályozni őket. Ez már nem technológiai, hanem gazdaságpolitikai és társadalmi kérdés — és ennek részleteivel a 16. fejezet foglalkozik.
 
-### A tudós helyzete
+### 11.11.3 A tudós helyzete
 
 Tudósként a legfontosabb, amit az ágens-gazdaságtanról tudhatsz:
 
@@ -624,7 +624,7 @@ Tudósként a legfontosabb, amit az ágens-gazdaságtanról tudhatsz:
 
 ---
 
-## Összefoglalás: a fejezet kulcsüzenetei
+## 11.12 Összefoglalás: a fejezet kulcsüzenetei
 
 Ez a fejezet az AI ágensek fogalmi alapjait fektette le. Foglaljuk össze a legfontosabb gondolatokat:
 
@@ -646,13 +646,13 @@ Ez a fejezet az AI ágensek fogalmi alapjait fektette le. Foglaljuk össze a leg
 
 ---
 
-## Mi jön ezután?
+## 11.13 Mi jön ezután?
 
 A következő fejezetben (12. fejezet) mindazt, amit itt elméletben megismertél, gyakorlatba ülteted: valódi AI ágenseket fogsz építeni, tesztelni és futtatni. Az elmélettől a cselekvésig — pont úgy, ahogy egy ágens tenné.
 
 ---
 
-## Irodalomjegyzék
+## 11.14 Irodalomjegyzék
 
 - Huang, K. et al. (2025). *Agentic AI: Theories and Practices.* Springer.
 - Mollick, E. (2024). *Co-Intelligence: Living and Working with AI.* Portfolio/Penguin.

@@ -10,9 +10,9 @@
 > - **Szükséges eszközök:** Böngésző + terminál (n8n/KNIME telepítés)
 > - **Kapcsolódó fejezetek:** 5. fejezet (kódolás), 7. fejezet (pipeline-ok), 12. fejezet (ágensek építése)
 
-## Amikor a folyamatábra maga a program
+## 8.1 Amikor a folyamatábra maga a program
 
-> **🖼️ Ábra: Kódalapú vs. vizuális programozás összehasonlítása**
+> **🖼️ 8.1. ábra: Kódalapú vs. vizuális programozás összehasonlítása**
 > *Kétpaneles ábra: Bal oldalon Python-kód egy pipeline-hoz; jobb oldalon ugyanaz a pipeline vizuális node-okkal (n8n vagy KNIME stílusban). Középen "=" jel, jelezve, hogy ugyanaz az eredmény.*
 
 
@@ -28,9 +28,9 @@ Ez a fejezet neked szól, ha valaha is úgy érezted, hogy a programozás falat 
 
 ---
 
-## Miért működik a vizuális programozás a tudósok számára?
+## 8.2 Miért működik a vizuális programozás a tudósok számára?
 
-### A folyamatábra a természetes gondolkodás
+### 8.2.1 A folyamatábra a természetes gondolkodás
 
 Ha visszagondolsz a kutatási módszertanra, amit az egyetemen tanultál, szinte mindent folyamatábraként mutatok be. A kísérleti protokoll lépésekből áll. A statisztikai elemzés egymásra épülő fázisokból. Az adatfeldolgozás: betöltés, tisztítás, transzformáció, elemzés, vizualizáció. Ezek mind *szekvenciális, elágazó, összekapcsolt lépések* — pontosan az, amit egy vizuális programozási felület ábrázol.
 
@@ -46,7 +46,7 @@ A vizuális programozás nem egy "könnyített" változata a "valódi" programoz
 
 **Kevesebb szintaktikai hiba.** Node-ok összekötögetésekor nem fogsz elfelejteni egy kettőspontot, nem cserélsz össze egy változónevet, nem hibázol a behúzásban. A hibák logikai természetűek maradnak, nem szintaktikaiak.
 
-### Mikor NEM jó a vizuális megközelítés?
+### 8.2.2 Mikor NEM jó a vizuális megközelítés?
 
 Természetesen a vizuális programozás sem mindenható. Ha egyedi algoritmusokat implementálsz, ha nagy teljesítményű számítást végzel, vagy ha egy nagyon specifikus szoftverkönyvtárat kell használnod, a hagyományos kódolás továbbra is az erősebb eszköz. A fejezet végén részletes döntési útmutatót találsz.
 
@@ -55,23 +55,23 @@ Természetesen a vizuális programozás sem mindenható. Ha egyedi algoritmusoka
 > **Ne csináld!**
 > Ne epitts bonyolult, sok node-bol allo munkafolyamatot egybol. Kezdd ket-harom node-dal (pl. fajl beolvasas → szures → kimenet), es csak akkor bovitsd, ha ez mukodik. A vizualis feluleten konnyu "lego-szenvedely"-be esni, es egy attekinthetetlen, 50 node-os szornyeteget epiteni, amelyet senki — beleertve teged harom honap mulva — nem fog megerteni.
 
-## Node-alapú szerkesztők: az alapkoncepció
+## 8.3 Node-alapú szerkesztők: az alapkoncepció
 
 Mielőtt belevágnánk a konkrét eszközökbe, értsük meg az alapvető koncepciót, amely mindegyikben közös.
 
-### Mi az a node?
+### 8.3.1 Mi az a node?
 
 Egy **node** (csomópont) egyetlen művelet. Lehet egyszerű — "olvasd be ezt a CSV-fájlt" — vagy összetett — "futtasd le ezt a gépi tanulási modellt". Minden node-nak vannak **bemenetei** (honnan kapja az adatot) és **kimenetei** (hová továbbítja az eredményt).
 
-### Mi az a connection (összeköttetés)?
+### 8.3.2 Mi az a connection (összeköttetés)?
 
 Amikor egy node kimenetét egy másik node bemenetéhez kötöd, **connection**-t hozol létre. Ez határozza meg az adatáramlás irányát. Az adat balról jobbra (vagy fentről lefelé) halad a munkafolyamatban.
 
-### Mi az a workflow (munkafolyamat)?
+### 8.3.3 Mi az a workflow (munkafolyamat)?
 
 A node-ok és connection-ök együttese egy **workflow**: a teljes feldolgozási folyamat, az adatbetöltéstől az eredményig. Ez az, ami a vizuális vásznon megjelenik — lényegében egy futtatható folyamatábra.
 
-### A közös minta
+### 8.3.4 A közös minta
 
 Szinte minden vizuális eszköz ugyanazt a mintát követi:
 
@@ -89,9 +89,9 @@ Legyen szó munkafolyamat-automatizálásról (n8n), adatelemzésről (KNIME), L
 
 ---
 
-## n8n — Munkafolyamat-automatizálás nyílt forráskóddal
+## 8.4 n8n — Munkafolyamat-automatizálás nyílt forráskóddal
 
-### Mi az n8n?
+### 8.4.1 Mi az n8n?
 
 Az n8n (ejtsd: "n-eight-n", "nodemation" rövidítése) egy nyílt forráskódú munkafolyamat-automatizálási platform. Gondolj rá úgy, mint egy vizuális szerelőműhelyre, ahol különböző szolgáltatásokat — e-mail, adatbázis, API-k, mesterséges intelligencia — kötögethetel össze anélkül, hogy egyetlen sor kódot írnál.
 
@@ -101,7 +101,7 @@ Az n8n két kulcselőnye a hasonló eszközökhöz (Zapier, Make) képest:
 
 2. **Költséghatékonyság.** Az n8n munkafolyamat-futásonként számol, nem lépésenként. Egy 20 lépéses workflow egyetlen futtatásnak számít, nem húsznak. Ez a különbség hatalmas lehet komplex automatizálásoknál.
 
-### Telepítés
+### 8.4.2 Telepítés
 
 Három módja van az indulásnak:
 
@@ -130,7 +130,7 @@ docker run -it --rm --name n8n -p 5678:5678 n8nio/n8n
 
 Egy akadémiai labor számára a Docker-alapú telepítés az ideális: izolált, reprodukálható, és könnyen áthelyezhető egyik gépről a másikra.
 
-### A felület megismerése
+### 8.4.3 A felület megismerése
 
 Amikor először nyitod meg az n8n-t, a következőt látod:
 
@@ -140,7 +140,7 @@ Amikor először nyitod meg az n8n-t, a következőt látod:
 - **Credentials (Hitelesítő adatok):** API-kulcsok és OAuth tokenek biztonságos, titkosított tárolása
 - **Executions (Futtatások):** Minden korábbi futtatás naplója, bemenetekkel, kimenetekkel és hibákkal
 
-### Az első workflow: "Hello, World!"
+### 8.4.4 Az első workflow: "Hello, World!"
 
 Kezdjük a legegyszerűbb munkafolyamattal, hogy megértsd az alaplogikát:
 
@@ -153,7 +153,7 @@ Kezdjük a legegyszerűbb munkafolyamattal, hogy megértsd az alaplogikát:
 
 Gratulálok, megépítetted az első automatizálásodat! Ez a minta — trigger, feldolgozás, kimenet — a legtöbb n8n workflow alapja.
 
-### Trigger-ek, Action-ök, konnektorok
+### 8.4.5 Trigger-ek, Action-ök, konnektorok
 
 Az n8n node-jait három fő kategóriába sorolhatjuk:
 
@@ -174,7 +174,7 @@ Az n8n node-jait három fő kategóriába sorolhatjuk:
 - **Loop Over Items:** Elemenkénti feldolgozás (például: minden egyes fájlra futtasd le ugyanazt a műveletet)
 - **Merge:** Több ág eredményének egyesítése
 
-### Példa-workflow: Publikáció-figyelő rendszer
+### 8.4.6 Példa-workflow: Publikáció-figyelő rendszer
 
 Most építsünk valami igazán hasznos dolgot. Képzeld el, hogy szeretnéd automatikusan figyelni, megjelentek-e új cikkek a szakterületeden, és ha igen, egy AI-összefoglalót kapni róluk e-mailben.
 
@@ -216,7 +216,7 @@ Most építsünk valami igazán hasznos dolgot. Képzeld el, hogy szeretnéd aut
 
 Ez a workflow naponta 5-10 perc olvasást spórol meg neked, és biztosítja, hogy nem maradsz le fontos publikációról. És mindezt egyetlen sor kód nélkül építetted meg.
 
-### AI-integráció az n8n-ben
+### 8.4.7 AI-integráció az n8n-ben
 
 Az n8n egyik legnagyobb erőssége, hogy közvetlenül integrálhatók bele nagy nyelvi modellek (LLM-ek). Az AI-node-ok a következő feladatokra használhatók munkafolyamatokon belül:
 
@@ -234,7 +234,7 @@ Az n8n-ben az AI-integráció a következő node-okkal történik:
 
 Fontos: az AI Agent node részletes tárgyalása — többágenses rendszerek, tool-használat, MCP-integráció — a 12. fejezetben következik. Itt most azt értsd meg, hogy az n8n-ben az AI nem egy különálló világ, hanem egyszerűen egy újabb node, amelyet beköthetsz a munkafolyamatodba.
 
-### Az n8n kifejezés-szintaxisa
+### 8.4.8 Az n8n kifejezés-szintaxisa
 
 Az n8n-ben az adatok JSON-tömbökként áramlanak node-ról node-ra. Ha egy node kimenetéből szeretnél adatot felhasználni egy másik node-ban, **kifejezéseket** (expression) használsz:
 
@@ -250,7 +250,7 @@ Például, ha az OpenWeatherMap node-ból kéred a hőmérsékletet:
 
 Ez a szintaxis az n8n "titkos fűszere" — ha ezt megtanulod, bármilyen adatot átmozgathatsz bármelyik node-ból bármelyik másikba.
 
-### Mikor használj n8n-t, és mikor írj kódot?
+### 8.4.9 Mikor használj n8n-t, és mikor írj kódot?
 
 | Használj n8n-t, amikor... | Írj kódot, amikor... |
 |---|---|
@@ -264,9 +264,9 @@ Az n8n ereje a *rendszerek összekapcsolásában* van. Ha a feladatod az, hogy "
 
 ---
 
-## KNIME Analytics Platform — Adatelemzés vizuálisan
+## 8.5 KNIME Analytics Platform — Adatelemzés vizuálisan
 
-### Mi a KNIME?
+### 8.5.1 Mi a KNIME?
 
 A KNIME (ejtsd: "nájm", a "Konstanz Information Miner" rövidítése) egy ingyenes, nyílt forráskódú analitikai platform, amelyet a Konstanzi Egyetemen fejlesztettek ki Németországban. A KNIME kifejezetten az adatelemzésre és a prediktív analitikára lett tervezve — nem munkafolyamat-automatizálásra (mint az n8n), hanem tudományos adatfeldolgozásra.
 
@@ -278,7 +278,7 @@ Miért népszerű a KNIME az adattudományban?
 4. **Hatalmas node-könyvtár** — több ezer node áll rendelkezésre: adatbetöltés, tisztítás, transzformáció, statisztika, gépi tanulás, deep learning, szövegbányászat, kép-feldolgozás
 5. **Reprodukálhatóság** — a workflow maga a dokumentáció, megosztható és újrafuttatható
 
-### A KNIME felülete
+### 8.5.2 A KNIME felülete
 
 A KNIME felépítése hasonló az n8n-hez, de az adattudományra van optimalizálva:
 
@@ -295,14 +295,14 @@ A KNIME egyedi jellemzője a **jelzőlámpa-rendszer**: minden node-on van egy s
 
 Ez a vizuális visszajelzés azonnal megmutatja, hol tart az elemzésed.
 
-### Port-típusok a KNIME-ban
+### 8.5.3 Port-típusok a KNIME-ban
 
 A node-ok portjain keresztül áramlik az adat:
 - **Adatportok (háromszög):** Adattáblákat visznek
 - **Modellportok (kék négyzet):** Betanított modelleket adnak tovább
 - **Flow variable portok (piros kör):** Paramétereket továbbítanak, amelyek dinamikussá teszik a munkafolyamatot
 
-### KNIME AI Assistant: munkafolyamatok természetes nyelvvel
+### 8.5.4 KNIME AI Assistant: munkafolyamatok természetes nyelvvel
 
 A KNIME legújabb fejlesztése a beépített **AI Assistant**, amellyel természetes nyelven írhatsz le egy elemzési feladatot, és a rendszer javaslatot tesz a megfelelő munkafolyamatra.
 
@@ -311,7 +311,7 @@ Például beírod:
 
 Az AI Assistant összeállít egy workflow-vázlatot a megfelelő node-okkal. Te átnézed, módosítod ha kell, és futtatod. Ez drámaian lerövidíti a tanulási görbét — nem kell ismerned a több ezer node nevét, elég ha leírod, mit szeretnél.
 
-### Példa: Teljes adatelemzési workflow kód nélkül
+### 8.5.5 Példa: Teljes adatelemzési workflow kód nélkül
 
 Vegyünk egy konkrét példát. Tegyük fel, hogy van egy ökológiai adathalmazod Hortobágyi madármegfigyelésekből: fajnév, dátum, koordináták, időjárási adatok, élőhely-típus. Szeretnéd megérteni, milyen csoportokat alkotnak a megfigyelések.
 
@@ -354,7 +354,7 @@ Vegyünk egy konkrét példát. Tegyük fel, hogy van egy ökológiai adathalmaz
 
 Ez az egész elemzés **nulla sor kóddal** készült. Minden lépés látható, auditálható, és bárki által megismételhető.
 
-### Prediktív analitika programozás nélkül
+### 8.5.6 Prediktív analitika programozás nélkül
 
 A KNIME igazi ereje a prediktív modellezésben mutatkozik meg. A platform támogatja a leggyakoribb gépi tanulási algoritmusokat, mind vizuálisan konfigurálhatóan:
 
@@ -378,29 +378,29 @@ A **Partitioning** node kettéosztja az adatot tanító és teszt halmazra (pél
 
 Ez az, amit a prediktív analitika könyvek több száz oldalon tárgyalnak — és a KNIME-ban az egészet összekötögeted 6-8 node-ból.
 
-### Metanode-ok és Komponensek
+### 8.5.7 Metanode-ok és Komponensek
 
 Ahogy a munkafolyamataid bonyolultabbá válnak, a KNIME lehetővé teszi, hogy node-csoportokat **metanode-okba** vagy **komponensekbe** csomagolj. Ezek újrahasználható "szub-workflow-k" — mintha egy saját node-ot készítenél, amely belül több lépésből áll.
 
 Például készíthetsz egy "Adattisztítás" komponenst, amelyet minden projekted elején beillesztesz, és amely magában foglalja a hiányzó értékek kezelését, a kiugró értékek szűrését és a normalizálást.
 
-### KNIME Hub: közösségi munkafolyamatok
+### 8.5.8 KNIME Hub: közösségi munkafolyamatok
 
 A KNIME Hub (hub.knime.com) egy online tárház, ahol felhasználók megosztják a munkafolyamataikat. Ha egy adott elemzési feladathoz keresel kiindulópontot — legyen az szövegbányászat, képelemzés, vagy idősor-előrejelzés — jó eséllyel találsz egy kész workflow-t, amelyet letöltesz, adaptálsz, és futtatod.
 
-### R és Python integrálása
+### 8.5.9 R és Python integrálása
 
 A KNIME nem zár be a vizuális világba. Ha van egy lépés, amelyhez mégis kódra van szükség — mondjuk egy speciális R-csomag vagy egy Python-könyvtár —, használhatsz **R Snippet** vagy **Python Script** node-okat. Ezek beilleszthetők a vizuális workflow-ba, és a bemenetük/kimenetük ugyanúgy összeköthető a többi node-dal. A legjobb két világ: vizuális keretrendszer, kódbetétekkel ahol szükséges.
 
 ---
 
-## LangFlow — Vizuális LLM pipeline-tervező
+## 8.6 LangFlow — Vizuális LLM pipeline-tervező
 
-### Mi a LangFlow?
+### 8.6.1 Mi a LangFlow?
 
 Ha az n8n az általános célú munkafolyamat-automatizálás eszköze, és a KNIME az adatelemzésé, akkor a **LangFlow** kifejezetten a nagy nyelvi modellekre (LLM) épülő alkalmazások vizuális tervezőeszköze. A LangFlow a LangChain keretrendszer vizuális felülete — lehetővé teszi, hogy LLM-pipeline-okat építs drag-and-drop módszerrel.
 
-### Miért érdekes ez tudósoknak?
+### 8.6.2 Miért érdekes ez tudósoknak?
 
 A 9. fejezetben részletesen megismered a RAG (Retrieval-Augmented Generation) architektúrát. A LangFlow előnye az, hogy ezt az architektúrát — amely kódban több tucat sornyi Python — **vizuálisan** építheted fel:
 
@@ -410,7 +410,7 @@ A 9. fejezetben részletesen megismered a RAG (Retrieval-Augmented Generation) a
 - Kösd össze a komponenseket
 - Teszteld a beépített chat-felületen
 
-### Példa: RAG chatbot építése drag-and-drop módszerrel
+### 8.6.3 Példa: RAG chatbot építése drag-and-drop módszerrel
 
 Képzeld el, hogy a kutatócsoportodnak van 50 publikációja az elmúlt 5 évből, és szeretnél egy chatbotot, amely ezekre a cikkekre alapozva válaszol kérdésekre.
 
@@ -434,30 +434,30 @@ Képzeld el, hogy a kutatócsoportodnak van 50 publikációja az elmúlt 5 évb�
 
 A lényeg: ezt az egész pipeline-t vizuálisan építed, dobozokat húzogatva és összekötve. Nem kell tudnod, hogyan működik a LangChain Python API-ja belül. A LangFlow elvégzi a "fordítást".
 
-### Prototípus-készítés kódolás előtt
+### 8.6.4 Prototípus-készítés kódolás előtt
 
 A LangFlow különösen hasznos **prototípus-készítésre**. Ha nem vagy biztos benne, melyik LLM, melyik embedding modell, vagy melyik chunk-méret működik legjobban a te adataiddal, a LangFlow-ban percek alatt kipróbálhatsz különböző kombinációkat — anélkül, hogy minden alkalommal átírnád a kódot.
 
 Ha aztán a prototípus működik, és production-ready megoldásra van szükséged, exportálhatod a konfigurációt és Python-kódként implementálhatod. De sok esetben a LangFlow felülete maga is elegendő a napi használathoz.
 
-### A RAG architektúra részleteiről
+### 8.6.5 A RAG architektúra részleteiről
 
 Ne feledd: a RAG-ról, a beágyazásokról és a vektortárakról a 9. fejezet szól részletesen. Itt most azt az üzenetet vidd magaddal, hogy ezek a komplex rendszerek is építhetők vizuálisan — nem kell azonnal a mély kódba ugrania annak, aki először találkozik velük.
 
 ---
 
-## Node-RED — IoT és szenzor-adatok munkafolyamatai
+## 8.7 Node-RED — IoT és szenzor-adatok munkafolyamatai
 
 A **Node-RED** az IBM által fejlesztett, nyílt forráskódú vizuális programozási eszköz, amelyet eredetileg az IoT (Internet of Things) világára terveztek. Ha a kutatásod szenzorokkal, mérőműszerekkel, adatgyűjtő rendszerekkel dolgozik, a Node-RED a te eszközöd.
 
-### Miért releváns tudósoknak?
+### 8.7.1 Miért releváns tudósoknak?
 
 - **Szenzor-adatgyűjtés automatizálása:** Hőmérséklet-szenzorok, légnyomásmérők, vízmintázók adatainak valós idejű feldolgozása
 - **MQTT-protokoll támogatás:** Az IoT-világban elterjedt kommunikációs protokoll natív kezelése
 - **Dashboard-készítés:** Valós idejű adatmegjelenítés webes felületen, kód nélkül
 - **Riasztási rendszerek:** Ha egy szenzorérték túllép egy küszöböt, azonnali értesítés (e-mail, SMS, Slack)
 
-### Egy tipikus Node-RED workflow kutatási kontextusban
+### 8.7.2 Egy tipikus Node-RED workflow kutatási kontextusban
 
 ```
 [MQTT In]               ← Szenzor adatot küld
@@ -473,11 +473,11 @@ A Node-RED erőssége a **valós idejű adatáramlás** — nem ütemezett futta
 
 ---
 
-## Orange — Gépi tanulás nem-programozóknak
+## 8.8 Orange — Gépi tanulás nem-programozóknak
 
 Az **Orange** (orange.biolab.si) egy nyílt forráskódú, egyetemi fejlesztésű vizuális adatelemzési és gépi tanulási eszköz, amelyet a Ljubljanai Egyetem Bioinformatikai Laboratóriuma fejleszt és tart karban.
 
-### Miért érdemes ismerni?
+### 8.8.1 Miért érdemes ismerni?
 
 - **Kifejezetten oktatási célra tervezett:** Az Orange felülete a lehető legegyszerűbb — ideális, ha először találkozol gépi tanulási fogalmakkal
 - **Interaktív vizualizációk:** Minden elemzési lépésnél azonnal megjelenik az eredmény vizuális formában — scatter plot, heatmap, dendrogram
@@ -485,21 +485,21 @@ Az **Orange** (orange.biolab.si) egy nyílt forráskódú, egyetemi fejlesztés�
 - **Bioinformatikai és szövegbányászati kiegészítők:** Speciális modul génexpressziós adatokhoz, szövegbányászathoz és képelemzéshez
 - **Gyors tanulási görbe:** Egy hallgató az első órán már működő klaszterezést épít
 
-### Miben különbözik a KNIME-tól?
+### 8.8.2 Miben különbözik a KNIME-tól?
 
 Az Orange kisebb, könnyebb és fókuszáltabb. Ha a KNIME egy teljes értékű adatelemzési műhely, az Orange egy jól felszerelt tanterem. Kutatási felhasználásra mindkettő alkalmas, de a KNIME több ipari integrációt és nagyobb léptékű feldolgozást kínál. Az Orange-t akkor válaszd, ha gyorsan akarsz felfedező elemzést végezni (exploratory data analysis), vagy ha hallgatókat tanítasz.
 
 ---
 
-## Döntési útmutató: vizuális vagy kódalapú megközelítés?
+## 8.9 Döntési útmutató: vizuális vagy kódalapú megközelítés?
 
-> **🖼️ Ábra: Döntési fa — vizuális vagy kódalapú megközelítés?**
+> **🖼️ 8.2. ábra: Döntési fa — vizuális vagy kódalapú megközelítés?**
 > *Döntési fa: "Hány lépésből áll?" → "Kell-e egyedi logika?" → "Mennyire fontos a reprodukálhatóság?" Leveleken: "Vizuális", "Kódalapú", "Kombinált".*
 
 
 Most, hogy ismered a főbb vizuális eszközöket, jogosan merül fel a kérdés: mikor használj vizuális eszközt, és mikor hagyományos kódolást?
 
-### Válaszd a vizuális megközelítést, ha...
+### 8.9.1 Válaszd a vizuális megközelítést, ha...
 
 - **A feladat standard és jól definiált.** Adatbetöltés, tisztítás, alapvető statisztika, klaszterezés, osztályozás, regresszió — ezekre a KNIME vagy Orange tökéletes.
 - **Szolgáltatásokat kötsz össze.** API → feldolgozás → értesítés típusú munkafolyamatokra az n8n ideális.
@@ -508,7 +508,7 @@ Most, hogy ismered a főbb vizuális eszközöket, jogosan merül fel a kérdés
 - **Reprodukálhatóság és átláthatóság fontos.** A workflow maga a dokumentáció.
 - **IoT/szenzor-adatokkal dolgozol valós időben.** Node-RED.
 
-### Válaszd a kódalapú megközelítést, ha...
+### 8.9.2 Válaszd a kódalapú megközelítést, ha...
 
 - **Egyedi algoritmust implementálsz.** Saját statisztikai módszer, speciális szimulációs logika.
 - **Nagy teljesítményű számításra van szükség.** HPC-klaszteren futó párhuzamosított kód.
@@ -516,7 +516,7 @@ Most, hogy ismered a főbb vizuális eszközöket, jogosan merül fel a kérdés
 - **A munkafolyamat rendkívül összetett és dinamikus.** 100+ elágazás, bonyolult ciklusok, rekurzív logika.
 - **Verziókezelésre van szükség minden részletben.** A kód git-ben verziózható; a vizuális workflow-fájlok kevésbé könnyen diff-elhetők.
 
-### A valóság: a legtöbb kutató mindkettőt használja
+### 8.9.3 A valóság: a legtöbb kutató mindkettőt használja
 
 A legjobb megközelítés ritkán "csak vizuális" vagy "csak kód". A gyakorlatban a két világ kombinációja a leghatékonyabb:
 
@@ -532,9 +532,9 @@ A legjobb megközelítés ritkán "csak vizuális" vagy "csak kód". A gyakorlat
 
 ---
 
-## Vizuális és kódalapú eszközök kombinálása
+## 8.10 Vizuális és kódalapú eszközök kombinálása
 
-### A "legjobb két világ" stratégia
+### 8.10.1 A "legjobb két világ" stratégia
 
 A leghatékonyabb kutatók nem választanak az eszközök között — kombinálják őket. Íme néhány bevált minta:
 
@@ -558,7 +558,7 @@ Az n8n kiválóan alkalmas arra, hogy összekösse a különböző eszközeidet:
 - Set node → formázza az eredményt
 - Gmail node → elküldi a kutatócsoportnak
 
-### Debreceni példa: multidiszciplináris kutatás
+### 8.10.2 Debreceni példa: multidiszciplináris kutatás
 
 Képzelj el egy kutatási projektet, amely a Hortobágy mikroklímáját vizsgálja madárpopulációs adatokkal összevetve:
 
@@ -573,9 +573,9 @@ Egyetlen eszköz sem tudja mindezt egyedül. De együtt, vizuálisan összekapcs
 
 ---
 
-## Összefoglaló: az eszközök áttekintése
+## 8.11 Összefoglaló: az eszközök áttekintése
 
-> **🖼️ Ábra: Vizuális programozási eszközök összehasonlítása**
+> **🖼️ 8.3. ábra: Vizuális programozási eszközök összehasonlítása**
 > *Négyoszlopos összehasonlító táblázat/infografika: n8n, KNIME, LangFlow, Node-RED — jellemzők, erősségek, célcsoport, tipikus kutatási felhasználás.*
 
 
@@ -589,7 +589,7 @@ Egyetlen eszköz sem tudja mindezt egyedül. De együtt, vizuálisan összekapcs
 
 ---
 
-## Amit ebből a fejezetből vigyél magaddal
+## 8.12 Amit ebből a fejezetből vigyél magaddal
 
 1. **A vizuális programozás nem "könnyített programozás"** — ez egy önálló, erőteljes paradigma, amely sok kutatási feladatra jobban illeszkedik, mint a hagyományos kódolás.
 

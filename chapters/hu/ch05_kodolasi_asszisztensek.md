@@ -14,7 +14,7 @@
 
 ## 5.1 Az 500 CSV-fájl problémája
 
-> **🖼️ Ábra: A "rendező" mentalitás — te mondod meg mit, az AI írja a kódot**
+> **🖼️ 5.1. ábra: A "rendező" mentalitás — te mondod meg mit, az AI írja a kódot**
 > *Kétpaneles illusztráció: Bal oldalon egy kutató természetes nyelven ír utasítást; jobb oldalon az AI-asszisztens Python-kódot generál. Közöttük egy nyíl "természetes nyelv → kód" felirattal.*
 
 
@@ -40,7 +40,7 @@ Ez a fejezet erről szól. Nem arról, hogyan leszel programozó. Arról, hogyan
 
 ## 5.2 A paradigmaváltás: szintaxis helyett szándék
 
-### A régi világ
+### 5.2.1 A régi világ
 
 A hagyományos programozás tanulás így nézett ki:
 
@@ -52,7 +52,7 @@ A hagyományos programozás tanulás így nézett ki:
 
 Ez a folyamat hónapokat, gyakran éveket vett igénybe. A legtöbb tudós az 1-2. lépésnél feladta, mert a szintaxis megtanulása nem volt releváns a kutatási kérdéséhez.
 
-### Az új világ
+### 5.2.2 Az új világ
 
 Az AI kódolási asszisztensekkel a folyamat így néz ki:
 
@@ -64,7 +64,7 @@ Az AI kódolási asszisztensekkel a folyamat így néz ki:
 
 Ez a leírd → generáld → teszteld → finomítsd → ismételd ciklus percek alatt megtörténik, nem hónapok alatt.
 
-### A rendezői analógia
+### 5.2.3 A rendezői analógia
 
 Gondolj egy filmrendezőre. A rendező nem operálja a kamerát, nem írja a zenét, nem varrja a jelmezeket. De pontosan tudja, mit akar: "Ebben a jelenetben a főszereplő háttal áll az ablaknak, kintről beárad a fény, és a zene lassan fokozódik." A szakemberek megvalósítják.
 
@@ -84,7 +84,7 @@ A szaktudás a tiéd — te tudod, hogy a vízszint nem lehet negatív, hogy a p
 
 Mielőtt belevágnánk, definiáljunk néhány fogalmat, amelyekre az egész könyvben hivatkozni fogunk. Nem kell őket mélyen megértened — elég, ha tudod, mire valók.
 
-### Python
+### 5.3.1 Python
 
 A **Python** egy programozási nyelv. Nem a kígyó, hanem a Monty Python nevű brit komikuscsoportról kapta a nevét. Azért használjuk a tudományban, mert:
 - **Egyszerű a szintaxisa** — közelebb áll az angol nyelvhez, mint más programozási nyelvek.
@@ -94,7 +94,7 @@ A **Python** egy programozási nyelv. Nem a kígyó, hanem a Monty Python nevű 
 
 Fontos: **neked nem kell megtanulnod Pythonul programozni**. Az AI fogja írni a Python kódot. De tudnod kell, hogy a kódblokkok, amiket az AI generál, Python nyelven íródnak, és Python-nal kell őket futtatni.
 
-### Git és verziókezelés
+### 5.3.2 Git és verziókezelés
 
 A **Git** egy verziókezelő rendszer (version control system). Gondolj rá úgy, mint egy időgépre a fájljaidhoz. Minden alkalommal, amikor "mentesz" (a Git nyelvén: *commit*-olsz), a Git eltárol egy pillanatfelvételt a projektedről. Ha valami elromlik, visszaugorhatsz bármelyik korábbi állapothoz.
 
@@ -105,7 +105,7 @@ Miért a biztonsági hálód?
 
 A Git szorosan összefonódik a **GitHub**-bal, ami egy felhőalapú platform, ahol a Git-projektjeidet (repository-kat) tárolhatod és megoszthatod. Gondolj rá úgy: a Git a motor, a GitHub a garázs.
 
-### Jupyter notebook
+### 5.3.3 Jupyter notebook
 
 A **Jupyter notebook** (kiejtve: "dzsúpiter") egy interaktív dokumentum, ami kódot, szöveget, képeket és grafikonokat tartalmaz egyetlen fájlban. A neve a három fő programozási nyelvből ered: **Ju**lia, **Py**thon, **R** (bár ma szinte kizárólag Pythonnal használják).
 
@@ -117,7 +117,7 @@ Gondolj rá úgy, mint egy digitális laboratóriumi naplóra:
 
 Ez a kód-szöveg-eredmény-értelmezés ritmusa teszi a Jupyter notebookot a tudósok kedvencévé. Az 5.10-es alfejezetben részletesen foglalkozunk vele.
 
-### API (Application Programming Interface)
+### 5.3.4 API (Application Programming Interface)
 
 Az **API** (alkalmazásprogramozási interfész) egy szabványos módszer, ahogy két program kommunikál egymással. Gondolj rá úgy, mint egy étterem pincérjére: te (a programod) leadod a rendelést (kérés / request), a konyha (a másik rendszer) elkészíti, és a pincér (az API) kihozza az eredményt (válasz / response).
 
@@ -126,7 +126,7 @@ Példák:
 - Az Eurostat API-ján keresztül lekérdezed az EU-tagországok GDP-adatait.
 - A PubMed API-ján keresztül keresel tudományos cikkeket.
 
-### pip és virtuális környezet (virtual environment)
+### 5.3.5 pip és virtuális környezet (virtual environment)
 
 A **pip** a Python csomagkezelője (package manager). Amikor egy Python könyvtárra van szükséged (például matplotlib az ábrákhoz), a `pip install matplotlib` paranccsal telepíted. Gondolj rá úgy, mint egy alkalmazás-bolttra a Pythonhoz.
 
@@ -716,7 +716,7 @@ Három dolgot figyeld meg:
 
 Az AI kódolási asszisztenssel való munka nem "prompt → kész kód" egyenes vonal. Ez egy **ciklus**, ahol te és az AI folyamatosan finomítjátok az eredményt. Nézzünk egy valósághű párbeszédet.
 
-### Egy teljes példa-párbeszéd
+### 5.7.1 Egy teljes példa-párbeszéd
 
 **1. kör — Az első prompt:**
 
@@ -795,7 +795,7 @@ Ebben a ciklusban a **te tudásod a szűk keresztmetszet, nem a programozási k�
 
 A kódolási promptok írásának vannak bevált mintázatai. Íme a legfontosabbak tudósok számára.
 
-### 1. Légy konkrét az input-output formátumról
+### 5.8.1 1. Légy konkrét az input-output formátumról
 
 **Rossz prompt:**
 > Dolgozd fel az adatfájlokat.
@@ -803,7 +803,7 @@ A kódolási promptok írásának vannak bevált mintázatai. Íme a legfontosab
 **Jó prompt:**
 > A `data/` mappában CSV-fájlok vannak, pontosvessző elválasztóval. Minden fájlban van egy "Datum" (yyyy-mm-dd formátum) és egy "Ertek" (lebegőpontos szám) oszlop. Olvasd be az összeset egy pandas DataFrame-be, adj hozzá egy "Forras" oszlopot a fájlnévvel, és mentsd el `összesített.parquet` formátumban.
 
-### 2. Add meg a szakterületi korlátokat
+### 5.8.2 2. Add meg a szakterületi korlátokat
 
 **Rossz prompt:**
 > Szűrd ki a hibás adatokat.
@@ -811,7 +811,7 @@ A kódolási promptok írásának vannak bevált mintázatai. Íme a legfontosab
 **Jó prompt:**
 > Szűrd ki a fizikailag lehetetlen értékeket: hőmérséklet < -50°C vagy > 50°C, páratartalom < 0% vagy > 100%, szélsebesség < 0 m/s. A kiszűrt sorokról készíts egy log-fájlt a fájlnévvel, sorszámmal és az eredeti értékkel.
 
-### 3. Kérd az AI-t, hogy magyarázzon
+### 5.8.3 3. Kérd az AI-t, hogy magyarázzon
 
 Ha nem érted, mit csinál a kód, vagy miért úgy csinálja:
 
@@ -821,11 +821,11 @@ Vagy:
 
 > Magyarázd el egyszerűen, mit csinál a `groupby('Állomás').agg({'Vízszint': ['mean', 'std']})` sor.
 
-### 4. Kérj hibakezelést
+### 5.8.4 4. Kérj hibakezelést
 
 > Ha egy fájl nem olvasható, ne álljon le az egész szkript — írd ki a hibás fájlnevet és a hibaüzenetet, és folytassa a következő fájllal.
 
-### 5. Kérj reprodukálható eredményt
+### 5.8.5 5. Kérj reprodukálható eredményt
 
 > Állíts be random seed-et (42), hogy a eredmények megismételhetők legyenek. Írd ki a használt csomagok verzióit.
 
@@ -835,21 +835,21 @@ Vagy:
 
 Az AI kódolási asszisztensek nem tökéletesek. Íme a leggyakoribb problémák és megoldásaik.
 
-### "ModuleNotFoundError: No module named 'xyz'"
+### 5.9.1 "ModuleNotFoundError: No module named 'xyz'"
 
 **Mit jelent:** Egy csomag nincs telepítve.
 **Megoldás:** `pip install xyz` — vagy másold be a hibaüzenetet az AI-nak, és megmondja, mit kell telepíteni.
 
-### "FileNotFoundError: No such file or directory"
+### 5.9.2 "FileNotFoundError: No such file or directory"
 
 **Mit jelent:** A program nem találja a fájlt.
 **Megoldás:** Ellenőrizd az elérési utat. Gyakori hiba, hogy a szkript más mappában fut, mint ahol a fájl van. Mondd az AI-nak: "A fájl a `C:/Users/maria/data/` mappában van, a szkript a `C:/Users/maria/scripts/` mappában fut."
 
-### Az AI hallucinálja a csomag nevét
+### 5.9.3 Az AI hallucinálja a csomag nevét
 
 Néha az AI egy nem létező csomagot vagy függvényt ajánl. Ha a `pip install` nem találja, kérdezd meg: "A `xyz` csomag valóban létezik? Mi a helyes neve?"
 
-### A kód lefut, de az eredmény rossz
+### 5.9.4 A kód lefut, de az eredmény rossz
 
 Ez a legveszélyesebb — **a kód nem dob hibát, de az eredmény értelmetlen**. Ezért kritikus a domain-tudásod. Mindig ellenőrizd:
 - Az értékek reális tartományban vannak?
@@ -857,7 +857,7 @@ Ez a legveszélyesebb — **a kód nem dob hibát, de az eredmény értelmetlen*
 - Az ábra trendjei logikusak?
 - Egyezik a kézi ellenőrzéssel (néhány értéket számolj ki kézzel is)?
 
-### Az AI "elfelejtette" a korábbi kontextust
+### 5.9.5 Az AI "elfelejtette" a korábbi kontextust
 
 Ha egy hosszú beszélgetés közben az AI mintha nem emlékezne a korábbi kéréseidre, a kontextusablak (context window) telítődhetett. Megoldás: kezdj új beszélgetést, és az elején foglald össze, hol tartasz.
 
@@ -865,11 +865,11 @@ Ha egy hosszú beszélgetés közben az AI mintha nem emlékezne a korábbi kér
 
 ## 5.10 Jupyter notebook — a digitális laborfüzet
 
-### Mi az a Jupyter notebook?
+### 5.10.1 Mi az a Jupyter notebook?
 
 Ahogy az 5.3-as alfejezetben említettük, a Jupyter notebook egy interaktív dokumentum, ami **cellákból** áll. Minden cella vagy **kód** (amit lefuttathatsz), vagy **szöveg** (Markdown formátumban, amit formázottan jelenít meg). A cellák sorrendje tetszőleges, és minden kódcella alatt megjelenik az eredménye — legyen az szám, táblázat, grafikon vagy hibaüzenet.
 
-### Miért szeretik a tudósok?
+### 5.10.2 Miért szeretik a tudósok?
 
 1. **Lineáris narratíva**: A notebook felülről lefelé olvasható, mint egy cikk. Hipotézis → adatok → elemzés → eredmény → értelmezés.
 2. **Azonnali visszajelzés**: A kódcella lefuttatása után az eredmény (grafikon, táblázat) azonnal megjelenik alatta. Nem kell külön ablakban keresni.
@@ -877,7 +877,7 @@ Ahogy az 5.3-as alfejezetben említettük, a Jupyter notebook egy interaktív do
 4. **Dokumentáció és kód egy helyen**: Nem kell külön Word-dokumentumot és külön szkriptet karbantartani.
 5. **AI-kompatibilitás**: A GitHub Copilot és más AI eszközök natívan támogatják a Jupyter notebookokat VS Code-ban.
 
-### Hogyan indítsd el?
+### 5.10.3 Hogyan indítsd el?
 
 ```bash
 # Ha még nem telepítetted:
@@ -889,7 +889,7 @@ jupyter notebook
 
 Ez megnyitja a böngészőben a Jupyter felületet. Alternatíva: VS Code-ban is megnyithatsz `.ipynb` fájlokat közvetlenül — sőt, VS Code-ban a Copilot is működik a notebookban.
 
-### Egy tipikus tudományos notebook felépítése
+### 5.10.4 Egy tipikus tudományos notebook felépítése
 
 ```
 [Markdown cella]
@@ -932,7 +932,7 @@ plt.show()
 A pH-értékek normális eloszlást mutatnak, 6.8-7.4 tartományban...
 ```
 
-### Jupyter notebook és AI együtt
+### 5.10.5 Jupyter notebook és AI együtt
 
 A legerősebb kombináció: **Jupyter notebook + AI kódolási asszisztens**. A workflow így néz ki:
 
@@ -950,7 +950,7 @@ Ez a módszer nemcsak hatékony, hanem **automatikusan dokumentálja az elemzés
 
 Nem kell megtanulnod ezeket a könyvtárakat — az AI fogja használni őket helyetted. De hasznos, ha tudod, mire valók, mert így **pontosabb promptokat írhatsz**.
 
-### NumPy — a számolás alapja
+### 5.11.1 NumPy — a számolás alapja
 
 **Mire való:** Numerikus számítások, vektorok, mátrixok, matematikai műveletek.
 
@@ -963,7 +963,7 @@ Nem kell megtanulnod ezeket a könyvtárakat — az AI fogja használni őket he
 
 NumPy a Python numerikus számításainak az alapja — szinte minden más tudományos könyvtár erre épül. Az AI szinte minden tudományos szkriptben használni fogja, még ha te nem is kéred kifejezetten.
 
-### SciPy — a tudományos svájcibicska
+### 5.11.2 SciPy — a tudományos svájcibicska
 
 **Mire való:** Tudományos és mérnöki számítások: optimalizálás, interpoláció, integrálás, statisztika, jelfeldolgozás.
 
@@ -975,7 +975,7 @@ NumPy a Python numerikus számításainak az alapja — szinte minden más tudom
 - "Interpoláld az adatokat kubikus spline-nal."
 - "Számold ki a jel FFT-jét (Fast Fourier Transform)."
 
-### Pandas — az adatkezelés bajnoka
+### 5.11.3 Pandas — az adatkezelés bajnoka
 
 **Mire való:** Táblázatos adatok betöltése, szűrése, átalakítása, összesítése. Gondolj rá úgy, mint egy programozható Excel.
 
@@ -989,7 +989,7 @@ NumPy a Python numerikus számításainak az alapja — szinte minden más tudom
 
 A Pandas a legtöbbet használt Python könyvtár a tudományos adatelemzésben. Ha táblázatos adataid vannak (és a legtöbb tudósnak vannak), a Pandas lesz a legjobb barátod.
 
-### Matplotlib — a grafikonok királya
+### 5.11.4 Matplotlib — a grafikonok királya
 
 **Mire való:** Ábrák, grafikonok, diagramok készítése — a vonaldiagramtól a 3D felületig.
 
@@ -1003,7 +1003,7 @@ A Pandas a legtöbbet használt Python könyvtár a tudományos adatelemzésben.
 
 Fontos: a matplotlib kiegészítő könyvtára, a **seaborn**, szebb alapbeállításokat ad. Ha az ábráid "csúnyábbak", mint szeretnéd, kérd: "Használj seaborn stílust."
 
-### scikit-learn — gépi tanulás egyszerűen
+### 5.11.5 scikit-learn — gépi tanulás egyszerűen
 
 **Mire való:** Gépi tanulás: osztályozás, regresszió, klaszterezés, dimenziócsökkentés.
 
@@ -1017,9 +1017,9 @@ Fontos: a matplotlib kiegészítő könyvtára, a **seaborn**, szebb alapbeáll�
 
 A scikit-learn a "beléptető" a gépi tanulás világába. Nem a legújabb deep learning keretrendszer, de a legtöbb tudományos feladathoz bőven elég, és az API-ja egyszerű, konzisztens.
 
-### Összefoglaló táblázat
+### 5.11.6 Összefoglaló táblázat
 
-> **🖼️ Ábra: Python tudományos ökoszisztéma — a legfontosabb csomagok és kapcsolataik**
+> **🖼️ 5.2. ábra: Python tudományos ökoszisztéma — a legfontosabb csomagok és kapcsolataik**
 > *Hálózati diagram: központban a Python logó, körülötte a pandas, numpy, matplotlib, scipy, scikit-learn csomagok, nyilak mutatják a tipikus adatáramlást közöttük.*
 
 
@@ -1035,7 +1035,7 @@ A scikit-learn a "beléptető" a gépi tanulás világába. Nem a legújabb deep
 
 ## 5.12 Haladó tippek: ha már magabiztosan használod az AI kódolási asszisztenst
 
-### Kommentek mint promptok
+### 5.12.1 Kommentek mint promptok
 
 A GitHub Copilot és a Cursor esetében a kódfájlban elhelyezett **kommentek a legjobb promptok**. Ha a Python-fájlod tetejére írod:
 
@@ -1047,11 +1047,11 @@ A GitHub Copilot és a Cursor esetében a kódfájlban elhelyezett **kommentek a
 
 ...a Copilot a következő sorokban már a megfelelő kódot fogja javasolni. Minél részletesebb a komment, annál pontosabb a javaslat.
 
-### Mintaadás (few-shot prompting a kódban)
+### 5.12.2 Mintaadás (few-shot prompting a kódban)
 
 Ha megírod az első adatfeldolgozó függvényt, a Copilot a második, harmadik, negyedik hasonló függvényt már önállóan ajánlja. Ez a **mintafelismerés** (pattern matching) — a Copilot megtanulja a stílusodat és a konvencióidat.
 
-### Kontextus-fájlok
+### 5.12.3 Kontextus-fájlok
 
 Mind a Claude Code, mind a Copilot támogat kontextus-fájlokat:
 - **Claude Code**: `CLAUDE.md` fájl a projekt gyökerében — ide írhatod: "Ez egy hidrológiai projekt. A koordináták EOV rendszerben vannak. Az adatok CSV formátumúak, pontosvessző elválasztóval."
@@ -1059,7 +1059,7 @@ Mind a Claude Code, mind a Copilot támogat kontextus-fájlokat:
 
 Ezek a fájlok biztosítják, hogy az AI **minden promptnál tudja a kontextust**, anélkül hogy újra elmondanád.
 
-### Verziókezelés az AI-val generált kóddal
+### 5.12.4 Verziókezelés az AI-val generált kóddal
 
 Emlékszel a Git-re? Az AI kódolási asszisztensek mellett a Git duplán fontos:
 
@@ -1071,7 +1071,7 @@ Emlékszel a Git-re? Az AI kódolási asszisztensek mellett a Git duplán fontos
 
 ## 5.13 Összefoglalás: a paradigmaváltás térképe
 
-> **🖼️ Ábra: A kódolási paradigmaváltás — hagyományos vs. AI-támogatott fejlesztés**
+> **🖼️ 5.3. ábra: A kódolási paradigmaváltás — hagyományos vs. AI-támogatott fejlesztés**
 > *Előtte/utána összehasonlítás: bal oldalon a hagyományos kódolás (kézikönyv olvasás → kódírás → hibakeresés → Stack Overflow), jobb oldalon az AI-támogatott (feladat leírás → AI-generált kód → ellenőrzés → iteráció).*
 
 
@@ -1093,7 +1093,7 @@ Ebben a fejezetben megtanultad, hogy:
 
 8. **A Git a biztonsági hálód** — commitolj minden sikeres lépés után.
 
-### Mi jön ezután?
+### 5.13.1 Mi jön ezután?
 
 A következő fejezetekben építünk erre az alapra:
 - A **6. fejezetben** az AI-val segített matematikai modellezéssel foglalkozunk — differenciálegyenletek, szimulációk, numerikus módszerek.

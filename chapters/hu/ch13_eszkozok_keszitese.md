@@ -14,7 +14,7 @@
 
 ## 13.1 Nyitó jelenet: Amikor az elemzés zseniális, de senki nem tudja használni
 
-> **🖼️ Ábra: A kutató dilemmája — zseniális elemzés, de senki nem tudja használni**
+> **🖼️ 13.1. ábra: A kutató dilemmája — zseniális elemzés, de senki nem tudja használni**
 > *Split illustration: left side shows complex code on a terminal, right side shows a confused colleague trying to use it, humorous scientific cartoon style*
 
 Képzeld el a következő helyzetet.
@@ -43,7 +43,7 @@ Három technológiát fogunk megismerni: a **Streamlit** webalkalmazás-keretren
 
 Mielőtt belevágunk a technikai részletekbe, érdemes átgondolni, mikor éri meg saját eszközt építeni, és mikor van egyszerűbb megoldás. Nem minden problémára kell webalkalmazást fejleszteni.
 
-### Döntési ellenőrzőlista
+### 13.2.1 Döntési ellenőrzőlista
 
 Tedd fel magadnak ezeket a kérdéseket:
 
@@ -65,7 +65,7 @@ Ha azt akarod, hogy a Claude, ChatGPT vagy más AI-eszköz automatikusan lekérd
 **6. A felhasználónak interaktívan kell paramétert állítania?**
 Ha csúszkákkal, legördülő menükkel akarod vezérelni az elemzést → Gradio különösen erős ebben.
 
-### Az eszközválasztás összefoglalása
+### 13.2.2 Az eszközválasztás összefoglalása
 
 | Helyzet | Megoldás |
 |---------|----------|
@@ -80,10 +80,10 @@ Ha csúszkákkal, legördülő menükkel akarod vezérelni az elemzést → Grad
 
 ## 13.3 Streamlit: Python-szkriptből webalkalmazás 10 perc alatt
 
-> **🖼️ Ábra: Streamlit webalkalmazás felépítése — az adatoktól a felhasználói felületig**
+> **🖼️ 13.2. ábra: Streamlit webalkalmazás felépítése — az adatoktól a felhasználói felületig**
 > *Layered diagram showing data flow from CSV/database through Python processing to a Streamlit web interface with charts and controls, clean tech illustration*
 
-### Mi az a Streamlit?
+### 13.3.1 Mi az a Streamlit?
 
 A Streamlit egy Python-könyvtár, amellyel webalkalmazásokat hozhatsz létre **kizárólag Python-kóddal**. Nincs szükséged HTML-re, CSS-re, JavaScriptre vagy bármilyen webfejlesztési tudásra. Írsz egy Python-fájlt, lefuttatod a `streamlit run` paranccsal, és megnyílik a böngészőben egy interaktív webalkalmazás.
 
@@ -94,7 +94,7 @@ A Streamlit 2019-ben indult, 2022-ben a Snowflake felvásárolta, és azóta a t
 - **Ingyenes hosting** — a Streamlit Community Cloud-on ingyen telepítheted
 - **Az AI kódolási asszisztensek ismerik** — ha leírod, mit akarsz, a Claude vagy a Copilot megírja a Streamlit-kódot
 
-### Telepítés
+### 13.3.2 Telepítés
 
 A Streamlit telepítése egyetlen parancs:
 
@@ -117,7 +117,7 @@ streamlit hello
 
 Ez megnyit a böngészőben egy demó alkalmazást. Ha ezt látod, minden rendben.
 
-### Az első Streamlit-alkalmazásod: „Hello, Labor!"
+### 13.3.3 Az első Streamlit-alkalmazásod: „Hello, Labor!"
 
 Mielőtt a komolyabb példákra térünk, nézzük meg a Streamlit alaplogikáját. Hozz létre egy fájlt `hello_labor.py` néven:
 
@@ -145,7 +145,7 @@ A böngészőben megjelenik egy oldal címmel, szövegmezővel és csúszkával.
 
 Ez elsőre furcsának tűnhet, de pont ez teszi egyszerűvé: nem kell callback-eket írni, nem kell állapotot kezelni — csak írd a Python-kódot felülről lefelé, és a Streamlit megoldja a többit.
 
-### A Streamlit legfontosabb elemei
+### 13.3.4 A Streamlit legfontosabb elemei
 
 Mielőtt a nagyobb példákra térnénk, itt egy áttekintés a leggyakrabban használt Streamlit-komponensekről:
 
@@ -182,7 +182,7 @@ Nem kell mindet megjegyezned — a lényeg, hogy tudd, ezek léteznek. Amikor az
 
 ---
 
-### 13.3.1 Gyakorlati példa: Scientific Data Explorer
+### 13.3.5 Gyakorlati példa: Scientific Data Explorer
 
 Most nézzük meg az első komolyabb alkalmazást. Ez egy általános adatfelfedező, amelybe a kollégáid feltölthetik a CSV-fájljaikat, és azonnal kapnak statisztikákat, grafikonokat és hipotézisvizsgálatot — mindezt anélkül, hogy egyetlen sor kódot írnának.
 
@@ -320,7 +320,7 @@ A terminálban megjelenik egy cím, például `http://localhost:8501`. Nyisd meg
 
 ---
 
-### 13.3.2 Gyakorlati példa: Szenzor Dashboard
+### 13.3.6 Gyakorlati példa: Szenzor Dashboard
 
 A második Streamlit-alkalmazás egy egészen más felhasználási esetet mutat be: **valós idejű monitoring dashboardot**. Ez nem adatfeltöltésről szól, hanem élő adatok folyamatos megjelenítéséről.
 
@@ -420,7 +420,7 @@ A `@st.cache_data(ttl=5)` biztosítja, hogy az adatok 5 másodpercenként friss�
 
 ---
 
-### 13.3.3 Streamlit-alkalmazás megosztása a csapatoddal
+### 13.3.7 Streamlit-alkalmazás megosztása a csapatoddal
 
 Megírtad az alkalmazást, fut a gépeden — de hogyan juttatod el a kollégáidhoz? Három megoldás van, egyre szélesebb körre.
 
@@ -492,10 +492,10 @@ Egy lépéssel tovább mehetsz, ha az intézeti IT-vel kérsz egy aldomain-t (pl
 
 ## 13.4 Gradio: Interaktív felületek modellekhez és egyenletekhez
 
-> **🖼️ Ábra: Gradio felület tudományos modellhez — interaktív csúszkák és valós idejű eredmények**
+> **🖼️ 13.3. ábra: Gradio felület tudományos modellhez — interaktív csúszkák és valós idejű eredmények**
 > *Screenshot-style illustration of a scientific Gradio interface with sliders, input fields, and a real-time plot output, modern UI design*
 
-### Mi a Gradio, és mikor válaszd a Streamlit helyett?
+### 13.4.1 Mi a Gradio, és mikor válaszd a Streamlit helyett?
 
 A Gradio a Hugging Face által karbantartott Python-könyvtár, amellyel szintén webes felületeket építhetsz Python-kóddal. Első pillantásra hasonlít a Streamlit-re, de a filozófiája más.
 
@@ -511,13 +511,13 @@ A Gradio a Hugging Face által karbantartott Python-könyvtár, amellyel szinté
 
 **Hüvelykujjszabály:** Ha az alkalmazásod lényege „tölts fel adatot, nézd meg az eredményt, böngéssz" → Streamlit. Ha az alkalmazásod lényege „állíts be paramétereket, nézd meg, mi változik" → Gradio.
 
-### Telepítés
+### 13.4.2 Telepítés
 
 ```bash
 pip install gradio
 ```
 
-### A Gradio alaplogikája
+### 13.4.3 A Gradio alaplogikája
 
 A Gradio alapötlete rendkívül egyszerű: van egy **Python-függvényed**, van hozzá **bemenet** (szövegmező, csúszka, fájl) és **kimenet** (szöveg, kép, ábra). A Gradio automatikusan generál egy webes felületet, ahol a felhasználó kitölti a bemeneteket, megnyomja a „Submit" gombot, és megkapja a kimenetet.
 
@@ -539,7 +539,7 @@ demo.launch()
 
 Ez az öt sor létrehoz egy webes felületet szövegmezővel, gombbal és eredménnyel. A `demo.launch()` elindítja a helyi webszervert, és megnyitja a böngészőt.
 
-### A Gradio legfontosabb elemei
+### 13.4.4 A Gradio legfontosabb elemei
 
 **Bemeneti komponensek:**
 | Komponens | Kód | Mire jó |
@@ -564,7 +564,7 @@ Ez az öt sor létrehoz egy webes felületet szövegmezővel, gombbal és eredm�
 
 ---
 
-### 13.4.1 Gyakorlati példa: Equation Plotter interaktív csúszkákkal
+### 13.4.5 Gyakorlati példa: Equation Plotter interaktív csúszkákkal
 
 Ez a példa a Gradio erejét mutatja be: a felhasználó beír egy matematikai egyenletet, csúszkákkal állítja a paramétereket, és azonnal látja a grafikont és a függvény tulajdonságait.
 
@@ -668,7 +668,7 @@ Ezt a linket bárki megnyithatja a világon, Python telepítése nélkül. Ideá
 
 ---
 
-### 13.4.2 Gyakorlati példa: Modell-inferencia felület
+### 13.4.6 Gyakorlati példa: Modell-inferencia felület
 
 Az Equation Plotter egy általános matematikai eszköz volt. De a Gradio igazi ereje akkor mutatkozik meg, amikor egy gépi tanulási modellt csomagolsz be felhasználóbarát felülettel.
 
@@ -726,7 +726,7 @@ A Gradio Hugging Face Spaces-en is telepíthető ingyen, ami különösen akkor 
 
 ## 13.5 MCP-szerverek: Az adataid és eszközeid AI-hozzáférhetővé tétele
 
-### Mi az az MCP?
+### 13.5.1 Mi az az MCP?
 
 Az MCP (Model Context Protocol) egy nyílt szabvány, amelyet az Anthropic 2024-ben publikált. A legegyszerűbb analógia: **az MCP az USB-csatlakozó az AI-eszközök világában**.
 
@@ -734,7 +734,7 @@ Gondolj bele: az USB előtt minden perifériához (nyomtató, billentyűzet, eg�
 
 Az MCP ugyanezt teszi az AI-eszközök számára. Ahelyett, hogy minden AI-hoz (Claude, ChatGPT, Copilot) külön integrációt írnál, egyszer létrehozol egy MCP-szervert, és bármely MCP-kompatibilis AI-eszköz automatikusan felfedezi és használja az adataidat és eszközeidet.
 
-### Mit tud egy MCP-szerver?
+### 13.5.2 Mit tud egy MCP-szerver?
 
 Három dolgot:
 
@@ -744,7 +744,7 @@ Három dolgot:
 
 Az AI-eszköz (pl. Claude Code) automatikusan felfedezi, hogy a szervered mit tud, és természetes nyelvi parancsokra hívja meg a megfelelő eszközt.
 
-### Miért érdekes ez egy kutatónak?
+### 13.5.3 Miért érdekes ez egy kutatónak?
 
 Képzeld el a következő helyzetet: van egy SQLite-adatbázisod 10 év terepi mérési adatával. Amikor a Claude Code-ban dolgozol, szeretnéd megkérdezni:
 
@@ -754,7 +754,7 @@ MCP-szerver nélkül: ki kell másolnod az adatokat, be kell illesztened a chatb
 
 MCP-szerverrel: a Claude Code közvetlenül lekérdezi az adatbázist, és természetes nyelven válaszol.
 
-### Egyszerű példa: Adatbázis mint MCP-szerver
+### 13.5.4 Egyszerű példa: Adatbázis mint MCP-szerver
 
 Az alábbi példa egy minimális MCP-szervert mutat be, amely egy SQLite-adatbázist tesz elérhetővé AI-eszközök számára. A szerver az `mcp` Python-könyvtárat használja:
 
@@ -853,7 +853,7 @@ Ez a szerver három eszközt kínál:
 
 A `@mcp.tool()` dekorátor és a docstring a lényeg: az AI-eszköz a docstring alapján érti meg, mire való az eszköz és hogyan kell használni. Nem kell API-dokumentációt írni — a docstring maga az API-leírás.
 
-### Csatlakoztatás Claude Code-hoz
+### 13.5.5 Csatlakoztatás Claude Code-hoz
 
 Miután a szervered kész, csatlakoztatnod kell a Claude Code-hoz. Ehhez egy konfigurációs fájl szükséges. Hozd létre a projekt gyökérkönyvtárában a `.mcp.json` fájlt:
 
@@ -877,7 +877,7 @@ Ezután, amikor a Claude Code-ban megnyitod a projektet, automatikusan elindul a
 
 A Claude Code meghívja a megfelelő MCP-eszközt, megkapja az adatot, és természetes nyelven válaszol.
 
-### Csatlakoztatás VS Code-hoz (Copilot)
+### 13.5.6 Csatlakoztatás VS Code-hoz (Copilot)
 
 Ha a VS Code-ban a GitHub Copilot-tal dolgozol, az MCP-szerver konfigurációja hasonló. A VS Code `settings.json` fájljába kell felvenni:
 
@@ -896,7 +896,7 @@ Ha a VS Code-ban a GitHub Copilot-tal dolgozol, az MCP-szerver konfigurációja 
 
 A Copilot Chat Agent Mode-ban (a `@` karakter használatával) ezután közvetlenül eléred az MCP-szervered eszközeit.
 
-### Csatlakoztatás Cursor-hoz
+### 13.5.7 Csatlakoztatás Cursor-hoz
 
 A Cursor szintén támogatja az MCP-szervereket. A projekt gyökerében hozd létre a `.cursor/mcp.json` fájlt:
 
@@ -913,7 +913,7 @@ A Cursor szintén támogatja az MCP-szervereket. A projekt gyökerében hozd lé
 
 A logika mindenhol ugyanaz: egyszer megírod a szervert, és bármely MCP-kompatibilis AI-eszközből eléred.
 
-### Helyi vs. távoli MCP-szerverek
+### 13.5.8 Helyi vs. távoli MCP-szerverek
 
 Az eddigi példánk **helyi** (local) MCP-szerver volt — a te gépeden fut. Ez tökéletes prototípushoz és egyéni munkához. De ha a csapatod minden tagja el akarja érni ugyanazt az adatbázist, két megoldás van:
 
@@ -946,7 +946,7 @@ A távoli MCP-szerver konfigurálása annyit jelent, hogy a `command` és `args`
 }
 ```
 
-### Biztonsági szempontok
+### 13.5.9 Biztonsági szempontok
 
 Az MCP-szervereknél mindig gondolj a biztonságra:
 
@@ -955,7 +955,7 @@ Az MCP-szervereknél mindig gondolj a biztonságra:
 3. **Jóváhagyás:** A Claude Code és a VS Code is kér megerősítést, mielőtt egy MCP-eszközt először meghív — mindig nézd meg, mit fog csinálni.
 4. **Naplózás:** Tartsd számon, ki mikor mit kérdezett — ez kutatási etikai szempontból is fontos.
 
-### Gyakorlati ötletek MCP-szerverekre
+### 13.5.10 Gyakorlati ötletek MCP-szerverekre
 
 Néhány ötlet, hogyan teheted AI-hozzáférhetővé a kutatási infrastruktúrádat:
 
@@ -986,7 +986,7 @@ Néhány ötlet, hogyan teheted AI-hozzáférhetővé a kutatási infrastruktúr
 
 Megírtad az alkalmazásodat (Streamlit, Gradio, vagy MCP-szerver) — most hogyan juttatod el a világba? A legjobb módszer: **tedd fel GitHub-ra**, és adj hozzá egy egyszerű dokumentációt.
 
-### Miért GitHub?
+### 13.6.1 Miért GitHub?
 
 - A kollégáid egyetlen paranccsal letölthetik: `git clone`
 - A Streamlit Community Cloud közvetlenül GitHub-repóból telepít
@@ -994,7 +994,7 @@ Megírtad az alkalmazásodat (Streamlit, Gradio, vagy MCP-szerver) — most hogy
 - A `README.md` fájl automatikusan megjelenik a repó főoldalán
 - Ha publikálsz cikket, hivatkozhatsz a repóra
 
-### A minimális projekt-struktúra
+### 13.6.2 A minimális projekt-struktúra
 
 Egy jól megosztható projekt így néz ki:
 
@@ -1009,7 +1009,7 @@ my-data-explorer/
     └── sample.csv
 ```
 
-### A README.md tartalma
+### 13.6.3 A README.md tartalma
 
 A README az első dolog, amit a felhasználó lát. Legyen rövid, konkrét és másolható:
 
@@ -1042,7 +1042,7 @@ Then open http://localhost:8501 in your browser.
 
 A lényeg: valaki, aki először látja a repót, **30 másodpercen belül futtatni tudja** az alkalmazást.
 
-### A requirements.txt
+### 13.6.4 A requirements.txt
 
 Ez a fájl felsorolja a Python-függőségeket:
 
@@ -1056,7 +1056,7 @@ numpy>=1.24
 
 A `>=` jelölés azt jelenti, hogy legalább ennyi kell, de a legfrissebb is jó. Ez rugalmasabb, mint ha pontos verziót adnál meg.
 
-### A .gitignore
+### 13.6.5 A .gitignore
 
 Ez a fájl megmondja a Git-nek, mit **ne** töltsön fel. Kutatási projektekhez:
 
@@ -1073,7 +1073,7 @@ data/          # Nagy adatfájlok ne kerüljenek a repóba
 
 Fontos: **soha ne tölts fel jelszavakat, API-kulcsokat, vagy érzékeny adatokat** a GitHub-ra. Ha az adatbázisod jelszóval védett, a jelszót `.env` fájlban tárold, és a `.gitignore`-ba vedd fel.
 
-### Feltöltés GitHub-ra
+### 13.6.6 Feltöltés GitHub-ra
 
 Ha még nincs GitHub-fiókod, regisztrálj a [github.com](https://github.com)-on (ingyenes). Ezután:
 
@@ -1094,7 +1094,7 @@ git push -u origin main
 
 Kész. A repó publikus URL-jét (`https://github.com/felhasználónev/my-data-explorer`) elküldheted a kollégáidnak, beírhatsz a cikkedbe, vagy csatolhatsz a konferencia-előadásodhoz.
 
-### A megosztás teljes menete — összefoglalás
+### 13.6.7 A megosztás teljes menete — összefoglalás
 
 1. **Fejlesztés:** Megírod az alkalmazást (AI asszisztenssel, ahogy az 5. fejezetben tanultad)
 2. **Tesztelés:** Kipróbálod a saját gépeden
@@ -1111,28 +1111,28 @@ Ez az egész folyamat — az AI asszisztenssel való kódíratástól a megoszt�
 
 Ebben a fejezetben három technológiát ismertünk meg, amelyekkel a Python-szkriptjeidet mások számára is használható eszközökké alakíthatod:
 
-### Streamlit
+### 13.7.1 Streamlit
 
 - Python-kódból webalkalmazást hoz létre
 - Ideális: adatfeltöltés, dashboard, monitoring, interaktív riport
 - Megosztás: helyi hálózat, Streamlit Community Cloud, saját szerver
 - Erősségek: táblázatok, grafikonok, fájlkezelés, valós idejű frissítés
 
-### Gradio
+### 13.7.2 Gradio
 
 - Python-függvényből interaktív felületet generál
 - Ideális: modell tesztelése, egyenlet vizualizálása, paraméter-érzékenység vizsgálata
 - Megosztás: `share=True` → 72 órás publikus link, Hugging Face Spaces
 - Erősségek: automatikus csúszka-generálás, példák, egyszerű kép/szöveg/fájl I/O
 
-### MCP-szerverek
+### 13.7.3 MCP-szerverek
 
 - Az adataidat és eszközeidet AI-hozzáférhetővé teszik
 - Ideális: adatbázis-lekérdezés természetes nyelvvel, kutatási infrastruktúra integrálása AI-ba
 - Csatlakoztatás: Claude Code, VS Code (Copilot), Cursor
 - Erősségek: szabványos protokoll, egyszer megírod — mindenhol használod
 
-### A nagy kép
+### 13.7.4 A nagy kép
 
 ```
 Python-szkript (csak te használod)

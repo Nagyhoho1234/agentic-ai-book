@@ -10,9 +10,9 @@
 > - **Szükséges eszközök:** Böngésző + terminál + Python
 > - **Kapcsolódó fejezetek:** 5. fejezet (kódolás), 7. fejezet (pipeline-ok), 10. fejezet (digitális ikrek)
 
-## Bevezetés: Amikor az egyenletek élni akarnak kelni
+## 6.1 Bevezetés: Amikor az egyenletek élni akarnak kelni
 
-> **🖼️ Ábra: A matematikai modellezés AI-támogatott munkafolyamata**
+> **🖼️ 6.1. ábra: A matematikai modellezés AI-támogatott munkafolyamata**
 > *Körkörös diagram: Kutatási kérdés → Matematikai modell → Implementáció (AI-val) → Szimuláció → Kalibráció → Validáció → Új kérdések. Az AI szerepe minden lépésnél jelölve.*
 
 
@@ -33,9 +33,9 @@ Ebben a fejezetben vegigvezetlek azon, hogyan hasznalhatod az AI-t arra, hogy:
 
 ---
 
-## 6.1 Kutatasi kerdesbol matematikai modell -- AI-val
+## 6.2 Kutatasi kerdesbol matematikai modell -- AI-val
 
-### A modellalkotasi folyamat
+### 6.2.1 A modellalkotasi folyamat
 
 Minden szimulacio egy kutatasi kerdessel kezdodik:
 
@@ -86,7 +86,7 @@ Ez a beszelgetes par masodperc alatt megadta neked azt, amihez egyebkent szakkon
 > **Ne csináld!**
 > Ne fogadd el az AI altal javasolt egyenletet vagy modellt a dimenziok (mereteqysegek) ellenorzese nelkul. Az LLM-ek gyakran generalnak fizikailag helyes kinezettu, de dimenzionalisan inkonzisztens egyenleteket — peldaul baloldalon [m/s], jobboldalon [m]. Ha nem ellenorzod, a szimulacio "fuut", de az eredmenyek ertelmetlenek lesznek.
 
-### Prompt-minta: Modell-kereses
+### 6.2.2 Prompt-minta: Modell-kereses
 
 Ime egy prompt, amit barmilyen tudomanyteruleten hasznalhatsz:
 
@@ -114,9 +114,9 @@ Kerlek:
 
 ---
 
-## 6.2 Egyenletekbol kód -- AI mint fordito
+## 6.3 Egyenletekbol kód -- AI mint fordito
 
-### 6.2.1 Kozonsegses differencialeqyenletek (ODE-k)
+### 6.3.1 Kozonsegses differencialeqyenletek (ODE-k)
 
 A leggyakrabban elofordulo feladat: van egy (vagy tobb) differencialeqyenleted, es szeretned idoben eloreleptetve megoldani. Ennek harom fo modja van:
 
@@ -130,7 +130,7 @@ $$y_{n+1} = y_n + \frac{1}{6}(k_1 + 2k_2 + 2k_3 + k_4)$$
 
 **SciPy solvers** -- a gyakorlatban majdnem mindig ezeket hasznald, mert automatikusan valasztjak meg a lepeskOzt es kezelik a merev (stiff) rendszereket is.
 
-### Dolgozott pelda: Talajvizszint-modell
+### 6.3.2 Dolgozott pelda: Talajvizszint-modell
 
 Folytassuk Marta peldat. Van a leegyszerusitett ODE-nk:
 
@@ -225,7 +225,7 @@ Nezd, mi tortent: egyetlen prompttal kaptunk egy teljes, futtathato szimulaciot.
 - Az egysegek konzisztensek-e? (Minden m/nap-ban van, es `S_y` dimenzio nelkuli -- stimmel.)
 - A `method='RK45'` megfelelo valasztas-e? (Igen, nem merev rendszernel ez a standard.)
 
-### ODE-megoldok valasztasa -- gyors utmutato
+### 6.3.3 ODE-megoldok valasztasa -- gyors utmutato
 
 | Szituacio | Ajanlott modszer | SciPy parameter |
 |-----------|-----------------|-----------------|
@@ -236,7 +236,7 @@ Nezd, mi tortent: egyetlen prompttal kaptunk egy teljes, futtathato szimulaciot.
 
 > **Tipp:** Ha nem tudod, merev-e a rendszered, probald RK45-tel. Ha nagyon lassu vagy instabil, valts `Radau`-ra. Vagy egyszeruen kerdezd meg az AI-t: "Ez a rendszer merev? Milyen solvert hasznaljak?"
 
-### 6.2.2 Parciális differencialeqyenletek (PDE-k)
+### 6.3.4 Parciális differencialeqyenletek (PDE-k)
 
 Amikor a megoldas nemcsak az idotol, hanem a helytol is fugg, PDE-kkel dolgozunk. A ket leggyakoribb numerikus megkozelites:
 
@@ -246,7 +246,7 @@ $$\frac{\partial u}{\partial t} \approx \frac{u_i^{n+1} - u_i^n}{\Delta t}, \qqu
 
 **Veges elem modszer (FEM)** -- a megoldast bázisfuggvenyek linearis kombinaciojakeent keressuk. Ez rugalmasabban kezeli az osszetett geometriakat, de bonyolultabb implementalni.
 
-### Dolgozott pelda: Hoteruletes diffuzio
+### 6.3.5 Dolgozott pelda: Hoteruletes diffuzio
 
 Peldaul vizsgaljuk, hogyan terjed a ho egy vekony fem rudon:
 
@@ -320,7 +320,7 @@ Figyeld meg a `dt = 0.4 * dx**2 / alpha` sort -- ez a **CFL stabilitasi feltetel
 
 > "Milyen stabilitasi feltetele van ennek a numerikus semanak? Teljesul a kodomban?"
 
-### 6.2.3 Optimalizalas es algebrai rendszerek
+### 6.3.6 Optimalizalas es algebrai rendszerek
 
 Nem minden problema differencialeqyenlet. Gyakran kell:
 
@@ -343,7 +343,7 @@ solution = fsolve(equations, x0=[0.5, 0.5])
 print(f"c1 = {solution[0]:.4f}, c2 = {solution[1]:.4f}")
 ```
 
-### Az AI mint fordito -- osszefoglalo minta
+### 6.3.7 Az AI mint fordito -- osszefoglalo minta
 
 A legfontosabb uzenet ebben a szekcioban: **az AI kiválo forditoként mukodik az egyenletek es a kod kozott.** Ime a minta, amit kovethetsz:
 
@@ -366,13 +366,13 @@ Kerlek:
 
 ---
 
-## 6.3 Szimbolikus szamitas SymPy-val
+## 6.4 Szimbolikus szamitas SymPy-val
 
 Eddig numerikus megoldasokrol beszeltunk -- szamitogep szamol, kozelito eredmenyt kapsz. De mi van, ha **exakt, kepletalaku** megoldast szeretnel? Erre valo a szimbolikus szamitas.
 
 A **SymPy** Python konyvtar a Mathematica es a Maple ingyenes alternativaja. Az AI-val kombinálva rendkivul hatekonyan hasznalhato.
 
-### Mit tud a SymPy?
+### 6.4.1 Mit tud a SymPy?
 
 | Feladat | SymPy fuggveny | Pelda |
 |---------|---------------|-------|
@@ -384,7 +384,7 @@ A **SymPy** Python konyvtar a Mathematica es a Maple ingyenes alternativaja. Az 
 | Taylor-sor | `series(expr, x, 0, n)` | Kozelites polinom |
 | Matrixmuveletek | `Matrix(...).eigenvals()` | Sajatértekek, determinans |
 
-### Dolgozott pelda: Egyenlet-levezetés es ellenorzes
+### 6.4.2 Dolgozott pelda: Egyenlet-levezetés es ellenorzes
 
 Tegyuk fel, hogy Marta szeretne ellenorizni: a linearizalt Boussinesq-egyenletnek van-e analitikus megoldasa allandó forcirozas eseten.
 
@@ -453,7 +453,7 @@ h_inf = 85 + (0.001 - 0.0015) * 500**2 / 100
 print(f"Egyensulyi vizszint: {h_inf:.2f} m")
 ```
 
-### SymPy + AI: a gyakorlatban
+### 6.4.3 SymPy + AI: a gyakorlatban
 
 A leghatekonyabb hasznalati mod: kerd az AI-t, hogy **SymPy koddal vegezze el** a levezetest, ne csak kepleteket irjon. Igy:
 
@@ -465,17 +465,17 @@ A leghatekonyabb hasznalati mod: kerd az AI-t, hogy **SymPy koddal vegezze el** 
 
 ---
 
-## 6.4 Szimulaciotipusok: Melyiket valaszd?
+## 6.5 Szimulaciotipusok: Melyiket valaszd?
 
 Nem minden szimulacio differencialeqyenlet-megoldas. Az alabbiakban attekintjuk a harom fo szimulaciotipust es azt, mikor melyiket erdemes valasztani.
 
-### 6.4.1 Determinisztikus modellek
+### 6.5.1 Determinisztikus modellek
 
 Adott bemenet eseten mindig ugyanazt az eredmenyt adjak. Ilyen a legtobb klasszikus fizikai modell: megoldod az egyenletet, megkapod az eredmenyt.
 
 **Mikor hasznald:** Jol ismert fizikai torvenyek, alacsony zaj, kevés bizonytalansag a parameterekben.
 
-### 6.4.2 Sztochasztikus es Monte Carlo modellek
+### 6.5.2 Sztochasztikus es Monte Carlo modellek
 
 **Monte Carlo szimulacio:** a bemeneti parametereket veletlen eloszlasbol huzod, es sokszor futtatod a modellt. Az eredmeny nem egyetlen szam, hanem **eloszlas**.
 
@@ -534,7 +534,7 @@ plt.show()
 
 Ez a megkozelites azonnal megmutatja, mennyire erzekeny a modelled az egyes parameterekre -- es megadja az eredmeny bizonytalansagat, amit a determinisztikus megoldas onmagaban nem tud.
 
-### 6.4.3 Agens-alapu modellek (ABM)
+### 6.5.3 Agens-alapu modellek (ABM)
 
 Az agens-alapu modellezesnel a rendszert **egyedek** (agensek) egyuttmukodesekeent irjuk le, nem egyenletekkel. Minden agens sajat szabalyok szerint viselkedik, es a rendszer emergens viselkedese "alurol felfelé" alakul ki.
 
@@ -569,7 +569,7 @@ class FarmerAgent(Agent):
 
 > **Tipp:** Mondd az AI-nak: "Szeretnek egy agens-alapu modellt Mesa-val, ahol [a szabalyokat ird le termeszetes nyelven]." Az AI legeneralja a teljes implementaciot.
 
-### Melyik szimulaciotipust valaszd?
+### 6.5.4 Melyik szimulaciotipust valaszd?
 
 | Kerdes | Valasz | Ajanlott tipus |
 |--------|--------|----------------|
@@ -587,17 +587,17 @@ class FarmerAgent(Agent):
 
 ---
 
-## 6.5 Automatikus modell-kalibracio
+## 6.6 Automatikus modell-kalibracio
 
 Az egyik legidoigenyesebb feladat a modellezesben: **a parametereket ugy beallitani, hogy a modell a meresekre illeszkedjen.** Ezt hívjuk *kalibraciőnak* vagy *inverz modellezesnek*.
 
 Hagyomanyosan ezt "szemre" vagy szisztematikus racs-keresessel (grid search) csinálják -- de sokkal jobb modszerek leteznek.
 
-### 6.5.1 Optuna -- automatikus hiperparameter-optimalizalas
+### 6.6.1 Optuna -- automatikus hiperparameter-optimalizalas
 
 Az **Optuna** egy Python konyvtar, amit eredetileg gepi tanulashoz fejlesztettek, de barmelyik modell kalibralasara kivaloan hasznalhato. Bayesi optimalizalast hasznal: tanulja meg, hogy a parameterter melyik resze az igéretes, és oda koncentralja a keresest.
 
-### Dolgozott pelda: Talajvizmodell kalibracioja Optuna-val
+### 6.6.2 Dolgozott pelda: Talajvizmodell kalibracioja Optuna-val
 
 Tegyuk fel, hogy Martanak vannak mert talajvizszint-adatai (havi felbontasban, 3 evre), es szeretne az $S_y$, $T$, es $h_0$ parametereket ugy beallitani, hogy a modell illeszkedjen a meresekre.
 
@@ -688,7 +688,7 @@ plt.show()
 
 ---
 
-### 6.5.2 Erzekenyseqvizsgalat
+### 6.6.3 Erzekenyseqvizsgalat
 
 A kalibracio utan a kovetkezo kerdes: **melyik parameterre a legerzekenyebb a modell?** Ez megmutatja, hol erdemes pontosabb mereseket vegezni, es melyik parameterek bizonytalansaga a legkritikusabb.
 
@@ -732,7 +732,7 @@ A **Sobol-indexek** ertelmezese:
 
 > Ha S1 kozel van ST-hez, a parameter onalloan hat. Ha ST >> S1, fontos kolcsonhatasok vannak mas parameterekkel.
 
-### 6.5.3 Bayesi kalibracio
+### 6.6.4 Bayesi kalibracio
 
 A Bayesi megkozelites **nem egyetlen legjobb parameterkeszletet** ad, hanem a parameterek **posteriori eloszlasat** -- megmutatja, milyen parameterertekek osszeegyeztethetok a meresekkel.
 
@@ -773,7 +773,7 @@ pm.plot_posterior(trace, var_names=['S_y', 'T', 'h0'])
 
 ---
 
-## 6.6 Osszefoglalo: A modellezesi munkafolyamat AI-val
+## 6.7 Osszefoglalo: A modellezesi munkafolyamat AI-val
 
 Fogalmazzuk meg a teljes munkafolyamatot, amit ebben a fejezetben megtanultal:
 
@@ -809,17 +809,17 @@ Ebben a munkafolyamatban az AI nem helyettesit -- **segit**. Te mondod meg, mi a
 
 ---
 
-## :microscope: Haladornak: Egyenlet-felfedezes PySR-rel
+## 6.8 :microscope: Haladornak: Egyenlet-felfedezes PySR-rel
 
 > *Ez a szekció azoknak szol, akik mar jartasak a modellezesben es szeretnenek az AI-t nem csak implementalasra, hanem uj osszefuggesek felfedezesere hasznalni. Nyugodtan ugord at, ha a fejezet elso resze eleg neked.*
 
-### A problema
+### 6.8.1 A problema
 
 Mi van, ha **nem ismered az egyenletet**, ami leirja a rendszeredet? Vannak adataid (meres, szimulacio), es szeretned megtalalni a legegyszerubb matematikai formulat, ami reprodukalja oket.
 
 Ez a **szimbolikus regresszio**: ahelyett, hogy egy adott formaju fuggvenyt illesztel (pl. linearis regresszio), az algoritmus **maga keresi a fuggveny formajat** is.
 
-### PySR: evolucionalisan keres matematikai kifejezeseket
+### 6.8.2 PySR: evolucionalisan keres matematikai kifejezeseket
 
 A **PySR** (Python Symbolic Regression) Miles Cranmer csomagja, ami genetikus programozast hasznal: "kifejezéseket tenyeszt" -- kiválogatja a jol teljesitőket, mutálja és keveri oket, mig egyre jobb formulakat talal.
 
@@ -857,14 +857,14 @@ print(model)
 
 A PySR **Pareto-frontra** rendezi az eredmenyeket: megmutatja a kompromisszumot a **pontossag** es az **egyszerseg** kozott. A legegyszerubb jo formula altalaban a fizikailag ertelmes.
 
-### Mikor hasznos a PySR?
+### 6.8.3 Mikor hasznos a PySR?
 
 - **Felfedező tudomany:** uj osszefuggesek keresese meresekbol
 - **Modell-egyszerusites:** egy komplex szimulacio eredmenyet egyszerub keplettel kozelited
 - **Ismeretlen fizika:** fenomenologikus osszefuggesek azonositasa
 - **Dimenzio-elemzes alternativaja:** az algoritmus megtalálja a fizikailag helyes kombinaciokat
 
-### Gyakorlati tippek
+### 6.8.4 Gyakorlati tippek
 
 1. **Normalizald az adatokat:** a PySR jobban mukodik, ha a valtozok nagysagrendje hasonlo
 2. **Add meg a fizikai operatorokat:** ha tudod, hogy gyokvonas / negyzeteles / hatvanyozas fontos, add meg unary_operators-kent
@@ -873,9 +873,9 @@ A PySR **Pareto-frontra** rendezi az eredmenyeket: megmutatja a kompromisszumot 
 
 ---
 
-## :microscope: Haladornak: LLM-vezérelt szimbolikus regresszio fizikai prior-okkal
+## 6.9 :microscope: Haladornak: LLM-vezérelt szimbolikus regresszio fizikai prior-okkal
 
-### Az otlet
+### 6.9.1 Az otlet
 
 A PySR "vakon" keres -- nem tud a fizikai torvenyekrol. De mi van, ha az LLM **elozetes fizikai tudasat** kombinalod a szimbolikus keresessel?
 
@@ -885,7 +885,7 @@ A legujabb megkozelites (2024-2025):
 2. **Szimbolikus regresszio finomit:** a javasolt formakbol kiindulva keresi a pontos egyutthatokat es kitevOket
 3. **LLM ertelmez:** "Ez a Kepler harmadik torvenye, ami kovetkezik Newton gravitacios torvenyebol"
 
-### Gyakorlatban
+### 6.9.2 Gyakorlatban
 
 ```
 # Prompt az LLM-nek:
@@ -910,9 +910,9 @@ Ez a **kozbeszuros megkozelites** (human-in-the-loop, de LLM-in-the-loop) robban
 
 ---
 
-## :microscope: Haladornak: Fizika-informalt neuralis halozatok (PINNs)
+## 6.10 :microscope: Haladornak: Fizika-informalt neuralis halozatok (PINNs)
 
-### Mi az a PINN?
+### 6.10.1 Mi az a PINN?
 
 A **Physics-Informed Neural Network** (PINN) egy meroenleg masfelé megkozelites: ahelyett, hogy a PDE-t numerikusan discretizalod (veges differenciák, veges elemek), egy **neurálist halozatot tanitasz ugy, hogy teljesitse a differencialeqyenletet**.
 
@@ -927,7 +927,7 @@ Hogyan mukodik:
 
 $$\mathcal{L} = \underbrace{\frac{1}{N_r} \sum_{i=1}^{N_r} |f(x_i, t_i)|^2}_{\text{PDE rezidum}} + \underbrace{\frac{1}{N_b} \sum_{j=1}^{N_b} |u(x_j, t_j) - g_j|^2}_{\text{Peremfeltetel}} + \underbrace{\frac{1}{N_d} \sum_{k=1}^{N_d} |u(x_k, t_k) - u_k^{obs}|^2}_{\text{Meresek}}$$
 
-### Pelda: Diffuzio-egyenlet PINN-nel
+### 6.10.2 Pelda: Diffuzio-egyenlet PINN-nel
 
 ```python
 import torch
@@ -989,7 +989,7 @@ for epoch in range(10000):
     optimizer.step()
 ```
 
-### Mikor hasznos a PINN?
+### 6.10.3 Mikor hasznos a PINN?
 
 | Szituacio | PINN elonye |
 |-----------|------------|
@@ -998,7 +998,7 @@ for epoch in range(10000):
 | **Komplex geometria:** ahol a racs generalasa nehez | Mesh-free: veletlenszeru pontokban ertekeli |
 | **Multi-fizika:** tobb csatolt egyenlet | Termeszetesen kezeli a csatolast |
 
-### Korlatok
+### 6.10.4 Korlatok
 
 - A tanitas nem triviáls: gyakran kell a vesztesegfuggveny sulyozasat hangolni
 - Nem helyettesiti a klasszikus solvereket egyszerubb feladatoknal
@@ -1011,13 +1011,13 @@ for epoch in range(10000):
 
 ---
 
-## :microscope: Haladornak: Szurrogat modellek draga szimulációkhoz
+## 6.11 :microscope: Haladornak: Szurrogat modellek draga szimulációkhoz
 
-### A problema
+### 6.11.1 A problema
 
 Van egy komplex szimulacod (pl. elementes modell, CFD, klimamodell), ami egyetlen futassal orat vagy napokat vesz igenybe. Es neked ezer futásra lenne szukséged (Monte Carlo, kalibracio, erzekenysgvizsgalat).
 
-### A megoldasas: szurrogat modell
+### 6.11.2 A megoldasas: szurrogat modell
 
 A **szurrogát modell** (surrogate model, emulator, metamodel) a draga szimulacio *olcso kozelitese*:
 
@@ -1025,7 +1025,7 @@ A **szurrogát modell** (surrogate model, emulator, metamodel) a draga szimulaci
 2. Tanitsd a szurrogat modellt ezekre a pontokra
 3. Hasznald a szurrogatot a tobb ezres/milliós kivaluálasokhoz
 
-### Tipikus szurrogat-architekturak
+### 6.11.3 Tipikus szurrogat-architekturak
 
 | Modszer | Mikor hasznald |
 |---------|---------------|
@@ -1034,7 +1034,7 @@ A **szurrogát modell** (surrogate model, emulator, metamodel) a draga szimulaci
 | **Polinom kaosz-kifejtés (PCE)** | Erzekenysgvizsgálathoz, alacsony dimenzioban |
 | **Random forest / XGBoost** | Gyors es robust, de nem ad gradienst |
 
-### Pelda: Gauss-folyamat szurrogat
+### 6.11.4 Pelda: Gauss-folyamat szurrogat
 
 ```python
 from sklearn.gaussian_process import GaussianProcessRegressor
@@ -1075,7 +1075,7 @@ A **Gauss-folyamat szurrogat** kulonosen ertékes, mert:
 - Ahol nagy a bizonytalansag, ott erdemes ujabb treningpontot futtatni (**aktiv tanulás**)
 - Alacsonydimenzioban (5-10 parameter) kivaloan mukodik
 
-### Szurrogat modellek AI-val
+### 6.11.5 Szurrogat modellek AI-val
 
 Az AI segitsege itt is nagy:
 
@@ -1092,9 +1092,9 @@ Kerlek:
 
 ---
 
-## Összefoglalás és továbblépés
+## 6.12 Összefoglalás és továbblépés
 
-> **🖼️ Ábra: A fejezet modellezési technikáinak döntési fája**
+> **🖼️ 6.2. ábra: A fejezet modellezési technikáinak döntési fája**
 > *Döntési fa: "Milyen típusú a problémád?" → Analitikus megoldás (SymPy) / Numerikus szimuláció (SciPy) / Kalibráció (scipy.optimize) / Érzékenységvizsgálat (SALib) / Egyenletfelfedezés (PySR). Minden ágon példa-probléma.*
 
 
@@ -1111,9 +1111,9 @@ A kovetkezo fejezetben (7. fejezet: Adat-pipeline-ok és automatizálás) megtan
 
 ---
 
-## Hasznos csomagok és források
+## 6.13 Hasznos csomagok és források
 
-> **🖼️ Ábra: A tudományos Python-csomagok kapcsolati térképe modellezéshez**
+> **🖼️ 6.3. ábra: A tudományos Python-csomagok kapcsolati térképe modellezéshez**
 > *Hálózati diagram: SymPy, SciPy, NumPy, Matplotlib, SALib, PySR, Mesa, DeepXDE csomagok és azok tipikus felhasználási területei, összekötő vonalakkal.*
 
 

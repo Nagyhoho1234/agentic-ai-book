@@ -10,9 +10,9 @@
 > - **Szükséges eszközök:** Csak böngésző
 > - **Kapcsolódó fejezetek:** 5. fejezet (kódolási asszisztensek), 7. fejezet (pipeline-ok), 8. fejezet (vizuális programozás)
 
-## Nyitó jelenet: Tízezer sor, egy délután
+## 4.1 Nyitó jelenet: Tízezer sor, egy délután
 
-> **🖼️ Ábra: No-code adatelemzés munkafolyamata**
+> **🖼️ 4.1. ábra: No-code adatelemzés munkafolyamata**
 > *Háromoszlopos ábra: Bal oldal — Excel/CSV fájl feltöltése; Közép — AI chat-felület természetes nyelvű utasítással; Jobb oldal — diagramok és statisztikai eredmények. Nyilak mutatják az adatáramlást.*
 
 
@@ -26,9 +26,9 @@ Ez a fejezet arról szól, hogyan végezhetsz komoly adatelemzést anélkül, ho
 
 ---
 
-## 4.1 Adatok feltöltése és felfedezése chat-felületen
+## 4.2 Adatok feltöltése és felfedezése chat-felületen
 
-### Milyen fájlformátumokat tölthetsz fel?
+### 4.2.1 Milyen fájlformátumokat tölthetsz fel?
 
 A modern AI platformok (ChatGPT, Claude, Gemini) mind képesek fájlokat fogadni. A leggyakrabban használt formátumok:
 
@@ -41,7 +41,7 @@ A modern AI platformok (ChatGPT, Claude, Gemini) mind képesek fájlokat fogadni
 | **JSON** | Webes API-k kimenete, strukturált adatok | Fejlettebb felhasználáshoz |
 | **TXT** | Szöveges labornapló, mérési adatok | Szabad formátumú adatok |
 
-### A feltöltés gyakorlata
+### 4.2.2 A feltöltés gyakorlata
 
 **1. lépés: Készítsd elő az adatokat**
 
@@ -90,7 +90,7 @@ Most, hogy ismered az adat szerkezetét, mélyítheted a felfedezést:
 
 > *"A hiányzó follow_up_6m értékek véletlenszerűen oszlanak-e el, vagy összefüggenek valamelyik változóval?"*
 
-### Különleges adatforrások
+### 4.2.3 Különleges adatforrások
 
 **Laboreszközök kimenete.** Sok műszer (HPLC, spektrofotométer, PCR) szöveges vagy CSV formátumú kimenetet generál, de sajátos fejlécekkel, kommentárokkal. Ilyenkor mondd el az AI-nak a kontextust:
 
@@ -112,15 +112,15 @@ Figyelem: a képelemzés kvalitatív — kvantitatív elemzéshez (pl. pontos in
 
 ---
 
-## 4.2 AI-alapú exploratív adatelemzés
+## 4.3 AI-alapú exploratív adatelemzés
 
 Az exploratív adatelemzés (Exploratory Data Analysis, EDA) a statisztika egyik legfontosabb lépése: mielőtt hipotézist tesztelnél, ismerd meg az adataidat. Milyen eloszlásúak a változók? Vannak-e kiugró értékek? Milyen összefüggések rajzolódnak ki?
 
-### Az EDA hagyományos fájdalma
+### 4.3.1 Az EDA hagyományos fájdalma
 
 Egy tapasztalt statisztikus az EDA-t fejben tervezi meg, aztán lefuttat néhány tucat parancsot SPSS-ben, R-ben vagy Pythonban: hisztogramok, boxplot-ok, korrelációs mátrix, csoportátlagok. Ez egy jól begyakorolt kutató kezében 1-2 óra. Egy kezdő kezében? Egy-két nap, tele Google-kereséssel és hibaüzenetekkel.
 
-### Az AI EDA: természetes nyelven
+### 4.3.2 Az AI EDA: természetes nyelven
 
 Az AI-val az EDA-t természetes nyelven vezérled. Nem kell tudnod, hogy a korrelációs mátrixot a `pandas.DataFrame.corr()` függvénnyel generálod — csak kérd:
 
@@ -162,7 +162,7 @@ Az AI felismeri, hogy az EOV_X és EOV_Y oszlopok koordináták (az Easting 400 
 
 Az AI három idősoros vonalat rajzol, és futtat egy egyszerű lineáris trendelemzést mindhárom csoportra. Kiderülhet például, hogy a magas kiindulási nitrátú pontokon csökkenő, míg az alacsonyaknál stagnáló a trend.
 
-### Mit talál az AI, amit te esetleg nem?
+### 4.3.3 Mit talál az AI, amit te esetleg nem?
 
 Az AI EDA egyik legnagyobb ereje, hogy **előítéletmentesen** nézi az adatot. Nem tudja, hogy "a vas és arzén együtt jár az alföldi talajvizekben" — ezt a korrelációból találja meg. Ez két okból hasznos:
 
@@ -185,9 +185,9 @@ Az AI EDA egyik legnagyobb ereje, hogy **előítéletmentesen** nézi az adatot.
 
 ---
 
-## 4.3 Statisztikai elemzés beszélgetés útján
+## 4.4 Statisztikai elemzés beszélgetés útján
 
-### 4.3.1 Leíró statisztika és adatösszefoglalók
+### 4.4.1 Leíró statisztika és adatösszefoglalók
 
 A leíró statisztika (descriptive statistics) az adatelemzés alapja. Az AI-val pillanatok alatt kapsz teljes képet:
 
@@ -212,7 +212,7 @@ Ez a kérés egy tipikus "Table 1"-et eredményez, amelyet szinte változtatás 
 > | Dohányzó, n (%) | 682 (20.0%) | 694 (20.4%) | 712 (20.7%) | 0.752 |
 > | Szisztolés BP (Hgmm) | 148.2 ± 18.7 | 147.9 ± 18.4 | 148.5 ± 19.1 | 0.451 |
 
-### 4.3.2 Hipotézisvizsgálat: t-próba, ANOVA, khi-négyzet
+### 4.4.2 Hipotézisvizsgálat: t-próba, ANOVA, khi-négyzet
 
 A hipotézisvizsgálat a kvantitatív kutatás gerince. Az AI nemcsak lefuttatja a teszteket, de segít kiválasztani a megfelelőt. Íme egy döntési segédlet:
 
@@ -289,7 +289,7 @@ Ha nem vagy biztos, melyik tesztet kell használnod, kérdezd meg:
 
 Az AI javaslatot tesz (ebben az esetben kétutas ANOVA-t), elmagyarázza az előfeltételeket, és lefuttatja a tesztet.
 
-### 4.3.3 Regresszió: lineáris, logisztikus és azon túl
+### 4.4.3 Regresszió: lineáris, logisztikus és azon túl
 
 A regresszió az egyik legtöbbet használt statisztikai módszer a tudományban. Lényege: egy függő változó (amit meg akarunk magyarázni) és egy vagy több független változó (amikkel magyarázzuk) kapcsolatát modellezzük.
 
@@ -347,7 +347,7 @@ A lineáris és logisztikus regresszió lefedi a kutatási kérdések nagy rész
 
 Ezeket a modelleket az AI képes lefuttatni a chat-felületen, de minél összetettebb a modell, annál fontosabb, hogy értsd, mit kaptál — és annál inkább érdemes a reprodukálhatóság kedvéért kódra váltani (lásd 5. fejezet).
 
-### 4.3.4 Idősor-elemzés
+### 4.4.4 Idősor-elemzés
 
 Az idősor-elemzés (time series analysis) akkor releváns, ha az adataid időben rendezettek: napi hőmérsékletek, havi betegszámok, negyedéves gazdasági mutatók, percenkénti szenzormérések.
 
@@ -383,11 +383,11 @@ Képzeld el, hogy van 5 évnyi napi PM10-koncentráció adatod Debrecenből:
 
 ---
 
-## 4.4 Adatvizualizáció
+## 4.5 Adatvizualizáció
 
 A vizualizáció az adatelemzés egyik legfontosabb kimenete. Egy jó grafikon többet mond ezer számnál — és az AI chat-felületen meglepően jó minőségű ábrákat tudsz készíteni.
 
-### 4.4.1 Gyors exploratív ábrák
+### 4.5.1 Gyors exploratív ábrák
 
 Az EDA során a sebesség a lényeg: gyorsan akarod látni az adatot, nem a tökéletes formázást keresed.
 
@@ -403,7 +403,7 @@ Az EDA során a sebesség a lényeg: gyorsan akarod látni az adatot, nem a tök
 
 Az AI mindegyiket másodpercek alatt generálja. Az exploratív ábráknál ne aggódj a formázásért — az a lényeg, hogy lásd a mintázatot.
 
-### 4.4.2 Publikáció-minőségű ábrák
+### 4.5.2 Publikáció-minőségű ábrák
 
 Amikor egy ábra cikkbe, poszterbe vagy prezentációba kerül, a formázás számít. Az AI-val lépésről lépésre finomíthatod:
 
@@ -433,7 +433,7 @@ Amikor egy ábra cikkbe, poszterbe vagy prezentációba kerül, a formázás sz�
 
 Ez a típusú kérés a ChatGPT Code Interpreter-ben és a Claude Artifacts-ban is jól működik. Az eredmény egy egyetlen, komplex ábra, amelyet közvetlenül beilleszthetsz a kéziratba.
 
-### 4.4.3 Interaktív vizualizációk Claude Artifacts-szal
+### 4.5.3 Interaktív vizualizációk Claude Artifacts-szal
 
 A Claude egy különleges funkcióval rendelkezik: az Artifacts rendszerrel képes interaktív webes alkalmazásokat generálni közvetlenül a chat-felületen. Ez a vizualizációnál különösen hasznos:
 
@@ -449,11 +449,11 @@ Az AI egy React-alapú interaktív widgetet generál, amelyet a chat-felületen 
 
 ---
 
-## 4.5 Platform-specifikus képességek: melyiket mire?
+## 4.6 Platform-specifikus képességek: melyiket mire?
 
 2026-ban három fő platform kínál no-code adatelemzést AI chat-felületen. Mindegyiknek megvannak az erősségei és korlátai.
 
-### ChatGPT Code Interpreter (Advanced Data Analysis)
+### 4.6.1 ChatGPT Code Interpreter (Advanced Data Analysis)
 
 **Működési elv:** Amikor feltöltesz egy fájlt a ChatGPT-nek (GPT-4o modell), a háttérben egy sandboxolt Python-környezet indul el. Az AI Python-kódot ír és futtat, de neked nem kell látni vagy érteni a kódot — csak az eredményt kapod.
 
@@ -469,7 +469,7 @@ Az AI egy React-alapú interaktív widgetet generál, amelyet a chat-felületen 
 - Nincs állandó munkaterület — ha új beszélgetést kezdesz, mindent újra kell töltened
 - A háttérben futó kód néha hibázik, és az AI "csendben" javít, ami nehezen követhető
 
-### Claude Artifacts
+### 4.6.2 Claude Artifacts
 
 **Működési elv:** A Claude más megközelítést alkalmaz. Ahelyett, hogy Python-kódot futtatna a háttérben, interaktív webes alkalmazásokat (Artifacts) generál JavaScript/React alapon, amelyek a böngésződben futnak.
 
@@ -485,7 +485,7 @@ Az AI egy React-alapú interaktív widgetet generál, amelyet a chat-felületen 
 - Nem tud letölthető fájlokat generálni ugyanúgy, mint a Code Interpreter
 - Összetett statisztikai modellek (mixed-effects, survival) nehezebben implementálhatók
 
-### Gemini Google Sheets-integrációval
+### 4.6.3 Gemini Google Sheets-integrációval
 
 **Működési elv:** A Google Gemini közvetlenül integrálódik a Google Workspace ökoszisztémába. A Sheets-ben (Google táblázatkezelő) közvetlenül használhatsz AI-funkciókat.
 
@@ -501,7 +501,7 @@ Az AI egy React-alapú interaktív widgetet generál, amelyet a chat-felületen 
 - A vizualizációs lehetőségek a Sheets beépített diagram-készítőjéhez kötöttek
 - Kisebb kontroll a statisztikai módszerek felett
 
-### Összehasonlító döntési mátrix
+### 4.6.4 Összehasonlító döntési mátrix
 
 | Szempont | ChatGPT Code Interpreter | Claude Artifacts | Gemini + Sheets |
 |----------|------------------------|-----------------|-----------------|
@@ -514,7 +514,7 @@ Az AI egy React-alapú interaktív widgetet generál, amelyet a chat-felületen 
 | **Egyszerűség** | ★★★★☆ | ★★★★☆ | ★★★★★ |
 | **Nagy adatsor (>10K sor)** | ★★★★☆ | ★★☆☆☆ | ★★★☆☆ |
 
-### Melyiket válaszd?
+### 4.6.5 Melyiket válaszd?
 
 - **Komoly statisztikai elemzésre** (hipotézisvizsgálat, regresszió, összetett modellek): **ChatGPT Code Interpreter**
 - **Interaktív dashboardokra és adatfelfedezésre:** **Claude Artifacts**
@@ -526,15 +526,15 @@ Az AI egy React-alapú interaktív widgetet generál, amelyet a chat-felületen 
 
 ---
 
-## 4.6 Teljes munkafolyamat-példa: A-tól Z-ig
+## 4.7 Teljes munkafolyamat-példa: A-tól Z-ig
 
 Lássunk egy teljes, valószerű elemzést, amely összefoglalja az eddigieket. Ez a példa debreceni kontextusú, de a módszertan bármely szakterületen alkalmazható.
 
-### A feladat
+### 4.7.1 A feladat
 
 Dr. Kovács Ágnes, a Debreceni Egyetem Népegészségügyi Karának kutatója egy kérdőíves vizsgálatot végzett 1 200 egyetemista körében az alvásminőségről, a képernyőidőről és a tanulmányi eredményekről. Az adatok egy Excel-fájlban vannak. Szerdára kell egy előzetes elemzés a kutatócsoport megbeszéléséhez.
 
-### Az adatszerkezet
+### 4.7.2 Az adatszerkezet
 
 | Oszlop | Leírás |
 |--------|--------|
@@ -551,7 +551,7 @@ Dr. Kovács Ágnes, a Debreceni Egyetem Népegészségügyi Karának kutatója e
 | lakhely | Kollégium / Albérlet / Szülőknél |
 | kronikbet | Van-e krónikus betegsége (igen/nem) |
 
-### A chat-felületi elemzés lépései
+### 4.7.3 A chat-felületi elemzés lépései
 
 **1. Feltöltés és első áttekintés (2 perc)**
 
@@ -606,11 +606,11 @@ Az AI egy táblázatot ad az odds ratio-kkal. Kiderülhet például, hogy a 6+ �
 
 ---
 
-## 4.7 Mikor nem elég a chat?
+## 4.8 Mikor nem elég a chat?
 
 A no-code adatelemzés rendkívül hatékony, de megvannak a határai. Fontos, hogy felismerd, mikor kell továbblépned.
 
-### Adatméret-korlátok
+### 4.8.1 Adatméret-korlátok
 
 | Platform | Praktikus limit | Mi történik felette |
 |----------|----------------|-------------------|
@@ -620,7 +620,7 @@ A no-code adatelemzés rendkívül hatékony, de megvannak a határai. Fontos, h
 
 Ha az adatsorod genomikai (milliók sorok), képi (GB-os fájlok) vagy szenzoros (millió mérés/nap), a chat-felület nem elég. Ilyenkor Python + lokális számítógép (5. fejezet) vagy pipeline-megközelítés (7. fejezet) kell.
 
-### Reprodukálhatóság
+### 4.8.2 Reprodukálhatóság
 
 Ez a no-code megközelítés legnagyobb gyengesége. Amikor a chat-felületen dolgozol:
 
@@ -634,7 +634,7 @@ Ez a no-code megközelítés legnagyobb gyengesége. Amikor a chat-felületen do
 2. **Közepes:** Kérd az AI-t, hogy adja meg a háttérben futtatott kódot: *"Mutasd meg a Python-kódot, amit futtattál."* Mentsd el ezt a kódot — még ha nem is érted teljesen, reprodukálhatóvá teszi az elemzést.
 3. **Teljes:** Térj át AI-támogatott kódolásra (5. fejezet), ahol minden lépés egy Jupyter notebookba kerül.
 
-### Összetett, többlépéses elemzések
+### 4.8.3 Összetett, többlépéses elemzések
 
 Bizonyos elemzési feladatok túl komplexek a chat-felülethez:
 
@@ -643,7 +643,7 @@ Bizonyos elemzési feladatok túl komplexek a chat-felülethez:
 - **Szövegbányászat és NLP:** Ha ezer dokumentumot kell feldolgoznod (pl. szabadon írt kérdőívválaszok), a chat-felület nem skálázódik.
 - **Több adatforrás összekapcsolása:** Ha 5 különböző Excel-fájlt kell összeillesztened, a chat-felületen ez könnyen átláthatatlanná válik.
 
-### A természetes híd a kódoláshoz
+### 4.8.4 A természetes híd a kódoláshoz
 
 Ha elérted a chat-felület határait, ne ijedj meg. Az 5. fejezet pontosan arról szól, hogyan lépj tovább: nem kell megtanulnod programozni a hagyományos értelemben. Az AI kódolási asszisztensek (Claude Code, GitHub Copilot, Cursor) ugyanúgy természetes nyelven kommunikálnak veled, mint a chat-felület — de a háttérben valódi, futtatható, verziókezelt kódot generálnak.
 
@@ -665,9 +665,9 @@ Nem kell mindegyik szintre eljutnod — válaszd azt, amelyik a te kutatási ig�
 
 ---
 
-## 4.8 Gyakorlati összefoglaló: 10 tipp a hatékony no-code elemzéshez
+## 4.9 Gyakorlati összefoglaló: 10 tipp a hatékony no-code elemzéshez
 
-> **🖼️ Ábra: A no-code elemzés 10 aranyszabálya**
+> **🖼️ 4.2. ábra: A no-code elemzés 10 aranyszabálya**
 > *Infografika: 10 számozott tipp ikon-szerűen elrendezve (2x5 rács), mindegyik mellett egy rövid kulcsszó és egy kis illusztráció.*
 
 
@@ -693,50 +693,50 @@ Nem kell mindegyik szintre eljutnod — válaszd azt, amelyik a te kutatási ig�
 
 ---
 
-## Olvasási útvonalak
+## 4.10 Olvasási útvonalak
 
-> **🖼️ Ábra: Olvasási útvonalak a könyvben — szakterület szerinti térképek**
+> **🖼️ 4.3. ábra: Olvasási útvonalak a könyvben — szakterület szerinti térképek**
 > *Folyamatábra, amely a különböző kutatói profilokhoz (társadalomtudós, laborbiológus, informatikus, vezető, oktató) ajánlott fejezet-sorrendet mutatja színkódolt útvonalakként.*
 
 
 Ez a fejezet a könyv első nagy elágazási pontja. Attól függően, hogy milyen típusú kutató vagy, innen különböző utakon haladhatsz tovább:
 
-### Társadalomtudós
+### 4.10.1 Társadalomtudós
 *Szociológia, pszichológia, közgazdaságtan, pedagógia, politikatudomány*
 
 **1. fejezet → 2. fejezet → 3. fejezet → 4. fejezet** → **8. fejezet** (vizuális programozás: KNIME/Orange) → **9. fejezet** (saját adatbázisok, RAG) → **15. fejezet** (oktatás) → **16. fejezet** (etika)
 
 Miért ez az út? A társadalomtudósoknak a kérdőíves adatelemzés, a statisztikai tesztek és a vizuális programozás lefedi a legtöbb igényt. Nem szükséges kódot írni — a 8. fejezet vizuális eszközei elég erősek.
 
-### Laborbiológus
+### 4.10.2 Laborbiológus
 *Molekuláris biológia, biokémia, mikrobiológia, genetika, ökológia*
 
 **1. fejezet → 2. fejezet → 3. fejezet → 4. fejezet → 5. fejezet** (AI-támogatott kódolás) → **7. fejezet** (automatizált pipeline-ok) → **9. fejezet** (saját adatbázisok) → **12. fejezet** (szakma-specifikus eszközök) → **15. fejezet** (oktatás) → **16. fejezet** (etika)
 
 Miért ez az út? A labormunkában gyakran kell szkripteket írni (képfeldolgozás, szekvencia-elemzés, batch-futtatás), és az automatizálás nagy időmegtakarítást jelent. Az 5. fejezet megtanít AI segítségével kódot írni.
 
-### Számítógépes vagy fizikai tudós
+### 4.10.3 Számítógépes vagy fizikai tudós
 *Fizika, kémia, informatika, matematika, mérnöki tudományok*
 
 **1. fejezet → 2. fejezet → 3. fejezet → 4. fejezet → 5. fejezet → 6. fejezet** (haladó kódolás) → **7. fejezet** (pipeline-ok) → **9. fejezet** (RAG) → **10. fejezet** (szimulációk, digitális ikrek) → **11. fejezet-12** (ágensek, multi-agent rendszerek) → **15. fejezet** → **16. fejezet**
 
 Miért ez az út? A teljes technikai mélység kell: kódolás, ágensek, automatizálás, szimulációk. Ez a leghosszabb, de a legteljesebb út.
 
-### Labor- vagy csoportvezető
+### 4.10.4 Labor- vagy csoportvezető
 *Kutatócsoport-vezetők, tanszékvezetők, intézetvezetők*
 
 **1. fejezet → 2. fejezet → 3. fejezet → 4. fejezet** → **14. fejezet** (szervezeti bevezetés, stratégia) → **15. fejezet** (oktatás) → **16. fejezet** (etika, szabályozás)
 
 Miért ez az út? A vezetőknek nem kell mélyen érteniük a technikai részleteket. Az első 4 fejezet megadja a személyes használat alapjait, a 14. fejezet pedig a csapat- és intézményszintű stratégiát.
 
-### Oktatásközpontú kutató
+### 4.10.5 Oktatásközpontú kutató
 *Oktatók, tantervfejlesztők, oktatási innovátorok*
 
 **1. fejezet → 2. fejezet → 3. fejezet → 4. fejezet** → **15. fejezet** (AI az oktatásban) → **16. fejezet** (etika, plágium, vizsgaintegritás)
 
 Miért ez az út? Az oktatók számára a személyes AI-használat (1. fejezet-4) és az oktatási alkalmazások (15. fejezet) a legfontosabbak, az etikai kérdésekkel (16. fejezet) kiegészítve.
 
-### Teljes út
+### 4.10.6 Teljes út
 *Ha mindent meg akarsz ismerni*
 
 **1. fejezet → 2. fejezet → 3. fejezet → 4. fejezet → 5. fejezet → 6. fejezet → 7. fejezet → 8. fejezet → 9. fejezet → 10. fejezet → 11. fejezet → 12. fejezet → 13. fejezet → 14. fejezet → 15. fejezet → 16. fejezet**

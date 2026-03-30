@@ -64,7 +64,7 @@ function App() {
     return localStorage.getItem('agenticai-tutor-dark') === 'true' ||
       window.matchMedia('(prefers-color-scheme: dark)').matches;
   });
-  const [lang, setLang] = useState(() => localStorage.getItem('agenticai-tutor-lang') || 'en');
+  const [lang, setLang] = useState(() => localStorage.getItem('agenticai-tutor-lang') || 'hu');
   const toggleLang = () => {
     const n = lang === 'hu' ? 'en' : 'hu';
     setLang(n);

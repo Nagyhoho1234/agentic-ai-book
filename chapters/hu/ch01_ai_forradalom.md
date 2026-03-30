@@ -24,7 +24,7 @@ Ez nem tudományos fantasztikum. Ez 2026, és ez a könyv pontosan arról szól,
 
 ---
 
-## Miért számít az AI minden tudósnak?
+## 1.1 Miért számít az AI minden tudósnak?
 
 Mielőtt továbbmegyünk, tisztázzuk az alapfogalmakat, hiszen ez a könyv első fejezete, és fontos, hogy közös nyelvet beszéljünk.
 
@@ -34,7 +34,7 @@ Mielőtt továbbmegyünk, tisztázzuk az alapfogalmakat, hiszen ez a könyv els�
 
 > **Tudtad?** A ChatGPT 2022 novemberi megjelenése után 100 millió felhasználót ért el mindössze két hónap alatt -- ez a leggyorsabb technológiai adoptáció az emberiség történetében. Összehasonlításképpen: a telefonnak 75 évre, az internetnek 7 évre, a Facebooknak 4,5 évre volt szüksége ugyanehhez (Hu, Reuters, 2023).
 
-### Nem csak az informatikusoknak szól
+### 1.1.1 Nem csak az informatikusoknak szól
 
 Ha biológus vagy, és most azt gondolod, hogy "ez nem rám vonatkozik" -- tévedsz. Ha geológus, agrármérnök, orvos, közgazdász, nyelvész vagy bármilyen más tudományterületen dolgozol -- vonatkozik rád. Az AI nem egy szaktudományi eszköz, hanem amit a közgazdászok **általános célú technológiának** (*General Purpose Technology, GPT*) neveznek. Ebbe a kategóriába tartozik a gőzgép, az elektromosság és a számítógép is. Ezek a technológiák nem egyetlen iparágat alakítanak át, hanem az egész gazdaságot és társadalmat.
 
@@ -50,39 +50,39 @@ A lényeg: **az AI nem opcionális**. Nem az a kérdés, hogy a te szakterülete
 
 ---
 
-## Az AI spektruma: a chatbottól az autonóm felfedezésig
+## 1.2 Az AI spektruma: a chatbottól az autonóm felfedezésig
 
-> **🖼️ Ábra: Az AI öt szintje — a chatbottól az autonóm felfedezésig**
+> **🖼️ 1.1. ábra: Az AI öt szintje — a chatbottól az autonóm felfedezésig**
 > *Piramis-diagram, amely az OpenAI öt szintjét mutatja: 1. Beszélgetés, 2. Gondolkodás, 3. Eszközhasználat, 4. Autonóm ágensek, 5. Szervezetek. Minden szinten egy-egy tudományos példa ikonnal.*
 
 
 Az AI nem egyetlen dolog. A legfontosabb, amit meg kell értened: **az AI egy spektrum**, amely a legegyszerűbb interakciótól az autonóm tudományos felfedezésig terjed. Az OpenAI öt szintű keretrendszere, amelyet a könyv végig használni fog, segít eligazodni ezen a spektrumon.
 
-### 1. szint: Beszélgetés (Chatbots)
+### 1.2.1 1. szint: Beszélgetés (Chatbots)
 
 Az AI mint beszélgetőpartner. Kérdést teszel fel, választ kapsz. Ide tartozik a ChatGPT, a Claude, a Gemini alap használata. Hasznos irodalomkutatásra, szövegek összefoglalására, ötletelésre, de minden egyes lépést te irányítasz.
 
 *Példa: "Foglald össze a három legújabb cikket a talajnedvesség távérzékelésről."*
 
-### 2. szint: Gondolkodás (Reasoners)
+### 1.2.2 2. szint: Gondolkodás (Reasoners)
 
 Az AI képes komplex, többlépéses problémákat megoldani. Nem csak válaszol, hanem gondolkodik: logikai láncokat épít, lehetőségeket mérlegel, lépésről lépésre halad a megoldás felé. Ezt nevezik **gondolati láncolásnak** (*Chain of Thought reasoning*).
 
 *Példa: "Elemezd ezt a kísérleti adathalmazt, azonosítsd a kiugró értékeket, és javasolj statisztikai tesztet a két csoport összehasonlítására."*
 
-### 3. szint: Eszközhasználat (Tool Use)
+### 1.2.3 3. szint: Eszközhasználat (Tool Use)
 
 Az AI nemcsak gondolkodik, hanem cselekszik is: képes kódot futtatni, fájlokat olvasni és írni, adatbázisokat lekérdezni, weboldalakat böngészni, API-kat meghívni. Ez már az **ágensszerű** (*agentic*) működés kezdete -- az AI aktívan interakcióba lép a digitális környezetével.
 
 *Példa: Az AI letölti a meteorológiai adatokat egy API-n keresztül, Python-ban elemzi őket, és elkészíti a vizualizációt -- mindezt egyetlen utasításra.*
 
-### 4. szint: Autonóm ágensek (Innovators)
+### 1.2.4 4. szint: Autonóm ágensek (Innovators)
 
 Az AI önállóan tervez és hajt végre komplex, többlépéses munkafolyamatokat. Felismeri, ha valamit nem tud, és új információt keres. Ha hibázik, korrigálja magát. Képes napokig futó projekteket önállóan menedzselni, de rendszeresen visszajelez és engedélyt kér a kritikus pontokon.
 
 *Példa: "Vizsgáld meg, hogy a klímaváltozás hatására hogyan változik a búza fehérjetartalma a Kárpát-medencében. Gyűjts adatokat, készíts modellt, és írd meg az eredmények első vázlatát."*
 
-### 5. szint: Szervezetszintű AI (Organizations)
+### 1.2.5 5. szint: Szervezetszintű AI (Organizations)
 
 Teljes kutatócsoportnyi kapacitás: több AI ágens együttműködik, felosztják egymás között a feladatokat, kritizálják és javítják egymás munkáját. Ez a szint ma még inkább kísérleti, de mint hamarosan látni fogod, már léteznek működő prototípusok.
 
@@ -101,11 +101,11 @@ Teljes kutatócsoportnyi kapacitás: több AI ágens együttműködik, felosztj�
 
 ---
 
-## Mérföldkövek: amikor az AI tudományt csinál
+## 1.3 Mérföldkövek: amikor az AI tudományt csinál
 
 Az elmúlt néhány év áttörései nem absztrakciók -- konkrét, mérhető, publikált tudományos eredmények. Nézzük a legfontosabbakat.
 
-### AlphaFold 3: a fehérjék Szent Grálja
+### 1.3.1 AlphaFold 3: a fehérjék Szent Grálja
 
 A fehérjék háromdimenziós szerkezetének meghatározása a biológia egyik legrégebbi és legnehezebb problémája volt. Egyetlen fehérje szerkezetének kísérletes meghatározása hónapokig vagy évekig tartott, és több millió dollárba került. A Google DeepMind AlphaFold rendszere ezt a problémát lényegében **megoldotta**.
 
@@ -115,17 +115,17 @@ Az AlphaFold eredményei **szabadon hozzáférhetők**, és a világ minden kuta
 
 > **Tudtad?** Demis Hassabis és John Jumper, az AlphaFold megalkotói 2024-ben kémiai Nobel-díjat kaptak a fehérjeszerkezet-jóslás terén elért eredményeikért. Ez volt az első alkalom, hogy közvetlenül AI-kutatásért ítélték oda a Nobel-díjat.
 
-### The AI Scientist: az ötlettől a publikációig
+### 1.3.2 The AI Scientist: az ötlettől a publikációig
 
 2025-ben a Sakana AI kutatói bemutatták az **AI Scientist** rendszert, amely teljes tudományos kutatási ciklust képes önállóan végrehajtani: ötletgenerálás, irodalomkutatás, kísérlettervezés, kód írása és futtatása, eredmények elemzése, és végül a tudományos cikk megírása. A 2026-ban a *Nature*-ben publikált eredmények szerint a rendszer által generált cikkek egyes esetekben emberi bírálók számára megkülönböztethetetlenek voltak a humán kutatók által írt cikkektől.
 
 Ez nem jelenti azt, hogy az AI felváltja a kutatókat -- de jelenti azt, hogy az AI képes a kutatási folyamat jelentős részét automatizálni, felszabadítva a kutató idejét a kreatív gondolkodásra és a kritikus értékelésre.
 
-### Berkeley A-Lab: a robot, aki anyagokat fedez fel
+### 1.3.3 Berkeley A-Lab: a robot, aki anyagokat fedez fel
 
 A Berkeley Lab Autonomous Laboratory (A-Lab) egy teljesen autonóm laboratórium, ahol robotkarok és AI rendszerek **önállóan terveznek, szintetizálnak és jellemeznek új anyagokat** -- emberi beavatkozás nélkül, 24 órában. A rendszer 17 nap alatt 41 új anyagot szintetizált, amelyeket korábban soha nem állítottak elő. Az A-Lab az anyagtudomány jövőjének prototípusa: az AI megtervezi, amit érdemes megcsinálni, a robot megcsinálja, az AI elemzi az eredményt, és ha szükséges, módosítja a tervet.
 
-### Google Co-Scientist: hipotézisek az AI-tól
+### 1.3.4 Google Co-Scientist: hipotézisek az AI-tól
 
 A Google DeepMind Co-Scientist rendszere egy többágenses AI platform, amely kifejezetten tudományos hipotézisek generálására és értékelésére lett tervezve. A rendszer képes:
 
@@ -136,7 +136,7 @@ A Google DeepMind Co-Scientist rendszere egy többágenses AI platform, amely ki
 
 A Co-Scientist nem helyettesíti a kutató intuícióját, de rendkívül hatékonyan bővíti a hipotézisteret -- azaz olyan összefüggéseket és lehetőségeket vet fel, amelyekre a kutató egyedül nem gondolt volna.
 
-### CRISPR-GPT: a génszerkesztés AI asszisztense
+### 1.3.5 CRISPR-GPT: a génszerkesztés AI asszisztense
 
 A CRISPR-GPT az AI és a génszerkesztés metszéspontján született rendszer, amely segíti a kutatókat a CRISPR-alapú kísérletek tervezésében. Az AI képes:
 
@@ -157,15 +157,15 @@ A rendszer különösen értékes olyan kutatók számára, akik nem génszerkes
 
 ---
 
-## Lassul-e a tudomány?
+## 1.4 Lassul-e a tudomány?
 
-> **🖼️ Ábra: A tudományos disruptivitás csökkenése (1945–2020)**
+> **🖼️ 1.2. ábra: A tudományos disruptivitás csökkenése (1945–2020)**
 > *Vonaldiagram, amely a CD-index csökkenő trendjét mutatja az évtizedek során, Park et al. (2023) adatai alapján. Az x tengelyen az évek, az y tengelyen a disruptivitási index.*
 
 
 Az előző rész az AI ígéretéről szólt. Most nézzük meg, **miért van szükség erre az ígéretre** -- miért olyan sürgős, hogy a tudomány új eszközöket találjon.
 
-### A csökkenő disruptivitás
+### 1.4.1 A csökkenő disruptivitás
 
 2023-ban Park, Leahey és Funk a *Nature*-ben publikálta az egyik legprovokatívabb tudománytani cikket az utolsó évtizedből. 45 millió tudományos cikket és 3,9 millió szabadalmat elemezve kimutatták, hogy a tudományos publikációk **disruptivitása** -- azaz az a képesség, hogy egy cikk alapvetően megváltoztassa a tudományterületét -- **évtizedek óta csökken**. Nem arról van szó, hogy kevesebb cikk jelenik meg -- épp ellenkezőleg, exponenciálisan nő a publikációk száma. <!-- [SZERKESZTOI MEGJEGYZES / GPT-5.4 review] "paradigmavalto" — itt legitim, mert konkret Park et al. tanulmanyra hivatkozik. A "paradigmavaltas" motívum a konyvben tobbszor ismetlodik; erdemes ellenorizni, hogy mashol ne legyen tartalmi redundancia. -->
 De a valóban áttörő, paradigmaváltó munkák aránya folyamatosan csökken.
@@ -177,7 +177,7 @@ Mi áll emögött? Több tényező együttesen:
 - **A publikációs nyomás**: A "publish or perish" kultúra arra ösztönöz, hogy sok kisebb cikket írj, ne kevés nagyot. Az OECD adatai szerint a tudományos publikációk száma exponenciálisan nő, de az új tudományos koncepciók száma csak lineárisan -- vagyis egyre több cikk kell egyetlen valódi új ötlethez (Milojevic, OECD, 2023).
 - **Hosszabb időskálák**: Az igazán áttörő eredmények eléréséhez egyre több idő és erőforrás szükséges. Az OECD adatai szerint az alapkutatástól a piaci alkalmazásig terjedő időszak az utolsó évtizedekben jelentősen megnőtt.
 
-### Miért pont az AI lehet a megoldás?
+### 1.4.2 Miért pont az AI lehet a megoldás?
 
 Ha a tudomány azért lassul, mert túl sok az adat, túl széles az irodalom, túl komplex a tudás, és túl kevés az idő -- akkor pontosan olyan eszközre van szükség, amely:
 
@@ -192,29 +192,29 @@ Az AI pontosan ezt tudja. Nem azért, mert "okosabb" az embernél -- hanem azér
 
 ---
 
-## Mollick négy szabálya az AI-val való együttműködésre
+## 1.5 Mollick négy szabálya az AI-val való együttműködésre
 
 Ethan Mollick *Co-Intelligence* című könyvében négy alapszabályt fogalmaz meg az AI használatához. Ezek a szabályok nem technikaiak, hanem szemléletbeliek -- és talán a legfontosabb útmutatók, amelyeket ebben a könyvben kapsz.
 
-### 1. szabály: Mindig hívd meg az AI-t
+### 1.5.1 1. szabály: Mindig hívd meg az AI-t
 
 Bármilyen intellektuális feladatba fogsz -- irodalomkutatás, adatelemzés, prezentáció készítése, pályázatírás, kísérlettervezés -- **próbáld ki először AI-val is**. Nem azért, mert az AI mindig jobb lesz, hanem azért, mert csak használat közben tanulod meg, mire jó és mire nem. Mollick ezt úgy fogalmazza meg: ha nem próbálod ki, soha nem fogod megtudni, hol van az AI **egyenetlen határa** (*Jagged Frontier*) -- az a kiszámíthatatlan, szabálytalan vonal, amelyen belül az AI meglepően jól teljesít, és amelyen kívül meglepően rosszul.
 
 A Jagged Frontier fogalma kulcsfontosságú: az AI képességei **nem** követnek egy szép, egyenletes gradienst az egyszerűtől a bonyolultig. Előfordul, hogy egy orvosi szakvizsgán jól teljesít, de egy egyszerű logikai feladaton megbukik. Előfordul, hogy briliáns irodalmi összefoglalót ír, de egy alapvető számtani műveletet elront. Ezt nem tankönyvből lehet megtanulni -- csak tapasztalatból.
 
-### 2. szabály: Légy az ember a rendszerben
+### 1.5.2 2. szabály: Légy az ember a rendszerben
 
 Az AI nem helyettesít, hanem kiegészít. Te vagy a minőségbiztosítás, a kritikus gondolkodás, a végső döntéshozatal. Amikor az AI szöveget generál, te ellenőrzöd a tényeket. Amikor az AI adatot elemez, te értelmezed az eredményeket a szakterületed kontextusában. Amikor az AI hipotézist javasol, te döntöd el, hogy érdemes-e tesztelni.
 
 Ez nem opcionális udvariasság -- ez a tudományos munka integritásának alapja. Az AI **hallucinálhat**: magabiztosan állíthat olyasmit, ami nem igaz. Kitalálhat hivatkozásokat, amelyek nem léteznek. Hibás következtetésekre juthat. A te feladatod, hogy ezt észrevedd és korrigáld.
 
-### 3. szabály: Kezeld úgy, mint egy képzett kollégát
+### 1.5.3 3. szabály: Kezeld úgy, mint egy képzett kollégát
 
 Ne úgy közelíts az AI-hoz, mint egy keresőmotorhoz ("keress rá erre"), és ne úgy, mint egy varázspálcához ("oldd meg ezt"). Kezeld úgy, mint egy jól képzett, de tapasztalatlan PhD-hallgatót: **adj kontextust, légy specifikus, adj visszajelzést**. Minél többet tudsz az AI-nak a feladatról, a háttérről, az elvárásaidról, annál jobb eredményt kapsz.
 
 Ez azt is jelenti, hogy érdemes "beszélgetni" az AI-val: ha az első válasz nem tökéletes, ne add fel -- pontosítsd a kérdést, adj további instrukciókat, kérd meg, hogy gondolja újra. Az iteratív együttműködés sokkal jobb eredményeket hoz, mint az egyszeri kérdés-válasz.
 
-### 4. szabály: Feltételezd, hogy ez a legrosszabb AI, amelyet valaha fogsz használni
+### 1.5.4 4. szabály: Feltételezd, hogy ez a legrosszabb AI, amelyet valaha fogsz használni
 
 Ez a legfontosabb és legváratlanabb szabály. Ami ma frusztráló -- a hallucinációk, a korlátok, a hibák -- az holnap már múlt. Az AI fejlődési üteme olyan gyors, hogy bármilyen jelenlegi korlát, amelyet tapasztalsz, valószínűleg hónapokon belül megoldódik. A GPT-3 és a GPT-4 között alig egy év telt el, és a képességbeli különbség óriási volt. A Claude 2 és a Claude 3.5 között hónapok teltek el, és a javulás szemmel látható volt minden területen.
 
@@ -222,15 +222,15 @@ Mit jelent ez a gyakorlatban? **Ne az alapján ítéld meg az AI-t, amit ma nem 
 
 ---
 
-## A debreceni kontextus
+## 1.6 A debreceni kontextus
 
-> **🖼️ Ábra: A Debreceni Egyetem AI-ökoszisztémája**
+> **🖼️ 1.3. ábra: A Debreceni Egyetem AI-ökoszisztémája**
 > *Infografika: a Debreceni Egyetem épülete középen, körülötte a Komondor szuperszámítógép, a Járműipari és MI Koordinációs Intézet, az ipari partnerek (BMW, Deutsche Telekom) és a kutatócsoportok hálózata.*
 
 
 Eddig globális trendekről beszéltünk. Most nézzük meg, mit jelent mindez **konkrétan, itt Debrecenben**, a Debreceni Egyetem 14 karán, a mintegy 30 000 magyar és közel 8000 nemzetközi hallgató számára.
 
-### Az egyetem és az AI
+### 1.6.1 Az egyetem és az AI
 
 A Debreceni Egyetem -- amely az 1538-ban alapított Református Kollégiumra vezeti vissza történetét -- Magyarország egyik legnagyobb és legszélesebb profilú felsőoktatási intézménye. Szilvássy Zoltán rektor szavaival: az informatika "áthatja az egyetem minden tudományágát és fejlesztését, nincs olyan terület, amelyre ne lenne hatással."
 
@@ -246,13 +246,13 @@ Ez nem üres szólam. Az egyetemen az AI jelenlétét konkrét, működő infras
 
 **A Járműipari és Mesterséges Intelligencia Koordinációs Intézet.** 2025 szeptemberében az egyetem Szenátusa jóváhagyta egy új intézet létrehozását, amelyet Palkovics László, korábbi innovációs és technológiai miniszter vezet. Az intézet célja a járműipari, autonóm rendszerekkel kapcsolatos és AI-kutatás horizontális összefogása az egyetem valamennyi karán -- különös tekintettel a BMW-gyárral való együttműködésre.
 
-### A BMW és az ipari ökoszisztéma
+### 1.6.2 A BMW és az ipari ökoszisztéma
 
 2025 szeptemberében nyitotta meg kapuit a **BMW Group Plant Debrecen**, Debrecen eddigi legnagyobb ipari beruházása: **2 milliárd eurós** invesztíció, évi 150 000 autó gyártási kapacitás, több mint 2000 közvetlen munkahely. A gyár az első BMW-üzem, amely teljes egészében megújuló energiával működik, és az új BMW iX3-at (Neue Klasse platform) gyártja.
 
 Ez nem "csak" egy autógyár. A BMW jelenléte egy egész AI-igényes ipari ökoszisztémát hoz létre: beszállítók, kutatás-fejlesztési partnerségek, adatvezérelt gyártásoptimalizálás. A Debreceni Egyetem ennek az ökoszisztémának a szellemi háttérbázisa -- a Vezér utcai Tudományos, Technológiai és Innovációs Park 4,9 milliárd forintos járműkutatási laboratóriumával, az Informatikai Kar ipari kapcsolataival és a Komondor szuperszámítógéppel.
 
-### A magyar nemzeti kontextus
+### 1.6.3 A magyar nemzeti kontextus
 
 Debrecen nem légüres térben létezik. Magyarország AI stratégiája és intézményrendszere egyre erősebb keretet ad az egyetemi szintű munkának:
 
@@ -268,11 +268,11 @@ Debrecen nem légüres térben létezik. Magyarország AI stratégiája és int�
 
 ---
 
-## Hogyan használd ezt a könyvet?
+## 1.7 Hogyan használd ezt a könyvet?
 
 Ez a könyv nem tankönyv, amelyet az elejétől a végéig kell olvasni (bár megteheted, és ajánlom). Inkább egy **útmutató és referencia**, amelyet a saját igényeidhez igazíthatsz. Íme néhány javasolt olvasási útvonal:
 
-### Az "Első lépések" útvonal (bármilyen szakterület)
+### 1.7.1 Az "Első lépések" útvonal (bármilyen szakterület)
 
 Ha most ismerkedsz az AI-val, és gyorsan, gyakorlatiasan szeretnél elkezdeni:
 
@@ -281,7 +281,7 @@ Ha most ismerkedsz az AI-val, és gyorsan, gyakorlatiasan szeretnél elkezdeni:
 3. **3. fejezet** -- irodalomkutatás és szövegelemzés AI-val
 4. **5. fejezet** -- a legfontosabb AI-eszközök és platformok áttekintése
 
-### A "Kutatói hatékonyság" útvonal
+### 1.7.2 A "Kutatói hatékonyság" útvonal
 
 Ha már használsz AI-t alapszinten, és szeretnéd a kutatási munkafolyamatodba integrálni:
 
@@ -290,7 +290,7 @@ Ha már használsz AI-t alapszinten, és szeretnéd a kutatási munkafolyamatodb
 3. **6. fejezet** -- a kísérlettervezéstől a publikációig: AI-támogatott kutatási ciklus
 4. **7. fejezet** -- ágensek a gyakorlatban
 
-### Az "Informatikusok és fejlesztők" útvonal
+### 1.7.3 Az "Informatikusok és fejlesztők" útvonal
 
 Ha programozol, és az AI technikai mélységeire is kíváncsi vagy:
 
@@ -299,7 +299,7 @@ Ha programozol, és az AI technikai mélységeire is kíváncsi vagy:
 3. **9. fejezet** -- többágenses rendszerek
 4. **10. fejezet** -- a Komondor szuperszámítógép használata
 
-### Az "Intézményvezetők és döntéshozók" útvonal
+### 1.7.4 Az "Intézményvezetők és döntéshozók" útvonal
 
 Ha dékán, tanszékvezető, kutatásvezetői vagy intézményi szinten gondolkodsz az AI-ról:
 
@@ -308,7 +308,7 @@ Ha dékán, tanszékvezető, kutatásvezetői vagy intézményi szinten gondolko
 3. **15. fejezet** -- AI írástudás: hogyan képezd a kollégáidat
 4. **16. fejezet** -- etika, szabályozás, felelős AI használat
 
-### A "Szakterület-specifikus" útvonal
+### 1.7.5 A "Szakterület-specifikus" útvonal
 
 A könyv második részében szakterületi fejezeteket találsz. Keresd meg a sajátodat:
 
@@ -320,7 +320,7 @@ A könyv második részében szakterületi fejezeteket találsz. Keresd meg a sa
 
 ---
 
-## Hogyan tovább?
+## 1.8 Hogyan tovább?
 
 Ez a fejezet három dolgot próbált megtenni: megmutatni, hogy az AI forradalom a tudományban nem jövőidő, hanem jelen idő; meggyőzni, hogy ez a forradalom rád is vonatkozik, bármilyen szakterületen dolgozol; és elhelyezni ezt a forradalmat a debreceni és a magyar kontextusban.
 
@@ -330,7 +330,7 @@ De mielőtt lapoznál, egy utolsó gondolat. Mollick negyedik szabálya szerint 
 
 ---
 
-## Kulcs-tanulságok
+## 1.9 Kulcs-tanulságok
 
 - **Az AI általános célú technológia**, amely a gőzgéphez és az elektromossághoz hasonlóan minden tudományterületet átalakít -- nem kérdés, hogy a te szakterületedet is eléri, csak az a kérdés, hogy felkészülsz-e rá.
 
@@ -344,7 +344,7 @@ De mielőtt lapoznál, egy utolsó gondolat. Mollick negyedik szabálya szerint 
 
 ---
 
-## Hivatkozások
+## 1.10 Hivatkozások
 
 - Gentemann, C. L. et al. (2021). "Science Storms the Cloud." *AGU Advances*, 2(2), e2020AV000354.
 - Hu, K. (2023). "ChatGPT Sets Record for Fastest-Growing User Base." *Reuters*.

@@ -10,7 +10,7 @@
 > - **Szükséges eszközök:** Böngésző + terminál + Python (a gyakorlati példákhoz)
 > - **Kapcsolódó fejezetek:** 7. fejezet (pipeline-ok), 10. fejezet (digitális ikrek), 19. fejezet (térinformatika)
 
-## Amikor a tábla beszélni kezd
+## 17.1 Amikor a tábla beszélni kezd
 
 Gábor a Hajdúságban gazdálkodik, hatszáz hektáron kukoricát és búzát termeszt. Minden májusban drónnal repüli végig a tábláit, a Sentinel-2 műhold ötnaponta küld friss NDVI-térképet, a talajnedvesség-szenzorjai óránként jelentenek, az agrometeorológiai állomása pedig percenként rögzíti a hőmérsékletet, a páratartalmat és a szélsebességet. Gábornak nem az adathiány a problémája --- hanem az adatbőség. Egy átlagos tenyészidőszakban a gazdasága több terabájtnyi adatot termel: műholdfelvételek, drónos multispektrális képek, hozamtérképek, talajvízsgálati eredmények, gépi telematikai adatok, időjárási idősorok. Ezek az adatok különböző formátumokban, különböző platformokon, különböző koordináta-rendszerekben érkeznek. Gábor tudja, hogy aranyat ér bennük --- de nincs ideje és kapacitása, hogy minden reggel tizenöt különböző szoftvert nyisson meg, és kézzel rakja össze a képet.
 
@@ -20,9 +20,9 @@ Ez a fejezet arról szól, hogyan változtatja meg a mesterséges intelligencia 
 
 ---
 
-## 17.1 Az AI a precíziós gazdálkodás ciklusában
+## 17.2 Az AI a precíziós gazdálkodás ciklusában
 
-> **🖼️ Ábra: A precíziós gazdálkodás AI-ciklusa — adatgyűjtéstől a döntéshozatalig**
+> **🖼️ 17.1. ábra: A precíziós gazdálkodás AI-ciklusa — adatgyűjtéstől a döntéshozatalig**
 > *Circular infographic showing the precision agriculture cycle with AI at each step: data collection (satellite, drone, sensor), processing, analysis, decision, execution, monitoring, farm landscape background*
 
 A precíziós mezőgazdaság egy ismétlődő ciklust követ: **adatgyűjtés** → **adatfeldolgozás** → **elemzés és értelmezés** → **döntéshozatal** → **végrehajtás** → **monitoring** → és újra adatgyűjtés. Ez a ciklus nem újdonság --- a precíziós mezőgazdaság alapszövege az 1990-es évek óta így írja le a folyamatot. Ami új, az a mesterséges intelligencia belépése a ciklus minden egyes pontjába.
@@ -74,9 +74,9 @@ Az AI nem egyetlen ponton lép be ebbe a ciklusba --- hanem mindenhol. Az adatgy
 
 ---
 
-## 17.2 AI a mezőgazdasági adatkezelésben
+## 17.3 AI a mezőgazdasági adatkezelésben
 
-### Műholdfelvételek: a Sentinel-2-től az értelmezésig
+### 17.3.1 Műholdfelvételek: a Sentinel-2-től az értelmezésig
 
 A magyar precíziós mezőgazdaság egyik legnagyobb ajándéka az Európai Unió Copernicus-programja. A Sentinel-2 műholdak ingyenes, 10 méteres felbontású multispektrális felvételeket szolgáltatnak, névlegesen mintegy ötnapos visszatérési idővel. Egy hatszáz hektáros gazdaság minden ötödik napon friss NDVI-, NDRE- és klorofilltartalom-térképet kaphat --- ingyen.
 
@@ -108,7 +108,7 @@ A 2. fejezetben részletezett prompttervezési elvek alapján a modell azonnal �
 
 **3. Automatikus anomáliadetekció.** Ahogy a 4. fejezetben megtanultad a statisztikai kiugró értékek keresését, ugyanezt alkalmazhatód a műholdfelvételek idősoraira. Ha az NDVI egy táblarészen hirtelen 0,3-mal esik két felvétel között, de a szomszédos táblákon nem változik, az nem a műhold hibája --- az lehet kártevő, belvíz, vagy jégkár.
 
-### Szenzor-hálózatok és IoT
+### 17.3.2 Szenzor-hálózatok és IoT
 
 A modern precíziós gazdaság IoT-szenzorjai --- talajnedvesség, talajhőmérséklet, levélnedvesség, EC-szondák --- folyamatos adatáramot termelnek. Egy átlagos gazdaság tucatnyi, egy nagyüzem akár több száz szenzorcsomóponttal is rendelkezhet. Ezek az adatok jellemzően LoRaWAN vagy NB-IoT hálózaton keresztül jutnak el egy felhőplatformra vagy helyi szerverre.
 
@@ -118,7 +118,7 @@ Az AI három szintén segít:
 - **Idősor-anomáliadetekció:** Egy LSTM-modell megtanulja a normális napi talajnedvesség-mintázatot (reggeli csúcs, délutáni száradás), és riaszt, ha a minta eltér --- ami szenzor-meghibásodást vagy valós mezőgazdasági eseményt (belvíz, csőtörés) jelezhet.
 - **Szenzor-fúzió:** Több szenzor adatait kombinálja egyetlen koherens képpé. A talajnedvesség-mérés önmagában egy pont; ha kombináljuk a domborzatmodellel, a talaj-EC-vel és az időjárási adatokkal, az interpoláció sokkal pontosabb.
 
-### Időjárási API-k és előrejelzések
+### 17.3.3 Időjárási API-k és előrejelzések
 
 Ahogy a 7. fejezetben láttuk, az API-k a pipeline-ok alapvető adatforrásai. A mezőgazdasági kontextusban a legfontosabb API-k:
 
@@ -138,12 +138,12 @@ Ez nem fantázia --- ez egy n8n vagy Apache Airflow workflow, amelyet a 8. fejez
 
 ---
 
-## 17.3 AI-asszisztált növényállomány-monitoring
+## 17.4 AI-asszisztált növényállomány-monitoring
 
-> **🖼️ Ábra: Műholdas növényfigyelés — NDVI térkép az Alföldön**
+> **🖼️ 17.2. ábra: Műholdas növényfigyelés — NDVI térkép az Alföldön**
 > *Satellite view of the Hungarian Great Plain with NDVI color overlay (red-yellow-green), showing crop health variation across parcels, realistic remote sensing visualization*
 
-### NDVI-térképek értelmezése LLM-ekkel
+### 17.4.1 NDVI-térképek értelmezése LLM-ekkel
 
 Az NDVI (Normalized Difference Vegetation Index) a precíziós mezőgazdaság legszélesebb körben használt vegetációs indexe. A vörös és a közeli infravörös reflektancia-sávokból számított NDVI értékei 0-tól (csupasz talaj) közel 1-ig (sűrű, egészséges vegetáció) terjednek. Egy Sentinel-2-felvételből számolt NDVI-térkép megmutatja, hol zöld és egészséges az állomány, és hol van probléma.
 
@@ -172,7 +172,7 @@ Mi okozhatja az egyes mintázatokat? Milyen terepbejárási tervet javasolsz?
 
 Egy jól felépített prompt --- a 2. fejezet elvei szerint, kontextussal, konkrét adatokkal és célkérdéssel --- valódi agronómiai értelmezést eredményez. A modell összekapcsolja a domborzatot a belvízzel, az aszályos időszakot a vízstresszel, a délnyugati sarok izolált foltját esetleges géphibával vagy szivárgó drénnel. Természetesen az LLM nem helyettesíti a terepbejárást --- de drámaian csökkenti az időt és az erőfeszítést, amellyel a gazdálkodó eldönti, *hová menjen* és *mit keressen*.
 
-### Multispektrális és hiperspektrális adatok értelmezése
+### 17.4.2 Multispektrális és hiperspektrális adatok értelmezése
 
 Az NDVI csak a kezdet. A modern drónok --- mint a DJI Matrice 300 RTK Micasense Altum szenzorral --- öt vagy több spektrális sávban rögzítenek adatot: kék, zöld, vörös, vörös él (red edge), közeli infravörös és hőinfravörös. Ezekből számítható:
 
@@ -185,7 +185,7 @@ Az NDVI csak a kezdet. A modern drónok --- mint a DJI Matrice 300 RTK Micasense
 
 Ahogy a 4. fejezetben megtanultad, az adatelemzés első lépése mindig a feltáró vizsgálat. Tölts fel egy multispektrális indexkészletet (NDVI, NDRE, GNDVI, CWSI táblánkénti zónastatisztikáit) egy AI-chatbe, és kérd meg, hogy azonosítsa azokat a zónákat, ahol az indexek ellentmondanak egymásnak. Például: ha az NDVI normális, de az NDRE alacsony, az korai nitrogénhiányra utalhat, mielőtt az a szabad szemmel vagy az NDVI-n láthatóvá válna.
 
-### Idősorok elemzése: a fenológiai görbe
+### 17.4.3 Idősorok elemzése: a fenológiai görbe
 
 A legértékesebb információ nem egyetlen felvételből, hanem az idősorból jön. A kukorica NDVI-görbéje jellegzetes alakot követ: alacsony értékek a vetés után, meredek emelkedés a vegetatív növekedés során, csúcs a címerhányás körül, majd fokozatos csökkenés az érés során. Ha egy táblarész görbéje eltér a többitől --- későbbi emelkedés, alacsonyabb csúcs, korábbi visszaesés --- az probléma jele.
 
@@ -200,9 +200,9 @@ ahol a csúcs NDVI 15%-kal alacsonyabb az átlagnál. Használj matplotlib-et.
 
 ---
 
-## 17.4 Gépi tanulás a mezőgazdasági döntéstámogatásban
+## 17.5 Gépi tanulás a mezőgazdasági döntéstámogatásban
 
-### Hozam-előrejelzés
+### 17.5.1 Hozam-előrejelzés
 
 A hozam-előrejelzés a precíziós mezőgazdaság szent grálja. Ha a gazdálkodó már a szezon közepén tudja, melyik táblarészen mennyi termés várható, jobban tervezheti az értékesítést, a szárítást és a logisztikát.
 
@@ -225,7 +225,7 @@ A gépi tanulás ezen a területen az egyik leglátványosabb eredményeket éri
 
 A 6. fejezetben hangsúlyoztuk, hogy minden modellnél a validáció a kulcs. A mezőgazdaságban ez különösen fontos, mert az adatok évről évre drámaian változnak. Egy 2022-es (aszályos) éven tanított modell katasztrofálisan félrejelezhet egy 2023-as (csapadékos) évet. A megoldás: **leave-one-year-out cross-validation**, ahol a modellt mindig az egyik évet kihagyva tanítjuk, és az elhagyott éven teszteljük.
 
-### Talajtérképezés és kezelési zónák
+### 17.5.2 Talajtérképezés és kezelési zónák
 
 A precíziós tápanyag-gazdálkodás alapja a tábla kezelési zónákra osztása. A hagyományos megközelítés: talaj-EC-felmérés, rácspontos mintavétel, krigelés, majd klaszterezés (pl. k-means). Az AI ezt a munkafolyamatot többféleképpen javítja:
 
@@ -252,7 +252,7 @@ kezelést javasolsz a következő kukoricaszezonra?
 
 Az AI-válasz összekapcsolja a magas EC-t a finomabb textúrával vagy szikesedéssel, a magas variabilitási együtthatót a belvíz-érzékenységgel, és zóna-specifikus műtrágyázási, vetőmagnorma- és esetleg fajtajavaslatot ad.
 
-### Kártevő- és betegségdetekció
+### 17.5.3 Kártevő- és betegségdetekció
 
 A deep learning-alapú képosztályozás a mezőgazdasági AI egyik leglátványosabb sikertörténete. Ahogy a precíziós mezőgazdasági szakirodalom részletezi, a CNN-alapú modellek kontrollált körülmények között 96-99%-os pontossággal képesek növénybetegségeket osztályozni levélfelvételek alapján.
 
@@ -266,11 +266,11 @@ Az AI-alapú kártevő-előrejelzés egy további lépés: IoT-szenzorból érke
 
 ---
 
-## 17.5 AI kódolási asszisztensek a mezőgazdasági adatfeldolgozásban
+## 17.6 AI kódolási asszisztensek a mezőgazdasági adatfeldolgozásban
 
 Ahogy az 5. fejezetben részletesen tárgyaltuk, az AI kódolási asszisztensek --- Claude Code, GitHub Copilot, Cursor --- drámaian lecsökkentik a programozási küszöböt. A mezőgazdasági adatfeldolgozás tele van olyan feladatokkal, amelyek programozási tudást igényelnek, de nem programozási problémák: raszter-feldolgozás, zónastatisztikák, koordináta-transzformáció, idősor-elemzés.
 
-### Raszterfeldolgozás Claude Code-dal
+### 17.6.1 Raszterfeldolgozás Claude Code-dal
 
 Gábor szeretné kiszámolni a tábláinak átlagos NDVI-jét Sentinel-2-felvételből. Hagyományosan ez QGIS-ben történne: GeoTIFF betöltés, vágás táblahatárra, zónastatisztika plugin. De ha ezt hetente, húsz táblára, automatikusan kell csinálni, a QGIS-kattintgatás nem megoldás.
 
@@ -292,7 +292,7 @@ Az 5. fejezetben tanult elvek szerint: adj kontextust (formátumok, koordináta-
 
 > **Fontos megjegyzés EOV-koordinátákról:** Ahogy a magyar precíziós mezőgazdasági gyakorlatban közismert, az EOV-koordinátákat az értéktartományuk alapján kell azonosítani, nem a fejlécek alapján. Az északi koordináta (Northing) a 0--400 000 tartományba esik, a keleti (Easting) 400 000--1 000 000 közé. A régi adatfájlokban az oszlopfejlécek gyakran felcserélik ezeket. Ha a Claude Code által generált szkript nem a várt helyre illeszti a táblákat, először ellenőrizd a koordináták tartományát!
 
-### Hozamtérkép-tisztítás automatizálása
+### 17.6.2 Hozamtérkép-tisztítás automatizálása
 
 A nyers hozamtérképek tele vannak hibás értékekkel: a kombájn indulásánál és megállásánál mért hamis hozamok, a fordulókban rögzített értékek, a GPS-csúszások okozta helytelen pozíciók. A precíziós mezőgazdasági szakirodalom részletesen leírja a standard tisztítási lépéseket --- de ezek implementálása programozási feladat.
 
@@ -311,7 +311,7 @@ attribútumok: yield_tha, speed_kmh, moisture_pct, swath_width_m, lat, lon):
 
 A 7. fejezet pipeline-szemlélete itt is érvényes: ez a szkript beilleszthető egy automatizált munkafolyamatba, amely minden aratási nap végén lefut a friss adatokon.
 
-### Evapotranszspiráció számítása
+### 17.6.3 Evapotranszspiráció számítása
 
 Az FAO Penman-Monteith egyenlet a referencia-evapotranszspiráció (ET₀) számításának nemzetközi standardja. Az egyenlet nem bonyolult, de sok bemeneti paramétert igényel (hőmérséklet, páratartalom, szélsebesség, napsugárzás), és a származtatott változók (telítési gőznyomás, nettó sugárzás) kiszámítása hibára hajlamos.
 
@@ -326,14 +326,14 @@ Adj hozzá docstringet és unit-teszteket 3 ismert bemeneti-kimeneti párral.
 
 ---
 
-## 17.6 Vizuális programozás a mezőgazdasági munkafolyamatokhoz
+## 17.7 Vizuális programozás a mezőgazdasági munkafolyamatokhoz
 
-> **🖼️ Ábra: Digitális iker egy magyar búzatáblához — valós idejű szimulációs felület**
+> **🖼️ 17.3. ábra: Digitális iker egy magyar búzatáblához — valós idejű szimulációs felület**
 > *Split-screen showing a real wheat field on the left and its digital twin simulation on the right with sensor data overlays, futuristic agricultural tech style*
 
 Ahogy a 8. fejezetben megismerted, a vizuális programozási eszközök --- n8n, KNIME, Node-RED --- lehetővé teszik komplex munkafolyamatok összeállítását programozás nélkül, drag-and-drop módon. A mezőgazdaság tele van olyan feladatokkal, amelyekre ezek az eszközök ideálisak.
 
-### n8n: időjárási riasztások
+### 17.7.1 n8n: időjárási riasztások
 
 Képzeld el a következő n8n workflow-t:
 
@@ -366,7 +366,7 @@ Bővíthető változat:
 - Az előrejelzés kombinálható a talajnedvesség-szenzor aktuális értékével (IoT API-hívás).
 - Heves csapadék előrejelzésnél automatikusan ellenőrzi, mely táblák fekszenek belvíz-veszélyes mélyedésben (domborzatmodellből előre kiszámolt kockázati térkép).
 
-### KNIME: szenzor-adatok elemzése
+### 17.7.2 KNIME: szenzor-adatok elemzése
 
 A KNIME-ot a 8. fejezetben elsősorban laboradatok elemzésére használtuk. A mezőgazdasági alkalmazás nagyon hasonló:
 
@@ -381,11 +381,11 @@ A KNIME ereje itt az, hogy a gazdálkodó (vagy az agronómus) látja a teljes f
 
 ---
 
-## 17.7 RAG a mezőgazdasági tudásmenedzsmentben
+## 17.8 RAG a mezőgazdasági tudásmenedzsmentben
 
 Ahogy a 9. fejezetben részletesen tárgyaltuk, a Retrieval-Augmented Generation (RAG) lehetővé teszi, hogy egy nagy nyelvi modellt saját dokumentumaiddal „táplálj", és a válaszokat a te adataidra alapozva kapd.
 
-### A gazdálkodó személyes tudásbázisa
+### 17.8.1 A gazdálkodó személyes tudásbázisa
 
 Képzeld el, hogy Gábor az elmúlt öt évben a következő dokumentumokat halmozta fel:
 
@@ -408,7 +408,7 @@ Ezeket a dokumentumokat feltöltheti egy RAG-rendszerbe --- a 9. fejezetben isme
 
 A RAG-rendszer nem „kitalálja" a választ --- hanem megkeresi a releváns dokumentumrészleteket, és azok alapján válaszol. Ez a 9. fejezetben hangsúlyozott hallucináció-csökkentő mechanizmus.
 
-### Szabályozási dokumentumok RAG-ja
+### 17.8.2 Szabályozási dokumentumok RAG-ja
 
 A magyar gazdálkodók egyre összetettebb szabályozási környezetben dolgoznak. A KAP 2023--2027-es ciklusa, az ökorendszerek, a Farm to Fork stratégia, a nitrátdirektíva, a növényvédelmi szabályozás --- ezek mind több száz oldalas dokumentumok, amelyeket a gazdálkodónak ismernie kellene, de senki sem olvassa el őket teljes terjedelmükben.
 
@@ -420,7 +420,7 @@ Egy RAG-rendszer, amelybe feltöltöd a releváns jogszabályokat és KAP-útmut
 
 A válasz pontosan hivatkozik a forrás-dokumentumra és a releváns bekezdésre --- ahogy a 9. fejezetben tárgyalt forrásmegjelölési mechanizmus működik.
 
-### Szaktudás-aggregáció: a „chatbot a farmról"
+### 17.8.3 Szaktudás-aggregáció: a „chatbot a farmról"
 
 A legambiciózusabb alkalmazás: egy RAG-rendszer, amely az összes fenti adatforrást egyesíti --- talajvízsgálatok, hozamadatok, időjárás, szaktanácsadói vélemények, szabályozás --- és egyetlen felületen teszi elérhetővé. Ez nem pusztán keresőmotor; az LLM képes összekapcsolni különböző dokumentumokból származó információkat:
 
@@ -428,11 +428,11 @@ A legambiciózusabb alkalmazás: egy RAG-rendszer, amely az összes fenti adatfo
 
 ---
 
-## 17.8 Mezőgazdasági digitális ikrek
+## 17.9 Mezőgazdasági digitális ikrek
 
 Ahogy a 10. fejezetben részletesen bemutattuk, a digitális iker egy fizikai rendszer számítógépes modellje, amelyet valós idejű adatokkal folyamatosan frissítenek. A mezőgazdaság különösen alkalmas terep a digitális ikreknek, mert egy tábla állapota sok mérhető változóval leírható, és a szimulációnak közvetlen gazdasági haszna van.
 
-### A mezőgazdasági digitális iker komponensei
+### 17.9.1 A mezőgazdasági digitális iker komponensei
 
 Egy szántóföldi digitális iker négy almodellt integrál:
 
@@ -458,7 +458,7 @@ Egy szántóföldi digitális iker négy almodellt integrál:
 
 A 10. fejezetben leírt elvek szerint: a digitális iker nem egyetlen monolitikus modell, hanem moduláris rendszer, amelyet a valós adatok folyamatosan kalibrálnak.
 
-### „Mi lenne, ha..." szimulációk
+### 17.9.2 „Mi lenne, ha..." szimulációk
 
 A digitális iker igazi ereje a szcenárió-elemzésben rejlik:
 
@@ -468,7 +468,7 @@ A digitális iker igazi ereje a szcenárió-elemzésben rejlik:
 
 Az AquaCrop modell --- amelyet az FAO kifejezetten egyszerűnek és hozzáférhetőnek szántak --- különösen alkalmas a „mi lenne, ha" kérdések megválaszolására. Az AquaCrop a lombfedettséget használja fő állapotváltozóként (nem a LAI-t), ami csökkenti a kalibráláshoz szükséges paramétereket, és a gazdálkodó számára is érthetőbb.
 
-### Az AI szerepe a digitális ikerben
+### 17.9.3 Az AI szerepe a digitális ikerben
 
 Az AI három ponton kapcsolódik a digitális ikerhez:
 
@@ -490,11 +490,11 @@ Az LLM lefordítja a természetes nyelvű kérést a szimulációs modell param�
 
 ---
 
-## 17.9 AI-ágensek az autonóm gazdálkodásban
+## 17.10 AI-ágensek az autonóm gazdálkodásban
 
 Ahogy a 11. és 12. fejezetben részletesen tárgyaltuk, az AI-ágensek önálló döntéshozatalra képes rendszerek, amelyek érzékelik a környezetüket, terveznek, és cselekszenek. A mezőgazdaság az ágensek egyik legtermészetesebb alkalmazási területe, mert a döntések ismétlődőek, időkritikusak, és nagy mennyiségű adat áll rendelkezésre.
 
-### Multi-ágens rendszer az öntözésütemezéshez
+### 17.10.1 Multi-ágens rendszer az öntözésütemezéshez
 
 Képzeljünk el egy multi-ágens rendszert, amelyben minden tábla rendelkezik egy saját „tábla-ágenssel":
 
@@ -533,7 +533,7 @@ Képzeljünk el egy multi-ágens rendszert, amelyben minden tábla rendelkezik e
 
 Ez a 11. fejezetben leírt multi-ágens architektúra mezőgazdasági alkalmazása. A megerősítéses tanulás --- amelyet a precíziós mezőgazdasági szakirodalom is tárgyal --- itt úgy működik, hogy az ágens próba és hiba útján (szimulációban, nem a valós táblán!) megtanulja az optimális öntözési stratégiát: a jutalomfüggvény a hozam és a vízmegtakarítás kombinációja.
 
-### Kártevő-reagáló ágens
+### 17.10.2 Kártevő-reagáló ágens
 
 Egy másik ágens-típus a kártevő-reagáló rendszer:
 
@@ -546,9 +546,9 @@ Ahogy a 12. fejezetben hangsúlyoztuk: a human-in-the-loop elv a mezőgazdaságb
 
 ---
 
-## 17.10 Magyar precíziós mezőgazdaság: helyzet és lehetőségek
+## 17.11 Magyar precíziós mezőgazdaság: helyzet és lehetőségek
 
-### A magyar kontextus
+### 17.11.1 A magyar kontextus
 
 Magyarország egyedülálló helyzetben van a precíziós mezőgazdaság szempontjából. Az Alföld --- Európa egyik legnagyobb összefüggő síksága --- csernozjom és réti talajokkal, ideális a nagyüzemi szántóföldi gazdálkodásnak. A sík terep kedvez a gépesítésnek és a precíziós technológiáknak. Ugyanakkor a víz a kritikus korlátozó tényező: az éves csapadék az Alföld középső részein mindössze 500 mm körüli, és a változékonyság drámai. A 2022-es aszály katasztrofális kukoricahozamokat eredményezett, ami nyomatékosan jelezte a precíziós vízgazdálkodás szükségességét.
 
@@ -556,7 +556,7 @@ A birtokszerkezet polarizált: kevés nagyüzem (az egykori szövetkezeti gazdas
 
 Az RTK korrekciós hálózat 2023-ra mintegy 3000 mezőgazdasági gépet szolgált ki, hozzávetőleg 1,2 millió hektárt lefedve --- a teljes művelt terület több mint negyedét. Ez a centiméteres pontosságú helymeghatározás az automata kormányzás, az állandó nyomsávos gazdálkodás és a precíziós vetés alapja.
 
-### Debrecen és az Alföld kutatóközpontjai
+### 17.11.2 Debrecen és az Alföld kutatóközpontjai
 
 A **Debreceni Egyetem** Mezőgazdaság-, Élelmiszer-tudományi és Környezetgazdálkodási Kara a precíziós növénytermesztési kutatás úttörője az Alföldön. Kiterjedt szántóföldi kísérleteik a kukorica és a búza változó dózisú nitrogén-kijuttatásáról azt a helyi bizonyítékbázist teremtik meg, amelyre a magyar gazdálkodóknak a technológia elfogadásához szükségük van. Debrecen szerepe az AI-mezőgazdaság kontextusában azért különösen fontos, mert a gyakorlati kísérletezés és az adattudomány itt találkozik: a kísérleti adatokat egyre inkább gépi tanulási modellekkel elemzik, és a változó dózisú kijuttatási térképeket ML-algoritmusokkal optimalizálják.
 
@@ -564,7 +564,7 @@ A **MATE** (Magyar Agrár- és Élettudományi Egyetem) precíziós mezőgazdas�
 
 A **KITE Zrt.** --- az ország vezető mezőgazdasági integrátora --- a PGR (Precíziós Gazdálkodási Rendszer) nevű integrált platformot fejlesztette ki, amely összegyűjti a szántóföldi műveletek gépadatait, döntéstámogató algoritmusokon dolgozza fel, és közvetlenül felhasználható ajánlásokat ad. A KITE hálózata az Alföld jelentős részét lefedi.
 
-### A Hortobágy és a Hajdúság: ahol az AI-nak dolgoznia kell
+### 17.11.3 A Hortobágy és a Hajdúság: ahol az AI-nak dolgoznia kell
 
 A Hortobágy és a Hajdúság térsége koncentráltan mutatja a magyar precíziós mezőgazdaság minden kihívását:
 
@@ -576,7 +576,7 @@ A Hortobágy és a Hajdúság térsége koncentráltan mutatja a magyar precízi
 
 - **Munkaerőhiány:** Az aratási idényben a napszámok elérik a 15 000 forintot, és az idénymunkások egyre inkább külföldi munkát választanak. Az autonóm gépek és az AI-alapú döntéstámogatás itt nem luxus, hanem szükségszerűség.
 
-### Lehetőségek az AI-korszakban
+### 17.11.4 Lehetőségek az AI-korszakban
 
 A magyar precíziós mezőgazdaság előtt álló legnagyobb lehetőségek:
 
@@ -592,9 +592,9 @@ A magyar precíziós mezőgazdaság előtt álló legnagyobb lehetőségek:
 
 ---
 
-## 17.11 Gyakorlati feladatok
+## 17.12 Gyakorlati feladatok
 
-### 1. feladat: NDVI-idősor elemzése és értelmezése
+### 17.12.1 feladat: NDVI-idősor elemzése és értelmezése
 
 **Cél:** Műholdas vegetációs index idősor feltáró elemzése és AI-asszisztált értelmezése.
 
@@ -621,7 +621,7 @@ A magyar precíziós mezőgazdaság előtt álló legnagyobb lehetőségek:
 
 ---
 
-### 2. feladat: Hozamtérkép-tisztító szkript írása AI kódolási asszisztenssel
+### 17.12.2 feladat: Hozamtérkép-tisztító szkript írása AI kódolási asszisztenssel
 
 **Cél:** Automatizált hozamtérkép-tisztítás Python-szkripttel, AI-asszisztens segítségével.
 
@@ -643,7 +643,7 @@ A magyar precíziós mezőgazdaság előtt álló legnagyobb lehetőségek:
 
 ---
 
-### 3. feladat: Időjárási riasztó workflow n8n-nel
+### 17.12.3 feladat: Időjárási riasztó workflow n8n-nel
 
 **Cél:** Automatikus időjárási riasztó rendszer felépítése vizuális programozással.
 
@@ -666,7 +666,7 @@ A magyar precíziós mezőgazdaság előtt álló legnagyobb lehetőségek:
 
 ---
 
-### 4. feladat: RAG-rendszer gazdálkodási dokumentumokra
+### 17.12.4 feladat: RAG-rendszer gazdálkodási dokumentumokra
 
 **Cél:** Személyes tudásbázis felépítése saját (vagy minta-) mezőgazdasági dokumentumokból.
 
@@ -693,7 +693,7 @@ A magyar precíziós mezőgazdaság előtt álló legnagyobb lehetőségek:
 
 ---
 
-### 5. feladat: Egyszerű öntözési döntéstámogató modell
+### 17.12.5 feladat: Egyszerű öntözési döntéstámogató modell
 
 **Cél:** A talaj vízmérlegén alapuló öntözés-ütemezési modell megépítése AI-asszisztens segítségével.
 
@@ -728,7 +728,7 @@ A magyar precíziós mezőgazdaság előtt álló legnagyobb lehetőségek:
 
 ---
 
-## Összefoglalás
+## 17.13 Összefoglalás
 
 A mesterséges intelligencia nem egy újabb gép a traktormúzeumban --- hanem egy új réteg, amely a precíziós mezőgazdaság minden meglévő elemét hatékonyabbá teszi. A műholdfelvételt nem csak letöltjük, hanem automatikusan értelmezzük. A szenzor-adatot nem csak gyűjtjük, hanem anomáliákat keresünk benne. A hozamtérképet nem csak kinyomtatjuk, hanem gépi tanulással elemezzük és jövőbeli hozamot jelzünk előre belőle. A döntéstámogató rendszert nem csak konzultáljuk, hanem autonóm ágenseket bízunk meg a rutin döntések végrehajtásával.
 

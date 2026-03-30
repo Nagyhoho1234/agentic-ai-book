@@ -20,14 +20,14 @@ Ez a fejezet neked szól. Nem az egyéni kutatónak, aki egy chatbotot használ 
 
 ---
 
-## A 2026-os tudományos AI stack: mi hova való
+## 14.1 A 2026-os tudományos AI stack: mi hova való
 
-> **🖼️ Ábra: A 2026-os tudományos AI stack — interaktív, automatizálási és kapcsolati réteg**
+> **🖼️ 14.1. ábra: A 2026-os tudományos AI stack — interaktív, automatizálási és kapcsolati réteg**
 > *Three-layer pyramid diagram of a scientific AI stack, bottom layer labeled interactive tools, middle layer automation, top layer connectivity, modern isometric style with lab equipment icons*
 
 Az előző fejezetekben egyenként ismerted meg az eszközöket. Most lássuk, hogyan illeszkednek egymáshoz -- hogyan alkot egy működő egészet az, ami eddig különálló daraboknak tűnt.
 
-### Az AI labor architektúrája
+### 14.1.1 Az AI labor architektúrája
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -70,7 +70,7 @@ Az előző fejezetekben egyenként ismerted meg az eszközöket. Most lássuk, h
 └─────────────────────────────────────────────────────────────┘
 ```
 
-### Mi mire való -- rövid útmutató
+### 14.1.2 Mi mire való -- rövid útmutató
 
 **Interaktív réteg: az ember és az AI találkozása**
 
@@ -96,7 +96,7 @@ Az **MCP** (Model Context Protocol) az a szabvány, amely lehetővé teszi, hogy
 
 Ez a réteg határozza meg, mekkora feladatokat tudsz megoldani. A laptoptól a szuperszámítógépig terjed -- erről részletesebben a "Számítási erőforrások" részben.
 
-### Hogyan válaszd ki, melyik réteg kell
+### 14.1.3 Hogyan válaszd ki, melyik réteg kell
 
 Nem kell az egészet bevezetned egyszerre. Gondolkodj úgy, mint egy lépcsőn:
 
@@ -117,14 +117,14 @@ Nem kell az egészet bevezetned egyszerre. Gondolkodj úgy, mint egy lépcsőn:
 
 ---
 
-## Költségmenedzsment: a nullától a szuperszámítógépig
+## 14.2 Költségmenedzsment: a nullától a szuperszámítógépig
 
-> **🖼️ Ábra: AI-költségvetés egy tízfős kutatócsoportnak — havi bontás**
+> **🖼️ 14.2. ábra: AI-költségvetés egy tízfős kutatócsoportnak — havi bontás**
 > *Bar chart infographic showing monthly AI costs breakdown for a research group: API costs, compute, storage, licenses, with Hungarian labels, clean business style*
 
 Az AI-eszközök használata pénzbe kerül -- de nem feltétlenül sokba. A kulcs a **fokozatos skálázás**: kezdj az ingyenes szinten, és csak akkor lépj tovább, ha valóban szükséges.
 
-### Az AI-költségek piramisa
+### 14.2.1 Az AI-költségek piramisa
 
 ```
           ▲
@@ -142,7 +142,7 @@ Az AI-eszközök használata pénzbe kerül -- de nem feltétlenül sokba. A kul
 /                                  \  Gemini Free: $0
 ```
 
-### 1. szint: Ingyenes szintek ($0)
+### 14.2.2 szint: Ingyenes szintek ($0)
 
 Szinte minden nagy AI-platform kínál ingyenes hozzáférést:
 
@@ -157,7 +157,7 @@ Szinte minden nagy AI-platform kínál ingyenes hozzáférést:
 
 **Mikor elég ez?** Ha a laborod tagjai egyénileg, alkalmanként használják az AI-t -- irodalomkutatásra, szövegszerkesztésre, egyszerű kódolási kérdésekre. Egy 5-10 fős labor első 1-2 hónapjára ez tökéletesen megfelel a "kipróbálás és tanulás" fázisban.
 
-### 2. szint: Előfizetések ($20-30/hó/fő)
+### 14.2.3 szint: Előfizetések ($20-30/hó/fő)
 
 Amikor az ingyenes szintek korlátai zavaróvá válnak -- túl kevés üzenet, lassabb modellek, nincs prioritásos hozzáférés:
 
@@ -170,7 +170,7 @@ Amikor az ingyenes szintek korlátai zavaróvá válnak -- túl kevés üzenet, 
 
 **Éves költség egy 10 fős laborra:** 10 × $20 × 12 = **$2,400/év** -- nagyjából egy konferenciarészvétel költsége.
 
-### 3. szint: API-költségek (változó, $5-200/hó/fő)
+### 14.2.4 szint: API-költségek (változó, $5-200/hó/fő)
 
 Amikor automatizálásokat építesz -- ágenseket, pipeline-okat, workflow-kat --, az előfizetések nem elégségesek. Az API (Application Programming Interface) hozzáférés token-alapú árazást használ:
 
@@ -187,11 +187,11 @@ Amikor automatizálásokat építesz -- ágenseket, pipeline-okat, workflow-kat 
 - **Cache-eld az eredményeket** -- ne futtasd újra azt, amit már egyszer kiszámoltál
 - **Naplózd a használatot** -- havi egy alkalom legyen, amikor átnézed, mi mennyibe került
 
-### 4. szint: HPC és szuperszámítás
+### 14.2.5 szint: HPC és szuperszámítás
 
 A legtöbb kutatólabornak ritkán, de időnként szüksége van nagy számítási kapacitásra: modell-finomhangolás, nagy adathalmazok feldolgozása, szimulációk. Magyarországon erre a **Komondor szuperszámítógép** a megoldás (részletesen lásd a következő szakaszban).
 
-### Költségvetési sablon kutatólaboroknak
+### 14.2.6 Költségvetési sablon kutatólaboroknak
 
 | Tétel | Havi költség (10 fős labor) | Éves költség |
 |---|---|---|
@@ -208,11 +208,11 @@ Ez az összeg tipikusan egy pályázat dologi költségkeretéből fedezhető, v
 
 ---
 
-## Számítási erőforrások: a laptoptól a Komondorig
+## 14.3 Számítási erőforrások: a laptoptól a Komondorig
 
 Az AI-feladatok számítási igénye hatalmas szóródást mutat. Egy egyszerű LLM-hívás néhány másodpercet vesz igénybe a laptopodról, míg egy modell-finomhangolás napokig futhat GPU-klaszteren. A jó stratégia: **a legkisebb elegendő erőforráson futtasd a feladatot**.
 
-### A számítási lépcső
+### 14.3.1 A számítási lépcső
 
 **1. lépcső: Laptop / munkaállomás**
 
@@ -253,7 +253,7 @@ A **Komondor** Magyarország legerősebb szuperszámítógépe, a Debreceni Egye
 
 **Gyakorlati tanács:** Ne a Komondorra gondolj először. A legtöbb feladatod megoldható laptopról + API-ból. A Komondor azokra a feladatokra való, amelyek tényleg szuperszámítógépet igényelnek: hatalmas adathalmazok, napokig futó szimulációk, modelltanítás több száz GPU-n. Ha nem vagy biztos benne, hogy szükséged van-e rá, valószínűleg nincs.
 
-### Döntési fa: hol futtassam?
+### 14.3.2 Döntési fa: hol futtassam?
 
 ```
 A feladatod...
@@ -276,14 +276,14 @@ A feladatod...
 
 ---
 
-## Adatbiztonság és adatvédelem
+## 14.4 Adatbiztonság és adatvédelem
 
-> **🖼️ Ábra: Adatbiztonsági döntési fa — mikor használható felhőalapú AI, mikor kell helyi megoldás?**
+> **🖼️ 14.3. ábra: Adatbiztonsági döntési fa — mikor használható felhőalapú AI, mikor kell helyi megoldás?**
 > *Decision tree flowchart with security icons, showing when to use cloud AI vs local AI based on data sensitivity, clean infographic style*
 
 Ez a fejezet legkritikusabb szakasza. Az AI használata a kutatásban szükségszerűen azt jelenti, hogy adatokat osztasz meg AI-rendszerekkel -- és ez komoly biztonsági és jogi kérdéseket vet fel.
 
-### Mit szabad felhőbe küldeni, mit nem
+### 14.4.1 Mit szabad felhőbe küldeni, mit nem
 
 Az alapszabály egyszerű: **ha kétség merül fel, ne küldd.**
 
@@ -310,7 +310,7 @@ A gyakorlatban három kategóriába sorold az adataidat:
 - Ipari partnerektől kapott bizalmas adatok
 - Etikai engedélyhez kötött, még feldolgozás alatt álló humán adatok
 
-### Helyi AI-futtatás mint megoldás
+### 14.4.2 Helyi AI-futtatás mint megoldás
 
 Ha érzékeny adatokkal dolgozol, de AI-t szeretnél használni, van megoldás: **lokális (on-premises) modellek**. Kisebb, de egyre képesebb nyelvi modellek futtathatók a saját gépeden vagy az intézményi szerveren, anélkül, hogy bármilyen adat elhagyná a belső hálózatot:
 
@@ -320,7 +320,7 @@ Ha érzékeny adatokkal dolgozol, de AI-t szeretnél használni, van megoldás: 
 
 A lokális modellek kisebb kapacitásúak, mint a felhőben futó nagy modellek, de az érzékeny kutatási területeken (orvostudomány, genetika, klinikai vizsgálatok) ez az egyetlen elfogadható megoldás.
 
-### GDPR és kutatási adatok
+### 14.4.3 GDPR és kutatási adatok
 
 > **GDPR (General Data Protection Regulation -- Általános Adatvédelmi Rendelet):** Az Európai Unió 2018 májusában hatályba lépett adatvédelmi rendelete (EU 2016/679), amely szabályozza a személyes adatok kezelését az EU-n belül és az EU-ból harmadik országokba történő adattovábbítást. A GDPR alapelvei: célhoz kötöttség, adattakarékosság, pontosság, korlátozott tárolás, integritás és bizalmasság, elszámoltathatóság. Megsértése akár 20 millió euró vagy az éves globális árbevétel 4%-ának megfelelő bírsággal is járhat.
 
@@ -348,7 +348,7 @@ Ha a kutatásod bármilyen **személyes adatot** kezel -- beleértve a néveket,
 - **Kérj segítséget az intézményi adatvédelmi tisztviselőtől (DPO).** Ő segít felmérni, hogy a tervezett AI-használat GDPR-konform-e.
 - **Használj lokális AI-t érzékeny adatokhoz.** Ha a GDPR-megfelelőség biztosítása túl bonyolult, futtasd a modellt helyben.
 
-### EU AI Act: amit a kutatónak tudnia kell
+### 14.4.4 EU AI Act: amit a kutatónak tudnia kell
 
 > **EU AI Act (Az Európai Unió Mesterséges Intelligenciáról szóló Rendelete, EU 2024/1689):** A világ első átfogó AI-szabályozása, amelyet az Európai Parlament 2024 márciusában fogadott el. A rendelet kockázatalapú megközelítést alkalmaz: az AI-rendszereket az általuk hordozott kockázat szintje szerint kategorizálja, és ennek megfelelően különböző szintű kötelezettségeket ír elő a fejlesztőknek és a felhasználóknak (deployer-eknek). A szigorúbb szabályok 2026-ban lépnek hatályba.
 
@@ -391,11 +391,11 @@ Ahogy az EUA (European University Association) jelentése rámutat: "Még mindig
 
 ---
 
-## AI-beszerzési útmutató kutatócsoportoknak
+## 14.5 AI-beszerzési útmutató kutatócsoportoknak
 
 Amikor a laborodba új AI-eszközt vezetsz be, az nem egyszerűen egy szoftver letöltése. Különösen intézményi környezetben -- egyetemen, kutatóintézetben -- a beszerzésnek átgondoltnak és strukturáltnak kell lennie. Ebben a szakaszban négy keretrendszert mutatok be, amelyek segítenek.
 
-### Platformválasztási szempontok
+### 14.5.1 Platformválasztási szempontok
 
 Mielőtt bármit vásárolnál, válaszold meg ezeket a kérdéseket:
 
@@ -420,7 +420,7 @@ A kutatási adatminták változnak (új mérési módszerek, szezonális változ
 - Hogyan méri a rendszer a teljesítményét?
 - Hogyan segít a szállító, ha a modell váratlan eredményeket ad?
 
-### Az EU MCC-AI (Model Contractual Clauses for AI)
+### 14.5.2 Az EU MCC-AI (Model Contractual Clauses for AI)
 
 Az Európai Bizottság modell-szerződésmintákat dolgozott ki az AI-beszerzéshez (**MCC-AI**), amelyek egységes jogi keretet biztosítanak az AI-rendszerek vásárlásakor. Ezek a minták különösen hasznosak egyetemi beszerzéseknél, mert:
 
@@ -431,7 +431,7 @@ Az Európai Bizottság modell-szerződésmintákat dolgozott ki az AI-beszerzés
 
 **Gyakorlati tipp:** Kérd az intézményi beszerzési osztálytól, hogy az AI-szoftverek vásárlásakor használják az MCC-AI sablonokat kiindulópontként.
 
-### A WEF beszerzési keretrendszer öt pillére
+### 14.5.3 A WEF beszerzési keretrendszer öt pillére
 
 A World Economic Forum 2024-ben publikálta "Empowering AI Leadership: AI C-Suite Toolkit" című dokumentumát, amely egy ötpilléres AI-beszerzési keretrendszert mutat be. A modell középpontjában az **etika** áll, amelyet öt egymással összefüggő pillér vesz körül:
 
@@ -463,7 +463,7 @@ A World Economic Forum 2024-ben publikálta "Empowering AI Leadership: AI C-Suit
 - Van-e beépített kockázatkezelési mechanizmus?
 - Hogyan kezeli a szállító az incidenseket?
 
-### Az EDUCAUSE ellenőrzőlista európai adaptációja
+### 14.5.4 Az EDUCAUSE ellenőrzőlista európai adaptációja
 
 Az EDUCAUSE (az amerikai felsőoktatási IT-szervezet) kidolgozott egy AI-beszerzési ellenőrzőlistát egyetemek számára. Ezt európai kontextusra adaptálva a következő pontokat érdemes ellenőrizned:
 
@@ -495,7 +495,7 @@ Az EDUCAUSE (az amerikai felsőoktatási IT-szervezet) kidolgozott egy AI-beszer
 - [ ] Exportálhatók-e az adatok és a workflow-k más rendszerbe?
 - [ ] Van-e hosszú távú árgarancia?
 
-### A teljes tulajdonlási költség (TCO) elemzése
+### 14.5.5 A teljes tulajdonlási költség (TCO) elemzése
 
 Az AI-eszközök ára nem csak a licencdíj. A **Total Cost of Ownership** tartalmazza:
 
@@ -512,11 +512,11 @@ Az AI-eszközök ára nem csak a licencdíj. A **Total Cost of Ownership** tarta
 
 ---
 
-## Csoportos együttműködés: workflow-k megosztása, kollégák képzése
+## 14.6 Csoportos együttműködés: workflow-k megosztása, kollégák képzése
 
 Az AI bevezetése a laborban nem egyéni feladat. Ha mindenki más eszközt használ, más prompt-okat, más workflow-kat, az káosz. A cél: **közös tudásbázis és megosztott munkafolyamatok**.
 
-### Az AI-tudás csoporton belüli szintjei
+### 14.6.1 Az AI-tudás csoporton belüli szintjei
 
 A tapasztalat azt mutatja, hogy egy tipikus kutatócsoport tagjai nagyon eltérő szinteken állnak:
 
@@ -527,7 +527,7 @@ A tapasztalat azt mutatja, hogy egy tipikus kutatócsoport tagjai nagyon eltér�
 | **Felhasználó** | Rendszeresen használ AI-t | Aktív kutatók | Automatizálás, workflow-k |
 | **Építő** | Sajáto ágenseket, pipeline-okat épít | Kódolni tudó kutatók | API-hozzáférés, MCP, keretrendszerek |
 
-### A "belső AI-bajnok" modell
+### 14.6.2 A "belső AI-bajnok" modell
 
 Az EUA (European University Association) ajánlása szerint az AI-adoptáció sikerének kulcsa az, hogy **az intézményi közösség támogatottnak érezze magát, ne nyomás alattnak**. A laborod kontextusában ez azt jelenti:
 
@@ -539,7 +539,7 @@ Az EUA (European University Association) ajánlása szerint az AI-adoptáció si
 
 4. **Közös workflow-tár:** Ha valaki épít egy n8n workflow-t vagy egy CrewAI ágenst, ossza meg a csoporttal. Használjatok közös Git repót az AI-workflow-k verziókezelésére.
 
-### Amit meg kell beszélnetek csoportszinten
+### 14.6.3 Amit meg kell beszélnetek csoportszinten
 
 Mielőtt fejest ugranátok az AI-ba, tartsatok egy csoportértekezletet ezekről a témákról:
 
@@ -563,7 +563,7 @@ Mielőtt fejest ugranátok az AI-ba, tartsatok egy csoportértekezletet ezekről
 - Hogyan biztosítjuk, hogy az AI-val generált eredmények reprodukálhatók legyenek?
 - Milyen verziószámot és prompt-ot rögzítsünk?
 
-### A fokozatos bevezetés terve
+### 14.6.4 A fokozatos bevezetés terve
 
 Az EUA "mikro-ambiciózus" megközelítését a laborodra alkalmazva:
 
@@ -596,11 +596,11 @@ Az EUA "mikro-ambiciózus" megközelítését a laborodra alkalmazva:
 
 ---
 
-## Az AI hatásának mérése
+## 14.7 Az AI hatásának mérése
 
 Hogyan tudod megmutatni az intézetvezetőnek (vagy a pályázati bírálónak), hogy az AI-befektetés megtérül? Három dimenzióban mérd:
 
-### 1. Idő-megtakarítás
+### 14.7.1 Idő-megtakarítás
 
 Ez a legkönnyebben mérhető. Készíts egy egyszerű táblázatot:
 
@@ -616,7 +616,7 @@ Ez a legkönnyebben mérhető. Készíts egy egyszerű táblázatot:
 
 **Fontos:** Ne a teljes munkaidő-megtakarítást kommunikáld, hanem azt, hogy **a felszabaduló időt milyen értékesebb feladatokra fordítottátok** -- ez az, ami a döntéshozókat meggyőzi.
 
-### 2. Minőségjavulás
+### 14.7.2 Minőségjavulás
 
 Nehezebben mérhető, de legalább ilyen fontos:
 
@@ -625,7 +625,7 @@ Nehezebben mérhető, de legalább ilyen fontos:
 - **Átfogóbb irodalomáttekintés:** Az AI több cikket képes feldolgozni, mint amit emberileg lehetséges lenne -- csökken az esélye, hogy egy fontos referenciát kihagysz.
 - **Jobb ábrák és vizualizációk:** Az AI-asszisztált kódolás lehetővé teszi, hogy bonyolultabb, informatívabb ábrákat készíts.
 
-### 3. Új képességek
+### 14.7.3 Új képességek
 
 A legizgalmasabb dimenzió: mit tudsz most, amit korábban nem tudtál?
 
@@ -635,7 +635,7 @@ A legizgalmasabb dimenzió: mit tudsz most, amit korábban nem tudtál?
 - **Ágens-alapú kutatási asszisztens:** Egy CrewAI ágens, amelyik minden héten átnézi a legújabb preprint-eket a szakterületeden és összefoglalót készít.
 - **Interdiszciplináris együttműködés:** Az AI segít áthidalni a szakterületi nyelvi akadályokat -- egy biológus és egy informatikus könnyebben kommunikál, ha az AI "fordít" a szakterületi zsargonok között.
 
-### Egyszerű mérési keretrendszer
+### 14.7.4 Egyszerű mérési keretrendszer
 
 Negyedévente töltsd ki a következő értékelőlapot a csoportod számára:
 
@@ -670,13 +670,13 @@ Időszak: ________
    ________________________________________________
 ```
 
-### A mérés korlátai
+### 14.7.5 A mérés korlátai
 
 Az EUA jelentése óva int: "Előrehozott lenne olyan stratégiákat fejleszteni, amelyek az AI-alapú produktivitásnövekedésre építenek." Ne ígérj olyat, amit nem tudsz bizonyítani. Az AI nem csodaszer, és a hatása függ a szakterülettől, a feladat típusától és az egyéni kompetenciáktól. Légy őszinte a méréseiddel -- a hitelesség fontosabb, mint a szép számok.
 
 ---
 
-## Összefoglalás: tíz lépés az AI-képes laborhoz
+## 14.8 Összefoglalás: tíz lépés az AI-képes laborhoz
 
 1. **Mérd fel a kiindulópontot.** Hol áll a csapatod az AI-használatban? Ki használ mit, milyen szinten?
 
@@ -700,7 +700,7 @@ Az EUA jelentése óva int: "Előrehozott lenne olyan stratégiákat fejleszteni
 
 ---
 
-## Etikai szempontok
+## 14.9 Etikai szempontok
 
 Az AI-val felszerelt kutatólabor működtetése számos etikai kérdést vet fel: az AI-generált szöveg jelölésétől a szerzőségi kérdéseken át a torzítás kezeléséig. Ezeket a kérdéseket részletesen a **16. fejezet** tárgyalja -- itt csak annyit jegyzünk meg, hogy az etikai keretrendszer nem utólagos kiegészítés, hanem az AI-stratégia szerves része kell legyen. Ahogy a WEF keretrendszere fogalmaz: az etika nem a beszerzési folyamat végén lévő jelölőnégyzet, hanem az alap, amelyre minden más pillér épül.
 
@@ -708,7 +708,7 @@ Az AI-val felszerelt kutatólabor működtetése számos etikai kérdést vet fe
 
 ---
 
-## Hivatkozások és további olvasmányok
+## 14.10 Hivatkozások és további olvasmányok
 
 - **EUA (2026).** *Adopting Artificial Intelligence in Universities.* European University Association Task-and-Finish Group on AI. -- Intézményi stratégiák, szabályozási kérdések, érettségi modellek.
 - **World Economic Forum (2024).** *Empowering AI Leadership: AI C-Suite Toolkit -- Procurement.* -- Az ötpilléres beszerzési keretrendszer.
