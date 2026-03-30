@@ -1,0 +1,51 @@
+{
+  "title": "A kutatási célú ágentikus AI 2026-ban — Helyzetkép és iránymutató",
+  "description": "Hungarian-language AI-powered interactive learning platform and e-book (19 chapters, ~100,000 words) covering AI for scientific research — from conversational AI to autonomous research agents. Includes interactive tutor webapp with RAG chat, 209 quiz questions, 99-concept dependency graph, and domain applications in precision agriculture, hydroinformatics, and geoinformatics. Developed to support AI transition at the University of Debrecen.",
+  "creators": [
+    {
+      "name": "Fehér, Zsolt Zoltán",
+      "orcid": "0009-0007-6659-4197",
+      "affiliation": "University of Debrecen"
+    }
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "keywords": [
+    "agentic AI",
+    "artificial intelligence",
+    "scientific research",
+    "AI for scientists",
+    "prompt engineering",
+    "RAG",
+    "digital twins",
+    "AI agents",
+    "precision agriculture",
+    "hydroinformatics",
+    "GIS",
+    "geoinformatics",
+    "machine learning",
+    "university education",
+    "AI transition",
+    "Hungarian",
+    "interactive learning",
+    "University of Debrecen"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Nagyhoho1234/precagri",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/Nagyhoho1234/maidment-hidroGIS",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/Nagyhoho1234/gis-tutor",
+      "relation": "isSupplementedBy",
+      "scheme": "url"
+    }
+  ]
+}
