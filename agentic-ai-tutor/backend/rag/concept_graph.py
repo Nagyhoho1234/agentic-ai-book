@@ -1,7 +1,15 @@
-"""Topic dependency graph for the precision agriculture book.
+"""Topic dependency graph for the AI in Scientific Research book (Hungarian).
 
 Maps concepts to chapters and defines prerequisite relationships
 so the system can guide students through topics in order.
+
+Book structure:
+  Part I   (Ch 1-4):   Ismerkedés az AI-val a kutatásban
+  Part II  (Ch 5-7):   Mindennapi tudományos munka AI-val
+  Part III (Ch 8-10):  No-code-tól a szakterület-specifikus AI-ig
+  Part IV  (Ch 11-13): Ágentikus AI — Eszközökből munkatársak
+  Part V   (Ch 14-16): Felelős AI-adoptáció vezetése
+  Part VI  (Ch 17-19): Szakterületi alkalmazások
 """
 
 from dataclasses import dataclass, field
@@ -18,453 +26,565 @@ class Concept:
 
 
 # ---------------------------------------------------------------------------
-# The concept graph -- topics and their prerequisites across 20 chapters
+# The concept graph -- topics and their prerequisites across 19 chapters
 # ---------------------------------------------------------------------------
 CONCEPT_GRAPH: dict[str, Concept] = {
 
-    # ===== Chapter 1: Why Precision Agriculture? =====
-    "global_food_challenge": Concept(
-        "Global Food Challenge", 1, "1.1",
+    # =====================================================================
+    # PART I: Ismerkedés az AI-val a kutatásban (Ch 1-4)
+    # =====================================================================
+
+    # ===== Chapter 1: Az AI forradalom a tudományos kutatásban =====
+    "ai_fogalom": Concept(
+        "Mesterséges intelligencia (AI)", 1, "1.1",
         [],
-        "Population growth, land constraints, and the environmental cost of uniform farming",
+        "Mi az AI, miért fontos minden tudós számára, az AI spektrum a chatbottól az autonóm felfedezésig",
     ),
-    "what_is_precision_agriculture": Concept(
-        "What Is Precision Agriculture", 1, "1.3",
-        ["global_food_challenge"],
-        "Definition, core principles: right input, right place, right time, right amount",
+    "llm": Concept(
+        "Nagy nyelvi modellek (LLM)", 1, "1.2",
+        ["ai_fogalom"],
+        "Hogyan működnek a nagy nyelvi modellek, transformer architektúra alapjai",
     ),
-    "pa_cycle": Concept(
-        "The PA Cycle: Sense-Analyze-Act", 1, "1.4",
-        ["what_is_precision_agriculture"],
-        "Data acquisition, interpretation/decision support, variable-rate implementation",
+    "gepi_tanulas": Concept(
+        "Gépi tanulás alapfogalmak", 1, "1.3",
+        ["ai_fogalom"],
+        "Felügyelt, felügyelet nélküli és megerősítéses tanulás alapjai",
     ),
-    "pa_sustainability": Concept(
-        "PA and Environmental Sustainability", 1, "1.5",
-        ["what_is_precision_agriculture"],
-        "Reduced nutrient runoff, lower pesticide use, carbon management",
+    "mollick_4_szabaly": Concept(
+        "Mollick 4 szabálya", 1, "1.4",
+        ["ai_fogalom"],
+        "Keretrendszer az AI kutatási alkalmazásához: mindig hívd meg, légy a hurokban, stb.",
+    ),
+    "ai_spektrum": Concept(
+        "AI autonómia-spektrum (5 szint)", 1, "1.5",
+        ["ai_fogalom", "llm"],
+        "Chatbot → kopilot → ágens → autonóm felfedezés szintek",
     ),
 
-    # ===== Chapter 2: The Agricultural Landscape =====
-    "why_fields_vary": Concept(
-        "Why Fields Are Not Uniform", 2, "2.1",
-        [],
-        "Natural and human-induced causes of within-field variability",
+    # ===== Chapter 2: Társalgási AI — Az első kutatási partnered =====
+    "prompt_engineering": Concept(
+        "Prompt engineering", 2, "2.1",
+        ["llm"],
+        "9 NASA prompt pattern, hatékony promptolás technikái tudósoknak",
     ),
-    "soil_basics": Concept(
-        "Soil Fundamentals", 2, "2.2",
-        ["why_fields_vary"],
-        "Texture, structure, organic matter, pH, cation exchange capacity",
+    "hallucinacio": Concept(
+        "Hallucináció", 2, "2.2",
+        ["llm"],
+        "Mikor és miért generál az LLM hamis információt, felismerés és megelőzés",
     ),
-    "topography_effects": Concept(
-        "Topography and Crop Production", 2, "2.3",
-        ["why_fields_vary"],
-        "Water redistribution, erosion, aspect, DEMs in agriculture",
+    "token": Concept(
+        "Token és tokenizáció", 2, "2.3",
+        ["llm"],
+        "Szöveg feldarabolása tokenekre, hatása a költségre és teljesítményre",
     ),
-    "microclimate_variability": Concept(
-        "Climate and Microclimate Variability", 2, "2.4",
-        ["why_fields_vary"],
-        "Regional climate, weather year-to-year variability, field-scale microclimates",
+    "kontextusablak": Concept(
+        "Kontextusablak", 2, "2.4",
+        ["token"],
+        "Maximális beviteli hossz, kontextus-kezelési stratégiák",
     ),
-
-    # ===== Chapter 3: The Data Revolution in Farming =====
-    "data_driven_farming": Concept(
-        "Data-Driven Decision Making", 3, "3.1",
-        ["what_is_precision_agriculture"],
-        "Transition from intuition to data-driven farm management",
+    "homerseklet": Concept(
+        "Hőmérséklet és top-p paraméterek", 2, "2.5",
+        ["llm", "token"],
+        "Generálási paraméterek: hőmérséklet, top-p, rendszerprompt hatásai",
     ),
-    "agricultural_data_types": Concept(
-        "Types of Agricultural Data", 3, "3.2",
-        ["data_driven_farming"],
-        "Spatial, temporal, spectral, and tabular data in agriculture",
+    "platform_valasztas": Concept(
+        "Platform-választás (Claude, ChatGPT, Gemini)", 2, "2.6",
+        ["llm", "prompt_engineering"],
+        "2026-os LLM platformok összehasonlítása kutatási szempontból",
     ),
-    "gis_in_agriculture": Concept(
-        "GIS in Agriculture", 3, "3.3",
-        ["agricultural_data_types"],
-        "What GIS does, spatial analysis functions, software platforms",
-    ),
-    "iot_on_farm": Concept(
-        "Internet of Things on the Farm", 3, "3.4",
-        ["data_driven_farming"],
-        "Sensor networks, connectivity, monitoring-to-automation pipeline",
+    "bizonyitek_verifikacio": Concept(
+        "Bizonyíték-minőség és verifikáció", 2, "2.7",
+        ["hallucinacio", "prompt_engineering"],
+        "Keresztellenőrzés, kritikus gondolkodás, a másodpilóta filozófia",
     ),
 
-    # ===== Chapter 4: Satellite and Aerial Remote Sensing =====
-    "electromagnetic_spectrum": Concept(
-        "Electromagnetic Spectrum and Plant Interactions", 4, "4.1",
-        [],
-        "How plants absorb, reflect, and transmit radiation across wavelengths",
+    # ===== Chapter 3: AI a tudományos írásban és kommunikációban =====
+    "irodalom_attekintes": Concept(
+        "Irodalomáttekintés AI-val", 3, "3.1",
+        ["prompt_engineering", "hallucinacio"],
+        "Összefoglalás, kulcsmegállapítások, rések azonosítása AI segítségével",
     ),
-    "satellite_platforms": Concept(
-        "Satellite Platforms for Agriculture", 4, "4.2",
-        ["electromagnetic_spectrum"],
-        "Landsat, Sentinel, Planet, commercial high-res satellites",
+    "kezirat_szerkesztes": Concept(
+        "Kézirat írás és szerkesztés", 3, "3.2",
+        ["prompt_engineering"],
+        "Nyelvtan, érthetőség, folyóirat-adaptáció, bírálói vélemények megválaszolása",
     ),
-    "drones_in_agriculture": Concept(
-        "Drones (UAVs) in Agriculture", 4, "4.3",
-        ["electromagnetic_spectrum"],
-        "Fixed-wing and multirotor, sensor payloads, regulatory aspects",
+    "hivatkozas_hallucinacio": Concept(
+        "Hivatkozás-hallucináció", 3, "3.3",
+        ["hallucinacio", "irodalom_attekintes"],
+        "Fabrikált hivatkozások felismerése és megelőzése",
+    ),
+    "tudomanyos_kommunikacio": Concept(
+        "Tudománykommunikáció AI-val", 3, "3.4",
+        ["kezirat_szerkesztes"],
+        "Népszerű cikkek, közösségi média, sajtóközlemények, pályázatírás",
+    ),
+
+    # ===== Chapter 4: AI-vel végzett adatelemzés — Kódolás nélkül =====
+    "adatelemzes": Concept(
+        "Adatelemzés chatfelületen", 4, "4.1",
+        ["prompt_engineering"],
+        "Adatok feltöltése és elemzése chat-felületen: CSV, Excel, kép, PDF",
+    ),
+    "hipotezisvizsgalat": Concept(
+        "Hipotézisvizsgálat AI-val", 4, "4.2",
+        ["adatelemzes"],
+        "Leíró statisztika, hipotézisvizsgálat, regresszió beszélgetésben",
+    ),
+    "vizualizacio": Concept(
+        "Adatvizualizáció AI-val", 4, "4.3",
+        ["adatelemzes"],
+        "Gyors ábrák és publikáció-minőségű grafikonok AI segítségével",
+    ),
+    "code_interpreter": Concept(
+        "Code Interpreter és Artifacts", 4, "4.4",
+        ["adatelemzes", "platform_valasztas"],
+        "Platform-specifikus kód-futtatási képességek adatelemzéshez",
+    ),
+
+    # =====================================================================
+    # PART II: Mindennapi tudományos munka AI-val (Ch 5-7)
+    # =====================================================================
+
+    # ===== Chapter 5: AI kódolási asszisztensek =====
+    "python": Concept(
+        "Python programozás AI-val", 5, "5.1",
+        ["adatelemzes"],
+        "Környezet beállítása, Python alapok AI segítségével, NumPy, SciPy, Pandas, Matplotlib",
+    ),
+    "git": Concept(
+        "Git verziókezelés", 5, "5.2",
+        ["python"],
+        "AI-vezérelt verziókezelés, commit, branch, együttműködés",
+    ),
+    "jupyter": Concept(
+        "Jupyter notebook", 5, "5.3",
+        ["python"],
+        "Interaktív tudományos jegyzetfüzet kóddal, szöveggel és ábrákkal",
+    ),
+    "claude_code": Concept(
+        "Claude Code", 5, "5.4",
+        ["python", "prompt_engineering"],
+        "Anthropic terminál-alapú AI kódolási asszisztens",
+    ),
+    "copilot": Concept(
+        "GitHub Copilot", 5, "5.5",
+        ["python"],
+        "GitHub AI kódkiegészítő VS Code-ban és más szerkesztőkben",
+    ),
+    "cursor": Concept(
+        "Cursor és Windsurf", 5, "5.6",
+        ["python"],
+        "AI-natív kódszerkesztők teljes projektkezeléssel",
+    ),
+    "api": Concept(
+        "API fogalom", 5, "5.7",
+        ["python"],
+        "Alkalmazásprogramozási interfész: programok közötti kommunikáció",
+    ),
+
+    # ===== Chapter 6: AI-támogatott matematikai modellezés =====
+    "ode_pde": Concept(
+        "ODE és PDE megoldás AI-val", 6, "6.1",
+        ["python", "jupyter"],
+        "Közönséges és parciális differenciálegyenletek kóddá fordítása AI segítségével",
+    ),
+    "sympy": Concept(
+        "Szimbolikus számítás (SymPy)", 6, "6.2",
+        ["python"],
+        "Szimbolikus matematika Python-ban: egyszerűsítés, deriválás, integrálás",
+    ),
+    "monte_carlo": Concept(
+        "Monte Carlo szimuláció", 6, "6.3",
+        ["python"],
+        "Sztochasztikus szimulációk, valószínűségi modellezés",
+    ),
+    "optuna": Concept(
+        "Automatikus modell-kalibráció (Optuna)", 6, "6.4",
+        ["python", "monte_carlo"],
+        "Hiperparaméter-optimalizálás, Bayes-i módszerek, érzékenységvizsgálat",
+    ),
+    "pysr": Concept(
+        "Szimbolikus regresszió (PySR)", 6, "6.5",
+        ["python", "gepi_tanulas"],
+        "Egyenlet-felfedezés adatokból, LLM-vezérelt szimbolikus regresszió",
+    ),
+    "pinns": Concept(
+        "Fizika-informált neurális hálózatok (PINNs)", 6, "6.6",
+        ["ode_pde", "gepi_tanulas"],
+        "Neurális hálózatok fizikai egyenletekkel korlátozva, szurrogát modellek",
+    ),
+
+    # ===== Chapter 7: Adat-pipeline-ok és automatizálás =====
+    "pipeline": Concept(
+        "Pipeline koncepció", 7, "7.1",
+        ["python"],
+        "Adatfeldolgozási csővezeték: bevitel → tisztítás → transzformáció → elemzés → kimenet",
+    ),
+    "automatizalas": Concept(
+        "Automatizálás", 7, "7.2",
+        ["pipeline"],
+        "Automatizálási lehetőségek azonosítása, adatbevitel, validáció",
+    ),
+    "batch_feldolgozas": Concept(
+        "Batch (kötegelt) feldolgozás", 7, "7.3",
+        ["pipeline", "python"],
+        "Nagy mennyiségű adat kötegelt feldolgozása, párhuzamosítás",
+    ),
+    "cron": Concept(
+        "Ütemezett feladatok (cron, watchdog)", 7, "7.4",
+        ["automatizalas"],
+        "Időzített futtatás, fájlfigyelés, monitoring és riasztás",
+    ),
+    "reprodukalhato_pipeline": Concept(
+        "Reprodukálható pipeline-ok", 7, "7.5",
+        ["pipeline", "git"],
+        "Konténerizáció, környezetkezelés, Dagster, Nextflow",
+    ),
+
+    # =====================================================================
+    # PART III: No-code-tól a szakterület-specifikus AI-ig (Ch 8-10)
+    # =====================================================================
+
+    # ===== Chapter 8: Vizuális programozás és munkafolyamat-tervezés =====
+    "n8n": Concept(
+        "n8n vizuális automatizálás", 8, "8.1",
+        ["automatizalas"],
+        "Általános célú vizuális workflow-építés triggerekkel és akciókkal",
+    ),
+    "knime": Concept(
+        "KNIME vizuális adattudomány", 8, "8.2",
+        ["adatelemzes"],
+        "Vizuális adattudományi platform, AI Assistant, workflow-ok",
+    ),
+    "langflow": Concept(
+        "LangFlow vizuális LLM pipeline", 8, "8.3",
+        ["llm", "prompt_engineering"],
+        "Drag-and-drop LLM pipeline-tervezés, RAG chatbot prototípus",
+    ),
+    "node_red": Concept(
+        "Node-RED IoT workflow-ok", 8, "8.4",
+        ["automatizalas"],
+        "IoT és szenzor-adat workflow-ok vizuális szerkesztése",
+    ),
+    "orange": Concept(
+        "Orange gépi tanulás", 8, "8.5",
+        ["gepi_tanulas", "adatelemzes"],
+        "Vizuális gépi tanulás nem-programozóknak",
+    ),
+
+    # ===== Chapter 9: RAG — Tanítsuk meg az AI-t a saját adatainkra =====
+    "rag": Concept(
+        "RAG (Retrieval-Augmented Generation)", 9, "9.1",
+        ["llm", "prompt_engineering"],
+        "Dokumentum-alapú válaszgenerálás architektúrája és alkalmazása",
+    ),
+    "embedding": Concept(
+        "Embedding (beágyazás)", 9, "9.2",
+        ["llm", "token"],
+        "Szöveg vektorrá alakítása, szemantikus hasonlóság, embedding modellek",
+    ),
+    "vektor_tar": Concept(
+        "Vektor-tár (vector store)", 9, "9.3",
+        ["embedding"],
+        "Vektorok tárolása és gyors keresése: ChromaDB, Pinecone, FAISS",
+    ),
+    "chunking": Concept(
+        "Chunking stratégiák", 9, "9.4",
+        ["rag", "kontextusablak"],
+        "Dokumentumok feldarabolása: fix méret, szemantikus, hierarchikus chunking",
+    ),
+    "fine_tuning": Concept(
+        "Fine-tuning (finomhangolás)", 9, "9.5",
+        ["llm", "gepi_tanulas"],
+        "Encoder és decoder fine-tuning, mikor kell RAG helyett fine-tuning",
+    ),
+    "bertscore": Concept(
+        "RAG minőségértékelés (BERTScore)", 9, "9.6",
+        ["rag", "embedding"],
+        "BERTScore, ROUGE, 3 szintű RAG minőségi keretrendszer",
+    ),
+
+    # ===== Chapter 10: Digitális ikrek =====
+    "digitalis_iker": Concept(
+        "Digitális iker koncepció", 10, "10.1",
+        ["ai_fogalom", "python"],
+        "Valós rendszerek virtuális másolatai: adatforrás → modell → vizualizáció → visszacsatolás",
+    ),
+    "nvidia_omniverse": Concept(
+        "NVIDIA Omniverse", 10, "10.2",
+        ["digitalis_iker"],
+        "Fizika-alapú szimulációs platform digitális ikrekhez",
+    ),
+    "intertwin": Concept(
+        "interTwin", 10, "10.3",
+        ["digitalis_iker"],
+        "EU nyílt forráskódú digitális iker platform tudományos alkalmazásokhoz",
+    ),
+    "dt_epitese": Concept(
+        "Digitális iker építése AI-val", 10, "10.4",
+        ["digitalis_iker", "pipeline", "ode_pde"],
+        "Egyszerű digitális iker létrehozása AI segítségével lépésről lépésre",
+    ),
+
+    # =====================================================================
+    # PART IV: Ágentikus AI — Eszközökből munkatársak (Ch 11-13)
+    # =====================================================================
+
+    # ===== Chapter 11: Az AI ágensek megértése =====
+    "agens": Concept(
+        "AI ágens fogalma", 11, "11.1",
+        ["llm", "prompt_engineering", "ai_spektrum"],
+        "Huang 10 jellemzője, az autonómia spektruma, eszköztől az ágensig",
+    ),
+    "react": Concept(
+        "ReACT minta", 11, "11.2",
+        ["agens"],
+        "Gondolat → Cselekvés → Megfigyelés → ismétlés ciklus",
+    ),
+    "mcp": Concept(
+        "MCP (Model Context Protocol)", 11, "11.3",
+        ["agens", "api"],
+        "Univerzális szabvány AI és külső eszközök összekapcsolására, 10,000+ szerver",
+    ),
+    "multi_agens": Concept(
+        "Multi-ágens rendszerek", 11, "11.4",
+        ["agens"],
+        "Koordináció, kommunikáció, konfliktus-feloldás több ágens között",
+    ),
+    "het_retegu_architektura": Concept(
+        "7 rétegű ágens-architektúra", 11, "11.5",
+        ["agens", "react"],
+        "Rétegelt felépítés: észlelés, memória, tervezés, cselekvés, tanulás, együttműködés, biztonság",
+    ),
+    "agens_biztonsag": Concept(
+        "Ágens biztonság és korlátok", 11, "11.6",
+        ["agens", "het_retegu_architektura"],
+        "Ember-a-hurokban, korlátok beállítása, költségek és méltányosság",
+    ),
+
+    # ===== Chapter 12: AI ágensek építése kutatáshoz =====
+    "crewai": Concept(
+        "CrewAI", 12, "12.1",
+        ["agens", "multi_agens", "python"],
+        "Szerep-alapú ágens-csapatok építése, legkönnyebb belépési pont",
+    ),
+    "langgraph": Concept(
+        "LangGraph", 12, "12.2",
+        ["agens", "python"],
+        "Gráf-alapú ágens-munkafolyamatok, legrugalmasabb keretrendszer",
+    ),
+    "autogen": Concept(
+        "AutoGen", 12, "12.3",
+        ["multi_agens", "python"],
+        "Microsoft társalgási multi-ágens keretrendszer",
+    ),
+    "claude_agent_sdk": Concept(
+        "Claude Agent SDK", 12, "12.4",
+        ["agens", "python", "claude_code"],
+        "Anthropic profi ágens-fejlesztő eszköztár",
+    ),
+    "agens_pipeline": Concept(
+        "Ágentikus kutatási pipeline-ok", 12, "12.5",
+        ["crewai", "mcp", "pipeline"],
+        "Irodalomkutató, adatfeldolgozó, kísérlet-figyelő ágensek összekapcsolása",
+    ),
+
+    # ===== Chapter 13: Saját programok és eszközök készítése =====
+    "streamlit": Concept(
+        "Streamlit alkalmazások", 13, "13.1",
+        ["python"],
+        "Interaktív webes adat-alkalmazások percek alatt Python-ban",
+    ),
+    "gradio": Concept(
+        "Gradio ML felületek", 13, "13.2",
+        ["python", "gepi_tanulas"],
+        "ML modellek interaktív webes felülete, gyors prototípus",
+    ),
+    "mcp_szerver": Concept(
+        "MCP szerver készítés", 13, "13.3",
+        ["mcp", "python", "api"],
+        "Saját adatok és eszközök AI-elérhetővé tétele MCP szerverrel",
+    ),
+    "eszkoz_megosztas": Concept(
+        "Eszközök megosztása (GitHub)", 13, "13.4",
+        ["git", "streamlit"],
+        "Kutatási szoftverek megosztása dokumentációval és verziókezeléssel",
+    ),
+
+    # =====================================================================
+    # PART V: Felelős AI-adoptáció vezetése (Ch 14-16)
+    # =====================================================================
+
+    # ===== Chapter 14: Az AI-val felszerelt kutatólabor =====
+    "ai_stack": Concept(
+        "Tudományos AI stack", 14, "14.1",
+        ["platform_valasztas", "python"],
+        "2026-os eszközkészlet: ingyenes szintek → előfizetések → API → HPC",
+    ),
+    "gdpr": Concept(
+        "GDPR a kutatásban", 14, "14.2",
+        ["ai_stack"],
+        "Adatvédelem, mit küldj felhőbe vs. lokális feldolgozás",
+    ),
+    "eu_ai_act": Concept(
+        "EU AI Act", 14, "14.3",
+        ["gdpr", "ai_fogalom"],
+        "AI osztályozás, kötelezettségek, megfelelés kutatóknak",
+    ),
+    "beszerzes": Concept(
+        "AI beszerzési útmutató", 14, "14.4",
+        ["ai_stack", "eu_ai_act"],
+        "Platform-kiválasztás, EU MCC-AI, EDUCAUSE ellenőrzőlista, TCO elemzés",
+    ),
+    "komondor": Concept(
+        "Komondor szuperszámítógép", 14, "14.5",
+        ["ai_stack"],
+        "5 PFLOPS HPC hozzáférés, GPU klaszter, kutatási számítási erőforrások",
+    ),
+
+    # ===== Chapter 15: AI az egyetemen =====
+    "sarps": Concept(
+        "SARPS keretrendszer", 15, "15.1",
+        ["ai_fogalom", "prompt_engineering"],
+        "Six Assessment Redesign Pivotal Strategies: értékelés-tervezés AI korában",
+    ),
+    "posztplagium": Concept(
+        "Posztplágium", 15, "15.2",
+        ["hallucinacio", "kezirat_szerkesztes"],
+        "Hibrid ember-AI írás mint új norma (Eaton), detektálás és szabályozás",
+    ),
+    "valtozasmenedzsment": Concept(
+        "Változásmenedzsment", 15, "15.3",
+        ["ai_fogalom"],
+        "Oktatói ellenállás kezelése, Rogers innovációdiffúzió, képzési modellek",
+    ),
+    "bloom_2_szigma": Concept(
+        "Bloom 2-szigma probléma", 15, "15.4",
+        ["ai_fogalom", "sarps"],
+        "AI mint szókratészi tutor: személyre szabott oktatás nagy léptékben",
+    ),
+    "egyetemi_esettanulmanyok": Concept(
+        "Egyetemi AI esettanulmányok", 15, "15.5",
+        ["ai_stack", "valtozasmenedzsment"],
+        "U of Florida, Helsinki, Northeastern, Johns Hopkins modellek",
+    ),
+
+    # ===== Chapter 16: Etika, reprodukálhatóság és az AI jövője =====
+    "kutatasi_integritas": Concept(
+        "Kutatási integritás az AI korában", 16, "16.1",
+        ["hallucinacio", "hivatkozas_hallucinacio"],
+        "Fabrikált hivatkozások, képmanipuláció, szintetikus adatok visszaélése",
+    ),
+    "reprodukalhatosag": Concept(
+        "Reprodukálhatóság", 16, "16.2",
+        ["pipeline", "git"],
+        "Nem-determinisztikus kimenetek dokumentálása, verzió-rögzítés, prompt-naplózás",
+    ),
+    "etika": Concept(
+        "AI etika a kutatásban", 16, "16.3",
+        ["eu_ai_act", "kutatasi_integritas"],
+        "Szerzőség, torzítás, COPE irányelvek, folyóirat-politikák",
+    ),
+    "felelosseg_elvek": Concept(
+        "Felelős AI elvek", 16, "16.4",
+        ["mollick_4_szabaly", "etika"],
+        "NASA 5 elve, EUA értékalapú megközelítés, személyes etikai keretrendszer",
+    ),
+    "ai_jovo": Concept(
+        "Az AI jövője a tudományban", 16, "16.5",
+        ["agens", "etika"],
+        "Négy forgatókönyv, autonóm felfedezés, a tudós változó szerepe",
+    ),
+
+    # =====================================================================
+    # PART VI: Szakterületi alkalmazások (Ch 17-19)
+    # =====================================================================
+
+    # ===== Chapter 17: Precíziós mezőgazdaság =====
+    "precizios_mezogazdasag": Concept(
+        "Precíziós mezőgazdaság és AI", 17, "17.1",
+        ["ai_fogalom", "gepi_tanulas"],
+        "AI alkalmazások a mezőgazdaságban: érzékelés, elemzés, beavatkozás",
     ),
     "ndvi": Concept(
-        "NDVI and Vegetation Indices", 4, "4.4",
-        ["electromagnetic_spectrum"],
-        "Normalized Difference Vegetation Index, EVI, and other indices",
+        "NDVI és vegetációs indexek", 17, "17.2",
+        ["precizios_mezogazdasag", "vizualizacio"],
+        "Normalized Difference Vegetation Index, növényzet-állapot felmérés",
+    ),
+    "hozamterkepzes": Concept(
+        "Hozamtérképezés", 17, "17.3",
+        ["precizios_mezogazdasag", "adatelemzes"],
+        "Területi hozam-variabilitás térképezése, kezelési zónák",
+    ),
+    "iot_szenzorok": Concept(
+        "IoT szenzorok a mezőgazdaságban", 17, "17.4",
+        ["precizios_mezogazdasag", "node_red", "pipeline"],
+        "Talaj-, időjárás- és növényszenzorok, adatgyűjtő hálózatok",
+    ),
+    "mezogazdasagi_dt": Concept(
+        "Mezőgazdasági digitális iker", 17, "17.5",
+        ["precizios_mezogazdasag", "digitalis_iker"],
+        "Parcellaszintű digitális iker növénytermesztéshez",
     ),
 
-    # ===== Chapter 5: Hyperspectral and Multispectral Imaging =====
-    "multispectral_vs_hyperspectral": Concept(
-        "Multispectral vs. Hyperspectral Imaging", 5, "5.2",
-        ["electromagnetic_spectrum"],
-        "Band count, spectral resolution, trade-offs between the two",
+    # ===== Chapter 18: Hidroinformatika =====
+    "hidroinformatika": Concept(
+        "Hidroinformatika és AI", 18, "18.1",
+        ["ai_fogalom", "python", "ode_pde"],
+        "Informatika alkalmazása vízgazdálkodásban, hidrológiai modellezés AI-val",
     ),
-    "spectral_signatures": Concept(
-        "Spectral Signatures of Crops and Soils", 5, "5.3",
-        ["multispectral_vs_hyperspectral"],
-        "Spectral libraries, crop fingerprints, soil reflectance patterns",
+    "vizgyujto": Concept(
+        "Vízgyűjtő modellezés", 18, "18.2",
+        ["hidroinformatika"],
+        "Vízgyűjtő-terület lehatárolás, lefolyásmodellezés, csapadék-lefolyás",
     ),
-    "chlorophyll_nitrogen_estimation": Concept(
-        "Chlorophyll, Nitrogen, and LAI Estimation", 5, "5.5",
-        ["spectral_signatures", "ndvi"],
-        "Using spectral data to estimate plant biochemistry and canopy structure",
+    "dem": Concept(
+        "DEM (digitális terepmodell)", 18, "18.3",
+        ["hidroinformatika"],
+        "Domborzatmodellek előállítása, feldolgozása és hidrológiai alkalmazása",
     ),
-    "soil_spectral_estimation": Concept(
-        "Soil Property Estimation from Spectra", 5, "5.6",
-        ["spectral_signatures"],
-        "Estimating nitrogen, moisture, organic matter from spectral reflectance",
+    "arviz_elorejelzes": Concept(
+        "Árvíz-előrejelzés AI-val", 18, "18.4",
+        ["hidroinformatika", "gepi_tanulas", "vizgyujto"],
+        "Gépi tanulás és fizikai modellek kombinálása árvíz-előrejelzéshez",
     ),
-
-    # ===== Chapter 6: Proximal and In-Field Sensors =====
-    "proximal_sensors": Concept(
-        "Proximal Sensors: Principles", 6, "6.1",
-        ["pa_cycle"],
-        "On-ground sensors: active vs passive, modes of deployment",
+    "saint_venant": Concept(
+        "Saint-Venant egyenletek", 18, "18.5",
+        ["ode_pde", "hidroinformatika"],
+        "Sekélyvízi egyenletek numerikus megoldása, 1D/2D áramlásmodellezés",
     ),
-    "soil_ec_mapping": Concept(
-        "Soil Electrical Conductivity Mapping", 6, "6.2",
-        ["proximal_sensors", "soil_basics"],
-        "Veris, EM38, DC resistivity, interpreting ECa maps",
-    ),
-    "on_the_go_soil_sensing": Concept(
-        "On-the-Go Soil pH and Nutrient Sensing", 6, "6.3",
-        ["proximal_sensors", "soil_basics"],
-        "Ion-selective electrodes, NIR sensing of organic matter",
-    ),
-    "canopy_sensors": Concept(
-        "Crop Canopy Sensors", 6, "6.4",
-        ["proximal_sensors", "ndvi"],
-        "Tractor-mounted NDVI sensors for real-time crop assessment",
+    "hidro_dt": Concept(
+        "Hidrológiai digitális iker", 18, "18.6",
+        ["hidroinformatika", "digitalis_iker", "arviz_elorejelzes"],
+        "Valós idejű vízügyi monitoring és előrejelzés digitális ikerrel",
     ),
 
-    # ===== Chapter 7: Positioning and Navigation =====
-    "gnss_principles": Concept(
-        "GNSS Principles", 7, "7.2",
-        [],
-        "GPS, GLONASS, Galileo, BeiDou: satellite ranging and positioning",
+    # ===== Chapter 19: Térinformatika és távérzékelés =====
+    "terinformatika": Concept(
+        "Térinformatika (GIS) és AI", 19, "19.1",
+        ["ai_fogalom", "python", "vizualizacio"],
+        "Térinformatikai rendszerek AI-val, térbeli elemzés automatizálása",
     ),
-    "rtk_correction": Concept(
-        "Differential Correction and RTK", 7, "7.3",
-        ["gnss_principles"],
-        "Error sources, DGPS, RTK, PPP, choosing accuracy levels",
+    "gis": Concept(
+        "GIS szoftverek és könyvtárak", 19, "19.2",
+        ["terinformatika"],
+        "QGIS, ArcGIS, GeoPandas, Rasterio, Folium",
     ),
-    "auto_steering": Concept(
-        "Auto-Steering and Guidance Systems", 7, "7.4",
-        ["rtk_correction"],
-        "Lightbar to autonomous steering, implement guidance, overlap reduction",
+    "taverzekeles": Concept(
+        "Távérzékelés", 19, "19.3",
+        ["terinformatika", "ndvi"],
+        "Műholdas és drónos adatgyűjtés, Sentinel, Landsat, spektrális elemzés",
     ),
-
-    # ===== Chapter 8: Understanding Soil Variability =====
-    "soil_variability": Concept(
-        "Sources of Soil Variability", 8, "8.1",
-        ["why_fields_vary", "soil_basics"],
-        "Inherent variability, erosion, salinity, management-induced patterns",
+    "geostatisztika": Concept(
+        "Geostatisztika", 19, "19.4",
+        ["terinformatika", "adatelemzes", "hipotezisvizsgalat"],
+        "Variogram, kriging, térbeli interpoláció, bizonytalanság-becslés",
     ),
-    "soil_sampling_strategies": Concept(
-        "Soil Sampling Strategies", 8, "8.2",
-        ["soil_variability"],
-        "Grid sampling, zone sampling, directed sampling",
-    ),
-    "geostatistics_kriging": Concept(
-        "Geostatistics: Variograms and Kriging", 8, "8.3",
-        ["soil_sampling_strategies", "gis_in_agriculture"],
-        "Spatial correlation, ordinary kriging, block kriging, validation",
-    ),
-    "management_zones": Concept(
-        "Management Zones", 8, "8.5",
-        ["geostatistics_kriging", "soil_ec_mapping"],
-        "Delineating zones of similar productivity for site-specific management",
-    ),
-
-    # ===== Chapter 9: Water Management and Irrigation =====
-    "soil_plant_atmosphere_continuum": Concept(
-        "Soil-Plant-Atmosphere Continuum", 9, "9.2",
-        ["soil_basics"],
-        "Water movement from soil through plant to atmosphere",
-    ),
-    "evapotranspiration": Concept(
-        "Evapotranspiration and Crop Water Requirements", 9, "9.3",
-        ["soil_plant_atmosphere_continuum", "microclimate_variability"],
-        "FAO Penman-Monteith, crop coefficients, soil water balance",
-    ),
-    "soil_moisture_sensing": Concept(
-        "Soil Moisture Sensing and Monitoring", 9, "9.4",
-        ["iot_on_farm", "soil_plant_atmosphere_continuum"],
-        "TDR, capacitance, sensor networks, remote sensing of water status",
-    ),
-    "variable_rate_irrigation": Concept(
-        "Variable Rate Irrigation", 9, "9.6",
-        ["evapotranspiration", "management_zones", "rtk_correction"],
-        "Site-specific water application using VRI center pivots and drip",
-    ),
-
-    # ===== Chapter 10: Nutrient Management =====
-    "nutrient_variability": Concept(
-        "Why Nutrients Vary Across the Field", 10, "10.1",
-        ["soil_variability"],
-        "Parent material, topography, management history, salinity effects",
-    ),
-    "essential_plant_nutrients": Concept(
-        "Essential Plant Nutrients", 10, "10.2",
-        [],
-        "Macro and micronutrients: N, P, K, S, Ca, Mg, Fe, Zn, etc.",
-    ),
-    "soil_testing": Concept(
-        "Soil Testing and Nutrient Mapping", 10, "10.3",
-        ["soil_sampling_strategies", "geostatistics_kriging"],
-        "Grid and zone sampling for nutrients, geostatistical nutrient maps",
-    ),
-    "nitrogen_management": Concept(
-        "Nitrogen Management", 10, "10.4",
-        ["essential_plant_nutrients", "canopy_sensors", "chlorophyll_nitrogen_estimation"],
-        "Spatial/temporal N variation, sensor-based in-season N, 4R framework",
-    ),
-
-    # ===== Chapter 11: Variable Rate Technology =====
-    "vrt_concept": Concept(
-        "Variable Rate Application Concept", 11, "11.1",
-        ["pa_cycle", "management_zones"],
-        "The principle of adjusting inputs spatially across the field",
-    ),
-    "map_vs_sensor_vrt": Concept(
-        "Map-Based vs. Sensor-Based VRT", 11, "11.2",
-        ["vrt_concept", "canopy_sensors"],
-        "Prescription maps vs real-time sensor feedback vs hybrid approaches",
-    ),
-    "variable_rate_seeding": Concept(
-        "Variable Rate Seeding", 11, "11.3",
-        ["vrt_concept", "management_zones"],
-        "Adjusting seeding rate by zone based on yield potential",
-    ),
-    "variable_rate_fertilization": Concept(
-        "Variable Rate Fertilization", 11, "11.4",
-        ["soil_testing", "nitrogen_management", "vrt_concept"],
-        "Site-specific P, K, lime, and N application",
-    ),
-    "prescription_maps": Concept(
-        "Building Prescription Maps", 11, "11.7",
-        ["management_zones", "gis_in_agriculture", "vrt_concept"],
-        "Data sources, zone delineation, converting zones to application rates",
-    ),
-    "isobus": Concept(
-        "ISOBUS and Equipment Controllers", 11, "11.8",
-        ["auto_steering", "vrt_concept"],
-        "Task controllers, rate controllers, ISOBUS standard for interoperability",
-    ),
-
-    # ===== Chapter 12: Crop Health Monitoring and Protection =====
-    "weed_detection": Concept(
-        "Weed Detection and Site-Specific Management", 12, "12.2",
-        ["drones_in_agriculture", "ndvi"],
-        "Patchy weed distribution, detection technologies, herbicide savings",
-    ),
-    "disease_detection": Concept(
-        "Disease Detection: Scouting to Sensors", 12, "12.3",
-        ["multispectral_vs_hyperspectral", "chlorophyll_nitrogen_estimation"],
-        "Spatial patterns of disease, spectral and imaging-based detection",
-    ),
-    "pest_monitoring": Concept(
-        "Pest Monitoring and IPM", 12, "12.4",
-        ["data_driven_farming"],
-        "Scouting, growing degree days, economic thresholds, integrated pest management",
-    ),
-    "remote_sensing_crop_stress": Concept(
-        "Remote Sensing for Crop Stress", 12, "12.5",
-        ["satellite_platforms", "ndvi", "spectral_signatures"],
-        "Using vegetation indices to detect stress before visual symptoms appear",
-    ),
-
-    # ===== Chapter 13: Yield Monitoring and Mapping =====
-    "yield_monitor_principles": Concept(
-        "How Yield Monitors Work", 13, "13.2",
-        ["gnss_principles"],
-        "Mass flow sensors, moisture sensors, GPS, in-cab displays",
-    ),
-    "yield_data_errors": Concept(
-        "Sources of Error in Yield Data", 13, "13.3",
-        ["yield_monitor_principles"],
-        "Calibration, combine dynamics, header width, GPS errors",
-    ),
-    "yield_map_processing": Concept(
-        "Yield Map Processing and Cleaning", 13, "13.4",
-        ["yield_data_errors", "gis_in_agriculture"],
-        "Filtering, interpolation, the H-method, standardization",
-    ),
-    "yield_map_interpretation": Concept(
-        "Interpreting Yield Maps", 13, "13.5",
-        ["yield_map_processing", "management_zones"],
-        "Multi-year patterns, causal analysis, linking to soil and topography",
-    ),
-
-    # ===== Chapter 14: Data Pipelines and Management =====
-    "data_lifecycle": Concept(
-        "Data Lifecycle in Precision Agriculture", 14, "14.1",
-        ["agricultural_data_types"],
-        "Collection, storage, cleaning, integration, and archiving of farm data",
-    ),
-    "data_formats_standards": Concept(
-        "Data Formats, Protocols, and Standards", 14, "14.2",
-        ["data_lifecycle"],
-        "Shapefiles, GeoTIFF, ISOXML, AgGateway ADAPT, data interoperability",
-    ),
-    "fmis": Concept(
-        "Farm Management Information Systems", 14, "14.6",
-        ["data_lifecycle", "gis_in_agriculture"],
-        "Integrated platforms for planning, recording, and analyzing farm operations",
-    ),
-    "data_privacy_ownership": Concept(
-        "Data Sharing, Privacy, and Ownership", 14, "14.7",
-        ["data_lifecycle"],
-        "Who owns farm data, privacy concerns, open data initiatives",
-    ),
-
-    # ===== Chapter 15: AI and Machine Learning in Agriculture =====
-    "ml_fundamentals": Concept(
-        "Machine Learning Fundamentals", 15, "15.2",
-        ["data_driven_farming"],
-        "Supervised, unsupervised, and reinforcement learning basics",
-    ),
-    "deep_learning_computer_vision": Concept(
-        "Deep Learning and Computer Vision", 15, "15.3",
-        ["ml_fundamentals"],
-        "CNNs, RNNs/LSTMs, GANs, computer vision for field imagery",
-    ),
-    "ai_yield_prediction": Concept(
-        "AI for Crop Classification and Yield Prediction", 15, "15.4",
-        ["ml_fundamentals", "satellite_platforms", "yield_map_interpretation"],
-        "ML models for crop type mapping and pre-harvest yield estimation",
-    ),
-    "ai_disease_pest_detection": Concept(
-        "AI for Disease and Pest Detection", 15, "15.5",
-        ["deep_learning_computer_vision", "disease_detection"],
-        "Image-based disease ID, pest classification, multi-source integration",
-    ),
-
-    # ===== Chapter 16: Decision Support Systems =====
-    "dss_architecture": Concept(
-        "DSS Architecture", 16, "16.2",
-        ["data_lifecycle", "ml_fundamentals"],
-        "Data layer, model layer, user interface in decision support systems",
-    ),
-    "crop_growth_models": Concept(
-        "Crop Growth Models as Decision Tools", 16, "16.3",
-        ["evapotranspiration", "essential_plant_nutrients"],
-        "DSSAT, APSIM, process-based simulation for management scenarios",
-    ),
-    "on_farm_experimentation": Concept(
-        "On-Farm Experimentation and Strip Trials", 16, "16.4",
-        ["yield_map_interpretation", "vrt_concept"],
-        "Randomized strip trials, analyzing treatment effects at field scale",
-    ),
-    "risk_uncertainty": Concept(
-        "Risk and Uncertainty in Spatial Decisions", 16, "16.5",
-        ["geostatistics_kriging", "dss_architecture"],
-        "Probability-based management, kriging variance, stochastic optimization",
-    ),
-
-    # ===== Chapter 17: Economics of Precision Agriculture =====
-    "pa_cost_benefit": Concept(
-        "Cost-Benefit Analysis of PA", 17, "17.2",
-        ["what_is_precision_agriculture"],
-        "Identifying costs and benefits, NPV, IRR, payback period",
-    ),
-    "pa_roi_evidence": Concept(
-        "Return on Investment Evidence", 17, "17.3",
-        ["pa_cost_benefit", "variable_rate_fertilization", "auto_steering"],
-        "Empirical ROI data for guidance, VRT, and data-intensive technologies",
-    ),
-    "pa_adoption_barriers": Concept(
-        "Adoption Drivers and Barriers", 17, "17.4",
-        ["pa_cost_benefit"],
-        "Farm size, complexity, connectivity, trust, and skills gaps",
-    ),
-
-    # ===== Chapter 18: Precision Livestock and Beyond =====
-    "precision_livestock_farming": Concept(
-        "Precision Livestock Farming", 18, "18.1",
-        ["what_is_precision_agriculture", "iot_on_farm"],
-        "Right input, right animal, right time -- PLF principles",
-    ),
-    "animal_sensors": Concept(
-        "Sensors for Animal Monitoring", 18, "18.2",
-        ["precision_livestock_farming"],
-        "Accelerometers, GPS, RFID, rumen boluses for livestock",
-    ),
-    "automated_milking": Concept(
-        "Automated Milking Systems", 18, "18.7",
-        ["animal_sensors"],
-        "Robotic milking, individual cow monitoring, data-driven herd management",
-    ),
-
-    # ===== Chapter 19: The Future of Precision Agriculture =====
-    "agricultural_robotics": Concept(
-        "Agricultural Robotics and Autonomous Systems", 19, "19.2",
-        ["auto_steering", "deep_learning_computer_vision"],
-        "Autonomous tractors, weeding robots, robotic harvesting",
-    ),
-    "digital_twins_farming": Concept(
-        "Digital Twins for Farm Management", 19, "19.3",
-        ["crop_growth_models", "iot_on_farm", "fmis"],
-        "Virtual farm replicas updated in real time for simulation and prediction",
-    ),
-    "edge_ai": Concept(
-        "Edge AI and On-Machine Intelligence", 19, "19.4",
-        ["deep_learning_computer_vision", "isobus"],
-        "Running ML models on tractors and drones for real-time decisions",
-    ),
-    "carbon_markets_pa": Concept(
-        "Carbon Markets and Precision Agriculture", 19, "19.7",
-        ["pa_sustainability", "variable_rate_fertilization"],
-        "MRV for soil carbon, carbon credits, regenerative agriculture",
-    ),
-    "ethics_data_sovereignty": Concept(
-        "Ethics: Data Sovereignty, Labor, Equity", 19, "19.8",
-        ["data_privacy_ownership", "pa_adoption_barriers"],
-        "Who controls farm data, labor displacement, the digital divide",
-    ),
-
-    # ===== Chapter 20: Precision Agriculture in Hungary =====
-    "hungarian_agriculture_context": Concept(
-        "Hungarian Agriculture: Landscape and Context", 20, "20.1",
-        [],
-        "Carpathian Basin soils, land structure, historical transition",
-    ),
-    "pa_adoption_hungary": Concept(
-        "PA Adoption in Hungary", 20, "20.2",
-        ["hungarian_agriculture_context", "pa_adoption_barriers"],
-        "Current state, machinery market, farm size distribution",
-    ),
-    "hungarian_soil_mapping": Concept(
-        "Soil Mapping and Nutrient Management in Hungary", 20, "20.5",
-        ["soil_testing", "management_zones", "hungarian_agriculture_context"],
-        "Hungarian soil survey traditions, precision nutrient programs",
-    ),
-    "hungarian_water_challenges": Concept(
-        "Water Management Challenges in Hungary", 20, "20.6",
-        ["variable_rate_irrigation", "hungarian_agriculture_context"],
-        "Drought risk in the Great Plain, irrigation modernization",
-    ),
-    "hungarian_policy_framework": Concept(
-        "Hungarian Policy: CAP and Digital Agriculture", 20, "20.8",
-        ["pa_adoption_hungary"],
-        "EU Common Agricultural Policy, national subsidies, digital strategy",
+    "autonom_gis": Concept(
+        "Autonóm GIS ágens", 19, "19.5",
+        ["terinformatika", "agens", "gis"],
+        "LLM-vezérelt térinformatikai elemzés, természetes nyelvű térbeli lekérdezés",
     ),
 }
 
@@ -490,6 +610,28 @@ def get_prerequisites(concept_key: str) -> list[str]:
 def get_concepts_for_chapter(chapter: int) -> list[str]:
     """Get all concept keys for a given chapter number."""
     return [k for k, v in CONCEPT_GRAPH.items() if v.chapter == chapter]
+
+
+def get_concepts_for_part(part: int) -> list[str]:
+    """Get all concept keys for a given part number (I-VI).
+
+    Part I:   Ch 1-4
+    Part II:  Ch 5-7
+    Part III: Ch 8-10
+    Part IV:  Ch 11-13
+    Part V:   Ch 14-16
+    Part VI:  Ch 17-19
+    """
+    part_ranges = {
+        1: range(1, 5),
+        2: range(5, 8),
+        3: range(8, 11),
+        4: range(11, 14),
+        5: range(14, 17),
+        6: range(17, 20),
+    }
+    chapters = part_ranges.get(part, range(0))
+    return [k for k, v in CONCEPT_GRAPH.items() if v.chapter in chapters]
 
 
 def get_concept_tree() -> dict:

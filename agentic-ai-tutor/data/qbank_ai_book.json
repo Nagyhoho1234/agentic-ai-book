@@ -1,0 +1,2626 @@
+[
+  {
+    "id": "ch01_q01",
+    "chapter": 1,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "A fejezet szerint a kutatók munkaidejük hány százalékát töltik adatkezeléssel?",
+    "options": [
+      "A) Körülbelül 40%-át",
+      "B) Körülbelül 60%-át",
+      "C) Körülbelül 80%-át",
+      "D) Körülbelül 95%-át"
+    ],
+    "correct": "C",
+    "explanation": "Gentemann és munkatársai 2021-es tanulmánya szerint az átlagos kutató munkaidejének mintegy 80%-át adatkezeléssel tölti."
+  },
+  {
+    "id": "ch01_q02",
+    "chapter": 1,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi az a technológia, amelynek adoptációja a történelemben a leggyorsabb volt a fejezet szerint?",
+    "options": [
+      "A) A Facebook",
+      "B) Az internet",
+      "C) A ChatGPT",
+      "D) Az okostelefon"
+    ],
+    "correct": "C",
+    "explanation": "A ChatGPT 2022 novemberi megjelenése után 100 millió felhasználót ért el mindössze két hónap alatt."
+  },
+  {
+    "id": "ch01_q03",
+    "chapter": 1,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Az OpenAI öt szintű keretrendszerében melyik szinten kezdődik az ágensszerű működés?",
+    "options": [
+      "A) 1. szint: Beszélgetés",
+      "B) 2. szint: Gondolkodás",
+      "C) 3. szint: Eszközhasználat",
+      "D) 5. szint: Szervezetszintű AI"
+    ],
+    "correct": "C",
+    "explanation": "A 3. szinten az AI nemcsak gondolkodik, hanem cselekszik is: kódot futtat, fájlokat kezel, API-kat hív meg."
+  },
+  {
+    "id": "ch01_q04",
+    "chapter": 1,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Mit jelent az, hogy az AI általános célú technológia (General Purpose Technology)?",
+    "options": [
+      "A) Csak általános feladatokra használható",
+      "B) Nem egyetlen iparágat, hanem az egész gazdaságot és társadalmat alakítja át",
+      "C) Mindenki számára ingyenesen elérhető",
+      "D) Csak általános tudással rendelkező felhasználók számára hasznos"
+    ],
+    "correct": "B",
+    "explanation": "Mint a gőzgép, az elektromosság vagy a számítógép -- nem egyetlen iparágat alakít át, hanem az egész gazdaságot és társadalmat."
+  },
+  {
+    "id": "ch01_q05",
+    "chapter": 1,
+    "difficulty": "hard",
+    "type": "mcq",
+    "question": "Miért kaptak Demis Hassabis és John Jumper 2024-ben kémiai Nobel-díjat?",
+    "options": [
+      "A) Egy új kémiai elem felfedezéséért",
+      "B) Az AlphaFold fehérjeszerkezet-jóslási rendszer megalkotásáért",
+      "C) A ChatGPT fejlesztésében való közreműködésért",
+      "D) Új gyógyszermolekula szintetizálásáért"
+    ],
+    "correct": "B",
+    "explanation": "Ez volt az első alkalom, hogy közvetlenül AI-kutatásért ítélték oda a Nobel-díjat."
+  },
+  {
+    "id": "ch02_q01",
+    "chapter": 2,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi az a token a nagy nyelvi modellek kontextusában?",
+    "options": [
+      "A) Egy teljes mondat, amelyet a modell egyben dolgoz fel",
+      "B) A legkisebb egység, amelyre a nyelvi modell a szöveget felbontja",
+      "C) A modell által generált válasz egésze",
+      "D) A felhasználó által beírt prompt teljes szövege"
+    ],
+    "correct": "B",
+    "explanation": "A token a legkisebb egység, amelyre a nyelvi modell a szöveget felbontja."
+  },
+  {
+    "id": "ch02_q02",
+    "chapter": 2,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Mi az LLM-ek működési alapelve a fejezet szerint?",
+    "options": [
+      "A) Tényeket keres egy adatbázisból",
+      "B) Megérti a kérdés mögötti szándékot és tudatosan válaszol",
+      "C) Megpróbálja megjósolni, melyik token következik a sorozatban",
+      "D) Logikai szabályok alapján következtet"
+    ],
+    "correct": "C",
+    "explanation": "Az LLM-ek működési elve a következő token megjóslása (next-token prediction)."
+  },
+  {
+    "id": "ch02_q03",
+    "chapter": 2,
+    "difficulty": "hard",
+    "type": "mcq",
+    "question": "Harry Frankfurt filozófus terminológiájában mit jelent a 'bullshit' fogalma az LLM-ek kapcsán?",
+    "options": [
+      "A) Az LLM szándékosan hazudik",
+      "B) Az LLM tartalmát az igazsággal szembeni teljes közömbösséggel állítja elő",
+      "C) Az LLM minden válasza értelmetlen zagyvaság",
+      "D) Az LLM tudatosan kerüli a helyes válaszokat"
+    ],
+    "correct": "B",
+    "explanation": "Az LLM-ek nem hazudnak, hanem közömbösek az igazság iránt -- csak az érdekli őket, hogy meggyőzően hangozzon."
+  },
+  {
+    "id": "ch02_q04",
+    "chapter": 2,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Hogyan jellemzi a fejezet a társalgási AI-t mint kutatási eszközt?",
+    "options": [
+      "A) Teljesen megbízható szakértő",
+      "B) Intellektuálisan stimuláló, de megbízhatatlan gyakornok",
+      "C) Csak egyszerű kérdésekre képes válaszolni",
+      "D) Kizárólag angol nyelven használható hatékonyan"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet a társalgási AI-t egy intellektuálisan stimuláló, de megbízhatatlan gyakornokként jellemzi."
+  },
+  {
+    "id": "ch02_q05",
+    "chapter": 2,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Miért igényel a magyar nyelv több tokent ugyanannyi tartalom kifejezéséhez, mint az angol?",
+    "options": [
+      "A) Mert a magyar szavak rövidebbek",
+      "B) Mert a magyar nyelv agglutináló szerkezete miatt egy szó több tokenre bomlik",
+      "C) Mert a modellek nem tudják jól kezelni a magyar nyelvet",
+      "D) Mert a magyar ábécé több betűt tartalmaz"
+    ],
+    "correct": "B",
+    "explanation": "A magyar nyelv agglutináló szerkezete miatt egy-egy szó több tokent igényel."
+  },
+  {
+    "id": "ch03_q01",
+    "chapter": 3,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi a világ nem angol anyanyelvű kutatóinak legnagyobb kihívása a publikálásban?",
+    "options": [
+      "A) Nincs elég kutatási eredményük",
+      "B) Az angol nyelvű publikációs rendszerben kell helytállniuk anyanyelvi szinten",
+      "C) Nem férnek hozzá a tudományos folyóiratokhoz",
+      "D) A kutatási módszereik nem elég modernek"
+    ],
+    "correct": "B",
+    "explanation": "A kutatók többsége nem angol anyanyelvű, mégis angol nyelvű rendszerben kell helytállniuk."
+  },
+  {
+    "id": "ch03_q02",
+    "chapter": 3,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Mi a strukturált összefoglalás technika lényege az AI-val végzett irodalomkutatásban?",
+    "options": [
+      "A) Az AI automatikusan strukturálja a választ",
+      "B) A promptban megadod a struktúrát (kutatási kérdés, módszer, eredmények stb.)",
+      "C) Az AI egy előre definiált sablont tölt ki",
+      "D) Csak a cikk absztraktját másolja át"
+    ],
+    "correct": "B",
+    "explanation": "A promptban megadjuk a kívánt struktúrát, ami sokkal informatívabb eredményt ad."
+  },
+  {
+    "id": "ch03_q03",
+    "chapter": 3,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Naponta hány új orvos-biológiai cikk jelenik meg a fejezet szerint?",
+    "options": [
+      "A) Körülbelül 500",
+      "B) Körülbelül 1000",
+      "C) Több mint 4000",
+      "D) Több mint 10 000"
+    ],
+    "correct": "C",
+    "explanation": "Naponta több mint 4000 új orvos-biológiai cikk jelenik meg."
+  },
+  {
+    "id": "ch03_q04",
+    "chapter": 3,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Mi a progresszív promptolás technika lényege?",
+    "options": [
+      "A) Egyetlen nagyon hosszú promptot írunk",
+      "B) Általánostól a specifikus felé haladva egyre szűkítjük a kérdéseinket",
+      "C) Az AI automatikusan mélyíti a válaszait",
+      "D) Minden promptot egy másik AI modellel ellenőriztetünk"
+    ],
+    "correct": "B",
+    "explanation": "Általános kérdéssel kezdünk, majd egyre specifikusabb irányba szűkítjük."
+  },
+  {
+    "id": "ch03_q05",
+    "chapter": 3,
+    "difficulty": "hard",
+    "type": "mcq",
+    "question": "Miért fontos, hogy a kutató megőrizze a saját tudományos hangját az AI-val készített szövegekben?",
+    "options": [
+      "A) Mert az AI szövegei jogilag nem elfogadhatók",
+      "B) Mert a folyóiratok elutasítják az AI-generált szövegeket",
+      "C) Mert a tudományos írás a szerző szakértelmét és gondolkodásmódját kell tükrözze",
+      "D) Mert az AI nem tud tudományos szöveget írni"
+    ],
+    "correct": "C",
+    "explanation": "A tudományos írás a szerző szakértelmét és gondolkodásmódját kell tükrözze."
+  },
+  {
+    "id": "ch04_q01",
+    "chapter": 4,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi a no-code (kód nélküli) adatelemzés lényege a fejezet szerint?",
+    "options": [
+      "A) Az AI teljesen automatikusan elemez mindent",
+      "B) Természetes nyelven adunk utasítást az AI-nak, és az végzi el a technikai munkát",
+      "C) Kizárólag Excel pivot-táblákkal dolgozunk",
+      "D) Előre megírt programokat futtatunk"
+    ],
+    "correct": "B",
+    "explanation": "A kutató dönt a MIT-ről és MIÉRT-ről, az AI a HOGYAN-t oldja meg."
+  },
+  {
+    "id": "ch04_q02",
+    "chapter": 4,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Melyik fájlformátumot javasolja a fejezet a legbiztonságosabbnak AI-alapú adatelemzéshez?",
+    "options": [
+      "A) Excel (.xlsx)",
+      "B) PDF",
+      "C) CSV, mert a legegyszerűbb és legbiztonságosabb",
+      "D) JSON"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet a CSV formátumot ajánlja."
+  },
+  {
+    "id": "ch04_q03",
+    "chapter": 4,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Mire kell figyelni betegadatok feltöltésekor az AI platformra?",
+    "options": [
+      "A) Csak angol nyelvű adatokat szabad feltölteni",
+      "B) A GDPR-nak megfelelően anonimiálni kell a feltöltés előtt",
+      "C) Csak .xlsx formátumban szabad feltölteni",
+      "D) Maximum 1000 sor tölthető fel"
+    ],
+    "correct": "B",
+    "explanation": "A GDPR-nak megfelelően anonimizálni kell a feltöltés előtt."
+  },
+  {
+    "id": "ch04_q04",
+    "chapter": 4,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "A fejezet milyen szereposztást javasol a kutató és az AI között az adatelemzésben?",
+    "options": [
+      "A) Az AI dönti el, mit és miért kell elemezni",
+      "B) A kutató dönti el a MIT-et és a MIÉRT-et, az AI a HOGYAN-t oldja meg",
+      "C) A kutató és az AI felváltva hoznak döntéseket",
+      "D) Az AI csak vizualizációt készít"
+    ],
+    "correct": "B",
+    "explanation": "A kutató dönt a MIT-ről és MIÉRT-ről, az AI a HOGYAN-t oldja meg."
+  },
+  {
+    "id": "ch04_q05",
+    "chapter": 4,
+    "difficulty": "hard",
+    "type": "mcq",
+    "question": "Miért nem helyettesíti az AI a statisztikai gondolkodást a no-code adatelemzésben?",
+    "options": [
+      "A) Mert az AI nem tud statisztikai számításokat végezni",
+      "B) Mert az AI eltávolítja a technikai akadályokat, de a kutatási kérdés és az értelmezés a kutatóé marad",
+      "C) Mert a no-code módszer csak leíró statisztikára alkalmas",
+      "D) Mert az AI mindig hibás teszteket választ"
+    ],
+    "correct": "B",
+    "explanation": "Az AI eltávolítja a technikai akadályokat, de a kutatási kérdés és értelmezés továbbra is a kutató feladata."
+  },
+  {
+    "id": "ch05_q01",
+    "chapter": 5,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Hogyan jellemzi a fejezet a kutató és az AI kódolási asszisztens közötti viszonyt?",
+    "options": [
+      "A) A kutató megtanulja a programozást",
+      "B) A kutató a rendező, az AI a kódíró: a kutató mondja meg, mit csináljon a program",
+      "C) Az AI teljesen önállóan programoz",
+      "D) A kutató és az AI felváltva írják a kód részeit"
+    ],
+    "correct": "B",
+    "explanation": "A kutató a rendező, az AI a kódíró. A kutató megmondja, mit csináljon a program."
+  },
+  {
+    "id": "ch05_q02",
+    "chapter": 5,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Mi a paradigmaváltás lényege a kódolásban a fejezet szerint?",
+    "options": [
+      "A) A vizuális programozás váltja fel a szöveges kódolást",
+      "B) A szintaxis helyett a szándék kerül a középpontba",
+      "C) A Python váltja fel az összes többi nyelvet",
+      "D) A kódolási asszisztensek feleslegessé teszik a programozást"
+    ],
+    "correct": "B",
+    "explanation": "Szintaxis helyett szándék: természetes nyelven fogalmazzuk meg, mit akarunk elérni."
+  },
+  {
+    "id": "ch05_q03",
+    "chapter": 5,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Milyen típusú feladatokra a legalkalmasabbak az AI kódolási asszisztensek?",
+    "options": [
+      "A) Csak statisztikai elemzésekre",
+      "B) Ismétlődő, szabályos, gépi munkát igénylő feladatokra",
+      "C) Kizárólag webfejlesztésre",
+      "D) Csak adatbázis-kezelésre"
+    ],
+    "correct": "B",
+    "explanation": "500 CSV fájl feldolgozása, 2000 kép fájlnevéből adatok kinyereése, API-ból adatok letöltése."
+  },
+  {
+    "id": "ch05_q04",
+    "chapter": 5,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Miért nem tanult meg programozni a legtöbb tudós a fejezet szerint?",
+    "options": [
+      "A) Mert a programozás nem hasznos a kutatásban",
+      "B) Mert a szintaxis megtanulása nem volt releváns a kutatási kérdéseikhez, és hónapokat vett igénybe",
+      "C) Mert a programozási nyelvek túl drágák",
+      "D) Mert nem volt elérhető számítógép"
+    ],
+    "correct": "B",
+    "explanation": "A szintaxis tanulása nem volt releváns, és hónapokat vett igénybe."
+  },
+  {
+    "id": "ch05_q05",
+    "chapter": 5,
+    "difficulty": "hard",
+    "type": "mcq",
+    "question": "Mi a helyes munkafolyamat az AI kódolási asszisztenssel?",
+    "options": [
+      "A) Megírjuk a kódot, majd az AI javítja a hibákat",
+      "B) Az AI megírja a kódot, lefuttatjuk, megnézzük az eredményt, és ha nem jó, visszajelzünk",
+      "C) Az AI futtatja a kódot a saját szervérén",
+      "D) A kód egyszerre készül el hibátlanul"
+    ],
+    "correct": "B",
+    "explanation": "Iteratív folyamat: a kutató megmondja, mit akar, az AI megírja, a kutató futtatja és visszajelez."
+  },
+  {
+    "id": "ch06_q01",
+    "chapter": 6,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi az AI szerepe a matematikai modellezésben a fejezet szerint?",
+    "options": [
+      "A) Felváltja a fizikai törvényeket",
+      "B) Matematikai fordítóként működik: a kutatási kérdést kóddá alakítja",
+      "C) Kizárólag egyenletek megoldására szolgál",
+      "D) Csak grafikus ábrázolásra használható"
+    ],
+    "correct": "B",
+    "explanation": "Az AI matematikai fordítóként működik."
+  },
+  {
+    "id": "ch06_q02",
+    "chapter": 6,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "A modellalkotási folyamat három lépése a fejezet szerint:",
+    "options": [
+      "A) Adatgyűjtés, elemzés, publikálás",
+      "B) Változók azonosítása, törvények/összefüggések, feltételrendszer",
+      "C) Programozás, futtatás, hibakeresés",
+      "D) Hipotézis, kísérlet, statisztikai teszt"
+    ],
+    "correct": "B",
+    "explanation": "(1) változók azonosítása, (2) törvények, (3) kezdeti és peremfeltételek."
+  },
+  {
+    "id": "ch06_q03",
+    "chapter": 6,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Mi a SymPy szerepe a fejezet kontextusában?",
+    "options": [
+      "A) Szimulációk futtatására szolgáló szoftver",
+      "B) Szimbolikus számítások végzésére szolgáló Python könyvtár",
+      "C) Gépi tanulási keretrendszer",
+      "D) Adatbázis-kezelő rendszer"
+    ],
+    "correct": "B",
+    "explanation": "Szimbolikus számítások (egyenletek egyszerűsítése, levezetés) végzésére."
+  },
+  {
+    "id": "ch06_q04",
+    "chapter": 6,
+    "difficulty": "hard",
+    "type": "mcq",
+    "question": "Mi az egyenletfelfedezés (symbolic regression)?",
+    "options": [
+      "A) Ismert egyenletek numerikus megoldása",
+      "B) Az AI az adatokból új matematikai összefüggéseket fedez fel",
+      "C) Egyenletek kézi levezetése",
+      "D) Statisztikai regresszió lineáris modellekre"
+    ],
+    "correct": "B",
+    "explanation": "Az adatmintázatok mögötti matematikai törvényszerűségeket keresi."
+  },
+  {
+    "id": "ch06_q05",
+    "chapter": 6,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "A fejezet példájában melyik fizikai törvény írja le a vízmozgást porózus közegben?",
+    "options": [
+      "A) Newton második törvénye",
+      "B) A Darcy-törvény",
+      "C) Az Ohm-törvény",
+      "D) A Bernoulli-egyenlet"
+    ],
+    "correct": "B",
+    "explanation": "A Darcy-törvény írja le a vízáramlást porózus közegben."
+  },
+  {
+    "id": "ch07_q01",
+    "chapter": 7,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi az a pipeline (adatfeldolgozási csővezeték)?",
+    "options": [
+      "A) Egy speciális szoftver",
+      "B) Lépések sorozata, amelyben az egyik lépés kimenete a következő lépés bemenete",
+      "C) Egy adatbázis, amely automatikusan frissül",
+      "D) Egy vizuális felület"
+    ],
+    "correct": "B",
+    "explanation": "Lépések sorozata, amelyben az egyik lépés kimenete a következő lépés bemenete."
+  },
+  {
+    "id": "ch07_q02",
+    "chapter": 7,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Hány alapvető szakaszra bontható minden tudományos adat-pipeline?",
+    "options": [
+      "A) Három: bevitel, elemzés, kimenet",
+      "B) Négy: bevitel, tisztítás, elemzés, kimenet",
+      "C) Öt: bevitel, tisztítás, transzformáció, elemzés, kimenet",
+      "D) Hat"
+    ],
+    "correct": "C",
+    "explanation": "(1) Bevitel, (2) Tisztítás, (3) Transzformáció, (4) Elemzés, (5) Kimenet."
+  },
+  {
+    "id": "ch07_q03",
+    "chapter": 7,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Miért problémás Anna napi 15 lépéses manuális munkafolyamata?",
+    "options": [
+      "A) Mert túl kevés adatot dolgoz fel",
+      "B) Mert 45 percet vesz igénybe, hibára hajlamos, és nem reprodukálható",
+      "C) Mert túl drága szoftvereket használ",
+      "D) Mert a tanszékvezető nem kéri az eredményeket"
+    ],
+    "correct": "B",
+    "explanation": "45 perc, hibára hajlamos, két ember másképp csinálná."
+  },
+  {
+    "id": "ch07_q04",
+    "chapter": 7,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi a pipeline célja a tudományos kutatásban?",
+    "options": [
+      "A) A kutatási kérdés automatikus megfogalmazása",
+      "B) A nyers mérésből reprodukálható eredmény előállítása emberi beavatkozás nélkül",
+      "C) A kutatók közötti kommunikáció automatizálása",
+      "D) A publikációk automatikus benyújtása"
+    ],
+    "correct": "B",
+    "explanation": "Nyers mérésből reprodukálható eredmény, automatikusan."
+  },
+  {
+    "id": "ch07_q05",
+    "chapter": 7,
+    "difficulty": "hard",
+    "type": "mcq",
+    "question": "Miért fontos a reprodukálhatóság az automatizált pipeline-okban?",
+    "options": [
+      "A) Mert a szoftvergyártók előírják",
+      "B) Mert ha ketten csinálnák kézzel, valószínűleg másképp végeznék, ami torzítást okoz",
+      "C) Mert drágábbak a kézi munkánál",
+      "D) Mert az adatvédelmi szabályok megkövetelik"
+    ],
+    "correct": "B",
+    "explanation": "A pipeline ugyanazt az eredményt adja minden futtatásnál."
+  },
+  {
+    "id": "ch08_q01",
+    "chapter": 8,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi a vizuális programozás alapgondolata?",
+    "options": [
+      "A) A programkódot grafikusan szebb formátumban írjuk",
+      "B) A folyamatábra maga a program: dobozokat húzunk a vászonra és összekötjük őket",
+      "C) A programozást videókon keresztül tanuljuk",
+      "D) A vizualizációk automatikus generálásáról szól"
+    ],
+    "correct": "B",
+    "explanation": "Dobozokat (node-okat) húzunk a vászonra, összekötjük, és a rendszer végrehajtja."
+  },
+  {
+    "id": "ch08_q02",
+    "chapter": 8,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Melyik NEM előnye a vizuális programozásnak?",
+    "options": [
+      "A) Azonnali áttekinthetőség",
+      "B) Beépített dokumentáció",
+      "C) Nagy teljesítményű számítások optimalizálása",
+      "D) Kevesebb szintaktikai hiba"
+    ],
+    "correct": "C",
+    "explanation": "Nagy teljesítményű számításoknál a hagyományos kódolás erősebb."
+  },
+  {
+    "id": "ch08_q03",
+    "chapter": 8,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Melyik három vizuális programozási eszközt említi a fejezet?",
+    "options": [
+      "A) Excel, SPSS, Tableau",
+      "B) n8n, KNIME, LangFlow",
+      "C) Python, R, MATLAB",
+      "D) Power BI, Looker, Grafana"
+    ],
+    "correct": "B",
+    "explanation": "n8n, KNIME és LangFlow."
+  },
+  {
+    "id": "ch08_q04",
+    "chapter": 8,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Miért működik jól a vizuális programozás a tudósok számára?",
+    "options": [
+      "A) Mert a tudósok nem képesek logikus gondolkodásra",
+      "B) Mert a kutatási módszertant is folyamatábraként tanítják",
+      "C) Mert a vizuális programok gyorsabban futnak",
+      "D) Mert nem igényel semmilyen előzetes tudást"
+    ],
+    "correct": "B",
+    "explanation": "A kutatási módszertant is folyamatábraként tanítják az egyetemen."
+  },
+  {
+    "id": "ch08_q05",
+    "chapter": 8,
+    "difficulty": "hard",
+    "type": "mcq",
+    "question": "Miért tartja a fejezet fontosnak a vizuális munkafolyamatok reprodukálhatóságát?",
+    "options": [
+      "A) Mert a szoftvergyártók követelménye",
+      "B) Mert a workflow-k megoszthatók és újrafuttathatók, ami a nyílt tudomány alapkövetelménye",
+      "C) Mert nem módosíthatók",
+      "D) Mert a reprodukálhatóság növeli a futási sebességet"
+    ],
+    "correct": "B",
+    "explanation": "A nyílt tudomány (open science) egyik alapkövetelménye."
+  },
+  {
+    "id": "ch09_q01",
+    "chapter": 9,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi a RAG (Retrieval-Augmented Generation) lényege?",
+    "options": [
+      "A) Az LLM-et újratanítjuk a saját adatainkkal",
+      "B) Az LLM először visszakeres releváns szövegrészleteket egy külső tudásbázisból, majd azok kontextusában válaszol",
+      "C) Az LLM automatikusan letölti az internetről a legfrissebb információkat",
+      "D) A felhasználó manuálisan bemásolja az információt"
+    ],
+    "correct": "B",
+    "explanation": "Az LLM visszakeres, majd a kontextusban válaszol -- mintha vizsgán használhatnád a jegyzeteidet."
+  },
+  {
+    "id": "ch09_q02",
+    "chapter": 9,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Mi a különbség a RAG és a fine-tuning között?",
+    "options": [
+      "A) A RAG olcsóbb hardvert igényel",
+      "B) A RAG külső tudásbázisból keres, a fine-tuning magát a modellt változtatja meg",
+      "C) A RAG csak szövegekkel működik",
+      "D) Nincs lényeges különbség"
+    ],
+    "correct": "B",
+    "explanation": "A RAG külső tudásbázisból keres, a fine-tuning magát a modellt változtatja meg."
+  },
+  {
+    "id": "ch09_q03",
+    "chapter": 9,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Melyik NEM az LLM-ek strukturális korlátja a kutatói munkában?",
+    "options": [
+      "A) Tudáshatár (knowledge cutoff)",
+      "B) Nem érti a specifikus kutatási részterületet",
+      "C) Nem képes szöveget generálni magyar nyelven",
+      "D) A kutatócsoport terminológiája ismeretlen számára"
+    ],
+    "correct": "C",
+    "explanation": "A magyar nyelvű szöveggenerálás nem korlát."
+  },
+  {
+    "id": "ch09_q04",
+    "chapter": 9,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "A fejezet gyakorlati szabálya szerint mivel érdemes kezdeni?",
+    "options": [
+      "A) Mindig fine-tuninggal",
+      "B) RAG-gal, mert az esetek 80%-ában ez elegendő",
+      "C) Mindkettővel egyszerre",
+      "D) Egyik sem szükséges"
+    ],
+    "correct": "B",
+    "explanation": "Kezdd RAG-gal. Az esetek 80%-ában ez elég."
+  },
+  {
+    "id": "ch09_q05",
+    "chapter": 9,
+    "difficulty": "hard",
+    "type": "mcq",
+    "question": "Miért jobb a RAG transzparencia szempontjából, mint a fine-tuning?",
+    "options": [
+      "A) Mert nyílt forráskódú",
+      "B) Mert pontosan látható, milyen forrásból generálta a választ",
+      "C) Mert könnyebb vizualizálni",
+      "D) Mert a fine-tuning mindig titkosított"
+    ],
+    "correct": "B",
+    "explanation": "Pontosan látható, milyen forrásból generálta a választ."
+  },
+  {
+    "id": "ch10_q01",
+    "chapter": 10,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi az a digitális iker (digital twin)?",
+    "options": [
+      "A) Statikus 3D modell",
+      "B) Fizikai rendszer virtuális reprezentációja, amely kétirányú adatáramlás révén szinkronizálódik a fizikai párjával",
+      "C) Szenzoros adatokat tároló adatbázis",
+      "D) Évente frissített szimuláció"
+    ],
+    "correct": "B",
+    "explanation": "Kétirányú adatáramlás révén szinkronizálódik a fizikai párjával."
+  },
+  {
+    "id": "ch10_q02",
+    "chapter": 10,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Mi különbözteti meg a digitális ikret a hagyományos szimulációtól?",
+    "options": [
+      "A) Drágább szoftver",
+      "B) A kétirányú adatáramlás -- a virtuális modell visszacsatol a fizikai rendszerbe",
+      "C) Csak ipari környezetben alkalmazható",
+      "D) A szimuláció pontosabb"
+    ],
+    "correct": "B",
+    "explanation": "A kétirányú adatáramlás és visszacsatolás teszi ikerré."
+  },
+  {
+    "id": "ch10_q03",
+    "chapter": 10,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Ki fogalmazta meg először a modern digitális iker fogalmát?",
+    "options": [
+      "A) Elon Musk",
+      "B) Michael Grieves, a Michigani Egyetemen 2002-ben",
+      "C) Tim Berners-Lee",
+      "D) Alan Turing"
+    ],
+    "correct": "B",
+    "explanation": "Michael Grieves, 2002, Michigani Egyetem."
+  },
+  {
+    "id": "ch10_q04",
+    "chapter": 10,
+    "difficulty": "hard",
+    "type": "mcq",
+    "question": "Melyik NASA-küldtetés során bizonyította be először az iker-koncepció az értékét?",
+    "options": [
+      "A) Apollo 11",
+      "B) Apollo 13 -- a földi másolatokon tesztelték a megoldásokat",
+      "C) Voyager 1",
+      "D) Mars Rover"
+    ],
+    "correct": "B",
+    "explanation": "Apollo 13: a Houston-ban lévő azonos rendszereken tesztelték a megoldásokat."
+  },
+  {
+    "id": "ch10_q05",
+    "chapter": 10,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi a digitális árnyék (digital shadow)?",
+    "options": [
+      "A) Kétirányú adatáramlással rendelkező modell",
+      "B) Egyirányú adatáramlás: fizikai rendszerből a virtuális modellbe, visszacsatolás nélkül",
+      "C) Automatikus adatcsere nélküli CAD-rajz",
+      "D) Offline tárolt szimuláció"
+    ],
+    "correct": "B",
+    "explanation": "Egyirányú: fizikai -> virtuális, visszacsatolás nélkül."
+  },
+  {
+    "id": "ch11_q01",
+    "chapter": 11,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi az AI ágens a fejezet definíciója szerint?",
+    "options": [
+      "A) Fejlettebb chatbot",
+      "B) Autonóm digitális entitás, amely képes észlelni, gondolkodni, tanulni és cselekedni",
+      "C) Robotkar, amely fizikai feladatokat hajt végre",
+      "D) Adatbázis tudományos cikkek tárolására"
+    ],
+    "correct": "B",
+    "explanation": "Autonóm, adaptív, intelligens digitális entitás."
+  },
+  {
+    "id": "ch11_q02",
+    "chapter": 11,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Mi a minőségi különbség az OpenAI 2. és 3. szintje között?",
+    "options": [
+      "A) A 3. szinten gyorsabban válaszol",
+      "B) A 2. szinten gondolkodik, de te hajtod végre; a 3. szinten önállóan cselekszik",
+      "C) A 3. szinten több nyelven kommunikál",
+      "D) A 2. szint csak szöveggel dolgozik"
+    ],
+    "correct": "B",
+    "explanation": "A 3. szinten az AI önállóan cselekszik: tervez, eszközöket használ, döntéseket hoz."
+  },
+  {
+    "id": "ch11_q03",
+    "chapter": 11,
+    "difficulty": "hard",
+    "type": "mcq",
+    "question": "Huang tíz jellemzője szerint mi az ágensek társas intelligenciája?",
+    "options": [
+      "A) Közösségi médiában posztol",
+      "B) Képes emberi érzelmek megértésére, párbeszédre és más ágensekkel való együttműködésre",
+      "C) Egyszerre több felhasználóval kommunikál",
+      "D) Szociális hálózatokat elemez"
+    ],
+    "correct": "B",
+    "explanation": "Emberi érzelmek megértése, párbeszéd, és más ágensekkel való együttműködés."
+  },
+  {
+    "id": "ch11_q04",
+    "chapter": 11,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Milyen képességek szükségesek az ágensséghez?",
+    "options": [
+      "A) Csak gyors válaszadás",
+      "B) Memória, tervezőképesség, eszközök és önellenőrzés",
+      "C) Csak nagy nyelvi modell és internetkapcsolat",
+      "D) Kizárólag kódfuttatási képesség"
+    ],
+    "correct": "B",
+    "explanation": "Memória, tervezőképesség, eszközök és önellenőrzés."
+  },
+  {
+    "id": "ch11_q05",
+    "chapter": 11,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Az OpenAI keretrendszerében melyik szint a Szervezet (Organization)?",
+    "options": [
+      "A) 3. szint",
+      "B) 4. szint",
+      "C) 5. szint",
+      "D) Nincs ilyen szint"
+    ],
+    "correct": "C",
+    "explanation": "Az 5. szint, amely még nem létezik a gyakorlatban."
+  },
+  {
+    "id": "ch12_q01",
+    "chapter": 12,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi a CrewAI keretrendszer alapkoncepciója?",
+    "options": [
+      "A) Egyetlen nagy ágens",
+      "B) Szerepeket, feladatokat és csapatot definiálunk az ágenseknek",
+      "C) Vizuális felületen építünk munkafolyamatokat",
+      "D) Kizárólag adatelemzésre speciális"
+    ],
+    "correct": "B",
+    "explanation": "Szerepek, feladatok, csapat -- az ágensek automatikusan együttműködnek."
+  },
+  {
+    "id": "ch12_q02",
+    "chapter": 12,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Miért jó a CrewAI tudósoknak?",
+    "options": [
+      "A) Nem igényel programozást",
+      "B) A gondolkodásmódja megfelel a kutatócsoport működésének",
+      "C) Ingyenes és nyílt forráskódú",
+      "D) Kizárólag Pythonban működik"
+    ],
+    "correct": "B",
+    "explanation": "Van kereső, elemző, szintetizáló -- mindenki tudja a dolgát."
+  },
+  {
+    "id": "ch12_q03",
+    "chapter": 12,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi a ReACT ciklus szerepe?",
+    "options": [
+      "A) Felhasználói felület frissítés",
+      "B) Az ágens gondolkodási, cselekvési és megfigyelési ciklusa",
+      "C) Adatbázis szinkronizálás",
+      "D) Kód automatikus tesztelése"
+    ],
+    "correct": "B",
+    "explanation": "Reasoning, Acting, Observing -- ezt ismétli a cél eléréséig."
+  },
+  {
+    "id": "ch12_q04",
+    "chapter": 12,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Mi az MCP (Model Context Protocol)?",
+    "options": [
+      "A) Modellek tanítási protokollja",
+      "B) A kommunikációs protokoll a külső eszközök és adatforrások eléréséhez",
+      "C) Biztonságos adattárolás szabványa",
+      "D) Felhasználói jogosultságok kezelése"
+    ],
+    "correct": "B",
+    "explanation": "A protokoll, amelyen keresztül az ágensek elérik a külső eszközöket."
+  },
+  {
+    "id": "ch12_q05",
+    "chapter": 12,
+    "difficulty": "hard",
+    "type": "mcq",
+    "question": "A nyitójelenetben milyen feladatot automatizálna Dr. Tóth Gábor?",
+    "options": [
+      "A) Laboreszközök kalibrálását",
+      "B) A heti irodalomkutatást: cikkek szűrése, absztraktok átnézése, összefoglalás",
+      "C) Hallgatók vizsgáztatását",
+      "D) Pályázati pénzügyi beszámolót"
+    ],
+    "correct": "B",
+    "explanation": "Heti irodalomkutatás automatizálása AI ágenssel."
+  },
+  {
+    "id": "ch13_q01",
+    "chapter": 13,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi az 'utolsó mérföld' problémája a kutatói eszközfejlesztésben?",
+    "options": [
+      "A) A kód megírása a legnehezebb",
+      "B) A kód megvan, de a kollégák nem tudják telepíteni és használni",
+      "C) Az adatok összegyűjtése a leghosszabb",
+      "D) A publikálás a leglassúbb"
+    ],
+    "correct": "B",
+    "explanation": "A kód megvan, de az eljuttatás a kollégákhoz hiányzik."
+  },
+  {
+    "id": "ch13_q02",
+    "chapter": 13,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Melyik három technológiát mutatja be a fejezet?",
+    "options": [
+      "A) Django, Flask, FastAPI",
+      "B) Streamlit, Gradio, MCP-szerverek",
+      "C) React, Angular, Vue.js",
+      "D) TensorFlow, PyTorch, scikit-learn"
+    ],
+    "correct": "B",
+    "explanation": "Streamlit, Gradio, MCP-szerverek."
+  },
+  {
+    "id": "ch13_q03",
+    "chapter": 13,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Mire valók az MCP-szerverek?",
+    "options": [
+      "A) Weboldal hosztolásra",
+      "B) Az adataink és eszközeink AI-hozzáférhetővé tételére",
+      "C) Adatbázisok biztonsági mentésére",
+      "D) E-mailek automatikus küldésére"
+    ],
+    "correct": "B",
+    "explanation": "AI ágensek automatikusan meghívhatják őket szolgáltatásként."
+  },
+  {
+    "id": "ch13_q04",
+    "chapter": 13,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mikor érdemes saját eszközt építeni?",
+    "options": [
+      "A) Amikor egyszer kérik az eredményt",
+      "B) Amikor a feladat ismétlődik és többen használnák",
+      "C) Amikor csak egy ember használja",
+      "D) Amikor az elemzés egy perc alatt elvégezhető"
+    ],
+    "correct": "B",
+    "explanation": "Ha a feladat ismétlődik és többen használnák."
+  },
+  {
+    "id": "ch13_q05",
+    "chapter": 13,
+    "difficulty": "hard",
+    "type": "mcq",
+    "question": "Mi a Streamlit és a Gradio közös célja?",
+    "options": [
+      "A) Gépi tanulási modellek tanítása",
+      "B) Python szkriptek böngészőből elérhető webalkalmazássá alakítása",
+      "C) Adatbázisok kezelése",
+      "D) Tudományos cikkek generálása"
+    ],
+    "correct": "B",
+    "explanation": "Python szkriptek böngészőből elérhető webalkalmazássá alakítása."
+  },
+  {
+    "id": "ch14_q01",
+    "chapter": 14,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Kinek szól a 14. fejezet elsősorban?",
+    "options": [
+      "A) Egyéni kutatónak",
+      "B) Laborvezetőnek, aki csoportszinten tervezi az AI-infrastruktúrát",
+      "C) Egyetemi rektornak",
+      "D) Szoftver-mérnöknek"
+    ],
+    "correct": "B",
+    "explanation": "A kutatólabor szintjén mutatja meg az AI-infrastruktúra építését."
+  },
+  {
+    "id": "ch14_q02",
+    "chapter": 14,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Az AI labor architektúrájában hol van a CrewAI és a LangGraph?",
+    "options": [
+      "A) Interaktív réteg",
+      "B) Automatizálási réteg",
+      "C) Adatréteg",
+      "D) Prezentációs réteg"
+    ],
+    "correct": "B",
+    "explanation": "Az automatizálási rétegben (AI ágensek, többlépéses feladatok)."
+  },
+  {
+    "id": "ch14_q03",
+    "chapter": 14,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Hogyan jellemzi a fejezet a laboron belüli AI-adoptáció kihívását?",
+    "options": [
+      "A) Mindenki lelkes",
+      "B) A doktoranduszok már használják, a szenior szkeptikus, a technikus túllélkes -- az egyensúlyt kell megtalálni",
+      "C) Senki nem akarja használni",
+      "D) Csak informatikusok tudják használni"
+    ],
+    "correct": "B",
+    "explanation": "A laborvezetőnek kell megtalálnia az egyensúlyt."
+  },
+  {
+    "id": "ch14_q04",
+    "chapter": 14,
+    "difficulty": "hard",
+    "type": "mcq",
+    "question": "Mi a 2026-os tudományos AI stack célja?",
+    "options": [
+      "A) Egyetlen szoftver kiválasztása",
+      "B) A korábbi fejezetek eszközeinek összeillesztése működő egésszé",
+      "C) A legdrágább AI szoftverek beszerzése",
+      "D) AI technológia bemutatása a médiában"
+    ],
+    "correct": "B",
+    "explanation": "Hogyan illeszkednek egymáshoz a korábbi fejezetekben megismert eszközök."
+  },
+  {
+    "id": "ch14_q05",
+    "chapter": 14,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mit hasonlít a fejezet a GPS nélküli hajózáshoz?",
+    "options": [
+      "A) AI nélküli kutatást",
+      "B) Stratégia nélküli AI-adoptációt",
+      "C) Költségvetés nélküli labort",
+      "D) Publikálás nélküli kutatást"
+    ],
+    "correct": "B",
+    "explanation": "A stratégia nélküli AI-adoptáció olyan, mint a GPS nélküli hajózás."
+  },
+  {
+    "id": "ch15_q01",
+    "chapter": 15,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi a fő kihívása a felsőoktatásnak az AI korában?",
+    "options": [
+      "A) Az AI szoftverek túl drágák",
+      "B) Nehéz megkülönböztetni a hallgatók saját munkáját az AI-generált tartalmtól",
+      "C) A hallgatók nem hajlandók AI-t használni",
+      "D) Az egyetemi hálózatok nem bírják"
+    ],
+    "correct": "B",
+    "explanation": "Paradox módon a gyengébb dolgozat tűnik hitelesebbnek."
+  },
+  {
+    "id": "ch15_q02",
+    "chapter": 15,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Milyen megközelítést javasol a fejezet az AI integrációjára?",
+    "options": [
+      "A) Teljes tiltást",
+      "B) Átgondolt, stratégiai átalakulást",
+      "C) Csak informatikai karokon engedélyezni",
+      "D) Csak oktatóknak engedélyezni"
+    ],
+    "correct": "B",
+    "explanation": "Átgondolt, stratégiai átalakulás, nem védekezés vagy tiltás."
+  },
+  {
+    "id": "ch15_q03",
+    "chapter": 15,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Mit csinált a University of Florida?",
+    "options": [
+      "A) Egyetlen AI-tanszéket hozott létre",
+      "B) 70 millió dolláros NVIDIA-partnerséggel és 230+ kurzussal integrálta az AI-t mind a 16 karon",
+      "C) Tiltotta az AI-t",
+      "D) Csak kutatásra használta"
+    ],
+    "correct": "B",
+    "explanation": "70M$ NVIDIA-partnerség, 230+ kurzus, mind a 16 kar."
+  },
+  {
+    "id": "ch15_q04",
+    "chapter": 15,
+    "difficulty": "hard",
+    "type": "mcq",
+    "question": "Mi a HiPerGator AI?",
+    "options": [
+      "A) AI chatbot",
+      "B) NVIDIA DGX SuperPOD architektúrájú AI szuperszámítógép az UF-en",
+      "C) Oktatási platform",
+      "D) Nyílt forráskódú keretrendszer"
+    ],
+    "correct": "B",
+    "explanation": "2021-ben az USA felsőoktatásának leggyorsabb AI szuperszámítógépe volt."
+  },
+  {
+    "id": "ch15_q05",
+    "chapter": 15,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Miért fontos felkészíteni a hallgatókat az AI használatára?",
+    "options": [
+      "A) Jobb jegyeket kapnak",
+      "B) A munkaerőpiacon az AI nem opcionális, hanem alapelvárás",
+      "C) Csökkenti az oktatási költségeket",
+      "D) Az EU előírja"
+    ],
+    "correct": "B",
+    "explanation": "A munkaerőpiacon az AI alapélvárás."
+  },
+  {
+    "id": "ch16_q01",
+    "chapter": 16,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi a leggyakoribb tudományos integritási probléma az LLM-ek használatával?",
+    "options": [
+      "A) Túl lassúk",
+      "B) Hamis hivatkozások (hallucinated references) generálása",
+      "C) Túl drágák",
+      "D) Nem értik a tudományos szöveget"
+    ],
+    "correct": "B",
+    "explanation": "A hamis hivatkozások a legsúlyosabb és legelterjedtebb fenyegetés."
+  },
+  {
+    "id": "ch16_q02",
+    "chapter": 16,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Hogyan ismerhetők fel a hamis hivatkozások?",
+    "options": [
+      "A) Az LLM maga jelzi",
+      "B) DOI ellenőrzése, cím keresése adatbázisokban, szerző és folyóirat ellenőrzése",
+      "C) Rossz formátum jelzi",
+      "D) Elég az évszámot nézni"
+    ],
+    "correct": "B",
+    "explanation": "Négy lépés: DOI, cím, szerző, és a túl kerek állítások gyanúba vétele."
+  },
+  {
+    "id": "ch16_q03",
+    "chapter": 16,
+    "difficulty": "hard",
+    "type": "mcq",
+    "question": "Harry Frankfurt szerint mi a 'bullshit' lényege az LLM-ek kapcsán?",
+    "options": [
+      "A) Szándékos hazugság",
+      "B) Tartalom, amelyet létrehozója a valósággal szembeni teljes közömbösséggel állított elő",
+      "C) Értelmetlen szöveg",
+      "D) Javítható technikai hiba"
+    ],
+    "correct": "B",
+    "explanation": "Nem hazugság, hanem a valósággal szembeni közömbösség."
+  },
+  {
+    "id": "ch16_q04",
+    "chapter": 16,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Milyen képmanipulációs problémát említ a fejezet?",
+    "options": [
+      "A) Az AI nem tud képeket generálni",
+      "B) AI-generált western blot és gélkép manipulációk, amelyek megkülönböztethetelenek a valódiktól",
+      "C) A tudósok nem használnak képeket",
+      "D) A képeket csak a bírálók láthatják"
+    ],
+    "correct": "B",
+    "explanation": "Vizuálisan megkülönböztethetetlen western blot eredmények."
+  },
+  {
+    "id": "ch16_q05",
+    "chapter": 16,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi történt Steven Schwartz ügyvéddel?",
+    "options": [
+      "A) Sikeresen alkalmazott AI-t",
+      "B) A ChatGPT által generált hat nem létező precedensjoggal nyújtott be beadványt",
+      "C) Megalkotta az első AI-alapú jogi rendszert",
+      "D) Tiltakozott az AI ellen"
+    ],
+    "correct": "B",
+    "explanation": "Hat nem létező precedensjogot tartalmazó beadvány."
+  },
+  {
+    "id": "ch17_q01",
+    "chapter": 17,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi a precíziós mezőgazdaság ciklusának lépéssora?",
+    "options": [
+      "A) Vetés, aratás, értékesítés",
+      "B) Adatgyűjtés, adatfeldolgozás, elemzés, döntéshozál, végrehajtás, monitoring",
+      "C) Tervezés, finanszírozás, megvalósítás",
+      "D) Műholdkép, térkép, jelentés"
+    ],
+    "correct": "B",
+    "explanation": "Adatgyűjtés, feldolgozás, elemzés, döntés, végrehajtás, monitoring."
+  },
+  {
+    "id": "ch17_q02",
+    "chapter": 17,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Mi Gábor fő problémája a nyitójelenetben?",
+    "options": [
+      "A) Nincs elég adat",
+      "B) Nem az adathiány, hanem az adatbőség: nem tudja a heterogén adatokat összekapcsolni",
+      "C) A szenzorjai nem működnek",
+      "D) Nincs internet"
+    ],
+    "correct": "B",
+    "explanation": "Terabájtnyi adat különböző formátumokban, platformokon és koordináta-rendszerekben."
+  },
+  {
+    "id": "ch17_q03",
+    "chapter": 17,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Hogyan kapcsolódik a 17. fejezet a korábbi fejezetekhez?",
+    "options": [
+      "A) Teljesen független",
+      "B) A korábbi fejezetek AI-eszközeit alkalmazza a mezőgazdaságban",
+      "C) Csak a 2. fejezet chatbot-ismereteit használja",
+      "D) Kizárólag gépi tanulásra épül"
+    ],
+    "correct": "B",
+    "explanation": "Prompttervezés, pipeline-ok, RAG, digitális ikrek, ágensek -- mind alkalmazva."
+  },
+  {
+    "id": "ch17_q04",
+    "chapter": 17,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi az NDVI a fejezet kontextusában?",
+    "options": [
+      "A) AI keretrendszer",
+      "B) Műholdas vegetációs index a növényzet állapotának monitorozására",
+      "C) Talajmintavételi módszer",
+      "D) Gazdasági mutatószám"
+    ],
+    "correct": "B",
+    "explanation": "NDVI: Normalized Difference Vegetation Index."
+  },
+  {
+    "id": "ch17_q05",
+    "chapter": 17,
+    "difficulty": "hard",
+    "type": "mcq",
+    "question": "Mi az AI legfontosabb hozzájárulása a precíziós mezőgazdaságban?",
+    "options": [
+      "A) Felváltja a gazdálkodókat",
+      "B) Belép a ciklus minden pontjába: adatgyűjtéstől a döntéshozátalig",
+      "C) Kizárólag műholdas adatfeldolgozásban hasznos",
+      "D) Csak öntözést automatizál"
+    ],
+    "correct": "B",
+    "explanation": "Az AI belép a ciklus minden egyes pontjába."
+  },
+  {
+    "id": "ch18_q01",
+    "chapter": 18,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi a hidroinformatika?",
+    "options": [
+      "A) Egyszerű vízügy plusz informatika",
+      "B) A víztudomány, a térinformatika, a számítási modellezés és az adattudomány metszete",
+      "C) Kizárólag árvízi előrejelzés",
+      "D) Csatornarendszerek tervezése"
+    ],
+    "correct": "B",
+    "explanation": "Víztudomány, térinformatika, számítási modellezés és adattudomány metszete."
+  },
+  {
+    "id": "ch18_q02",
+    "chapter": 18,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Miért alkalmas a víztudomány különösen az AI-ra?",
+    "options": [
+      "A) Egyszerű adatok",
+      "B) Nagy mennyiségű, heterogén, térbeli-időbeli adat feldolgozását igénylik a feladatok",
+      "C) Nem igényel matematikát",
+      "D) Kevés adat áll rendelkezésre"
+    ],
+    "correct": "B",
+    "explanation": "Eredendően térbeli, idősorjellegű, adatigényes feladatok."
+  },
+  {
+    "id": "ch18_q03",
+    "chapter": 18,
+    "difficulty": "hard",
+    "type": "mcq",
+    "question": "Hány alapkérdésre kell válaszolni az árhullám kapcsán?",
+    "options": [
+      "A) Kettő: vízszint és érkezési idő",
+      "B) Három: árhullám Szolnoknál, talajvíz reakciója, Hortobágy vízmérlege",
+      "C) Négy: plusz ivóvíz minősége",
+      "D) Öt: plusz ökológiai hatás és gátak állapota"
+    ],
+    "correct": "B",
+    "explanation": "(1) Vízszint Szolnoknál, (2) talajvíz reakció, (3) Hortobágy vízmérlege."
+  },
+  {
+    "id": "ch18_q04",
+    "chapter": 18,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Hogyan változtatja meg az AI a hidroinformatikát?",
+    "options": [
+      "A) Egyszerűbbé teszi a fizikát",
+      "B) Nem a fizika lett egyszerűbb, hanem az AI teszi lehetővé az automatizálást és kódgenerálást",
+      "C) Feleslegessé teszi a hidrológusokat",
+      "D) Csak a vizualizációt javítja"
+    ],
+    "correct": "B",
+    "explanation": "A fizikai egyenletek ma is bonyolultak, de az AI segít az automatizálásban."
+  },
+  {
+    "id": "ch18_q05",
+    "chapter": 18,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Hány pilléren épül a hidroinformatika?",
+    "options": [
+      "A) Három",
+      "B) Öt: hidrológia, térinformatika, számítási modellezés, adattudomány, szenzorhálózatok",
+      "C) Kettő",
+      "D) Négy"
+    ],
+    "correct": "B",
+    "explanation": "Öt pillér."
+  },
+  {
+    "id": "ch19_q01",
+    "chapter": 19,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Mi a térinformatika (geoinformatika) fő célja?",
+    "options": [
+      "A) Kizárólag térképek nyomtatása",
+      "B) Földi térben elhelyezkedő jelenségek digitális rögzítése, modellezése, elemzése és kommunikációja",
+      "C) GPS-eszközök gyártása",
+      "D) Műholdak üzemeltetése"
+    ],
+    "correct": "B",
+    "explanation": "Digitális rögzítés, modellezés, elemzés és kommunikáció."
+  },
+  {
+    "id": "ch19_q02",
+    "chapter": 19,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "A modern térinformatika három oszlopa:",
+    "options": [
+      "A) Szoftver, hardver, felhasználó",
+      "B) Helyzeti komponens (hol), attribútum komponens (mi), időbeli komponens (mikor)",
+      "C) Raszter, vektor, adatbázis",
+      "D) Műhold, drón, szenzor"
+    ],
+    "correct": "B",
+    "explanation": "Hol, mi, mikor."
+  },
+  {
+    "id": "ch19_q03",
+    "chapter": 19,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Mi az autonóm GIS?",
+    "options": [
+      "A) Licenc nélküli GIS szoftver",
+      "B) Olyan rendszer, amelyben az AI nem passzív eszköze, hanem aktív partnere a térinformatikusnak",
+      "C) Automatikus térképnyomtató",
+      "D) GPS nélküli navigáció"
+    ],
+    "correct": "B",
+    "explanation": "Az AI aktív partnere a térinformatikusnak."
+  },
+  {
+    "id": "ch19_q04",
+    "chapter": 19,
+    "difficulty": "hard",
+    "type": "mcq",
+    "question": "Melyik NEM tartozik a négy konvergáló trend közé?",
+    "options": [
+      "A) Adatrobbanás (Sentinel műholdak napi 12+ TB)",
+      "B) Számítási kapacitás (felhőalapú platformok)",
+      "C) A hagyományos térképészet reneszánsza",
+      "D) Nagy nyelvi modellek, amelyek GIS-kódot generálnak"
+    ],
+    "correct": "C",
+    "explanation": "A négy trend: adatrobbanás, számítási kapacitás, AI modellek érettsége, LLM-ek."
+  },
+  {
+    "id": "ch19_q05",
+    "chapter": 19,
+    "difficulty": "easy",
+    "type": "mcq",
+    "question": "Hogyan változott meg a térinformatikai munkafolyamat 2026-ra?",
+    "options": [
+      "A) Semmit nem változott",
+      "B) A korábban hónapokig tartó munkát egy AI ágens egyetlen délután alatt elvégzi természetes nyelvű utasítás alapján",
+      "C) A térinformatikusok feleslegessé váltak",
+      "D) Kizárólag műholdas adatokkal dolgoznak"
+    ],
+    "correct": "B",
+    "explanation": "Egyetlen délután, természetes nyelvű utasítással."
+  },
+  {
+    "id": "ch01_tf01",
+    "type": "true_false",
+    "chapter": 1,
+    "difficulty": "easy",
+    "question": "A ChatGPT 2022 novemberi megjelenese utan 100 millio felhasznalot ert el mindossze ket honap alatt.",
+    "correct": true,
+    "explanation": "Ez a leggyorsabb technologiai adopcio az emberiseg torteneteben."
+  },
+  {
+    "id": "ch01_tf02",
+    "type": "true_false",
+    "chapter": 1,
+    "difficulty": "easy",
+    "question": "Az LLM-ek mukodesenek alapja a kovetkezo token elorejelzese (next-token prediction).",
+    "correct": true,
+    "explanation": "A modell mindig azt a tokent josolja meg, amelyik a legnagyobb valoszinuseggel kovetkezik az adott szovegkornyezetben."
+  },
+  {
+    "id": "ch01_tf03",
+    "type": "true_false",
+    "chapter": 1,
+    "difficulty": "medium",
+    "question": "Az AI kizarolag az informatikusok szamara relevans technologia.",
+    "correct": false,
+    "explanation": "Az AI altalanos celu technologia (General Purpose Technology), amely az egesz gazdasagot es tarsadalmat alakitja at."
+  },
+  {
+    "id": "ch01_fb01",
+    "type": "fill_blank",
+    "chapter": 1,
+    "difficulty": "medium",
+    "question": "Gentemann es munkatarsai szerint az atlagos kutato munkaidjenek mintegy _____ szazalekat adatkezelessel tolti.",
+    "correct": "80",
+    "alternatives": [
+      "80%",
+      "nyolcvan"
+    ],
+    "explanation": "A 2021-es tanulmany szerint a kutatok munkaidejuk 80%-at adatkezelessel toltik."
+  },
+  {
+    "id": "ch01_fb02",
+    "type": "fill_blank",
+    "chapter": 1,
+    "difficulty": "medium",
+    "question": "Az AI-t a kozgazdaszok _____ technologianak (General Purpose Technology) nevezik.",
+    "correct": "altalanos celu",
+    "alternatives": [
+      "altalanos celu",
+      "általános célú"
+    ],
+    "explanation": "Ebbe a kategoriaba tartozik a gozgep, az elektromossag es a szamitogep is."
+  },
+  {
+    "id": "ch01_es01",
+    "type": "essay",
+    "chapter": 1,
+    "difficulty": "hard",
+    "question": "Fejtsd ki, hogyan alkalmazhato Mollick harom almatlan ejszakajanak tanulsaga a sajat kutatasi teruleted kontextusaban! Miert tekintheeto az AI altalanos celu technologianak, es milyen konkret hatasai lehetnek a tudomanyos munkara?",
+    "rubric": "A valasz tartalmazza az AI mint altalanos celu technologia fogalmat, a harom almatlan ejszaka kontextusat (ChatGPT megjelenese, GPT-4, az AI mint GPT felismerese), es konkret szakteruleti peldakat. Ertekelesi szempontok: teljesség, relevancia, konkretság (peldak).",
+    "max_score": 100
+  },
+  {
+    "id": "ch02_tf01",
+    "type": "true_false",
+    "chapter": 2,
+    "difficulty": "easy",
+    "question": "A token a legkisebb egyseg, amelyre a nyelvi modell a szoveget felbontja.",
+    "correct": true,
+    "explanation": "Egy token lehet egy teljes szo, szotoredek, irasjel vagy akar szokoz."
+  },
+  {
+    "id": "ch02_tf02",
+    "type": "true_false",
+    "chapter": 2,
+    "difficulty": "medium",
+    "question": "A magyar nyelv kevesebb tokent igenyel ugyanannyi tartalom kifejezesehez, mint az angol.",
+    "correct": false,
+    "explanation": "A magyar nyelv agglutinalo szerkezete miatt egy-egy szo tobb tokent igenyel."
+  },
+  {
+    "id": "ch02_tf03",
+    "type": "true_false",
+    "chapter": 2,
+    "difficulty": "easy",
+    "question": "A tarsalgasi AI-t a fejezet egy intellektualisan stimulalo, de megbizhatatlan gyakornokhoz hasonlitja.",
+    "correct": true,
+    "explanation": "Az AI gyors es kreativ, de rendszeresen kitalal dolgokat, amiket soha nem ellenorzott."
+  },
+  {
+    "id": "ch02_fb01",
+    "type": "fill_blank",
+    "chapter": 2,
+    "difficulty": "medium",
+    "question": "A 200K kontextusablak 200 000 _____ jelent, ami nagyjából 150 000 angol szo.",
+    "correct": "tokent",
+    "alternatives": [
+      "token",
+      "tokent"
+    ],
+    "explanation": "A modellek tokenben szamolnak, nem szavakban."
+  },
+  {
+    "id": "ch02_fb02",
+    "type": "fill_blank",
+    "chapter": 2,
+    "difficulty": "medium",
+    "question": "Az LLM-ek mukodesi alapelve a kovetkezo _____ megjoslasa.",
+    "correct": "token",
+    "alternatives": [
+      "token",
+      "szó"
+    ],
+    "explanation": "A next-token prediction az LLM-ek alapveto mukodesi elve."
+  },
+  {
+    "id": "ch02_es01",
+    "type": "essay",
+    "chapter": 2,
+    "difficulty": "hard",
+    "question": "Magyarazd el, miert fontos megerteni az LLM-ek mukodesi elvet (next-token prediction) ahhoz, hogy hatekonyan hasznald oket kutatasi celra! Milyen korlatai vannak ennek a mukodesnek?",
+    "rubric": "A valasz tartalmazza a next-token prediction fogalmat, a megbizhatosagi korlatokat (hallucinaciok, bullshit fogalma), es gyakorlati kovetkezmenyeket a kutatoi hasznalatara. Ertekelesi szempontok: fogalmi tisztasag, korlatok megertese, gyakorlati alkalmazas.",
+    "max_score": 100
+  },
+  {
+    "id": "ch03_tf01",
+    "type": "true_false",
+    "chapter": 3,
+    "difficulty": "easy",
+    "question": "Naponta tobb mint 4000 uj orvos-biologiai cikk jelenik meg.",
+    "correct": true,
+    "explanation": "A tudomanyos publikaciok mennyisege meghaladja az emberi feldolgozasi kapacitast."
+  },
+  {
+    "id": "ch03_tf02",
+    "type": "true_false",
+    "chapter": 3,
+    "difficulty": "medium",
+    "question": "Az AI teljesen kivalhatja a professzionalis lektoralast a tudomanyos publikaciokban.",
+    "correct": false,
+    "explanation": "Az AI dramaian csokkenti a nyelvi egyenlotlenseget, de a kutato sajat tudomanyos hangjat meg kell orizznie."
+  },
+  {
+    "id": "ch03_tf03",
+    "type": "true_false",
+    "chapter": 3,
+    "difficulty": "easy",
+    "question": "A strukturalt osszefoglalas technika sokkal informativabb eredmenyt ad, mint az egyszeru 'foglald ossze' keres.",
+    "correct": true,
+    "explanation": "A promptban megadott struktura az AI-t a relevans dimenziok menten dolgoztatja."
+  },
+  {
+    "id": "ch03_fb01",
+    "type": "fill_blank",
+    "chapter": 3,
+    "difficulty": "medium",
+    "question": "A _____ promptolas technika lenyege, hogy altalánostól a specifikus fele haladva egyre szukitjuk a kerdeseinket.",
+    "correct": "progressziv",
+    "alternatives": [
+      "progresszív",
+      "progressziv"
+    ],
+    "explanation": "Altalanos kerdessel kezdunk, majd egyre specifikusabb iranyba szukitjuk."
+  },
+  {
+    "id": "ch03_fb02",
+    "type": "fill_blank",
+    "chapter": 3,
+    "difficulty": "medium",
+    "question": "A COVID-19 jarvany alatt mintegy _____ tanulmany jelent meg egyetlen temarol.",
+    "correct": "200 000",
+    "alternatives": [
+      "200000",
+      "ketszazezer",
+      "200.000"
+    ],
+    "explanation": "Ez jol illusztralja az informaciaaradatot."
+  },
+  {
+    "id": "ch03_es01",
+    "type": "essay",
+    "chapter": 3,
+    "difficulty": "hard",
+    "question": "Hogyan hasznalnad az AI-t egy angol nyelvu tudomanyos cikk megirasanak teljes folyamataban — az irodalomattekintesetol a kezirat megirasán at a biraloi valaszokig? Milyen etikai szempontokat kell figyelembe venni?",
+    "rubric": "A valasz tartalmazza az irodalomattekintes AI-val torteno tamogatasat, a keziratiras folyamatat, a biraloi valaszokat, es az etikai szempontokat. Ertekelesi szempontok: teljesség, etikai tudatossag, gyakorlati megvalosithatosag.",
+    "max_score": 100
+  },
+  {
+    "id": "ch04_tf01",
+    "type": "true_false",
+    "chapter": 4,
+    "difficulty": "easy",
+    "question": "A no-code adatelemzesben a kutato termeszetes nyelven ad utasitast az AI-nak.",
+    "correct": true,
+    "explanation": "Feltoltod a fajlt egy AI chatbotnak, es termeszetes nyelven kersz elemzest."
+  },
+  {
+    "id": "ch04_tf02",
+    "type": "true_false",
+    "chapter": 4,
+    "difficulty": "medium",
+    "question": "A no-code adatelemzes azt jelenti, hogy a kutatonak nem kell statisztikai gondolkodasra kepesnek lennie.",
+    "correct": false,
+    "explanation": "Az AI eltavolitja a technikai akadalyokat, de a kutatasi kerdes es az ertelmezes a kutato feladata marad."
+  },
+  {
+    "id": "ch04_tf03",
+    "type": "true_false",
+    "chapter": 4,
+    "difficulty": "easy",
+    "question": "A CSV a legegyszerubb es legbiztonsagosabb fajlformatum AI-alapu adatelemzeshez.",
+    "correct": true,
+    "explanation": "A fejezet a CSV formatumot ajanlja."
+  },
+  {
+    "id": "ch04_fb01",
+    "type": "fill_blank",
+    "chapter": 4,
+    "difficulty": "medium",
+    "question": "Az adatelemzesben a kutato donti el a MIT-et es a MIERT-et, az AI pedig a _____ oldja meg.",
+    "correct": "HOGYAN-t",
+    "alternatives": [
+      "hogyan-t",
+      "HOGYAN",
+      "hogyant"
+    ],
+    "explanation": "A szereposztas: a kutato donti el, mit es miert kell elemezni, az AI a hogyant oldja meg."
+  },
+  {
+    "id": "ch04_fb02",
+    "type": "fill_blank",
+    "chapter": 4,
+    "difficulty": "medium",
+    "question": "Betegadatok feltoltese elott a GDPR-nak megfeleloen _____ kell az adatokat.",
+    "correct": "anonimizalni",
+    "alternatives": [
+      "anonimizálni",
+      "anonim"
+    ],
+    "explanation": "A szemelyes adatokat a GDPR eloirasai szerint anonimizalni kell."
+  },
+  {
+    "id": "ch04_es01",
+    "type": "essay",
+    "chapter": 4,
+    "difficulty": "hard",
+    "question": "Egy 10 000 soros klinikai adathalmazt kaptal CSV formatumban. Ird le lepesrol lepesre, hogyan vegeznel no-code adatelemzest AI segitsegevel! Milyen adatvedelmi szempontokra kell figyelni?",
+    "rubric": "A valasz tartalmazza az adatelokeszitést (anonimizalas), a feloltes folyamatat, a termeszetes nyelvu elemzesi utasitasokat, es az adatvedelmi szempontokat (GDPR). Ertekelesi szempontok: lepesek logikussaga, adatvedelmi tudatossag, AI-hasznalat helyes modja.",
+    "max_score": 100
+  },
+  {
+    "id": "ch05_tf01",
+    "type": "true_false",
+    "chapter": 5,
+    "difficulty": "easy",
+    "question": "Az AI kodolasi asszisztensek hasznalatával a kutato a rendezo, az AI pedig a kodiro.",
+    "correct": true,
+    "explanation": "A kutato megmondja, mit csinaljon a program, az AI megirja, a kutato futtatja."
+  },
+  {
+    "id": "ch05_tf02",
+    "type": "true_false",
+    "chapter": 5,
+    "difficulty": "medium",
+    "question": "Az AI kodolasi asszisztensek hasznalatahoz elozetesen meg kell tanulni programozni.",
+    "correct": false,
+    "explanation": "A paradigmavaltas lenyege: szintaxis helyett szandek — termeszetes nyelven fogalmazzuk meg, mit akarunk."
+  },
+  {
+    "id": "ch05_tf03",
+    "type": "true_false",
+    "chapter": 5,
+    "difficulty": "easy",
+    "question": "Az AI kodolasi asszisztensek kulonosen jol kezelik az ismetlodo, szabalyos, gepi munkat igenylő feladatokat.",
+    "correct": true,
+    "explanation": "Peldaul 500 CSV-fajl feldolgozasa vagy 2000 fajlnevbol adatok kinyerese."
+  },
+  {
+    "id": "ch05_fb01",
+    "type": "fill_blank",
+    "chapter": 5,
+    "difficulty": "medium",
+    "question": "A paradigmavaltas lenyege a kodolasban: _____ helyett szandek.",
+    "correct": "szintaxis",
+    "alternatives": [
+      "szintaxis",
+      "syntax"
+    ],
+    "explanation": "A kutato termeszetes nyelven fogalmazza meg, mit akar elereni."
+  },
+  {
+    "id": "ch05_fb02",
+    "type": "fill_blank",
+    "chapter": 5,
+    "difficulty": "medium",
+    "question": "Az AI kodolasi asszisztens iterativ folyamatot kovet: a kutato megmondja, mit akar, az AI megirja, a kutato futtatja es _____.",
+    "correct": "visszajelez",
+    "alternatives": [
+      "visszajelzest ad",
+      "visszajelez",
+      "javittat"
+    ],
+    "explanation": "Ha az eredmeny nem jo, a kutato visszajelez, es az AI modositja a kodot."
+  },
+  {
+    "id": "ch05_es01",
+    "type": "essay",
+    "chapter": 5,
+    "difficulty": "hard",
+    "question": "Kepzeld el, hogy 500 kulonbozo formatumu CSV-fajlt kell egysegisitened! Ird le, hogyan hasznalnad az AI kodolasi asszisztenst erre a feladatra, milyen lepesekben haladnal, es milyen buktatokra figyelnel!",
+    "rubric": "A valasz tartalmazza a feladat termeszetes nyelvu leirasat az AI-nak, az iterativ fejlesztes lepeseit, a tipikus problemak kezeleset, es a minoseg-ellenorzest. Ertekelesi szempontok: gyakorlatiassag, iterativ szemlelet, hibakez les.",
+    "max_score": 100
+  },
+  {
+    "id": "ch06_tf01",
+    "type": "true_false",
+    "chapter": 6,
+    "difficulty": "easy",
+    "question": "A Darcy-torveny irja le a vizmozgast porozus kozegben.",
+    "correct": true,
+    "explanation": "A Darcy-torveny irja le a vizaramlast porozus kozegben."
+  },
+  {
+    "id": "ch06_tf02",
+    "type": "true_false",
+    "chapter": 6,
+    "difficulty": "medium",
+    "question": "Az AI kepes az adatokbol uj matematikai osszefuggeseket felfedezni szimbolikus regresszio segitsegevel.",
+    "correct": true,
+    "explanation": "Az egyenletfelfedezes (symbolic regression) soran az AI az adatmintazatok mogotti matematikai torvenyszeru-segeket keresi."
+  },
+  {
+    "id": "ch06_tf03",
+    "type": "true_false",
+    "chapter": 6,
+    "difficulty": "easy",
+    "question": "A SymPy egy gepi tanulasi keretrendszer.",
+    "correct": false,
+    "explanation": "A SymPy egy szimbolikus szamitasok vegzesere szolgalo Python konyvtar."
+  },
+  {
+    "id": "ch06_fb01",
+    "type": "fill_blank",
+    "chapter": 6,
+    "difficulty": "medium",
+    "question": "A modellalkotasi folyamat harom lepese: valtozok azonositasa, torvenyek/osszefuggesek, es _____.",
+    "correct": "feltetelrendszer",
+    "alternatives": [
+      "kezdeti es peremfeltetelek",
+      "feltetelek",
+      "peremfeltetelek"
+    ],
+    "explanation": "A kezdeti es peremfeltetelek meghatarozasa a harmadik lepes."
+  },
+  {
+    "id": "ch06_fb02",
+    "type": "fill_blank",
+    "chapter": 6,
+    "difficulty": "medium",
+    "question": "Az AI a matematikai modellezeesben _____ szerepet tolt be, amely a kutatasi kerdest kodda alakitja.",
+    "correct": "matematikai fordito",
+    "alternatives": [
+      "fordito",
+      "matematikai forditoi"
+    ],
+    "explanation": "Az AI matematikai forditokent mukodik."
+  },
+  {
+    "id": "ch06_es01",
+    "type": "essay",
+    "chapter": 6,
+    "difficulty": "hard",
+    "question": "Valassz egy kutatasi kerdest a sajat szakteruletedrol, es mutasd be, hogyan alakitanad azt matematikai modelle AI segitsegevel! Milyen fizikai torvenyeket hasznalnal, es hogyan kalibralnad a modellt?",
+    "rubric": "A valasz tartalmaz egy konkret kutatasi kerdest, a modellalkotas harom lepeset, az AI szerepet a kod generalasaban, es a kalibralas modjat. Ertekelesi szempontok: tudomanyos relevancia, modellalkotasi logika, AI-hasznalat.",
+    "max_score": 100
+  },
+  {
+    "id": "ch07_tf01",
+    "type": "true_false",
+    "chapter": 7,
+    "difficulty": "easy",
+    "question": "A pipeline (adatfeldolgozasi csovezetek) lepesek sorozata, amelyben az egyik lepes kimenete a kovetkezo lepes bemenete.",
+    "correct": true,
+    "explanation": "Ahogy a viz atfolyik egy fizikai csovezeteken, ugy aramlik az adat a beviteltol a vegtermekig."
+  },
+  {
+    "id": "ch07_tf02",
+    "type": "true_false",
+    "chapter": 7,
+    "difficulty": "medium",
+    "question": "Anna napi 15 lepeeses manualis munkafolyamata teljesen reprodukalhato, mert mindig ugyanazokat a lepeseket vegzi.",
+    "correct": false,
+    "explanation": "Ha ketten csinálnák, valoszinuleg maskent toltenek ki a hianyzo ertekeket."
+  },
+  {
+    "id": "ch07_tf03",
+    "type": "true_false",
+    "chapter": 7,
+    "difficulty": "easy",
+    "question": "Minden tudomanyos adat-pipeline ot alapveto szakaszra bonthato: bevitel, tisztitas, transzformacio, elemzes, kimenet.",
+    "correct": true,
+    "explanation": "Ez az ot szakasz a tudomanyos pipeline altalanos strukturaja."
+  },
+  {
+    "id": "ch07_fb01",
+    "type": "fill_blank",
+    "chapter": 7,
+    "difficulty": "medium",
+    "question": "A tudomanyos pipeline celja, hogy a nyers meresbol _____ eredmenyt allitson elo.",
+    "correct": "reprodukalhato",
+    "alternatives": [
+      "reprodukálható",
+      "megismételhető",
+      "reprodukalható"
+    ],
+    "explanation": "A pipeline minden futtatasnal ugyanazt az eredmenyt adja."
+  },
+  {
+    "id": "ch07_fb02",
+    "type": "fill_blank",
+    "chapter": 7,
+    "difficulty": "medium",
+    "question": "Anna manualis munkafolyamata minden reggel _____ percet vesz igenybe.",
+    "correct": "45",
+    "alternatives": [
+      "45",
+      "negyvenot"
+    ],
+    "explanation": "Ez az ido alkoto gondolatok nelkul telik el."
+  },
+  {
+    "id": "ch07_es01",
+    "type": "essay",
+    "chapter": 7,
+    "difficulty": "hard",
+    "question": "Vegyel egy olyan ismetlodo adatfeldolgozasi feladatot a sajat munkadbol, amelyet jelenleg kezzel vegzel! Tervezd meg egy automatizalt pipeline-t, amely kivaltja ezt a munkat! Milyen lepesekbol allna, es hogyan biztositanad a reprodukalhatosagot?",
+    "rubric": "A valasz tartalmaz egy konkret feladatot, a pipeline lepeseit, az automatizalas elonyeit, es a reprodukalhatosag biztositekait. Ertekelesi szempontok: gyakorlatiassag, pipeline-logika, reprodukalhatosag.",
+    "max_score": 100
+  },
+  {
+    "id": "ch08_tf01",
+    "type": "true_false",
+    "chapter": 8,
+    "difficulty": "easy",
+    "question": "A vizualis programozasban a folyamatabra maga a program.",
+    "correct": true,
+    "explanation": "Dobozokat huzunk a vaszonra, osszekotjuk, es a rendszer vegrehajtja pontosan azt, amit rajzoltunk."
+  },
+  {
+    "id": "ch08_tf02",
+    "type": "true_false",
+    "chapter": 8,
+    "difficulty": "medium",
+    "question": "A vizualis programozas a hagyomanyos kodolas egyszerusitett valtozata, ezert kevesebbet tud.",
+    "correct": false,
+    "explanation": "A vizualis programozas nem egyszerusitett valtozat, hanem egy masik paradigma."
+  },
+  {
+    "id": "ch08_tf03",
+    "type": "true_false",
+    "chapter": 8,
+    "difficulty": "easy",
+    "question": "A vizualis workflow maga a dokumentacio, mert a rajz elmondja, mit csinaltunk.",
+    "correct": true,
+    "explanation": "Egy even belul visszanezve nem kell visszafejteni a kodot."
+  },
+  {
+    "id": "ch08_fb01",
+    "type": "fill_blank",
+    "chapter": 8,
+    "difficulty": "medium",
+    "question": "A fejezet harom vizualis programozasi eszkozt mutat be: n8n, _____ es LangFlow.",
+    "correct": "KNIME",
+    "alternatives": [
+      "KNIME",
+      "knime"
+    ],
+    "explanation": "Az n8n, KNIME es LangFlow a fejezet harom fo vizualis eszkoze."
+  },
+  {
+    "id": "ch08_fb02",
+    "type": "fill_blank",
+    "chapter": 8,
+    "difficulty": "medium",
+    "question": "A vizualis programozasban a munkafolyamat epitoelemeit _____-oknak (node) nevezzuk.",
+    "correct": "doboz",
+    "alternatives": [
+      "csomopont",
+      "node",
+      "doboz",
+      "blokk"
+    ],
+    "explanation": "A vizualis programozasban dobozokat huzunk a vaszonra."
+  },
+  {
+    "id": "ch08_es01",
+    "type": "essay",
+    "chapter": 8,
+    "difficulty": "hard",
+    "question": "Hasonlitsd ossze a vizualis programozast (pl. KNIME) a hagyomanyos kodolassal (pl. Python)! Milyen kutatasi feladatokhoz alkalmasabb az egyik, es melyekhez a masik? Milyen szempontokat vennel figyelembe a valasztasnal?",
+    "rubric": "A valasz tartalmazza mindket megkozelites elonyeit es hatranyait, konkret feladattipusokat, es a valasztas szempontjait. Ertekelesi szempontok: kiegyensulyozott osszehasonlitas, gyakorlati peldak, dontesi kriteriumok.",
+    "max_score": 100
+  },
+  {
+    "id": "ch09_tf01",
+    "type": "true_false",
+    "chapter": 9,
+    "difficulty": "easy",
+    "question": "A RAG (Retrieval-Augmented Generation) soran az LLM eloszor visszakeres relevans szovegreszleteket egy kulso tudasbazisbol, majd azok kontextusaban valaszol.",
+    "correct": true,
+    "explanation": "A RAG lenyege, hogy az LLM a sajat tudasbazisunkbol meritöve ad valaszt."
+  },
+  {
+    "id": "ch09_tf02",
+    "type": "true_false",
+    "chapter": 9,
+    "difficulty": "medium",
+    "question": "A fine-tuning es a RAG lenyegeben ugyanazt a celt szolgalja, es nincs koztuk erdemi kulonbseg.",
+    "correct": false,
+    "explanation": "A RAG kulso tudasbazisbol keres, a fine-tuning magat a modellt valtoztatja meg."
+  },
+  {
+    "id": "ch09_tf03",
+    "type": "true_false",
+    "chapter": 9,
+    "difficulty": "easy",
+    "question": "A fejezet szerint az esetek 80%-aban a RAG elegendo, es nem szukseges fine-tuning.",
+    "correct": true,
+    "explanation": "A gyakorlati szabaly: kezdd RAG-gal, az esetek 80%-aban ez eleg."
+  },
+  {
+    "id": "ch09_fb01",
+    "type": "fill_blank",
+    "chapter": 9,
+    "difficulty": "medium",
+    "question": "Az LLM-ek harom alapveto korlatja: tudashataar, nem erti a specifikus reszteruletet, es nem ismeri a kutatocsoport _____.",
+    "correct": "terminologiajat",
+    "alternatives": [
+      "terminológiáját",
+      "terminologiajat",
+      "zsargonjat"
+    ],
+    "explanation": "A belso roviditesek es modszertani zsargon ismeretlenek az LLM szamara."
+  },
+  {
+    "id": "ch09_fb02",
+    "type": "fill_blank",
+    "chapter": 9,
+    "difficulty": "medium",
+    "question": "A RAG elonye a transzparencia szempontjabol, hogy pontosan lathato, milyen _____ generalta a valaszt.",
+    "correct": "forrasbol",
+    "alternatives": [
+      "forrás",
+      "forrásból",
+      "adatbol"
+    ],
+    "explanation": "A RAG-nal pontosan nyomon kovetheto, mely dokumentumokra epult a valasz."
+  },
+  {
+    "id": "ch09_es01",
+    "type": "essay",
+    "chapter": 9,
+    "difficulty": "hard",
+    "question": "Tervezz egy RAG-rendszert a sajat kutatocsoportod szamara! Milyen dokumentumokat toltenel fel, hogyan szervezned a tudasbazist, es hogyan biztositanad, hogy az AI a relevans forrasokra hivatkozzon?",
+    "rubric": "A valasz tartalmaz konkret dokumentumtipusokat, a tudasbazis szervezesi elveit, a relevancia-biztositas modjat, es a rendszer korlatait. Ertekelesi szempontok: gyakorlatiassag, technikai megalapozottsag, forras-transzparencia.",
+    "max_score": 100
+  },
+  {
+    "id": "ch10_tf01",
+    "type": "true_false",
+    "chapter": 10,
+    "difficulty": "easy",
+    "question": "A digitalis iker (digital twin) ketiranyuu adataramlas reven szinkronizalodik a fizikai parjaval.",
+    "correct": true,
+    "explanation": "A ketiranyuu adataramlas es visszacsatolas teszi ikerré."
+  },
+  {
+    "id": "ch10_tf02",
+    "type": "true_false",
+    "chapter": 10,
+    "difficulty": "medium",
+    "question": "A digitalis arnyék (digital shadow) ugyanolyan ketiranyú adataramlassal rendelkezik, mint a digitalis iker.",
+    "correct": false,
+    "explanation": "A digitalis arnyék egyiranyú: fizikai rendszerbol a virtualisba, visszacsatolas nelkul."
+  },
+  {
+    "id": "ch10_tf03",
+    "type": "true_false",
+    "chapter": 10,
+    "difficulty": "easy",
+    "question": "A 'digital twin' kifejezest John Vickers, a NASA mernoke alkotta meg 2010-ben.",
+    "correct": true,
+    "explanation": "A kifejezes egy technologiai utemtervben jelent meg eloszor 2010-ben."
+  },
+  {
+    "id": "ch10_fb01",
+    "type": "fill_blank",
+    "chapter": 10,
+    "difficulty": "medium",
+    "question": "A modern digitalis iker fogalmat _____ fogalmazta meg eloszor 2002-ben a Michigani Egyetemen.",
+    "correct": "Michael Grieves",
+    "alternatives": [
+      "Grieves",
+      "Michael Grieves"
+    ],
+    "explanation": "A termekeletciklus-menedzsment kontextusaban definiaalta a fogalmat."
+  },
+  {
+    "id": "ch10_fb02",
+    "type": "fill_blank",
+    "chapter": 10,
+    "difficulty": "medium",
+    "question": "Az Apollo _____ kuldetes soran a foldi masolatokon teszteltek a megoldasokat, ami eleteket mentett.",
+    "correct": "13",
+    "alternatives": [
+      "13",
+      "tizenharom"
+    ],
+    "explanation": "A Houston-ban levo azonos rendszereken teszteltek a megoldasokat."
+  },
+  {
+    "id": "ch10_es01",
+    "type": "essay",
+    "chapter": 10,
+    "difficulty": "hard",
+    "question": "Tervezz egy digitalis iker rendszert egy altalad valasztott fizikai rendszerhez (pl. egy epulet energiarendszere, egy mezogazdasagi tabla, egy vizgyujto terulet)! Milyen szenzorokat hasznalnal, hogyan valosítanád meg a ketiranyú adataramlast, es milyen dontestamogatasi elonyoket nyujtana?",
+    "rubric": "A valasz tartalmaz egy konkret fizikai rendszert, a szenzorok tipusait, a ketiranyú adataramlas megvalositasat, es a dontestamogatasi elonyoket. Ertekelesi szempontok: rendszergondolkodas, technikai reszletek, gyakorlati haszon.",
+    "max_score": 100
+  },
+  {
+    "id": "ch11_tf01",
+    "type": "true_false",
+    "chapter": 11,
+    "difficulty": "easy",
+    "question": "Az AI agens kepes onalloan tervezni, eszkozoket hasznalni es donteseket hozni.",
+    "correct": true,
+    "explanation": "Az agens nem egyetlen chatbot, hanem egy rendszer, amely tervez, cselekszik es ellenorzi sajat munkajat."
+  },
+  {
+    "id": "ch11_tf02",
+    "type": "true_false",
+    "chapter": 11,
+    "difficulty": "medium",
+    "question": "Az OpenAI keretrendszere szerint az 5. szint (Szervezet) mar szeles korben elerheto 2026-ban.",
+    "correct": false,
+    "explanation": "Az 5. szint meg nem letezik a gyakorlatban."
+  },
+  {
+    "id": "ch11_tf03",
+    "type": "true_false",
+    "chapter": 11,
+    "difficulty": "easy",
+    "question": "Az agensek mukodesehez szukseges a memoria, a tervezokepesseg, az eszkozok es az onellenorzes.",
+    "correct": true,
+    "explanation": "Ezek az agensseg alapveto kepessegei."
+  },
+  {
+    "id": "ch11_fb01",
+    "type": "fill_blank",
+    "chapter": 11,
+    "difficulty": "medium",
+    "question": "Az OpenAI ot szintu keretrendszereben a 3. szint neve: _____.",
+    "correct": "Eszkozhasznalat",
+    "alternatives": [
+      "Tool Use",
+      "eszközhasználat",
+      "Agent"
+    ],
+    "explanation": "A 3. szinten az AI nemcsak gondolkodik, hanem cselekszik is."
+  },
+  {
+    "id": "ch11_fb02",
+    "type": "fill_blank",
+    "chapter": 11,
+    "difficulty": "medium",
+    "question": "Az AI-rendszerek egy _____ spektrumon helyezkednek el, az egyszeru chatbottol a szervezetszintu AI-ig.",
+    "correct": "autonomia",
+    "alternatives": [
+      "autonómia",
+      "autonomia"
+    ],
+    "explanation": "Az OpenAI keretrendszere ot szintet kulonboztet meg az autonomia spektruman."
+  },
+  {
+    "id": "ch11_es01",
+    "type": "essay",
+    "chapter": 11,
+    "difficulty": "hard",
+    "question": "Hasonlitsd ossze az egyszeru chatbotot es az AI agenst! Milyen feladatokra alkalmas az egyik es a masik? Adj konkret kutatasi peldakat mindkettoere, es mutasd be az autonomia szintjenek kulonbsegeit!",
+    "rubric": "A valasz tartalmazza a chatbot es az agens kozotti kulonbsegeket, az autonomia szintjeit, konkret kutatasi peldakat. Ertekelesi szempontok: fogalmi tisztasag, peldak relevanciaja, osszehasonlitas melysege.",
+    "max_score": 100
+  },
+  {
+    "id": "ch12_tf01",
+    "type": "true_false",
+    "chapter": 12,
+    "difficulty": "easy",
+    "question": "A CrewAI keretrendszerben szerepeket, feladatokat es csapatot definialunk az agenseknek.",
+    "correct": true,
+    "explanation": "A CrewAI gondolkodasmoodja megfelel annak, ahogy egy kutatocsoport mukodik."
+  },
+  {
+    "id": "ch12_tf02",
+    "type": "true_false",
+    "chapter": 12,
+    "difficulty": "medium",
+    "question": "A ReACT ciklus a Reasoning, Acting es Observing fazisokbol all.",
+    "correct": true,
+    "explanation": "Az agens gondolkodik, cselekszik es megfigyeli az eredmenyt, majd ismetli ezt."
+  },
+  {
+    "id": "ch12_tf03",
+    "type": "true_false",
+    "chapter": 12,
+    "difficulty": "easy",
+    "question": "Az MCP (Model Context Protocol) egy modelleket tanito protokoll.",
+    "correct": false,
+    "explanation": "Az MCP a kulso eszkozok es adatforrasok eleresere szolgalo kommunikacios protokoll."
+  },
+  {
+    "id": "ch12_fb01",
+    "type": "fill_blank",
+    "chapter": 12,
+    "difficulty": "medium",
+    "question": "A ReACT ciklus harom fazisa: gondolkodas (Reasoning), cselekves (Acting) es _____ (Observing).",
+    "correct": "megfigyeles",
+    "alternatives": [
+      "megfigyelés",
+      "megfigyeles",
+      "observation"
+    ],
+    "explanation": "Az agens megfigyeli a cselekvese eredmenyet."
+  },
+  {
+    "id": "ch12_fb02",
+    "type": "fill_blank",
+    "chapter": 12,
+    "difficulty": "medium",
+    "question": "Az MCP a _____ Protocol roviditese, amelyen keresztul az agensek elerik a kulso eszkozoket.",
+    "correct": "Model Context",
+    "alternatives": [
+      "Model Context",
+      "model context"
+    ],
+    "explanation": "A Model Context Protocol a kulso eszkozok eleresenek szabvanya."
+  },
+  {
+    "id": "ch12_es01",
+    "type": "essay",
+    "chapter": 12,
+    "difficulty": "hard",
+    "question": "Tervezz egy multi-agens rendszert a sajat kutatasi teruleted irodalomkutatasi feladatara! Milyen szerepeket (agent role) definialnal, milyen feladatokat (task) osztanal ki, es hogyan koordinalnak az agensek egymas munkajat?",
+    "rubric": "A valasz tartalmaz konkret agens-szerepeket, feladatokat, koordinacios mechanizmust, es a rendszer varhato kimeneteit. Ertekelesi szempontok: szerepek relevanciaja, feladatmegosztas logikaja, koordinacio.",
+    "max_score": 100
+  },
+  {
+    "id": "ch13_tf01",
+    "type": "true_false",
+    "chapter": 13,
+    "difficulty": "easy",
+    "question": "A Streamlit es a Gradio celja Python szkriptek bongészobol elerheto webalkalmazassa alakitasa.",
+    "correct": true,
+    "explanation": "Mindket keretrendszer lehetove teszi, hogy Python szkriptekbol bongeszobol elerheto webalkalmazas keszuljon."
+  },
+  {
+    "id": "ch13_tf02",
+    "type": "true_false",
+    "chapter": 13,
+    "difficulty": "medium",
+    "question": "Az MCP-szerverek kizarolag weboldalak hosztolosara szolgalnak.",
+    "correct": false,
+    "explanation": "Az MCP-szerverek az adataink es eszkozoink AI-hozzaferhetove tetelere szolgalnak."
+  },
+  {
+    "id": "ch13_tf03",
+    "type": "true_false",
+    "chapter": 13,
+    "difficulty": "easy",
+    "question": "Az 'utolso merfold' problemaja az, hogy a kod megvan, de a kollegak nem tudjak telepiteni es hasznalni.",
+    "correct": true,
+    "explanation": "A szkript a fejleszto gepen mukodik, de az eljuttatas a kollegakhoz hianyzik."
+  },
+  {
+    "id": "ch13_fb01",
+    "type": "fill_blank",
+    "chapter": 13,
+    "difficulty": "medium",
+    "question": "A fejezet harom technologiat mutat be: Streamlit, _____ es MCP-szerverek.",
+    "correct": "Gradio",
+    "alternatives": [
+      "Gradio",
+      "gradio"
+    ],
+    "explanation": "A Streamlit, Gradio es MCP-szerverek a harom bemutatott technologia."
+  },
+  {
+    "id": "ch13_fb02",
+    "type": "fill_blank",
+    "chapter": 13,
+    "difficulty": "medium",
+    "question": "Sajat eszkozt akkor erdemes epiteni, ha a feladat _____ es tobben hasznalnak.",
+    "correct": "ismetlodik",
+    "alternatives": [
+      "ismétlődő",
+      "ismétlődik",
+      "rendszeresen elofordul"
+    ],
+    "explanation": "Ha a feladat ismetlodik es tobben hasznalnak, megeri sajat eszkozt epiteni."
+  },
+  {
+    "id": "ch13_es01",
+    "type": "essay",
+    "chapter": 13,
+    "difficulty": "hard",
+    "question": "Valassz egy meglevo Python szkriptet vagy elemzesi munkafolyamatot, es tervezd meg, hogyan alakitanad webalkalmazassa Streamlit vagy Gradio segitsegevel! Milyen felhasznaloi feluleti elemeket hasznalnal, es hogyan tenned AI-hozzaferhetove MCP-szerveren keresztul?",
+    "rubric": "A valasz tartalmaz egy konkret szkriptet/feladatot, a webalkalmazas felepiteset, a felhasznaloi felulet elemeit, es az MCP-integraciot. Ertekelesi szempontok: gyakorlatiassag, felhasznaloi elmeny, AI-integracio.",
+    "max_score": 100
+  },
+  {
+    "id": "ch14_tf01",
+    "type": "true_false",
+    "chapter": 14,
+    "difficulty": "easy",
+    "question": "A 14. fejezet a kutatolabor szintjen mutatja be az AI-infrastruktura epiteset.",
+    "correct": true,
+    "explanation": "Nem az egyeni kutatonak, hanem a laborvezetonek szol."
+  },
+  {
+    "id": "ch14_tf02",
+    "type": "true_false",
+    "chapter": 14,
+    "difficulty": "medium",
+    "question": "A strategia nelkuli AI-adopcio a fejezet szerint hatekony modja az AI bevezetesenek.",
+    "correct": false,
+    "explanation": "A fejezet a GPS nelkuli hajozashoz hasonlitja."
+  },
+  {
+    "id": "ch14_tf03",
+    "type": "true_false",
+    "chapter": 14,
+    "difficulty": "easy",
+    "question": "A 2026-os tudomanyos AI stack celja a korabbi fejezetek eszkoezeinek osszeilesztese mukodo egeszsze.",
+    "correct": true,
+    "explanation": "Az eszkozok onmagukban ismertek, a cel a mukodo egesz kialakitasa."
+  },
+  {
+    "id": "ch14_fb01",
+    "type": "fill_blank",
+    "chapter": 14,
+    "difficulty": "medium",
+    "question": "A fejezet szerint a strategia nelkuli AI-adopcio olyan, mint a _____ nelkuli hajozas.",
+    "correct": "GPS",
+    "alternatives": [
+      "GPS",
+      "gps"
+    ],
+    "explanation": "Lehet, hogy haladunk, de nem biztos, hogy jo iranyba."
+  },
+  {
+    "id": "ch14_fb02",
+    "type": "fill_blank",
+    "chapter": 14,
+    "difficulty": "medium",
+    "question": "A CrewAI es a LangGraph az AI labor architekturajaban az _____ retegben helyezkednek el.",
+    "correct": "automatizalasi",
+    "alternatives": [
+      "automatizálási",
+      "automatizalasi",
+      "automatizacios"
+    ],
+    "explanation": "Az automatizalasi retegben vannak az AI agensek es a tobblépeéses feladatok."
+  },
+  {
+    "id": "ch14_es01",
+    "type": "essay",
+    "chapter": 14,
+    "difficulty": "hard",
+    "question": "Kepzeld el, hogy egy tizfos kutatocsoport vezetoje vagy! Keszits egy tervet, hogyan integralnad az AI-t a csoportod munkajaba! Milyen eszkozoket valasztanal, hogyan kezelned a kulonbozo hozzaallasokat, es milyen koltsegvetessel kalkulalnal?",
+    "rubric": "A valasz tartalmaz strategiat, eszkozvalasztast, a csapat kulonbozo tagjainak kezeleset, es koltsegvetesi becslest. Ertekelesi szempontok: strategiai gondolkodas, eszkozismeret, csapatkezeles, realitas.",
+    "max_score": 100
+  },
+  {
+    "id": "ch15_tf01",
+    "type": "true_false",
+    "chapter": 15,
+    "difficulty": "easy",
+    "question": "A University of Florida 70 millio dollaros NVIDIA-partnerseeggel integralta az AI-t mind a 16 karan.",
+    "correct": true,
+    "explanation": "Az UF megeloozte korat: 2020-ban, a ChatGPT megjelenese elott ket es fel evvel kezdte az AI-integraciot."
+  },
+  {
+    "id": "ch15_tf02",
+    "type": "true_false",
+    "chapter": 15,
+    "difficulty": "medium",
+    "question": "A fejezet szerint az AI hasznalaltanak tiltasa a legjobb strategia az egyetemi oktatasban.",
+    "correct": false,
+    "explanation": "A fejezet atgondolt, strategiai atalak lust javasol, nem vedekezest vagy tiltast."
+  },
+  {
+    "id": "ch15_tf03",
+    "type": "true_false",
+    "chapter": 15,
+    "difficulty": "easy",
+    "question": "A felsooktatas fo kihivasa az AI koraban az, hogy nehez megkulonboztetni a hallgatok sajat munkajat az AI-generalt tartalomtol.",
+    "correct": true,
+    "explanation": "Paradox modon eppen a gyengebb dolgozat tunik hitelesebbnek."
+  },
+  {
+    "id": "ch15_fb01",
+    "type": "fill_blank",
+    "chapter": 15,
+    "difficulty": "medium",
+    "question": "A University of Florida Chris Malachowsky-tol _____ millio dollar szemelyes adomanyt kapott az AI-programhoz.",
+    "correct": "25",
+    "alternatives": [
+      "25",
+      "huszonot"
+    ],
+    "explanation": "Malachowsky az NVIDIA tarsalapitoja es UF villamosmernok diplomas."
+  },
+  {
+    "id": "ch15_fb02",
+    "type": "fill_blank",
+    "chapter": 15,
+    "difficulty": "medium",
+    "question": "A fejezet szerint a munkaeroopiacon az AI nem opcionalis, hanem _____.",
+    "correct": "alapelvaras",
+    "alternatives": [
+      "alapelvárás",
+      "alapelvarás",
+      "alap elvaras"
+    ],
+    "explanation": "Ezert fontos felkesziteni a hallgatokat az AI hasznalatara."
+  },
+  {
+    "id": "ch15_es01",
+    "type": "essay",
+    "chapter": 15,
+    "difficulty": "hard",
+    "question": "Hogyan kellene a Debreceni Egyetemnek reagalnia az AI kihivasaira az oktatasban? Milyen ertekelesi modszereket javasoolnal, amelyek nem a tiltasra, hanem az AI tudatos hasznalatara epitenek? Adj konkret peldakat!",
+    "rubric": "A valasz tartalmaz intezmenyi strategiat, konkret ertekelesi modszereket, es hazai adaptacios javaslatokat. Ertekelesi szempontok: strategiai gondolkodas, pedagogiai innovacio, megvalosithatosag.",
+    "max_score": 100
+  },
+  {
+    "id": "ch16_tf01",
+    "type": "true_false",
+    "chapter": 16,
+    "difficulty": "easy",
+    "question": "Az LLM-ek altal generalt hamis hivatkozasok a tudomanyos integritas egyik legsulyosabb fenyegeteset jelentik.",
+    "correct": true,
+    "explanation": "A nyelvi modell nem adatbazisbol keres, hanem szoveget general."
+  },
+  {
+    "id": "ch16_tf02",
+    "type": "true_false",
+    "chapter": 16,
+    "difficulty": "medium",
+    "question": "Ha egy LLM hamis hivatkozast general, az szandekos hazugsagnak tekintheto.",
+    "correct": false,
+    "explanation": "Frankfurt fogalmat hasznalva: ez nem hazugsag, hanem 'bullshit' — a valosággal szembeni teljes kozombosseg."
+  },
+  {
+    "id": "ch16_tf03",
+    "type": "true_false",
+    "chapter": 16,
+    "difficulty": "easy",
+    "question": "A hamis hivatkozasok felismeresenek legegyszerubb modja a DOI ellenorzese.",
+    "correct": true,
+    "explanation": "Ha a DOI 404-es hibat ad vagy mas cikkre mutat, a hivatkozas hamis."
+  },
+  {
+    "id": "ch16_fb01",
+    "type": "fill_blank",
+    "chapter": 16,
+    "difficulty": "medium",
+    "question": "Harry Frankfurt filozofus terminologiajaban az LLM-ek tartalmat a valosaggal szembeni teljes _____ allitjak elo.",
+    "correct": "kozombosseggel",
+    "alternatives": [
+      "közömbösség",
+      "közömbösséggel",
+      "kozombosseg"
+    ],
+    "explanation": "Nem hazugsag, hanem a valosaggal szembeni kozombosseg."
+  },
+  {
+    "id": "ch16_fb02",
+    "type": "fill_blank",
+    "chapter": 16,
+    "difficulty": "medium",
+    "question": "Steven Schwartz ugyved a ChatGPT altal generalt _____ nem letezoo precedensjogot tartalmazo beadvanyt nyujtott be.",
+    "correct": "hat",
+    "alternatives": [
+      "hat",
+      "6"
+    ],
+    "explanation": "Az eset 2023-ban tortent."
+  },
+  {
+    "id": "ch16_es01",
+    "type": "essay",
+    "chapter": 16,
+    "difficulty": "hard",
+    "question": "Milyen etikai iranyelveket javasoolnal a sajat kutatocsoportod szamara az AI hasznalatahoz? Terj ki a hivatkozasok ellenorzesere, az AI-generalt tartalom deklaralasara, a reprodukalhatosagra es a kepmanipulacio kerdesere!",
+    "rubric": "A valasz tartalmaz konkret iranyelveket, a hivatkozas-ellenorzes protokolljat, az AI-hasznalat deklaralasi szabalyait, es a kepmanipulacios kockazatok kezeleset. Ertekelesi szempontok: etikai tudatossag, gyakorlatiassag, teljesseg.",
+    "max_score": 100
+  },
+  {
+    "id": "ch17_tf01",
+    "type": "true_false",
+    "chapter": 17,
+    "difficulty": "easy",
+    "question": "A precizios mezogazdasag egy ismetlodo ciklust kovet: adatgyujtes, adatfeldolgozas, elemzes, donteshozatal, vegrehajtas, monitoring.",
+    "correct": true,
+    "explanation": "Ez a ciklus az 1990-es evek ota ismert, de az AI belep a ciklus minden pontjaba."
+  },
+  {
+    "id": "ch17_tf02",
+    "type": "true_false",
+    "chapter": 17,
+    "difficulty": "medium",
+    "question": "Gabor gazdasagaban az adathiany a legnagyobb problema.",
+    "correct": false,
+    "explanation": "Nem az adathiany, hanem az adatboseg a problema: terabajtnyi heterogen adat."
+  },
+  {
+    "id": "ch17_tf03",
+    "type": "true_false",
+    "chapter": 17,
+    "difficulty": "easy",
+    "question": "Az NDVI (Normalized Difference Vegetation Index) egy muholdas vegetacios index a novenyzet allapotanak monitorozasara.",
+    "correct": true,
+    "explanation": "A Sentinel-2 muhold otnaponta kuld friss NDVI-terkepet."
+  },
+  {
+    "id": "ch17_fb01",
+    "type": "fill_blank",
+    "chapter": 17,
+    "difficulty": "medium",
+    "question": "A Sentinel-2 muhold _____ naponta kuld friss NDVI-terkepet.",
+    "correct": "otnaponta",
+    "alternatives": [
+      "öt",
+      "5",
+      "ötnaponta",
+      "5 naponta",
+      "otnaponta"
+    ],
+    "explanation": "Az otnapos visszateresi ido biztositja a rendszeres vegetacio-monitorozast."
+  },
+  {
+    "id": "ch17_fb02",
+    "type": "fill_blank",
+    "chapter": 17,
+    "difficulty": "medium",
+    "question": "Gabor a Hajdusagban _____ hektaron gazdalkodik kukoricaval es buzaval.",
+    "correct": "hatszaz",
+    "alternatives": [
+      "600",
+      "hatszáz",
+      "hatszaz"
+    ],
+    "explanation": "A fejezet nyitojeleneteben bemutatott gazdasag merete 600 hektar."
+  },
+  {
+    "id": "ch17_es01",
+    "type": "essay",
+    "chapter": 17,
+    "difficulty": "hard",
+    "question": "Tervezz egy AI-alapu dontestamogato rendszert egy 500 hektaros szantofoldi gazdasag szamara! Milyen adatforrasokat hasznalnal (muhold, dron, szenzor), hogyan integralnad ezeket, es milyen donteseket tamogatna a rendszer a tenyeszidoszak soran?",
+    "rubric": "A valasz tartalmaz konkret adatforrasokat, az adatintegracio modjat, a dontestamogatas teruleteit, es az AI szerepet. Ertekelesi szempontok: adatforrasok relevanciaja, integracio logikaja, dontestamogatas konkretsaga.",
+    "max_score": 100
+  },
+  {
+    "id": "ch18_tf01",
+    "type": "true_false",
+    "chapter": 18,
+    "difficulty": "easy",
+    "question": "A hidroinformatika a viztudomany, a terinformatika, a szamitasi modellezes es az adattudomany metszete.",
+    "correct": true,
+    "explanation": "Ez a negy terulet alkotja a hidroinformatika interdiszciplinaris alapjat."
+  },
+  {
+    "id": "ch18_tf02",
+    "type": "true_false",
+    "chapter": 18,
+    "difficulty": "medium",
+    "question": "Az AI azert valtoztatja meg a hidroinformatikat, mert egyszerubbe teszi a fizikai egyenleteket.",
+    "correct": false,
+    "explanation": "Az egyenletek ma is ugyanolyan bonyolultak — az AI az automatizalast teszi lehetove."
+  },
+  {
+    "id": "ch18_tf03",
+    "type": "true_false",
+    "chapter": 18,
+    "difficulty": "easy",
+    "question": "A fejezet szerint 2026-ban az AI lehetove teszi autonom agensek futtatast, amelyek onalloan kalibraljaak a vizugyi modelleket.",
+    "correct": true,
+    "explanation": "Az 11-12. fejezet agens-architekturait alkalmazva a vizugyi modellkalibralas automatizalhato."
+  },
+  {
+    "id": "ch18_fb01",
+    "type": "fill_blank",
+    "chapter": 18,
+    "difficulty": "medium",
+    "question": "A fejezet nyitojeleneteben a Tisza felso szakaszan _____ varosnal emelkedik a vizszint az arhullam erkezesekor.",
+    "correct": "Raho",
+    "alternatives": [
+      "Rahó",
+      "Raho",
+      "Rahónál"
+    ],
+    "explanation": "Rahonal a vizszint orak alatt emelkedik."
+  },
+  {
+    "id": "ch18_fb02",
+    "type": "fill_blank",
+    "chapter": 18,
+    "difficulty": "medium",
+    "question": "A Richards-egyenlet a _____ zona vizmozgasat irja le.",
+    "correct": "telitetlen",
+    "alternatives": [
+      "telítetlen",
+      "telitetlen",
+      "unsaturated"
+    ],
+    "explanation": "A Richards-egyenlet a telitetlen zona vizmozgasanak leirasara szolgal."
+  },
+  {
+    "id": "ch18_es01",
+    "type": "essay",
+    "chapter": 18,
+    "difficulty": "hard",
+    "question": "Egy Tisza menti arhullam eseten harom kerdesre kell valaszolni (vizszint-elorejelzes, talajviz reakcio, vizmerlegi hatas). Tervezd meg, hogyan epitenel egy integralt AI-rendszert, amely mindharom kerdesre kepes valaszolni! Milyen modelleket, adatforrasokat es AI-technologiakat hasznalnal?",
+    "rubric": "A valasz tartalmazza a harom kerdest es a hozzajuk rendelt modelleket, az adatforrasokat, az AI-technologiakat, es az integralas modjat. Ertekelesi szempontok: rendszergondolkodas, technikai megalapozottsag, integracio.",
+    "max_score": 100
+  },
+  {
+    "id": "ch19_tf01",
+    "type": "true_false",
+    "chapter": 19,
+    "difficulty": "easy",
+    "question": "A modern terinformatika harom oszlopon nyugszik: helyzeti komponens (hol), attributum komponens (mi) es idobeli komponens (mikor).",
+    "correct": true,
+    "explanation": "Ez a harom dimenzio a terinformatika alapja."
+  },
+  {
+    "id": "ch19_tf02",
+    "type": "true_false",
+    "chapter": 19,
+    "difficulty": "medium",
+    "question": "A Copernicus-program Sentinel muholdjainak napi adattermelese meghaladja a 12 terabajtot.",
+    "correct": true,
+    "explanation": "Ez az adatmennyiseg emberi erovel mar lehetetlen feldolgozni."
+  },
+  {
+    "id": "ch19_tf03",
+    "type": "true_false",
+    "chapter": 19,
+    "difficulty": "easy",
+    "question": "A hagyomanyos terkepeszet reneszansza az egyik fo hajtoereje az AI-GIS konvergencianak.",
+    "correct": false,
+    "explanation": "A negy konvergalo trend: adatrobbanas, szamitasi kapacitas, AI modellek erettsege es nagy nyelvi modellek."
+  },
+  {
+    "id": "ch19_fb01",
+    "type": "fill_blank",
+    "chapter": 19,
+    "difficulty": "medium",
+    "question": "A geospatial foundation modellek (peldaul Prithvi, Clay, _____) a muholdkep-osztalyzasban meghaladják az emberi vizualis interpretacio pontossagat.",
+    "correct": "SatCLIP",
+    "alternatives": [
+      "SatCLIP",
+      "satclip"
+    ],
+    "explanation": "Ezek a modellek elertek azt a szintet, ahol a muholdkep-osztalyozas pontossaga meghaladja az emberi teljesitmenyt."
+  },
+  {
+    "id": "ch19_fb02",
+    "type": "fill_blank",
+    "chapter": 19,
+    "difficulty": "medium",
+    "question": "A 'szamitas az adathoz megy' paradigma felvaltotta a korabbi '_____ a szamitashoz megy' elvet.",
+    "correct": "adat",
+    "alternatives": [
+      "adat",
+      "data"
+    ],
+    "explanation": "A felhoalapu platformok tettek lehetove ezt a paradigmavaltest."
+  },
+  {
+    "id": "ch19_es01",
+    "type": "essay",
+    "chapter": 19,
+    "difficulty": "hard",
+    "question": "Tervezz egy AI-alapu terinformatikai munkafolyamatot egy Natura 2000 terulet monitorozasahoz! Milyen muholdas adatforrasokat, elemzesi modszereket es AI-technologiakat hasznalnal, es hogyan automatizalnad a teljes folyamatot?",
+    "rubric": "A valasz tartalmaz konkret adatforrasokat (Sentinel-2, Corine Land Cover), elemzesi modszereket, AI-technologiakat, es az automatizalas tervet. Ertekelesi szempontok: adatforras-ismeret, modszertani tudas, AI-integracio, automatizalas.",
+    "max_score": 100
+  }
+]

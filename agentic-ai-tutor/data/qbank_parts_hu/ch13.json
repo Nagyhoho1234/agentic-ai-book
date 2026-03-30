@@ -1,414 +1,140 @@
 [
   {
+    "id": "ch13_q01",
+    "chapter": 13,
+    "difficulty": "easy",
     "type": "mcq",
-    "question": "Miért tekinthetők a hozamtérképek a precíziós mezőgazdaság egyik alapvető adatrétegének?",
+    "question": "Mi az 'utolsó mérföld' problémája a kutatói eszközfejlesztésben?",
     "options": [
-      "A) Mert kizárólag a betakarítógép üzemanyag-fogyasztását mutatják meg",
-      "B) Mert térben részletezett képet adnak a tábla teljesítményéről, és sok más döntést támogatnak",
-      "C) Mert helyettesítik az összes talajvizsgálatot minden körülmény között",
-      "D) Mert csak a táblaszintű átlaghozamot számítják ki"
+      "A) A kód megírása a legnehezebb",
+      "B) A kód megvan, de a kollégák nem tudják telepíteni és használni",
+      "C) Az adatok összegyűjtése a leghosszabb",
+      "D) A publikálás a leglassúbb"
     ],
     "correct": "B",
-    "explanation": "A fejezet szerint a hozamtérképek megmutatják, hol teljesít jól vagy gyengén a tábla, és alapul szolgálnak többek között zónalehatároláshoz, tápanyagelvonás-becsléshez, jövedelmezőségi elemzéshez és üzemi kísérletekhez.",
-    "chapter_num": 13
+    "explanation": "A kód megvan, de az eljuttatás a kollégákhoz hiányzik."
   },
   {
+    "id": "ch13_q02",
+    "chapter": 13,
+    "difficulty": "medium",
     "type": "mcq",
-    "question": "Mi a fő korlátja annak, ha a gazdálkodó csak a tábla átlaghozamát ismeri?",
+    "question": "Melyik három technológiát mutatja be a fejezet?",
     "options": [
-      "A) Nem lehet megállapítani a termény nedvességtartalmát",
-      "B) Nem derül ki belőle a tábla egyes részeinek eltérő teljesítménye",
-      "C) Nem lehet kiszámítani a kombájn sebességét",
-      "D) Nem lehet rögzíteni a tábla nevét"
+      "A) Django, Flask, FastAPI",
+      "B) Streamlit, Gradio, MCP-szerverek",
+      "C) React, Angular, Vue.js",
+      "D) TensorFlow, PyTorch, scikit-learn"
     ],
     "correct": "B",
-    "explanation": "Az átlaghozam elfedi a táblán belüli különbségeket, ezért nem mutatja meg, mely részek teljesítenek jól vagy gyengén.",
-    "chapter_num": 13
+    "explanation": "Streamlit, Gradio, MCP-szerverek."
   },
   {
+    "id": "ch13_q03",
+    "chapter": 13,
+    "difficulty": "medium",
     "type": "mcq",
-    "question": "Mit jeleznek leginkább az évről évre ismétlődő hozammintázatok?",
+    "question": "Mire valók az MCP-szerverek?",
     "options": [
-      "A) Véletlenszerű mérési hibákat",
-      "B) Kizárólag a kezelő vezetési stílusát",
-      "C) Állandó vagy félig állandó tényezőket, például talaj- vagy vízelvezetési különbségeket",
-      "D) Csak az adott napi betakarítási sebességet"
-    ],
-    "correct": "C",
-    "explanation": "A szöveg szerint a több évben ismétlődő mintázatok stabil okokra utalnak, például talajtípusra, tömörödésre, vízelvezetésre vagy domborzati hatásokra.",
-    "chapter_num": 13
-  },
-  {
-    "type": "mcq",
-    "question": "Melyik megállapítás írja le helyesen a stabil és instabil változékonyság megkülönböztetésének jelentőségét?",
-    "options": [
-      "A) Segít eldönteni, hol indokolt a helyspecifikus kezelés és hol túl nagy a bizonytalanság",
-      "B) Csak a kombájn motorbeállításaihoz szükséges",
-      "C) Kizárólag a raktári logisztikát javítja",
-      "D) Feleslegessé teszi a kalibrálást"
-    ],
-    "correct": "A",
-    "explanation": "A fejezet hangsúlyozza, hogy ez a különbségtétel a helyspecifikus gazdálkodás fogalmi sarokköve.",
-    "chapter_num": 13
-  },
-  {
-    "type": "mcq",
-    "question": "Melyik felhasználás NEM szerepel a szövegben a hozamtérképek alkalmazásai között?",
-    "options": [
-      "A) Tápanyagelvonás helyspecifikus becslése",
-      "B) Kezelési zónák lehatárolása",
-      "C) Jövedelmezőségi elemzés",
-      "D) A levegő hőmérsékletének regionális előrejelzése"
-    ],
-    "correct": "D",
-    "explanation": "A szöveg több agronómiai és gazdasági felhasználást említ, de regionális időjárás-előrejelzést nem.",
-    "chapter_num": 13
-  },
-  {
-    "type": "mcq",
-    "question": "Mi a hozamszámítás alapegyenlete a fejezet szerint?",
-    "options": [
-      "A) Hozam = sebesség × idő",
-      "B) Hozam = betakarított szemtermés tömege / learatott terület",
-      "C) Hozam = nedvességtartalom / tömegáram",
-      "D) Hozam = vágóasztal szélessége / GNSS-pontosság"
+      "A) Weboldal hosztolásra",
+      "B) Az adataink és eszközeink AI-hozzáférhetővé tételére",
+      "C) Adatbázisok biztonsági mentésére",
+      "D) E-mailek automatikus küldésére"
     ],
     "correct": "B",
-    "explanation": "A fejezet egyértelműen megadja, hogy a hozam a betakarított szemtermés tömegének és a learatott területnek a hányadosa.",
-    "chapter_num": 13
+    "explanation": "AI ágensek automatikusan meghívhatják őket szolgáltatásként."
   },
   {
+    "id": "ch13_q04",
+    "chapter": 13,
+    "difficulty": "easy",
     "type": "mcq",
-    "question": "Mi a fülkei kijelző és adatgyűjtő egység egyik fontos feladata?",
+    "question": "Mikor érdemes saját eszközt építeni?",
     "options": [
-      "A) A szemtermés szárítása a kombájnban",
-      "B) Az összes érzékelő jelének fogadása, feldolgozása és mentése",
-      "C) A talaj pH-jának közvetlen mérése aratás közben",
-      "D) A csapadék előállítása a táblán"
+      "A) Amikor egyszer kérik az eredményt",
+      "B) Amikor a feladat ismétlődik és többen használnák",
+      "C) Amikor csak egy ember használja",
+      "D) Amikor az elemzés egy perc alatt elvégezhető"
     ],
     "correct": "B",
-    "explanation": "A központi egység fogadja az érzékelők jeleit, feldolgozza azokat, megjeleníti a valós idejű adatokat és menti a fájlokat.",
-    "chapter_num": 13
+    "explanation": "Ha a feladat ismétlődik és többen használnák."
   },
   {
+    "id": "ch13_q05",
+    "chapter": 13,
+    "difficulty": "hard",
     "type": "mcq",
-    "question": "Miért előnyös a GNSS-alapú sebességmérés a radar- vagy kerékfordulat-érzékelőhöz képest?",
+    "question": "Mi a Streamlit és a Gradio közös célja?",
     "options": [
-      "A) Mert nem igényel semmilyen antennát",
-      "B) Mert a kerékcsúszás nem torzítja sáros vagy laza talajon",
-      "C) Mert közvetlenül méri a szemtermés fehérjetartalmát",
-      "D) Mert nincs szükség kalibrálásra"
+      "A) Gépi tanulási modellek tanítása",
+      "B) Python szkriptek böngészőből elérhető webalkalmazássá alakítása",
+      "C) Adatbázisok kezelése",
+      "D) Tudományos cikkek generálása"
     ],
     "correct": "B",
-    "explanation": "A szöveg szerint a GNSS-alapú sebesség előnye, hogy a kerékcsúszás nem befolyásolja a mérést.",
-    "chapter_num": 13
+    "explanation": "Python szkriptek böngészőből elérhető webalkalmazássá alakítása."
   },
   {
-    "type": "mcq",
-    "question": "Miért kell megadni a GNSS-antenna és a vágóasztal közötti eltolási értéket?",
-    "options": [
-      "A) Hogy a rendszer helyesen rendelje a hozamadatokat a megfelelő táblabeli pozícióhoz",
-      "B) Hogy csökkentse a motor zaját",
-      "C) Hogy növelje a szemek ezermagtömegét",
-      "D) Hogy kiváltsa a nedvességmérést"
+    "id": "ch13_tf01",
+    "type": "true_false",
+    "chapter": 13,
+    "difficulty": "easy",
+    "question": "A Streamlit es a Gradio celja Python szkriptek bongészobol elerheto webalkalmazassa alakitasa.",
+    "correct": true,
+    "explanation": "Mindket keretrendszer lehetove teszi, hogy Python szkriptekbol bongeszobol elerheto webalkalmazas keszuljon."
+  },
+  {
+    "id": "ch13_tf02",
+    "type": "true_false",
+    "chapter": 13,
+    "difficulty": "medium",
+    "question": "Az MCP-szerverek kizarolag weboldalak hosztolosara szolgalnak.",
+    "correct": false,
+    "explanation": "Az MCP-szerverek az adataink es eszkozoink AI-hozzaferhetove tetelere szolgalnak."
+  },
+  {
+    "id": "ch13_tf03",
+    "type": "true_false",
+    "chapter": 13,
+    "difficulty": "easy",
+    "question": "Az 'utolso merfold' problemaja az, hogy a kod megvan, de a kollegak nem tudjak telepiteni es hasznalni.",
+    "correct": true,
+    "explanation": "A szkript a fejleszto gepen mukodik, de az eljuttatas a kollegakhoz hianyzik."
+  },
+  {
+    "id": "ch13_fb01",
+    "type": "fill_blank",
+    "chapter": 13,
+    "difficulty": "medium",
+    "question": "A fejezet harom technologiat mutat be: Streamlit, _____ es MCP-szerverek.",
+    "correct": "Gradio",
+    "alternatives": [
+      "Gradio",
+      "gradio"
     ],
-    "correct": "A",
-    "explanation": "A fizikai eltolás és az anyagáramlási késleltetés együtt határozza meg, mennyire pontos a pozíció-hozzárendelés.",
-    "chapter_num": 13
+    "explanation": "A Streamlit, Gradio es MCP-szerverek a harom bemutatott technologia."
   },
   {
-    "type": "mcq",
-    "question": "Melyik tömegáram-szenzor a leggyakoribb gabonavágó kombájnokban?",
-    "options": [
-      "A) Mikrofonos szenzor",
-      "B) Ütközőlemezes szenzor",
-      "C) Hőkamerás szenzor",
-      "D) Ultrahangos szenzor"
+    "id": "ch13_fb02",
+    "type": "fill_blank",
+    "chapter": 13,
+    "difficulty": "medium",
+    "question": "Sajat eszkozt akkor erdemes epiteni, ha a feladat _____ es tobben hasznalnak.",
+    "correct": "ismetlodik",
+    "alternatives": [
+      "ismétlődő",
+      "ismétlődik",
+      "rendszeresen elofordul"
     ],
-    "correct": "B",
-    "explanation": "A fejezet szerint a gabonavágó kombájnokban az ütközőlemezek a leggyakoribb tömegáram-szenzorok.",
-    "chapter_num": 13
+    "explanation": "Ha a feladat ismetlodik es tobben hasznalnak, megeri sajat eszkozt epiteni."
   },
   {
-    "type": "mcq",
-    "question": "Miért alkalmasak különösen az optikai szenzorok gyapotszedő gépeken?",
-    "options": [
-      "A) Mert a gyapot nagy ütközési ereje miatt az ütközőlemez túlérzékeny lenne",
-      "B) Mert a gyapot térfogategységre jutó tömege kicsi, ezért az ütközőlemez nem adna megbízható jelet",
-      "C) Mert a gyapotnál nincs szükség helymeghatározásra",
-      "D) Mert az optikai szenzor közvetlenül méri a profitot"
-    ],
-    "correct": "B",
-    "explanation": "A gyapot kis térfogatsűrűsége miatt az ütközőlemezes mérés kevésbé megbízható, ezért elterjedtek az optikai szenzorok.",
-    "chapter_num": 13
-  },
-  {
-    "type": "mcq",
-    "question": "Mit mér közvetlenül az ütközőlemezes rendszerben a lemez mögötti nyúlásmérő bélyeg vagy terhelésmérő cella?",
-    "options": [
-      "A) A termény nedvességtartalmát",
-      "B) Az ütközés erejét",
-      "C) A GNSS-jel minőségét",
-      "D) A vágóasztal szélességét"
-    ],
-    "correct": "B",
-    "explanation": "Az ütközőlemeznek csapódó termény által keltett erőt méri, ebből és a becsült sebességből számítják a tömegáramot.",
-    "chapter_num": 13
-  },
-  {
-    "type": "true_false",
-    "question": "A hozamtérkép a tábla tényleges teljesítményének térben részletezett, színkódolt ábrázolása.",
-    "correct_answer": true,
-    "explanation": "A fejezet így írja le a hozamtérképet.",
-    "chapter_num": 13
-  },
-  {
-    "type": "true_false",
-    "question": "A tábla átlaghozama önmagában elegendő annak megállapítására, hogy a tábla mely részein térült meg egy korábbi beavatkozás.",
-    "correct_answer": false,
-    "explanation": "Az átlaghozam nem mutatja meg a táblán belüli különbségeket és a helyspecifikus hatásokat.",
-    "chapter_num": 13
-  },
-  {
-    "type": "true_false",
-    "question": "A több év hozamtérképeinek együttes elemzése segít elkülöníteni a stabil és az időjárásfüggő változékonyságot.",
-    "correct_answer": true,
-    "explanation": "A szöveg ezt a többéves elemzés egyik fő értékeként emeli ki.",
-    "chapter_num": 13
-  },
-  {
-    "type": "true_false",
-    "question": "Az egyes években megjelenő, de más években hiányzó mintázatok általában állandó talajtani okokra utalnak.",
-    "correct_answer": false,
-    "explanation": "Az ilyen mintázatok inkább időjárás- vagy gazdálkodásfüggő okokra utalnak.",
-    "chapter_num": 13
-  },
-  {
-    "type": "true_false",
-    "question": "A hozamtérképek felhasználhatók helyspecifikus tápanyagelvonás becslésére.",
-    "correct_answer": true,
-    "explanation": "Minden kilogramm eltávozó termés tápanyagokat visz el, ezért a hozamadat alapot ad a becsléshez.",
-    "chapter_num": 13
-  },
-  {
-    "type": "true_false",
-    "question": "A hozammonitor egyetlen érzékelőből álló eszköz.",
-    "correct_answer": false,
-    "explanation": "A fejezet szerint több érzékelőből álló rendszerről van szó.",
-    "chapter_num": 13
-  },
-  {
-    "type": "true_false",
-    "question": "A fülkei kijelző csak megjelenítésre szolgál, adatmentésre nem.",
-    "correct_answer": false,
-    "explanation": "A kijelző fogadja, feldolgozza és menti is az adatokat.",
-    "chapter_num": 13
-  },
-  {
-    "type": "true_false",
-    "question": "A differenciálisan korrigált GNSS-vevő jellemzően 1–3 méteres pontosságot biztosít.",
-    "correct_answer": true,
-    "explanation": "Ez a pontosságtartomány szerepel a szövegben.",
-    "chapter_num": 13
-  },
-  {
-    "type": "true_false",
-    "question": "A GNSS-vevő kizárólag helyzetet szolgáltat, sebességet nem.",
-    "correct_answer": false,
-    "explanation": "A szöveg szerint a GNSS a haladási sebességet is szolgáltatja.",
-    "chapter_num": 13
-  },
-  {
-    "type": "true_false",
-    "question": "A GNSS-alapú sebességmérés egyik előnye, hogy a kerékcsúszás nem torzítja a mérést.",
-    "correct_answer": true,
-    "explanation": "Ez külön kiemelt előny a fejezetben.",
-    "chapter_num": 13
-  },
-  {
-    "type": "true_false",
-    "question": "A GNSS-antenna és a vágóasztal közötti fizikai távolság figyelmen kívül hagyható, mert nincs hatása a hozamadatok térbeli helyességére.",
-    "correct_answer": false,
-    "explanation": "Az eltolás megadása fontos a helyes pozíció-hozzárendeléshez.",
-    "chapter_num": 13
-  },
-  {
-    "type": "true_false",
-    "question": "Az ütközőlemezes szenzorok különösen jól használhatók gabonanövényeknél, például búzánál és kukoricánál.",
-    "correct_answer": true,
-    "explanation": "A szöveg több gabonanövényt is felsorol, amelyeknél ez a technológia jól működik.",
-    "chapter_num": 13
-  },
-  {
-    "type": "true_false",
-    "question": "Az optikai szenzorok az áthaladó anyag tömegét közvetlenül, ütközési erő alapján mérik.",
-    "correct_answer": false,
-    "explanation": "Az optikai szenzorok a fénynyaláb kitakarásából az anyag térfogatára következtetnek, nem ütközési erőt mérnek.",
-    "chapter_num": 13
-  },
-  {
-    "type": "true_false",
-    "question": "Gyapotszedő gépeken az optikai szenzorok elterjedtek, mert a gyapot kis térfogatsűrűsége miatt az ütközőlemez kevésbé megbízható.",
-    "correct_answer": true,
-    "explanation": "Ez a szövegben szereplő indoklás.",
-    "chapter_num": 13
-  },
-  {
-    "type": "true_false",
-    "question": "A hozamtérképek üzemi sávkísérletekben eredményváltozóként is használhatók.",
-    "correct_answer": true,
-    "explanation": "A fejezet szerint a gazdálkodók saját tábláikon értékelhetik különböző kezelések hatásait hozamadatok alapján.",
-    "chapter_num": 13
-  },
-  {
-    "type": "fill_blank",
-    "question": "A hozam alapegyenlete szerint a hozam egyenlő a betakarított szemtermés _____ osztva a learatott területtel.",
-    "correct_answer": "tömegével",
-    "explanation": "A fejezet ezt az alapegyenletet adja meg.",
-    "chapter_num": 13
-  },
-  {
-    "type": "fill_blank",
-    "question": "Térben részletezett hozammérés nélkül a gazdálkodó többnyire csak a tábla _____ ismerheti.",
-    "correct_answer": "átlagát",
-    "explanation": "A szöveg szerint ilyenkor csak az össztömeg és a terület alapján számolt átlag áll rendelkezésre.",
-    "chapter_num": 13
-  },
-  {
-    "type": "fill_blank",
-    "question": "Az évről évre ismétlődő hozammintázatok gyakran állandó vagy félig állandó okokra, például talajtípus-átmenetekre, tömörödési rétegekre vagy _____ problémákra utalnak.",
-    "correct_answer": "vízelvezetési",
-    "explanation": "A felsorolt stabil okok között szerepelnek a vízelvezetési problémák.",
-    "chapter_num": 13
-  },
-  {
-    "type": "fill_blank",
-    "question": "A stabil és instabil változékonyság megkülönböztetése a helyspecifikus gazdálkodás fogalmi _____.",
-    "correct_answer": "sarokköve",
-    "explanation": "A fejezet szó szerint így fogalmaz.",
-    "chapter_num": 13
-  },
-  {
-    "type": "fill_blank",
-    "question": "A hozamtérképek felhasználhatók a tápanyag_____ helyspecifikus becslésére.",
-    "correct_answer": "elvonás",
-    "explanation": "A terméssel eltávozó tápanyagok miatt a hozamadat alkalmas erre a célra.",
-    "chapter_num": 13
-  },
-  {
-    "type": "fill_blank",
-    "question": "A rendszer középpontjában jellemzően egy érintőképernyős _____ található a kombájn fülkéjében.",
-    "correct_answer": "kijelző",
-    "explanation": "A fülkei kijelző a felhasználói felület és adatgyűjtő egység része.",
-    "chapter_num": 13
-  },
-  {
-    "type": "fill_blank",
-    "question": "A fülkei egység az adatokat memóriakártyára vagy _____-meghajtóra menti.",
-    "correct_answer": "USB",
-    "explanation": "A szöveg ezt a két tipikus adattárolási módot említi.",
-    "chapter_num": 13
-  },
-  {
-    "type": "fill_blank",
-    "question": "Minden hozamadatpontot földrajzi pozícióhoz kell rendelni; ezt egy differenciálisan korrigált _____-vevő biztosítja.",
-    "correct_answer": "GNSS",
-    "explanation": "A helymeghatározást a differenciálisan korrigált GNSS-vevő végzi.",
-    "chapter_num": 13
-  },
-  {
-    "type": "fill_blank",
-    "question": "A differenciális korrekció jellemzően _____–_____ méteres helymeghatározási pontosságot biztosít.",
-    "correct_answer": "1–3",
-    "explanation": "A fejezetben ez a tipikus pontosságtartomány szerepel.",
-    "chapter_num": 13
-  },
-  {
-    "type": "fill_blank",
-    "question": "A GNSS-alapú sebességmérés előnye, hogy a kerék_____ nem torzítja a mérést.",
-    "correct_answer": "csúszás",
-    "explanation": "Sáros vagy laza talajon ez fontos előny.",
-    "chapter_num": 13
-  },
-  {
-    "type": "fill_blank",
-    "question": "A hozammérő központi eleme a _____-szenzor, amely a betakarított anyag tömegáramát becsli.",
-    "correct_answer": "tömegáram",
-    "explanation": "A fejezet így nevezi meg a központi mérőelemet.",
-    "chapter_num": 13
-  },
-  {
-    "type": "fill_blank",
-    "question": "Az ütközőlemezes szenzorok a tisztamag_____ teteje közelében vannak felszerelve.",
-    "correct_answer": "elevátor",
-    "explanation": "A gabona az elevátor tetején csapódik az ütközőlemeznek.",
-    "chapter_num": 13
-  },
-  {
-    "type": "fill_blank",
-    "question": "Az optikai szenzorok a fénynyaláb kitakart és szabad állapotban töltött idejének arányából az áthaladó anyag _____ következtetnek.",
-    "correct_answer": "térfogatára",
-    "explanation": "Az optikai elv nem közvetlen tömegmérésen, hanem térfogatbecslésen alapul.",
-    "chapter_num": 13
-  },
-  {
+    "id": "ch13_es01",
     "type": "essay",
-    "question": "Magyarázza el, miért ad lényegesen több döntéstámogatási értéket a hozamtérkép, mint a tábla egyszerű átlaghozama.",
-    "explanation": "Kulcspontok: táblán belüli térbeli különbségek feltárása; jól és gyengén teljesítő zónák azonosítása; beavatkozások helyi hatásának értékelése; az átlaghozam információvesztése.",
-    "chapter_num": 13
-  },
-  {
-    "type": "essay",
-    "question": "Fejtse ki, hogyan segíti a több év hozamtérképének összehasonlítása a stabil és instabil változékonyság elkülönítését.",
-    "explanation": "Kulcspontok: ismétlődő mintázatok mint stabil okok jelei; időszakos mintázatok mint időjárás- vagy menedzsmenthatások; következmények a helyspecifikus döntésekre.",
-    "chapter_num": 13
-  },
-  {
-    "type": "essay",
-    "question": "Mutassa be, hogyan használhatók a hozamtérképek a kezelési zónák lehatárolásában és a változó dózisú kijuttatási tervek megalapozásában.",
-    "explanation": "Kulcspontok: hasonló hozamteljesítményű részterületek azonosítása; stabil mintázatok szerepe; bizonytalanság kezelése; differenciált kezelés indokoltsága.",
-    "chapter_num": 13
-  },
-  {
-    "type": "essay",
-    "question": "Ismertesse, miért fontos a hozamadatok felhasználása a helyspecifikus tápanyagelvonás becslésében.",
-    "explanation": "Kulcspontok: a terméssel eltávozó N, P, K és mikroelemek; hozam és tápanyagkivonás kapcsolata; tápanyag-visszapótlás tervezése.",
-    "chapter_num": 13
-  },
-  {
-    "type": "essay",
-    "question": "Magyarázza el a hozammonitor rendszerének fő elemeit és azt, hogyan áll össze ezekből a valós idejű hozambecslés.",
-    "explanation": "Kulcspontok: több érzékelőből álló rendszer; fülkei kijelző/adatgyűjtő; GNSS; tömegáram-mérés; területszámítás; adatintegráció.",
-    "chapter_num": 13
-  },
-  {
-    "type": "essay",
-    "question": "Mutassa be a fülkei kijelző és adatgyűjtő egység szerepét a betakarítás során, nemcsak megjelenítési, hanem adatkezelési szempontból is.",
-    "explanation": "Kulcspontok: érzékelőjelek fogadása és feldolgozása; valós idejű információk megjelenítése; adatmentés; kalibrálás; metaadatok rögzítése.",
-    "chapter_num": 13
-  },
-  {
-    "type": "essay",
-    "question": "Fejtse ki, miért kulcsfontosságú a GNSS a hozamtérképezésben, és milyen hibákhoz vezethet a helytelen eltolás- vagy késleltetéskezelés.",
-    "explanation": "Kulcspontok: pozíció-hozzárendelés; sebességmérés; differenciális korrekció; antenna-vágóasztal eltolás; anyagáramlási késleltetés; térbeli elcsúszás.",
-    "chapter_num": 13
-  },
-  {
-    "type": "essay",
-    "question": "Hasonlítsa össze az ütközőlemezes és az optikai tömegáram-szenzorok működési elvét és tipikus alkalmazási területét.",
-    "explanation": "Kulcspontok: ütközési erő vs. fénynyaláb-kitakarás; tömegáram-becslés módja; gabonanövényeknél való alkalmazás; gyapotnál optikai előnyök.",
-    "chapter_num": 13
-  },
-  {
-    "type": "essay",
-    "question": "Értelmezze, miért jelent külön mérnöki kihívást a hozam valós idejű mérése egy mozgó kombájnon.",
-    "explanation": "Kulcspontok: poros, rázkódó, változó környezet; tömeg és terület egyidejű mérése; szenzorintegráció; pontossági követelmények.",
-    "chapter_num": 13
-  },
-  {
-    "type": "essay",
-    "question": "Mutassa be, hogyan használhatók a hozamtérképek üzemi sávkísérletekben különböző kezelések értékelésére.",
-    "explanation": "Kulcspontok: eredményváltozó szerep; vetőmagfajták, műtrágyaadagok, talajművelési módok összehasonlítása; saját táblán végzett értékelés előnye; térbeli adatok jelentősége.",
-    "chapter_num": 13
+    "chapter": 13,
+    "difficulty": "hard",
+    "question": "Valassz egy meglevo Python szkriptet vagy elemzesi munkafolyamatot, es tervezd meg, hogyan alakitanad webalkalmazassa Streamlit vagy Gradio segitsegevel! Milyen felhasznaloi feluleti elemeket hasznalnal, es hogyan tenned AI-hozzaferhetove MCP-szerveren keresztul?",
+    "rubric": "A valasz tartalmaz egy konkret szkriptet/feladatot, a webalkalmazas felepiteset, a felhasznaloi felulet elemeit, es az MCP-integraciot. Ertekelesi szempontok: gyakorlatiassag, felhasznaloi elmeny, AI-integracio.",
+    "max_score": 100
   }
 ]

@@ -1,456 +1,140 @@
 [
   {
+    "id": "ch03_q01",
+    "chapter": 3,
+    "difficulty": "easy",
     "type": "mcq",
-    "question": "Mi tette lehetővé először, hogy a gazda ne csak azt tudja, mi történt egy táblán, hanem azt is, pontosan hol történt?",
+    "question": "Mi a világ nem angol anyanyelvű kutatóinak legnagyobb kihívása a publikálásban?",
     "options": [
-      "A) A kézi főkönyvek elterjedése",
-      "B) A GPS-vevők és a GIS gyakorlati mezőgazdasági alkalmazása",
-      "C) A műtrágyák olcsóbbá válása",
-      "D) A hagyományos szemrevételezés javulása"
+      "A) Nincs elég kutatási eredményük",
+      "B) Az angol nyelvű publikációs rendszerben kell helytállniuk anyanyelvi szinten",
+      "C) Nem férnek hozzá a tudományos folyóiratokhoz",
+      "D) A kutatási módszereik nem elég modernek"
     ],
     "correct": "B",
-    "explanation": "Az 1990-es évek elején a GPS és a GIS tette lehetővé a helyhez kötött mezőgazdasági adatok kezelését.",
-    "chapter_num": 3
+    "explanation": "A kutatók többsége nem angol anyanyelvű, mégis angol nyelvű rendszerben kell helytállniuk."
   },
   {
+    "id": "ch03_q02",
+    "chapter": 3,
+    "difficulty": "medium",
     "type": "mcq",
-    "question": "Miért vált különösen fontossá az adatvezérelt döntéshozatal a modern mezőgazdaságban?",
+    "question": "Mi a strukturált összefoglalás technika lényege az AI-val végzett irodalomkutatásban?",
     "options": [
-      "A) Mert teljesen kiváltja a gazdálkodói tapasztalatot",
-      "B) Mert a mezőgazdaságban már nincs szükség megfigyelésre",
-      "C) Mert a növekvő népesség, a szűkülő erőforrások és a kiszámíthatatlanabb klíma összetett döntéseket követel",
-      "D) Mert minden technológia automatikusan növeli a hozamot 30%-kal"
-    ],
-    "correct": "C",
-    "explanation": "A szöveg szerint a népességnövekedés, az erőforrás-korlátok, a költségek és az éghajlati bizonytalanság miatt az adat nem luxus, hanem jobb döntések alapja.",
-    "chapter_num": 3
-  },
-  {
-    "type": "mcq",
-    "question": "Melyik állítás írja le legjobban a precíziós mezőgazdaság gyakorlati megszületését?",
-    "options": [
-      "A) A gazdák teljesen felhagytak a terepbejárással",
-      "B) A GPS, a GIS és a változó dózisú kijuttatásra képes gépek összekapcsolása lehetővé tette a táblán belüli differenciált kezelést",
-      "C) A hozamot ezentúl csak régiós átlagok alapján becsülték",
-      "D) A gazdálkodás kizárólag drónokra épült"
+      "A) Az AI automatikusan strukturálja a választ",
+      "B) A promptban megadod a struktúrát (kutatási kérdés, módszer, eredmények stb.)",
+      "C) Az AI egy előre definiált sablont tölt ki",
+      "D) Csak a cikk absztraktját másolja át"
     ],
     "correct": "B",
-    "explanation": "A fejezet szerint ez a technológiai összekapcsolás alapozta meg a precíziós mezőgazdaságot mint gyakorlati szakterületet.",
-    "chapter_num": 3
+    "explanation": "A promptban megadjuk a kívánt struktúrát, ami sokkal informatívabb eredményt ad."
   },
   {
+    "id": "ch03_q03",
+    "chapter": 3,
+    "difficulty": "easy",
     "type": "mcq",
-    "question": "Mi a különbség egy falra akasztott hozamtérkép és egy algoritmusba betáplált hozamtérkép között?",
+    "question": "Naponta hány új orvos-biológiai cikk jelenik meg a fejezet szerint?",
     "options": [
-      "A) Nincs különbség, mindkettő csak archiválási célú",
-      "B) Az első csak papíralapú, a második digitális",
-      "C) Az első dekoráció lehet, a második döntéstámogató eszközzé válhat",
-      "D) Az első pontosabb, mint a második"
+      "A) Körülbelül 500",
+      "B) Körülbelül 1000",
+      "C) Több mint 4000",
+      "D) Több mint 10 000"
     ],
     "correct": "C",
-    "explanation": "A szöveg hangsúlyozza, hogy az adat értéke a döntésekben rejlik; önmagában a térkép kevés, felhasználva viszont gazdálkodási eszköz.",
-    "chapter_num": 3
+    "explanation": "Naponta több mint 4000 új orvos-biológiai cikk jelenik meg."
   },
   {
+    "id": "ch03_q04",
+    "chapter": 3,
+    "difficulty": "medium",
     "type": "mcq",
-    "question": "Melyik példa mutatja leginkább a reaktív működésről a proaktív működésre való átállást?",
+    "question": "Mi a progresszív promptolás technika lényege?",
     "options": [
-      "A) A gazda csak betakarításkor nézi meg az eredményeket",
-      "B) A nitrogénhiányt csak a sárgulás után észlelik",
-      "C) Előrejelző modellek a látható tünetek előtt jelzik a nitrogénhiányt",
-      "D) A gazda emlékezetből dönt a vetésről"
-    ],
-    "correct": "C",
-    "explanation": "A proaktív működés lényege, hogy az adat a probléma látható megjelenése előtt támogatja a beavatkozást.",
-    "chapter_num": 3
-  },
-  {
-    "type": "mcq",
-    "question": "Melyik technológiai fejlődés jellemezte leginkább a 2010-es éveket a szöveg szerint?",
-    "options": [
-      "A) A GPS teljes hiánya",
-      "B) A kizárólag papíralapú nyilvántartás visszatérése",
-      "C) A telematika, a vezeték nélküli adatátvitel és a felhőplatformok terjedése",
-      "D) A hozammérés megszűnése"
-    ],
-    "correct": "C",
-    "explanation": "A 2010-es évekre a gépek egyre gyakrabban telematikai kapcsolattal és felhőbe küldhető adatokkal működtek.",
-    "chapter_num": 3
-  },
-  {
-    "type": "mcq",
-    "question": "Miért korlátozott a kizárólag emberi megfigyelésre épülő gazdálkodás nagyobb léptékben?",
-    "options": [
-      "A) Mert az emberi megfigyelés mindig pontatlan",
-      "B) Mert az emberi érzékelés hatóköre és az emlékezet korlátozott",
-      "C) Mert a növények nem mutatnak vizuális tüneteket",
-      "D) Mert a talajmintavétel tilos"
+      "A) Egyetlen nagyon hosszú promptot írunk",
+      "B) Általánostól a specifikus felé haladva egyre szűkítjük a kérdéseinket",
+      "C) Az AI automatikusan mélyíti a válaszait",
+      "D) Minden promptot egy másik AI modellel ellenőriztetünk"
     ],
     "correct": "B",
-    "explanation": "A szöveg szerint az analóg adattudomány korlátait az emberi érzékelés és emlékezet szabja meg, különösen nagy területeken.",
-    "chapter_num": 3
+    "explanation": "Általános kérdéssel kezdünk, majd egyre specifikusabb irányba szűkítjük."
   },
   {
+    "id": "ch03_q05",
+    "chapter": 3,
+    "difficulty": "hard",
     "type": "mcq",
-    "question": "Melyik eredmény szerepel dokumentált példaként a fejezetben?",
+    "question": "Miért fontos, hogy a kutató megőrizze a saját tudományos hangját az AI-val készített szövegekben?",
     "options": [
-      "A) A precíziós gazdálkodás minden esetben 30% feletti hozamnövekedést ad",
-      "B) A gépi gyomfelismerés és precíziós permetezés 40–60%-kal csökkenthette a herbicidfelhasználást",
-      "C) Az okosöntözés mindig megszünteti az öntözés szükségességét",
-      "D) A hozamtérképezés önmagában megduplázza a profitot"
-    ],
-    "correct": "B",
-    "explanation": "A szöveg konkrétan említi a herbicidfelhasználás 40–60%-os csökkentését dokumentált kísérletekben.",
-    "chapter_num": 3
-  },
-  {
-    "type": "mcq",
-    "question": "Mit jelent a szövegben a 'digitális mezőgazdaság' kifejezés tágabb ambíciója?",
-    "options": [
-      "A) Csak a táblák digitális nyilvántartását",
-      "B) Csak a térképezést, döntéstámogatás nélkül",
-      "C) Olyan rendszerek építését, amelyek tanulnak az adatokból és cselekvési javaslatokat tesznek",
-      "D) A mezőgazdaság teljes automatizálását emberi beavatkozás nélkül"
+      "A) Mert az AI szövegei jogilag nem elfogadhatók",
+      "B) Mert a folyóiratok elutasítják az AI-generált szövegeket",
+      "C) Mert a tudományos írás a szerző szakértelmét és gondolkodásmódját kell tükrözze",
+      "D) Mert az AI nem tud tudományos szöveget írni"
     ],
     "correct": "C",
-    "explanation": "A fejezet szerint a digitális mezőgazdaság túlmutat a térképezésen, és tanuló, ajánlásokat adó rendszereket céloz.",
-    "chapter_num": 3
+    "explanation": "A tudományos írás a szerző szakértelmét és gondolkodásmódját kell tükrözze."
   },
   {
-    "type": "mcq",
-    "question": "Melyik állítás tükrözi helyesen a precíziós gazdálkodás eredményeiről szóló megállapítást?",
-    "options": [
-      "A) Az eredmények minden kultúrában azonosak",
-      "B) A hozam- és költséghatások mértéke függ a kultúrától, a táblától, a technológiától és a menedzsmenttől",
-      "C) Az inputcsökkentés mindig fontosabb, mint a hozam",
-      "D) A kutatások szerint az eredmények általában sokkal nagyobbak a gyakorlatban, mint a reklámokban"
+    "id": "ch03_tf01",
+    "type": "true_false",
+    "chapter": 3,
+    "difficulty": "easy",
+    "question": "Naponta tobb mint 4000 uj orvos-biologiai cikk jelenik meg.",
+    "correct": true,
+    "explanation": "A tudomanyos publikaciok mennyisege meghaladja az emberi feldolgozasi kapacitast."
+  },
+  {
+    "id": "ch03_tf02",
+    "type": "true_false",
+    "chapter": 3,
+    "difficulty": "medium",
+    "question": "Az AI teljesen kivalhatja a professzionalis lektoralast a tudomanyos publikaciokban.",
+    "correct": false,
+    "explanation": "Az AI dramaian csokkenti a nyelvi egyenlotlenseget, de a kutato sajat tudomanyos hangjat meg kell orizznie."
+  },
+  {
+    "id": "ch03_tf03",
+    "type": "true_false",
+    "chapter": 3,
+    "difficulty": "easy",
+    "question": "A strukturalt osszefoglalas technika sokkal informativabb eredmenyt ad, mint az egyszeru 'foglald ossze' keres.",
+    "correct": true,
+    "explanation": "A promptban megadott struktura az AI-t a relevans dimenziok menten dolgoztatja."
+  },
+  {
+    "id": "ch03_fb01",
+    "type": "fill_blank",
+    "chapter": 3,
+    "difficulty": "medium",
+    "question": "A _____ promptolas technika lenyege, hogy altalánostól a specifikus fele haladva egyre szukitjuk a kerdeseinket.",
+    "correct": "progressziv",
+    "alternatives": [
+      "progresszív",
+      "progressziv"
     ],
-    "correct": "B",
-    "explanation": "A szöveg hangsúlyozza, hogy a hatás mértéke erősen kontextusfüggő.",
-    "chapter_num": 3
+    "explanation": "Altalanos kerdessel kezdunk, majd egyre specifikusabb iranyba szukitjuk."
   },
   {
-    "type": "mcq",
-    "question": "Mi a térbeli adat lényege a mezőgazdaságban?",
-    "options": [
-      "A) Olyan adat, amely csak időponthoz kötött",
-      "B) Olyan információ, amely a Föld felszínének meghatározott pontjához kapcsolódik",
-      "C) Olyan adat, amely csak laboratóriumban keletkezik",
-      "D) Olyan adat, amelyet nem lehet térképen ábrázolni"
+    "id": "ch03_fb02",
+    "type": "fill_blank",
+    "chapter": 3,
+    "difficulty": "medium",
+    "question": "A COVID-19 jarvany alatt mintegy _____ tanulmany jelent meg egyetlen temarol.",
+    "correct": "200 000",
+    "alternatives": [
+      "200000",
+      "ketszazezer",
+      "200.000"
     ],
-    "correct": "B",
-    "explanation": "A fejezet meghatározása szerint a térbeli adat helyhez kötött információ.",
-    "chapter_num": 3
+    "explanation": "Ez jol illusztralja az informaciaaradatot."
   },
   {
-    "type": "mcq",
-    "question": "Melyik példa mutatja, hogy az adat nem önmagában értékes, hanem a döntések miatt?",
-    "options": [
-      "A) A gazda több adatot gyűjt, de soha nem használja fel",
-      "B) A hozamtérképet archiválják, de nem elemzik",
-      "C) A hozamtérképet a következő év vetési normájának módosítására használják",
-      "D) A gép adatokat rögzít GPS nélkül"
-    ],
-    "correct": "C",
-    "explanation": "Az adat akkor teremt értéket, ha konkrét gazdálkodási döntést támogat.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "A mezőgazdaság csak a digitális korszakban vált tudásigényes tevékenységgé.",
-    "correct_answer": false,
-    "explanation": "A szöveg szerint a mezőgazdaság mindig is tudásigényes volt; a változás a tudás megszerzésének módjában történt.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "A modern érzékelők képesek folyamatosan és pontosan továbbítani például a talajnedvességre vonatkozó információt.",
-    "correct_answer": true,
-    "explanation": "A bevezető konkrétan ezt a példát említi.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "A hozamtérképező rendszerek csak a betakarítás után, utólag képesek adatot rögzíteni.",
-    "correct_answer": false,
-    "explanation": "A szöveg szerint a hozamszenzorok már a kombájn haladása közben, valós időben rögzítenek adatokat.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "A 2050-re várható népességnövekedés a fejezet szerint csökkenti a mezőgazdaságra nehezedő nyomást.",
-    "correct_answer": false,
-    "explanation": "Épp ellenkezőleg: a növekvő népesség több élelmiszert igényel kevesebb földről.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "A műtrágya, a víz és az energia a szöveg szerint végtelen és olcsó erőforrások.",
-    "correct_answer": false,
-    "explanation": "A fejezet hangsúlyozza, hogy ezek végesek és drágák.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "A hagyományos megfigyelés teljesen haszontalan volt a digitális technológiák megjelenése előtt.",
-    "correct_answer": false,
-    "explanation": "A szöveg szerint ezek a megfigyelések rendkívül hatékonyak voltak azon belül, amit egy ember érzékelni tudott.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "Egy gyakorlott termelő a növényállomány vizuális jellemzőiből is következtethetett tápanyag-ellátottságra.",
-    "correct_answer": true,
-    "explanation": "A fejezet példaként említi, hogy a búza lombozatának színéből megítélhető a nitrogénellátottság.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "Nagyobb gazdaságokban az emberi megfigyelés egyik korlátja, hogy a termelő nem tud minden táblarészt gyakran bejárni.",
-    "correct_answer": true,
-    "explanation": "A szöveg ezt kifejezetten megfogalmazza.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "A változó éghajlat miatt a korábbi időjárási mintázatok mindig megbízhatóbbá válnak.",
-    "correct_answer": false,
-    "explanation": "A fejezet szerint a korábbi mintázatok már nem feltétlenül megbízható iránymutatások.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "A GPS és a GIS megjelenése előtt a gazda nem tudta térben pontosan összekapcsolni az eseményeket a tábla részeivel.",
-    "correct_answer": true,
-    "explanation": "A digitális helymeghatározás tette lehetővé a 'mi történt' és a 'hol történt' összekapcsolását.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "A kombájnokra szerelt hozammérők GPS-koordináták nélkül is ugyanazt a térbeli pontosságot adják.",
-    "correct_answer": false,
-    "explanation": "A térbeli pontosság kulcsa, hogy a mérésekhez GPS-koordináta társuljon.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "A precíziós mezőgazdaság egyik alapelve, hogy a tábla különböző részeit szükség szerint különbözőképpen kezeljük.",
-    "correct_answer": true,
-    "explanation": "Ez a változó dózisú kijuttatás és a helyspecifikus kezelés lényege.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "A 2010-es években a figyelem kizárólag a térbeli variabilitásra irányult, az időbeli változásokra nem.",
-    "correct_answer": false,
-    "explanation": "A szöveg szerint ekkor már az időbeli variabilitás és a közel valós idejű visszacsatolás is fontossá vált.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "Az okostelefonok a mezőgazdaságban az időjárás, a piaci árak és a táblaállapot ellenőrzésének általános eszközeivé váltak.",
-    "correct_answer": true,
-    "explanation": "A fejezet ezt egyértelműen kimondja.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "A szöveg szerint általánosan biztosan számolhatunk 10–30%-os hozamnövekedéssel minden adatvezérelt rendszer bevezetésekor.",
-    "correct_answer": false,
-    "explanation": "A fejezet óvatosságra int: a közölt eredmények többnyire szerényebbek és erősen körülményfüggők.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "A mesterséges intelligenciával támogatott gyomfelismerés dokumentált esetekben jelentősen csökkentette a herbicidfelhasználást.",
-    "correct_answer": true,
-    "explanation": "A szöveg 40–60%-os csökkenést említ.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "A valós idejű talajnedvesség-adatokra épülő okosöntözés a szöveg szerint mindenhol pontosan 50%-kal csökkentette a vízfelhasználást.",
-    "correct_answer": false,
-    "explanation": "A megadott tartomány 20–40%, nem egységesen 50%.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "Az adatvezérelt működés egyik legfontosabb hatása, hogy a gazdálkodást reaktívból proaktívvá alakíthatja.",
-    "correct_answer": true,
-    "explanation": "Ez a fejezet egyik központi állítása.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "Adatok nélkül a nitrogénhiányt gyakran már a látható tünetek megjelenése előtt felismerik.",
-    "correct_answer": false,
-    "explanation": "A szöveg szerint adat nélkül gyakran csak a sárgulás megjelenésekor észlelik.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "A drónos felvételezés és a machine learning alapú osztályozás segíthet a kártevő-felszaporodás korai felismerésében.",
-    "correct_answer": true,
-    "explanation": "A fejezet ezt a korai, célzott beavatkozás egyik eszközeként említi.",
-    "chapter_num": 3
-  },
-  {
-    "type": "true_false",
-    "question": "A térbeli adat olyan információ, amely nem kapcsolódik konkrét helyhez.",
-    "correct_answer": false,
-    "explanation": "Épp ellenkezőleg: a térbeli adat lényege a helyhez kötöttség.",
-    "chapter_num": 3
-  },
-  {
-    "type": "fill_blank",
-    "question": "A mezőgazdaságban az adat nem luxus, hanem jobb _____ alapanyaga.",
-    "correct_answer": "döntések",
-    "explanation": "A szöveg szerint az adat az az alapanyag, amelyből jobb döntések születnek.",
-    "chapter_num": 3
-  },
-  {
-    "type": "fill_blank",
-    "question": "A modern gazdaságokban az érzékelők hálózata például a talaj _____ tartalmáról is folyamatos információt adhat.",
-    "correct_answer": "nedvesség",
-    "explanation": "A bevezető a talaj nedvességtartalmát említi példaként.",
-    "chapter_num": 3
-  },
-  {
-    "type": "fill_blank",
-    "question": "A műholdas helymeghatározó rendszer rövidítése: _____.",
-    "correct_answer": "GPS",
-    "explanation": "A fejezet a GPS-vevők mezőgazdasági elterjedését tárgyalja.",
-    "chapter_num": 3
-  },
-  {
-    "type": "fill_blank",
-    "question": "A térinformatikai rendszerek angol rövidítése: _____.",
-    "correct_answer": "GIS",
-    "explanation": "A GIS a térbeli adatok kezelésének kulcstechnológiája.",
-    "chapter_num": 3
-  },
-  {
-    "type": "fill_blank",
-    "question": "A kombájnokra szerelt hozammérők a terményáram adataihoz _____-koordinátát rendeltek.",
-    "correct_answer": "GPS",
-    "explanation": "Ez tette lehetővé a helyspecifikus hozamtérképezést.",
-    "chapter_num": 3
-  },
-  {
-    "type": "fill_blank",
-    "question": "A tábla különböző részeinek eltérő kezelését lehetővé tevő megoldás neve: változó _____ kijuttatás.",
-    "correct_answer": "dózisú",
-    "explanation": "A szöveg a változó dózisú kijuttatást nevezi meg kulcselemként.",
-    "chapter_num": 3
-  },
-  {
-    "type": "fill_blank",
-    "question": "A 2010-es évekre a gépek egyre gyakrabban _____ kapcsolattal kerültek piacra, amely vezeték nélküli adatátvitelt tett lehetővé.",
-    "correct_answer": "telematikai",
-    "explanation": "A fejezet a telematikai kapcsolatot emeli ki.",
-    "chapter_num": 3
-  },
-  {
-    "type": "fill_blank",
-    "question": "A 'digitális mezőgazdaság' célja nemcsak a térképezés, hanem adatból tanuló _____ rendszerek felépítése is.",
-    "correct_answer": "döntéstámogató",
-    "explanation": "A szöveg ezt a tágabb ambíciót hangsúlyozza.",
-    "chapter_num": 3
-  },
-  {
-    "type": "fill_blank",
-    "question": "A gazdálkodás adat hatására reaktív működésből _____ működéssé válhat.",
-    "correct_answer": "proaktív",
-    "explanation": "Ez a fejezet egyik kulcsfogalma.",
-    "chapter_num": 3
-  },
-  {
-    "type": "fill_blank",
-    "question": "A mesterséges intelligenciával támogatott gyomfelismerés és precíziós permetezés a _____ felhasználását csökkenthette 40–60%-kal.",
-    "correct_answer": "herbicid",
-    "explanation": "A szöveg konkrétan a herbicidfelhasználás csökkenését említi.",
-    "chapter_num": 3
-  },
-  {
-    "type": "fill_blank",
-    "question": "A valós idejű talajnedvesség-adatokra támaszkodó okosöntözési rendszerek a _____ felhasználását csökkentették 20–40%-kal.",
-    "correct_answer": "víz",
-    "explanation": "A fejezet ezt dokumentált eredményként hozza.",
-    "chapter_num": 3
-  },
-  {
-    "type": "fill_blank",
-    "question": "A mezőgazdaságban a térbeli adat a Föld felszínének egy meghatározott _____ kötött információ.",
-    "correct_answer": "pontjához",
-    "explanation": "Ez a térbeli adat definíciója a szövegben.",
-    "chapter_num": 3
-  },
-  {
-    "type": "fill_blank",
-    "question": "A raszteres adat a tájat cellák vagy _____ rácsaként ábrázolja.",
-    "correct_answer": "pixelek",
-    "explanation": "A fejezet a raszteres adatok leírásánál ezt a kifejezést használja.",
-    "chapter_num": 3
-  },
-  {
+    "id": "ch03_es01",
     "type": "essay",
-    "question": "Magyarázza el, hogyan alakult át a mezőgazdasági tudás megszerzésének módja a hagyományos megfigyeléstől a digitális adatgyűjtésig.",
-    "explanation": "Kulcspontok: megfigyelés mint ősi adatgyűjtés; emberi érzékelés és emlékezet korlátai; GPS és GIS megjelenése; hozamtérképezés; felhő, telematika, okostelefonok; összekapcsolt adatfolyamok.",
-    "chapter_num": 3
-  },
-  {
-    "type": "essay",
-    "question": "Fejtse ki, miért nem elegendő pusztán a gazdálkodói megérzés a mai mezőgazdasági kihívások kezelésére.",
-    "explanation": "Kulcspontok: népességnövekedés, kevesebb föld, klímaváltozás, drága és véges inputok, szigorúbb szabályozás, kisebb hibahatár, nagyobb gazdaságméret.",
-    "chapter_num": 3
-  },
-  {
-    "type": "essay",
-    "question": "Mutassa be, hogyan tette lehetővé a GPS, a GIS és a változó dózisú technológia a helyspecifikus gazdálkodást.",
-    "explanation": "Kulcspontok: mi történt + hol történt; térképezés; rácshálós talajmintavétel; differenciált inputkijuttatás; precíziós mezőgazdaság megszületése.",
-    "chapter_num": 3
-  },
-  {
-    "type": "essay",
-    "question": "Elemezze, mit jelent az, hogy az adat önmagában nem érték, hanem a döntések révén válik hasznossá.",
-    "explanation": "Kulcspontok: dekoráció vs gazdálkodási eszköz; hozamtérkép felhasználása vetési norma módosítására; adatból információ, majd döntés; menedzsment szerepe.",
-    "chapter_num": 3
-  },
-  {
-    "type": "essay",
-    "question": "Hasonlítsa össze a reaktív és a proaktív gazdálkodást a fejezet példái alapján.",
-    "explanation": "Kulcspontok: nitrogénhiány észlelése tünet után vs előrejelzés; kártevő-felszaporodás késői felismerése vs korai drónos/ML detektálás; megelőzés költségelőnye.",
-    "chapter_num": 3
-  },
-  {
-    "type": "essay",
-    "question": "Értelmezze, miért függ erősen az adatvezérelt precíziós gazdálkodás eredményessége a helyi körülményektől.",
-    "explanation": "Kulcspontok: növénykultúra, táblaadottságok, technológia, menedzsment; miért nem általánosíthatók a reklámszerű ígéretek; kontextusfüggő eredmények.",
-    "chapter_num": 3
-  },
-  {
-    "type": "essay",
-    "question": "Mutassa be a 2010-es évek digitális mezőgazdasági fordulatát és annak gyakorlati jelentőségét.",
-    "explanation": "Kulcspontok: telematika, vezeték nélküli adatátvitel, felhőplatformok, külső rendszerekkel való adatcsere, okostelefonok, közel valós idejű visszacsatolás.",
-    "chapter_num": 3
-  },
-  {
-    "type": "essay",
-    "question": "Fejtse ki, hogyan járulhat hozzá az adatvezérelt gazdálkodás az inputfelhasználás csökkentéséhez.",
-    "explanation": "Kulcspontok: differenciált műtrágyázás; célzott gyomirtás; okosöntözés; herbicid- és vízmegtakarítás; gazdasági és környezeti előnyök.",
-    "chapter_num": 3
-  },
-  {
-    "type": "essay",
-    "question": "Magyarázza el, miért tekinthető a hagyományos gazdálkodói tudás az 'analóg adattudomány' egyik formájának.",
-    "explanation": "Kulcspontok: mintázatfelismerés, tapasztalatfelhalmozás, közösségi tudásmegosztás, megfigyelésen alapuló következtetések, de korlátozott skálázhatóság.",
-    "chapter_num": 3
-  },
-  {
-    "type": "essay",
-    "question": "Ismertesse a térbeli adatok jelentőségét a mezőgazdaságban, és magyarázza el, miért alapvetőek a helyspecifikus döntésekhez.",
-    "explanation": "Kulcspontok: helyhez kötött információ; növényteljesítmény és hely kapcsolata; térképezés; tábla heterogenitása; raszteres adatok szerepe.",
-    "chapter_num": 3
+    "chapter": 3,
+    "difficulty": "hard",
+    "question": "Hogyan hasznalnad az AI-t egy angol nyelvu tudomanyos cikk megirasanak teljes folyamataban — az irodalomattekintesetol a kezirat megirasán at a biraloi valaszokig? Milyen etikai szempontokat kell figyelembe venni?",
+    "rubric": "A valasz tartalmazza az irodalomattekintes AI-val torteno tamogatasat, a keziratiras folyamatat, a biraloi valaszokat, es az etikai szempontokat. Ertekelesi szempontok: teljesség, etikai tudatossag, gyakorlati megvalosithatosag.",
+    "max_score": 100
   }
 ]

@@ -1,414 +1,139 @@
 [
   {
+    "id": "ch10_q01",
+    "chapter": 10,
+    "difficulty": "easy",
     "type": "mcq",
-    "question": "Mi a precíziós tápanyag-gazdálkodás központi tétele a fejezet szerint?",
+    "question": "Mi az a digitális iker (digital twin)?",
     "options": [
-      "A) Minden zónába azonos műtrágyaadagot kell kijuttatni",
-      "B) A legolcsóbb tápanyagot kell választani minden körülmények között",
-      "C) A megfelelő tápanyagot, megfelelő dózisban, megfelelő helyre, megfelelő időben kell kijuttatni",
-      "D) Csak a nitrogén helyspecifikus kezelése fontos"
-    ],
-    "correct": "C",
-    "explanation": "A fejezet kifejezetten a „megfelelő tápanyagot, a megfelelő dózisban, a megfelelő helyre, a megfelelő időben” elvre építi a precíziós tápanyag-gazdálkodást.",
-    "chapter_num": 10
-  },
-  {
-    "type": "mcq",
-    "question": "Miért problémás az egységes műtrágyaadag kijuttatása egy erősen heterogén táblán?",
-    "options": [
-      "A) Mert minden zónában azonos termést eredményez",
-      "B) Mert egyszerre okozhat túltrágyázást és alultrágyázást különböző helyeken",
-      "C) Mert kizárólag a foszfor felvételét rontja",
-      "D) Mert csak a gépek kalibrációjától függ a hatása"
+      "A) Statikus 3D modell",
+      "B) Fizikai rendszer virtuális reprezentációja, amely kétirányú adatáramlás révén szinkronizálódik a fizikai párjával",
+      "C) Szenzoros adatokat tároló adatbázis",
+      "D) Évente frissített szimuláció"
     ],
     "correct": "B",
-    "explanation": "A térben változó tápanyag-ellátottság miatt az egységes adag egyes zónákban túl sok, másutt túl kevés lehet.",
-    "chapter_num": 10
+    "explanation": "Kétirányú adatáramlás révén szinkronizálódik a fizikai párjával."
   },
   {
+    "id": "ch10_q02",
+    "chapter": 10,
+    "difficulty": "medium",
     "type": "mcq",
-    "question": "Az alábbiak közül melyik NEM szerepel a klasszikus talajképző tényezők között a szövegben?",
+    "question": "Mi különbözteti meg a digitális ikret a hagyományos szimulációtól?",
     "options": [
-      "A) Anyakőzet",
-      "B) Domborzat",
-      "C) Öntözési stratégia",
-      "D) Idő"
-    ],
-    "correct": "C",
-    "explanation": "A felsorolt öt tényező: anyakőzet, növényzet, éghajlat, domborzat és idő. Az öntözési stratégia nem klasszikus talajképző tényező.",
-    "chapter_num": 10
-  },
-  {
-    "type": "mcq",
-    "question": "Hogyan hat a domborzat a táblán belüli tápanyag-variabilitásra?",
-    "options": [
-      "A) Nem befolyásolja érdemben a tápanyag-ellátottságot",
-      "B) Csak a mikroelemekre hat, a makroelemekre nem",
-      "C) Irányítja a vízmozgást, az eróziót, a szervesanyag-felhalmozódást és több kémiai folyamatot",
-      "D) Kizárólag a talaj pH-ját módosítja"
-    ],
-    "correct": "C",
-    "explanation": "A fejezet szerint a domborzat az egyik legmeghatározóbb tényező, mert több, a tápanyag-ellátottságot alakító folyamatot szabályoz.",
-    "chapter_num": 10
-  },
-  {
-    "type": "mcq",
-    "question": "Mi jellemző általában a nedves éghajlatú, erodált dombtetőkre és vállhelyzetekre?",
-    "options": [
-      "A) Magasabb tápanyag-ellátottság, mint a mélyedésekben",
-      "B) Alacsonyabb tápanyag-ellátottság a termőréteg-veszteség miatt",
-      "C) Mindig magasabb reziduális nitrát, mint a lejtőaljakon",
-      "D) Kizárólag káliumban gazdagodnak"
+      "A) Drágább szoftver",
+      "B) A kétirányú adatáramlás -- a virtuális modell visszacsatol a fizikai rendszerbe",
+      "C) Csak ipari környezetben alkalmazható",
+      "D) A szimuláció pontosabb"
     ],
     "correct": "B",
-    "explanation": "Az erózió a felső, tápanyagban gazdag talajréteget lejjebb szállítja, ezért a magasabb fekvésű erodált helyek gyakran tápanyagszegényebbek.",
-    "chapter_num": 10
+    "explanation": "A kétirányú adatáramlás és visszacsatolás teszi ikerré."
   },
   {
+    "id": "ch10_q03",
+    "chapter": 10,
+    "difficulty": "medium",
     "type": "mcq",
-    "question": "Mi magyarázza, hogy Kelet-Észak-Dakotában csapadékos időszak után a mélyedésekben gyakran nagyon alacsony a reziduális nitrát?",
+    "question": "Ki fogalmazta meg először a modern digitális iker fogalmát?",
     "options": [
-      "A) A nitrát teljesen immobilizálódik a homokos talajokban",
-      "B) Az intenzív denitrifikáció nitrogénveszteséget okoz oxigénhiányos körülmények között",
-      "C) A foszfor kicsapódása megköti a nitrátot",
-      "D) A karbonátfelhalmozódás semlegesíti a nitrátot"
+      "A) Elon Musk",
+      "B) Michael Grieves, a Michigani Egyetemen 2002-ben",
+      "C) Tim Berners-Lee",
+      "D) Alan Turing"
     ],
     "correct": "B",
-    "explanation": "A kötöttebb, nedves, oxigénhiányos mélyedésekben a denitrifikáció aktív lehet, ami csökkenti a reziduális nitrát mennyiségét.",
-    "chapter_num": 10
+    "explanation": "Michael Grieves, 2002, Michigani Egyetem."
   },
   {
+    "id": "ch10_q04",
+    "chapter": 10,
+    "difficulty": "hard",
     "type": "mcq",
-    "question": "Mely tápanyagok esetében különösen tartósak a kezelésből eredő mintázatok?",
+    "question": "Melyik NASA-küldtetés során bizonyította be először az iker-koncepció az értékét?",
     "options": [
-      "A) Nitrogén és kén",
-      "B) Foszfor és kálium",
-      "C) Szén és oxigén",
-      "D) Nitrát és klorid"
+      "A) Apollo 11",
+      "B) Apollo 13 -- a földi másolatokon tesztelték a megoldásokat",
+      "C) Voyager 1",
+      "D) Mars Rover"
     ],
     "correct": "B",
-    "explanation": "A szöveg szerint a foszfor és a kálium kevéssé mobilis, ezért hosszú ideig ott maradnak, ahová kijuttatták őket.",
-    "chapter_num": 10
+    "explanation": "Apollo 13: a Houston-ban lévő azonos rendszereken tesztelték a megoldásokat."
   },
   {
+    "id": "ch10_q05",
+    "chapter": 10,
+    "difficulty": "easy",
     "type": "mcq",
-    "question": "Mi lehet a rosszul kalibrált vagy egyenetlen átfedéssel működő röpítőtárcsás műtrágyaszórók következménye?",
+    "question": "Mi a digitális árnyék (digital shadow)?",
     "options": [
-      "A) A természetes talajképződés megszűnése",
-      "B) A tábla teljes hosszában párhuzamos túl- és alultrágyázott sávok kialakulása",
-      "C) A nitrát teljes eltűnése a talajból",
-      "D) A domborzati különbségek kiegyenlítődése"
+      "A) Kétirányú adatáramlással rendelkező modell",
+      "B) Egyirányú adatáramlás: fizikai rendszerből a virtuális modellbe, visszacsatolás nélkül",
+      "C) Automatikus adatcsere nélküli CAD-rajz",
+      "D) Offline tárolt szimuláció"
     ],
     "correct": "B",
-    "explanation": "A gépi kijuttatás hibái szisztematikus sávosságot hozhatnak létre a tápanyag-eloszlásban.",
-    "chapter_num": 10
+    "explanation": "Egyirányú: fizikai -> virtuális, visszacsatolás nélkül."
   },
   {
-    "type": "mcq",
-    "question": "Miért különbözik a nitrogén viselkedése a foszforétól és a káliumétól a táblán belüli variabilitás szempontjából?",
-    "options": [
-      "A) Mert a nitrogén teljesen mozdulatlan a talajban",
-      "B) Mert a nitrogén mobilis, és a víz valamint biológiai folyamatok évente újraeloszthatják",
-      "C) Mert a nitrogén csak a dombtetőkön fordul elő",
-      "D) Mert a nitrogén nem vesz részt környezeti problémákban"
+    "id": "ch10_tf01",
+    "type": "true_false",
+    "chapter": 10,
+    "difficulty": "easy",
+    "question": "A digitalis iker (digital twin) ketiranyuu adataramlas reven szinkronizalodik a fizikai parjaval.",
+    "correct": true,
+    "explanation": "A ketiranyuu adataramlas es visszacsatolas teszi ikerré."
+  },
+  {
+    "id": "ch10_tf02",
+    "type": "true_false",
+    "chapter": 10,
+    "difficulty": "medium",
+    "question": "A digitalis arnyék (digital shadow) ugyanolyan ketiranyú adataramlassal rendelkezik, mint a digitalis iker.",
+    "correct": false,
+    "explanation": "A digitalis arnyék egyiranyú: fizikai rendszerbol a virtualisba, visszacsatolas nelkul."
+  },
+  {
+    "id": "ch10_tf03",
+    "type": "true_false",
+    "chapter": 10,
+    "difficulty": "easy",
+    "question": "A 'digital twin' kifejezest John Vickers, a NASA mernoke alkotta meg 2010-ben.",
+    "correct": true,
+    "explanation": "A kifejezes egy technologiai utemtervben jelent meg eloszor 2010-ben."
+  },
+  {
+    "id": "ch10_fb01",
+    "type": "fill_blank",
+    "chapter": 10,
+    "difficulty": "medium",
+    "question": "A modern digitalis iker fogalmat _____ fogalmazta meg eloszor 2002-ben a Michigani Egyetemen.",
+    "correct": "Michael Grieves",
+    "alternatives": [
+      "Grieves",
+      "Michael Grieves"
     ],
-    "correct": "B",
-    "explanation": "A nitrogén mobilis tápanyag, míg a foszfor és a kálium jóval kevésbé mozog, ezért a mintázataik eltérően alakulnak.",
-    "chapter_num": 10
+    "explanation": "A termekeletciklus-menedzsment kontextusaban definiaalta a fogalmat."
   },
   {
-    "type": "mcq",
-    "question": "Mit okozhat a magas nátriumtartalmú szódás talaj?",
-    "options": [
-      "A) Javítja a talajszerkezetet és a beszivárgást",
-      "B) Csökkenti a gyökerek behatolását és rontja a víz beszivárgását",
-      "C) Növeli a foszfor mobilitását minden esetben",
-      "D) Megszünteti a táblán belüli változékonyságot"
+    "id": "ch10_fb02",
+    "type": "fill_blank",
+    "chapter": 10,
+    "difficulty": "medium",
+    "question": "Az Apollo _____ kuldetes soran a foldi masolatokon teszteltek a megoldasokat, ami eleteket mentett.",
+    "correct": "13",
+    "alternatives": [
+      "13",
+      "tizenharom"
     ],
-    "correct": "B",
-    "explanation": "A szódás talajok szerkezetromlást, rosszabb beszivárgást és gyökérfejlődési akadályokat okozhatnak.",
-    "chapter_num": 10
+    "explanation": "A Houston-ban levo azonos rendszereken teszteltek a megoldasokat."
   },
   {
-    "type": "mcq",
-    "question": "Melyik példa mutatja, hogy kis szintkülönbség is jelentős kémiai eltérést okozhat?",
-    "options": [
-      "A) A löszvastagság változása a Mississippi közelében",
-      "B) A Red River-völgyben 15 cm szintkülönbséghez kapcsolódó pH-kontraszt",
-      "C) A Dust Bowl idején bekövetkezett szélerózió",
-      "D) A sávos műtrágyakijuttatás foszfor-felhalmozása"
-    ],
-    "correct": "B",
-    "explanation": "A szöveg szerint a Red River-völgyben már 15 cm szintkülönbség is éles pH-különbségeket eredményezhet.",
-    "chapter_num": 10
-  },
-  {
-    "type": "mcq",
-    "question": "Miért lehet szükség helyspecifikus mész- vagy kénkijuttatásra egyes táblákon?",
-    "options": [
-      "A) Mert a pH-különbségek befolyásolják a mikroelem-ellátottságot, például a vasét",
-      "B) Mert a mész minden tápanyag helyett alkalmazható",
-      "C) Mert a kén kizárólag a homokos talajok víztartását növeli",
-      "D) Mert a pH nem függ a tájhelyzettől"
-    ],
-    "correct": "A",
-    "explanation": "A pH térbeli változatossága hat a mikroelemek hozzáférhetőségére, ezért indokolt lehet a helyspecifikus beavatkozás.",
-    "chapter_num": 10
-  },
-  {
-    "type": "true_false",
-    "question": "A precíziós gazdálkodás szerint a növények tápanyagigénye néhány tíz méteren belül is jelentősen eltérhet.",
-    "correct_answer": true,
-    "explanation": "A fejezet egyik alapállítása, hogy a tápanyagigény kis távolságokon belül is erősen változhat.",
-    "chapter_num": 10
-  },
-  {
-    "type": "true_false",
-    "question": "Az egységes műtrágyaadag kijuttatása heterogén táblán általában egyszerűsíti a gazdálkodást, de agronómiai és környezeti szempontból is optimális.",
-    "correct_answer": false,
-    "explanation": "A szöveg szerint ez túl- és alultrágyázást, pénzkidobást, terméskiesést és környezeti veszteséget okozhat.",
-    "chapter_num": 10
-  },
-  {
-    "type": "true_false",
-    "question": "A természetes talajképződési folyamatok mellett a területhasználati történet és a korábbi gazdálkodási döntések is alakítják a tápanyag-variabilitást.",
-    "correct_answer": true,
-    "explanation": "A fejezet hangsúlyozza e tényezők kumulatív kölcsönhatását.",
-    "chapter_num": 10
-  },
-  {
-    "type": "true_false",
-    "question": "A domborzat szerepe elhanyagolható a táblán belüli tápanyag-variabilitásban.",
-    "correct_answer": false,
-    "explanation": "Épp ellenkezőleg: a szöveg szerint a domborzat talán a legmeghatározóbb tényező.",
-    "chapter_num": 10
-  },
-  {
-    "type": "true_false",
-    "question": "Nedves éghajlaton az erózió általában a mélyedésekből szállítja fel a tápanyagokat a dombtetőkre.",
-    "correct_answer": false,
-    "explanation": "A vízerózió jellemzően a magasabb helyekről szállítja lejjebb a talajt és a tápanyagokat.",
-    "chapter_num": 10
-  },
-  {
-    "type": "true_false",
-    "question": "A Dust Bowl időszak történelmi talajveszteségei ma is befolyásolják a termékenységi mintázatokat.",
-    "correct_answer": true,
-    "explanation": "A szöveg szerint ezek a veszteségek évtizedekkel később is meghatározóak.",
-    "chapter_num": 10
-  },
-  {
-    "type": "true_false",
-    "question": "A nitrát homokos, magasabb tájhelyzetű talajokban hajlamos lehet mélyebbre kilúgozódni.",
-    "correct_answer": true,
-    "explanation": "Ez a nitrogén körforgalmának egyik fontos topográfiai összefüggése a fejezetben.",
-    "chapter_num": 10
-  },
-  {
-    "type": "true_false",
-    "question": "A denitrifikáció elsősorban jól szellőzött, oxigéndús talajokban a legerősebb.",
-    "correct_answer": false,
-    "explanation": "A denitrifikáció inkább oxigénhiányos, nedves körülmények között aktív.",
-    "chapter_num": 10
-  },
-  {
-    "type": "true_false",
-    "question": "Kelet-Észak-Dakotában és az állam szárazabb nyugati részén a mélyedések nitrátdinamikája azonos mintázatot mutat.",
-    "correct_answer": false,
-    "explanation": "A szöveg kifejezetten eltérő mintázatot ír le a csapadékosabb és a szárazabb térségek között.",
-    "chapter_num": 10
-  },
-  {
-    "type": "true_false",
-    "question": "A tájon belüli vízmozgás oldható ionokat, például szulfátot és kloridot is áthelyezhet.",
-    "correct_answer": true,
-    "explanation": "A fejezet ezt a folyamatot név szerint említi.",
-    "chapter_num": 10
-  },
-  {
-    "type": "true_false",
-    "question": "A pH-különbségeknek nincs számottevő hatásuk a mikroelem-ellátottságra.",
-    "correct_answer": false,
-    "explanation": "A szöveg szerint különösen a vas hozzáférhetőségét befolyásolhatják.",
-    "chapter_num": 10
-  },
-  {
-    "type": "true_false",
-    "question": "A kezelésből eredő szisztematikus mintázatok különösen a foszfor, a kálium és a pH esetében lehetnek tartósak.",
-    "correct_answer": true,
-    "explanation": "Ezek a tulajdonságok és tápanyagok kevésbé mobilak, ezért a mintázatok hosszabban fennmaradnak.",
-    "chapter_num": 10
-  },
-  {
-    "type": "true_false",
-    "question": "A nitrogén a foszforhoz és káliumhoz hasonlóan lényegében ott marad, ahová egyszer kijuttatták.",
-    "correct_answer": false,
-    "explanation": "A nitrogén mobilis, ezért a víz és biológiai folyamatok könnyebben újraelosztják.",
-    "chapter_num": 10
-  },
-  {
-    "type": "true_false",
-    "question": "A szikesedés és szódásodás csak száraz és félszáraz térségekben fordulhat elő.",
-    "correct_answer": false,
-    "explanation": "A szöveg szerint egyre inkább egyes nedvesebb, sekély talajvízszintű területeken is fontos probléma.",
-    "chapter_num": 10
-  },
-  {
-    "type": "true_false",
-    "question": "A sóval érintett területek kiterjedése a csapadékviszonyoktól függően változhat.",
-    "correct_answer": true,
-    "explanation": "A fejezet szerint ezek a területek növekedhetnek vagy csökkenhetnek az időjárási viszonyok függvényében.",
-    "chapter_num": 10
-  },
-  {
-    "type": "fill_blank",
-    "question": "A precíziós tápanyag-gazdálkodás egyik alapelve, hogy a megfelelő tápanyagot a megfelelő _____ kell kijuttatni.",
-    "correct_answer": "dózisban",
-    "explanation": "A 4R-szerű elv egyik eleme a megfelelő dózis.",
-    "chapter_num": 10
-  },
-  {
-    "type": "fill_blank",
-    "question": "A fejezet szerint a megfelelő tápanyagot a megfelelő dózisban, megfelelő helyre és megfelelő _____ kell kijuttatni.",
-    "correct_answer": "időben",
-    "explanation": "A helyes időzítés a precíziós tápanyag-gazdálkodás alapvető eleme.",
-    "chapter_num": 10
-  },
-  {
-    "type": "fill_blank",
-    "question": "Az öt klasszikus talajképző tényező egyike az anyakőzet, a növényzet, az éghajlat, a domborzat és az _____.",
-    "correct_answer": "idő",
-    "explanation": "A klasszikus ötös felsorolás utolsó eleme az idő.",
-    "chapter_num": 10
-  },
-  {
-    "type": "fill_blank",
-    "question": "A glaciális üledéket fedő, széllel lerakódott iszapot _____ nevezik.",
-    "correct_answer": "lösznek",
-    "explanation": "A szöveg a löszt mint széllel lerakódott iszapot definiálja.",
-    "chapter_num": 10
-  },
-  {
-    "type": "fill_blank",
-    "question": "Nedves éghajlaton a dombtetők gyakran azért tápanyagszegényebbek, mert elveszítették eredeti _____.",
-    "correct_answer": "termőrétegüket",
-    "explanation": "Az erózió a felső, termékeny talajréteget távolítja el.",
-    "chapter_num": 10
-  },
-  {
-    "type": "fill_blank",
-    "question": "A nitrát oxigénhiányos, nedves talajban gázhalmazállapotú nitrogénformákká alakuló veszteségét _____ nevezzük.",
-    "correct_answer": "denitrifikációnak",
-    "explanation": "Ez a folyamat a nitrogénveszteség egyik kulcsmechanizmusa.",
-    "chapter_num": 10
-  },
-  {
-    "type": "fill_blank",
-    "question": "Homokos, magasabb tájhelyzetű talajokban a nitrát hajlamos a mélyebb talajrétegekbe _____.",
-    "correct_answer": "kilúgozódni",
-    "explanation": "A szöveg ezt a nitrogénveszteségi útvonalat emeli ki.",
-    "chapter_num": 10
-  },
-  {
-    "type": "fill_blank",
-    "question": "A Red River-völgy példájában a karbonátban gazdag kiemelkedések pH-ja körülbelül 7,5-_____.",
-    "correct_answer": "7,8",
-    "explanation": "A fejezet ezt a pH-tartományt adja meg a kiemelkedésekre.",
-    "chapter_num": 10
-  },
-  {
-    "type": "fill_blank",
-    "question": "A kilúgzott mélyedések pH-ja a Red River-völgy példájában körülbelül _____.",
-    "correct_answer": "6",
-    "explanation": "A szöveg a mélyedésekre pH 6 körüli értéket említ.",
-    "chapter_num": 10
-  },
-  {
-    "type": "fill_blank",
-    "question": "A kevéssé mobilis tápanyagok közé a fejezet szerint a foszfor és a _____ tartozik.",
-    "correct_answer": "kálium",
-    "explanation": "E két tápanyag mintázatai gyakran hosszú ideig fennmaradnak.",
-    "chapter_num": 10
-  },
-  {
-    "type": "fill_blank",
-    "question": "A rosszul kalibrált röpítőtárcsás műtrágyaszórók párhuzamos túl- és alultrágyázott _____ hagyhatnak a táblán.",
-    "correct_answer": "sávokat",
-    "explanation": "Ez tipikus kezelésből eredő szisztematikus mintázat.",
-    "chapter_num": 10
-  },
-  {
-    "type": "fill_blank",
-    "question": "A magas nátriumtartalmú _____ talajok rontják a talajszerkezetet és csökkentik a víz beszivárgását.",
-    "correct_answer": "szódás",
-    "explanation": "A szódásodás a nátriumhoz kapcsolódó talajromlási forma.",
-    "chapter_num": 10
-  },
-  {
-    "type": "fill_blank",
-    "question": "A növényeknek a szöveg szerint összesen _____ esszenciális elemre van szükségük a normális növekedéshez és fejlődéshez.",
-    "correct_answer": "tizenhét",
-    "explanation": "A fejezet 10.2 szakasza ezzel a számmal indul.",
-    "chapter_num": 10
-  },
-  {
+    "id": "ch10_es01",
     "type": "essay",
-    "question": "Magyarázza el, miért vezethet gazdasági és környezeti problémákhoz az egységes műtrágyaadag alkalmazása egy heterogén táblán.",
-    "explanation": "Kulcspontok: térbeli tápanyag-ellátottsági különbségek; túltrágyázás és alultrágyázás egyidejű megjelenése; terméskiesés a hiányos zónákban; felesleges költség a túlkezelt zónákban; tápanyagveszteség vízbe és levegőbe; precíziós megközelítés indokoltsága.",
-    "chapter_num": 10
-  },
-  {
-    "type": "essay",
-    "question": "Mutassa be, hogyan alakítja az anyakőzet és a talajképződés a táblán belüli tápanyag-variabilitást.",
-    "explanation": "Kulcspontok: öt klasszikus talajképző tényező; anyakőzet hatása textúrára, víztartásra, eredendő termékenységre; löszvastagság példája; glaciális üledék tulajdonságainak szerepe; természetes eredetű heterogenitás kapcsolata a mai termőképességgel.",
-    "chapter_num": 10
-  },
-  {
-    "type": "essay",
-    "question": "Elemezze a domborzat szerepét a tápanyag-eloszlás és a talajnedvesség alakulásában.",
-    "explanation": "Kulcspontok: vízmozgás irányítása; erózió és lerakódás; szervesanyag-felhalmozódás; dombtetők és mélyedések eltérő tápanyag-ellátottsága; nedvességi különbségek; kémiai folyamatok és termékenységi mintázatok.",
-    "chapter_num": 10
-  },
-  {
-    "type": "essay",
-    "question": "Hasonlítsa össze a nitrogén, illetve a foszfor és kálium táblán belüli viselkedését a mobilitás szempontjából.",
-    "explanation": "Kulcspontok: nitrogén mobilitása; kilúgozódás és denitrifikáció; évenkénti újraeloszlás; foszfor és kálium alacsony mobilitása; kezelésből eredő mintázatok tartóssága; helyspecifikus korrekció szükségessége.",
-    "chapter_num": 10
-  },
-  {
-    "type": "essay",
-    "question": "Fejtse ki, hogyan hozhatnak létre a korábbi gazdálkodási döntések tartós szisztematikus mintázatokat a talajvizsgálati térképeken.",
-    "explanation": "Kulcspontok: egyenetlen műtrágyaszórás; sávos kijuttatás; korábbi parcella-határok öröksége; eltérő trágyázási múlt; különösen P, K és pH esetében tartós hatások; természetes és kezelésből eredő mintázatok egymásra rakódása.",
-    "chapter_num": 10
-  },
-  {
-    "type": "essay",
-    "question": "Magyarázza el, miért különbözhet a mélyedések nitrátdinamikája csapadékos és szárazabb régiókban.",
-    "explanation": "Kulcspontok: talajnedvesség és oxigénellátottság szerepe; denitrifikáció feltételei; Kelet-Észak-Dakota kontra nyugatibb, szárazabb területek példája; nitrát-felhalmozódás vagy -veszteség eltérő körülmények között.",
-    "chapter_num": 10
-  },
-  {
-    "type": "essay",
-    "question": "Mutassa be, hogyan kapcsolódik össze a domborzat, a pH és a mikroelem-ellátottság egy táblán belül.",
-    "explanation": "Kulcspontok: vízmozgás és karbonát-átrendeződés; kis szintkülönbségekhez kapcsolódó pH-kontrasztok; vas és más mikroelemek hozzáférhetősége; helyspecifikus mész- vagy kénkijuttatás indokoltsága.",
-    "chapter_num": 10
-  },
-  {
-    "type": "essay",
-    "question": "Értelmezze a Dust Bowl példáját abból a szempontból, hogy a történelmi talajveszteségek miért befolyásolják még ma is a tápanyag-gazdálkodást.",
-    "explanation": "Kulcspontok: szélerózió mértéke; termőréteg-veszteség; elveszett foszformennyiség jelentősége; hosszú távon fennmaradó P- és K-hiányos magaslatok; múltbeli események mai menedzsmentkövetkezményei.",
-    "chapter_num": 10
-  },
-  {
-    "type": "essay",
-    "question": "Fejtse ki a szikesedés és szódásodás jelentőségét a precíziós tápanyag-gazdálkodásban.",
-    "explanation": "Kulcspontok: víz- és tápanyagfelvétel korlátozása; talajszerkezet-romlás; beszivárgás és gyökérbehatolás akadályozása; időben változó kiterjedés; monitorozás és helyspecifikus kezelés szükségessége; jövőbeli kockázatok.",
-    "chapter_num": 10
-  },
-  {
-    "type": "essay",
-    "question": "Vázoljon fel egy helyspecifikus tápanyag-gazdálkodási megközelítést egy olyan táblára, ahol dombtetők, lejtők, mélyedések és kezelésből eredő sávosság is jelen van.",
-    "explanation": "Kulcspontok: variabilitás okainak elkülönítése; talajvizsgálat és térképezés; topográfiai és történeti információk használata; zónák kialakítása; eltérő dózisok és esetleges mész/kén beavatkozások; nitrogén és P/K külön kezelési logikája; gazdasági és környezeti célok összehangolása.",
-    "chapter_num": 10
+    "chapter": 10,
+    "difficulty": "hard",
+    "question": "Tervezz egy digitalis iker rendszert egy altalad valasztott fizikai rendszerhez (pl. egy epulet energiarendszere, egy mezogazdasagi tabla, egy vizgyujto terulet)! Milyen szenzorokat hasznalnal, hogyan valosítanád meg a ketiranyú adataramlast, es milyen dontestamogatasi elonyoket nyujtana?",
+    "rubric": "A valasz tartalmaz egy konkret fizikai rendszert, a szenzorok tipusait, a ketiranyú adataramlas megvalositasat, es a dontestamogatasi elonyoket. Ertekelesi szempontok: rendszergondolkodas, technikai reszletek, gyakorlati haszon.",
+    "max_score": 100
   }
 ]

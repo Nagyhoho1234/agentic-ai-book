@@ -1,414 +1,141 @@
 [
   {
+    "id": "ch08_q01",
+    "chapter": 8,
+    "difficulty": "easy",
     "type": "mcq",
-    "question": "Miért vezet az inputok egyenletes kijuttatása gyakran nem optimális eredményhez egy változékony talajtáblán?",
+    "question": "Mi a vizuális programozás alapgondolata?",
     "options": [
-      "A) Mert a talaj minden pontja azonosan reagál a kijuttatásra",
-      "B) Mert az egyenletes kijuttatás megszünteti a talaj természetes különbségeit",
-      "C) Mert egyes helyeken túladagolást, máshol alulellátottságot okozhat",
-      "D) Mert csak öntözött területeken alkalmazható"
-    ],
-    "correct": "C",
-    "explanation": "A fejezet szerint a táblán belüli talajkülönbségek miatt az egységes kijuttatás elkerülhetetlenül túl sok inputot ad egyes zónáknak, míg másoknak túl keveset.",
-    "chapter_num": 8
-  },
-  {
-    "type": "mcq",
-    "question": "Melyik tényező NEM szerepel a szövegben említett öt klasszikus talajképző tényező között?",
-    "options": [
-      "A) Kiindulási kőzet",
-      "B) Növényzet",
-      "C) Gépesítettség",
-      "D) Domborzat"
-    ],
-    "correct": "C",
-    "explanation": "A klasszikus öt tényező: kiindulási kőzet, növényzet, éghajlat, domborzat és idő. A gépesítettség nem tartozik közéjük.",
-    "chapter_num": 8
-  },
-  {
-    "type": "mcq",
-    "question": "Miért egységesebbek a felszíni talajjellemzők ott, ahol a lösz vastag?",
-    "options": [
-      "A) Mert a lösz teljesen megakadályozza az eróziót",
-      "B) Mert a lösz dominálja a felszíni talaj tulajdonságait",
-      "C) Mert a vastag lösz alatt nincs más üledék",
-      "D) Mert ott mindig magasabb a talajvízszint"
+      "A) A programkódot grafikusan szebb formátumban írjuk",
+      "B) A folyamatábra maga a program: dobozokat húzunk a vászonra és összekötjük őket",
+      "C) A programozást videókon keresztül tanuljuk",
+      "D) A vizualizációk automatikus generálásáról szól"
     ],
     "correct": "B",
-    "explanation": "A szöveg szerint vastag löszborítás esetén a felszíni talaj jellemzőit főként a lösz határozza meg, ezért azok viszonylag egységesek.",
-    "chapter_num": 8
+    "explanation": "Dobozokat (node-okat) húzunk a vászonra, összekötjük, és a rendszer végrehajtja."
   },
   {
+    "id": "ch08_q02",
+    "chapter": 8,
+    "difficulty": "medium",
     "type": "mcq",
-    "question": "Melyik lerakódási környezethez kapcsolja a szöveg az agyag felhalmozódását a glaciális üledékek mozaikjában?",
+    "question": "Melyik NEM előnye a vizuális programozásnak?",
     "options": [
-      "A) Gyors olvadékvizek",
-      "B) Szeles dombtetők",
-      "C) Állóvizek",
-      "D) Meredek lejtők"
+      "A) Azonnali áttekinthetőség",
+      "B) Beépített dokumentáció",
+      "C) Nagy teljesítményű számítások optimalizálása",
+      "D) Kevesebb szintaktikai hiba"
     ],
     "correct": "C",
-    "explanation": "A szöveg szerint a gyors olvadékvizek homokot, a lassabb vizek vályogot, az állóvizek pedig agyagot raktak le.",
-    "chapter_num": 8
+    "explanation": "Nagy teljesítményű számításoknál a hagyományos kódolás erősebb."
   },
   {
+    "id": "ch08_q03",
+    "chapter": 8,
+    "difficulty": "medium",
     "type": "mcq",
-    "question": "Mi jellemző leginkább a dombtetők és domború lejtők talajára a fejezet alapján?",
+    "question": "Melyik három vizuális programozási eszközt említi a fejezet?",
     "options": [
-      "A) Vastag, szervesanyagban gazdag A-szint",
-      "B) Erősen redukált viszonyok",
-      "C) Elvékonyodott vagy eltávolított A-szint és kisebb hasznosítható vízkészlet",
-      "D) Tartós vízfelhalmozódás"
-    ],
-    "correct": "C",
-    "explanation": "Az erózió a dombtetőkön és domború lejtőkön elvékonyítja vagy eltávolítja az A-szintet, így kisebb szervesanyag-tartalmú és kisebb vízkészletű talaj marad.",
-    "chapter_num": 8
-  },
-  {
-    "type": "mcq",
-    "question": "Miért lehet vastagabb és gazdagabb az A-szint a mélyedésekben és lejtőalji helyzetekben?",
-    "options": [
-      "A) Mert ott mindig több a mész",
-      "B) Mert a víz felhalmozódik, a növényzet erőteljesebb, és a bomlás lassabb lehet",
-      "C) Mert a szél folyamatosan homokot hord oda",
-      "D) Mert ott kisebb a biológiai aktivitás minden esetben"
+      "A) Excel, SPSS, Tableau",
+      "B) n8n, KNIME, LangFlow",
+      "C) Python, R, MATLAB",
+      "D) Power BI, Looker, Grafana"
     ],
     "correct": "B",
-    "explanation": "A mélyebb fekvésű helyeken kedvezőbbek a talajképződés feltételei: vízfelhalmozódás, erőteljesebb növényzet és lassabb bomlás járul hozzá a vastagabb A-szinthez.",
-    "chapter_num": 8
+    "explanation": "n8n, KNIME és LangFlow."
   },
   {
+    "id": "ch08_q04",
+    "chapter": 8,
+    "difficulty": "easy",
     "type": "mcq",
-    "question": "Mekkora szintkülönbség is elegendő lehet a szöveg szerint jelentős pH-különbség kialakulásához a félszáraz térségekben?",
+    "question": "Miért működik jól a vizuális programozás a tudósok számára?",
     "options": [
-      "A) 1 méter",
-      "B) 50 centiméter",
-      "C) 15 centiméter",
-      "D) 5 méter"
-    ],
-    "correct": "C",
-    "explanation": "A fejezet példája szerint már 15 cm szintkülönbség is elég lehet ahhoz, hogy az egyik ponton pH 6, a másikon 7,5 feletti érték alakuljon ki.",
-    "chapter_num": 8
-  },
-  {
-    "type": "mcq",
-    "question": "Miért maradhat fenn évtizedes trágyázás ellenére is a foszfor- és káliummintázat kapcsolata a tájhelyzettel Észak-Dakotában?",
-    "options": [
-      "A) Mert a trágyázás teljesen egyenletes volt",
-      "B) Mert az erózió történelmi öröksége tartósan meghatározza a mintázatot",
-      "C) Mert ott nincs vízerózió",
-      "D) Mert a kálium nem mozog a talajban"
+      "A) Mert a tudósok nem képesek logikus gondolkodásra",
+      "B) Mert a kutatási módszertant is folyamatábraként tanítják",
+      "C) Mert a vizuális programok gyorsabban futnak",
+      "D) Mert nem igényel semmilyen előzetes tudást"
     ],
     "correct": "B",
-    "explanation": "A szöveg hangsúlyozza, hogy az erózió öröksége ma is tükröződik a tápanyag-ellátottság térbeli mintázatában.",
-    "chapter_num": 8
+    "explanation": "A kutatási módszertant is folyamatábraként tanítják az egyetemen."
   },
   {
+    "id": "ch08_q05",
+    "chapter": 8,
+    "difficulty": "hard",
     "type": "mcq",
-    "question": "Mi a szódás talajok egyik legfontosabb szerkezeti következménye?",
+    "question": "Miért tartja a fejezet fontosnak a vizuális munkafolyamatok reprodukálhatóságát?",
     "options": [
-      "A) Az agyag flokkulációja és javuló vízáteresztés",
-      "B) Az agyag diszpergálódása és a szerkezet leromlása",
-      "C) A humusztartalom gyors növekedése",
-      "D) A talaj pH-jának mindig 6 alá csökkenése"
+      "A) Mert a szoftvergyártók követelménye",
+      "B) Mert a workflow-k megoszthatók és újrafuttathatók, ami a nyílt tudomány alapkövetelménye",
+      "C) Mert nem módosíthatók",
+      "D) Mert a reprodukálhatóság növeli a futási sebességet"
     ],
     "correct": "B",
-    "explanation": "A szódás talajokban a nátrium uralja a kicserélődési komplexet, emiatt az agyag diszpergálódik, a szerkezet szétesik, és a vízáteresztés nagyon gyenge lesz.",
-    "chapter_num": 8
+    "explanation": "A nyílt tudomány (open science) egyik alapkövetelménye."
   },
   {
-    "type": "mcq",
-    "question": "Hogyan változik a szikes és szódás foltok kiterjedése a csapadékviszonyok függvényében?",
-    "options": [
-      "A) Nedves időszakban összehúzódnak, szárazban terjednek",
-      "B) Mindig állandó marad",
-      "C) Nedves időszakban terjednek, szárazban összehúzódnak",
-      "D) Csak öntözés hatására változnak"
+    "id": "ch08_tf01",
+    "type": "true_false",
+    "chapter": 8,
+    "difficulty": "easy",
+    "question": "A vizualis programozasban a folyamatabra maga a program.",
+    "correct": true,
+    "explanation": "Dobozokat huzunk a vaszonra, osszekotjuk, es a rendszer vegrehajtja pontosan azt, amit rajzoltunk."
+  },
+  {
+    "id": "ch08_tf02",
+    "type": "true_false",
+    "chapter": 8,
+    "difficulty": "medium",
+    "question": "A vizualis programozas a hagyomanyos kodolas egyszerusitett valtozata, ezert kevesebbet tud.",
+    "correct": false,
+    "explanation": "A vizualis programozas nem egyszerusitett valtozat, hanem egy masik paradigma."
+  },
+  {
+    "id": "ch08_tf03",
+    "type": "true_false",
+    "chapter": 8,
+    "difficulty": "easy",
+    "question": "A vizualis workflow maga a dokumentacio, mert a rajz elmondja, mit csinaltunk.",
+    "correct": true,
+    "explanation": "Egy even belul visszanezve nem kell visszafejteni a kodot."
+  },
+  {
+    "id": "ch08_fb01",
+    "type": "fill_blank",
+    "chapter": 8,
+    "difficulty": "medium",
+    "question": "A fejezet harom vizualis programozasi eszkozt mutat be: n8n, _____ es LangFlow.",
+    "correct": "KNIME",
+    "alternatives": [
+      "KNIME",
+      "knime"
     ],
-    "correct": "C",
-    "explanation": "A szöveg egyértelműen leírja, hogy nedves időszakokban a sófoltok terjednek, száraz időszakokban pedig visszahúzódnak.",
-    "chapter_num": 8
+    "explanation": "Az n8n, KNIME es LangFlow a fejezet harom fo vizualis eszkoze."
   },
   {
-    "type": "mcq",
-    "question": "Melyik gazdálkodási gyakorlat nehezítheti meg sok éven át a talajmintavétel értelmezését a tartós tápanyag-feldúsulás miatt?",
-    "options": [
-      "A) Takarónövény-termesztés",
-      "B) Sávos műtrágyázás",
-      "C) Forgatás nélküli művelés",
-      "D) Vetésváltás"
+    "id": "ch08_fb02",
+    "type": "fill_blank",
+    "chapter": 8,
+    "difficulty": "medium",
+    "question": "A vizualis programozasban a munkafolyamat epitoelemeit _____-oknak (node) nevezzuk.",
+    "correct": "doboz",
+    "alternatives": [
+      "csomopont",
+      "node",
+      "doboz",
+      "blokk"
     ],
-    "correct": "B",
-    "explanation": "A sávos műtrágyázás a foszfort és káliumot koncentrált csíkokban helyezi el, ami tartós helyi feldúsulást okoz és torzíthatja a mintavételt.",
-    "chapter_num": 8
+    "explanation": "A vizualis programozasban dobozokat huzunk a vaszonra."
   },
   {
-    "type": "mcq",
-    "question": "Miért fontos a talajvariabilitás forrásainak felismerése?",
-    "options": [
-      "A) Mert így minden táblán ugyanaz a mintavétel alkalmazható",
-      "B) Mert ez meghatározza, melyik mintavételi stratégia és térképezési technológia a leghatékonyabb",
-      "C) Mert így nincs szükség térképezésre",
-      "D) Mert csak a természetes eredetű változatosság számít"
-    ],
-    "correct": "B",
-    "explanation": "A fejezet szerint a változatosság jellege határozza meg, milyen mintavételi és térképezési megközelítés lesz célravezető.",
-    "chapter_num": 8
-  },
-  {
-    "type": "true_false",
-    "question": "A talaj változékonysága csak különböző táblák között jelentős, egyetlen táblán belül nem.",
-    "correct_answer": false,
-    "explanation": "A szöveg hangsúlyozza, hogy egyetlen táblán belül is jelentős eltérések lehetnek akár néhány tucat méteren belül.",
-    "chapter_num": 8
-  },
-  {
-    "type": "true_false",
-    "question": "A precíziós gazdálkodás első lépése a talajváltozékonyság helyének és okainak megértése.",
-    "correct_answer": true,
-    "explanation": "A fejezet ezt kifejezetten a precíziós gazdálkodás első lépéseként nevezi meg.",
-    "chapter_num": 8
-  },
-  {
-    "type": "true_false",
-    "question": "A kiindulási kőzet és üledék a talajvariabilitás egyik legerősebb meghatározó tényezője.",
-    "correct_answer": true,
-    "explanation": "A szöveg szerint a kiindulási kőzet, illetve üledék az egyik legerősebb meghatározó tényező.",
-    "chapter_num": 8
-  },
-  {
-    "type": "true_false",
-    "question": "Indianában a vastag lösz miatt az alatta lévő glaciális üledék tulajdonságai általában nem érvényesülnek.",
-    "correct_answer": false,
-    "explanation": "A szöveg épp azt emeli ki, hogy ahol a lösz vékony, ott az alatta fekvő glaciális üledék tulajdonságai válnak meghatározóvá.",
-    "chapter_num": 8
-  },
-  {
-    "type": "true_false",
-    "question": "A domborzat csak a vízmozgást befolyásolja, a talaj szervesanyag-tartalmát nem.",
-    "correct_answer": false,
-    "explanation": "A domborzat az erózión, vízfelhalmozódáson és talajképződésen keresztül a szervesanyag-tartalmat is befolyásolja.",
-    "chapter_num": 8
-  },
-  {
-    "type": "true_false",
-    "question": "A mélyedésekben a redukáltabb viszonyok között a bomlás lassabb lehet.",
-    "correct_answer": true,
-    "explanation": "A fejezet ezt a vastagabb és gazdagabb A-szint egyik okaként említi.",
-    "chapter_num": 8
-  },
-  {
-    "type": "true_false",
-    "question": "A mikroklimatikus különbségek, például a lejtőkitettség vagy a fagyzugok, a táblán belüli talajváltozatosság szempontjából is számíthatnak.",
-    "correct_answer": true,
-    "explanation": "A szöveg szerint az éghajlat főként nagyobb léptékben hat, de a mikroklimatikus különbségek táblán belül is fontosak lehetnek.",
-    "chapter_num": 8
-  },
-  {
-    "type": "true_false",
-    "question": "A régóta művelt területeken az erózió a táblán belüli talajvariabilitás egyik legjelentősebb átalakítója lehet.",
-    "correct_answer": true,
-    "explanation": "A fejezet ezt kifejezetten így fogalmazza meg.",
-    "chapter_num": 8
-  },
-  {
-    "type": "true_false",
-    "question": "A vízerózió következtében a magasabb fekvésű helyek általában termékenyebbek lesznek, mint az alacsonyabbak.",
-    "correct_answer": false,
-    "explanation": "A szöveg szerint a magasabb fekvésű helyek inkább tápanyagszegényebbek és aszályérzékenyebbek, míg az alacsonyabbak termékenyebbek.",
-    "chapter_num": 8
-  },
-  {
-    "type": "true_false",
-    "question": "Az erózióval elveszett foszfor mennyisége Észak-Dakotában elhanyagolható volt a modern műtrágyázáshoz képest.",
-    "correct_answer": false,
-    "explanation": "A becslés szerint az elveszett foszfor mennyisége 70 évnyi modern ütemű foszforműtrágyázásnak felel meg.",
-    "chapter_num": 8
-  },
-  {
-    "type": "true_false",
-    "question": "Az erózió által felszínre hozott magas mésztartalmú altalaj fokozhatja a vas-hiányos klorózis kockázatát.",
-    "correct_answer": true,
-    "explanation": "A fejezet ezt az erodált talajok egyik következményeként említi.",
-    "chapter_num": 8
-  },
-  {
-    "type": "true_false",
-    "question": "A szikes és szódás talajok kizárólag természetes eredetűek, öntözési hibák miatt nem alakulhatnak ki.",
-    "correct_answer": false,
-    "explanation": "A szöveg szerint öntözött talajokban a nem megfelelő drénezés miatti sóakkumuláció is okozhat ilyen problémát.",
-    "chapter_num": 8
-  },
-  {
-    "type": "true_false",
-    "question": "A szódás talajokban a nátrium dominanciája javítja a talajszerkezetet és a vízáteresztést.",
-    "correct_answer": false,
-    "explanation": "Éppen ellenkezőleg: a nátrium miatt az agyag diszpergálódik, a szerkezet leromlik, és a vízáteresztés gyenge lesz.",
-    "chapter_num": 8
-  },
-  {
-    "type": "true_false",
-    "question": "A műtrágya egyenetlen kijuttatása a haladási iránnyal párhuzamos tápanyagsávokat hozhat létre.",
-    "correct_answer": true,
-    "explanation": "A röpítőtárcsás szórók átfedései vagy kihagyásai ilyen szisztematikus mintázatokat eredményezhetnek.",
-    "chapter_num": 8
-  },
-  {
-    "type": "true_false",
-    "question": "A korábban eltérően kezelt parcellák összevonása csökkenti a táblán belüli tápanyagszintek ugrásszerű változásának esélyét.",
-    "correct_answer": false,
-    "explanation": "A régi határvonalakon éppen ugrásszerű tápanyagszint-változások maradhatnak fenn.",
-    "chapter_num": 8
-  },
-  {
-    "type": "fill_blank",
-    "question": "A precíziós gazdálkodás első lépése annak megértése, hogy hol és miért változik a _____, majd e változékonyság térképi ábrázolása.",
-    "correct_answer": "talaj",
-    "explanation": "A bevezető rész szerint a talaj változékonyságának megértése az első lépés.",
-    "chapter_num": 8
-  },
-  {
-    "type": "fill_blank",
-    "question": "A klasszikus talajtani keretrendszer öt talajképző tényezőt különböztet meg; ezek egyike a kiindulási _____.",
-    "correct_answer": "kőzet",
-    "explanation": "A szöveg a kiindulási kőzetet nevezi meg az egyik alapvető talajképző tényezőként.",
-    "chapter_num": 8
-  },
-  {
-    "type": "fill_blank",
-    "question": "Ahol a lösz vastag, ott a felszíni talajjellemzők viszonylag _____, mert a lösz dominál.",
-    "correct_answer": "egységesek",
-    "explanation": "A vastag löszborítás kiegyenlítettebb felszíni talajtulajdonságokat eredményez.",
-    "chapter_num": 8
-  },
-  {
-    "type": "fill_blank",
-    "question": "A gyors olvadékvizek homokot, a lassabb vizek vályogot, az állóvizek pedig _____ raktak le.",
-    "correct_answer": "agyagot",
-    "explanation": "A glaciális üledékek mozaikosságát a különböző lerakódási környezetek okozták.",
-    "chapter_num": 8
-  },
-  {
-    "type": "fill_blank",
-    "question": "Dombtetőkön és domború lejtőkön az erózió gyakran elvékonyítja vagy eltávolítja az eredeti, szerves anyagban gazdag _____-szintet.",
-    "correct_answer": "A",
-    "explanation": "A fejezet az A-szint lepusztulását emeli ki ezeken a tájhelyzeteken.",
-    "chapter_num": 8
-  },
-  {
-    "type": "fill_blank",
-    "question": "A mélyedésekben a víz felhalmozódik, ezért a talajképződés feltételei gyakran _____bbek.",
-    "correct_answer": "kedvező",
-    "explanation": "A szöveg szerint a mélyedésekben kedvezőbbek a talajképződés feltételei.",
-    "chapter_num": 8
-  },
-  {
-    "type": "fill_blank",
-    "question": "Mindössze _____ centiméteres szintkülönbség is elég lehet jelentős pH-különbség kialakulásához.",
-    "correct_answer": "15",
-    "explanation": "A fejezet konkrétan 15 cm-es különbséget említ.",
-    "chapter_num": 8
-  },
-  {
-    "type": "fill_blank",
-    "question": "A régóta művelt területeken az _____ a táblán belüli talajvariabilitás egyik legjelentősebb átalakítója.",
-    "correct_answer": "erózió",
-    "explanation": "A szöveg ezt külön hangsúlyozza.",
-    "chapter_num": 8
-  },
-  {
-    "type": "fill_blank",
-    "question": "Az erózióval érintett talajok gyakran könnyebben _____esednek, kevesebb vizet tartanak vissza.",
-    "correct_answer": "kérg",
-    "explanation": "A fejezet szerint az erózió után maradó talajok könnyebben kérgessé válnak.",
-    "chapter_num": 8
-  },
-  {
-    "type": "fill_blank",
-    "question": "A szódás talajokban a _____ uralja a kicserélődési komplexet.",
-    "correct_answer": "nátrium",
-    "explanation": "Ez okozza az agyag diszpergálódását és a szerkezetromlást.",
-    "chapter_num": 8
-  },
-  {
-    "type": "fill_blank",
-    "question": "Nedves időszakokban a szikes és szódás foltok _____, száraz időszakokban pedig összehúzódnak.",
-    "correct_answer": "terjednek",
-    "explanation": "A sóval érintett területek kiterjedése a csapadékviszonyokkal együtt változik.",
-    "chapter_num": 8
-  },
-  {
-    "type": "fill_blank",
-    "question": "A röpítőtárcsás műtrágyaszóró meneteinek átfedései vagy kihagyásai miatt a haladási iránnyal párhuzamos tápanyag-_____ alakulhatnak ki.",
-    "correct_answer": "sávok",
-    "explanation": "A szisztematikus kijuttatási hibák gyakran sávos mintázatot hoznak létre.",
-    "chapter_num": 8
-  },
-  {
-    "type": "fill_blank",
-    "question": "A foszfor és kálium koncentrált csíkokban történő kijuttatását _____ műtrágyázásnak nevezik.",
-    "correct_answer": "sávos",
-    "explanation": "A fejezet ezt a gyakorlatot nevezi meg a tartós helyi tápanyag-feldúsulás okaként.",
-    "chapter_num": 8
-  },
-  {
+    "id": "ch08_es01",
     "type": "essay",
-    "question": "Magyarázza el, miért tekinthető a talajvariabilitás megértése a precíziós gazdálkodás alapjának.",
-    "explanation": "Kulcspontok: táblán belüli heterogenitás; egységes kijuttatás korlátai; túladagolás és alulellátottság; térképi ábrázolás szerepe; döntéstámogatás.",
-    "chapter_num": 8
-  },
-  {
-    "type": "essay",
-    "question": "Mutassa be, hogyan alakíthatja a kiindulási kőzet vagy üledék a talaj tulajdonságait kis térléptékben is.",
-    "explanation": "Kulcspontok: lösz vastagsága; glaciális till heterogenitása; homok–vályog–agyag mozaik; vízmegtartás és textúra kapcsolata; regionális példák.",
-    "chapter_num": 8
-  },
-  {
-    "type": "essay",
-    "question": "Hasonlítsa össze a dombtetők és a mélyedések talajképződési viszonyait, és értelmezze ezek termesztési következményeit.",
-    "explanation": "Kulcspontok: erózió vs. felhalmozódás; A-szint vastagsága; szervesanyag-tartalom; vízkészlet; termékenység és aszályérzékenység.",
-    "chapter_num": 8
-  },
-  {
-    "type": "essay",
-    "question": "Fejtse ki, hogyan okozhat már kis szintkülönbség is jelentős kémiai eltéréseket a talajban félszáraz környezetben.",
-    "explanation": "Kulcspontok: kapilláris vízemelkedés; párolgás és csapadék viszonya; mész és oldható sók felhalmozódása; pH-különbségek; tájhelyzet szerepe.",
-    "chapter_num": 8
-  },
-  {
-    "type": "essay",
-    "question": "Elemezze az erózió hosszú távú hatását a táblán belüli termékenységi mintázatokra.",
-    "explanation": "Kulcspontok: feltalajvesztés; tápanyag-újraeloszlás; magasabb és alacsonyabb fekvésű részek eltérései; történelmi örökség; trágyázás ellenére fennmaradó mintázatok.",
-    "chapter_num": 8
-  },
-  {
-    "type": "essay",
-    "question": "Magyarázza el, miért nem szünteti meg automatikusan a modern trágyázás a történelmi erózióból eredő tápanyagmintázatokat.",
-    "explanation": "Kulcspontok: talajmélység és textúra tartós különbségei; szervesanyag-veszteség; tájhelyzethez kötött termékenység; P és K mintázatok fennmaradása.",
-    "chapter_num": 8
-  },
-  {
-    "type": "essay",
-    "question": "Mutassa be a szalinitás és a szodicitás kialakulásának fő okait, valamint ezek talajszerkezeti következményeit.",
-    "explanation": "Kulcspontok: nátriumos alapkőzet; sekély sós talajvíz; nem megfelelő drénezés; nátrium dominancia; agyagdiszperzió; gyenge vízáteresztés.",
-    "chapter_num": 8
-  },
-  {
-    "type": "essay",
-    "question": "Értelmezze, miért fontos a sóval érintett területek pontos azonosítása a jövő mezőgazdaságában.",
-    "explanation": "Kulcspontok: évről évre változó kiterjedés; csapadékfüggés; termelési korlátok; 2150-re vonatkozó becslés; célzott kezelés szükségessége.",
-    "chapter_num": 8
-  },
-  {
-    "type": "essay",
-    "question": "Elemezze, hogyan hozhat létre a gazdálkodás szisztematikus térbeli mintázatokat a talajban.",
-    "explanation": "Kulcspontok: egyenetlen műtrágya- vagy szervestrágya-kijuttatás; átfedések és kihagyások; hidraulikus nyomásingadozás; régi parcellahatárok; sávos trágyázás.",
-    "chapter_num": 8
-  },
-  {
-    "type": "essay",
-    "question": "Fejtse ki, miért nehezítheti meg a sávos műtrágyázás a talajmintavétel és az eredmények értelmezését hosszú időn keresztül.",
-    "explanation": "Kulcspontok: koncentrált tápanyagcsíkok; tartós helyi feldúsulás; mintavételi reprezentativitás problémája; természetes és kezelésből eredő mintázatok elkülönítése.",
-    "chapter_num": 8
+    "chapter": 8,
+    "difficulty": "hard",
+    "question": "Hasonlitsd ossze a vizualis programozast (pl. KNIME) a hagyomanyos kodolassal (pl. Python)! Milyen kutatasi feladatokhoz alkalmasabb az egyik, es melyekhez a masik? Milyen szempontokat vennel figyelembe a valasztasnal?",
+    "rubric": "A valasz tartalmazza mindket megkozelites elonyeit es hatranyait, konkret feladattipusokat, es a valasztas szempontjait. Ertekelesi szempontok: kiegyensulyozott osszehasonlitas, gyakorlati peldak, dontesi kriteriumok.",
+    "max_score": 100
   }
 ]

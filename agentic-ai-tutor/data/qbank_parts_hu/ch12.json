@@ -1,414 +1,140 @@
 [
   {
+    "id": "ch12_q01",
+    "chapter": 12,
+    "difficulty": "easy",
     "type": "mcq",
-    "question": "Mi a precíziós növényvédelem alapvető különbsége a hagyományos, egységes kezeléssel szemben?",
+    "question": "Mi a CrewAI keretrendszer alapkoncepciója?",
     "options": [
-      "A) Minden táblán ugyanazt a szert használja kisebb dózisban",
-      "B) Csak biológiai készítményeket alkalmaz",
-      "C) A tábla részeit a tényleges szükségletük szerint kezeli",
-      "D) Kizárólag drónokra épül"
-    ],
-    "correct": "C",
-    "explanation": "A fejezet szerint a precíziós növényvédelem lényege, hogy nem az egész táblát kezeli azonos módon, hanem helyspecifikusan, a tényleges fertőzési vagy kártevőnyomás alapján.",
-    "chapter_num": 12
-  },
-  {
-    "type": "mcq",
-    "question": "Miért tekinthető problémásnak az egységes vegyszeres kezelés hosszú távon?",
-    "options": [
-      "A) Mert mindig csökkenti a terméshozamot",
-      "B) Mert növeli a környezeti terhelést és elősegítheti a rezisztencia kialakulását",
-      "C) Mert csak gyomok ellen hatásos",
-      "D) Mert kizárólag kis táblákon alkalmazható"
+      "A) Egyetlen nagy ágens",
+      "B) Szerepeket, feladatokat és csapatot definiálunk az ágenseknek",
+      "C) Vizuális felületen építünk munkafolyamatokat",
+      "D) Kizárólag adatelemzésre speciális"
     ],
     "correct": "B",
-    "explanation": "A szöveg kiemeli a talaj- és vízszennyezést, a hasznos szervezetek pusztulását és a rezisztencia gyors kialakulását.",
-    "chapter_num": 12
+    "explanation": "Szerepek, feladatok, csapat -- az ágensek automatikusan együttműködnek."
   },
   {
+    "id": "ch12_q02",
+    "chapter": 12,
+    "difficulty": "medium",
     "type": "mcq",
-    "question": "Melyik tényező hoz létre mikroélőhelyek mozaikját egyetlen táblán belül?",
+    "question": "Miért jó a CrewAI tudósoknak?",
     "options": [
-      "A) Csak a vetőmag fajtája",
-      "B) A talajtulajdonságok különbségei",
-      "C) Kizárólag a gépek munkaszélessége",
-      "D) Csak az éves csapadékösszeg"
+      "A) Nem igényel programozást",
+      "B) A gondolkodásmódja megfelel a kutatócsoport működésének",
+      "C) Ingyenes és nyílt forráskódú",
+      "D) Kizárólag Pythonban működik"
     ],
     "correct": "B",
-    "explanation": "A talajtextúra, a szervesanyag-tartalom, a vízelvezetés és a pH különbségei térben eltérő feltételeket teremtenek.",
-    "chapter_num": 12
+    "explanation": "Van kereső, elemző, szintetizáló -- mindenki tudja a dolgát."
   },
   {
+    "id": "ch12_q03",
+    "chapter": 12,
+    "difficulty": "easy",
     "type": "mcq",
-    "question": "Melyik terület kedvez leginkább a gyökérrothadást okozó kórokozóknak a leírás szerint?",
+    "question": "Mi a ReACT ciklus szerepe?",
     "options": [
-      "A) Gyorsan kiszáradó homokos kiemelkedés",
-      "B) Szeles dombtető",
-      "C) Agyagban gazdag mélyedés, amely sokáig vizet tart",
-      "D) Frissen meszezett tábla széle"
-    ],
-    "correct": "C",
-    "explanation": "A tartósan nedves, vízvisszatartó mélyedések kedveznek a gyökérrothadást okozó kórokozóknak.",
-    "chapter_num": 12
-  },
-  {
-    "type": "mcq",
-    "question": "Miért lehet a gyorsan kiszáradó homokos kiemelkedésen nagyobb a rovarkártétel kockázata?",
-    "options": [
-      "A) Mert a növény stresszeltebb és fogékonyabbá válhat",
-      "B) Mert ott mindig magasabb a páratartalom",
-      "C) Mert a gombák ott gyorsabban terjednek",
-      "D) Mert ott több a szerves törmelék"
-    ],
-    "correct": "A",
-    "explanation": "A szöveg szerint a szárazabb, stresszes környezet gyengítheti a növényt, ami növelheti a rovarkártételre való fogékonyságot.",
-    "chapter_num": 12
-  },
-  {
-    "type": "mcq",
-    "question": "Melyik állítás írja le helyesen a szója fehérpenészes szár- és hüvelyrothadásának kedvező feltételeit?",
-    "options": [
-      "A) Ritka állomány, magas hőmérséklet, alacsony páratartalom",
-      "B) Sűrű állomány, nagy páratartalom, hűvös hőmérséklet",
-      "C) Száraz dombtető, erős szél, alacsony terméspotenciál",
-      "D) Csak homoktalajon fordul elő"
+      "A) Felhasználói felület frissítés",
+      "B) Az ágens gondolkodási, cselekvési és megfigyelési ciklusa",
+      "C) Adatbázis szinkronizálás",
+      "D) Kód automatikus tesztelése"
     ],
     "correct": "B",
-    "explanation": "A fejezet ezt tankönyvi példaként említi: sűrű állományban, párás és hűvös környezetben virágzik.",
-    "chapter_num": 12
+    "explanation": "Reasoning, Acting, Observing -- ezt ismétli a cél eléréséig."
   },
   {
+    "id": "ch12_q04",
+    "chapter": 12,
+    "difficulty": "medium",
     "type": "mcq",
-    "question": "Miért lehet pénzkidobás az egész táblára kiterjedő egységes fungicidkezelés?",
+    "question": "Mi az MCP (Model Context Protocol)?",
     "options": [
-      "A) Mert a fungicidek mindenhol azonosan hatástalanok",
-      "B) Mert a száraz dombtetőkön a betegség kockázata alacsony lehet, míg máshol aluldozírozás történhet",
-      "C) Mert a fungicidek csak rovarok ellen hatnak",
-      "D) Mert csak éjszaka szabad kijuttatni őket"
+      "A) Modellek tanítási protokollja",
+      "B) A kommunikációs protokoll a külső eszközök és adatforrások eléréséhez",
+      "C) Biztonságos adattárolás szabványa",
+      "D) Felhasználói jogosultságok kezelése"
     ],
     "correct": "B",
-    "explanation": "A száraz részeken felesleges lehet a kezelés, miközben a nagy kockázatú párás zónákban az egységes dózis nem biztos, hogy elegendő.",
-    "chapter_num": 12
+    "explanation": "A protokoll, amelyen keresztül az ágensek elérik a külső eszközöket."
   },
   {
+    "id": "ch12_q05",
+    "chapter": 12,
+    "difficulty": "hard",
     "type": "mcq",
-    "question": "Mit tesz lehetővé egy automatikus rovarcsapda a precíziós növényvédelemben?",
+    "question": "A nyitójelenetben milyen feladatot automatizálna Dr. Tóth Gábor?",
     "options": [
-      "A) Azonnal elpusztít minden rovart a táblán",
-      "B) A rovarok genetikai módosítását",
-      "C) A befogott rovarok számának mérését és az adatok döntéstámogatásba küldését",
-      "D) A talaj pH-jának folyamatos szabályozását"
-    ],
-    "correct": "C",
-    "explanation": "A szöveg szerint az automatikus csapda megszámolja a befogott rovarokat, és az adatokat döntéstámogató rendszerbe tölti fel.",
-    "chapter_num": 12
-  },
-  {
-    "type": "mcq",
-    "question": "Melyik példa mutatja legjobban a gazdálkodási előzmények hatását a növényegészségre?",
-    "options": [
-      "A) A szél mindig a tábla közepe felé fúj",
-      "B) A talajfelszínen hagyott kukoricaszár Fusarium-inokulum forrása lehet a következő búzában",
-      "C) A drónok csak nappal repülhetnek",
-      "D) A domborzat megszünteti a gyomfoltokat"
+      "A) Laboreszközök kalibrálását",
+      "B) A heti irodalomkutatást: cikkek szűrése, absztraktok átnézése, összefoglalás",
+      "C) Hallgatók vizsgáztatását",
+      "D) Pályázati pénzügyi beszámolót"
     ],
     "correct": "B",
-    "explanation": "Az elővetemény és a visszamaradó növényi maradványok befolyásolják a kórokozók jelenlétét és a következő kultúra fertőzési kockázatát.",
-    "chapter_num": 12
+    "explanation": "Heti irodalomkutatás automatizálása AI ágenssel."
   },
   {
-    "type": "mcq",
-    "question": "Mi jellemző sok gyomfaj térbeli mintázatára?",
-    "options": [
-      "A) Évről évre teljesen véletlenszerűen jelennek meg",
-      "B) Magjaik gyakran az anyanövény közelében hullanak le, ezért tartós foltok alakulnak ki",
-      "C) Csak a tábla közepén fordulnak elő",
-      "D) Kizárólag a rovarok terjesztik őket"
+    "id": "ch12_tf01",
+    "type": "true_false",
+    "chapter": 12,
+    "difficulty": "easy",
+    "question": "A CrewAI keretrendszerben szerepeket, feladatokat es csapatot definialunk az agenseknek.",
+    "correct": true,
+    "explanation": "A CrewAI gondolkodasmoodja megfelel annak, ahogy egy kutatocsoport mukodik."
+  },
+  {
+    "id": "ch12_tf02",
+    "type": "true_false",
+    "chapter": 12,
+    "difficulty": "medium",
+    "question": "A ReACT ciklus a Reasoning, Acting es Observing fazisokbol all.",
+    "correct": true,
+    "explanation": "Az agens gondolkodik, cselekszik es megfigyeli az eredmenyt, majd ismetli ezt."
+  },
+  {
+    "id": "ch12_tf03",
+    "type": "true_false",
+    "chapter": 12,
+    "difficulty": "easy",
+    "question": "Az MCP (Model Context Protocol) egy modelleket tanito protokoll.",
+    "correct": false,
+    "explanation": "Az MCP a kulso eszkozok es adatforrasok eleresere szolgalo kommunikacios protokoll."
+  },
+  {
+    "id": "ch12_fb01",
+    "type": "fill_blank",
+    "chapter": 12,
+    "difficulty": "medium",
+    "question": "A ReACT ciklus harom fazisa: gondolkodas (Reasoning), cselekves (Acting) es _____ (Observing).",
+    "correct": "megfigyeles",
+    "alternatives": [
+      "megfigyelés",
+      "megfigyeles",
+      "observation"
     ],
-    "correct": "B",
-    "explanation": "A gyommagok helyi felhalmozódása önmagukat erősítő, évekig fennmaradó foltokat eredményezhet.",
-    "chapter_num": 12
+    "explanation": "Az agens megfigyeli a cselekvese eredmenyet."
   },
   {
-    "type": "mcq",
-    "question": "Melyik szervezetcsoport térbeli eloszlása változhat hétről hétre a leginkább a szöveg alapján?",
-    "options": [
-      "A) Talajlakó kórokozók",
-      "B) Stabil gyommagbankok",
-      "C) Mozgékony rovarok",
-      "D) Talajtextúra-zónák"
+    "id": "ch12_fb02",
+    "type": "fill_blank",
+    "chapter": 12,
+    "difficulty": "medium",
+    "question": "Az MCP a _____ Protocol roviditese, amelyen keresztul az agensek elerik a kulso eszkozoket.",
+    "correct": "Model Context",
+    "alternatives": [
+      "Model Context",
+      "model context"
     ],
-    "correct": "C",
-    "explanation": "A rovarok repülhetnek vagy a szél behordhatja őket, ezért eloszlásuk gyorsabban változhat, mint a stabilabb gyom- vagy talajeredetű mintázatok.",
-    "chapter_num": 12
+    "explanation": "A Model Context Protocol a kulso eszkozok eleresenek szabvanya."
   },
   {
-    "type": "mcq",
-    "question": "Mi a helyspecifikus növényvédelem gyakorlati indoka?",
-    "options": [
-      "A) A tábla minden pontján azonos a kártevőnyomás",
-      "B) A térbeli változékonyság miatt az egységes stratégia egyszerre lehet túl- és alulkezelő",
-      "C) A precíziós eszközök csak gyomirtásra használhatók",
-      "D) A mikroklíma nem befolyásolja a betegségeket"
-    ],
-    "correct": "B",
-    "explanation": "A fejezet hangsúlyozza, hogy az egységes kezelés alacsony nyomású zónákban pazarló, magas nyomású zónákban pedig elégtelen lehet.",
-    "chapter_num": 12
-  },
-  {
-    "type": "true_false",
-    "question": "A fejezet szerint a kártevők, betegségek és gyomok okozta globális termésveszteség évente a potenciális termelés 20–40 százaléka lehet.",
-    "correct_answer": true,
-    "explanation": "A szöveg ezt a becsült tartományt adja meg.",
-    "chapter_num": 12
-  },
-  {
-    "type": "true_false",
-    "question": "A világ peszticidfelhasználása csökken, és ezzel párhuzamosan a termésveszteség aránya is jelentősen visszaesett.",
-    "correct_answer": false,
-    "explanation": "A szöveg szerint évente mintegy 2,7 millió tonna peszticidet használnak fel, miközben a termésveszteség aránya nem csökkent számottevően.",
-    "chapter_num": 12
-  },
-  {
-    "type": "true_false",
-    "question": "A precíziós növényvédelem egyik célja, hogy csak ott avatkozzon be, ahol erre ténylegesen szükség van.",
-    "correct_answer": true,
-    "explanation": "Ez a helyspecifikus kezelés alapelve.",
-    "chapter_num": 12
-  },
-  {
-    "type": "true_false",
-    "question": "A gyomok, betegségek és rovarok nyomása a táblán belül általában teljesen egyenletes.",
-    "correct_answer": false,
-    "explanation": "A fejezet egyik központi állítása éppen az, hogy a nyomás térben változó.",
-    "chapter_num": 12
-  },
-  {
-    "type": "true_false",
-    "question": "A talajtextúra, a szervesanyag-tartalom, a vízelvezetés és a pH különbségei befolyásolják a növényegészségi kockázatot.",
-    "correct_answer": true,
-    "explanation": "Ezek a tényezők mikroélőhelyeket alakítanak ki, amelyek eltérő kockázatot jelentenek.",
-    "chapter_num": 12
-  },
-  {
-    "type": "true_false",
-    "question": "A gyorsan kiszáradó homokos kiemelkedések különösen kedveznek a tartós levélnedvességet igénylő gombáknak.",
-    "correct_answer": false,
-    "explanation": "A szöveg szerint ezek a körülmények éppen kedvezőtlenek az ilyen gombák számára.",
-    "chapter_num": 12
-  },
-  {
-    "type": "true_false",
-    "question": "A domborzat nem befolyásolja a kártevők és betegségek térbeli eloszlását.",
-    "correct_answer": false,
-    "explanation": "A domborzat felerősíti a talaj- és vízháztartási különbségeket, ezért fontos tényező.",
-    "chapter_num": 12
-  },
-  {
-    "type": "true_false",
-    "question": "A lejtők alján és a mélyedésekben felhalmozódó víz és tápanyag egyszerre kedvezhet az erőteljes növénynövekedésnek és a kórokozóknak.",
-    "correct_answer": true,
-    "explanation": "A fejezet ezt hangsúlyozza a mélyebb fekvésű területek kapcsán.",
-    "chapter_num": 12
-  },
-  {
-    "type": "true_false",
-    "question": "A szója fehérpenészes szár- és hüvelyrothadása leginkább száraz, forró, szeles dombtetőkön fejlődik jól.",
-    "correct_answer": false,
-    "explanation": "A betegség inkább sűrű, párás, hűvös és nagy terméspotenciálú környezetben kedvező.",
-    "chapter_num": 12
-  },
-  {
-    "type": "true_false",
-    "question": "A mikroklíma különbségei akár néhány tíz méteren belül is jelentősek lehetnek egy táblán belül.",
-    "correct_answer": true,
-    "explanation": "A szöveg szerint a hőmérséklet és a páratartalom kis távolságon belül is eltérhet.",
-    "chapter_num": 12
-  },
-  {
-    "type": "true_false",
-    "question": "A vetési csíralégy fejlődése 4 °C-os bázishőmérséklethez kötött a leírás szerint.",
-    "correct_answer": true,
-    "explanation": "A fejezet ezt konkrét példaként említi.",
-    "chapter_num": 12
-  },
-  {
-    "type": "true_false",
-    "question": "A kukoricabogár-lárvák hűvösebb feltételeket igényelnek, ezért korábban jelennek meg, mint a vetési csíralégy.",
-    "correct_answer": false,
-    "explanation": "A szöveg szerint a kukoricabogár-lárvák melegebb feltételeket igényelnek, és később jelennek meg.",
-    "chapter_num": 12
-  },
-  {
-    "type": "true_false",
-    "question": "A fordulósávokban felhalmozódhatnak gyommagvak a gépekre tapadt talaj révén.",
-    "correct_answer": true,
-    "explanation": "Ez a gazdálkodási előzmények egyik konkrét hatása.",
-    "chapter_num": 12
-  },
-  {
-    "type": "true_false",
-    "question": "A talajlakó kórokozók mindig gyorsan mozognak, ezért nem alkotnak stabil foltokat.",
-    "correct_answer": false,
-    "explanation": "A szója-cisztafonálféreg példája azt mutatja, hogy stabil, talajhoz kötött foltok is kialakulhatnak.",
-    "chapter_num": 12
-  },
-  {
-    "type": "true_false",
-    "question": "Az egységes növényvédelmi stratégia egyszerre vezethet túlkezeléshez és alulkezeléshez ugyanazon a táblán belül.",
-    "correct_answer": true,
-    "explanation": "Az alacsony nyomású részeken pazarló, a magas nyomású részeken pedig elégtelen lehet.",
-    "chapter_num": 12
-  },
-  {
-    "type": "fill_blank",
-    "question": "A precíziós növényvédelem a tábla egyes részeit a tényleges _____ megfelelően kezeli.",
-    "correct_answer": "szükségletüknek",
-    "explanation": "A helyspecifikus kezelés lényege, hogy a beavatkozás a tényleges szükséglethez igazodik.",
-    "chapter_num": 12
-  },
-  {
-    "type": "fill_blank",
-    "question": "A becslések szerint a kártevők, betegségek és gyomok a potenciális termelés _____ százalékát is elveszíthetik évente.",
-    "correct_answer": "20–40",
-    "explanation": "A fejezet ezt a veszteségi tartományt adja meg.",
-    "chapter_num": 12
-  },
-  {
-    "type": "fill_blank",
-    "question": "A világ évente mintegy _____ millió tonna peszticidet használ fel.",
-    "correct_answer": "2,7",
-    "explanation": "Ez a szövegben szereplő becsült éves globális felhasználás.",
-    "chapter_num": 12
-  },
-  {
-    "type": "fill_blank",
-    "question": "A talajtextúra, a szervesanyag-tartalom, a vízelvezetés és a _____ különbségei mikroélőhelyeket hoznak létre.",
-    "correct_answer": "pH",
-    "explanation": "A pH a felsorolt kulcsfontosságú talajtulajdonságok egyike.",
-    "chapter_num": 12
-  },
-  {
-    "type": "fill_blank",
-    "question": "Az agyagban gazdag, tartósan nedves mélyedések kedvezhetnek a _____ okozó kórokozóknak.",
-    "correct_answer": "gyökérrothadást",
-    "explanation": "A szöveg ezt a betegségtípust említi példaként.",
-    "chapter_num": 12
-  },
-  {
-    "type": "fill_blank",
-    "question": "A gyorsan kiszáradó homokos kiemelkedés stresszelheti a növényt, és fogékonyabbá teheti a _____ kártételre.",
-    "correct_answer": "rovar",
-    "explanation": "A növényi stressz növelheti a rovarkártétel kockázatát.",
-    "chapter_num": 12
-  },
-  {
-    "type": "fill_blank",
-    "question": "A Bonni Egyetem kutatásai szerint a nagy széltippan állományai szorosan összefüggtek a magas _____ területekkel.",
-    "correct_answer": "agyagtartalmú",
-    "explanation": "A nagy széltippan előfordulása a magas agyagtartalmú zónákhoz kötődött.",
-    "chapter_num": 12
-  },
-  {
-    "type": "fill_blank",
-    "question": "A szója fehérpenészes szár- és hüvelyrothadásának kórokozója a _____.",
-    "correct_answer": "Sclerotinia sclerotiorum",
-    "explanation": "A fejezet ezt a latin nevet adja meg.",
-    "chapter_num": 12
-  },
-  {
-    "type": "fill_blank",
-    "question": "A vetési csíralégy fejlődése _____ °C-os bázishőmérséklethez kötött.",
-    "correct_answer": "4",
-    "explanation": "Ez a konkrét hőmérsékleti küszöb szerepel a szövegben.",
-    "chapter_num": 12
-  },
-  {
-    "type": "fill_blank",
-    "question": "A legtöbb szervezet hőmérsékletfüggő növekedési üteme _____ modellekkel becsülhető.",
-    "correct_answer": "hőösszeg",
-    "explanation": "A fejezet a hőösszegmodelleket említi az időzítés támogatására.",
-    "chapter_num": 12
-  },
-  {
-    "type": "fill_blank",
-    "question": "A talajfelszínen hagyott kukoricaszár _____-inokulum forrása lehet a következő búzában.",
-    "correct_answer": "Fusarium",
-    "explanation": "A szármaradványok növelhetik a kalászfuzariózis kockázatát.",
-    "chapter_num": 12
-  },
-  {
-    "type": "fill_blank",
-    "question": "Nebraskai vizsgálatok szerint a mintaterület _____ százaléka következetesen mentes volt az egynyári napraforgótól.",
-    "correct_answer": "36",
-    "explanation": "Ez az egyik konkrét arány, amely a gyomfoltok stabilitását mutatja.",
-    "chapter_num": 12
-  },
-  {
-    "type": "fill_blank",
-    "question": "A szója-cisztafonálféreghez hasonló talajlakó kórokozók gyakran stabil _____ fordulnak elő.",
-    "correct_answer": "foltokban",
-    "explanation": "A szöveg szerint ezek a szervezetek térben tartós, talajhoz kötött mintázatot mutatnak.",
-    "chapter_num": 12
-  },
-  {
+    "id": "ch12_es01",
     "type": "essay",
-    "question": "Magyarázza el, miért tekinthető az egységes növényvédelmi stratégia eredendően hatékonysági és környezeti szempontból is problémásnak.",
-    "explanation": "Kulcspontok: térbeli változékonyság figyelmen kívül hagyása; alacsony nyomású zónák túlkezelése; magas nyomású zónák alulkezelése; pénzpazarlás; környezetszennyezés; hasznos szervezetek károsítása; rezisztencia kialakulása.",
-    "chapter_num": 12
-  },
-  {
-    "type": "essay",
-    "question": "Mutassa be, hogyan alakítják a talajtulajdonságok a növényegészség térbeli változékonyságát egy táblán belül.",
-    "explanation": "Kulcspontok: textúra, szervesanyag, vízelvezetés, pH; mikroélőhelyek; nedves mélyedések és gyökérbetegségek; száraz homokos részek és stressz; gyomfajok talajhoz kötöttsége.",
-    "chapter_num": 12
-  },
-  {
-    "type": "essay",
-    "question": "Elemezze a domborzat szerepét a betegségek és kártevők kockázatának kialakulásában.",
-    "explanation": "Kulcspontok: dombtetők kiszáradása; lejtőaljak víz- és tápanyag-felhalmozása; párásabb mikroklíma; nagyobb kórokozónyomás; eltérő kezelési szükséglet.",
-    "chapter_num": 12
-  },
-  {
-    "type": "essay",
-    "question": "Fejtse ki, hogyan használható a mikroklíma ismerete a megfigyelés és a védekezés időzítésének javítására.",
-    "explanation": "Kulcspontok: hőmérséklet- és páratartalom-különbségek; hőösszegmodellek; korábban melegedő zónák; fajspecifikus fejlődési küszöbök; célzott monitorozás.",
-    "chapter_num": 12
-  },
-  {
-    "type": "essay",
-    "question": "Hasonlítsa össze a gyomok, a rovarok és a talajlakó kórokozók térbeli viselkedését a fejezet alapján.",
-    "explanation": "Kulcspontok: gyomfoltok stabilitása és maghullás; rovarok mozgékonysága és gyors változása; talajlakó kórokozók stabil, talajhoz kötött foltjai; eltérő monitorozási stratégia.",
-    "chapter_num": 12
-  },
-  {
-    "type": "essay",
-    "question": "Magyarázza el, milyen módon befolyásolják a gazdálkodási előzmények a jelenlegi növényvédelmi kockázatokat.",
-    "explanation": "Kulcspontok: trágyázás és szervesanyag; gyommagbank; fordulósávok; elővetemény; vetésváltás; növényi maradványok mint inokulumforrások.",
-    "chapter_num": 12
-  },
-  {
-    "type": "essay",
-    "question": "Értelmezze, miért fontos a korai észlelés a precíziós növényvédelemben, és milyen technológiák támogatják ezt.",
-    "explanation": "Kulcspontok: korai spektrális jelek; drónok; automatikus csapdák; döntéstámogató rendszerek; kisebb területre korlátozott beavatkozás; költség- és környezetkímélés.",
-    "chapter_num": 12
-  },
-  {
-    "type": "essay",
-    "question": "Mutassa be egy példán keresztül, hogyan vezethet ugyanazon táblán belül eltérő fungicidstratégia jobb eredményhez, mint az egységes kezelés.",
-    "explanation": "Kulcspontok: például szója fehérpenész; párás mélyedések magas kockázata; száraz dombtetők alacsony kockázata; differenciált dózis vagy zónakezelés; gazdasági és agronómiai előnyök.",
-    "chapter_num": 12
-  },
-  {
-    "type": "essay",
-    "question": "Magyarázza el, hogyan kapcsolódik össze a térinformatika és a többéves adatelemzés a gyomkezelési döntésekkel.",
-    "explanation": "Kulcspontok: éves térképek egymásra vetítése; stabil gyomfoltok azonosítása; tartósan gyommentes zónák felismerése; célzott herbicidhasználat; hosszú távú menedzsment.",
-    "chapter_num": 12
-  },
-  {
-    "type": "essay",
-    "question": "Fejtse ki, hogyan alakítja át a precíziós mezőgazdaság a növényvédelmet adatvezérelt tudományággá.",
-    "explanation": "Kulcspontok: szenzorok, drónok, automatikus csapdák, döntéstámogatás, térbeli adatok, időzítés, helyspecifikus beavatkozás, hatékonyság és fenntarthatóság növelése.",
-    "chapter_num": 12
+    "chapter": 12,
+    "difficulty": "hard",
+    "question": "Tervezz egy multi-agens rendszert a sajat kutatasi teruleted irodalomkutatasi feladatara! Milyen szerepeket (agent role) definialnal, milyen feladatokat (task) osztanal ki, es hogyan koordinalnak az agensek egymas munkajat?",
+    "rubric": "A valasz tartalmaz konkret agens-szerepeket, feladatokat, koordinacios mechanizmust, es a rendszer varhato kimeneteit. Ertekelesi szempontok: szerepek relevanciaja, feladatmegosztas logikaja, koordinacio.",
+    "max_score": 100
   }
 ]

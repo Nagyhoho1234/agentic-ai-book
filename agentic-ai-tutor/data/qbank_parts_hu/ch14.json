@@ -1,414 +1,140 @@
 [
   {
+    "id": "ch14_q01",
+    "chapter": 14,
+    "difficulty": "easy",
     "type": "mcq",
-    "question": "Miért korlátozott értékű a nyers adat önmagában a precíziós mezőgazdaságban?",
+    "question": "Kinek szól a 14. fejezet elsősorban?",
     "options": [
-      "A) Mert csak papíralapon értelmezhető",
-      "B) Mert kizárólag laboratóriumi környezetben használható",
-      "C) Mert gyűjtés, tárolás, tisztítás, integráció és értelmezés nélkül nem támogat megbízható döntést",
-      "D) Mert minden nyers adat automatikusan hibás"
-    ],
-    "correct": "C",
-    "explanation": "A fejezet hangsúlyozza, hogy a nyers adat csak akkor válik értékessé, ha megbízhatóan gyűjtik, biztonságosan tárolják, megtisztítják, integrálják és döntéssé alakítják.",
-    "chapter_num": 14
-  },
-  {
-    "type": "mcq",
-    "question": "Melyik sorrend írja le legjobban az adatok életciklusát a fejezet alapján?",
-    "options": [
-      "A) Tárolás → döntés → gyűjtés → tisztítás",
-      "B) Gyűjtés → átvitel és tárolás → tisztítás és minőség-ellenőrzés → elemzés és integráció → döntéshozatal és cselekvés",
-      "C) Elemzés → gyűjtés → nyomtatás → archiválás",
-      "D) Kalibrálás → értékesítés → döntés → mintavétel"
+      "A) Egyéni kutatónak",
+      "B) Laborvezetőnek, aki csoportszinten tervezi az AI-infrastruktúrát",
+      "C) Egyetemi rektornak",
+      "D) Szoftver-mérnöknek"
     ],
     "correct": "B",
-    "explanation": "A szöveg egyértelműen ezt a folyamatot írja le az adat életciklusaként.",
-    "chapter_num": 14
+    "explanation": "A kutatólabor szintjén mutatja meg az AI-infrastruktúra építését."
   },
   {
+    "id": "ch14_q02",
+    "chapter": 14,
+    "difficulty": "medium",
     "type": "mcq",
-    "question": "Mi jellemezte leginkább a precíziós mezőgazdaság korai, 1990-es évekbeli adatkezelését?",
+    "question": "Az AI labor architektúrájában hol van a CrewAI és a LangGraph?",
     "options": [
-      "A) Több tucat valós idejű adatfolyam és felhőalapú elemzés",
-      "B) Egyszerűbb folyamat, gyakran egy adatréteggel, egy szoftverrel és egy személlyel",
-      "C) Kizárólag drónokra és IoT-eszközökre épült",
-      "D) Teljesen szabványosított, gyártófüggetlen adatcsere"
+      "A) Interaktív réteg",
+      "B) Automatizálási réteg",
+      "C) Adatréteg",
+      "D) Prezentációs réteg"
     ],
     "correct": "B",
-    "explanation": "A fejezet szerint a korai rendszer viszonylag egyszerű volt: egyetlen adatréteg, egyetlen szoftver és egyetlen személy vett részt benne.",
-    "chapter_num": 14
+    "explanation": "Az automatizálási rétegben (AI ágensek, többlépéses feladatok)."
   },
   {
+    "id": "ch14_q03",
+    "chapter": 14,
+    "difficulty": "medium",
     "type": "mcq",
-    "question": "Miért vált ma sokkal összetettebbé egyetlen vetési művelet adatkezelése?",
+    "question": "Hogyan jellemzi a fejezet a laboron belüli AI-adoptáció kihívását?",
     "options": [
-      "A) Mert a vetéshez már nincs szükség GPS-re",
-      "B) Mert a gépek kevesebb adatot gyűjtenek, de nehezebben tárolják",
-      "C) Mert egyidejűleg számos szenzor- és gépadat keletkezik nagy időbeli felbontással",
-      "D) Mert a műholdas adatok teljesen kiváltották a gépi adatokat"
-    ],
-    "correct": "C",
-    "explanation": "A szöveg felsorolja a tőszámot, kihagyást, leszorítóerőt, járásminőséget, sebességet, üzemanyag-fogyasztást, motorterhelést és GPS-pozíciót mint párhuzamos adatfolyamokat.",
-    "chapter_num": 14
-  },
-  {
-    "type": "mcq",
-    "question": "Melyik állítás ragadja meg legjobban az adatáradat kezelésének követelményét?",
-    "options": [
-      "A) Elég egy nagyobb memóriakártya",
-      "B) Csak hardverre van szükség, szervezeti gyakorlatokra nem",
-      "C) Tudatos infrastruktúra kell, beleértve hardvert, szoftvert, adatirányítást és emberi szakértelmet",
-      "D) Az adatáradatot legjobb figyelmen kívül hagyni a döntéshozatalban"
-    ],
-    "correct": "C",
-    "explanation": "A fejezet kiemeli, hogy az adatkezelés nemcsak technikai, hanem szervezeti és humán kérdés is.",
-    "chapter_num": 14
-  },
-  {
-    "type": "mcq",
-    "question": "Melyik példa tartozik a georeferált táblaszintű adatok közé?",
-    "options": [
-      "A) Egy általános piaci árlista helymegjelölés nélkül",
-      "B) Hozamtérképező rendszer adatai",
-      "C) Egy gazdasági év végi könyvelési összesítő",
-      "D) Egy névtelen internetes fórumhozzászólás"
+      "A) Mindenki lelkes",
+      "B) A doktoranduszok már használják, a szenior szkeptikus, a technikus túllélkes -- az egyensúlyt kell megtalálni",
+      "C) Senki nem akarja használni",
+      "D) Csak informatikusok tudják használni"
     ],
     "correct": "B",
-    "explanation": "A hozamtérképező rendszer adatai ismert helyhez kötött, georeferált információk.",
-    "chapter_num": 14
+    "explanation": "A laborvezetőnek kell megtalálnia az egyensúlyt."
   },
   {
+    "id": "ch14_q04",
+    "chapter": 14,
+    "difficulty": "hard",
     "type": "mcq",
-    "question": "Melyik formátum kapcsolódik a raszteres műhold- vagy képi adatokhoz a szöveg szerint?",
+    "question": "Mi a 2026-os tudományos AI stack célja?",
     "options": [
-      "A) GeoTIFF",
-      "B) LAS",
-      "C) CSV",
-      "D) KML kizárólag"
-    ],
-    "correct": "A",
-    "explanation": "A fejezet szerint a műholdfelvételek gyakran GeoTIFF vagy hasonló raszteres formátumban érkeznek.",
-    "chapter_num": 14
-  },
-  {
-    "type": "mcq",
-    "question": "Mi a fő gyakorlati probléma a sokféle natív adatforrás-formátummal?",
-    "options": [
-      "A) Minden formátum ugyanazt a szerkezetet használja",
-      "B) A különböző gépek és szoftverek adatfolyamai gyakran nem kompatibilisek egymással",
-      "C) A raszteres adatok mindig pontosabbak a vektorosaknál",
-      "D) A CSV-fájlok nem tárolhatnak számokat"
+      "A) Egyetlen szoftver kiválasztása",
+      "B) A korábbi fejezetek eszközeinek összeillesztése működő egésszé",
+      "C) A legdrágább AI szoftverek beszerzése",
+      "D) AI technológia bemutatása a médiában"
     ],
     "correct": "B",
-    "explanation": "A fejezet szerint az univerzális adatformátum hiánya az információáramlás egyik legnagyobb akadálya.",
-    "chapter_num": 14
+    "explanation": "Hogyan illeszkednek egymáshoz a korábbi fejezetekben megismert eszközök."
   },
   {
+    "id": "ch14_q05",
+    "chapter": 14,
+    "difficulty": "easy",
     "type": "mcq",
-    "question": "Mi az ISO 11783, más néven ISOBUS elsődleges szerepe?",
+    "question": "Mit hasonlít a fejezet a GPS nélküli hajózáshoz?",
     "options": [
-      "A) Talajminták laboratóriumi elemzése",
-      "B) Műholdképek tömörítése",
-      "C) Közös kommunikációs protokoll biztosítása mezőgazdasági berendezések között",
-      "D) Hozamtérképek nyomtatási szabványa"
-    ],
-    "correct": "C",
-    "explanation": "Az ISOBUS a különböző munkagépek és a traktor terminálja közötti kommunikációt szabványosítja.",
-    "chapter_num": 14
-  },
-  {
-    "type": "mcq",
-    "question": "Hogyan segíti az ADAPT az interoperabilitást?",
-    "options": [
-      "A) Megköveteli, hogy minden gyártó feladja saját formátumát",
-      "B) Köztes adatátalakító rétegként és plug-ineken keresztül olvassa a különböző gyártói formátumokat",
-      "C) Csak egyetlen gyártó adatait képes kezelni",
-      "D) Kizárólag meteorológiai adatokra használható"
+      "A) AI nélküli kutatást",
+      "B) Stratégia nélküli AI-adoptációt",
+      "C) Költségvetés nélküli labort",
+      "D) Publikálás nélküli kutatást"
     ],
     "correct": "B",
-    "explanation": "Az ADAPT nyílt forráskódú keretrendszer, amely konverziós plug-ineken keresztül támogatja a különböző formátumok közötti átjárhatóságot.",
-    "chapter_num": 14
+    "explanation": "A stratégia nélküli AI-adoptáció olyan, mint a GPS nélküli hajózás."
   },
   {
-    "type": "mcq",
-    "question": "Miért kulcsfontosságú a GPS-pozicionálás pontossága?",
-    "options": [
-      "A) Mert csak a műholdképeket érinti",
-      "B) Mert minden georeferált adatkészlet helyességét befolyásolja",
-      "C) Mert kizárólag az üzemanyag-fogyasztást határozza meg",
-      "D) Mert csak a laboreredményekre van hatással"
+    "id": "ch14_tf01",
+    "type": "true_false",
+    "chapter": 14,
+    "difficulty": "easy",
+    "question": "A 14. fejezet a kutatolabor szintjen mutatja be az AI-infrastruktura epiteset.",
+    "correct": true,
+    "explanation": "Nem az egyeni kutatonak, hanem a laborvezetonek szol."
+  },
+  {
+    "id": "ch14_tf02",
+    "type": "true_false",
+    "chapter": 14,
+    "difficulty": "medium",
+    "question": "A strategia nelkuli AI-adopcio a fejezet szerint hatekony modja az AI bevezetesenek.",
+    "correct": false,
+    "explanation": "A fejezet a GPS nelkuli hajozashoz hasonlitja."
+  },
+  {
+    "id": "ch14_tf03",
+    "type": "true_false",
+    "chapter": 14,
+    "difficulty": "easy",
+    "question": "A 2026-os tudomanyos AI stack celja a korabbi fejezetek eszkoezeinek osszeilesztese mukodo egeszsze.",
+    "correct": true,
+    "explanation": "Az eszkozok onmagukban ismertek, a cel a mukodo egesz kialakitasa."
+  },
+  {
+    "id": "ch14_fb01",
+    "type": "fill_blank",
+    "chapter": 14,
+    "difficulty": "medium",
+    "question": "A fejezet szerint a strategia nelkuli AI-adopcio olyan, mint a _____ nelkuli hajozas.",
+    "correct": "GPS",
+    "alternatives": [
+      "GPS",
+      "gps"
     ],
-    "correct": "B",
-    "explanation": "A georeferált adatok értelmezése a helyes pozícióhoz kötött, ezért a GPS-pontosság alapvető.",
-    "chapter_num": 14
+    "explanation": "Lehet, hogy haladunk, de nem biztos, hogy jo iranyba."
   },
   {
-    "type": "mcq",
-    "question": "Melyik megállapítás felel meg leginkább a modern adatfolyamok működésének?",
-    "options": [
-      "A) Az adatok kizárólag manuálisan mozognak egyik lépésből a másikba",
-      "B) Az adatfolyamok gyakran automatizáltak vagy félautomatizáltak, minimális emberi beavatkozással",
-      "C) Az adatok nem jutnak vissza a terepi berendezésekhez",
-      "D) A felhőplatformok szerepe megszűnt"
+    "id": "ch14_fb02",
+    "type": "fill_blank",
+    "chapter": 14,
+    "difficulty": "medium",
+    "question": "A CrewAI es a LangGraph az AI labor architekturajaban az _____ retegben helyezkednek el.",
+    "correct": "automatizalasi",
+    "alternatives": [
+      "automatizálási",
+      "automatizalasi",
+      "automatizacios"
     ],
-    "correct": "B",
-    "explanation": "A fejezet szerint a modern adatfolyam érzékelőktől felhőplatformokon át elemzőmotorokig és vissza a terepi gépekig áramlik.",
-    "chapter_num": 14
+    "explanation": "Az automatizalasi retegben vannak az AI agensek es a tobblépeéses feladatok."
   },
   {
-    "type": "true_false",
-    "question": "A nyers adat önmagában általában elegendő a megbízható gazdálkodási döntésekhez.",
-    "correct_answer": false,
-    "explanation": "A nyers adatot tisztítani, integrálni és értelmezni kell, hogy valóban döntéstámogató információ legyen.",
-    "chapter_num": 14
-  },
-  {
-    "type": "true_false",
-    "question": "Az adatfolyam fogalma a szétszórt digitális jelekből egységes, a gazdálkodást támogató információ létrehozását jelenti.",
-    "correct_answer": true,
-    "explanation": "Ez a fejezet egyik alapdefiníciója.",
-    "chapter_num": 14
-  },
-  {
-    "type": "true_false",
-    "question": "Az adatok életciklusa a precíziós mezőgazdaságban a döntéshozatallal végleg lezárul, és nem termel újabb adatokat.",
-    "correct_answer": false,
-    "explanation": "A végrehajtott döntések gyakran új adatokat generálnak, például tényleges kijuttatási térképeket.",
-    "chapter_num": 14
-  },
-  {
-    "type": "true_false",
-    "question": "Az 1990-es években a precíziós mezőgazdasági adatkezelés jellemzően egyszerűbb volt, mint napjainkban.",
-    "correct_answer": true,
-    "explanation": "A szöveg szerint akkor gyakran egyetlen adatréteg, egyetlen szoftver és egyetlen személy vett részt a folyamatban.",
-    "chapter_num": 14
-  },
-  {
-    "type": "true_false",
-    "question": "A mai vetési műveletek során keletkező adatok köre szűkebb, mint a korai precíziós rendszerekben.",
-    "correct_answer": false,
-    "explanation": "Épp ellenkezőleg: ma sokkal több, párhuzamos adatfolyam keletkezik.",
-    "chapter_num": 14
-  },
-  {
-    "type": "true_false",
-    "question": "A modern adatfolyamok kezeléséhez elegendő a megfelelő hardver, szervezeti gyakorlatokra nincs szükség.",
-    "correct_answer": false,
-    "explanation": "A fejezet hangsúlyozza a szervezeti gyakorlatok, adatirányítási irányelvek és emberi szakértelem fontosságát is.",
-    "chapter_num": 14
-  },
-  {
-    "type": "true_false",
-    "question": "A georeferált táblaszintű adatok ismert helyhez kötött információkat tartalmaznak.",
-    "correct_answer": true,
-    "explanation": "A fejezet így definiálja ezeket az adatokat.",
-    "chapter_num": 14
-  },
-  {
-    "type": "true_false",
-    "question": "A műholdfelvételek a szöveg szerint tipikusan shapefile formátumban érkeznek.",
-    "correct_answer": false,
-    "explanation": "A műholdfelvételek jellemzően GeoTIFF vagy hasonló raszteres formátumban érkeznek.",
-    "chapter_num": 14
-  },
-  {
-    "type": "true_false",
-    "question": "A különböző gyártók gépei és szoftverei közötti inkompatibilitás az információáramlás egyik jelentős akadálya.",
-    "correct_answer": true,
-    "explanation": "Az univerzális adatformátum hiánya a fejezet szerint központi probléma.",
-    "chapter_num": 14
-  },
-  {
-    "type": "true_false",
-    "question": "Az ISOBUS főként a mezőgazdasági berendezések közötti kommunikáció szabványosítására szolgál.",
-    "correct_answer": true,
-    "explanation": "Az ISO 11783, azaz ISOBUS közös kommunikációs protokollt határoz meg.",
-    "chapter_num": 14
-  },
-  {
-    "type": "true_false",
-    "question": "Az ADAPT csak akkor működik, ha minden gyártó ugyanazt a natív fájlformátumot használja.",
-    "correct_answer": false,
-    "explanation": "Az ADAPT lényege éppen az, hogy különböző gyártói formátumok között teremtsen átjárhatóságot.",
-    "chapter_num": 14
-  },
-  {
-    "type": "true_false",
-    "question": "A GPS-pozicionálás pontossága csak a navigációt érinti, a georeferált adatkészletek minőségét nem.",
-    "correct_answer": false,
-    "explanation": "A helymeghatározás pontossága minden georeferált adat értelmezését befolyásolja.",
-    "chapter_num": 14
-  },
-  {
-    "type": "true_false",
-    "question": "A modern adatfolyamok gyakran automatizáltak vagy félautomatizáltak.",
-    "correct_answer": true,
-    "explanation": "A fejezet ezt a mai rendszerek egyik alapvető jellemzőjeként írja le.",
-    "chapter_num": 14
-  },
-  {
-    "type": "true_false",
-    "question": "A meteorológiai állomások és IoT-talajnedvesség-szondák folyamatos környezeti monitorozást biztosíthatnak.",
-    "correct_answer": true,
-    "explanation": "Ez konkrétan szerepel az adatforrások felsorolásában.",
-    "chapter_num": 14
-  },
-  {
-    "type": "true_false",
-    "question": "A LiDAR-pontfelhők a fejezet szerint jellemzően CSV-formátumban tárolódnak.",
-    "correct_answer": false,
-    "explanation": "A szöveg a LiDAR-pontfelhők esetében a LAS formátumot említi.",
-    "chapter_num": 14
-  },
-  {
-    "type": "fill_blank",
-    "question": "A szétszórt digitális jelekből egységes, a gazdálkodást támogató információt létrehozó folyamat neve _____.",
-    "correct_answer": "adatfolyam",
-    "explanation": "A fejezet ezt a folyamatot adatfolyamnak nevezi.",
-    "chapter_num": 14
-  },
-  {
-    "type": "fill_blank",
-    "question": "Az adatok életciklusa a precíziós mezőgazdaságban a _____ szakaszával kezdődik.",
-    "correct_answer": "gyűjtés",
-    "explanation": "Az életciklus első lépése az adatok gyűjtése.",
-    "chapter_num": 14
-  },
-  {
-    "type": "fill_blank",
-    "question": "A döntés végrehajtása után keletkező, az elvégzett műveletet dokumentáló térkép példája a tényleges _____ térkép.",
-    "correct_answer": "kijuttatást rögzítő",
-    "explanation": "A szöveg ezt hozza példaként a ciklusba visszatáplálódó új adatokra.",
-    "chapter_num": 14
-  },
-  {
-    "type": "fill_blank",
-    "question": "A mezőgazdasági berendezések közös kommunikációs protokollját meghatározó szabvány az ISO _____, közismert nevén ISOBUS.",
-    "correct_answer": "11783",
-    "explanation": "Az ISOBUS az ISO 11783 szabvány megnevezése.",
-    "chapter_num": 14
-  },
-  {
-    "type": "fill_blank",
-    "question": "Az AgGateway által fejlesztett nyílt forráskódú adatkonverziós keretrendszer neve _____.",
-    "correct_answer": "ADAPT",
-    "explanation": "Az Agricultural Data Application Programming Toolkit rövidítése ADAPT.",
-    "chapter_num": 14
-  },
-  {
-    "type": "fill_blank",
-    "question": "A műholdfelvételek gyakran _____ formátumban érkeznek.",
-    "correct_answer": "GeoTIFF",
-    "explanation": "A fejezet a GeoTIFF-et említi tipikus raszteres formátumként.",
-    "chapter_num": 14
-  },
-  {
-    "type": "fill_blank",
-    "question": "A vektoros adatok egyik említett formátuma a _____.",
-    "correct_answer": "shapefile",
-    "explanation": "A shapefile a fejezetben szereplő tipikus vektoros formátum.",
-    "chapter_num": 14
-  },
-  {
-    "type": "fill_blank",
-    "question": "A LiDAR-pontfelhők említett formátuma a _____.",
-    "correct_answer": "LAS",
-    "explanation": "A szöveg a LiDAR-adatoknál a LAS formátumot nevezi meg.",
-    "chapter_num": 14
-  },
-  {
-    "type": "fill_blank",
-    "question": "A különböző gyártók adatfolyamai közötti átjárhatóság hiányának egyik oka az univerzális adat_____ hiánya.",
-    "correct_answer": "formátum",
-    "explanation": "A fejezet szerint az univerzális adatformátum hiánya jelentős akadály.",
-    "chapter_num": 14
-  },
-  {
-    "type": "fill_blank",
-    "question": "A modern adatfolyamokban az adatok gyakran a felhőplatformokon keresztül az elemző_____ jutnak el.",
-    "correct_answer": "motorokig",
-    "explanation": "A szöveg szerint az adatok az érzékelőktől a felhőplatformokon át az elemzőmotorokig áramlanak.",
-    "chapter_num": 14
-  },
-  {
-    "type": "fill_blank",
-    "question": "A georeferált adatkészletek minőségét alapvetően befolyásolja a GPS-_____ pontossága.",
-    "correct_answer": "pozicionálás",
-    "explanation": "A helymeghatározás pontossága minden georeferált adatot érint.",
-    "chapter_num": 14
-  },
-  {
-    "type": "fill_blank",
-    "question": "A talajvizsgálati laboratóriumok az eredményeket gyakran _____-fájlok vagy táblázatok formájában küldik.",
-    "correct_answer": "CSV",
-    "explanation": "A fejezet ezt a formátumot említi laboreredményeknél.",
-    "chapter_num": 14
-  },
-  {
-    "type": "fill_blank",
-    "question": "A modern növénytermesztésben alapvető kompetencia az adatfolyam lehetséges _____ pontjainak és karbantartásának megértése.",
-    "correct_answer": "meghibásodási",
-    "explanation": "A szöveg kiemeli a meghibásodási pontok megértésének fontosságát.",
-    "chapter_num": 14
-  },
-  {
+    "id": "ch14_es01",
     "type": "essay",
-    "question": "Magyarázza el, miért nem elegendő a nyers adat önmagában a precíziós mezőgazdasági döntéshozatalhoz.",
-    "explanation": "Kulcspontok: a nyers adat korlátozott értéke; megbízható gyűjtés, biztonságos tárolás, tisztítás, integráció szükségessége; a döntéstámogató információvá alakítás folyamata; hibák és zaj hatása a döntésekre.",
-    "chapter_num": 14
-  },
-  {
-    "type": "essay",
-    "question": "Mutassa be az adatok életciklusát a gyűjtéstől a cselekvésig, és térjen ki arra is, hogyan zárul vissza a ciklus.",
-    "explanation": "Kulcspontok: gyűjtés, átvitel, tárolás, tisztítás, minőség-ellenőrzés, elemzés, integráció, döntéshozatal, cselekvés; a végrehajtás új adatokat generál; iteratív visszacsatolás.",
-    "chapter_num": 14
-  },
-  {
-    "type": "essay",
-    "question": "Hasonlítsa össze a precíziós mezőgazdaság 1990-es évekbeli adatkezelését a mai gyakorlattal.",
-    "explanation": "Kulcspontok: korai egyszerűség vs. mai komplexitás; egy adatréteg/egy szoftver/egy személy vs. sok párhuzamos adatfolyam; memóriakártyás letöltés és asztali GIS vs. automatizált, felhőalapú adatfolyamok.",
-    "chapter_num": 14
-  },
-  {
-    "type": "essay",
-    "question": "Elemezze, milyen kihívásokat okoz a sokféle adatforrás és fájlformátum a gazdaságok és szaktanácsadók számára.",
-    "explanation": "Kulcspontok: gyártóspecifikus formátumok; importálási nehézségek; interoperabilitási problémák; idő- és munkaigény; hibalehetőségek; döntéstámogatás lassulása.",
-    "chapter_num": 14
-  },
-  {
-    "type": "essay",
-    "question": "Fejtse ki az ISOBUS szerepét a mezőgazdasági gépek közötti kommunikációban, és értékelje jelentőségét az adatfolyamok szempontjából.",
-    "explanation": "Kulcspontok: ISO 11783; közös kommunikációs protokoll; traktor terminál és munkagépek kapcsolata; gépvezérlés előnyei; adatrögzítés és adatátvitel szabványosításának fejlődő szerepe.",
-    "chapter_num": 14
-  },
-  {
-    "type": "essay",
-    "question": "Mutassa be, hogyan segíti az ADAPT a különböző gyártói formátumok közötti adatcserét.",
-    "explanation": "Kulcspontok: AgGateway; nyílt forráskódú keretrendszer; köztes adatátalakító réteg; plug-inek; gyártói formátumok megtartása mellett közös hozzáférés biztosítása.",
-    "chapter_num": 14
-  },
-  {
-    "type": "essay",
-    "question": "Magyarázza el, miért tekinthető az adatminőség gyakorlati kérdésnek is, nem csupán informatikai problémának.",
-    "explanation": "Kulcspontok: GPS-pontosság; kalibrálás; gépbeállítások; terepi munkavégzés minősége; hibák a teljes elemzési láncban felerősödhetnek.",
-    "chapter_num": 14
-  },
-  {
-    "type": "essay",
-    "question": "Értelmezze a georeferált táblaszintű adatok jelentőségét a precíziós mezőgazdaságban konkrét példákon keresztül.",
-    "explanation": "Kulcspontok: helyhez kötöttség; hozamtérképek, vetési és kijuttatási térképek, talajvezetőképesség, tápanyagminták, domborzat, terepbejárási megfigyelések; térbeli mintázatok feltárása.",
-    "chapter_num": 14
-  },
-  {
-    "type": "essay",
-    "question": "Mutassa be, hogyan válik egy modern mezőgazdasági adatfolyam automatizálttá vagy félautomatizálttá, és milyen előnyökkel illetve kockázatokkal jár ez.",
-    "explanation": "Kulcspontok: érzékelők, felhőplatformok, elemzőmotorok, visszacsatolás a gépekhez; gyorsaság és skálázhatóság; meghibásodási pontok; emberi ellenőrzés szerepe.",
-    "chapter_num": 14
-  },
-  {
-    "type": "essay",
-    "question": "Fejtse ki, miért alapvető kompetencia a modern növénytermesztésben az adatfolyam működésének és lehetséges meghibásodási pontjainak megértése.",
-    "explanation": "Kulcspontok: komplex rendszerek; hibák forrásainak felismerése; karbantartás; megbízható döntéshozatal; technikai és szervezeti tudás összekapcsolása.",
-    "chapter_num": 14
+    "chapter": 14,
+    "difficulty": "hard",
+    "question": "Kepzeld el, hogy egy tizfos kutatocsoport vezetoje vagy! Keszits egy tervet, hogyan integralnad az AI-t a csoportod munkajaba! Milyen eszkozoket valasztanal, hogyan kezelned a kulonbozo hozzaallasokat, es milyen koltsegvetessel kalkulalnal?",
+    "rubric": "A valasz tartalmaz strategiat, eszkozvalasztast, a csapat kulonbozo tagjainak kezeleset, es koltsegvetesi becslest. Ertekelesi szempontok: strategiai gondolkodas, eszkozismeret, csapatkezeles, realitas.",
+    "max_score": 100
   }
 ]

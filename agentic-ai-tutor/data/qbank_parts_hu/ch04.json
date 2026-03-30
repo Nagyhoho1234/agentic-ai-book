@@ -1,414 +1,140 @@
 [
   {
+    "id": "ch04_q01",
+    "chapter": 4,
+    "difficulty": "easy",
     "type": "mcq",
-    "question": "Mi adja a legtöbb mezőgazdasági vegetációs index fizikai alapját?",
+    "question": "Mi a no-code (kód nélküli) adatelemzés lényege a fejezet szerint?",
     "options": [
-      "A) A kék és zöld tartományban mért azonos visszaverődés",
-      "B) Az erős elnyelés a vörösben és az erős visszaverődés a NIR-ben",
-      "C) A termális tartomány teljes hiánya",
-      "D) A rádióhullámok nagyfokú abszorpciója a levelekben"
+      "A) Az AI teljesen automatikusan elemez mindent",
+      "B) Természetes nyelven adunk utasítást az AI-nak, és az végzi el a technikai munkát",
+      "C) Kizárólag Excel pivot-táblákkal dolgozunk",
+      "D) Előre megírt programokat futtatunk"
     ],
     "correct": "B",
-    "explanation": "Az egészséges növényzet a vörös tartományban erősen elnyel, míg a közeli infravörösben erősen visszaver, és ez a kontraszt képezi számos vegetációs index alapját.",
-    "chapter_num": 4
+    "explanation": "A kutató dönt a MIT-ről és MIÉRT-ről, az AI a HOGYAN-t oldja meg."
   },
   {
+    "id": "ch04_q02",
+    "chapter": 4,
+    "difficulty": "medium",
     "type": "mcq",
-    "question": "Miért tűnik zöldnek az egészséges növényzet az emberi szem számára?",
+    "question": "Melyik fájlformátumot javasolja a fejezet a legbiztonságosabbnak AI-alapú adatelemzéshez?",
     "options": [
-      "A) Mert a levél a zöld fényt nagyrészt elnyeli",
-      "B) Mert a levél a vörös fényt veri vissza a legerősebben",
-      "C) Mert a levél a zöld fény egy részét visszaveri, miközben a kéket és vöröset nagyrészt elnyeli",
-      "D) Mert a termális kisugárzás zöld színként jelenik meg"
+      "A) Excel (.xlsx)",
+      "B) PDF",
+      "C) CSV, mert a legegyszerűbb és legbiztonságosabb",
+      "D) JSON"
     ],
     "correct": "C",
-    "explanation": "A klorofill és más pigmentek főként a kék és vörös fényt nyelik el, míg a zöld fény egy része visszaverődik.",
-    "chapter_num": 4
+    "explanation": "A fejezet a CSV formátumot ajánlja."
   },
   {
+    "id": "ch04_q03",
+    "chapter": 4,
+    "difficulty": "medium",
     "type": "mcq",
-    "question": "Melyik tartomány hordoz különösen sok információt a növényi sejtszerkezetről?",
+    "question": "Mire kell figyelni betegadatok feltöltésekor az AI platformra?",
     "options": [
-      "A) Látható kék tartomány",
-      "B) Közeli infravörös (NIR)",
-      "C) Gamma-tartomány",
-      "D) Rádiótartomány"
+      "A) Csak angol nyelvű adatokat szabad feltölteni",
+      "B) A GDPR-nak megfelelően anonimiálni kell a feltöltés előtt",
+      "C) Csak .xlsx formátumban szabad feltölteni",
+      "D) Maximum 1000 sor tölthető fel"
     ],
     "correct": "B",
-    "explanation": "A szöveg szerint a NIR tartomány gazdag információt hordoz a növényi sejtszerkezetről.",
-    "chapter_num": 4
+    "explanation": "A GDPR-nak megfelelően anonimizálni kell a feltöltés előtt."
   },
   {
+    "id": "ch04_q04",
+    "chapter": 4,
+    "difficulty": "easy",
     "type": "mcq",
-    "question": "Mi okozza elsősorban az egészséges levelek nagy NIR-reflektanciáját?",
+    "question": "A fejezet milyen szereposztást javasol a kutató és az AI között az adatelemzésben?",
     "options": [
-      "A) A klorofill közvetlen NIR-kibocsátása",
-      "B) A levél felszínének viaszrétege",
-      "C) A szivacsos mezofillum levegő-sejt határfelületein történő szórás",
-      "D) A levél magas ásványianyag-tartalma"
-    ],
-    "correct": "C",
-    "explanation": "A magas NIR-visszaverődés nem a pigmentekből, hanem a levél belső szerkezetéből, főként a mezofillum szóró hatásából ered.",
-    "chapter_num": 4
-  },
-  {
-    "type": "mcq",
-    "question": "Melyik hullámhossztartományban válik a levél víztartalma meghatározóvá a jel szempontjából?",
-    "options": [
-      "A) 400–700 nm",
-      "B) 700–1300 nm",
-      "C) 1300–2500 nm",
-      "D) 8000–14 000 nm"
-    ],
-    "correct": "C",
-    "explanation": "A SWIR, vagyis a 1300–2500 nm közötti tartományban a víztartalom erősen befolyásolja a reflektanciát.",
-    "chapter_num": 4
-  },
-  {
-    "type": "mcq",
-    "question": "Mit érzékelnek a termális infravörös szenzorok elsősorban?",
-    "options": [
-      "A) A visszavert kék fényt",
-      "B) A felszínek által kibocsátott hőt",
-      "C) A levél pigmenttartalmát közvetlenül",
-      "D) A rádióhullámok visszhangját"
+      "A) Az AI dönti el, mit és miért kell elemezni",
+      "B) A kutató dönti el a MIT-et és a MIÉRT-et, az AI a HOGYAN-t oldja meg",
+      "C) A kutató és az AI felváltva hoznak döntéseket",
+      "D) Az AI csak vizualizációt készít"
     ],
     "correct": "B",
-    "explanation": "A termális tartományban a szenzorok nem a visszavert napfényt, hanem a felszínek által kibocsátott hősugárzást mérik.",
-    "chapter_num": 4
+    "explanation": "A kutató dönt a MIT-ről és MIÉRT-ről, az AI a HOGYAN-t oldja meg."
   },
   {
+    "id": "ch04_q05",
+    "chapter": 4,
+    "difficulty": "hard",
     "type": "mcq",
-    "question": "Miért lehet a termális távérzékelés alkalmas a vízstressz korai felismerésére?",
+    "question": "Miért nem helyettesíti az AI a statisztikai gondolkodást a no-code adatelemzésben?",
     "options": [
-      "A) Mert a stresszelt növények mindig sötétebb zöldek",
-      "B) Mert a zárt sztómák miatt csökken a párologtatás, ezért nő az állomány hőmérséklete",
-      "C) Mert a vízstressz növeli a látható kék visszaverődést",
-      "D) Mert a stresszelt növények több gamma-sugárzást bocsátanak ki"
+      "A) Mert az AI nem tud statisztikai számításokat végezni",
+      "B) Mert az AI eltávolítja a technikai akadályokat, de a kutatási kérdés és az értelmezés a kutatóé marad",
+      "C) Mert a no-code módszer csak leíró statisztikára alkalmas",
+      "D) Mert az AI mindig hibás teszteket választ"
     ],
     "correct": "B",
-    "explanation": "A jól öntözött növényzet párologtatással hűti magát, míg a stresszelt, zárt sztómájú állomány melegebbé válik.",
-    "chapter_num": 4
+    "explanation": "Az AI eltávolítja a technikai akadályokat, de a kutatási kérdés és értelmezés továbbra is a kutató feladata."
   },
   {
-    "type": "mcq",
-    "question": "Mit jelent a spektrális aláírás fogalma?",
-    "options": [
-      "A) Egy műhold pályájának grafikus jelölését",
-      "B) Egy anyag jellegzetes reflektancia- és abszorpciós mintázatát a spektrum mentén",
-      "C) A szenzor gyártójának azonosítókódját",
-      "D) A képfelbontás numerikus értékét"
+    "id": "ch04_tf01",
+    "type": "true_false",
+    "chapter": 4,
+    "difficulty": "easy",
+    "question": "A no-code adatelemzesben a kutato termeszetes nyelven ad utasitast az AI-nak.",
+    "correct": true,
+    "explanation": "Feltoltod a fajlt egy AI chatbotnak, es termeszetes nyelven kersz elemzest."
+  },
+  {
+    "id": "ch04_tf02",
+    "type": "true_false",
+    "chapter": 4,
+    "difficulty": "medium",
+    "question": "A no-code adatelemzes azt jelenti, hogy a kutatonak nem kell statisztikai gondolkodasra kepesnek lennie.",
+    "correct": false,
+    "explanation": "Az AI eltavolitja a technikai akadalyokat, de a kutatasi kerdes es az ertelmezes a kutato feladata marad."
+  },
+  {
+    "id": "ch04_tf03",
+    "type": "true_false",
+    "chapter": 4,
+    "difficulty": "easy",
+    "question": "A CSV a legegyszerubb es legbiztonsagosabb fajlformatum AI-alapu adatelemzeshez.",
+    "correct": true,
+    "explanation": "A fejezet a CSV formatumot ajanlja."
+  },
+  {
+    "id": "ch04_fb01",
+    "type": "fill_blank",
+    "chapter": 4,
+    "difficulty": "medium",
+    "question": "Az adatelemzesben a kutato donti el a MIT-et es a MIERT-et, az AI pedig a _____ oldja meg.",
+    "correct": "HOGYAN-t",
+    "alternatives": [
+      "hogyan-t",
+      "HOGYAN",
+      "hogyant"
     ],
-    "correct": "B",
-    "explanation": "A spektrális aláírás az anyagokra jellemző, diagnosztikai értékű spektrális viselkedést jelenti.",
-    "chapter_num": 4
+    "explanation": "A szereposztas: a kutato donti el, mit es miert kell elemezni, az AI a hogyant oldja meg."
   },
   {
-    "type": "mcq",
-    "question": "Miért korlátozott a hagyományos, csak látható tartományban készült légifelvételek mezőgazdasági információtartalma?",
-    "options": [
-      "A) Mert túl nagy a térbeli felbontásuk",
-      "B) Mert az emberi szem és a hagyományos kamerák csak a spektrum szűk részére érzékenyek",
-      "C) Mert nem készíthetők nappal",
-      "D) Mert nem alkalmasak digitális feldolgozásra"
+    "id": "ch04_fb02",
+    "type": "fill_blank",
+    "chapter": 4,
+    "difficulty": "medium",
+    "question": "Betegadatok feltoltese elott a GDPR-nak megfeleloen _____ kell az adatokat.",
+    "correct": "anonimizalni",
+    "alternatives": [
+      "anonimizálni",
+      "anonim"
     ],
-    "correct": "B",
-    "explanation": "A legértékesebb mezőgazdasági információk gyakran a nem látható tartományokban, például NIR, SWIR és termális sávokban jelennek meg.",
-    "chapter_num": 4
+    "explanation": "A szemelyes adatokat a GDPR eloirasai szerint anonimizalni kell."
   },
   {
-    "type": "mcq",
-    "question": "Melyik állítás írja le helyesen a vörös él (red edge) jelenségét?",
-    "options": [
-      "A) 700 nm körül a visszaverődés hirtelen csökken",
-      "B) 700 nm körül a visszaverődés meredeken megemelkedik a látható és a NIR határán",
-      "C) A vörös él a termális tartományban figyelhető meg",
-      "D) A vörös él kizárólag csupasz talajon jelenik meg"
-    ],
-    "correct": "B",
-    "explanation": "A vörös él a vörös és a NIR tartomány határán bekövetkező gyors reflektancia-növekedés.",
-    "chapter_num": 4
-  },
-  {
-    "type": "mcq",
-    "question": "Melyik alkalmazás következik leginkább a fejezet bevezetőjében leírt távérzékelési munkafolyamatokból?",
-    "options": [
-      "A) Műtrágya-kijuttatási előírások készítése nyers képi adatokból",
-      "B) Csak meteorológiai előrejelzések készítése",
-      "C) Kizárólag talajminták laboratóriumi elemzése",
-      "D) Vetőmagok genetikai módosítása"
-    ],
-    "correct": "A",
-    "explanation": "A bevezető hangsúlyozza, hogy a nyers képi adatokból gyakorlati döntéstámogató termékek, például kijuttatási előírások készülhetnek.",
-    "chapter_num": 4
-  },
-  {
-    "type": "mcq",
-    "question": "Melyik felsorolás tartalmazza a mezőgazdaság szempontjából a szöveg szerint legfontosabb spektrális tartományokat?",
-    "options": [
-      "A) Gamma, röntgen, ultraibolya, rádió",
-      "B) Látható, NIR, SWIR, termális infravörös",
-      "C) Csak látható és rádió",
-      "D) Csak mikrohullám és gamma"
-    ],
-    "correct": "B",
-    "explanation": "A fejezet ezeket a tartományokat emeli ki mezőgazdasági szempontból relevánsként.",
-    "chapter_num": 4
-  },
-  {
-    "type": "true_false",
-    "question": "Az elektromágneses spektrum folytonos skála, amelyen a különböző sugárzásfajták hullámhossz szerint rendezhetők el.",
-    "correct_answer": true,
-    "explanation": "A szöveg egyértelműen így definiálja az elektromágneses spektrumot.",
-    "chapter_num": 4
-  },
-  {
-    "type": "true_false",
-    "question": "A foton egy célfelszínnel találkozva csak elnyelődhet, más lehetőség nincs.",
-    "correct_answer": false,
-    "explanation": "A foton elnyelődhet, visszaverődhet vagy áthaladhat az anyagon is.",
-    "chapter_num": 4
-  },
-  {
-    "type": "true_false",
-    "question": "A látható tartomány nagyjából 400 és 700 nm közé esik.",
-    "correct_answer": true,
-    "explanation": "Ez a fejezetben megadott közelítő tartomány.",
-    "chapter_num": 4
-  },
-  {
-    "type": "true_false",
-    "question": "A közeli infravörös tartomány az emberi szem számára látható.",
-    "correct_answer": false,
-    "explanation": "A NIR a szöveg szerint számunkra láthatatlan.",
-    "chapter_num": 4
-  },
-  {
-    "type": "true_false",
-    "question": "Az egészséges növényállomány a beeső látható sugárzás több mint felét veri vissza.",
-    "correct_answer": false,
-    "explanation": "A szöveg szerint kevesebb mint tíz százalékát veri vissza.",
-    "chapter_num": 4
-  },
-  {
-    "type": "true_false",
-    "question": "A vörös él a vörös és a közeli infravörös határán megfigyelhető hirtelen reflektancia-változás.",
-    "correct_answer": true,
-    "explanation": "A red edge 700 nm körül jelentkező meredek reflektancia-emelkedés.",
-    "chapter_num": 4
-  },
-  {
-    "type": "true_false",
-    "question": "A NIR-reflektancia fő oka a levél pigmentjeinek erős NIR-elnyelése.",
-    "correct_answer": false,
-    "explanation": "Épp ellenkezőleg: a magas NIR-reflektancia főként a belső sejtszerkezetből eredő szórás miatt alakul ki.",
-    "chapter_num": 4
-  },
-  {
-    "type": "true_false",
-    "question": "A SWIR tartományban a levél víztartalma erősen befolyásolja a mért jelet.",
-    "correct_answer": true,
-    "explanation": "A víz meghatározott SWIR hullámhosszokon erősen elnyeli a sugárzást.",
-    "chapter_num": 4
-  },
-  {
-    "type": "true_false",
-    "question": "Ha a levél víztartalma csökken, a SWIR-tartományban általában csökken a visszaverődés.",
-    "correct_answer": false,
-    "explanation": "A szöveg szerint ilyenkor nő a visszaverődés, mert kevesebb víz nyeli el az energiát.",
-    "chapter_num": 4
-  },
-  {
-    "type": "true_false",
-    "question": "A termális infravörös tartományban a szenzorok elsősorban visszavert napfényt mérnek.",
-    "correct_answer": false,
-    "explanation": "A termális szenzorok a felszínek által kibocsátott hőt érzékelik.",
-    "chapter_num": 4
-  },
-  {
-    "type": "true_false",
-    "question": "A jól öntözött növényállomány párologtatás révén hűtheti önmagát.",
-    "correct_answer": true,
-    "explanation": "A fejezet ezt az emberi izzadáshoz hasonlítja.",
-    "chapter_num": 4
-  },
-  {
-    "type": "true_false",
-    "question": "A spektrális aláírások segítségével különböző anyagok, például zöld növényzet és csupasz talaj elkülöníthetők.",
-    "correct_answer": true,
-    "explanation": "Ez a spektrális aláírások egyik fő gyakorlati jelentősége.",
-    "chapter_num": 4
-  },
-  {
-    "type": "true_false",
-    "question": "A hagyományos kamerák általában érzékenyebbek a SWIR és termális tartományokra, mint a látható fényre.",
-    "correct_answer": false,
-    "explanation": "A szöveg szerint a hagyományos kamerák csak a spektrum szűk, látható részére érzékenyek.",
-    "chapter_num": 4
-  },
-  {
-    "type": "true_false",
-    "question": "A távérzékelés mezőgazdasági értéke nem pusztán abból fakad, hogy felülről lehet képet készíteni a tábláról.",
-    "correct_answer": true,
-    "explanation": "Az igazi értéket a több spektrális tartományban történő mérés adja.",
-    "chapter_num": 4
-  },
-  {
-    "type": "true_false",
-    "question": "A termális szenzorok nem képesek kis, 1–2 °C-os hőmérsékletkülönbségek érzékelésére.",
-    "correct_answer": false,
-    "explanation": "A szöveg szerint akár egy-két Celsius-fokos különbségeket is érzékelhetnek.",
-    "chapter_num": 4
-  },
-  {
-    "type": "fill_blank",
-    "question": "A _____ spektrum a különböző sugárzásfajtákat hullámhossz szerint rendezi folytonos skálára.",
-    "correct_answer": "elektromágneses",
-    "explanation": "A fejezet az elektromágneses spektrum fogalmát használja erre.",
-    "chapter_num": 4
-  },
-  {
-    "type": "fill_blank",
-    "question": "A célfelszínről visszaverődő sugárzást _____ nevezzük.",
-    "correct_answer": "reflexió",
-    "explanation": "A három alapfolyamat egyike a reflexió, vagyis visszaverődés.",
-    "chapter_num": 4
-  },
-  {
-    "type": "fill_blank",
-    "question": "A látható tartomány hozzávetőleg _____ és _____ nm között helyezkedik el.",
-    "correct_answer": "400; 700",
-    "explanation": "A szöveg a látható fény tartományát 400–700 nm-ben adja meg.",
-    "chapter_num": 4
-  },
-  {
-    "type": "fill_blank",
-    "question": "A közeli infravörös rövidítése: _____.",
-    "correct_answer": "NIR",
-    "explanation": "A near infrared magyarul közeli infravörös, rövidítése NIR.",
-    "chapter_num": 4
-  },
-  {
-    "type": "fill_blank",
-    "question": "A rövid hullámhosszú infravörös tartomány angol rövidítése _____.",
-    "correct_answer": "SWIR",
-    "explanation": "A short-wave infrared rövidítése SWIR.",
-    "chapter_num": 4
-  },
-  {
-    "type": "fill_blank",
-    "question": "A termális infravörös tartomány megközelítőleg _____ és _____ nm között található.",
-    "correct_answer": "8000; 14000",
-    "explanation": "A fejezet ezt a közelítő tartományt adja meg.",
-    "chapter_num": 4
-  },
-  {
-    "type": "fill_blank",
-    "question": "Az egészséges növényzet jellegzetes színét a visszaverődő _____ fény adja.",
-    "correct_answer": "zöld",
-    "explanation": "A kék és vörös nagy részét elnyeli, a zöld egy részét visszaveri.",
-    "chapter_num": 4
-  },
-  {
-    "type": "fill_blank",
-    "question": "A 700 nm körül megfigyelhető hirtelen reflektancia-emelkedést _____ élnek nevezik.",
-    "correct_answer": "vörös",
-    "explanation": "A red edge magyar megfelelője a vörös él.",
-    "chapter_num": 4
-  },
-  {
-    "type": "fill_blank",
-    "question": "A NIR-ben tapasztalható magas reflektancia fő oka a levél belső _____ .",
-    "correct_answer": "szerkezete",
-    "explanation": "A pigmentek helyett főként a belső sejtszerkezet felelős ezért.",
-    "chapter_num": 4
-  },
-  {
-    "type": "fill_blank",
-    "question": "A levél víztartalma különösen _____ nm és _____ nm körül nyeli el erősen a sugárzást a SWIR tartományban.",
-    "correct_answer": "1450; 1940",
-    "explanation": "A szöveg ezeket a vízelnyelési tartományokat emeli ki.",
-    "chapter_num": 4
-  },
-  {
-    "type": "fill_blank",
-    "question": "A stresszelt növényállományban a zárt _____ miatt csökken a hűtő párologtatás.",
-    "correct_answer": "sztómák",
-    "explanation": "A sztómák záródása korlátozza a párologtatást és növeli a lomb hőmérsékletét.",
-    "chapter_num": 4
-  },
-  {
-    "type": "fill_blank",
-    "question": "Minden anyag jellegzetes reflektancia- és abszorpciós mintázatát _____ aláírásnak nevezzük.",
-    "correct_answer": "spektrális",
-    "explanation": "Ez a távérzékelés egyik központi fogalma.",
-    "chapter_num": 4
-  },
-  {
-    "type": "fill_blank",
-    "question": "A mezőgazdaságilag különösen értékes információk gyakran a nem látható tartományokban, például _____ és SWIR sávokban jelennek meg.",
-    "correct_answer": "NIR",
-    "explanation": "A szöveg külön kiemeli a NIR és SWIR sávok jelentőségét.",
-    "chapter_num": 4
-  },
-  {
+    "id": "ch04_es01",
     "type": "essay",
-    "question": "Magyarázza el, hogyan kapcsolódik össze a levél pigmenttartalma és belső szerkezete a növényzet spektrális viselkedésével a látható és a NIR tartományban.",
-    "explanation": "Kulcspontok: kék és vörös elnyelése klorofill által; zöld visszaverődés; 700 nm körüli vörös él; magas NIR-reflektancia oka a szivacsos mezofillum és a levegő-sejt határfelületek szórása; következmény a vegetációs indexek számára.",
-    "chapter_num": 4
-  },
-  {
-    "type": "essay",
-    "question": "Fejtse ki, miért alkalmas a SWIR tartomány a növények vízállapotának becslésére.",
-    "explanation": "Kulcspontok: víz abszorpciója meghatározott SWIR hullámhosszakon; 1450 és 1940 nm körüli elnyelés; víztartalom csökkenésekor nő a reflektancia; kapcsolat szárazságstresszel, betegséggel, öregedéssel.",
-    "chapter_num": 4
-  },
-  {
-    "type": "essay",
-    "question": "Mutassa be, hogyan használható a termális távérzékelés a vízstressz korai felismerésére egy mezőgazdasági táblán.",
-    "explanation": "Kulcspontok: felszíni hőkisugárzás mérése; párologtatás hűtő szerepe; zárt sztómák és csökkent transzspiráció; állományhőmérséklet emelkedése; 1–2 °C különbségek érzékelése; korai beavatkozás lehetősége.",
-    "chapter_num": 4
-  },
-  {
-    "type": "essay",
-    "question": "Hasonlítsa össze a hagyományos, látható tartományú légifelvételek és a multispektrális/hiperspektrális távérzékelés mezőgazdasági értékét.",
-    "explanation": "Kulcspontok: látható tartomány korlátai; emberi szem és hagyományos kamera szűk érzékenysége; NIR, SWIR és termális információk többlete; stressz, biomassza, vízállapot, fajkülönbségek jobb felismerése.",
-    "chapter_num": 4
-  },
-  {
-    "type": "essay",
-    "question": "Magyarázza el a spektrális aláírás fogalmát, és mutassa be, miért központi jelentőségű a távérzékelésben.",
-    "explanation": "Kulcspontok: anyagokra jellemző reflektancia- és abszorpciós mintázat; reprodukálhatóság; diagnosztikai érték; növényzet, talaj, víz, száraz növényi maradványok elkülönítése; gyakorlati következtetések.",
-    "chapter_num": 4
-  },
-  {
-    "type": "essay",
-    "question": "Írja le, milyen lépések vezethetnek a nyers távérzékelt képi adatoktól a gyakorlati gazdálkodási döntésekig.",
-    "explanation": "Kulcspontok: adatgyűjtés műholdról vagy drónról; releváns sávok kiválasztása; állapotbecslés vagy térképezés; zónák azonosítása; döntéstámogatás műtrágya-kijuttatásra, öntözésre, növényvédelemre.",
-    "chapter_num": 4
-  },
-  {
-    "type": "essay",
-    "question": "Értelmezze, miért nem elegendő önmagában az, hogy a táblát felülről látjuk, és miért a spektrális információ a távérzékelés valódi értéke.",
-    "explanation": "Kulcspontok: a geometriai nézőpont önmagában kevés; a nem látható hullámhosszok információgazdagsága; fiziológiai állapotok korai felismerése; emberi szem korlátai; döntéstámogatási előnyök.",
-    "chapter_num": 4
-  },
-  {
-    "type": "essay",
-    "question": "Mutassa be, hogyan segíthet a távérzékelés abban, hogy a gazdálkodó még a szabad szemmel látható tünetek megjelenése előtt beavatkozzon.",
-    "explanation": "Kulcspontok: korai spektrális és termális jelek; pigment-, szerkezet- és vízállapot-változások; térbeli mintázatok felismerése; megelőző öntözési, tápanyag- vagy növényvédelmi döntések.",
-    "chapter_num": 4
-  },
-  {
-    "type": "essay",
-    "question": "Magyarázza el, milyen szerepet játszik az abszorpció, a reflexió és a transzmisszió a távérzékelési jelek kialakulásában.",
-    "explanation": "Kulcspontok: foton és célfelszín kölcsönhatása; három lehetséges kimenet; ezek aránya határozza meg a spektrális jelleget; szenzorok ezt a különbséget használják ki.",
-    "chapter_num": 4
-  },
-  {
-    "type": "essay",
-    "question": "Egy táblán az egyik zóna melegebb a termális képen, és a SWIR-ben is magasabb reflektanciát mutat. Értelmezze ezt a mintázatot a fejezet alapján.",
-    "explanation": "Kulcspontok: valószínű csökkent víztartalom vagy vízstressz; kisebb párologtatás miatti magasabb hőmérséklet; SWIR-ben kevesebb víz miatti nagyobb reflektancia; lehetséges okok: szárazság, betegség, öregedés.",
-    "chapter_num": 4
+    "chapter": 4,
+    "difficulty": "hard",
+    "question": "Egy 10 000 soros klinikai adathalmazt kaptal CSV formatumban. Ird le lepesrol lepesre, hogyan vegeznel no-code adatelemzest AI segitsegevel! Milyen adatvedelmi szempontokra kell figyelni?",
+    "rubric": "A valasz tartalmazza az adatelokeszitést (anonimizalas), a feloltes folyamatat, a termeszetes nyelvu elemzesi utasitasokat, es az adatvedelmi szempontokat (GDPR). Ertekelesi szempontok: lepesek logikussaga, adatvedelmi tudatossag, AI-hasznalat helyes modja.",
+    "max_score": 100
   }
 ]

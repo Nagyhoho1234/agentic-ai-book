@@ -1,421 +1,139 @@
 [
   {
+    "id": "ch19_q01",
+    "chapter": 19,
+    "difficulty": "easy",
     "type": "mcq",
-    "question": "Miért tekinti a fejezet a precíziós mezőgazdaság fejlődését gyökeresen másnak a mezőgazdaság korábbi korszakaihoz képest?",
+    "question": "Mi a térinformatika (geoinformatika) fő célja?",
     "options": [
-      "A) Mert kizárólag új vetőmagfajták jelentek meg",
-      "B) Mert a változás üteme néhány évtized alatt rendkívül felgyorsult és sokféle digitális technológiát kapcsol össze",
-      "C) Mert a gazdálkodók teljesen felhagytak a géphasználattal",
-      "D) Mert a fejlődés csak a műtrágyázásra korlátozódik"
+      "A) Kizárólag térképek nyomtatása",
+      "B) Földi térben elhelyezkedő jelenségek digitális rögzítése, modellezése, elemzése és kommunikációja",
+      "C) GPS-eszközök gyártása",
+      "D) Műholdak üzemeltetése"
     ],
     "correct": "B",
-    "explanation": "A szöveg szerint alig három évtized alatt a terület a kísérleti hozammérőktől eljutott a műholdakig, drónokig és gépi tanulásig, ami a korábbi fokozatos fejlődéshez képest sokkal gyorsabb és átfogóbb változás.",
-    "chapter_num": 19
+    "explanation": "Digitális rögzítés, modellezés, elemzés és kommunikáció."
   },
   {
+    "id": "ch19_q02",
+    "chapter": 19,
+    "difficulty": "medium",
     "type": "mcq",
-    "question": "Melyik gyakorlat terjedése marad el leginkább az egyszerűbb kormányzási és szakaszolási technológiákétól?",
+    "question": "A modern térinformatika három oszlopa:",
     "options": [
-      "A) A GPS-vezérlésű automata kormányzás",
-      "B) A hozammérők használata",
-      "C) Az adatigényesebb gyakorlatok, például a differenciált vetés és a többéves talajmintavételen alapuló térképezés",
-      "D) A hagyományos talajművelés"
+      "A) Szoftver, hardver, felhasználó",
+      "B) Helyzeti komponens (hol), attribútum komponens (mi), időbeli komponens (mikor)",
+      "C) Raszter, vektor, adatbázis",
+      "D) Műhold, drón, szenzor"
+    ],
+    "correct": "B",
+    "explanation": "Hol, mi, mikor."
+  },
+  {
+    "id": "ch19_q03",
+    "chapter": 19,
+    "difficulty": "medium",
+    "type": "mcq",
+    "question": "Mi az autonóm GIS?",
+    "options": [
+      "A) Licenc nélküli GIS szoftver",
+      "B) Olyan rendszer, amelyben az AI nem passzív eszköze, hanem aktív partnere a térinformatikusnak",
+      "C) Automatikus térképnyomtató",
+      "D) GPS nélküli navigáció"
+    ],
+    "correct": "B",
+    "explanation": "Az AI aktív partnere a térinformatikusnak."
+  },
+  {
+    "id": "ch19_q04",
+    "chapter": 19,
+    "difficulty": "hard",
+    "type": "mcq",
+    "question": "Melyik NEM tartozik a négy konvergáló trend közé?",
+    "options": [
+      "A) Adatrobbanás (Sentinel műholdak napi 12+ TB)",
+      "B) Számítási kapacitás (felhőalapú platformok)",
+      "C) A hagyományos térképészet reneszánsza",
+      "D) Nagy nyelvi modellek, amelyek GIS-kódot generálnak"
     ],
     "correct": "C",
-    "explanation": "A fejezet kiemeli, hogy az adatigényesebb gyakorlatok bevezetése messze elmarad az egyszerűbb technológiákétól.",
-    "chapter_num": 19
+    "explanation": "A négy trend: adatrobbanás, számítási kapacitás, AI modellek érettsége, LLM-ek."
   },
   {
+    "id": "ch19_q05",
+    "chapter": 19,
+    "difficulty": "easy",
     "type": "mcq",
-    "question": "Melyik állítás írja le legpontosabban a precíziós mezőgazdaság jelenlegi globális elterjedését?",
+    "question": "Hogyan változott meg a térinformatikai munkafolyamat 2026-ra?",
     "options": [
-      "A) Világszerte egységesen magas szintű az alkalmazás",
-      "B) Az alkalmazás egyenetlen, de gyorsuló, jelentős regionális és üzemméret szerinti különbségekkel",
-      "C) Csak Európában terjed",
-      "D) Kizárólag a kistermelők használják"
+      "A) Semmit nem változott",
+      "B) A korábban hónapokig tartó munkát egy AI ágens egyetlen délután alatt elvégzi természetes nyelvű utasítás alapján",
+      "C) A térinformatikusok feleslegessé váltak",
+      "D) Kizárólag műholdas adatokkal dolgoznak"
     ],
     "correct": "B",
-    "explanation": "A szöveg hangsúlyozza, hogy a kép egyenetlen, de gyorsuló elterjedést mutat, jelentős különbségekkel régiók, üzemméretek és kultúrák között.",
-    "chapter_num": 19
+    "explanation": "Egyetlen délután, természetes nyelvű utasítással."
   },
   {
-    "type": "mcq",
-    "question": "Melyik térségben vált alapfelszereltséggé az új traktorokon a GPS-vezérlésű automata kormányzás a technológiailag legfejlettebb rendszerekben?",
-    "options": [
-      "A) Kizárólag Afrikában",
-      "B) Észak-Amerikában, Nyugat-Európában, Ausztráliában és Dél-Amerika egyes részein",
-      "C) Csak Magyarországon",
-      "D) Csak Ázsia kistermelői körében"
+    "id": "ch19_tf01",
+    "type": "true_false",
+    "chapter": 19,
+    "difficulty": "easy",
+    "question": "A modern terinformatika harom oszlopon nyugszik: helyzeti komponens (hol), attributum komponens (mi) es idobeli komponens (mikor).",
+    "correct": true,
+    "explanation": "Ez a harom dimenzio a terinformatika alapja."
+  },
+  {
+    "id": "ch19_tf02",
+    "type": "true_false",
+    "chapter": 19,
+    "difficulty": "medium",
+    "question": "A Copernicus-program Sentinel muholdjainak napi adattermelese meghaladja a 12 terabajtot.",
+    "correct": true,
+    "explanation": "Ez az adatmennyiseg emberi erovel mar lehetetlen feldolgozni."
+  },
+  {
+    "id": "ch19_tf03",
+    "type": "true_false",
+    "chapter": 19,
+    "difficulty": "easy",
+    "question": "A hagyomanyos terkepeszet reneszansza az egyik fo hajtoereje az AI-GIS konvergencianak.",
+    "correct": false,
+    "explanation": "A negy konvergalo trend: adatrobbanas, szamitasi kapacitas, AI modellek erettsege es nagy nyelvi modellek."
+  },
+  {
+    "id": "ch19_fb01",
+    "type": "fill_blank",
+    "chapter": 19,
+    "difficulty": "medium",
+    "question": "A geospatial foundation modellek (peldaul Prithvi, Clay, _____) a muholdkep-osztalyzasban meghaladják az emberi vizualis interpretacio pontossagat.",
+    "correct": "SatCLIP",
+    "alternatives": [
+      "SatCLIP",
+      "satclip"
     ],
-    "correct": "B",
-    "explanation": "A fejezet ezeket a régiókat nevezi meg a technológiailag legfejlettebb nagyüzemi gabonatermesztési rendszerek példáiként.",
-    "chapter_num": 19
+    "explanation": "Ezek a modellek elertek azt a szintet, ahol a muholdkep-osztalyozas pontossaga meghaladja az emberi teljesitmenyt."
   },
   {
-    "type": "mcq",
-    "question": "Mit jelez leginkább az, hogy Magyarországon az RTK korrekciós hálózat több mint 1,2 millió hektárt fed le, miközben a gazdaságok többsége még hagyományos módon működik?",
-    "options": [
-      "A) A technikai infrastruktúra megléte önmagában nem garantálja a széles körű átállást",
-      "B) Az RTK használhatatlan a mezőgazdaságban",
-      "C) Magyarországon nincs precíziós képzés",
-      "D) A precíziós gazdálkodás már teljesen általános"
+    "id": "ch19_fb02",
+    "type": "fill_blank",
+    "chapter": 19,
+    "difficulty": "medium",
+    "question": "A 'szamitas az adathoz megy' paradigma felvaltotta a korabbi '_____ a szamitashoz megy' elvet.",
+    "correct": "adat",
+    "alternatives": [
+      "adat",
+      "data"
     ],
-    "correct": "A",
-    "explanation": "A szöveg szerint bár az infrastruktúra fejlődik, a gazdaságok többsége még hagyományos gazdálkodást folytat, tehát az infrastruktúra önmagában nem elég.",
-    "chapter_num": 19
+    "explanation": "A felhoalapu platformok tettek lehetove ezt a paradigmavaltest."
   },
   {
-    "type": "mcq",
-    "question": "Az indiai Karnataka államban végzett felmérés alapján melyik tényező volt a leggyakrabban megjelölt akadály a precíziós technológiák bevezetésében?",
-    "options": [
-      "A) A túl magas terméshozam",
-      "B) Az anyagi korlátok",
-      "C) A túl sok rendelkezésre álló szakember",
-      "D) A túlzott gépesítés"
-    ],
-    "correct": "B",
-    "explanation": "A felmérés szerint a gazdálkodók 60 százaléka az anyagi korlátokat jelölte meg elsődleges akadályként.",
-    "chapter_num": 19
-  },
-  {
-    "type": "mcq",
-    "question": "Miért állítja a fejezet, hogy a kistermelők problémáit nem lehet pusztán jobb szenzorokkal megoldani?",
-    "options": [
-      "A) Mert a szenzorok csak nagyüzemekben működnek",
-      "B) Mert a fő akadályok rendszerszintűek: infrastruktúra, oktatás, finanszírozás és agrárpolitika",
-      "C) Mert a szenzorok tiltottak a fejlődő országokban",
-      "D) Mert a kistermelők nem termelnek élelmiszert"
-    ],
-    "correct": "B",
-    "explanation": "A szöveg egyértelműen rendszerszintű beavatkozás szükségességét hangsúlyozza.",
-    "chapter_num": 19
-  },
-  {
-    "type": "mcq",
-    "question": "Melyik piacot említi a fejezet a leggyorsabban növekvők között az okosgazdálkodásban?",
-    "options": [
-      "A) Az ázsiai–csendes-óceáni térséget",
-      "B) Kizárólag Észak-Amerikát",
-      "C) Kizárólag Magyarországot",
-      "D) Csak a mediterrán térséget"
-    ],
-    "correct": "A",
-    "explanation": "A fejezet szerint az ázsiai–csendes-óceáni térség a leggyorsabban növekvő piacok közé tartozik.",
-    "chapter_num": 19
-  },
-  {
-    "type": "mcq",
-    "question": "Mi tette az utóbbi években reális lehetőséggé a mezőgazdasági autonómia gyakorlati megvalósítását?",
-    "options": [
-      "A) Az, hogy megszűnt a GPS használata",
-      "B) Az, hogy egyszerre vált elérhetővé a megbízható GPS, a megfizethető szenzorok, a robusztus gépi látás és a nagy teljesítményű fedélzeti számítástechnika",
-      "C) Az, hogy minden gazda programozó lett",
-      "D) Az, hogy már nincs szükség döntéshozatalra a mezőgazdaságban"
-    ],
-    "correct": "B",
-    "explanation": "A szöveg ezt a technológiai együttállást nevezi meg a gyakorlati autonómia küszöbének elérésében.",
-    "chapter_num": 19
-  },
-  {
-    "type": "mcq",
-    "question": "Mi jellemezte a mezőgazdasági autonómia legkorábbi vezető–követő rendszereit?",
-    "options": [
-      "A) Teljesen ember nélküli döntéshozatal minden helyzetben",
-      "B) Egy ember által irányított gép vezette a vezető nélküli társát, miközben a magasabb szintű döntések embernél maradtak",
-      "C) Kizárólag drónokra épültek",
-      "D) Csak kis kertészetekben működtek"
-    ],
-    "correct": "B",
-    "explanation": "A vezető–követő konfigurációkban az emberi kezelő által irányított gép vezette a másikat, és a komplex döntések továbbra is emberi feladatok maradtak.",
-    "chapter_num": 19
-  },
-  {
-    "type": "mcq",
-    "question": "Miért tekinthető a BoniRob platform eltérő fejlesztési iránynak a hagyományos autonóm traktorokhoz képest?",
-    "options": [
-      "A) Mert nem mezőgazdasági célra készült",
-      "B) Mert eleve ember nélküli működésre tervezett, moduláris szántóföldi robotplatform",
-      "C) Mert csak laboratóriumban használható",
-      "D) Mert kizárólag vetésre alkalmas"
-    ],
-    "correct": "B",
-    "explanation": "A BoniRob nem egyszerűen egy autonómmá tett hagyományos gép, hanem eleve autonóm, moduláris robotplatform.",
-    "chapter_num": 19
-  },
-  {
-    "type": "mcq",
-    "question": "Mit fejez ki leginkább a „Hands Free Hectare” koncepció?",
-    "options": [
-      "A) A kézi munkavégzés teljes visszaállítását",
-      "B) A szántóföld művelését emberi fizikai jelenlét nélkül, szenzorok, IoT és önvezető gépek koordinálásával",
-      "C) A hektáronkénti műtrágya teljes elhagyását",
-      "D) A kizárólag műholdas megfigyelést"
-    ],
-    "correct": "B",
-    "explanation": "A fejezet szerint ez a koncepció az emberi fizikai jelenlét nélküli szántóföldi művelést jelenti.",
-    "chapter_num": 19
-  },
-  {
-    "type": "true_false",
-    "question": "A fejezet szerint a mezőgazdaság történelmének nagy részében a fejlődés inkább fokozatos volt, mint ugrásszerű.",
-    "correct_answer": true,
-    "explanation": "A szöveg példái: jobb eke, ellenállóbb vetőmag, új vetésforgó — ezek fokozatos fejlődést jeleznek.",
-    "chapter_num": 19
-  },
-  {
-    "type": "true_false",
-    "question": "A precíziós mezőgazdaság fejlődésének üteme a fejezet szerint lassuló tendenciát mutat.",
-    "correct_answer": false,
-    "explanation": "A szöveg kifejezetten azt mondja, hogy semmi jele annak, hogy a fejlődés lassulna.",
-    "chapter_num": 19
-  },
-  {
-    "type": "true_false",
-    "question": "A fejezet célja kizárólag technológiai újítások felsorolása, etikai és társadalmi kérdések nélkül.",
-    "correct_answer": false,
-    "explanation": "A fejezet az etikai, gazdasági és társadalmi kérdésekkel is foglalkozik.",
-    "chapter_num": 19
-  },
-  {
-    "type": "true_false",
-    "question": "A technológiailag legfejlettebb nagyüzemi rendszerekben a differenciált műtrágya- és mészkijuttatás már bevett gyakorlat.",
-    "correct_answer": true,
-    "explanation": "A szöveg szerint ez milliónyi hektáron rutinszerű gyakorlat.",
-    "chapter_num": 19
-  },
-  {
-    "type": "true_false",
-    "question": "Az Egyesült Államokban a hozammérők ritkaságnak számítanak az aratócséplőkön.",
-    "correct_answer": false,
-    "explanation": "A fejezet szerint szinte minden aratócséplőn megtalálhatók.",
-    "chapter_num": 19
-  },
-  {
-    "type": "true_false",
-    "question": "Az észak-amerikai gabonatermesztők körében a GPS-vezérlés alkalmazása a 2020-as évek elejére meghaladta a 70 százalékot.",
-    "correct_answer": true,
-    "explanation": "Ez konkrétan szerepel a felmérési adatok ismertetésében.",
-    "chapter_num": 19
-  },
-  {
-    "type": "true_false",
-    "question": "A differenciált vetés és a távérzékelési adatok rutinszerű használata gyorsabban terjedt el, mint az automata kormányzás.",
-    "correct_answer": false,
-    "explanation": "A szöveg szerint ezek az adatigényesebb gyakorlatok elmaradnak az egyszerűbb technológiák elterjedésétől.",
-    "chapter_num": 19
-  },
-  {
-    "type": "true_false",
-    "question": "A Közös Agrárpolitika Európában ösztönzőket vezetett be a digitális gazdálkodásra.",
-    "correct_answer": true,
-    "explanation": "A fejezet ezt egyértelműen megemlíti.",
-    "chapter_num": 19
-  },
-  {
-    "type": "true_false",
-    "question": "Magyarországon a precíziós mezőgazdaságra specializálódott egyetemi képzések már évtizedek óta nagy számban bocsátanak ki végzetteket.",
-    "correct_answer": false,
-    "explanation": "A szöveg szerint ezek a programok csak most bocsátják ki első végzettjeiket.",
-    "chapter_num": 19
-  },
-  {
-    "type": "true_false",
-    "question": "A kistermelők a világ élelmiszertermelésének jelentéktelen részét adják, ezért helyzetük kevéssé fontos.",
-    "correct_answer": false,
-    "explanation": "A fejezet szerint a kistermelők a világ élelmiszertermelésének jelentős részét adják.",
-    "chapter_num": 19
-  },
-  {
-    "type": "true_false",
-    "question": "Az indiai Karnataka államban végzett felmérésben sok gazdálkodó a precíziós technológiákat a kisgazdaságokkal összeegyeztethetetlennek tartotta.",
-    "correct_answer": true,
-    "explanation": "A szöveg szerint 67 százalékuk így vélekedett.",
-    "chapter_num": 19
-  },
-  {
-    "type": "true_false",
-    "question": "A vizsgálat idején Indiában a vidéki háztartások többsége stabil internetkapcsolattal rendelkezett, ezért a hálózati lefedettség nem volt probléma.",
-    "correct_answer": false,
-    "explanation": "Csak 45 százalék rendelkezett stabil internetkapcsolattal, tehát ez igenis akadály volt.",
-    "chapter_num": 19
-  },
-  {
-    "type": "true_false",
-    "question": "A globális okosgazdálkodási piac becsült éves összetett növekedési üteme megközelíti a 19 százalékot.",
-    "correct_answer": true,
-    "explanation": "Ez a fejezetben szereplő becslés.",
-    "chapter_num": 19
-  },
-  {
-    "type": "true_false",
-    "question": "A mezőgazdasági autonómia legkorábbi rendszerei teljesen kiváltották az emberi kezelőt minden döntési helyzetben.",
-    "correct_answer": false,
-    "explanation": "A magasabb szintű döntéshozatal továbbra is emberi feladat maradt.",
-    "chapter_num": 19
-  },
-  {
-    "type": "true_false",
-    "question": "A Kinze autonómia-projektje egy teljesen autonóm traktor–gabonakocsi rendszert mutatott be.",
-    "correct_answer": true,
-    "explanation": "A szöveg ezt a projekt egyik fontos előrelépéseként említi.",
-    "chapter_num": 19
-  },
-  {
-    "type": "true_false",
-    "question": "A BoniRob platformot hagyományos traktor utólagos átalakításával hozták létre.",
-    "correct_answer": false,
-    "explanation": "A BoniRob eleve erre a célra tervezett robotplatform, nem utólag autonómmá tett hagyományos traktor.",
-    "chapter_num": 19
-  },
-  {
-    "type": "fill_blank",
-    "question": "A precíziós mezőgazdaság fejlődése alig _____ évtized alatt jutott el a kísérleti hozammérőktől a műholdkonstellációkig és gépi tanulásig.",
-    "correct_answer": "három",
-    "explanation": "A fejezet szerint alig három évtized alatt zajlott le ez a gyors fejlődés.",
-    "chapter_num": 19
-  },
-  {
-    "type": "fill_blank",
-    "question": "Az észak-amerikai gabonatermesztők körében a GPS-vezérlés alkalmazása a 2020-as évek elejére meghaladta a _____ százalékot.",
-    "correct_answer": "70",
-    "explanation": "A szöveg konkrétan 70 százalék feletti arányt említ.",
-    "chapter_num": 19
-  },
-  {
-    "type": "fill_blank",
-    "question": "A differenciált műtrágyázási technológia az észak-amerikai nagyüzemi szegmens mintegy _____ érte el.",
-    "correct_answer": "felét",
-    "explanation": "A fejezet szerint a nagyüzemi szegmens mintegy felét érte el.",
-    "chapter_num": 19
-  },
-  {
-    "type": "fill_blank",
-    "question": "Magyarországon az RTK korrekciós hálózat mintegy _____ mezőgazdasági gépet szolgál ki.",
-    "correct_answer": "háromezer",
-    "explanation": "Ez a magyarországi helyzetet bemutató adat.",
-    "chapter_num": 19
-  },
-  {
-    "type": "fill_blank",
-    "question": "A magyarországi RTK hálózat több mint _____ millió hektárt fed le.",
-    "correct_answer": "1,2",
-    "explanation": "A fejezet szerint a lefedettség több mint 1,2 millió hektár.",
-    "chapter_num": 19
-  },
-  {
-    "type": "fill_blank",
-    "question": "A Karnataka államban megkérdezett gazdálkodók _____ százaléka tartotta a precíziós technológiákat a kisgazdaságokkal összeegyeztethetetlennek.",
-    "correct_answer": "67",
-    "explanation": "Ez a felmérés egyik kulcsadata.",
-    "chapter_num": 19
-  },
-  {
-    "type": "fill_blank",
-    "question": "A Karnataka államban végzett felmérésben a gazdálkodók _____ százaléka jelölte meg az anyagi korlátokat elsődleges akadályként.",
-    "correct_answer": "60",
-    "explanation": "A szöveg ezt az arányt adja meg.",
-    "chapter_num": 19
-  },
-  {
-    "type": "fill_blank",
-    "question": "A felmérés szerint a gazdálkodók _____ százaléka nem rendelkezett még az alapszintű eszközök kezeléséhez szükséges műszaki tudással.",
-    "correct_answer": "55",
-    "explanation": "Ez a digitális és műszaki felkészültség hiányát mutató adat.",
-    "chapter_num": 19
-  },
-  {
-    "type": "fill_blank",
-    "question": "A vizsgálat idején Indiában a vidéki háztartások mindössze _____ százaléka rendelkezett stabil internetkapcsolattal.",
-    "correct_answer": "45",
-    "explanation": "A fejezet ezt az infrastruktúrahiány egyik bizonyítékaként említi.",
-    "chapter_num": 19
-  },
-  {
-    "type": "fill_blank",
-    "question": "Becslések szerint a globális okosgazdálkodási piac értéke 2034-re meghaladja a _____ milliárd dollárt.",
-    "correct_answer": "117",
-    "explanation": "A fejezet ezt a piaci előrejelzést közli.",
-    "chapter_num": 19
-  },
-  {
-    "type": "fill_blank",
-    "question": "A globális okosgazdálkodási piac becsült éves összetett növekedési üteme megközelíti a _____ százalékot.",
-    "correct_answer": "19",
-    "explanation": "Ez a piaci növekedésre vonatkozó becslés.",
-    "chapter_num": 19
-  },
-  {
-    "type": "fill_blank",
-    "question": "A mezőgazdasági autonómia korai rendszereit gyakran _____–követő konfigurációknak nevezték.",
-    "correct_answer": "vezető",
-    "explanation": "A szöveg a „vezető–követő” kifejezést használja.",
-    "chapter_num": 19
-  },
-  {
-    "type": "fill_blank",
-    "question": "A BoniRob platform egyik fontos jellemzője a cserélhető _____ használata.",
-    "correct_answer": "munkamodulok",
-    "explanation": "A platform moduláris felépítésű, cserélhető munkamodulokkal.",
-    "chapter_num": 19
-  },
-  {
+    "id": "ch19_es01",
     "type": "essay",
-    "question": "Mutassa be, miben különbözik a precíziós mezőgazdaság fejlődési dinamikája a mezőgazdaság korábbi, fokozatos innovációs mintázataitól.",
-    "explanation": "Kulcspontok: fokozatos múltbeli fejlődés vs. gyors digitális átalakulás; három évtized alatt végbement ugrás; hozammérők, műholdak, drónok, gépi tanulás; a változás ütemének következményei a gazdálkodói döntéshozatalra.",
-    "chapter_num": 19
-  },
-  {
-    "type": "essay",
-    "question": "Elemezze, miért egyenetlen a precíziós mezőgazdaság elterjedése régiók, üzemméretek és növénykultúrák szerint.",
-    "explanation": "Kulcspontok: fejlett nagyüzemi régiók előnyei; kistermelői akadályok; költség, infrastruktúra, digitális készségek, birtokszerkezet; eltérő szakpolitikai és piaci környezet.",
-    "chapter_num": 19
-  },
-  {
-    "type": "essay",
-    "question": "Értékelje, miért terjedtek el gyorsabban az egyszerűbb technológiák, például az automata kormányzás, mint az adatigényesebb gyakorlatok.",
-    "explanation": "Kulcspontok: belépési küszöb, adatkezelési igény, döntéstámogatási komplexitás, azonnali haszon, képzettségi követelmények, szervezeti alkalmazkodás.",
-    "chapter_num": 19
-  },
-  {
-    "type": "essay",
-    "question": "Magyarázza el, mit tanít a magyarországi RTK-hálózat példája a technológiai infrastruktúra és a tényleges technológiai adaptáció kapcsolatáról.",
-    "explanation": "Kulcspontok: RTK lefedettség és gépkiszolgálás; mégis hagyományos többség; infrastruktúra nem elégséges; képzés, gazdasági ösztönzők, tudás és menedzsment szerepe.",
-    "chapter_num": 19
-  },
-  {
-    "type": "essay",
-    "question": "Fejtse ki, milyen rendszerszintű beavatkozásokra lehet szükség a kistermelők precíziós mezőgazdasági integrációjához.",
-    "explanation": "Kulcspontok: infrastruktúrafejlesztés, internet-hozzáférés, finanszírozás, oktatás, szaktanácsadás, megfelelő agrárpolitika, kisgazdaságokra szabott technológiák.",
-    "chapter_num": 19
-  },
-  {
-    "type": "essay",
-    "question": "Elemezze, milyen gazdasági és társadalmi jelentősége van annak, hogy az ázsiai–csendes-óceáni térség a leggyorsabban növekvő okosgazdálkodási piacok közé tartozik.",
-    "explanation": "Kulcspontok: kormányzati kezdeményezések, startup-ökoszisztéma, India és Kína szerepe, piacbővülés, technológiai hozzáférés, globális verseny és innováció.",
-    "chapter_num": 19
-  },
-  {
-    "type": "essay",
-    "question": "Mutassa be a mezőgazdasági autonómia fejlődési útját a vezető–követő rendszerektől a teljesebb autonóm megoldásokig.",
-    "explanation": "Kulcspontok: korai vezető–követő rendszerek; emberi döntéshozatal megmaradása; John Deere Machine Sync, Case IH V2V, Fendt GuideConnect; Kinze projekt mint továbblépés.",
-    "chapter_num": 19
-  },
-  {
-    "type": "essay",
-    "question": "Hasonlítsa össze a hagyományos gépek autonómmá tétele és a kifejezetten autonóm működésre tervezett robotplatformok megközelítését.",
-    "explanation": "Kulcspontok: utólagos átalakítás vs. eleve autonóm tervezés; Bear Flag/John Deere példa; BoniRob moduláris koncepciója; előnyök, korlátok, alkalmazási területek.",
-    "chapter_num": 19
-  },
-  {
-    "type": "essay",
-    "question": "Értelmezze a „Hands Free Hectare” koncepció jelentőségét a precíziós mezőgazdaság jövője szempontjából.",
-    "explanation": "Kulcspontok: emberi fizikai jelenlét nélküli művelés; szenzorok, IoT, önvezető gépek koordinációja; kutatási demonstrációból kereskedelmi közelség; munkaerő, hatékonyság, kockázatok.",
-    "chapter_num": 19
-  },
-  {
-    "type": "essay",
-    "question": "Vitassa meg, milyen etikai, gazdasági és társadalmi kérdéseket vet fel a robotika és az autonóm rendszerek terjedése a mezőgazdaságban.",
-    "explanation": "Kulcspontok: munkaerőhelyzet, felelősség és biztonság, hozzáférési egyenlőtlenségek, beruházási költségek, adat- és irányítási kérdések, vidéki társadalomra gyakorolt hatások.",
-    "chapter_num": 19
+    "chapter": 19,
+    "difficulty": "hard",
+    "question": "Tervezz egy AI-alapu terinformatikai munkafolyamatot egy Natura 2000 terulet monitorozasahoz! Milyen muholdas adatforrasokat, elemzesi modszereket es AI-technologiakat hasznalnal, es hogyan automatizalnad a teljes folyamatot?",
+    "rubric": "A valasz tartalmaz konkret adatforrasokat (Sentinel-2, Corine Land Cover), elemzesi modszereket, AI-technologiakat, es az automatizalas tervet. Ertekelesi szempontok: adatforras-ismeret, modszertani tudas, AI-integracio, automatizalas.",
+    "max_score": 100
   }
 ]
