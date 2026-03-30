@@ -80,3 +80,4 @@ LLM-cookbook-for-open-science/
 
 # Vite cache
 .vite/
+agentic-ai-tutor/data/chromadb/
