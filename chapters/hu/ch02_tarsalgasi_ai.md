@@ -230,6 +230,12 @@ egy Q1-es ökológiai folyóiratnál. Fogom beilleszteni az absztraktomat,
 
 **Mire figyelj:** A persona pattern nem teszi a modellt valódi szakértővé. A „szakértő hangon" adott téves válasz veszélyesebb, mint a nyilvánvalóan bizonytalan válasz, mert nehezebb felismerni a hibát. A persona patternt mindig kombinálni érdemes a Fact Check List patternnel (lásd 2.4.8).
 
+> **🌾 Szakterületi példa: LLM-alapú mezőgazdasági szaktanácsadás**
+>
+> A precíziós mezőgazdaságban az LLM-alapú csevegőrobotok áthidalhatják a szaktanácsadói hiányt: a fejlődő országokban egyetlen tanácsadóra több ezer háztartás jut. A gazdálkodó anyanyelvén kérdezhet — akár szöveges üzenetben, okostelefon nélkül — és valós idejű, helyi viszonyokra szabott növényvédelmi és trágyázási javaslatokat kaphat. Egy vidéki indiai gazdálkodó például szöveges üzenetben írhatja le a paradicsomnövényein észlelt tüneteket, és azonnal diagnózist és kezelési javaslatot kap. A persona pattern itt különösen hasznos: a chatbot „tapasztalt agronómus" szerepben célzottabb válaszokat ad, mint általános kérdezési módban.
+>
+> *Forrás: precagri 15.7 „Természetes nyelvi feldolgozás és nagy nyelvi modellek a mezőgazdaságban"*
+
 ---
 
 ### 2.4.4 Flipped Interaction — Szókratészi tanulás
