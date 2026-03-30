@@ -122,7 +122,7 @@ class Retriever:
         if not chunks:
             return "No relevant content found in the textbook."
 
-        parts = ["The following excerpts are from 'Precision Agriculture: From Principles to Practice' by Feher Zsolt Zoltan:\n"]
+        parts = ["The following excerpts are from 'Ágentikus AI Tudósoknak' (Agentic AI for Scientists) by Fehér Zsolt Zoltán:\n"]
 
         for i, chunk in enumerate(chunks, 1):
             location = f"Chapter {chunk.chapter}: {chunk.chapter_title}"

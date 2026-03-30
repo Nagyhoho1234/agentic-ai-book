@@ -13,52 +13,50 @@ import tiktoken
 
 from backend.config import settings
 
-# Book part assignments (20 chapters)
+# Book part assignments (19 chapters)
 CHAPTER_PARTS: dict[int, str] = {
-    1: "Part I: Foundations",
-    2: "Part I: Foundations",
-    3: "Part I: Foundations",
-    4: "Part II: Remote Sensing",
-    5: "Part II: Remote Sensing",
-    6: "Part II: Remote Sensing",
-    7: "Part III: Field-Level Sensing and Positioning",
-    8: "Part III: Field-Level Sensing and Positioning",
-    9: "Part IV: Soil, Water, and Nutrients",
-    10: "Part IV: Soil, Water, and Nutrients",
-    11: "Part V: Implementation",
-    12: "Part V: Implementation",
-    13: "Part V: Implementation",
-    14: "Part VI: Data, AI, and Decision Support",
-    15: "Part VI: Data, AI, and Decision Support",
-    16: "Part VI: Data, AI, and Decision Support",
-    17: "Part VII: Economics, Livestock, and the Future",
-    18: "Part VII: Economics, Livestock, and the Future",
-    19: "Part VII: Economics, Livestock, and the Future",
-    20: "Part VII: Economics, Livestock, and the Future",
+    1: "I. rész: Ismerkedés az AI-val",
+    2: "I. rész: Ismerkedés az AI-val",
+    3: "I. rész: Ismerkedés az AI-val",
+    4: "I. rész: Ismerkedés az AI-val",
+    5: "II. rész: Mindennapi tudományos munka",
+    6: "II. rész: Mindennapi tudományos munka",
+    7: "II. rész: Mindennapi tudományos munka",
+    8: "III. rész: Domain-specifikus AI",
+    9: "III. rész: Domain-specifikus AI",
+    10: "III. rész: Domain-specifikus AI",
+    11: "IV. rész: Ágentikus AI",
+    12: "IV. rész: Ágentikus AI",
+    13: "IV. rész: Ágentikus AI",
+    14: "V. rész: Felelős AI-adoptáció",
+    15: "V. rész: Felelős AI-adoptáció",
+    16: "V. rész: Felelős AI-adoptáció",
+    17: "VI. rész: Szakterületi alkalmazások",
+    18: "VI. rész: Szakterületi alkalmazások",
+    19: "VI. rész: Szakterületi alkalmazások",
 }
 
 # Chapter titles
 CHAPTER_TITLES: dict[int, str] = {
-    1: "Why Precision Agriculture?",
-    2: "The Agricultural Landscape",
-    3: "The Data Revolution in Farming",
-    4: "Satellite and Aerial Remote Sensing",
-    5: "Hyperspectral and Multispectral Imaging",
-    6: "Proximal and In-Field Sensors",
-    7: "Positioning and Navigation",
-    8: "Understanding Soil Variability",
-    9: "Water Management and Irrigation",
-    10: "Nutrient Management",
-    11: "Variable Rate Technology",
-    12: "Crop Health Monitoring and Protection",
-    13: "Yield Monitoring and Mapping",
-    14: "Data Pipelines and Management",
-    15: "Artificial Intelligence and Machine Learning in Agriculture",
-    16: "Decision Support Systems",
-    17: "Economics of Precision Agriculture",
-    18: "Precision Livestock and Beyond",
-    19: "The Future of Precision Agriculture",
-    20: "Precision Agriculture in Hungary",
+    1: "Az AI forradalom a tudományos kutatásban",
+    2: "Társalgási AI — Az első kutatási partnered",
+    3: "AI a tudományos írásban és kommunikációban",
+    4: "AI-vel végzett adatelemzés — Kódolás nélkül",
+    5: "AI kódolási asszisztensek — Kód írása programozás nélkül",
+    6: "AI-támogatott matematikai modellezés és szimuláció",
+    7: "Adat-pipeline-ok és automatizálás",
+    8: "Vizuális programozás és munkafolyamat-tervezés",
+    9: "RAG — Tanítsuk meg az AI-t a saját adatainkra",
+    10: "Digitális ikrek: Valós rendszerek virtuális másolatai",
+    11: "Az AI ágensek megértése",
+    12: "AI ágensek építése kutatáshoz",
+    13: "Saját programok és eszközök készítése",
+    14: "Az AI-val felszerelt kutatólabor",
+    15: "AI az egyetemen — Oktatás, tanulás és intézményi átalakulás",
+    16: "Etika, reprodukálhatóság és az AI jövője a tudományban",
+    17: "AI a precíziós mezőgazdaságban",
+    18: "AI a hidroinformatikában",
+    19: "AI a térinformatikában",
 }
 
 
@@ -224,14 +222,21 @@ def parse_chapter(filepath: Path, chapter_num: int) -> list[Chunk]:
 
 
 def parse_all_chapters(chapters_dir: Optional[Path] = None) -> list[Chunk]:
-    """Parse all 20 chapters and return all chunks."""
+    """Parse all 19 chapters and return all chunks."""
     if chapters_dir is None:
         chapters_dir = settings.resolve_path(settings.chapters_path)
 
     all_chunks: list[Chunk] = []
 
-    for ch_num in range(1, 21):
+    import glob as _glob
+    for ch_num in range(1, 20):
+        # Try exact name first, then glob for ch01_*.md patterns
         filepath = chapters_dir / f"ch{ch_num:02d}.md"
+        if not filepath.exists():
+            pattern = str(chapters_dir / f"ch{ch_num:02d}_*.md")
+            matches = sorted(_glob.glob(pattern))
+            if matches:
+                filepath = Path(matches[0])
         if filepath.exists():
             chapter_chunks = parse_chapter(filepath, ch_num)
             all_chunks.extend(chapter_chunks)

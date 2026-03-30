@@ -18,28 +18,28 @@ import { askAboutSelection } from './api/client';
 
 const STRINGS = {
   hu: {
-    title: 'Precíziós mezőgazdaság: Átfogó útmutató',
+    title: 'Ágentikus AI Tudósoknak — Interaktív Tutor',
     readBook: 'Könyv',
     quiz: 'Teszt',
     cards: 'Kártyák',
     conceptMap: 'Térkép',
     newSession: 'Új munkamenet',
-    askPlaceholder: 'Kérdezz a precíziós mezőgazdaságról...',
+    askPlaceholder: 'Kérdezz az AI tudományos alkalmazásairól...',
     welcome: 'Üdvözöllek!',
-    welcomeText: 'Kérdezz bármit a precíziós mezőgazdaságról!',
+    welcomeText: 'Kérdezz bármit az AI tudományos alkalmazásairól!',
     welcomeSub: 'A válaszok a tankönyvből származnak, mesterséges intelligenciával kiegészítve.',
     settings: 'Beállítások',
   },
   en: {
-    title: 'Precision Agriculture: A Comprehensive Guide',
+    title: 'Agentic AI for Scientists — Interactive Tutor',
     readBook: 'Book',
     quiz: 'Quiz',
     cards: 'Cards',
     conceptMap: 'Concept Map',
     newSession: 'New Session',
-    askPlaceholder: 'Ask about precision agriculture...',
-    welcome: 'PrecAgri-Tutor',
-    welcomeText: 'Ask me anything about precision agriculture!',
+    askPlaceholder: 'Ask about AI for scientific research...',
+    welcome: 'AgenticAI-Tutor',
+    welcomeText: 'Ask me anything about AI for scientific research!',
     welcomeSub: 'Answers come from the textbook, extended by AI.',
     settings: 'Settings',
   },
@@ -61,20 +61,20 @@ function App() {
   const [settingsOpen, setSettingsOpen] = useState(false);
   const [quizResultsData, setQuizResultsData] = useState(null);
   const [dark, setDark] = useState(() => {
-    return localStorage.getItem('precagri-tutor-dark') === 'true' ||
+    return localStorage.getItem('agenticai-tutor-dark') === 'true' ||
       window.matchMedia('(prefers-color-scheme: dark)').matches;
   });
-  const [lang, setLang] = useState(() => localStorage.getItem('precagri-tutor-lang') || 'en');
+  const [lang, setLang] = useState(() => localStorage.getItem('agenticai-tutor-lang') || 'en');
   const toggleLang = () => {
     const n = lang === 'hu' ? 'en' : 'hu';
     setLang(n);
-    localStorage.setItem('precagri-tutor-lang', n);
+    localStorage.setItem('agenticai-tutor-lang', n);
   };
   const t = STRINGS[lang];
 
   // Restore last-read chapter from localStorage on mount, default to chapter 1
   useEffect(() => {
-    const saved = localStorage.getItem('precagri-tutor-last-chapter');
+    const saved = localStorage.getItem('agenticai-tutor-last-chapter');
     if (!readerOpen && currentChapter == null) {
       const num = saved != null ? parseInt(saved, 10) : 1;
       if (!isNaN(num)) {
@@ -87,7 +87,7 @@ function App() {
   const toggleDark = () => {
     const n = !dark;
     setDark(n);
-    localStorage.setItem('precagri-tutor-dark', String(n));
+    localStorage.setItem('agenticai-tutor-dark', String(n));
   };
 
   const handleChapterOpen = (chapterNum) => {

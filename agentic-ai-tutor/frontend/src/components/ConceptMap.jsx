@@ -1,23 +1,23 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { getConceptGraph } from '../api/client';
 
-// Part color palette -- 6 parts for the precision agriculture book
+// Part color palette -- 6 parts for the Agentic AI book
 const PART_COLORS = [
-  '#16a34a', // I  -- green (Foundations)
-  '#0d9488', // II -- teal (Sensing and Measurement)
-  '#92400e', // III -- brown (Soil and Water)
-  '#eab308', // IV -- yellow (Crop Management)
-  '#3b82f6', // V  -- blue (Data and Intelligence)
-  '#8b5cf6', // VI -- purple (Broader Context)
+  '#16a34a', // I  -- green (Ismerkedés az AI-val)
+  '#0d9488', // II -- teal (Mindennapi tudományos munka)
+  '#3b82f6', // III -- blue (Domain-specifikus AI)
+  '#8b5cf6', // IV -- purple (Ágentikus AI)
+  '#eab308', // V  -- yellow (Felelős AI-adoptáció)
+  '#ef4444', // VI -- red (Szakterületi alkalmazások)
 ];
 
 function getPartIndex(chapterNum) {
-  if (chapterNum <= 3) return 0;   // Part I: Ch 1-3
-  if (chapterNum <= 7) return 1;   // Part II: Ch 4-7
+  if (chapterNum <= 4) return 0;   // Part I: Ch 1-4
+  if (chapterNum <= 7) return 1;   // Part II: Ch 5-7
   if (chapterNum <= 10) return 2;  // Part III: Ch 8-10
   if (chapterNum <= 13) return 3;  // Part IV: Ch 11-13
   if (chapterNum <= 16) return 4;  // Part V: Ch 14-16
-  return 5;                        // Part VI: Ch 17-20
+  return 5;                        // Part VI: Ch 17-19
 }
 
 // Simple layered layout: assign Y by topological depth, X spread within each layer

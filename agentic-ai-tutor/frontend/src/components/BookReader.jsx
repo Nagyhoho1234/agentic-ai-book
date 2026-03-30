@@ -8,9 +8,9 @@ import rehypeRaw from 'rehype-raw';
 import 'katex/dist/katex.min.css';
 import { getChapter, getChapterList, getChapterSummary } from '../api/client';
 
-const SUMMARY_CACHE_PREFIX = 'precagri-tutor-summary-';
-const LS_LAST_CHAPTER = 'precagri-tutor-last-chapter';
-const LS_LAST_SCROLL = 'precagri-tutor-last-scroll';
+const SUMMARY_CACHE_PREFIX = 'agenticai-tutor-summary-';
+const LS_LAST_CHAPTER = 'agenticai-tutor-last-chapter';
+const LS_LAST_SCROLL = 'agenticai-tutor-last-scroll';
 
 // Process React children to turn chapter references into clickable spans.
 // Handles: "Chapter 6", "Ch. 3", "Chapters 3 and 24"

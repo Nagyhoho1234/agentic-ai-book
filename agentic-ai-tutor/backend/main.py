@@ -1,4 +1,4 @@
-"""FastAPI entry point for the PrecAgri-Tutor backend."""
+"""FastAPI entry point for the AgenticAI-Tutor backend."""
 
 from contextlib import asynccontextmanager
 
@@ -33,8 +33,8 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(
-    title="PrecAgri-Tutor API",
-    description="RAG-based tutoring system for 'Precision Agriculture: From Sensors to Decisions'",
+    title="AgenticAI-Tutor API",
+    description="RAG-based tutoring system for 'Ágentikus AI Tudósoknak'",
     version="0.1.0",
     lifespan=lifespan,
 )
@@ -50,7 +50,7 @@ app.add_middleware(
 
 # Serve book images as static files
 from pathlib import Path as _Path
-_images_dir = _Path(r"C:\precagri\images\book")
+_images_dir = _Path(r"C:\agenticAIBook\images\book")
 if _images_dir.exists():
     app.mount("/images", StaticFiles(directory=str(_images_dir)), name="book-images")
 
@@ -59,7 +59,7 @@ if _images_dir.exists():
 
 @app.get("/health")
 async def health():
-    return {"status": "ok", "service": "precagri-tutor", "version": "0.1.0"}
+    return {"status": "ok", "service": "agenticai-tutor", "version": "0.1.0"}
 
 
 @app.get("/quota-status", response_model=QuotaStatus)
@@ -191,42 +191,41 @@ async def table_of_contents():
 
 
 CHAPTER_TITLES_HU: dict[int, str] = {
-    1: "Miért a precíziós mezőgazdaság?",
-    2: "A mezőgazdasági táj",
-    3: "Az adatforradalom a mezőgazdaságban",
-    4: "Műholdas és légi távérzékelés",
-    5: "Hiperspektrális és multispektrális képalkotás",
-    6: "Proximális és tábla szintű szenzorok",
-    7: "Helymeghatározás és navigáció",
-    8: "A talajváltozékonyság megértése",
-    9: "Vízgazdálkodás és öntözés",
-    10: "Tápanyag-gazdálkodás",
-    11: "Változó dózisú technológia",
-    12: "Növényegészség-monitoring és növényvédelem",
-    13: "Hozammonitorozás és térképezés",
-    14: "Adatfeldolgozási csővezetékek és adatkezelés",
-    15: "Mesterséges intelligencia és gépi tanulás a mezőgazdaságban",
-    16: "Döntéstámogató rendszerek",
-    17: "A precíziós mezőgazdaság gazdaságtana",
-    18: "Precíziós állattenyésztés és azon túl",
-    19: "A precíziós mezőgazdaság jövője",
-    20: "Precíziós mezőgazdaság Magyarországon",
+    1: "Az AI forradalom a tudományos kutatásban",
+    2: "Társalgási AI — Az első kutatási partnered",
+    3: "AI a tudományos írásban és kommunikációban",
+    4: "AI-vel végzett adatelemzés — Kódolás nélkül",
+    5: "AI kódolási asszisztensek — Kód írása programozás nélkül",
+    6: "AI-támogatott matematikai modellezés és szimuláció",
+    7: "Adat-pipeline-ok és automatizálás",
+    8: "Vizuális programozás és munkafolyamat-tervezés",
+    9: "RAG — Tanítsuk meg az AI-t a saját adatainkra",
+    10: "Digitális ikrek: Valós rendszerek virtuális másolatai",
+    11: "Az AI ágensek megértése",
+    12: "AI ágensek építése kutatáshoz",
+    13: "Saját programok és eszközök készítése",
+    14: "Az AI-val felszerelt kutatólabor",
+    15: "AI az egyetemen — Oktatás, tanulás és intézményi átalakulás",
+    16: "Etika, reprodukálhatóság és az AI jövője a tudományban",
+    17: "AI a precíziós mezőgazdaságban",
+    18: "AI a hidroinformatikában",
+    19: "AI a térinformatikában",
 }
 
 
 CHAPTER_PARTS_HU: dict[int, str] = {
-    1: "I. rész: Alapok", 2: "I. rész: Alapok",
-    3: "I. rész: Alapok",
-    4: "II. rész: Érzékelés és mérés", 5: "II. rész: Érzékelés és mérés",
-    6: "II. rész: Érzékelés és mérés", 7: "II. rész: Érzékelés és mérés",
-    8: "III. rész: Talaj és víz", 9: "III. rész: Talaj és víz",
-    10: "III. rész: Talaj és víz",
-    11: "IV. rész: Növénytermesztés", 12: "IV. rész: Növénytermesztés",
-    13: "IV. rész: Növénytermesztés",
-    14: "V. rész: Adatok és intelligencia", 15: "V. rész: Adatok és intelligencia",
-    16: "V. rész: Adatok és intelligencia",
-    17: "VI. rész: Tágabb összefüggések", 18: "VI. rész: Tágabb összefüggések",
-    19: "VI. rész: Tágabb összefüggések", 20: "VI. rész: Tágabb összefüggések",
+    1: "I. rész: Ismerkedés az AI-val", 2: "I. rész: Ismerkedés az AI-val",
+    3: "I. rész: Ismerkedés az AI-val", 4: "I. rész: Ismerkedés az AI-val",
+    5: "II. rész: Mindennapi tudományos munka", 6: "II. rész: Mindennapi tudományos munka",
+    7: "II. rész: Mindennapi tudományos munka",
+    8: "III. rész: Domain-specifikus AI", 9: "III. rész: Domain-specifikus AI",
+    10: "III. rész: Domain-specifikus AI",
+    11: "IV. rész: Ágentikus AI", 12: "IV. rész: Ágentikus AI",
+    13: "IV. rész: Ágentikus AI",
+    14: "V. rész: Felelős AI-adoptáció", 15: "V. rész: Felelős AI-adoptáció",
+    16: "V. rész: Felelős AI-adoptáció",
+    17: "VI. rész: Szakterületi alkalmazások", 18: "VI. rész: Szakterületi alkalmazások",
+    19: "VI. rész: Szakterületi alkalmazások",
 }
 
 
@@ -327,7 +326,7 @@ async def book_chapter(chapter_num: int, lang: str = Query("en")):
                 toc.append({"level": level, "text": heading_text, "id": slug})
             return {"chapter_num": chapter_num, "chapter_title": title, "part": "", "markdown": markdown, "toc": toc}
 
-    if chapter_num < 1 or chapter_num > 20:
+    if chapter_num < 1 or chapter_num > 19:
         from fastapi import HTTPException
         raise HTTPException(status_code=404, detail=f"Chapter {chapter_num} not found")
 
@@ -342,10 +341,24 @@ async def book_chapter(chapter_num: int, lang: str = Query("en")):
         chapters_dir = settings.resolve_path(settings.chapters_path)
     filepath = chapters_dir / f"ch{chapter_num:02d}.md"
 
+    # Try glob pattern for ch01_*.md style filenames
+    if not filepath.exists():
+        import glob as _glob
+        pattern = str(chapters_dir / f"ch{chapter_num:02d}_*.md")
+        matches = sorted(_glob.glob(pattern))
+        if matches:
+            filepath = Path(matches[0])
+
     # If Hungarian version doesn't exist, fall back to English
     if not filepath.exists() and lang == "hu":
         chapters_dir = settings.resolve_path(settings.chapters_path)
         filepath = chapters_dir / f"ch{chapter_num:02d}.md"
+        if not filepath.exists():
+            import glob as _glob
+            pattern = str(chapters_dir / f"ch{chapter_num:02d}_*.md")
+            matches = sorted(_glob.glob(pattern))
+            if matches:
+                filepath = Path(matches[0])
 
     if not filepath.exists():
         # Fallback: reconstruct from chunks index
@@ -416,7 +429,7 @@ async def book_summary(request: SummaryRequest):
     Falls back to a basic extractive summary if the API quota is exhausted.
     """
     chapter_num = request.chapter_num
-    if chapter_num < 1 or chapter_num > 20:
+    if chapter_num < 1 or chapter_num > 19:
         from fastapi import HTTPException
         raise HTTPException(status_code=404, detail=f"Chapter {chapter_num} not found")
 
@@ -437,7 +450,7 @@ async def book_summary(request: SummaryRequest):
 
     # Try to generate AI summary
     prompt = (
-        f"Summarize Chapter {chapter_num}: '{chapter_title}' from 'Precision Agriculture: From Sensors to Decisions'. "
+        f"Summarize Chapter {chapter_num}: '{chapter_title}' from 'Ágentikus AI Tudósoknak'. "
         f"Write a concise summary (5-8 bullet points) covering the key concepts and takeaways. "
         f"Use markdown formatting.\n\n"
         f"Chapter content:\n{chapter_text[:4000]}"
@@ -676,7 +689,7 @@ async def book_search(q: str = Query(..., min_length=1), lang: str = Query("en")
 # ---- Test endpoint ----
 
 @app.get("/test-generate")
-async def test_generate(prompt: str = "What is precision agriculture?"):
+async def test_generate(prompt: str = "What are AI agents in scientific research?"):
     """Test Gemini API connectivity."""
     response: LLMResponse | None = await gemini_client.generate(
         prompt=prompt, complexity="low"

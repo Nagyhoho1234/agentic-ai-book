@@ -50,18 +50,18 @@ export default function Chat({ messages, loading, onSend, placeholder, welcomeTi
       <div ref={chatContainerRef} className="flex-1 overflow-y-auto p-4 space-y-4">
         {messages.length === 0 && (
           <div className="text-center py-16" style={{ color: 'var(--text-secondary)' }}>
-            <div className="text-4xl mb-4">&#127806;</div>
+            <div className="text-4xl mb-4">&#129302;</div>
             <h2 className="text-xl font-semibold mb-2" style={{ color: 'var(--text-primary)' }}>
-              {welcomeTitle || 'PrecAgri-Tutor'}
+              {welcomeTitle || 'AgenticAI-Tutor'}
             </h2>
-            <p className="mb-2">{welcomeText || 'Ask me anything about precision agriculture!'}</p>
+            <p className="mb-2">{welcomeText || 'Ask me anything about AI for scientific research!'}</p>
             <p className="text-sm mb-6">{welcomeSub || ''}</p>
             <div className="flex flex-wrap gap-2 justify-center max-w-lg mx-auto">
               {[
-                'What is variable rate application?',
-                'Test me on remote sensing',
-                'Explain NDVI and crop health',
-                'What topics does the book cover?',
+                'Mi az a RAG és mire használják?',
+                'Tesztelj AI ágensekből!',
+                'Hogyan segít az AI a kutatásban?',
+                'Milyen témákat tárgyal a könyv?',
               ].map((q) => (
                 <button
                   key={q}
@@ -136,7 +136,7 @@ export default function Chat({ messages, loading, onSend, placeholder, welcomeTi
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder={placeholder || "Ask a question about precision agriculture..."}
+            placeholder={placeholder || "Ask a question about AI for scientists..."}
             disabled={loading}
             className="flex-1 px-4 py-2.5 rounded-xl border outline-none transition-colors"
             style={{

@@ -1,1 +1,1 @@
-"""RAG pipeline for the Precision Agriculture e-book."""
+"""RAG pipeline for the Agentic AI for Scientists e-book."""

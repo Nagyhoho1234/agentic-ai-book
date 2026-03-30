@@ -5,7 +5,7 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
-    """All settings for the PrecAgri-Tutor backend."""
+    """All settings for the AgenticAI-Tutor backend."""
 
     # Gemini API
     gemini_api_key: str = ""
@@ -16,9 +16,9 @@ class Settings(BaseSettings):
     # Paths (relative to project root)
     project_root: Path = Path(__file__).resolve().parent.parent
     chroma_db_path: Path = Path("./data/chroma_db")
-    sqlite_db_path: Path = Path("./data/precagri_tutor.db")
-    chapters_path: Path = Path("../chapters_en")
-    chapters_path_hu: Path = Path("../chapters_hu")
+    sqlite_db_path: Path = Path("./data/agenticai_tutor.db")
+    chapters_path: Path = Path("../chapters/hu")
+    chapters_path_hu: Path = Path("../chapters/hu")
 
     # Gemini model routing
     model_flash_lite: str = "gemini-2.5-flash-lite"

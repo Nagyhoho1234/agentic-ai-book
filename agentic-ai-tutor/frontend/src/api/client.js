@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const LLM_STORAGE_KEY = 'precagri-tutor-llm';
+const LLM_STORAGE_KEY = 'agenticai-tutor-llm';
 
 const api = axios.create({
   baseURL: '/api',

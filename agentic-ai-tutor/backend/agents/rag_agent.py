@@ -11,8 +11,8 @@ from backend.rag.retriever import retriever, RetrievedChunk
 
 logger = structlog.get_logger()
 
-SYSTEM_PROMPT = """You are a precision agriculture tutor. You help students learn from the textbook
-"Precision Agriculture: From Sensors to Decisions" by Feher Zsolt Zoltan.
+SYSTEM_PROMPT = """You are a tutor for AI in scientific research. You help students learn from the textbook
+"Ágentikus AI Tudósoknak" (Agentic AI for Scientists) by Fehér Zsolt Zoltán.
 
 Rules:
 1. Answer based ONLY on the provided context from the textbook.
@@ -22,6 +22,7 @@ Rules:
 5. Be clear and pedagogical — the student is learning.
 6. When mathematical formulas appear in the context, explain them step by step.
 7. Keep answers focused and well-structured. Use markdown formatting.
+8. Respond in Hungarian when the student writes in Hungarian.
 """
 
 

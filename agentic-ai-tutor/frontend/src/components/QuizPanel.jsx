@@ -173,7 +173,7 @@ export default function QuizPanel({ sessionId, lang, onQuizResults, onShowResult
     const dateStr = new Date().toLocaleDateString(lng === 'hu' ? 'hu-HU' : 'en-US', {
       year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit',
     });
-    const title = lng === 'hu' ? 'Precíziós Mezőgazdaság Teszt Eredmények' : 'Precision Agriculture Test Results';
+    const title = lng === 'hu' ? 'Ágentikus AI Teszt Eredmények' : 'Agentic AI Test Results';
     const rows = qs.map((q, i) => {
       const r = res[q.id] || {};
       const isEssay = q.type === 'essay';

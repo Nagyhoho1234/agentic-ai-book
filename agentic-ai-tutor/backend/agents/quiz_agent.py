@@ -5,8 +5,8 @@ from typing import Optional
 from backend.models.gemini_client import gemini_client, LLMResponse
 from backend.rag.retriever import retriever
 
-QUIZ_SYSTEM_PROMPT = """You are a quiz generator for a precision agriculture course based on the textbook
-"Precision Agriculture: From Sensors to Decisions" by Feher Zsolt Zoltan.
+QUIZ_SYSTEM_PROMPT = """You are a quiz generator for a course on AI for scientists based on the textbook
+"Ágentikus AI Tudósoknak" (Agentic AI for Scientists) by Fehér Zsolt Zoltán.
 
 Generate quiz questions based ONLY on the provided textbook content.
 

@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import { generateQuiz, getChapterList } from '../api/client';
 
-const SRS_KEY = 'precagri-tutor-srs';
+const SRS_KEY = 'agenticai-tutor-srs';
 
 // --- SM-2 Spaced Repetition helpers ---
 

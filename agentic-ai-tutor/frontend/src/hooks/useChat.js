@@ -3,14 +3,14 @@ import { sendChat } from '../api/client';
 
 export function useChat(sessionId) {
   const [messages, setMessages] = useState(() => {
-    const saved = localStorage.getItem('precagri-tutor-messages');
+    const saved = localStorage.getItem('agenticai-tutor-messages');
     return saved ? JSON.parse(saved) : [];
   });
   const [loading, setLoading] = useState(false);
 
   const saveMessages = (msgs) => {
     setMessages(msgs);
-    localStorage.setItem('precagri-tutor-messages', JSON.stringify(msgs));
+    localStorage.setItem('agenticai-tutor-messages', JSON.stringify(msgs));
   };
 
   const send = useCallback(async (text) => {
@@ -54,7 +54,7 @@ export function useChat(sessionId) {
   const addAssistantMessage = useCallback((msg) => {
     setMessages((prev) => {
       const updated = [...prev, msg];
-      localStorage.setItem('precagri-tutor-messages', JSON.stringify(updated));
+      localStorage.setItem('agenticai-tutor-messages', JSON.stringify(updated));
       return updated;
     });
   }, []);

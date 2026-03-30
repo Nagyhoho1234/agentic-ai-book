@@ -63,7 +63,7 @@ async def handle_message(
             })
 
         # Format as readable text
-        lines = ["# Book Contents: Precision Agriculture — From Sensors to Decisions\n"]
+        lines = ["# Book Contents: Ágentikus AI Tudósoknak\n"]
         for ch_num in sorted(chapters.keys()):
             from backend.rag.chunker import CHAPTER_TITLES, CHAPTER_PARTS
             title = CHAPTER_TITLES.get(ch_num, f"Chapter {ch_num}")
@@ -85,7 +85,7 @@ async def handle_message(
         # Extract topic from the query
         topic = re.sub(r"(quiz|test|me|on|about|my|knowledge|of|the|please)\s*", "", query, flags=re.IGNORECASE).strip()
         if not topic:
-            topic = "precision agriculture fundamentals"
+            topic = "AI agents in scientific research"
 
         result = await generate_quiz(
             topic=topic,

@@ -17,8 +17,8 @@ from backend.rag.chunker import Chunk, parse_all_chapters
 
 console = Console()
 
-COLLECTION_NAME = "precagri_book"
-COLLECTION_NAME_HU = "precagri_book_hu"
+COLLECTION_NAME = "agenticai_book"
+COLLECTION_NAME_HU = "agenticai_book_hu"
 
 
 def get_chroma_client(persist_dir: Optional[Path] = None) -> chromadb.ClientAPI:
@@ -37,11 +37,11 @@ def ingest_chapters(
 
     Returns stats dict.
     """
-    console.print("[bold blue]PrecAgri-Tutor Book Ingestion[/bold blue]")
+    console.print("[bold blue]AgenticAI-Tutor Book Ingestion[/bold blue]")
     console.print()
 
     if chapters_dir is None:
-        chapters_dir = Path(r"C:\precagri\chapters_en")
+        chapters_dir = Path(r"C:\agenticAIBook\chapters\hu")
 
     # Parse chapters
     console.print(f"[yellow]Parsing chapters from {chapters_dir}...[/yellow]")
@@ -145,14 +145,14 @@ def ingest_hungarian(
 ) -> dict:
     """Parse Hungarian chapters, embed, and store in a separate ChromaDB collection.
 
-    Mirrors ingest_chapters() but uses the 'precagri_book_hu' collection
-    and reads from chapters_hu/ by default.
+    Mirrors ingest_chapters() but uses the 'agenticai_book_hu' collection
+    and reads from chapters/hu/ by default.
     """
-    console.print("[bold blue]PrecAgri-Tutor Hungarian Book Ingestion[/bold blue]")
+    console.print("[bold blue]AgenticAI-Tutor Hungarian Book Ingestion[/bold blue]")
     console.print()
 
     if chapters_dir is None:
-        chapters_dir = Path(r"C:\precagri\chapters_hu")
+        chapters_dir = Path(r"C:\agenticAIBook\chapters\hu")
 
     # Parse chapters
     console.print(f"[yellow]Parsing Hungarian chapters from {chapters_dir}...[/yellow]")
@@ -178,7 +178,7 @@ def ingest_hungarian(
     )
 
     # Store in ChromaDB
-    console.print("[yellow]Storing in ChromaDB (collection: precagri_book_hu)...[/yellow]")
+    console.print("[yellow]Storing in ChromaDB (collection: agenticai_book_hu)...[/yellow]")
     client = get_chroma_client(chroma_dir)
 
     # Delete existing HU collection if present
