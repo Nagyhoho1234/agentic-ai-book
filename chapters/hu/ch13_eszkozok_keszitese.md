@@ -1,5 +1,15 @@
 # 13. fejezet — Saját programok és eszközök készítése
 
+> **Fejezet-informacio**
+> - **Kinek szol:** Kutatoknak, akik meglevo szkriptjeiket webalkalmazassa vagy AI-eszkozze szeretnek alakitani
+> - **Eloismeretek:** 5. fejezet (kodolasi asszisztensek), 11. fejezet (ajanlott)
+> - **Amit megtanulsz:**
+>   - Streamlit es Gradio: Python szkriptbol webalkalmazas percek alatt
+>   - MCP-szerverek epitese: tedd az adataidat AI-elerhetove
+>   - Mikor erdemes sajat eszkozt epiteni es mikor nem
+> - **Szukseges eszkozok:** Terminal + Python
+> - **Kapcsolodo fejezetek:** 5. fejezet (kodolas), 9. fejezet (RAG), 12. fejezet (agensek)
+
 ---
 
 ## 13.1 Nyitó jelenet: Amikor az elemzés zseniális, de senki nem tudja használni

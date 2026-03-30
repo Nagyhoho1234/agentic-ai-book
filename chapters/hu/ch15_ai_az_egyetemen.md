@@ -1,5 +1,15 @@
 # AI az egyetemen -- Oktatás, tanulás és intézményi átalakulás
 
+> **Fejezet-informacio**
+> - **Kinek szol:** Oktatoknak, dekanoknak, tanszekvezetoknek es intezmenyi donteeshozoknak
+> - **Eloismeretek:** 1. fejezet (AI alapok); a 14. fejezet (AI labor) hasznos, de nem kotelezo
+> - **Amit megtanulsz:**
+>   - Negy egyetemi esettanulmany (UF, ASU, UTokyo, tuBIT) konkret tanulsagokkal
+>   - Az AI-kurzusok otszintu taxonomiaja (Use-AI, Know-AI, Build-AI, Ethical-AI, Enable-AI)
+>   - Hogyan epitsd fel az AI-integracios strategiat a Debreceni Egyetemen
+> - **Szukseges eszkozok:** Browser only
+> - **Kapcsolodo fejezetek:** 14. fejezet (AI labor), 16. fejezet (etika), 1. fejezet (motivacio)
+
 > *"A tanítás igazi célja nem az információátadás, hanem a gondolkodás meggyújtása. Az AI ezt a lángot nem oltja el -- felerősíti."*
 
 Képzeld el a következő jelenetet. Egy biológiaprofesszor hétfő reggel megnyitja a laptopját, és azt látja, hogy 87 hallgató beadta a házi dolgozatát -- egy irodalomáttekintést a CRISPR-Cas9 rendszer alkalmazásairól a növénynemesítésben. A professzor elolvassa az első három dolgozatot, és szinte megkülönböztethetetlen minőségűek: tökéletesen strukturált, hibátlan angol, releváns hivatkozások, elegáns megfogalmazás. A negyedik dolgozat kicsit gyengébb -- néhány fogalmazási hiba, egy-két hiányzó hivatkozás. A professzor megáll. *Melyik a valódi hallgatói munka?* Paradox módon éppen a gyengébb dolgozat tűnik hitelesebbnek.

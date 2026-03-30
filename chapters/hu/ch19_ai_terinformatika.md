@@ -1,5 +1,15 @@
 # 19. fejezet — AI a terinformatikaban
 
+> **Fejezet-informacio**
+> - **Kinek szol:** Terinformatikusoknak, kornyezetkutatoknak es GIS-felhasznaloknak
+> - **Eloismeretek:** 1-4. fejezet (AI alapok); a 5. es 9. fejezet ajanlott
+> - **Amit megtanulsz:**
+>   - AI-alapu muholdkep-feldolgozas es felszinboritas-osztalyozas
+>   - Autonom GIS rendszerek: termeszetes nyelvu terinformatikai elemzes
+>   - Magyar terinformatikai kontextus (EOV, Corine, Natura 2000)
+> - **Szukseges eszkozok:** Browser + terminal + Python (QGIS + Google Earth Engine)
+> - **Kapcsolodo fejezetek:** 5. fejezet (kodolas), 10. fejezet (digitalis ikrek), 17. fejezet (mezogazdasag), 18. fejezet (hidroinformatika)
+
 ---
 
 ## Nyito jelenet: Amikor a terkep "megtanul" gondolkodni

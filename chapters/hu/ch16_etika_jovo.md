@@ -1,5 +1,15 @@
 # 16. fejezet — Etika, reprodukálhatóság és az AI jövője a tudományban
 
+> **Fejezet-informacio**
+> - **Kinek szol:** Minden kutatonak, oktatonak es hallgatonak — ez a fejezet nem opcionalis
+> - **Eloismeretek:** 1-2. fejezet (ajanlott); barmelyik masik fejezet utan olvashato
+> - **Amit megtanulsz:**
+>   - Hamis hivatkozasok, kepmanipulacio es szintetikus adatok felismerese
+>   - Tudomanyos integritas es reprodukalhatosag biztositasa AI hasznalat mellett
+>   - AI-hasznalati nyilatkozatok es intezmenyi szabalyzatok keszitese
+> - **Szukseges eszkozok:** Browser only
+> - **Kapcsolodo fejezetek:** 2. fejezet (hallucianció), 3. fejezet (tudomanyos iras), 15. fejezet (egyetemi strategia)
+
 ---
 
 ## Nyitó jelenet: A nem létező hivatkozás

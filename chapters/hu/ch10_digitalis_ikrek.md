@@ -62,6 +62,9 @@ A szakirodalom egy ötdimenziós keretrendszert javasol a digitális ikrek leír
 
 Ha bármelyik dimenzió hiányzik vagy gyenge, a digitális iker nem tölti be a szerepét. Gondolj erre úgy, mint egy ötlábú székre: ha az egyik láb rövid, az egész billeng.
 
+> **Ne csinalld!**
+> Ne nevezd "digitalis ikernek" azt, ami valojaban csak egy egyszeru dashboard vagy szimulacio. A digitalis iker lenyege a **ketiranyuu adataramlas**: a fizikai rendszer adatai frissitik a modellt, ES a modell visszahat a fizikai rendszerre. Ha csak egyiranyuan figyeled a szenzorokat (fizikai → virtualis), az digitalis arnyek — hasznos, de mas kategoria. Az inflalt terminologia alarassa a munkaad hitelességét.
+
 ### Miért fontos ez a tudósoknak?
 
 A digitális ikrek nem csak ipari technológiák. A National Academies of Sciences, Engineering, and Medicine 2024-es jelentése három fő alkalmazási területet azonosított, amelyeken a digitális ikrek alapkutatási kérdéseket is felvetnek:

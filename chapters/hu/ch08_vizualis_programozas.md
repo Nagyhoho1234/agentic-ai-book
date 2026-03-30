@@ -48,6 +48,9 @@ Természetesen a vizuális programozás sem mindenható. Ha egyedi algoritmusoka
 
 ---
 
+> **Ne csinalld!**
+> Ne epitts bonyolult, sok node-bol allo munkafolyamatot egybol. Kezdd ket-harom node-dal (pl. fajl beolvasas → szures → kimenet), es csak akkor bovitsd, ha ez mukodik. A vizualis feluleten konnyu "lego-szenvedely"-be esni, es egy attekinthetetlen, 50 node-os szornyeteget epiteni, amelyet senki — beleertve teged harom honap mulva — nem fog megerteni.
+
 ## Node-alapú szerkesztők: az alapkoncepció
 
 Mielőtt belevágnánk a konkrét eszközökbe, értsük meg az alapvető koncepciót, amely mindegyikben közös.

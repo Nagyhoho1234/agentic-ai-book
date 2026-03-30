@@ -65,6 +65,9 @@ A **fine-tuning (finomhangolás)** ezzel szemben magát a modellt változtatja m
 
 ---
 
+> **Ne csinalld!**
+> Ne tedd be a teljes PDF-et valtoztatas nelkul a RAG tudaasbazisba. A fejlecek, lablecek, hivatkozaslistak es kepoldalak mind "zajkent" kerulnek be, es az LLM ezekbol is "tudast" generaal. Kulonosen veszelyes a hivatkozaslista bennhagyasa: az AI onnan "levezethet" nem letezo allitasokat. Mindig tisztitsd es strukturald a dokumentumokat a betoltes elott.
+
 ## 9.3 A RAG architektúra lépésről lépésre
 
 A RAG nem egyetlen algoritmus, hanem egy **pipeline** --- lépések sorozata, amelyek együttesen teszik lehetővé, hogy az LLM a te adataidból válaszoljon. Nézzük végig minden egyes lépést.

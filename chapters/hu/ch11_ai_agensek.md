@@ -1,5 +1,15 @@
 # 11. fejezet — Az AI ágensek megértése
 
+> **Fejezet-informacio**
+> - **Kinek szol:** Kutatoknak, akik meg szeretnek erteni, mi az AI agens es hogyan mukodik
+> - **Eloismeretek:** 1-2. fejezet (AI alapok, promptolas); a 5. es 7. fejezet hasznos hatterismeret
+> - **Amit megtanulsz:**
+>   - Mi az AI agens es miben kulonbozik egy chatbottol
+>   - A ReACT ciklus, az eszkozhasznalat es az MCP protokoll
+>   - Multi-agent rendszerek es az emberi felugyelet szerepe
+> - **Szukseges eszkozok:** Browser only (az elmelet megerteseehez)
+> - **Kapcsolodo fejezetek:** 12. fejezet (agensek epitese), 13. fejezet (eszkozok), 14. fejezet (AI labor)
+
 ---
 
 ## Nyitó jelenet: Amikor a kutató nem győzi egyedül

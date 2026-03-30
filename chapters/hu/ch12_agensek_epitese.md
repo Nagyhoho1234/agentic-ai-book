@@ -1,5 +1,15 @@
 # 12. fejezet: AI ágensek építése kutatáshoz
 
+> **Fejezet-informacio**
+> - **Kinek szol:** Kutatoknak es technikai munkatarsaknak, akik sajat AI agenseket szeretnenek epiteni
+> - **Eloismeretek:** 11. fejezet (agensek megertese), 5. fejezet (kodolasi asszisztensek)
+> - **Amit megtanulsz:**
+>   - CrewAI, LangGraph, OpenAI Agents SDK es Claude Code agensek osszehasonlitasa
+>   - Gyakorlati agensepites lepesrol lepesre (irodalomfigyelotol az adatelemzoig)
+>   - Biztonsag, emberi felugyelet es hibakezelés agensekben
+> - **Szukseges eszkozok:** Terminal + Python
+> - **Kapcsolodo fejezetek:** 11. fejezet (elmelet), 13. fejezet (eszkozok keszitese), 9. fejezet (RAG)
+
 ---
 
 ## 12.1 Amikor a hétfő reggeli irodalomkutatás három napot vesz el

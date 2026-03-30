@@ -1,5 +1,15 @@
 # 17. fejezet: AI a precíziós mezőgazdaságban
 
+> **Fejezet-informacio**
+> - **Kinek szol:** Agrarkutatoknak, gazdalkodoknak es mezogazdasagi szaktanaacsadoknak
+> - **Eloismeretek:** 1-4. fejezet (AI alapok, adatelemzes); a 5-12. fejezet hasznos, de nem kotelezo
+> - **Amit megtanulsz:**
+>   - Az AI helye a precizios gazdalkodas ciklusaban (adatgyujtestol a donteshozatalig)
+>   - Muholdkepes novenyfigyelés, hozam-elorejelzes es ontözesoptimalizalas
+>   - Digitalis ikrek es agensek mezogazdasagi alkalmazasai
+> - **Szukseges eszkozok:** Browser + terminal + Python (a gyakorlati peldaakhoz)
+> - **Kapcsolodo fejezetek:** 7. fejezet (pipeline-ok), 10. fejezet (digitalis ikrek), 19. fejezet (terinformatika)
+
 ## Amikor a tábla beszélni kezd
 
 Gábor a Hajdúságban gazdálkodik, hatszáz hektáron kukoricát és búzát termeszt. Minden májusban drónnal repüli végig a tábláit, a Sentinel-2 műhold ötnaponta küld friss NDVI-térképet, a talajnedvesség-szenzorjai óránként jelentenek, az agrometeorológiai állomása pedig percenként rögzíti a hőmérsékletet, a páratartalmat és a szélsebességet. Gábornak nem az adathiány a problémája --- hanem az adatbőség. Egy átlagos tenyészidőszakban a gazdasága több terabájtnyi adatot termel: műholdfelvételek, drónos multispektrális képek, hozamtérképek, talajvizsgálati eredmények, gépi telematikai adatok, időjárási idősorok. Ezek az adatok különböző formátumokban, különböző platformokon, különböző koordináta-rendszerekben érkeznek. Gábor tudja, hogy aranyat ér bennük --- de nincs ideje és kapacitása, hogy minden reggel tizenöt különböző szoftvert nyisson meg, és kézzel rakja össze a képet.

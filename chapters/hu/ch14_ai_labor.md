@@ -1,5 +1,15 @@
 # Az AI-val felszerelt kutatólabor
 
+> **Fejezet-informacio**
+> - **Kinek szol:** Laborvezetoknek, csoportvezetoknek es szenior kutatoknak
+> - **Eloismeretek:** 1-2. fejezet (AI alapok); a 5-13. fejezetek ismerete elony, de nem kotelezo
+> - **Amit megtanulsz:**
+>   - A 2026-os tudomanyos AI stack architekturaja (interaktiv, automatizalasi, kapcsolati reteg)
+>   - Koltsegvetes, adatbiztonsag es csapaton beluli bevezetes strategiai
+>   - Gyakorlati utiterv egy kutatocsoport AI-integraciojahoz
+> - **Szukseges eszkozok:** Browser only (strategiai fejezet)
+> - **Kapcsolodo fejezetek:** 7. fejezet (pipeline-ok), 12. fejezet (agensek), 15. fejezet (egyetemi szint)
+
 > *"A stratégia nélküli AI-adoptáció olyan, mint a GPS nélküli hajózás -- lehet, hogy haladunk, de nem biztos, hogy a jó irányba."*
 
 Képzeld el a következő jelenetet. Hétfő reggel, csoportértekezlet. Te vagy a laborvezető -- egy tízfős kutatócsoport élén állsz, amelyik agrár-távérzékelésben, orvosi képfeldolgozásban, anyagtudományban, vagy bármilyen más szakterületen dolgozik. Az intézetvezető két hete azt mondta: "Készítsetek egy tervet, hogyan integráljátok az AI-t a munkátokba a következő évben. Költségvetés: korlátozott. Határidő: péntek."

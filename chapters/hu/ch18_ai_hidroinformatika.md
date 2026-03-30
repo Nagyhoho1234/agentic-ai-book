@@ -1,5 +1,15 @@
 # 18. fejezet -- AI a hidroinformatikaban
 
+> **Fejezet-informacio**
+> - **Kinek szol:** Hidrológusoknak, vizugyyi mernokoknek es kornyezetkutatoknak
+> - **Eloismeretek:** 1-4. fejezet (AI alapok); a 5-12. fejezet hasznos, de nem kotelezo
+> - **Amit megtanulsz:**
+>   - Az AI alkalmazasa felszini es felszin alatti vizmodellezesbeen
+>   - Pipeline-ok, kodgeneralas es digitalis ikrek vizugyi kontextusban
+>   - Autonomv agensek vizgyujto-szintu kalibraciora
+> - **Szukseges eszkozok:** Browser + terminal + Python
+> - **Kapcsolodo fejezetek:** 6. fejezet (modellezes), 7. fejezet (pipeline-ok), 10. fejezet (digitalis ikrek), 19. fejezet (terinformatika)
+
 ---
 
 ## Nyito jelenet: A Tisza nem var
