@@ -30,6 +30,12 @@ Ethan Mollick, a Wharton Business School professzora -- akinek *Co-Intelligence*
 
 A lényeg: **az AI nem opcionális**. Nem az a kérdés, hogy a te szakterületeden lesz-e hatása, hanem hogy mikor és hogyan. Aki korán lép, annak előnye lesz. Aki vár, az lemarad.
 
+> **🌾 Szakterületi példa: Az adatforradalom a mezőgazdaságban**
+>
+> A precíziós mezőgazdaságban az AI-forradalom azt jelenti, hogy a gazdálkodó megérzését ma már érzékelők, műholdak és gépi tanulási algoritmusok egészítik ki. A hozammérő kombájntól a felhőalapú döntéstámogatásig egyetlen tenyészidőszak alatt terabájtnyi adat keletkezik. Ahol korábban a gazda marék földdel ítélte meg a nedvességet, ott ma IoT-szenzor-hálózat méri folyamatosan a talaj állapotát. A hozammonitorok hektáronként több ezer adatpontot rögzítenek, és ezek az adatok a gépi tanulás alapanyagai. A tét óriási: 9,7 milliárd ember élelmezése 2050-re — ez a kihívás az adatvezérelt döntéshozatalt nem opcionálissá, hanem szükségessé teszi.
+>
+> *Forrás: precagri 3.1 „A megérzéstől az adatvezérelt döntésekig"*
+
 ---
 
 ## Az AI spektruma: a chatbottól az autonóm felfedezésig
