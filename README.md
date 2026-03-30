@@ -1,148 +1,154 @@
 # A kutatási célú ágentikus AI 2026-ban — Helyzetkép és iránymutató
+# Agentic AI for Scientific Research in 2026 — Status Report and Guidelines
 
-**Magyar nyelvű AI-alapú interaktív tanulási platform kutatóknak**
+**Hungarian-language AI-powered interactive learning platform for researchers**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Language: HU](https://img.shields.io/badge/Nyelv-Magyar-red.svg)](#)
+[![Language: Hungarian](https://img.shields.io/badge/Language-Hungarian-red.svg)](#)
 [![Python 3.11+](https://img.shields.io/badge/Python-3.11+-green.svg)](https://python.org)
 [![React 19](https://img.shields.io/badge/React-19-61DAFB.svg)](https://react.dev)
 
-> **AI-generált tartalom nyilatkozat**
+> **AI-Generated Content Disclosure**
 >
-> A tankönyv szövege (19 fejezet, ~100 000 szó) és az alkalmazás forráskódjának
-> jelentős része **nagy nyelvi modellek (LLM-ek)** segítségével készült.
-> A szöveg automatizált nyelvi ellenőrzésen esett át, de független szakmai
-> lektoráláson nem. Az anyag **oktatástechnológiai demonstrációnak** tekintendő,
-> nem pedig lektorált szakkönyvnek.
+> Both the textbook content (19 chapters, ~100,000 words) and the majority of this
+> application's source code were generated with the assistance of **large language models (LLMs)**.
+> The text has been through automated language review but has not been independently
+> peer-reviewed. This material should be treated as an **educational technology demonstration**,
+> not as an authoritative reference.
 
 ---
 
-## Áttekintés
+## Overview
 
-Interaktív tanulási platform egy 19 fejezetes magyar nyelvű egyetemi tankönyv köré építve, amely a tudományos kutatásban alkalmazható mesterséges intelligenciát mutatja be — a társalgási AI-tól az autonóm kutatási ágensekig. A könyv a precíziós mezőgazdaság, a hidroinformatika és a térinformatika szakterületi példáival illusztrált.
+An interactive learning platform built around a 19-chapter **Hungarian-language** university
+e-book covering AI for scientific research — from conversational AI to autonomous research
+agents. The book includes domain-specific examples from precision agriculture,
+hydroinformatics, and geoinformatics.
 
-A platform lehetővé teszi a könyv olvasását, AI-alapú kérdezést a szöveghez, kvíz-alapú önellenőrzést, fogalmi térkép böngészését és szakterületi példák tanulmányozását.
+Students and researchers can read the book, ask AI-powered questions about specific passages,
+take self-assessment quizzes, explore concept dependencies, and study domain-specific examples
+— all through a bilingual web interface.
 
-### Számok
+### Key Numbers
 
-| Mutató | Érték |
+| Metric | Count |
 |--------|-------|
-| Fejezetek | 19 (HU) |
-| Függelékek | 4 (előszó, környezet-beállítás, prompt-könyvtár, források, szójegyzék) |
-| Összes szó | ~100 000 |
-| Kvíz-kérdések | 209 (4 típus: feleletválasztós, igaz/hamis, kiegészítős, esszé) |
-| RAG chunk-ok | 753 |
-| Fogalmi gráf | 99 fogalom előfeltétel-kapcsolatokkal |
-| Szakterületi példák | 42 doboz (🌾 mezőgazdaság, 💧 hidrológia, 🗺️ térinformatika) |
-| Ábrák | 57 helykitöltő ábraprompttal |
-| Referencia könyvek | 25 feldolgozott forrás |
+| Chapters | 19 (Hungarian) |
+| Appendices | 4 (setup guide, 50+ prompt library, resources, glossary) |
+| Total words | ~100,000 |
+| Quiz questions | 209 (4 types: MCQ, T/F, fill-blank, essay) |
+| RAG chunks | 753 |
+| Concept graph | 99 concepts with prerequisite links |
+| Domain examples | 42 boxes (🌾 agriculture, 💧 hydrology, 🗺️ GIS) |
+| Figure placeholders | 57 with image generation prompts |
+| Reference books | 25 processed sources |
 
 ---
 
-## Funkciók
+## Features
 
-| Funkció | Leírás |
+| Feature | Description |
 |---|---|
-| **Könyvolvasó** | 19 fejezetes tankönyv markdown renderelővel, LaTeX egyenletekkel |
-| **AI Chat** | RAG-alapú kérdés-válasz a tankönyv tartalmából |
-| **Szövegkijelölés** | Bármely szövegrész kijelölése és kérdezés róla |
-| **Kvízrendszer** | 209 előre generált kérdés, helyi értékelés, PDF export |
-| **Fogalmi térkép** | Interaktív SVG függőségi gráf 19 fejezeten át |
-| **Teljes szövegű keresés** | Szemantikus keresés kiemelt részletekkel |
-| **Kereszthivatkozások** | Kattintható fejezethivatkozások a szövegben |
-| **3 szintű tartalomjegyzék** | Oldalsáv: Rész / Fejezet / Alfejezet navigáció |
-| **Sötét mód** | Világos/sötét témaváltás |
-| **Mobil nézet** | Reszponzív elrendezés telefonra/tabletre |
+| **Book Reader** | 19-chapter textbook with markdown rendering, LaTeX equations, tables |
+| **AI Chat** | RAG-powered Q&A grounded in textbook content |
+| **Text Selection** | Highlight any passage and ask questions about it |
+| **Quiz System** | 209 pre-generated questions, local grading, PDF export |
+| **Concept Map** | Interactive SVG dependency graph across all 19 chapters |
+| **Full-Text Search** | Semantic search across all chapters with highlighted excerpts |
+| **Cross-References** | Clickable chapter links in text ("1. fejezet" format) |
+| **3-Level TOC** | Sidebar with Part / Chapter / Section navigation (numbered: 1.1, 1.1.1) |
+| **Dark Mode** | Light/dark theme toggle |
+| **Mobile Layout** | Responsive design for phone/tablet |
 
 ---
 
-## Könyvstruktúra (19 fejezet, 6 rész)
+## Book Structure (19 Chapters, 6 Parts)
 
-### I. rész: Ismerkedés az AI-val a kutatásban
-1. Az AI forradalom a tudományos kutatásban
-2. Társalgási AI — Az első kutatási partnered
-3. AI a tudományos írásban és kommunikációban
-4. AI-vel végzett adatelemzés — Kódolás nélkül
+### Part I: Getting Started with AI in Research
+1. The AI Revolution in Scientific Research
+2. Conversational AI — Your First Research Partner
+3. AI for Scientific Writing and Communication
+4. AI-Powered Data Analysis — No Coding Required
 
-### II. rész: Mindennapi tudományos munka AI-val
-5. AI kódolási asszisztensek — Kód írása programozás nélkül
-6. AI-támogatott matematikai modellezés és szimuláció
-7. Adat-pipeline-ok és automatizálás
+### Part II: Everyday Scientific Work with AI
+5. AI Coding Assistants — Writing Code Without Being a Programmer
+6. AI-Assisted Mathematical Modeling and Simulation
+7. Data Pipelines and Automation
 
-### III. rész: Domain-specifikus AI
-8. Vizuális programozás és munkafolyamat-tervezés
-9. RAG — Tanítsuk meg az AI-t a saját adatainkra
-10. Digitális ikrek — Valós rendszerek virtuális másolatai
+### Part III: Domain-Specific AI
+8. Visual Programming and Workflow Design
+9. RAG — Teaching AI Your Own Data
+10. Digital Twins — Virtual Replicas of Real Systems
 
-### IV. rész: Ágentikus AI — Eszközökből munkatársak
-11. Az AI ágensek megértése
-12. AI ágensek építése kutatáshoz
-13. Saját programok és eszközök készítése
+### Part IV: Agentic AI — From Tools to Teammates
+11. Understanding AI Agents
+12. Building AI Agents for Research
+13. Creating Your Own Programs and Tools
 
-### V. rész: Felelős AI-adoptáció vezetése
-14. Az AI-val felszerelt kutatólabor
-15. AI az egyetemen — Oktatás, tanulás és intézményi átalakulás
-16. Etika, reprodukálhatóság és az AI jövője a tudományban
+### Part V: Leading Responsible AI Adoption
+14. The AI-Augmented Research Lab
+15. AI in the University — Teaching, Learning, and Institutional Transformation
+16. Ethics, Reproducibility, and the Future of AI in Science
 
-### VI. rész: Szakterületi alkalmazások
-17. AI a precíziós mezőgazdaságban
-18. AI a hidroinformatikában
-19. AI a térinformatikában
+### Part VI: Domain Applications
+17. AI in Precision Agriculture
+18. AI in Hydroinformatics
+19. AI in Geoinformatics
 
-### Függelékek
-- A. függelék: AI kutatási környezet beállítása
-- B. függelék: Prompt-könyvtár kutatóknak (50+ prompt)
-- C. függelék: Források és további olvasmányok
-- Szójegyzék (Glosszárium, 55+ fogalom)
+### Appendices
+- A: AI Research Environment Setup Guide
+- B: Prompt Library for Researchers (50+ prompts)
+- C: Resources and Further Reading
+- Glossary (55+ terms with Hungarian explanations)
 
 ---
 
-## Gyors indítás
+## Quick Start
 
-### Előfeltételek
-- Python 3.11+ (conda ajánlott)
+### Prerequisites
+- Python 3.11+ (conda recommended)
 - Node.js 18+
-- Gemini API kulcs ([aistudio.google.com](https://aistudio.google.com/apikey))
+- Gemini API key ([aistudio.google.com](https://aistudio.google.com/apikey))
 
-### Telepítés
+### Installation
 
 ```bash
-# Klónozás
+# Clone
 git clone https://github.com/Nagyhoho1234/agentic-ai-book.git
 cd agentic-ai-book
 
-# Conda környezet létrehozása
+# Create conda environment
 conda create -n aitutor python=3.11 -y
 conda activate aitutor
 
-# Backend függőségek
+# Install backend dependencies
 cd agentic-ai-tutor
 pip install -r requirements.txt
 
-# Gemini API kulcs beállítása
+# Set Gemini API key
 echo "GEMINI_API_KEY=your-key-here" > .env
 
-# Fejezetek indexelése
+# Index chapters into vector database
 python -m backend.rag.ingest
 
-# Backend indítása
+# Start backend
 uvicorn backend.main:app --host 0.0.0.0 --port 8000
 
-# Frontend indítása (új terminálban)
+# Start frontend (new terminal)
 cd frontend
 npm install
 npm run dev
 ```
 
-A platform elérhető a `http://localhost:5173` címen.
+The platform will be available at `http://localhost:5173`.
 
 ---
 
-## Projektstruktúra
+## Project Structure
 
 ```
 agentic-ai-book/
-├── chapters/hu/              # 19 fejezet + előszó + függelékek (magyar)
+├── chapters/hu/              # 19 chapters + preface + appendices (Hungarian)
 │   ├── ch00_eloszo.md
 │   ├── ch01_ai_forradalom.md
 │   ├── ...
@@ -151,55 +157,53 @@ agentic-ai-book/
 │   ├── appendix_a_kornyezet.md
 │   ├── appendix_b_prompt_konyvtar.md
 │   └── appendix_c_forrasok.md
-├── agentic-ai-tutor/         # Interaktív webalkalmazás
+├── agentic-ai-tutor/         # Interactive web application
 │   ├── backend/              # FastAPI + Gemini + ChromaDB RAG
-│   │   ├── agents/           # Szókratikus, kvíz, RAG ágensek
-│   │   ├── rag/              # Chunker, retriever, concept graph
-│   │   └── student/          # Tudáskövetés, munkamenet-kezelés
+│   │   ├── agents/           # Socratic, quiz, RAG agents
+│   │   ├── rag/              # Chunker, retriever, concept graph (99 concepts)
+│   │   └── student/          # Knowledge tracking, session management
 │   ├── frontend/             # React + Vite + Tailwind
-│   └── data/                 # Kvíz-kérdések (209 db, 4 típus)
-├── examples/                 # Futtatható kódpéldák
-├── research/                 # Egyetemi kutatási jelentések (5 db)
-├── BOOK_PLAN_v3.md           # Aktív könyvterv (forrástérképpel)
-├── CLAUDE.md                 # Projekt-utasítások
-├── CITATION.cff              # Zenodo hivatkozás
-├── LICENSE                   # MIT licenc
-└── README.md                 # Ez a fájl
+│   └── data/                 # Quiz questions (209, 4 types)
+├── CITATION.cff              # Zenodo citation metadata
+├── LICENSE                   # MIT License
+└── README.md                 # This file
 ```
 
 ---
 
-## Szakterületi kontextus
+## Domain Context
 
-A könyv a Debreceni Egyetem AI-átállásának támogatására készült, és három szakterületi alkalmazást mutat be részletesen:
+This book was developed to support the AI transition at the **University of Debrecen** (Hungary),
+aligned with Hungary's National AI Strategy 2025-2030. Three domain applications are presented
+in detail, drawing from the author's existing textbooks:
 
-| Szakterület | Fejezet | Forrás tankönyv |
+| Domain | Chapter | Source Textbook |
 |---|---|---|
-| 🌾 Precíziós mezőgazdaság | 17. fejezet | [precagri](https://github.com/Nagyhoho1234/precagri) |
-| 💧 Hidroinformatika | 18. fejezet | [maidment-hidroGIS](https://github.com/Nagyhoho1234/maidment-hidroGIS) |
-| 🗺️ Térinformatika | 19. fejezet | [gis-konyv2025](https://github.com/Nagyhoho1234/gis-konyv2025) |
+| 🌾 Precision Agriculture | Ch. 17 | [precagri](https://github.com/Nagyhoho1234/precagri) |
+| 💧 Hydroinformatics | Ch. 18 | [maidment-hidroGIS](https://github.com/Nagyhoho1234/maidment-hidroGIS) |
+| 🗺️ Geoinformatics | Ch. 19 | [gis-tutor](https://github.com/Nagyhoho1234/gis-tutor) |
 
 ---
 
-## Technológiai stack
+## Tech Stack
 
-| Komponens | Technológia |
+| Component | Technology |
 |---|---|
 | Frontend | React 19 + Vite + Tailwind CSS |
 | Backend | FastAPI + Python 3.11 |
 | LLM | Google Gemini (Flash/Pro) |
-| Embedding | all-MiniLM-L6-v2 (sentence-transformers) |
-| Vektor DB | ChromaDB |
-| Adatbázis | SQLite (aiosqlite) |
+| Embeddings | all-MiniLM-L6-v2 (sentence-transformers) |
+| Vector DB | ChromaDB |
+| Database | SQLite (aiosqlite) |
 
 ---
 
-## Hivatkozás
+## Citation
 
 ```bibtex
 @software{feher2026agenticai,
   author       = {Fehér, Zsolt Zoltán},
-  title        = {A kutatási célú ágentikus AI 2026-ban — Helyzetkép és iránymutató},
+  title        = {Agentic AI for Scientific Research in 2026 — Status Report and Guidelines},
   year         = {2026},
   publisher    = {GitHub},
   url          = {https://github.com/Nagyhoho1234/agentic-ai-book},
@@ -209,17 +213,17 @@ A könyv a Debreceni Egyetem AI-átállásának támogatására készült, és h
 
 ---
 
-## Licenc
+## License
 
-MIT License — lásd [LICENSE](LICENSE).
+MIT License — see [LICENSE](LICENSE).
 
 ---
 
-## Készítette
+## Author
 
 **Fehér Zsolt Zoltán**
-Debreceni Egyetem
+University of Debrecen
 ORCID: [0009-0007-6659-4197](https://orcid.org/0009-0007-6659-4197)
 
-*Ez a könyv és platform AI-eszközök (Claude, ChatGPT, Codex) segítségével készült —
-maga is demonstrációja annak a tézisnek, amelyet képvisel.*
+*This book and platform were developed with the assistance of AI tools (Claude, ChatGPT, Codex) —
+itself a demonstration of the thesis it advocates.*
