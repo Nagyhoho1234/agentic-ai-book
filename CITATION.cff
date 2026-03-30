@@ -1,0 +1,51 @@
+cff-version: 1.2.0
+title: "A kutatási célú ágentikus AI 2026-ban — Helyzetkép és iránymutató"
+message: "If you use this software or textbook, please cite it as below."
+type: software
+authors:
+  - family-names: "Fehér"
+    given-names: "Zsolt Zoltán"
+    orcid: "https://orcid.org/0009-0007-6659-4197"
+    affiliation: "University of Debrecen"
+repository-code: "https://github.com/Nagyhoho1234/agentic-ai-book"
+url: "https://github.com/Nagyhoho1234/agentic-ai-book"
+license: MIT
+version: "1.0.0"
+date-released: "2026-03-30"
+keywords:
+  - agentic AI
+  - artificial intelligence
+  - scientific research
+  - AI for scientists
+  - prompt engineering
+  - RAG
+  - digital twins
+  - AI agents
+  - precision agriculture
+  - hydroinformatics
+  - GIS
+  - geoinformatics
+  - machine learning
+  - university education
+  - AI transition
+  - Hungarian
+  - interactive learning
+  - AI tutoring
+  - Claude Code
+  - GitHub Copilot
+  - KNIME
+  - n8n
+  - University of Debrecen
+abstract: >-
+  A Hungarian-language AI-powered interactive learning platform and e-book
+  covering the complete journey from conversational AI to autonomous research
+  agents for scientists. 19 chapters (~100,000 words) organized in 6 parts:
+  AI foundations, coding assistants, domain-specific AI (RAG, digital twins),
+  agentic AI systems, institutional adoption, and domain applications
+  (precision agriculture, hydroinformatics, geoinformatics). Features include
+  a full book reader with markdown and LaTeX rendering; RAG-powered chat;
+  209 pre-generated quiz questions (4 types: MCQ, T/F, fill-blank, essay);
+  interactive concept map (99 concepts); 50+ prompt templates; and domain
+  examples from the author's existing textbooks. Developed to support the
+  AI transition at the University of Debrecen, aligned with Hungary's
+  National AI Strategy 2025-2030.
