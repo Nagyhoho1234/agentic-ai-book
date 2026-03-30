@@ -949,6 +949,18 @@ Néhány ötlet, hogyan teheted AI-hozzáférhetővé a kutatási infrastruktúr
 | Műszer-logfájlok | Utolsó mérés, hibakeresés, állapot-ellenőrzés |
 | Irodalomjegyzék (BibTeX) | Referencia-keresés, idézet formázása |
 
+> **💧 Szakterületi példa: Minimális működő hidrológiai ágens építése**
+>
+> A fejezet Python-kódpéldával mutatja be, hogyan építhető minimális hidrológiai ágens: az LLM-et eszközökkel (modellfuttató, adatolvasó, statisztikai kiértékelő) kapcsoljuk össze orkesztrációs keretrendszerben, és a gondolkodási lánc naplózásával biztosítjuk az auditálhatóságot. Az eszköz-API tervezés, a hibakezelés és a naplózás a megbízható működés három pillére. Ez a megközelítés bármely szakterületi ágensre adaptálható: a lényeg az LLM + eszközök + orkesztráció háromszög.
+>
+> *Forrás: hidrogis 24. fejezet (24.12 „Saját hidrológiai ágens építése")*
+
+> **🗺️ Szakterületi példa: Geoinformatikai eszköztár tervezése LLM-hez**
+>
+> Az Autonomous GIS eszköztárának tervezésénél 15–30 jól definiált eszköz az optimális: STAC-kereső, pufferelő, zonális statisztikát számító, térképgeneráló és CRS-validáló — mindegyiket JSON schemával írjuk le az LLM számára. A hierarchikus szervezés és az egyértelmű leírások biztosítják, hogy az AI-ágens a megfelelő eszközt válassza a feladathoz. Ez a minta közvetlenül alkalmazható az MCP-szerverek eszközdefiniálásakor is.
+>
+> *Forrás: gis 22. fejezet (21.4.1 „Az LLM és a szoftverkörnyezet kapcsolata: tool use")*
+
 ---
 
 ## 13.6 Megosztás GitHub-on dokumentációval

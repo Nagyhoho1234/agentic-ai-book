@@ -1,5 +1,15 @@
 # 3. fejezet: AI a tudományos írásban és kommunikációban
 
+> **Fejezet-informacio**
+> - **Kinek szol:** Kutatoknak es hallgatoknak, akik angol nyelvu cikkeket, palyazatokat vagy disszertaciot irnak
+> - **Eloismeretek:** 2. fejezet (promptolasi alapok)
+> - **Amit megtanulsz:**
+>   - AI-val tamogatott irodalomattekintes es reskutatas
+>   - Kezirat szerkesztese, stilisztikai csiszolasa es lektoralasa AI-val
+>   - Biraloi valaszok es tudomanyos kommunikacio keszitese
+> - **Szukseges eszkozok:** Browser only
+> - **Kapcsolodo fejezetek:** 2. fejezet (promptolas), 16. fejezet (etika es szerzoi integritas)
+
 ## Nyitó jelenet: Hajnali három, és a határidő holnap van
 
 Képzeld el a következő helyzetet. Nóra, egy debreceni környezettudományi kutató, három éve dolgozik a Tisza mikroplasztik-szennyezettségéről szóló kutatásán. Az eredmények megvannak, az adatok tiszták, a konklúzió erős. De a kéziratot az *Environmental Science & Technology*-nak kell benyújtania — angolul, anyanyelvi szinten, a folyóirat sajátos formátumában és hangnemében. Nóra angolul jól olvas, konferenciákon előad, de egy 8000 szavas kézirat stilisztikai csiszolása más kategória. A professzionális lektorálás 400-800 euró, a határidő pedig holnap.
@@ -50,6 +60,9 @@ Amikor sok cikket kell gyorsan áttekintened, az AI „szkennelő" képessége k
 
 Az LLM képes a „skimming and scanning" stratégiát alkalmazni — gyorsan azonosítja a főbb pontokat (skimming), majd konkrét adatokat keres (scanning). Ahogy Han és szerzőtársai (2024) megállapították, ez a képesség különösen hasznos az irodalomáttekintés szűrési fázisában, amikor 50-100 cikk relevanciáját kell eldöntened.
 
+> **Ne csinalld!**
+> Ne engedd, hogy az AI irja meg a keziratod erdemben uj reszet (bevezetes, targyalas, konkluzio) a te kozremeukodésed nelkul. Az AI remek szerkeszto, stilisztikai tanaacsado es osszefoglalo — de ha a gondolatmenetet is o irja, az a te tudomanyos hangod eltuneseet jelenti, es a biralok ezt eszik meg fogjak. Hasznald szerkesztesre, ne szerzosegre.
+
 ### Kutatási rések azonosítása
 
 Ez az AI egyik legértékesebb képessége az irodalomfeldolgozásban — és egyben az egyik legkockázatosabb. Kérheted:
@@ -73,6 +86,12 @@ Klasszikus példa: a „mikroplasztik transzport folyóvizekben" témát a hidro
 Ahogy az OECD (2023) jelentése is kiemeli, a szemantikus elemzésen alapuló eszközök képesek olyan releváns cikkeket is megtalálni, amelyeket a kulcsszavas keresés elvétene — éppen azért, mert megértik a szöveg *jelentését*, nem csak a benne szereplő szavakat.
 
 **Tipp:** Olyan AI-alapú irodalomkereső eszközök, mint a Semantic Scholar, Elicit, Consensus vagy a Connected Papers, kimondottan erre a célra készültek. Használd ezeket a hagyományos adatbázisok (Scopus, Web of Science) kiegészítéseként, nem helyettesítéseként.
+
+> **🌾 Szakterületi példa: Tudáskinyerés a mezőgazdasági szakirodalomból**
+>
+> A mezőgazdasági kutatásban évente több ezer tudományos cikk jelenik meg a növénytermesztésről, és egyetlen kutató képtelen mindezt feldolgozni. Az NLP-rendszerek képesek ezekből strukturált tudást kinyerni — például a konkrét tápanyag-dózis és hozamválasz összefüggéseket (pl. „a cink 0,5%-os lombtrágyaként történő kijuttatása 12%-kal növelte a búzahozamot meszes talajokon") — és kereshető tudásbázisba rendezni. Ez a tudásbázis a döntéstámogató rendszerek és a kutatói irodalomfeldolgozás alapja: a fenti diszciplínák közötti kapcsolatok feltárásának agrár-specifikus megvalósulása.
+>
+> *Forrás: precagri 15.7.2 „Tudáskinyerés és döntéstámogatás"*
 
 ---
 

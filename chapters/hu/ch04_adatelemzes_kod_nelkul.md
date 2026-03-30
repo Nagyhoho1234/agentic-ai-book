@@ -1,5 +1,15 @@
 # 4. fejezet: AI-vel végzett adatelemzés — Kódolás nélkül
 
+> **Fejezet-informacio**
+> - **Kinek szol:** Nem-programozo kutatoknak, akik tablazatos adatokkal dolgoznak
+> - **Eloismeretek:** 2. fejezet (promptolas)
+> - **Amit megtanulsz:**
+>   - Adatfajlok feltoltese es felfedezo elemzese chat-feluleten
+>   - Statisztikai elemzesek es vizualizaciok termeszetes nyelven
+>   - Az AI-alapu adatelemzes korlatai es mikor kell kodolasra valtani
+> - **Szukseges eszkozok:** Browser only
+> - **Kapcsolodo fejezetek:** 5. fejezet (kodolasi asszisztensek), 7. fejezet (pipeline-ok), 8. fejezet (vizualis programozas)
+
 ## Nyitó jelenet: Tízezer sor, egy délután
 
 Képzeld el a következő helyzetet. Hétfő reggel, és a kezedben van egy Excel-fájl 10 000 sorral. A sorok egy kétéves klinikai vizsgálat betegadatait tartalmazzák: demográfiai változók, laboreredmények, kezelési csoportok, időpontok. A főnököd azt kéri, hogy szerdára legyen egy előzetes elemzés a csoportértekezletre. Régebben ilyenkor vagy SPSS-t indítottál volna (ha van rá licensz), vagy megkértél volna egy statisztikus kollégát, vagy napokat töltöttél volna Excel pivot-táblákkal és kézi képletekkel.
@@ -37,6 +47,9 @@ Mielőtt feltöltöd a fájlt, végezz el néhány egyszerű ellenőrzést:
 - **Egy változó = egy oszlop.** Ne zsúfolj két mérést egy cellába (pl. "120/80" — inkább két oszlop: szisztolés, diasztolés).
 - **Egységes formátum.** Ha a dátumok hol "2024.01.15", hol "01/15/2024" formátumban vannak, az AI megbirkózik vele, de lassítja és bizonytalanabbá teszi az elemzést.
 - **Érzékeny adatok.** Ha betegadatokkal dolgozol, gondolj a GDPR-ra. Anonimizálj a feltöltés előtt (lásd 14. fejezet).
+
+> **Ne csinalld!**
+> Ne tolts fel erzekeny vagy szemelyesitett betegadatokat, hallgatoi adatokat vagy vallalati uuzleti adatokat kozvetlenul egy felhobe alapu AI chatbotba (ChatGPT, Claude, Gemini) anonimizalas nelkul. A GDPR es az egyetemi adatvedelmi szabalyzatok ezt tiltjak. Eloszor mindig taavolitsd el a szemelyazonositora alkalmas mezoket (nev, TAJ-szam, belepesi azonosito).
 
 **2. lépés: Töltsd fel és ismerkedj**
 
@@ -153,6 +166,18 @@ Az AI EDA egyik legnagyobb ereje, hogy **előítéletmentesen** nézi az adatot.
 2. **Meglepetés.** Ha valami váratlan mintázatot talál (pl. egy szezonális ciklus a pH-ban, amit nem vártál), az új kutatási kérdéshez vezethet.
 
 > **Gyakorlati tanács:** Az EDA végén mindig kérd az AI-t: *"Milyen mintázatokat találtál, amiket eddig nem említettem? Van valami meglepő az adatokban?"* Ez a nyitott kérdés gyakran hoz felszínre olyan összefüggéseket, amelyekre nem gondoltál.
+
+> **🌾 Szakterületi példa: Hozamtérkép-adatok tisztítása és feltáró elemzése**
+>
+> A precíziós mezőgazdaságban a nyers hozamtérképek mindig tartalmazzák a kombájn felfutási hibáit, a GPS-eltolódásokat és a menetek átfedéséből adódó dupla számolásokat. A tipikus adattisztítási folyamat négy-öt lépésből áll: lehetetlen értékek eltávolítása, menetek elején/végén rögzített pontok kiszűrése, 2-3 szóráson túli lokális kiugró értékek szűrése, és térbeli szűrők alkalmazása. A nyers hozamadatokból negatív hozamok, GPS-eltolódás és szemnedvesség-torzítás kiszűrése szükséges. Az AI-asszisztens lépésről lépésre végigvezetheti a kutatót ezen a szűrési folyamaton, kód nélkül, természetes nyelvű párbeszédben.
+>
+> *Forrás: precagri 14.4 „Adattisztítás és minőség-ellenőrzés"*
+
+> **🌾 Szakterületi példa: Hidrológiai adatvizsgálat és józansági ellenőrzés**
+>
+> Egy hidrológiai AI-ágens a Zala folyó 11 évnyi adatát betöltve automatikusan kiszámítja a lefolyási tényezőt (0,23), a fajlagos vízhozamot (164 mm/év), azonosítja a 12 hiányzó napot, és összeveti az értékeket a közép-európai normálértékekkel — mindez kód nélkül, természetes nyelvi párbeszédben. A diagnosztikus statisztikák azonnali kiszámítása és a regionális összehasonlítás pontosan az a fajta exploratív adatelemzés, amelyet ez a fejezet bemutat: a kutató kérdez, az AI elemez és kontextusba helyez.
+>
+> *Forrás: hidrogis 24.4.2 „1. lépés: Az ágens beolvassa és megvizsgálja az adatokat"*
 
 ---
 
@@ -345,6 +370,12 @@ Képzeld el, hogy van 5 évnyi napi PM10-koncentráció adatod Debrecenből:
 - Az AI automatikusan választ modellt, de nem mindig a legjobbat. Ha van domain-tudásod (pl. tudod, hogy a szálló por koncentrációt a fűtési szezon és a meteorológiai viszonyok is befolyásolják), mondd el az AI-nak.
 - Az előrejelzés bizonytalansága (konfidencia-intervallum) idővel nő — a 3 hónapos előrejelzés sokkal bizonytalanabb, mint az 1 hetes.
 - Hosszú és összetett idősoroknál (pl. másodperces EEG-adatok) a chat-felület elérhet a korlátait (lásd 4.7 szekció).
+
+> **🌾 Szakterületi példa: Kezelési zónák lehatárolása térbeli klaszterezéssel**
+>
+> Egy mezőgazdasági szaktanácsadó öt adatréteget — hozamtérkép, talaj-EC, domborzat, NDVI és talajminta — visz fel egy GIS-be, és a térbeli klaszterelemzés 3-5 kezelési zónát tár fel, amelyek alapján a változó dózisú műtrágya-kijuttatás megtervezhető. A tipikus munkafolyamat a táblahatártól az adatrétegek importálásán és a közös rácsfelbontásra interpoláláson át a klaszterező algoritmus futtatásáig tart, végül előíró térkép generálása következik a változó dózisú kijuttatáshoz (VRT). Az AI-asszisztens természetes nyelvű párbeszéddel végigkíséri az elemzést — a kutatónak nem kell ismernie a klaszterezési algoritmus részleteit.
+>
+> *Forrás: precagri 14.5 „Térbeli adatintegráció és térinformatikai munkafolyamatok"*
 
 ---
 

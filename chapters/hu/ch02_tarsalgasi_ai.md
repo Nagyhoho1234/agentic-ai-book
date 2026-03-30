@@ -1,5 +1,15 @@
 # 2. fejezet: Társalgási AI — Az első kutatási partnered
 
+> **Fejezet-informacio**
+> - **Kinek szol:** Kutatoknak, oktatoknak es hallgatoknak, akik elkezdenenek AI chatbotokat hasznalni a munkahoz
+> - **Eloismeretek:** 1. fejezet (ajanlott, de nem kotelezo)
+> - **Amit megtanulsz:**
+>   - Hogyan mukodik egy nagy nyelvi modell (tokenek, kontextusablak, hallucianció)
+>   - A negy nagy platform (Claude, ChatGPT, Gemini, Copilot) osszehasonlitasa
+>   - Hatekony promptolasi technikak es mintak tudomanyos munkara
+> - **Szukseges eszkozok:** Browser only
+> - **Kapcsolodo fejezetek:** 1. fejezet (AI alapok), 3. fejezet (tudomanyos iras), 16. fejezet (etika)
+
 > *„A helyes kérdés feltevése gyakran fontosabb, mint a válasz megtalálása."*
 > — Albert Einstein (gyakran idézett parafrázis)
 
@@ -7,6 +17,7 @@
 
 ## 2.1 Amikor a saját szakterületed nem elég
 
+<!-- [SZERKESZTOI MEGJEGYZES / GPT-5.4 review] "Kepzeld el a kovetkezo helyzetet" — ez az 1. fejezet utan a masodik ilyen nyitas. A minta (kepzeld el + jelenet + AI mint megoldas) ismetlodik a konyv szinte minden fejezetenek elejen; a monotonia elkerulese erdekeben fontold meg alternativ bevezeto formulak hasznalatat nehany fejezetben. -->
 Képzeld el a következő helyzetet. Tiszai ökológus vagy, évek óta a folyó makrogerinctelen-faunáját kutatod. Egy hétfő reggel a projektvezető bejelenti: a következő pályázatban izotóphidrológiai adatokkal is alá kell támasztani az eredményeket. A deutérium- és oxigén-18-arányok, a keverési modellek, a Rayleigh-frakcionáció — mindez teljesen idegen terep. Három heted van, mire a pályázati tervezetet le kell adni.
 
 Mit csinálsz?
@@ -60,6 +71,9 @@ A hallucinációk nem ritka hibák — a modell működési elvének közvetlen 
 - **Hamis tudományos állítások.** Egy modell képes meggyőzően „levezetni", miért oldódik az arany sósavban (valójában nem oldódik — királyvízben igen).
 
 A hallucináció legveszélyesebb formája az, amelyik *majdnem* igaz. Ha a modell teljesen értelmetlen dolgot mond, észreveszed. De ha a válasz 95%-ban korrekt, és a maradék 5% finoman hibás — az a tudományos munkában katasztrofális lehet.
+
+> **Ne csinalld!**
+> Soha ne illeszd be kozvetlenul egy AI-valaszt tudomanyos kéziratba vagy palyazatba az irodalmi hivatkozasok egyenkenti ellenorzese nelkul. Az LLM-ek rendszeresen generälnak nem letezo cikkeket, hamis DOI-kat es kitalalt szerzokat. Egyetlen leleplezo hamis hivatkozas a kéziratodban a biralok szemeben az egesz munka hitelességet alarassa.
 
 ---
 
@@ -430,6 +444,7 @@ A válasz után valami ilyesmit látsz:
 > 2. A CO₂ parciális nyomása a talajban 10-100× a légköri érték — ✓ ellenőrizendő
 > 3. A bükki barlangok uralkodó kőzete triász mészkő — ✓ ellenőrizendő helyi geológiai adatokkal
 
+<!-- [SZERKESZTOI MEGJEGYZES / GPT-5.4 review] "te felelősséged" — a "te maradsz a felelos" vezermmotivum ismetlodik a konyvben (lasd meg 2.7.5 "masodpilota" szekció es tobb kesobbi fejezet). Erdemes ellenorizni, hogy az ismetlesek uj kontextust adnak-e, vagy tartalmilag redundansak. -->
 **Mire figyelj:** Ez a mintázat nem garantálja, hogy a tények helyesek — csak annyit tesz, hogy *explicitté* teszi őket. A tényleges ellenőrzés a te felelősséged. De már az is hatalmas segítség, ha tudod, *mit* kell ellenőrizni, ahelyett, hogy vakon elfogadnád az egész választ.
 
 ---
@@ -509,6 +524,12 @@ a válasz épül, és amelyeket érdemes ellenőrizni. (FACT CHECK LIST)
 4. A **Fact Check List** átláthatóvá teszi, mit kell utána ellenőrizni.
 
 **Továbbfejlesztés:** Ha a válasz megérkezett, használd a **Question Refinement** mintázatot, hogy a felmerülő részkérdéseket pontosítsd, majd az **Alternative Approach** mintázattal kérdezz rá a Sentinel-2-n kívüli opciókra is — de *tudatosan*, miután a fő megközelítést megértetted.
+
+> **🌾 Szakterületi példa: Természetes nyelvű GIS-lekérdezések**
+>
+> Az Autonomous GIS-ben a térinformatikus nem SQL-t vagy Python-kódot ír, hanem természetes nyelven kérdez: „Melyik Natura 2000 területen nőtt a beépítettség 2020 óta?" — és a rendszer maga generálja a lekérdezést, futtatja az elemzést, és megjeleníti az eredményt térképen. Az egyszerű kérdéstől („mely települések vannak 500 m-en belül?") az összetett tér-idő elemzésig a felhasználó természetes nyelven kommunikál a GIS-sel. Ez a promptolási minták közvetlen alkalmazása: a Persona, Recipe és Context Manager kombinációja a térinformatikai szoftverbe építve.
+>
+> *Forrás: gis 21.9 „Természetes nyelvű GIS-lekérdezések: részletes példák"*
 
 ---
 

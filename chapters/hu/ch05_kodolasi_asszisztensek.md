@@ -1,5 +1,15 @@
 # 5. fejezet: AI kódolási asszisztensek — Kód írása programozás nélkül
 
+> **Fejezet-informacio**
+> - **Kinek szol:** Kutatoknak, akik ismetlodo adatfeldolgozasi feladatokat szeretnenek automatizalni
+> - **Eloismeretek:** 2. fejezet (promptolas), 4. fejezet (ajanlott)
+> - **Amit megtanulsz:**
+>   - Hogyan generaltass kodot AI-val termeszetes nyelvu utasitasokkal
+>   - A "rendezo" mentalitas: te mondod meg mit, az AI irja a kodot
+>   - Python, Git es futtato kornyezetek alapfogalmai nem-programozoknak
+> - **Szukseges eszkozok:** Browser + terminal (Python telepitese szukseges)
+> - **Kapcsolodo fejezetek:** 4. fejezet (no-code elemzes), 7. fejezet (pipeline-ok), 8. fejezet (vizualis programozas)
+
 ---
 
 ## 5.1 Az 500 CSV-fájl problémája
@@ -62,6 +72,9 @@ Te vagy a rendező. Az AI a kódíró. A te feladatod:
 A szaktudás a tiéd — te tudod, hogy a vízszint nem lehet negatív, hogy a pH 0 és 14 között mozog, hogy a hőmérséklet decemberben Debrecenben nem 35°C. Az AI tudja, hogyan kell Python kódot írni. **Együtt vagytok hatékonyak.**
 
 ---
+
+> **Ne csinalld!**
+> Ne futtass le vakon az AI altal generalt kodot anelkul, hogy legalabb atnezned, mit csinal. Nem kell minden sort ertened, de nezd meg: milyen fajlokat olvas/ir, torol-e valamit, kuld-e adatot a halozatra. Egy rosszul fogalmazott prompt eredmenyekeppen az AI generalhat olyan kodot, amely felulirja a meglevo adatfajljaidat vagy tobbe teszi oket olvashatatlanná.
 
 ## 5.3 Alapfogalmak — amit tudnod kell, mielőtt elkezdjük
 
@@ -613,6 +626,12 @@ if errors:
 
 Ez a szkript percek alatt feldolgozza az 500 fájlt, amit Mária kézzel hetekig csinált volna. És figyeld meg: **a domain-tudás beépült a promptba** — te tudod, hogy a vízszint nem lehet negatív vagy 1000 cm fölötti, az AI pedig ezt programozási logikává alakította.
 
+> **🌾 Szakterületi példa: Vízgyűjtő-lehatárolási szkript automatizálása**
+>
+> A hidrológiai térinformatikában a vízgyűjtő-lehatárolás 6-8 egymásra épülő GIS-lépésből áll: DEM feltöltés, folyásirány-meghatározás, folyásfelhalmozás, küszöbérték-alkalmazás, vízgyűjtő-lehatárolás, és végül vektorizálás. Az AI-kódolási asszisztens egyetlen promptból generálja a teljes ArcPy- vagy PyQGIS-szkriptet, amely akár 23 866 részvízgyűjtőt is feldolgoz egyetlen éjszaka alatt. A kötegelt feldolgozás ugyanazt a „for ciklus a bemeneti fájlokon" logikát követi, mint a fenti 500 CSV-s példa — csak itt DEM-ek az inputok és vízgyűjtő-poligonok az outputok.
+>
+> *Forrás: hidrogis 12.7 „Vízgyűjtő-lehatárolási szkript felépítése lépésről lépésre"*
+
 ### 5.6.5 Kapcsolódás adatbázishoz vagy API-hoz
 
 **A helyzet:** Le akarod tölteni a napi meteorológiai adatokat az Open-Meteo API-ról Debrecenre.
@@ -759,6 +778,12 @@ Figyeld meg a mintázatot:
 5. **Az AI javít**.
 
 Ebben a ciklusban a **te tudásod a szűk keresztmetszet, nem a programozási képességed**. Ha tudod, hogy a pH 0-14 között van, ezt be tudod építeni. Ha tudod, hogy Debrecenben januárban nem eshet 200 mm csapadék, ezt is. Az AI a technikai megvalósítást intézi.
+
+> **🌾 Szakterületi példa: NDVI-számítás és vegetációs index kódgenerálás**
+>
+> A geoinformatikában az AI-kódolási asszisztens teljes rasterio-szkriptet generál: Sentinel-2 felvétel betöltése, NDVI-számítás (NDVI = (NIR - Red) / (NIR + Red)), maszkolt zonális statisztika, eredmény mentése GeoTIFF-be. Ha a kód hibás, a hibaüzenet alapján 2-3 iterációban javítja — pontosan a „leírd, generáld, teszteld, finomítsd" ciklust követve. A GeoPandas-, rasterio- és Google Earth Engine-munkafolyamatok tipikus mintáit az LLM-ek már jól ismerik, így a sandbox végrehajtás és iteratív javítás gyorsan eredményre vezet.
+>
+> *Forrás: gis 21.4.2 „Kódgenerálás: rugalmasság és kockázat"*
 
 ---
 

@@ -534,6 +534,24 @@ A hallgatók ugyanazt a feladatot oldják meg három különböző prompting-str
 
 A hallgatók létrehoznak egy testreszabott AI-instrukciót (system prompt) a saját szakterületükre, tesztelik más hallgatókkal, dokumentálják az iterációkat, és prezentálják a végeredményt. Ez fejleszti a kommunikációs készséget, a szakterületi tudás artikulálásának képességét és a rendszertervezési gondolkodást.
 
+> **🌾 Szakterületi példa: Képalapú növénybetegség-felismerés mint oktatási projekt**
+>
+> A növénybetegség-felismerés kiváló hallgatói projekt: a MobileNet architektúra transfer learninggel, 10 000 címkézett levélfotón betanítva 95%+ pontossággal azonosítja a burgonyavészt — és az eredmény okostelefonon is fut, a gazdálkodó kezében. A projekt lefedi a teljes gépi tanulási munkafolyamatot: adatgyűjtés, címkézés, modellválasztás, tanítás, értékelés és deployálás. A hallgatók a valós alkalmazhatóságot is megtapasztalják.
+>
+> *Forrás: precagri 15. fejezet (15.5.1 „Képalapú betegségfelismerés")*
+
+> **🗺️ Szakterületi példa: U-Net szemantikus szegmentálás oktatási esettanulmányként**
+>
+> A U-Net architektúra ideális mélytanulási oktatási példa: az encoder lépcsőzetesen csökkenti a felbontást, a decoder visszaállítja, a skip connectionök megőrzik a részleteket — a hallgatók Sentinel-2 felvételen felszínborítás-térképet készítenek, miközben a cross-entropy és Dice loss veszteségfüggvényeket is megértik. Az architektúra vizuálisan is jól tanítható, és a geoinformatikai alkalmazás motiváló kontextust ad a matematikai háttérnek.
+>
+> *Forrás: gis 21. fejezet (20.2.4 „Szemantikus szegmentálás: a U-Net architektúra")*
+
+> **🗺️ Szakterületi példa: Erdőtűz-kár U-Net szegmentálás**
+>
+> Az erdőtűz-kár becslése U-Net-tel praxis-közeli hallgatói projekt: a Sentinel-2 tűz előtti/utáni felvételekből a hálózat pixelszinten szegmentálja a leégett területet, és az eredmény összevethető a klasszikus dNBR-módszerrel. A projekt a távérzékelés, a mélytanulás és a környezetvédelem találkozásánál áll, és a hallgatók a módszer-összehasonlítás révén a kritikus értékelést is gyakorolják.
+>
+> *Forrás: gis 21. fejezet (20.12 „Erdőtűz-kár becslés U-Net-tel: részletes esettanulmány")*
+
 ---
 
 ## 15.3 Változásmenedzsment: Az intézményi átalakulás emberi oldala

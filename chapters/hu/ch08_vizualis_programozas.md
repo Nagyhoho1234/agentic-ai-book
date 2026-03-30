@@ -1,5 +1,15 @@
 # 8. fejezet: Vizuális programozás és munkafolyamat-tervezés
 
+> **Fejezet-informacio**
+> - **Kinek szol:** Vizualisan gondolkodo kutatoknak, akik kod nelkul szeretnenek automatizalni
+> - **Eloismeretek:** 4. fejezet (adatelemzes); a 7. fejezet hasznos, de nem kotelezo
+> - **Amit megtanulsz:**
+>   - Node-alapu vizualis programozas alapfogalmai
+>   - n8n, KNIME, LangFlow es Node-RED eszkozok hasznalata
+>   - Mikor valaszd a vizualis megkozelitest es mikor a hagyomanyos kodolast
+> - **Szukseges eszkozok:** Browser + terminal (n8n/KNIME telepites)
+> - **Kapcsolodo fejezetek:** 5. fejezet (kodolas), 7. fejezet (pipeline-ok), 12. fejezet (agensek epitese)
+
 ## Amikor a folyamatábra maga a program
 
 Képzeld el Katalint, egy ökológust a Debreceni Egyetem Természettudományi Karán. Katalin remekül ért a statisztikához, a kísérlettervezéshez és az adatértelmezéshez. Amikor megtervez egy kísérletet, mindig folyamatábrát rajzol: mi történik először, milyen döntési pontok vannak, hová kerülnek az adatok, hogyan lesz belőlük eredmény. A folyamatábrái precízek, logikusak, követhetők.
@@ -63,6 +73,12 @@ Szinte minden vizuális eszköz ugyanazt a mintát követi:
 ```
 
 Legyen szó munkafolyamat-automatizálásról (n8n), adatelemzésről (KNIME), LLM pipeline-okról (LangFlow) vagy IoT-ról (Node-RED) — az alapelv ugyanaz. Ha megtanulod az egyiket, a többit is gyorsan megérted.
+
+> **💧 Szakterületi példa: ModelBuilder → Python export a hidrológiában**
+>
+> A hidrológiai térinformatikában a ModelBuilder vagy a QGIS grafikus modellező „vizuális programozást" kínál: a kutató dobozokból és nyilakból építi fel a DEM → folyásirány → vízgyűjtő munkafolyamatot, majd egyetlen kattintással Python-szkriptre exportálja. Ez pontosan az a Trigger → Adatforrás → Feldolgozás → Kimenet minta, amit fentebb láttunk. A ModelBuilder-ben felépített vízgyűjtő-lehatárolási munkafolyamat vizuálisan átlátható, és a QGIS grafikus modellező nyílt forráskódú alternatívát kínál ugyanerre.
+>
+> *Forrás: hidrogis ch12, 12.11 „A ModelBuilder mint híd a szkripteléshez"*
 
 ---
 
@@ -496,6 +512,12 @@ A legjobb megközelítés ritkán "csak vizuális" vagy "csak kód". A gyakorlat
 - A KNIME-ban megépíted az adatfeldolgozási pipeline-t, de egy lépésben Python Snippet node-ot használsz egy speciális számításhoz
 - Az n8n-ben automatizálod a rendszeres feladatokat, de egy HTTP Request node-dal egy saját Python-szerveredre küldesz adatot
 - A LangFlow-ban prototípust építesz, majd a végleges verziót Python-kódként implementálod
+
+> **🗺️ Szakterületi példa: Plan-and-Execute architektúra GIS-feladatokhoz**
+>
+> Az Autonomous GIS Plan-and-Execute architektúrája először megjeleníti a teljes munkafolyamat-tervet — az adatletöltéstől az erdőborítottság-változási térkép generálásáig —, és a felhasználó jóváhagyása után automatikusan végrehajtja a hat lépést. Amikor a felhasználó azt kéri: „Készíts térképet a Dunántúl erdőborítottságának változásáról 2018–2024 között", az ágens egy hatlépéses tervet készít (megyepoligonok → WorldCover letöltés → erdő-maszk → zonális statisztika → változási térkép → összefoglaló), amelyet vizuálisan is megjelenít. Ez a vizuális tervező és kódalapú végrehajtás ötvözete a gyakorlatban.
+>
+> *Forrás: gis ch22, 21.3.2 „A Plan-and-Execute architektúra"*
 
 ---
 

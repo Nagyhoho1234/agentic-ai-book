@@ -96,6 +96,12 @@ Nem kell az egészet bevezetned egyszerre. Gondolkodj úgy, mint egy lépcsőn:
 | Az AI-nak hozzá kell férnie az adataidhoz | Konfiguráld az MCP-t | Kapcsolati |
 | Nagy számítási igény (GPU, HPC) | Lépj feljebb a számítási szinten | Számítási |
 
+> **🌾 Szakterületi példa: FMIS — farmirányítási információs rendszerek**
+>
+> A precíziós mezőgazdaságban a farmirányítási információs rendszer (FMIS) az AI-val felszerelt kutatólabor megfelelője: egyetlen platformon egyesíti a hozamtérképet, a műholdas NDVI-t, a talajszenzorokat és az időjárás-előrejelzést — és gépi tanulással generál kijuttatási ajánlásokat. A John Deere Operations Center, a Climate FieldView és hasonló felhőplatformok a gépekből, érzékelőkből, műholdakból és meteorológiai szolgálatokból származó adatokat egyetlen felületen egyesítik. Ez a modell bármely kutatólaborra adaptálható: az adatforrások integrálása az AI-hatékonyság alapja.
+>
+> *Forrás: precagri 14. fejezet (14.6 „Farmirányítási információs rendszerek")*
+
 ---
 
 ## Költségmenedzsment: a nullától a szuperszámítógépig
@@ -562,6 +568,12 @@ Az EUA "mikro-ambiciózus" megközelítését a laborodra alkalmazva:
 - Workflow-k finomhangolása a visszajelzések alapján
 - Új csapattagok betanítása a kialakult rendszerbe
 - Az AI-hatás első mérése (lásd a következő szakaszt)
+
+> **🌾 Szakterületi példa: Magyar egyetemek precíziós mezőgazdasági képzése**
+>
+> A MATE, a Debreceni és a Szegedi Egyetem precíziós mezőgazdasági programjai integrálják a távérzékelést, a drónüzemeltetést, a gépi tanulást és a farmmenedzsmentet — a magyar tapasztalat azt mutatja, hogy a képzés a technológia-elterjedés legnagyobb szűk keresztmetszete. A MATE szakirányú továbbképzése két féléves, és a távérzékeléstől a VRT-ig, az FMIS-ig ível. A csoporton belüli AI-tudás szintjei itt is érvényesek: az „érdeklődőtől" az „építőig" fokozatos a tanulási útvonal.
+>
+> *Forrás: precagri 20. fejezet (20.7 „Magyar kutatóintézetek és innováció")*
 
 ---
 

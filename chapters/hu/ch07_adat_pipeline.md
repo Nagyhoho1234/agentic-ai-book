@@ -1,5 +1,15 @@
 # 7. fejezet: Adat-pipeline-ok és automatizálás
 
+> **Fejezet-informacio**
+> - **Kinek szol:** Kutatoknak, akik ismetlodo adatfeldolgozasi munkafolyamatokat szeretnenek egyszer megirni es utana automatikusan futtatni
+> - **Eloismeretek:** 5. fejezet (kodolasi asszisztensek)
+> - **Amit megtanulsz:**
+>   - A pipeline koncepcio ot szakasza (bevitel, tisztitas, transzformacio, elemzes, kimenet)
+>   - Automatizalasi lehetosegek azonositasa a sajat munkafolyamatodban
+>   - Pipeline-epites Python-nal es Dagster-rel AI segitsegevel
+> - **Szukseges eszkozok:** Terminal + Python
+> - **Kapcsolodo fejezetek:** 5. fejezet (kodolas), 8. fejezet (vizualis programozas), 14. fejezet (AI labor)
+
 ## Minden reggel ugyanaz a tizenöt lépés
 
 Képzeld el Annát, aki a Debreceni Egyetem Meteorológiai Tanszékén dolgozik. Minden munkanapja ugyanúgy kezdődik. Reggel fél nyolckor bejelentkezik a gépére, és elindítja azt a tizenöt lépést, amit az elmúlt két évben minden egyes nap elvégzett:
@@ -70,6 +80,9 @@ Anna tizenöt lépése mind ebbe az öt szakaszba sorolható:
 Ha így bontod fel a saját munkafolyamatodat, azonnal láthatóvá válik, hol van automatizálási lehetőség --- és az a meglepő, hogy szinte mindenhol.
 
 ---
+
+> **Ne csinalld!**
+> Ne automatizald a pipeline-t mindaddig, amig a munkafolyamatot kézzel legalabb egyszer vegig nem csinaltad es nem dokumentaltad. Ha nem erted pontosan, mit csinal az egyes lepes, az automatizalas nem gyorsitja, hanem elrejti a hibakat. Elso lepes: ird le a folyamatot lepesrol lepesre. Masodik lepes: automatizald.
 
 ## Automatizálási lehetőségek azonosítása
 
@@ -175,6 +188,12 @@ Debrecenben és a Tiszántúlon különösen releváns az agrár-IoT: a precízi
 - **Szenzor-drift**: a műszer fokozatosan pontatlanná válik kalibrálás nélkül.
 - **Óriási mennyiség**: egy szenzor-hálózat naponta gigabájtokat termelhet.
 
+> **🌾 Szakterületi példa: Mezőgazdasági adatfolyam az érzékelőtől a döntésig**
+>
+> A precíziós mezőgazdaságban egyetlen vetőgép menet közben tucatnyi adatfolyamot generál (vetőmag-sűrűség, talajnyomás, sebesség, GPS-pozíció) — a pipeline az érzékelőktől a felhőplatformon keresztül a változó dózisú kijuttatási térképig automatizált, és az adattisztítás a teljes minőség kulcsa. Az adatok életciklusa végigköveti a gyűjtés → átvitel → tárolás → tisztítás → elemzés → döntés → visszacsatolás láncolatot. Egyetlen vetési művelet egyidejű adatfolyamokat generálhat a vetési tőszámról, a maglehelyezés egyenletességéről, a soregységek talajnyomásáról, a sebességről és az üzemanyag-fogyasztásról — másodperc alatti időközönként.
+>
+> *Forrás: precagri ch14, 14.1 „Az adatok életciklusa a precíziós mezőgazdaságban"*
+
 ---
 
 ## Tisztítás, validáció és minőségértékelés
@@ -250,6 +269,12 @@ Ezt a sémát (schema) a pipeline elején alkalmazod: ha az új adat nem felel m
 ```
 
 Ha a bejövő adatban a `temperature_c` oszlopban 999.9 jelenik meg (sok régi műszer így jelöli a hiányzó értéket), a séma-validáció elkapja, mert kívül esik a megengedett tartományon. Kézzel ezt könnyen elnézed --- automatikusan soha.
+
+> **🌾 Szakterületi példa: ISOBUS és ADAPT — formátumok átalakítása a pipeline-ban**
+>
+> Az agráradatok interoperabilitását az ADAPT keretrendszer biztosítja: köztes fordítórétegként bármely gépgyártó (John Deere, Case IH, AGCO) tulajdonosi adatformátumát képes olvasni — az AI-pipeline ezt a konverziót automatizálhatja. Az ISOBUS (ISO 11783) a gépek közötti kommunikáció szabványa, az ADAPT pedig nyílt forráskódú keretrendszer a különböző gyártók adatformátumainak konvertálásához — köztes fordítóréteg shapefile, GeoTIFF, CSV, LAS és tulajdonosi formátumok között. A formátum-standardizálás az adat-pipeline egyik legkritikusabb lépése.
+>
+> *Forrás: precagri ch14, 14.2 és 14.8 „Adatgyűjtés: formátumok, protokollok és szabványok"*
 
 ### Automatikus adatminőségi riportok
 
@@ -362,6 +387,12 @@ A pipeline lépései:
 3. **Minden napra**: beolvasás → régi kalibráció eltávolítása → új kalibráció alkalmazása → validáció → mentés a `processed/` mappába.
 4. **Checkpoint**: minden 100. nap után mentés.
 5. **Végső riport**: összesen hány mérés, hány javítva, mekkora a maximális eltérés a régi és új kalibráció között.
+
+> **💧 Szakterületi példa: Kötegelt vízgyűjtő-feldolgozás Pythonnal**
+>
+> A hidrológiai térinformatikában egy Python-pipeline ciklusban dolgozza fel az ország összes részvízgyűjtőjét: DEM feltöltés, folyásirány, vízgyűjtő-lehatárolás — eredménynaplózással és hibakezeléssel, egy éjszaka alatt. A kötegelt feldolgozás tipikus mintája a for ciklus a bemeneti DEM-fájlokon, ahol az eredményeket CSV-be naplózzuk. Magyarország összes részvízgyűjtőjének automatizált feldolgozása pontosan az a feladat, amely kézi munkával hónapokat venne igénybe, de egy jól megírt pipeline egy éjszaka alatt elvégzi.
+>
+> *Forrás: hidrogis ch12, 12.13 „Gyakorlati minták kötegelt feldolgozáshoz"*
 
 ---
 

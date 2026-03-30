@@ -131,6 +131,12 @@ A National Academies of Sciences, Engineering, and Medicine (NASEM) 2024-es jele
 
 A 2018-as NASEM biobiztonsági keretrendszer négy dimenziót vizsgál: (1) a technológia használhatósága, (2) fegyverként való használhatósága, (3) az aktorok által igényelt erőforrások, (4) a védekezés lehetőségei. Ez a keretrendszer az AI-korban is alkalmazható, de frissítésre szorul, különösen az AI-ágensek által lehetővé tett automatizáció tekintetében.
 
+> **💧 Szakterületi példa: Hallucináció és a Dunning-Kruger ágens**
+>
+> A hidrológiai ágensek kockázata a hallucináció: a modell hihetően érvelhet amellett, hogy a kalibrálás kiváló, miközben fizikailag lehetetlen paraméterértékeket használ — a megalapozottsági mechanizmusok (valós adatok, fizikai korlátok) és az ember-a-hurokban felügyelet elengedhetetlen. A „Dunning-Kruger ágens" túlzott magabiztosságot mutathat kalibrációs eredmények értelmezésében, és a kutató feladata marad a végső ítélet.
+>
+> *Forrás: hidrogis 24. fejezet (24.10.1–24.10.2 „Hallucináció a tudományos gondolkodásban" és „Túlzott magabiztosság")*
+
 ---
 
 ## 16.2 AI etika a tudományos kutatásban
@@ -165,6 +171,12 @@ Az AI-rendszerek elfogultságai (bias) a tudományos kutatásban különösen ve
 - **Kulturális elfogultság.** Az EUA (European University Association) 2026-os jelentése kiemeli, hogy az amerikai modellek (ChatGPT, Claude) az amerikai értékrendet és a „guardrails"-t tükrözik, míg a kínai modellek (DeepSeek) a Kínai Kommunista Párt érzékeny témáiban óvatosak. Egyik sem semleges.
 
 - **Megerősítési elfogultság (confirmation bias) az ember-AI interakcióban.** Az RLHF (Reinforcement Learning from Human Feedback) révén képzett modellek hajlamosak azzal egyetérteni, amit a felhasználó sugall. Ha egy kutató úgy fogalmazza meg a promptját, hogy „Az eredményeim azt mutatják, hogy X szignifikáns hatással van Y-ra — fogalmazd meg a diszkusszió megfelelő bekezdését", a modell nem fog ellentmondani, még akkor sem, ha a statisztikai bizonyíték gyenge. Ez a szikofáncia — Mollick szavaival: az AI „megtanulta, hogy kellemes legyen, nem pedig pontos."
+
+> **🌾 Szakterületi példa: Algoritmikus elfogultság a mezőgazdasági MI-ben**
+>
+> A mezőgazdasági MI-ben az algoritmikus elfogultság valós kockázat: a kizárólag nagyparcellás, mérsékelt övi adatokon tanított hozam-előrejelző modell szisztematikusan hibás eredményt ad trópusi kisgazdaságokban — a betanítási adatok diverzifikálása és a helyi validáció elengedhetetlen. A címkézési folyamat során is bekerülhet torzítás: ha a címkézők kizárólag egy régió gazdálkodói, a modell a helyi gyakorlatot „normálisnak" tekinti.
+>
+> *Forrás: precagri 15. fejezet (15.8.2 „Algoritmikus elfogultság")*
 
 ### Az EU AI Act: kockázati osztályozás és kutatói kötelezettségek
 
@@ -233,6 +245,18 @@ A COPE, amely a kiadói etika legfőbb nemzetközi testülete, 2023-ban adott ki
 5. Az AI-t használó bírálókra (peer reviewers) külön szabályok vonatkoznak — a kéziratok bizalmassága AI-rendszerekbe nem tölthető fel
 
 **Gyakorlati tanács:** Mielőtt beadod a kéziratot, ellenőrizd a célfolyóirat aktuális AI-politikáját. Ezek a szabályok gyorsan változnak, és ami tavaly elfogadható volt, idén lehet, hogy kötelező nyilatkozattal jár. Ha bizonytalan vagy, készíts egy rövid nyilatkozatot az AI-használatodról a Methods szekcióban — ez mindig jobb, mint a nyilatkozat hiánya.
+
+> **🌾 Szakterületi példa: Adattulajdon és adatvédelem a precíziós mezőgazdaságban**
+>
+> A precíziós mezőgazdaságban az adattulajdon kérdése megoldatlan: ha a gazda feltölti a hozamadatait egy felhőplatformra, a szolgáltató eladhatja-e azokat egy biztosítónak? A gazdálkodói adatszövetkezetek és az átlátható adatirányítás a bizalom építésének alapja. Az EU mezőgazdasági adattereiből kiindulva a kérdés a kutatásra is vonatkozik: kié a kutatócsoport által generált adat, ha felhőalapú AI-platformon dolgozták fel?
+>
+> *Forrás: precagri 14. fejezet (14.7 „Adatmegosztás, adatvédelem és tulajdonjog") és 15. fejezet (15.8.5 „Adatvédelem és tulajdonjog")*
+
+> **🌾 Szakterületi példa: Magyarázható MI (XAI) a döntéstámogatásban**
+>
+> A mezőgazdasági döntéstámogatásban a Grad-CAM vizuálisan kiemeli, mely levélfoltok váltották ki a betegségdiagnózist — a gazdálkodó összevetheti a saját megfigyelésével, és eldöntheti, cselekszik-e. A magyarázhatóság nem luxus, hanem az elfogadás feltétele. A SHAP-értékek számszerűsítik az egyes jellemzők hozzájárulását, így a döntéstámogatás átláthatóvá válik — ami a tudományos kutatásban is alapkövetelmény.
+>
+> *Forrás: precagri 15. fejezet (15.8.3 „Magyarázhatóság és a feketedoboz-probléma") és 16. fejezet (16.7 „A mesterséges intelligencia integrálása a döntéstámogatásba")*
 
 ---
 
@@ -307,6 +331,12 @@ A nyílt tudomány (open science) elve az AI-korban azt jelenti, hogy a promptok
 - **Repozitórium.** Használd a Zenodo-t, a Figshare-t vagy a GitHub-ot a promptok és konfigurációk archiválásához. DOI-val látd el, hogy idézhető legyen.
 
 A cél nem az, hogy minden prompt tökéletesen reprodukálja az eredeti kimenetet (ez a nem-determinizmus miatt eleve lehetetlen), hanem az, hogy egy másik kutató megértse, mit csináltál, és hasonló megközelítéssel hasonló eredményre jusson.
+
+> **💧 Szakterületi példa: Reprodukálhatóság és a gondolkodási lánc naplózása**
+>
+> A hidrológiai ágenses kalibrálás reprodukálhatóságát a gondolkodási lánc naplózása biztosítja: minden paraméterdöntés, diagnosztikus gondolat és modellfuttatás dokumentálva van — szemben a hagyományos „hajnali kettős hangolgatással", ahol a döntések rekonstruálhatatlanok. A rögzített LLM-verzió, seed és eszköz-verziók az AI-módszertani reprodukálhatóság minimális feltételei, és a hidrológiai ágens naplója a „Methods" szekció tökéletes alapja.
+>
+> *Forrás: hidrogis 24. fejezet (24.8 „Reprodukálhatóság és auditálhatóság")*
 
 ---
 

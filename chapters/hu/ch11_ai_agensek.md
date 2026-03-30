@@ -328,6 +328,18 @@ Lássuk a ReACT ciklust működés közben:
 
 Figyeld meg, hogyan hozta meg az ágens a döntéseket **önállóan**: kiválasztotta a releváns gyűjteményt, meghatározta a tile-okat, szűrt a nappali adatokra, és még az utófeldolgozási javaslatot is hozzáadta. Minden lépésnél gondolkodott, cselekedett és értékelte az eredményt — ez a ReACT lényege.
 
+> **💧 Szakterületi példa: Az ágenshurok a hidrológiai kalibrálásban**
+>
+> A hidrológiai modellkalibrálásban az AI-ágens ciklikusan működik: tervet készít, futtatja a modellt, értékeli az eredményt („a szimulált csúcsok túl korán jönnek → késleltetési idő túl rövid"), módosítja a paramétereket, és iterál — 100–1000 modellfuttatás helyett 50–200-ból konvergál. Az ágens célt kap („kalibráld a HEC-HMS modellt, NSE > 0,7"), részfeladatokra bontja, eszközöket hív, diagnosztizálja a hibákat, és dokumentálja a gondolkodási láncot. Ez pontosan a ReACT-minta gyakorlati alkalmazása a hidrológiában.
+>
+> *Forrás: hidrogis ch24, 24.1.2 „Az ágenshurok: tervezés, végrehajtás, értékelés, iteráció"*
+
+> **🗺️ Szakterületi példa: ReAct-ciklus a Natura 2000 elemzésben**
+>
+> A geoinformatikai ReAct-ágensben a gondolkodás és cselekvés váltakozik: az ágens STAC API-n keresztül letölti a WorldCover adatokat, Python-kóddal zonális statisztikát számol, ellenőrzi az eredményt, és bemutatja: 12 Natura 2000 területen nőtt a beépítettség. A nyolclépéses ReAct-ciklus a „Melyik Natura 2000 területen nőtt a beépítettség 2020 óta?" kérdést Gondolat → Cselekvés (STAC API) → Megfigyelés → Gondolat → Cselekvés (Python: zonális statisztika) → Megfigyelés → Gondolat (eredmény-ellenőrzés) → Prezentáció lépésekre bontja.
+>
+> *Forrás: gis ch22, 21.3.1 „A ReAct keretrendszer és geoinformatikai alkalmazása"*
+
 ---
 
 ## MCP: Model Context Protocol — univerzális csatlakozó az AI és a világ között
@@ -452,6 +464,12 @@ Az ágensek közös mentális modellt (shared mental model) és közös memóri�
 **3. Versengés (Competition)**
 
 Bizonyos szituációkban a versengés hatékonyabb, mint az együttműködés. Piaci alapú megközelítések szimulált árazással, kereslettel és kínálattal működnek. A „coopetition" (kooperáció + kompetíció) fogalma azt ragadja meg, hogy a valós rendszerekben gyakran egyszerre van jelen az együttműködés és a versengés.
+
+> **🗺️ Szakterületi példa: Többágenses rendszer a GIS-ben**
+>
+> A geoinformatikában a többágenses rendszer négy specializált ágenst kombinál: az adat-kereső megtalálja a Sentinel-2 adatokat, a GIS-analizátor elvégzi a térbeli elemzést, a kartográfus elkészíti a térképet, a kritikus ellenőrzi a CRS-t és a topológiát. Az ágensek üzenetbuszon kommunikálnak, és mindegyiknek megvan a saját eszközkészlete: az adat-kereső a STAC, WFS és PostGIS protokollokat használja, a GIS-analizátor SQL-t és Python-t, a kartográfus a színválasztást és szimbolizációt kezeli. Ez a munkamegosztás a multi-ágens rendszerek természetes dekompozíciós mintáját követi.
+>
+> *Forrás: gis ch22, 21.3.4 „Többágenses rendszerek"*
 
 ### Konfliktusmegoldás
 

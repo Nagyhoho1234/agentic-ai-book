@@ -708,6 +708,12 @@ print("Az EDA-jelentés elkészült: eda_jelentes.md")
 - Az ágens által generált statisztikákat **mindig ellenőrizd** --- az LLM-ek nem kalkulátorok, a számolásaik nem mindig pontosak
 - Ha pontos statisztikát akarsz, adj az ágensnek egy Python-kódfuttató eszközt (tool), amellyel pandas/numpy/scipy kódot futtathat
 
+> **💧 Szakterületi példa: Hidrológiai modellezési ágens architektúrája és a Zala folyó kalibrálása**
+>
+> A Zala folyó vízgyűjtőjére (930 km2) épített hidrológiai ágens az ERA5-Land csapadékból, az OVF vízhozamadatokból és a Corine felszínborításból kiindulva 47 modellfuttatással kalibrálta a GR4J modellt KGE = 0,78 teljesítményre — a teljes folyamat dokumentálva, a gondolkodási lánc naplózva. Az ágens architektúrája három fő komponensből áll: a gondolkodó motor (LLM mint következtető mag), az eszközkészlet (modellfuttató, adatolvasó, statisztikai kiértékelő, vizualizáló) és az orkesztrációs keretrendszer. A 6 iterációs kalibrálás mindössze ~3 percet vett igénybe.
+>
+> *Forrás: hidrogis ch24, 24.3 és 24.11 „Egy hidrológiai modellezési ágens architektúrája" és „Magyar kidolgozott példa: A Zala vízgyűjtője"*
+
 ---
 
 ### 12.3.3 Kísérlet-figyelő és riasztó ágens
@@ -1135,6 +1141,12 @@ if __name__ == "__main__":
 Ez a szerver két eszközt biztosít: mérési adatok lekérdezését és mintainformáció visszaadását. Az ágens ezeket az eszközöket automatikusan „megtanulja" az MCP protokollon keresztül, és szükség szerint hívja meg.
 
 > **A 13. fejezetben** részletesen foglalkozunk az MCP szerverek építésével: több eszközzel, erőforrásokkal, teszteléssel és dokumentációval. Itt a koncepcióra és a működő minimálpéldára koncentráltunk.
+
+> **🗺️ Szakterületi példa: Automatikus Sentinel-2 elemzés és riportgenerálás**
+>
+> Egy GIS-ágens a Sentinel-2 adatokat automatikusan letölti, osztályozza, a változásdetekciót elvégzi, térképet és szöveges riportot generál az erdőborítás-változásról — a teljes munkafolyamat természetes nyelvi prompttal indul. Az ágens az MCP-szervereken keresztül eléri a STAC API-t az adatletöltéshez, Python-eszközöket a raszteres feldolgozáshoz, és a kartográfiai modult a térképgeneráláshoz. A végeredmény egy komplett riport, amelyet a kutató közvetlenül felhasználhat — ez az ágentikus munkafolyamat teljes automatizálásának gyakorlati példája.
+>
+> *Forrás: gis ch22, 21.8.3 „Esettanulmány: automatikus Sentinel-2 elemzés és riportgenerálás"*
 
 ---
 

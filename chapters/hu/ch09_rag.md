@@ -1,5 +1,15 @@
 # 9. fejezet: RAG --- Tanítsuk meg az AI-t a saját adatainkra
 
+> **Fejezet-informacio**
+> - **Kinek szol:** Kutatoknak, akik a sajat dokumentumaikra, cikkeikre es adataikra epitenenek AI chatbotot
+> - **Eloismeretek:** 2. fejezet (promptolas), 5. fejezet (ajanlott a kodolasi reszekhez)
+> - **Amit megtanulsz:**
+>   - Mi a RAG (Retrieval-Augmented Generation) es miben kulonbozik a fine-tuningtol
+>   - A RAG pipeline lepesrol lepesre: dokumentumbetoltes, chunking, embedding, visszakereses
+>   - Sajat tudasbazis epitese es kiertékelese
+> - **Szukseges eszkozok:** Browser + terminal + Python
+> - **Kapcsolodo fejezetek:** 2. fejezet (LLM mukodese), 7. fejezet (pipeline-ok), 13. fejezet (eszkozok keszitese)
+
 ---
 
 ## 9.1 Amikor a ChatGPT nem ismeri a kutatásodat
@@ -258,6 +268,12 @@ Kérdés
   ↓
 [LLM generálás] → válasz forrásokkal
 ```
+
+> **🗺️ Szakterületi példa: Térbeli RAG környezeti hatásvizsgálathoz**
+>
+> A geoinformatikában a térbeli RAG a felhasználó kérdéséhez nemcsak szöveges dokumentumokat, hanem releváns téradatokat, korábbi elemzési eredményeket és szabályozási szövegeket is visszakeres — például egy környezeti hatásvizsgálathoz az adott területre vonatkozó Natura 2000 szabályokat és korábbi monitoring eredményeket. A RAG koncepció térbeli kiterjesztése vektor- és gráf-alapú visszakereséssel működik, ahol a szöveges hasonlóság mellett a térbeli közelség is szempont a releváns dokumentumok kiválasztásánál. Ez a megközelítés különösen hasznos, amikor a szabályozási környezet térben változik.
+>
+> *Forrás: gis ch22, 21.6 „Térbeli RAG: vektor és gráf visszakeresés szakterületi GIS tudáshoz"*
 
 ---
 
@@ -684,6 +700,12 @@ A feladat: az LLM a saját adataimból válaszoljon
 ```
 
 **Az arany szabály:** A RAG olcsóbb, gyorsabb, transzparensebb és rugalmasabb, mint a fine-tuning. Csak akkor lépj tovább a fine-tuning felé, ha a RAG-ot már kipróbáltad és kiértékelted, és az eredmény nem kielégítő.
+
+> **🌾 Szakterületi példa: LLM-ek és a mezőgazdasági szakterminológia**
+>
+> A mezőgazdasági RAG-rendszereknél a legnagyobb kihívás, hogy az általános célú LLM-ek nem ismerik a helyi szakterminológiát (pl. belvíz, szikes talaj, őszi búza fajtanevek) — a RAG a helyi agrártudásbázissal egészíti ki a modellt. A mezőgazdasági nyelv rendkívül specializált, olyan szakterminológiával és helyi növénynevekkel, amelyek nem feltétlenül szerepelnek megfelelően az általános célú nyelvi modellek betanítási adataiban. A RAG-alapú megközelítés itt különösen hatékony, mert a helyi tudásbázist anélkül teszi elérhetővé az LLM számára, hogy a modellt magát kellene finomhangolni.
+>
+> *Forrás: precagri ch15, 15.7.3 „Kihívások és korlátok"*
 
 ---
 

@@ -1,5 +1,15 @@
 # 6. fejezet: AI-tamogatott matematikai modellezes es szimulacio
 
+> **Fejezet-informacio**
+> - **Kinek szol:** Termeszettudosoknak es mernokoknek, akik matematikai modellekkel es szimulacciokkal dolgoznak
+> - **Eloismeretek:** 5. fejezet (kodolasi asszisztensek)
+> - **Amit megtanulsz:**
+>   - Kutatasi kerdesbol matematikai modell keszitese AI segitsegevel
+>   - Szimbolikus szamitasok (SymPy) es numerikus szimulacio AI-val
+>   - Automatikus kalibracio es egyenletfelfedezes (PySR)
+> - **Szukseges eszkozok:** Browser + terminal + Python
+> - **Kapcsolodo fejezetek:** 5. fejezet (kodolas), 7. fejezet (pipeline-ok), 10. fejezet (digitalis ikrek)
+
 ## Bevezetes: Amikor az egyenletek elnek akarnak kelni
 
 Kepzeld el a kovetkezo helyzetet. Kovacs Marta kornyezetkutato a Debreceni Egyetem Kornyezettudomanyi Tanszeken dolgozik. Evek ota vizsgalja a Hortobagy vizhaztartasat: hogyan szivarog a csapadek a talajba, hogyan valtozik a talajvizszint az evszakokkal, hogyan hat a klimavaltozas a szikes tavak vizutanpotlasara. A terepnaplo tele van meresekkel, a fuzeteben ott vannak a differencialeqyenletek -- de papirrol nem fut szimulacio.
@@ -69,6 +79,9 @@ Ez a beszelgetes par masodperc alatt megadta neked azt, amihez egyebkent szakkon
 3. Ellenorizd a dimenziot: mindket oldal egysege megegyezik-e?
 4. Probald ki hatareseteteken: ha $R = 0$ es $ET = 0$, tenyleg allando marad-e $h$?
 
+> **Ne csinalld!**
+> Ne fogadd el az AI altal javasolt egyenletet vagy modellt a dimenziok (mereteqysegek) ellenorzese nelkul. Az LLM-ek gyakran generalnak fizikailag helyes kinezettu, de dimenzionalisan inkonzisztens egyenleteket — peldaul baloldalon [m/s], jobboldalon [m]. Ha nem ellenorzod, a szimulacio "fuut", de az eredmenyek ertelmetlenek lesznek.
+
 ### Prompt-minta: Modell-kereses
 
 Ime egy prompt, amit barmilyen tudomanyteruleten hasznalhatsz:
@@ -88,6 +101,12 @@ Kerlek:
 4. Adj forrasokat, ahol ez a modell reszletesen le van irva
 5. Ellenorizd a dimenziokat
 ```
+
+> **🌾 Szakterületi példa: GR4J csapadék-lefolyás modell és Oudin PET-képlet**
+>
+> A hidrológiai modellezésben a GR4J modell négy paraméterrel írja le a csapadék lefolyássá alakulását: a termelési tározó kapacitása ($x_1$), a talajvízcsere ($x_2$), az útvonalválasztási tározó ($x_3$) és az egységhidrográf időbázisa ($x_4$). A potenciális evapotranszpirációt az Oudin-képlet becsli: $PE = \frac{R_a}{\lambda \rho} \cdot \frac{T_a + 5}{100}$. Az AI-asszisztens képes ezeket a képleteket implementálni, a paraméterek fizikai jelentését magyarázni, és a kezdeti értékeket a vízgyűjtő jellemzőiből kiindulva becsülni — pontosan a fenti „kutatási kérdésből modell" munkafolyamatot követve.
+>
+> *Forrás: hidrogis 24.4.1 „A feladat beállítása" és 24.11.2 „Az ágenses kalibrálás végigvezetése"*
 
 ---
 
@@ -556,6 +575,12 @@ class FarmerAgent(Agent):
 | A viselkedes "alurol" alakul ki? | Igen | Agens-alapu |
 | Gyors valaszra van szukseg? | Igen | Determinisztikus |
 
+> **🌾 Szakterületi példa: Növénynövekedési modellek mint DSS-eszközök**
+>
+> A mezőgazdasági döntéstámogatásban a folyamat-alapú növénynövekedési modellek (DSSAT CERES, APSIM) matematikai egyenletekkel szimulálják a növény fejlődését — a fotoszintézistől a biomassza-felhalmazódáson át a szemtelítődésig. Ezek a determinisztikus modellek fizikai és fiziológiai törvényekre építenek, és a növény válaszát a környezeti tényezőkre (hőmérséklet, sugárzás, vízellátás) írják le. Az AI-asszisztens segíthet a modell felállításában, a számos paraméter beállításában és az eredmények értelmezésében, különösen ott, ahol a fizikai modell nem adekvát és gépi tanulási kiegészítés szükséges.
+>
+> *Forrás: precagri 16.3 „Növénynövekedési modellek mint döntéstámogató eszközök"*
+
 ---
 
 ## 6.5 Automatikus modell-kalibracio
@@ -650,6 +675,12 @@ ax.grid(True, alpha=0.3)
 plt.tight_layout()
 plt.show()
 ```
+
+> **🌾 Szakterületi példa: Az LSTM-cella matematikája az árvíz-előrejelzésben**
+>
+> Az árvíz-előrejelzésben az LSTM-hálózat kapu-mechanizmusa (felejtő-, bemeneti és kimeneti kapu) lehetővé teszi, hogy a hálózat a gyors felszíni lefolyást és a lassú alapvízhozam-komponenst egyszerre tanulja meg. A felejtő kapu egyenlete: $f_t = \sigma(W_f \cdot [h_{t-1}, x_t] + b_f)$, a cellaállapot frissítése: $C_t = f_t \odot C_{t-1} + i_t \odot \tilde{C}_t$. A kalibrációs célfüggvény az NSE-veszteségfüggvény, amely az árvízi csúcsokra fókuszálja a tanítást. Ez a matematikai struktúra az automatikus kalibrációval (mint az Optuna fent) kombinálva hatékony eszközt ad a hidrológus kezébe.
+>
+> *Forrás: hidrogis 23.1.1 „Miért alkalmasak a rekurrens hálózatok a vízhozam-előrejelzésre?"*
 
 ---
 

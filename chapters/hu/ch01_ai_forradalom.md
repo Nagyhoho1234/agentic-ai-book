@@ -1,11 +1,23 @@
 # Az AI forradalom a tudományos kutatásban
 
+> **Fejezet-informacio**
+> - **Kinek szol:** Minden kutatonak, oktatonak es egyetemi dolgozonak, aki meg nem hasznalja aktivan az AI-t
+> - **Eloismeretek:** Nincs
+> - **Amit megtanulsz:**
+>   - Miert szamit az AI altalanos celu technologianak a tudomanyban
+>   - Az AI ot szintje a chatbottol az autonom felfedezesig
+>   - Hogyan illeszkedik a Debreceni Egyetem az AI-forradalom kontextusaba
+> - **Szukseges eszkozok:** Browser only
+> - **Kapcsolodo fejezetek:** 2. fejezet (tarsalgasi AI), 16. fejezet (etika), Eloszo
+
 > *"Az AI nem varázslat, hanem egy eszköz -- de olyan eszköz, amely mindent megváltoztat."*
 
+<!-- [SZERKESZTOI MEGJEGYZES / GPT-5.4 review] "Kepzeld el" nyito: ez az elso elofordulas, megtarthato. A masodik "kepzelj el" a 9. sorban szinten elfogadhato parbeszedkent, de ket "kepzelj el" egymas kozeleben monotonnak hathat. Fontos figyelni, hogy a konyv tobbi fejezete is igy nyit. -->
 Képzelj el egy átlagos kutatói munkanapot. Reggel nyolckor bekapcsolod a gépet, megnyitod a legújabb adatfájlokat, és elkezded a napi rutint: adattisztítás, formátumkonverzió, hiányzó értékek pótlása, táblázatok összekapcsolása, ábrák formázása. Délre talán elkészülsz az adatelőkészítéssel, és végre rápillanthatsz az eredményekre. Délután jönnek az e-mailek, az adminisztráció, a pályázati beszámolók. Este hétkor lekapcsolod a gépet, és azon gondolkodsz: ma sem jutottam el a tényleges tudományhoz.
 
 Ha ismerős ez a forgatókönyv, nem vagy egyedül. Gentemann és munkatársai 2021-es tanulmánya szerint az átlagos kutató munkaidejének **mintegy 80%-át adatkezeléssel** tölti -- és csak a maradék 20%-ban foglalkozik azzal, ami miatt eredetileg a tudományos pályát választotta: hipotézisek felállításával, kreatív gondolkodással, felfedezéssel (Gentemann et al., 2021). Ez az aránytalanság nem egyedi eset, hanem rendszerszintű probléma. A világ tudományos közössége naponta több mint 4000 orvosbiológiai cikket publikál, a COVID-19 járvány alatt mintegy 200 000 tanulmány jelent meg egyetlen témáról, és az emberi agy egyszerűen képtelen lépést tartani az információáradattal.
 
+<!-- [SZERKESZTOI MEGJEGYZES / GPT-5.4 review] Masodik "kepzelj el" nyito kozel az elsohoz — fontold meg alternativ megfogalmazas hasznalatat (pl. "Most lassuk a masik forgatokonyvet"). -->
 Most képzelj el egy másik forgatókönyvet. Reggel nyolckor leírod a kutatási kérdésedet természetes nyelven. Az AI asszisztensed átnézi az elmúlt hat hónap releváns publikációit, összefoglalja a legfontosabb eredményeket, azonosítja az ellentmondásokat az irodalomban. Közben egy másik AI ágens megtisztítja és harmonizálja az adataidat. Tíz óráig már az eredményeket elemzed -- olyan mintázatokat látsz, amelyeket emberi szemmel soha nem vettél volna észre. Délután új hipotéziseket fogalmazol meg, és az AI segít megtervezni a következő kísérletsorozatot. Este hétkor azzal az érzéssel kapcsolod le a gépet, hogy **ma tényleg tudománnyal foglalkoztál**.
 
 Ez nem tudományos fantasztikum. Ez 2026, és ez a könyv pontosan arról szól, hogyan juthatsz el az első forgatókönyvtől a másodikig.
@@ -74,6 +86,15 @@ Teljes kutatócsoportnyi kapacitás: több AI ágens együttműködik, felosztj�
 
 > **Tudtad?** 2025-ben a legtöbb kutató az 1-2. szinten használja az AI-t. De a technológia sebessége azt jelenti, hogy ami ma a 4-5. szint, az 2-3 éven belül elérhető és hétköznapi lesz. Ez a könyv arra készít fel, hogy az egész spektrumot kihasználd.
 
+> **🌾 Szakterületi példa: Az Autonomous GIS paradigmaváltása**
+>
+> A geoinformatikában a paradigmaváltás azt jelenti, hogy a GIS-felhasználó természetes nyelven fogalmazza meg a kérdését, és egy AI-ágens önállóan bontja le azt térinformatikai műveletek sorozatára. A felhasználó nem azt mondja, hogy „nyisd meg ezt a réteget, alkalmazz egy 500 méteres puffert", hanem azt, hogy „melyik települések vannak 500 méteren belül az árvízveszélyes területektől?" — és a rendszer maga bontja le a feladatot. Az eszközhasználó mérnökből döntéshozóvá válik: az AI-spektrum 3. szintjének (eszközhasználat) gyakorlati megvalósulása a térinformatikában.
+>
+> *Forrás: gis 21.1 „Miért nehéz a térbeli gondolkodás a nagy nyelvi modellek számára?"*
+
+> **Ne csinalld!**
+> Ne kezdd az AI-t azonnal a 4-5. szinten hasznalni (agensek, autonom rendszerek) anelkul, hogy az 1-2. szintet (chat, gondolkodas) alaposan megismerted volna. A leggyakoribb hiba, hogy a kutato "mindent automatizalna", mikozben meg az egyszeru promptolasat sem sajatitotta el. Epitsd fel fokozatosan a tudasodat -- a konyv fejezetsorrendje pontosan ezt a logikus utat koveti.
+
 ---
 
 ## Mérföldkövek: amikor az AI tudományt csinál
@@ -124,6 +145,12 @@ A rendszer különösen értékes olyan kutatók számára, akik nem génszerkes
 
 > **Tudtad?** Az OECD 2023-as jelentése szerint az AI-val támogatott tudományos publikációk száma 2015 és 2022 között **nyolcszorosára** nőtt. És ez még az LLM-ek előtti korszak -- a növekedés azóta exponenciálisan gyorsult.
 
+> **🌾 Szakterületi példa: Az LSTM mint a hidrológus asszisztense**
+>
+> A hidrológiában az AI már nem akadémiai kuriózum: az árvíz-előrejelzési központok LSTM-hálózatokat alkalmaznak a Tisza vízhozamának napi előrejelzésére, NSE > 0,87 tesztidőszaki pontossággal — anélkül, hogy a modellnek explicit fizikai egyenleteket adnánk meg. Az LSTM-hálózatok képesek megtanulni az összefüggést csapadék és vízhozam között pusztán az adatokból, és 2026-ban ez már nem kutatási kuriózum, hanem operatív valóság az árvíz-előrejelzési központokban. Ez a mérföldkő jól illusztrálja, hogyan vált az AI konkrét, mérhető eszközzé a természettudományokban.
+>
+> *Forrás: hidrogis 23.1 „Árvíz-előrejelzés LSTM-hálózatokkal"*
+
 ---
 
 ## Lassul-e a tudomány?
@@ -132,7 +159,8 @@ Az előző rész az AI ígéretéről szólt. Most nézzük meg, **miért van sz
 
 ### A csökkenő disruptivitás
 
-2023-ban Park, Leahey és Funk a *Nature*-ben publikálta az egyik legprovokatívabb tudománytani cikket az utolsó évtizedből. 45 millió tudományos cikket és 3,9 millió szabadalmat elemezve kimutatták, hogy a tudományos publikációk **disruptivitása** -- azaz az a képesség, hogy egy cikk alapvetően megváltoztassa a tudományterületét -- **évtizedek óta csökken**. Nem arról van szó, hogy kevesebb cikk jelenik meg -- épp ellenkezőleg, exponenciálisan nő a publikációk száma. De a valóban áttörő, paradigmaváltó munkák aránya folyamatosan csökken.
+2023-ban Park, Leahey és Funk a *Nature*-ben publikálta az egyik legprovokatívabb tudománytani cikket az utolsó évtizedből. 45 millió tudományos cikket és 3,9 millió szabadalmat elemezve kimutatták, hogy a tudományos publikációk **disruptivitása** -- azaz az a képesség, hogy egy cikk alapvetően megváltoztassa a tudományterületét -- **évtizedek óta csökken**. Nem arról van szó, hogy kevesebb cikk jelenik meg -- épp ellenkezőleg, exponenciálisan nő a publikációk száma. <!-- [SZERKESZTOI MEGJEGYZES / GPT-5.4 review] "paradigmavalto" — itt legitim, mert konkret Park et al. tanulmanyra hivatkozik. A "paradigmavaltas" motívum a konyvben tobbszor ismetlodik; erdemes ellenorizni, hogy mashol ne legyen tartalmi redundancia. -->
+De a valóban áttörő, paradigmaváltó munkák aránya folyamatosan csökken.
 
 Mi áll emögött? Több tényező együttesen:
 
