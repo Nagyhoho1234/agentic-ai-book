@@ -5,8 +5,34 @@
 This is the planning and writing workspace for **"Agentic AI for Scientists: A Practical Guide to AI-Powered Research"** — a 16-chapter book targeting non-programmer scientists at the University of Debrecen, Hungary.
 
 - **Book plan:** `BOOK_PLAN_v3.md` (active structure, scored 9.2/10 by Codex GPT-5.4)
-- **Score progression:** 7.5 → 8.3 → 9.2
-- **Status:** Ready to write. Start with Chapter 2.
+- **Score progression:** 7.5 → 8.3 → 9.2 → 8/10 (content review of first draft)
+- **Status:** Hungarian e-book first draft COMPLETE. Tutor web app running.
+
+## Current State (2026-03-30)
+
+### Hungarian E-book (`hu-ebook` branch)
+- **19 chapters** + preface + glossary + 3 appendices = **20,846 lines (~100,000 words)**
+- **42 domain example boxes** inserted (🌾 agriculture, 💧 hydro, 🗺️ GIS)
+- **GPT-5.4 improvements applied:** info boxes, warning boxes, terminology stylesheet
+- **3 domain supplement chapters** (Ch 17-19) from author's existing textbooks
+- **Domain examples mapping:** `chapters/hu/DOMAIN_EXAMPLES_MAP.md`
+
+### Tutor Web App (`agentic-ai-tutor/`)
+- **Frontend:** React + Vite + Tailwind at localhost:5173
+- **Backend:** FastAPI + Gemini API at localhost:8000
+- **RAG:** 753 chunks from 19 chapters indexed in ChromaDB
+- **Questions:** 209 questions (95 mcq, 57 true/false, 38 fill-blank, 19 essay)
+- **Concepts:** 99 concepts with dependency graph
+- **Launch:** Use `aitutor` conda env (Python 3.11)
+- **Gemini key:** in `agentic-ai-tutor/.env` (not committed)
+
+### English Springer version (`en-springer` branch)
+- Not started yet. Structure ready in BOOK_PLAN_v3.md.
+
+### Git Branches
+- `master` — shared base (plans, reference library, research, examples)
+- `hu-ebook` — Hungarian e-book (ACTIVE, first draft complete)
+- `en-springer` — English Springer book (future)
 
 ## Writing Rules
 
@@ -92,10 +118,36 @@ This is the planning and writing workspace for **"Agentic AI for Scientists: A P
 | `NASA_LLM_Cookbook_Analysis.md` | Analysis of NASA cookbook mapped to our chapters |
 | `CODEX_REVIEW.md` | GPT-5.4 v2 review (7.5/10) |
 | `CODEX_REVIEW_v3_RESPONSE.md` | GPT-5.4 v3 review (8.3→9.2) with accepted/rejected recommendations |
+| `OPENAI_REVIEW.md` | GPT-5.4 content review of first draft (8/10) |
 | `FINAL_SUMMARY_TABLE.md` | Master status table |
 | `RECOMMENDED_BOOKS_MISSING_TOPICS.md` | Book recommendations for originally-weak topics |
+| `VERSIONS.md` | Multi-version strategy (hu-ebook vs en-springer) |
 | `research/` | 5 university research reports (Florida, Helsinki, Northeastern, JHU, Debrecen) |
 | `examples/` | Working code examples for chapters |
+| `agentic-ai-tutor/` | Interactive web tutor app (React + FastAPI + Gemini + RAG) |
+| `chapters/hu/WRITING_BRIEFS.md` | Detailed writing instructions with chapter boundaries |
+| `chapters/hu/DOMAIN_EXAMPLES_MAP.md` | 41 domain examples mapped from 3 existing textbooks |
+| `chapters/hu/TERMINOLOGY_STYLESHEET.md` | Hungarian term preferences and banned translations |
+
+## Author's Existing Textbooks (domain sources)
+| Path | Book | Use |
+|------|------|-----|
+| `c:/precagri/` | Precision Agriculture (20 chapters, HU) | Domain examples for Ch 4-7, 17 |
+| `c:/maidment_hidroGIS/` | HydroGIS (25 chapters, HU) | Domain examples for Ch 5-6, 10-12, 18 |
+| `c:/gis-konyv2025/` | GIS 2025 (24 chapters, HU) | Domain examples for Ch 8, 10-12, 19 |
+
+## Tutor App Launch
+```bash
+cd agentic-ai-tutor
+# Activate conda env
+conda activate aitutor
+# Re-ingest if chapters changed
+python -m backend.rag.ingest
+# Backend
+uvicorn backend.main:app --host 0.0.0.0 --port 8000
+# Frontend (separate terminal)
+cd frontend && npm run dev
+```
 
 ## Writing Workflow
 
