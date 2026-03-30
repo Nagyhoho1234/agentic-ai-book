@@ -258,13 +258,13 @@ async def book_chapters(lang: str = Query("en")):
 
     # Add appendices at the end
     appendices = [
-        (0, "Preface" if lang == "en" else "Előszó", "ch00_preface.md"),
-        (-1, "Exercises" if lang == "en" else "Gyakorlatok", "appendix_exercises.md"),
-        (-2, "Glossary" if lang == "en" else "Szójegyzék", "appendix_glossary.md"),
-        (-3, "Data Sources" if lang == "en" else "Adatforrások", "appendix_data_sources.md"),
-        (-4, "Software Guide" if lang == "en" else "Szoftverismertető", "appendix_software.md"),
+        (0, "Előszó", "ch00_eloszo.md"),
+        (-1, "A. függelék: AI kutatási környezet beállítása", "appendix_a_kornyezet.md"),
+        (-2, "B. függelék: Prompt-könyvtár kutatóknak", "appendix_b_prompt_konyvtar.md"),
+        (-3, "C. függelék: Források és további olvasmányok", "appendix_c_forrasok.md"),
+        (-4, "Szójegyzék (Glosszárium)", "glossary.md"),
     ]
-    app_part = "Appendices" if lang == "en" else "Függelékek"
+    app_part = "Függelékek"
     for app_num, app_title, _fname in appendices:
         chapters.append({
             "chapter_num": app_num,
@@ -279,11 +279,11 @@ async def book_chapters(lang: str = Query("en")):
 
 
 APPENDIX_FILES = {
-    0: "ch00_preface.md",
-    -1: "appendix_exercises.md",
-    -2: "appendix_glossary.md",
-    -3: "appendix_data_sources.md",
-    -4: "appendix_software.md",
+    0: "ch00_eloszo.md",
+    -1: "appendix_a_kornyezet.md",
+    -2: "appendix_b_prompt_konyvtar.md",
+    -3: "appendix_c_forrasok.md",
+    -4: "glossary.md",
 }
 
 

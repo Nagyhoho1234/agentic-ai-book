@@ -18,7 +18,7 @@ import { askAboutSelection } from './api/client';
 
 const STRINGS = {
   hu: {
-    title: 'Ágentikus AI Tudósoknak — Interaktív Tutor',
+    title: 'Ágentikus AI Kutatóknak — Interaktív Tutor',
     readBook: 'Könyv',
     quiz: 'Teszt',
     cards: 'Kártyák',
@@ -31,7 +31,7 @@ const STRINGS = {
     settings: 'Beállítások',
   },
   en: {
-    title: 'Ágentikus AI Tudósoknak — Interaktív Tutor',
+    title: 'Ágentikus AI Kutatóknak — Interaktív Tutor',
     readBook: 'Könyv',
     quiz: 'Teszt',
     cards: 'Kártyák',

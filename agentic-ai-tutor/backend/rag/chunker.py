@@ -146,7 +146,7 @@ def parse_chapter(filepath: Path, chapter_num: int) -> list[Chunk]:
     # Remove HTML comments (figure prompts)
     text = re.sub(r"<!--.*?-->", "", text, flags=re.DOTALL)
 
-    chapter_title = CHAPTER_TITLES.get(chapter_num, f"Chapter {chapter_num}")
+    chapter_title = CHAPTER_TITLES.get(chapter_num, f"{chapter_num}. fejezet")
     part = CHAPTER_PARTS.get(chapter_num, "Unknown")
 
     max_tokens = settings.chunk_max_tokens
