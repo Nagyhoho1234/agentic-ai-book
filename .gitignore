@@ -14,6 +14,7 @@ dist/
 
 # Data (generated at runtime)
 agentic-ai-tutor/data/chroma_db/
+agentic-ai-tutor/data/chromadb/
 agentic-ai-tutor/data/agenticai_tutor.db
 agentic-ai-tutor/data/chunks/
 
@@ -25,59 +26,42 @@ agentic-ai-tutor/data/chunks/
 .DS_Store
 Thumbs.db
 
-# Preprocessing scripts and prompts (not for public repo)
+# Vite cache
+.vite/
+
+# ============================================
+# Internal/raw materials — NOT for publication
+# ============================================
+
+# Preprocessing scripts
 review_prompt.txt
 fix_hungarian*.py
 ai_snake_oil.pdf
 
-# Reference books (copyrighted, not for distribution)
-books/originals/
-books/originals/free_resources/
-
-# Internal planning docs (not for public repo)
-BOOK_PLAN.md
-BOOK_PLAN_v2.md
-BOOK_STRUCTURE_3level.md
-CODEX_REVIEW.md
-CODEX_REVIEW_RESPONSE.md
-CODEX_REVIEW_v3_RESPONSE.md
-FINAL_SUMMARY_TABLE.md
-RECOMMENDED_BOOKS_MISSING_TOPICS.md
-OPENAI_REVIEW.md
-VERSIONS.md
-NASA_LLM_Cookbook_Analysis.md
-
-# Reference book summaries (derived from copyrighted works)
-books/agentic_ai_theories/
-books/ai_revolution_medicine/
-books/ai_snake_oil/
-books/brave_new_words/
-books/chatgpt_scientific_research/
-books/co_intelligence/
-books/deep_learning_earth_sciences/
-books/digital_twin_fundamentals/
-books/digital_twin_handbook/
-books/eua_adopting_ai/
-books/fusion_digital_twin/
-books/generative_ai_higher_education/
-books/github_copilot_handbook/
-books/github_copilot_practice/
-books/intertwin_paper/
-books/knime_predictive_analytics/
-books/learn_ai_python/
-books/n8n_beginners/
-books/n8n_full.md
-books/national_academies_ai_life_sciences/
-books/national_academies_digital_twins/
-books/oecd_ai_in_science/
-books/oxford_handbook_ai_governance/
-books/python_scientific_computing/
-books/teaching_with_ai/
-books/wef_ai_procurement/
+# Reference book summaries (copyrighted sources)
+books/
 
 # Cloned repos
 LLM-cookbook-for-open-science/
 
-# Vite cache
-.vite/
-agentic-ai-tutor/data/chromadb/
+# Research reports (internal)
+research/
+
+# Code examples (internal dev)
+examples/
+
+# Planning docs
+BOOK_PLAN*.md
+BOOK_STRUCTURE*.md
+CODEX_REVIEW*.md
+FINAL_SUMMARY_TABLE.md
+OPENAI_REVIEW.md
+RECOMMENDED_BOOKS_MISSING_TOPICS.md
+VERSIONS.md
+NASA_LLM_Cookbook_Analysis.md
+CLAUDE.md
+
+# Internal chapter metadata
+chapters/hu/WRITING_BRIEFS.md
+chapters/hu/DOMAIN_EXAMPLES_MAP.md
+chapters/hu/TERMINOLOGY_STYLESHEET.md
