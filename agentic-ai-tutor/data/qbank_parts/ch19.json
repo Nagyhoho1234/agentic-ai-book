@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "According to Section 19.1, which precision agriculture practice has generally achieved higher adoption than more data-intensive practices?",
+    "options": [
+      "A) Multi-year prescription maps from soil sampling",
+      "B) Routine integration of remote sensing into decisions",
+      "C) GPS-guided auto-steering",
+      "D) Variable-rate seeding"
+    ],
+    "correct": "C",
+    "explanation": "Section 19.1 states that simpler technologies such as GPS-guided auto-steering and section control have been adopted more widely than more data-intensive practices.",
+    "chapter_num": 19
+  },
+  {
+    "type": "mcq",
+    "question": "What best explains the chapter's description of precision agriculture adoption as 'uneven but accelerating' in Section 19.1?",
+    "options": [
+      "A) Adoption is uniform across regions but slow across crops",
+      "B) Adoption differs by region, farm size, and commodity type even as overall uptake grows",
+      "C) Adoption is declining in large farms but rising in small farms",
+      "D) Only robotics technologies are expanding globally"
+    ],
+    "correct": "B",
+    "explanation": "Section 19.1 emphasizes wide gaps between regions, farm sizes, and commodity types, while also noting rapid market growth and increasing uptake.",
+    "chapter_num": 19
+  },
+  {
+    "type": "mcq",
+    "question": "Which combination of technologies is identified in Section 19.2 as enabling practical agricultural autonomy in recent years?",
+    "options": [
+      "A) Steam power, analog radios, and mechanical linkages",
+      "B) Reliable GPS, affordable sensors, machine vision, and onboard computing",
+      "C) Manual scouting, paper maps, and diesel engines",
+      "D) Satellite television, blockchain, and cloud gaming"
+    ],
+    "correct": "B",
+    "explanation": "Section 19.2 explicitly notes that reliable GPS, affordable sensors, robust machine vision, and powerful onboard computing converged to make autonomy practical.",
+    "chapter_num": 19
+  },
+  {
+    "type": "mcq",
+    "question": "In leader-follower agricultural autonomy systems described in Section 19.2, what is typically still handled by the human operator?",
+    "options": [
+      "A) Maintaining speed and position of the follower machine",
+      "B) Only steering the follower tractor remotely every second",
+      "C) High-level decision-making such as mission planning and obstacle response",
+      "D) Mechanical weed control by interchangeable modules"
+    ],
+    "correct": "C",
+    "explanation": "Section 19.2 explains that in leader-follower systems, the human operator continues to manage high-level decisions, while the follower handles repetitive positioning tasks.",
+    "chapter_num": 19
+  },
+  {
+    "type": "mcq",
+    "question": "What distinguishes the Kinze Manufacturing Autonomy project from simpler leader-follower concepts?",
+    "options": [
+      "A) It eliminated GPS from the system",
+      "B) It demonstrated a fully autonomous tractor-grain cart workflow",
+      "C) It focused only on vineyard disease detection",
+      "D) It was designed only for mechanical penetrometry"
+    ],
+    "correct": "B",
+    "explanation": "Section 19.2 says the Kinze project went further by demonstrating a fully autonomous tractor-grain cart that could be summoned, synchronized for unloading, and return to the field edge.",
+    "chapter_num": 19
+  },
+  {
+    "type": "mcq",
+    "question": "Which statement best captures the design philosophy of the BoniRob platform in Section 19.2?",
+    "options": [
+      "A) It was a conventional tractor adapted for occasional autonomy",
+      "B) It was built as a modular unmanned platform from the ground up",
+      "C) It was intended only for aerial remote sensing",
+      "D) It replaced all implements with a fixed fertilizer unit"
+    ],
+    "correct": "B",
+    "explanation": "The chapter describes BoniRob as a purpose-built robotic platform with interchangeable modules, designed from the ground up for unmanned operation.",
+    "chapter_num": 19
+  },
+  {
+    "type": "mcq",
+    "question": "Why does the chapter suggest small autonomous robots may offer agronomic advantages?",
+    "options": [
+      "A) They always outperform large machines in work rate",
+      "B) They eliminate the need for sensors",
+      "C) They can reduce soil compaction and energy use",
+      "D) They require no supervision under any conditions"
+    ],
+    "correct": "C",
+    "explanation": "Section 19.2 notes that smaller machines exert less soil compaction, may consume less energy, and are easier to safeguard.",
+    "chapter_num": 19
+  },
+  {
+    "type": "mcq",
+    "question": "According to Section 19.1, which barrier is most clearly an infrastructure issue for smallholders?",
+    "options": [
+      "A) Preference for conventional management",
+      "B) Limited stable internet connectivity",
+      "C) Interest in university programs",
+      "D) Availability of yield monitors on combines"
+    ],
+    "correct": "B",
+    "explanation": "The chapter specifically mentions that only 45 percent of rural India had stable internet connectivity in the cited study, making connectivity a core infrastructure barrier.",
+    "chapter_num": 19
+  },
+  {
+    "type": "mcq",
+    "question": "What is the main implication of the Karnataka survey cited in Section 19.1?",
+    "options": [
+      "A) Smallholders mainly reject technology because yields are already too high",
+      "B) Better sensors alone will solve adoption barriers",
+      "C) Adoption barriers for small farms are financial, technical, and structural",
+      "D) Precision agriculture is already universal in rural India"
+    ],
+    "correct": "C",
+    "explanation": "The survey results point to incompatibility with small farms, financial constraints, and lack of technical knowledge, showing that barriers are multidimensional.",
+    "chapter_num": 19
+  },
+  {
+    "type": "mcq",
+    "question": "Which example in Section 19.2 best represents retrofitting autonomy onto existing tractor lines?",
+    "options": [
+      "A) BoniRob",
+      "B) AgRover",
+      "C) Bear Flag Robotics integrated by John Deere",
+      "D) Armadillo"
+    ],
+    "correct": "C",
+    "explanation": "The text states that John Deere's acquisition of Bear Flag Robotics created a platform for retrofitting autonomy onto existing tractor lines.",
+    "chapter_num": 19
+  },
+  {
+    "type": "mcq",
+    "question": "What does the 'Hands Free Hectare' concept illustrate in the chapter?",
+    "options": [
+      "A) A return to manual farming methods",
+      "B) Entire field operations coordinated without human physical presence",
+      "C) A system limited to greenhouse production",
+      "D) A policy subsidy program in Europe"
+    ],
+    "correct": "B",
+    "explanation": "Section 19.2 describes Hands Free Hectare as cultivating fields entirely without human physical presence using sensors, IoT, and self-driving machines.",
+    "chapter_num": 19
+  },
+  {
+    "type": "mcq",
+    "question": "Based on the chapter excerpt, which conclusion is most justified about the future structure of autonomous farm machinery?",
+    "options": [
+      "A) Fleets of small robots will certainly replace all large machines",
+      "B) Large autonomous machines are already obsolete",
+      "C) The optimal model may vary by crop, region, and farming system",
+      "D) Only grain farms can benefit from autonomy"
+    ],
+    "correct": "C",
+    "explanation": "Section 19.2 explicitly says the answer remains open and may differ by crop, region, and farming system.",
+    "chapter_num": 19
+  },
+  {
+    "type": "true_false",
+    "question": "Section 19.1 suggests that adoption of precision agriculture is broadly uniform across regions and farm sizes.",
+    "correct_answer": false,
+    "explanation": "The section emphasizes uneven adoption, with major differences by region, farm size, and commodity type.",
+    "chapter_num": 19
+  },
+  {
+    "type": "true_false",
+    "question": "According to the chapter, GPS-guided auto-steering is standard on many new tractors in technologically advanced farming systems.",
+    "correct_answer": true,
+    "explanation": "Section 19.1 states that GPS-guided auto-steering is standard on new tractors in advanced systems.",
+    "chapter_num": 19
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter indicates that variable-rate seeding is generally more widely adopted than guidance technologies.",
+    "correct_answer": false,
+    "explanation": "Data-intensive practices like variable-rate seeding lag behind simpler guidance and section-control technologies.",
+    "chapter_num": 19
+  },
+  {
+    "type": "true_false",
+    "question": "In Hungary, the existence of an RTK correction network means most farms have already fully transitioned to precision management.",
+    "correct_answer": false,
+    "explanation": "The chapter notes that despite strong RTK infrastructure, the majority of farms still rely on conventional management.",
+    "chapter_num": 19
+  },
+  {
+    "type": "true_false",
+    "question": "Precision-agriculture education in Hungary is described as no longer being limited to first graduating cohorts.",
+    "correct_answer": true,
+    "explanation": "Section 19.1 explicitly makes this point when discussing university programs.",
+    "chapter_num": 19
+  },
+  {
+    "type": "true_false",
+    "question": "Smallholder adoption barriers are portrayed as solvable simply by improving sensor technology.",
+    "correct_answer": false,
+    "explanation": "The text argues that systemic interventions in infrastructure, education, finance, and policy are needed.",
+    "chapter_num": 19
+  },
+  {
+    "type": "true_false",
+    "question": "The Karnataka survey reported that financial constraints were a major barrier to adoption.",
+    "correct_answer": true,
+    "explanation": "Section 19.1 states that 60 percent cited financial constraints as the primary barrier.",
+    "chapter_num": 19
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter reports that stable internet connectivity was available to all rural households in India at the time of the cited study.",
+    "correct_answer": false,
+    "explanation": "It states that only 45 percent of rural India had stable internet connectivity.",
+    "chapter_num": 19
+  },
+  {
+    "type": "true_false",
+    "question": "The global smart farming market is presented as shrinking despite technological progress.",
+    "correct_answer": false,
+    "explanation": "The chapter says the market is growing rapidly, with estimates exceeding 117 billion dollars by 2034.",
+    "chapter_num": 19
+  },
+  {
+    "type": "true_false",
+    "question": "Leader-follower systems remove the need for any human decision-making during field operations.",
+    "correct_answer": false,
+    "explanation": "The human operator still handles mission planning, obstacle response, and field-edge management.",
+    "chapter_num": 19
+  },
+  {
+    "type": "true_false",
+    "question": "The BoniRob platform is an example of a purpose-built field robot rather than an autonomous version of a conventional tractor.",
+    "correct_answer": true,
+    "explanation": "Section 19.2 presents BoniRob as a modular robot designed from the ground up for unmanned operation.",
+    "chapter_num": 19
+  },
+  {
+    "type": "true_false",
+    "question": "John Deere's autonomy strategy in the excerpt includes combining lidar, radar, and cameras with remote supervisory control.",
+    "correct_answer": true,
+    "explanation": "That combination is specifically mentioned in connection with Bear Flag Robotics and Deere's autonomous offerings.",
+    "chapter_num": 19
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter concludes definitively that many small robots will replace large autonomous machines in all farming systems.",
+    "correct_answer": false,
+    "explanation": "It says the question remains open and may have different answers depending on context.",
+    "chapter_num": 19
+  },
+  {
+    "type": "true_false",
+    "question": "One potential advantage of smaller autonomous robots is reduced soil compaction.",
+    "correct_answer": true,
+    "explanation": "Section 19.2 explicitly identifies lower soil compaction as one advantage of smaller machines.",
+    "chapter_num": 19
+  },
+  {
+    "type": "true_false",
+    "question": "The slow individual work rate of small robots is described as a current disadvantage compared with large conventional machinery.",
+    "correct_answer": true,
+    "explanation": "The chapter notes that slow individual work rate remains a competitive disadvantage.",
+    "chapter_num": 19
+  },
+  {
+    "type": "fill_blank",
+    "question": "Section 19.1 describes precision agriculture adoption as uneven but _____.",
+    "correct_answer": "accelerating",
+    "explanation": "The chapter uses the phrase 'uneven but accelerating adoption' to characterize current uptake.",
+    "chapter_num": 19
+  },
+  {
+    "type": "fill_blank",
+    "question": "In advanced farming systems, GPS-guided _____ is standard on new tractors.",
+    "correct_answer": "auto-steering",
+    "explanation": "Section 19.1 states that GPS-guided auto-steering is standard on new tractors.",
+    "chapter_num": 19
+  },
+  {
+    "type": "fill_blank",
+    "question": "Yield monitors are nearly universal on combine harvesters in the _____.",
+    "correct_answer": "United States",
+    "explanation": "The chapter says yield monitors are nearly universal on combine harvesters in the United States.",
+    "chapter_num": 19
+  },
+  {
+    "type": "fill_blank",
+    "question": "Adoption of GPS guidance systems among North American grain farmers exceeded _____ percent by the early 2020s.",
+    "correct_answer": "70",
+    "explanation": "Section 19.1 reports adoption exceeded 70 percent.",
+    "chapter_num": 19
+  },
+  {
+    "type": "fill_blank",
+    "question": "Variable-rate technology for fertilizer application had reached roughly _____ of the large-farm segment.",
+    "correct_answer": "half",
+    "explanation": "The text says it had reached roughly half of the large-farm segment.",
+    "chapter_num": 19
+  },
+  {
+    "type": "fill_blank",
+    "question": "In Hungary, the _____ correction network serves thousands of agricultural machines.",
+    "correct_answer": "RTK",
+    "explanation": "Section 19.1 specifically refers to the RTK correction network.",
+    "chapter_num": 19
+  },
+  {
+    "type": "fill_blank",
+    "question": "A survey in Karnataka found that _____ percent of farmers considered precision agriculture technologies incompatible with small farms.",
+    "correct_answer": "67",
+    "explanation": "The cited survey reported 67 percent held this view.",
+    "chapter_num": 19
+  },
+  {
+    "type": "fill_blank",
+    "question": "Only _____ percent of rural India had stable internet connectivity at the time of the cited study.",
+    "correct_answer": "45",
+    "explanation": "The chapter gives 45 percent as the figure for stable connectivity.",
+    "chapter_num": 19
+  },
+  {
+    "type": "fill_blank",
+    "question": "The global smart farming market is estimated to exceed _____ billion dollars by 2034.",
+    "correct_answer": "117",
+    "explanation": "Section 19.1 gives an estimate of more than 117 billion dollars by 2034.",
+    "chapter_num": 19
+  },
+  {
+    "type": "fill_blank",
+    "question": "The chapter says the enabling technologies for practical autonomy have _____ in recent years.",
+    "correct_answer": "converged",
+    "explanation": "Section 19.2 says the necessary enabling technologies converged to make autonomy practical.",
+    "chapter_num": 19
+  },
+  {
+    "type": "fill_blank",
+    "question": "In leader-follower systems, the human operator still performs high-level _____-making.",
+    "correct_answer": "decision",
+    "explanation": "The text states that the human operator still performs the high-level decision-making.",
+    "chapter_num": 19
+  },
+  {
+    "type": "fill_blank",
+    "question": "The BoniRob platform used interchangeable application _____ for tasks such as soil penetrometry and weed control.",
+    "correct_answer": "modules",
+    "explanation": "Section 19.2 describes BoniRob as having interchangeable application modules.",
+    "chapter_num": 19
+  },
+  {
+    "type": "fill_blank",
+    "question": "The 'Hands Free Hectare' concept involves cultivating fields without human physical _____.",
+    "correct_answer": "presence",
+    "explanation": "The chapter describes this concept as field cultivation without human physical presence.",
+    "chapter_num": 19
+  },
+  {
+    "type": "essay",
+    "question": "Using Section 19.1, explain why adoption rates alone can be misleading indicators of precision agriculture maturity.",
+    "explanation": "Key points: headline adoption figures can hide variation by region, farm size, and commodity; simple technologies may be widespread while data-intensive management remains limited; infrastructure, education, and policy conditions affect depth of use; maturity should be judged by integration into decision-making, not only ownership of tools.",
+    "chapter_num": 19
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the main barriers facing smallholder farmers in adopting precision agriculture, based on Section 19.1.",
+    "explanation": "Key points: high upfront costs, fragmented land holdings, limited connectivity, low digital literacy, perceived incompatibility with small farms, lack of technical knowledge; barriers are systemic and require interventions in infrastructure, finance, education, and policy.",
+    "chapter_num": 19
+  },
+  {
+    "type": "essay",
+    "question": "Compare simpler precision technologies with more data-intensive practices as described in Section 19.1.",
+    "explanation": "Key points: simpler tools like GPS guidance and section control are easier to adopt and deliver immediate operational benefits; data-intensive practices require data collection, analysis, interpretation, and management changes; adoption lags because complexity, cost, and skills requirements are higher.",
+    "chapter_num": 19
+  },
+  {
+    "type": "essay",
+    "question": "Analyze how public policy and institutional support can influence precision agriculture adoption, using examples from Section 19.1.",
+    "explanation": "Key points: Common Agricultural Policy incentives in Europe; variation among member states; RTK infrastructure in Hungary; role of universities and training programs; policy can accelerate adoption but does not guarantee full transition without complementary education and farm-level capacity.",
+    "chapter_num": 19
+  },
+  {
+    "type": "essay",
+    "question": "Explain the difference between leader-follower autonomy and fully autonomous field operation in Section 19.2.",
+    "explanation": "Key points: leader-follower keeps a human in charge of mission planning and exceptions while the machine follows repetitive commands; fully autonomous systems perform coordinated tasks with less direct human involvement; examples include Machine Sync/V2V/GuideConnect versus Kinze autonomy concepts.",
+    "chapter_num": 19
+  },
+  {
+    "type": "essay",
+    "question": "Why might purpose-built agricultural robots differ from autonomous versions of conventional tractors in design and use? Refer to Section 19.2.",
+    "explanation": "Key points: purpose-built robots are designed from the ground up for unmanned operation, modularity, safety, and specialized tasks; autonomous tractors retrofit existing machinery paradigms; trade-offs include flexibility, compatibility, cost, and field performance.",
+    "chapter_num": 19
+  },
+  {
+    "type": "essay",
+    "question": "Evaluate the potential advantages and limitations of fleets of small autonomous robots compared with large autonomous machines.",
+    "explanation": "Key points: advantages include lower soil compaction, lower energy use, easier safeguarding, possible swarm coordination; limitations include slower individual work rate and uncertain economic scalability; best solution may vary by crop, region, and farming system.",
+    "chapter_num": 19
+  },
+  {
+    "type": "essay",
+    "question": "How does the chapter connect technological feasibility with economic viability in agricultural autonomy?",
+    "explanation": "Key points: enabling technologies have made autonomy practical, but economic logic must still be proven at scale; practical deployment depends on labor savings, timeliness, machine utilization, safety, and competitiveness against conventional machinery.",
+    "chapter_num": 19
+  },
+  {
+    "type": "essay",
+    "question": "Interpret the significance of the 'Hands Free Hectare' concept for the future of farm management.",
+    "explanation": "Key points: demonstrates integration of sensors, IoT, and self-driving machines; shifts management from direct operation to supervision and coordination; suggests new labor roles, data dependencies, and operational possibilities such as around-the-clock work.",
+    "chapter_num": 19
+  },
+  {
+    "type": "essay",
+    "question": "Based on the chapter excerpt, propose a strategy for increasing precision agriculture adoption in a region dominated by small farms.",
+    "explanation": "Key points: combine affordable financing, shared-service models, connectivity improvements, training and extension, scalable tools suited to small plots, supportive policy, and local technical support; emphasize that technology alone is insufficient without systemic support.",
+    "chapter_num": 19
+  }
+]

@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "Miért jelent egyszerre előnyt és hátrányt az Alföld csaknem tökéletes síksága a mezőgazdaság számára?",
+    "options": [
+      "A) Mert kedvez az erdőgazdálkodásnak, de akadályozza a szántóföldi művelést",
+      "B) Mert megkönnyíti a nagyüzemi gépesítést, ugyanakkor fokozza a belvíz kialakulásának kockázatát",
+      "C) Mert növeli a csapadék mennyiségét, de csökkenti a talaj termékenységét",
+      "D) Mert elősegíti a szőlőtermesztést, de gátolja a gabonafélék termesztését"
+    ],
+    "correct": "B",
+    "explanation": "A sík felszín minimális lejtőből adódó energiaveszteséggel teszi lehetővé a gépesített gazdálkodást, ugyanakkor a rossz lefolyás miatt belvízproblémákat okozhat.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik tényező járult hozzá leginkább ahhoz, hogy Magyarország késéssel kapcsolódott be a precíziós mezőgazdaság fejlődésébe?",
+    "options": [
+      "A) A túlzottan magas éves csapadékmennyiség",
+      "B) A kizárólag családi gazdaságokra épülő birtokszerkezet",
+      "C) A szocialista korszak technológiai korlátozásai és a rendszerváltás utáni privatizációs prioritások",
+      "D) A hazai gépgyártás teljes hiánya már a 19. században"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet szerint a COCOM-embargó és a rendszerváltás utáni kárpótlás-privatizáció elsőbbsége késleltette a technológiai modernizációt.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "Mi tette lehetővé a precíziós mezőgazdaság magyarországi modern korszakának felgyorsulását a 2010-es évek közepén?",
+    "options": [
+      "A) Az ökológiai gazdálkodás kötelezővé tétele",
+      "B) Az RTK korrekciós hálózatok széles körű elérhetősége",
+      "C) A szántóterületek drasztikus csökkenése",
+      "D) A belvíz teljes megszűnése"
+    ],
+    "correct": "B",
+    "explanation": "A szöveg egyértelműen az RTK-hálózatok elterjedéséhez köti a modern precíziós korszak kezdetét.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelent a fejezetben szereplő belvíz fogalma?",
+    "options": [
+      "A) Folyók tartós mederkilépését",
+      "B) Mesterséges öntözővíz-visszatartást",
+      "C) Átmeneti felszíni vízfelhalmozódást rossz lefolyású területeken",
+      "D) Talajvízből történő csepegtető öntözést"
+    ],
+    "correct": "C",
+    "explanation": "A belvíz a rossz lefolyású területeken kialakuló átmeneti felszíni vízfelhalmozódás.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "Miért fontos a 2022-es aszály a precíziós mezőgazdaság szempontjából Magyarországon?",
+    "options": [
+      "A) Mert megszüntette a szőlőtermesztést a Dunántúlon",
+      "B) Mert világossá tette a precíziós vízgazdálkodás sürgősségét",
+      "C) Mert jelentősen növelte a kukoricahozamokat",
+      "D) Mert csökkentette a gazdálkodók technológiai érdeklődését"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet szerint a 2022-es szélsőséges aszály minden szakpolitikai dokumentumnál erősebben jelezte a precíziós vízgazdálkodás szükségességét.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik állítás írja le legjobban a magyar birtokszerkezet precíziós mezőgazdaságra gyakorolt hatását?",
+    "options": [
+      "A) Az egységes kisbirtokrendszer gyorsítja a drága technológiák terjedését",
+      "B) A polarizált birtokszerkezet miatt a technológia inkább a nagyobb üzemméretnek kedvez",
+      "C) A birtokszerkezetnek nincs hatása a technológia terjedésére",
+      "D) Kizárólag a hegyvidéki területeken alkalmazható precíziós technológia"
+    ],
+    "correct": "B",
+    "explanation": "A szöveg hangsúlyozza, hogy a technológia költségszerkezete a nagyobb léptéket részesíti előnyben.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik régióhoz kapcsolja a fejezet a precíziós szőlészet korai hazai alkalmazását?",
+    "options": [
+      "A) Alföld",
+      "B) Kisalföld",
+      "C) Dunántúl",
+      "D) Tiszántúl"
+    ],
+    "correct": "C",
+    "explanation": "A Dunántúlon található borvidékekhez kapcsolódik a precíziós szőlészet korai alkalmazása.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora helymeghatározási pontosságot biztosít a korrekciós jel az RTK-rendszerben a fejezet szerint?",
+    "options": [
+      "A) 10–20 méter",
+      "B) 1–2 centiméter",
+      "C) 30–50 centiméter",
+      "D) 5–10 centiméter"
+    ],
+    "correct": "B",
+    "explanation": "A szöveg szerint az RTK korrekciós jel 1–2 centiméteres pontosságot biztosít.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik szervezethez kötődik a PGR (Precíziós Gazdálkodási Rendszer) platform kidolgozása?",
+    "options": [
+      "A) KSH",
+      "B) K&H Bank",
+      "C) KITE Zrt.",
+      "D) UNESCO"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet szerint a nádudvari székhelyű KITE Zrt. dolgozta ki a PGR rendszert.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "Miért jelent különös kihívást a magyar éghajlat a precíziós gazdálkodás számára?",
+    "options": [
+      "A) Mert az éves csapadék minden régióban azonos",
+      "B) Mert a változékonyság miatt ugyanazon tábla évről évre nagyon eltérő csapadékot kaphat",
+      "C) Mert Magyarországon nincs számottevő aszálykockázat",
+      "D) Mert a tél teljesen megszűnt mezőgazdasági tényező lenni"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet kiemeli, hogy a fő kihívás nem pusztán az átlag, hanem a csapadék erős változékonysága.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik tényező NEM szerepel a digitalizáció elsődleges akadályai között a szövegben?",
+    "options": [
+      "A) Magas induló költségek",
+      "B) Képzett munkaerő hiánya",
+      "C) Megbízhatatlan vidéki szélessávú internet",
+      "D) Túlzottan erős exportkereslet a precíziós adatok iránt"
+    ],
+    "correct": "D",
+    "explanation": "A szöveg az első három tényezőt említi akadályként, a túlzott exportkeresletet nem.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik következtetés vonható le leginkább a KSH 2020-as adataiból a technológiai adaptáció kapcsán?",
+    "options": [
+      "A) A magas formális képzettség gyorsítja a digitális átállást",
+      "B) A képzettségi hiány lassíthatja az FMIS-rendszerek önkéntes használatát",
+      "C) A végzettség teljesen független a technológiahasználattól",
+      "D) A gazdálkodók többsége felsőfokú informatikai diplomával rendelkezik"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet szerint a formális képzettség hiánya nyilvánvalóan nehezíti a digitális eszközök elfogadását és használatát.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "Az Alföld Magyarország nyugati harmadát foglalja el.",
+    "correct_answer": false,
+    "explanation": "A fejezet szerint az Alföld az ország keleti kétharmadát foglalja el.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "A belvíz kialakulásában szerepet játszhat a magas talajvízszint és a telített talaj is.",
+    "correct_answer": true,
+    "explanation": "A szöveg ezt kifejezetten felsorolja a belvíz okai között.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "A Dunántúlon a csapadék általában valamivel bőségesebb, mint az Alföldön.",
+    "correct_answer": true,
+    "explanation": "A fejezet szerint a Dunántúlon valamivel több a csapadék.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "A tokaji borvidék a Dunántúlon található.",
+    "correct_answer": false,
+    "explanation": "A tokaji borvidék az Északi-középhegység térségéhez kapcsolódik.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "A 2022-es tenyészidőszak szélsőséges aszályt hozott Magyarországon.",
+    "correct_answer": true,
+    "explanation": "A fejezet ezt külön kiemeli, mint jelentős figyelmeztető eseményt.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "Magyarország teljes mezőgazdasági területe megközelítőleg 5,3 millió hektár.",
+    "correct_answer": true,
+    "explanation": "Ez az érték szerepel a szövegben.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "A magyar birtokszerkezet teljesen egységes, ezért a technológia gyorsan terjed minden üzemméretben.",
+    "correct_answer": false,
+    "explanation": "A birtokszerkezet polarizált, és ez egyenetlenné teszi a technológia terjedését.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "A COCOM-embargó korlátozta a fejlett elektronikai és számítástechnikai berendezések exportját a keleti blokkba.",
+    "correct_answer": true,
+    "explanation": "A fejezet ezt a történelmi lemaradás egyik fő okaként említi.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "A rendszerváltás után azonnal a technológiai modernizáció volt a legfőbb prioritás a mezőgazdaságban.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint az elsődleges prioritás a kárpótlás és a privatizáció volt.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "2023-ra az RTK-infrastruktúra hozzávetőleg 1,2 millió hektárt fedett le Magyarországon.",
+    "correct_answer": true,
+    "explanation": "Ez az adat konkrétan szerepel a fejezetben.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "Az RTK-rendszer pontossága elegendő az automatikus kormányzáshoz és a szakaszoláshoz.",
+    "correct_answer": true,
+    "explanation": "Az 1–2 cm-es pontosság lehetővé teszi ezeket az alkalmazásokat.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "A K&H Bank 2022-es felmérése szerint a mezőgazdasági vállalkozások többsége vezető innovátornak tartotta magát.",
+    "correct_answer": false,
+    "explanation": "Csak 12 százalék tartotta magát vezető innovátornak.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "A gazdálkodók formális képzettségének hiánya nem befolyásolja érdemben a digitális rendszerek használatát.",
+    "correct_answer": false,
+    "explanation": "A fejezet szerint ennek hatása nyilvánvaló a technológiai alkalmazkodásra.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "A PGR rendszer gépadatokat gyűjt és döntéstámogató ajánlásokat ad a gazdálkodóknak.",
+    "correct_answer": true,
+    "explanation": "A KITE által fejlesztett rendszer egyik fő funkciója ez.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "A magyar precíziós mezőgazdaság fejlődése teljesen független a történelmi birtokrendezési folyamatoktól.",
+    "correct_answer": false,
+    "explanation": "A fejezet hangsúlyozza, hogy a kárpótlás és a szétaprózódott tulajdoni viszonyok hosszú időre hatottak.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ország keleti kétharmadát elfoglaló nagy síksági térség neve: _____.",
+    "correct_answer": "Alföld",
+    "explanation": "A fejezet szerint az Alföld foglalja el Magyarország keleti kétharmadát.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "A rossz lefolyású területeken kialakuló átmeneti felszíni vízfelhalmozódást _____ nevezik.",
+    "correct_answer": "belvíznek",
+    "explanation": "A szöveg ezt a fogalmat így definiálja.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Dunától nyugatra fekvő, változatosabb mezőgazdasági képet mutató országrész neve _____.",
+    "correct_answer": "Dunántúl",
+    "explanation": "A fejezet ezt a régiót így nevezi meg.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "A tokaji borvidék az _____ része, és korán ösztönözte a drónos lombkorona-térképezés kipróbálását.",
+    "correct_answer": "Északi-középhegység",
+    "explanation": "A szöveg a tokaji borvidéket ehhez a térséghez kapcsolja.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az Alföld központi területein az éves átlagos csapadékmennyiség mintegy _____ mm.",
+    "correct_answer": "500",
+    "explanation": "A fejezet szerint itt körülbelül 500 mm az éves átlag.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "A nyugat-dunántúli területeken az éves csapadék hozzávetőleg _____–_____ mm.",
+    "correct_answer": "700–800",
+    "explanation": "A szöveg ezt a tartományt adja meg.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "Magyarország teljes mezőgazdasági területe megközelítőleg _____ millió hektár.",
+    "correct_answer": "5,3",
+    "explanation": "Ez a fejezetben szereplő összesített adat.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "A művelt szántóterület nagysága mintegy _____ millió hektár.",
+    "correct_answer": "4,5",
+    "explanation": "A szöveg szerint ennyi a művelt szántóterület.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "A precíziós mezőgazdaság modern magyarországi korszaka nagyjából a _____ évek közepére tehető.",
+    "correct_answer": "2010-es",
+    "explanation": "A fejezet ezt az időszakot jelöli meg fordulópontként.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az RTK rövidítés jelentése: _____ idejű kinematikai.",
+    "correct_answer": "valós",
+    "explanation": "A magyar szövegben az RTK-t valós idejű kinematikai korrekcióként oldja fel.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "2023-ra az RTK-infrastruktúra mintegy _____ mezőgazdasági gépet szolgált ki.",
+    "correct_answer": "3000",
+    "explanation": "Ez a konkrét szám szerepel a fejezetben.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "A korrekciós jel által biztosított helymeghatározási pontosság _____–_____ centiméter.",
+    "correct_answer": "1–2",
+    "explanation": "A szöveg szerint ez a pontosság teszi lehetővé az automatikus kormányzást.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "A KITE Zrt. által kidolgozott integrált informatikai platform neve: _____.",
+    "correct_answer": "PGR",
+    "explanation": "A PGR a Precíziós Gazdálkodási Rendszer rövidítése.",
+    "chapter_num": 20
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be, hogyan befolyásolják Magyarország eltérő agrárföldrajzi régiói a precíziós mezőgazdaság alkalmazási lehetőségeit.",
+    "explanation": "Kulcspontok: Alföld sík felszíne és nagyüzemi gépesítés; belvízkockázat; Dunántúl mozaikosabb szerkezete és precíziós szőlészet; Északi-középhegység kisebb intenzitású mezőgazdasága; régiónként eltérő talaj-, domborzati és csapadékviszonyok.",
+    "chapter_num": 20
+  },
+  {
+    "type": "essay",
+    "question": "Elemezze, milyen történelmi okok miatt alakult ki Magyarország lemaradása a precíziós mezőgazdaság terén az Egyesült Államokhoz és Nyugat-Európához képest.",
+    "explanation": "Kulcspontok: szocialista nagyüzemi rendszer; nyugati technológiához való korlátozott hozzáférés; COCOM-embargó; rendszerváltás utáni kárpótlás és privatizáció prioritása; elhúzódó birtokrendezés; késői technológiai felzárkózás.",
+    "chapter_num": 20
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, miért tekinthető az RTK-infrastruktúra kiépülése fordulópontnak a magyar precíziós mezőgazdaságban.",
+    "explanation": "Kulcspontok: 1–2 cm pontosság; automatikus kormányzás; controlled-traffic farming; szakaszolás; gyakorlati használhatóság növekedése; kritikus infrastruktúra szerepe az elterjedésben.",
+    "chapter_num": 20
+  },
+  {
+    "type": "essay",
+    "question": "Értékelje, hogyan hat a magyar birtokszerkezet polarizáltsága a precíziós technológiák terjedésére.",
+    "explanation": "Kulcspontok: nagyüzemek méretgazdaságossági előnye; kistermelők korlátozott beruházási lehetőségei; szétaprózott parcellák; technológiai költségszerkezet; egyenetlen adaptáció.",
+    "chapter_num": 20
+  },
+  {
+    "type": "essay",
+    "question": "Fejtse ki, miért jelent a 2022-es aszály különösen fontos tanulságot a precíziós vízgazdálkodás szempontjából Magyarországon.",
+    "explanation": "Kulcspontok: szélsőséges csapadék-ingadozás; kukoricahozam visszaesése; sérülékenység felismerése; vízgazdálkodási döntéstámogatás szükségessége; szakpolitikai és üzemi következmények.",
+    "chapter_num": 20
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be, milyen társadalmi és kulturális tényezők lassítják a digitalizációt a magyar mezőgazdaságban.",
+    "explanation": "Kulcspontok: konzervatív ágazati kultúra; szájról szájra terjedő tudás; formális képzettség hiánya; digitális készségek korlátozottsága; bizalmi és generációs tényezők.",
+    "chapter_num": 20
+  },
+  {
+    "type": "essay",
+    "question": "Elemezze a K&H Bank 2022-es felmérésének adatai alapján, mennyire tekinthető stratégiai kérdésnek a digitalizáció a magyar agrárvállalkozások körében.",
+    "explanation": "Kulcspontok: alacsony arányú vezető innovátorok; sok óvatos vállalkozás; kevés cég kezeli alapvető stratégiai kérdésként; beruházási arány értelmezése; következmények a versenyképességre.",
+    "chapter_num": 20
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, hogyan kapcsolódik össze a gazdálkodók képzettségi szintje és a farmmenedzsment-információs rendszerek használata.",
+    "explanation": "Kulcspontok: KSH-adatok; formális mezőgazdasági végzettség hiánya; digitális alapkészségek szerepe; táblázatkezelő és FMIS-használat közötti kapcsolat; képzés és szaktanácsadás jelentősége.",
+    "chapter_num": 20
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be a KITE Zrt. PGR rendszerének szerepét a precíziós mezőgazdaság hazai gyakorlati megvalósításában.",
+    "explanation": "Kulcspontok: gépadatok gyűjtése; döntéstámogató algoritmusok; közvetlen ajánlások; integrátori szerep; nagyüzemi alkalmazhatóság; magyar viszonyokra szabott működés.",
+    "chapter_num": 20
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az Alföld és a Dunántúl precíziós mezőgazdasági kihívásait és lehetőségeit.",
+    "explanation": "Kulcspontok: Alföldön síkság, nagy táblák, belvíz és aszály; Dunántúlon változatos domborzat, mozaikos művelés, szőlészet; eltérő technológiai prioritások; régióspecifikus menedzsment.",
+    "chapter_num": 20
+  }
+]

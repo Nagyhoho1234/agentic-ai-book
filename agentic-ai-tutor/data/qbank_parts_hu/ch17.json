@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "Mi a precíziós mezőgazdaság melletti alapvető gazdasági érv a fejezet szerint?",
+    "options": [
+      "A) A technológia önmagában növeli a terményárakat",
+      "B) Ha a tábla nem egyöntetű, az egységes kezelés szükségszerűen pazarló",
+      "C) A precíziós rendszerek minden gazdaságban azonos megtérülést biztosítanak",
+      "D) A környezeti előnyök automatikusan pénzügyi nyereséggé alakulnak"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet központi tétele szerint a táblán belüli változékonyság mellett az egységes inputkijuttatás túl- és alulkezelést okoz, ami pazarláshoz és hozamveszteséghez vezet.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik tényező NEM szerepel a fejezet szerint a precíziós mezőgazdaság gazdaságosságát befolyásoló elemek között?",
+    "options": [
+      "A) Az üzem mérete",
+      "B) A termesztett növény",
+      "C) A gazdálkodó szaktudása",
+      "D) A gazdaság tulajdonosának életkora önmagában"
+    ],
+    "correct": "D",
+    "explanation": "A szöveg az üzemméretet, a növényt, a táblán belüli változékonyságot és a szaktudást említi, de a tulajdonos életkorát önálló meghatározó tényezőként nem.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a változó dózisú vetés gazdasági logikája?",
+    "options": [
+      "A) Minden zónában azonos tőszámot alkalmaz a gépi egyszerűség érdekében",
+      "B) A vetőmagnormát a talajzónák termőképességéhez igazítja",
+      "C) Csak a vetőmagköltséget növeli, a hozamot nem befolyásolja",
+      "D) Kizárólag öntözött területeken alkalmazható"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet szerint a változó dózisú vetés a vetőmagnormát és tőszámot a különböző zónák termőképességéhez igazítja.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "Az automatizált kormányzási rendszerek fő gazdasági előnye a fejezet alapján elsősorban miben rejlik?",
+    "options": [
+      "A) Közvetlenül növelik a termény piaci árát",
+      "B) Megszüntetik az összes időjárási kockázatot",
+      "C) Csökkentik az átfedést és javítják a munkaszélesség kihasználását",
+      "D) Feleslegessé teszik az összes adatgyűjtést"
+    ],
+    "correct": "C",
+    "explanation": "Az automatizált kormányzás fő előnye az üzemeltetési hatékonyság javulása: kisebb átfedés, jobb munkaszélesség-kihasználás és kisebb kezelői fáradtság.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik példa kapcsolódik leginkább a precíziós mezőgazdaság kockázatkezelési dimenziójához?",
+    "options": [
+      "A) A gépek színének egységesítése",
+      "B) Helyspecifikus dokumentáció, amely jogi védelmet nyújthat",
+      "C) A táblák összevonása nagyobb blokkokká",
+      "D) A művelési ág megváltoztatása minden évben"
+    ],
+    "correct": "B",
+    "explanation": "A szöveg kiemeli, hogy a helyspecifikus dokumentáció jogi védelmet adhat például a növényvédő szerek kijuttatásával kapcsolatos kifogások esetén.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a precíziós technológiák gazdasági értékelésének egyik leggyakoribb hibája?",
+    "options": [
+      "A) Túl nagy hangsúly kerül a humán tőkére",
+      "B) Csak a közvetett hatásokat veszik figyelembe",
+      "C) Csak a közvetlen, nyilvánvaló hatásokat számolják, a közvetetteket nem",
+      "D) Minden esetben túlbecsülik a karbantartási költségeket"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet szerint gyakori hiba, hogy csak az inputmegtakarítást vagy hozamnövekedést nézik, miközben a közvetett költségek és hasznok kimaradnak.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "Az alábbiak közül melyik tartozik a kezdeti beruházási költségek közé?",
+    "options": [
+      "A) Éves szoftverlicenc",
+      "B) Talajmintavétel ismétlődő költsége",
+      "C) GNSS-vevő vételára",
+      "D) A kezelő betanítására fordított munkaidő minden szezonban"
+    ],
+    "correct": "C",
+    "explanation": "A hardver vételára, például egy GNSS-vevő vagy hozamtérképező rendszer ára, tipikus kezdeti beruházási költség.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "Miért kell a humán tőke költségeit is figyelembe venni a költség-haszon elemzésben?",
+    "options": [
+      "A) Mert ezek mindig nagyobbak, mint a hardverköltségek",
+      "B) Mert a technológia használatának elsajátítása és az adatok értelmezése időt és szakértelmet igényel",
+      "C) Mert a humán tőke költségei állami támogatásból mindig fedezhetők",
+      "D) Mert ezek kizárólag a nagyüzemekben jelentkeznek"
+    ],
+    "correct": "B",
+    "explanation": "A szöveg hangsúlyozza, hogy a technológia kezelése és az adatok döntéssé alakítása idő- és tudásigényes, ezért ez valódi költség.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik állítás írja le legjobban a hozammonitor kihasználatlanságának gazdasági problémáját?",
+    "options": [
+      "A) Csökkenti a termény minőségét minden esetben",
+      "B) Növeli a műtrágya árát",
+      "C) Költséget jelent haszon nélkül, ha nincs idő vagy szakértelem az adatok feldolgozására",
+      "D) Csak akkor probléma, ha a gazdaság bérelt földön működik"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet példája szerint a kihasználatlan hozammonitor pénzbe kerül, de nem termel hasznot, ha az adatok feldolgozása elmarad.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik tartozik a precíziós mezőgazdaság közvetlenül említett hasznai közé?",
+    "options": [
+      "A) A földárak automatikus emelkedése",
+      "B) Inputmegtakarítás és hozamnövekedés",
+      "C) Az összes szabályozási kockázat megszűnése",
+      "D) A piaci verseny eltűnése"
+    ],
+    "correct": "B",
+    "explanation": "A szöveg a közvetlen inputmegtakarítást és a hozamnövekedést említi a legfontosabb haszonkategóriák között.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik előny kapcsolódik a termékminőség javulásához?",
+    "options": [
+      "A) Prémium ár elérésének lehetősége",
+      "B) A gépköltségek teljes megszűnése",
+      "C) A földbérleti díj automatikus csökkenése",
+      "D) A talajváltozékonyság megszüntetése"
+    ],
+    "correct": "A",
+    "explanation": "A fejezet szerint az egyenletesebb szemnedvesség vagy fehérjetartalom javíthatja a minőséget, ami prémium árakat tehet lehetővé.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik üzemeltetési előnyt emeli ki a fejezet?",
+    "options": [
+      "A) A rossz látási viszonyok közötti munkavégzés lehetőségét",
+      "B) A terményárak állami rögzítését",
+      "C) A csapadék mennyiségének növelését",
+      "D) A talaj kémhatásának automatikus semlegesítését"
+    ],
+    "correct": "A",
+    "explanation": "Az üzemeltetési előnyök között szerepel, hogy egyes precíziós rendszerek rossz látási viszonyok között is lehetővé teszik a munkát.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "A fejezet szerint a precíziós mezőgazdaság hosszú távú fennmaradása attól függ, hogy pénzügyileg kifizetődő-e.",
+    "correct_answer": true,
+    "explanation": "A szöveg nyitó állítása szerint a technológia fennmaradása végső soron azon múlik, hogy megéri-e gazdaságilag.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "A precíziós mezőgazdaság gazdaságosságára a fejezet egyértelmű, minden helyzetre érvényes igen választ ad.",
+    "correct_answer": false,
+    "explanation": "A válasz árnyalt: függ a technológiától, üzemmérettől, növénytől, változékonyságtól és szaktudástól.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "Az általános tendencia az, hogy a precíziós mezőgazdaság gazdaságossága az elmúlt három évtizedben javult.",
+    "correct_answer": true,
+    "explanation": "A fejezet ezt egyértelmű tendenciaként fogalmazza meg.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "Ha egy tábla nem egyöntetű, az egységes kezelés gazdaságilag optimális megoldás.",
+    "correct_answer": false,
+    "explanation": "Épp ellenkezőleg: a szöveg szerint az egységes kezelés ilyenkor szükségszerűen pazarló.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "A túltrágyázott zónák csak pénzügyi veszteséget okoznak, környezeti kárt nem.",
+    "correct_answer": false,
+    "explanation": "A fejezet szerint a túl sok input pazarlást és potenciális környezeti kárt is jelent.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "A helyspecifikus gyomirtás lényege, hogy csak ott kezel, ahol ténylegesen vannak gyomok.",
+    "correct_answer": true,
+    "explanation": "Ez a célzott kezelés egyik alapelve a szövegben.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "A precíziós öntözés célja, hogy minden táblarész azonos mennyiségű vizet kapjon.",
+    "correct_answer": false,
+    "explanation": "A precíziós öntözés éppen azt célozza, hogy oda és akkor jusson víz, ahol és amikor szükség van rá.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "Az automatizált kormányzási rendszerek közvetlenül mindig csökkentik a műtrágyaadagokat.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint ezek elsősorban az üzemeltetési hatékonyságot javítják, nem közvetlenül az inputdózist változtatják.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "A precíziós mezőgazdaság értékelésénél nemcsak az átlagos jövedelmezőség, hanem a jövedelem ingadozásának csökkentése is fontos szempont.",
+    "correct_answer": true,
+    "explanation": "A fejezet kifejezetten hangsúlyozza a kockázatcsökkentés és a jövedelemstabilizálás szerepét.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "A költség-haszon elemzésben elegendő csak a közvetlen, könnyen mérhető hatásokat figyelembe venni.",
+    "correct_answer": false,
+    "explanation": "A fejezet szerint ez gyakori hiba; a közvetett költségeket és hasznokat is számba kell venni.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "A hardver vételára a precíziós technológiák egyik legszembetűnőbb költsége.",
+    "correct_answer": true,
+    "explanation": "A kezdeti beruházási költségként a hardver vételára szerepel elsőként.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "Az éves előfizetési díjak és szoftverlicencek nem számítanak releváns költségnek a precíziós gazdálkodásban.",
+    "correct_answer": false,
+    "explanation": "A fejezet szerint ezek ma már általános ismétlődő költségek.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "A humán tőke költségei közé tartozik a technológia használatának megtanulása és az adatok értelmezése.",
+    "correct_answer": true,
+    "explanation": "A szöveg ezt kifejezetten kiemeli mint figyelembe veendő költségtételt.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "Egy kihasználatlan hozammonitor akkor is teljes gazdasági hasznot termel, ha az adatait nem dolgozzák fel.",
+    "correct_answer": false,
+    "explanation": "A fejezet szerint ilyenkor költséget jelent haszon nélkül.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "A munkaerő- és időmegtakarítás a precíziós technológiák lehetséges gazdasági előnyei közé tartozik.",
+    "correct_answer": true,
+    "explanation": "A szöveg szerint ezek jelentős üzemeltetési előnyök lehetnek.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "A precíziós mezőgazdaság hosszú távú fennmaradása azon múlik, hogy _____-e.",
+    "correct_answer": "kifizetődik",
+    "explanation": "A fejezet nyitó gondolata szerint a technológia fennmaradásának kulcsa a gazdasági megtérülés.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "Ha egy tábla nem egyöntetű, akkor az _____ kezelés szükségszerűen pazarló.",
+    "correct_answer": "egységes",
+    "explanation": "Ez a precíziós gazdálkodás alapvető üzleti érve.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "A túl sok inputot kapó területek pazarlást és potenciális _____ kárt jelentenek.",
+    "correct_answer": "környezeti",
+    "explanation": "A szöveg szerint a túlkezelés nemcsak pénzügyi, hanem környezeti problémát is okozhat.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "A változó dózisú vetés a vetőmagnormát, illetve a _____ a különböző talajzónák termőképességéhez igazítja.",
+    "correct_answer": "tőszámot",
+    "explanation": "A fejezet ezt a két elemet emeli ki a vetés differenciálásánál.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "A helyspecifikus gyomirtás célzottan azokat a _____ kezeli, ahol gyomok vannak.",
+    "correct_answer": "foltokat",
+    "explanation": "A szöveg a teljes felület helyett a gyomos foltok kezelését hangsúlyozza.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az automatizált kormányzási rendszerek csökkentik az _____ a menetek között.",
+    "correct_answer": "átfedést",
+    "explanation": "Ez az egyik legfontosabb üzemeltetési előnyük.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "A precíziós technológiák üzleti érveinek harmadik dimenziója a _____.",
+    "correct_answer": "kockázatkezelés",
+    "explanation": "A fejezet három fő dimenziót tárgyal: input/hozam, üzemeltetési hatékonyság, kockázatkezelés.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "A helyspecifikus dokumentáció jogi _____ nyújthat a növényvédő szerek helytelen kijuttatására vonatkozó kifogásokkal szemben.",
+    "correct_answer": "védelmet",
+    "explanation": "A dokumentáció a fejezet szerint fontos kockázatcsökkentő eszköz.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "A precíziós technológiák gazdasági értékelésének gyakori hibája, hogy csak a _____, nyilvánvaló hatásokat veszik figyelembe.",
+    "correct_answer": "közvetlen",
+    "explanation": "A szöveg szerint a közvetett hatások figyelmen kívül hagyása torzítja az értékelést.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "A hardver vételára a _____ beruházási költség része.",
+    "correct_answer": "kezdeti",
+    "explanation": "A fejezet a kezdeti és az ismétlődő költségeket különíti el.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az éves előfizetési díjak műholdas korrekciós jelekre, szoftverlicencekre és _____ adatplatformokra ma már általánosak.",
+    "correct_answer": "felhőalapú",
+    "explanation": "A szöveg ezt az ismétlődő költségek között említi.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "Egy új technológia kezelésének elsajátítása, az adatok értelmezése és döntéssé formálása időt és _____ igényel.",
+    "correct_answer": "szakértelmet",
+    "explanation": "Ezért kell a humán tőke költségeit is figyelembe venni.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "A termékminőség javulása, például az egyenletesebb szemnedvesség vagy fehérjetartalom, _____ árak elérését teheti lehetővé.",
+    "correct_answer": "prémium",
+    "explanation": "A jobb minőség közvetlen piaci előnyt jelenthet.",
+    "chapter_num": 17
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, miért tekinthető pazarlónak az egységes kezelés egy heterogén táblán, és hogyan alakítja ezt át a precíziós mezőgazdaság gazdasági előnnyé.",
+    "explanation": "Kulcspontok: táblán belüli változékonyság; túl- és alulkezelés; inputpazarlás; elmaradó hozam; helyspecifikus kijuttatás; költségcsökkentés és bevételnövelés együttes hatása.",
+    "chapter_num": 17
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az inputmegtakarításból, a hozamnövekedésből és az üzemeltetési hatékonyságból származó gazdasági előnyöket.",
+    "explanation": "Kulcspontok: közvetlen vs közvetett hasznok; műtrágya/vetőmag/növényvédő szer megtakarítás; hozam- és minőségjavulás; átfedéscsökkentés; idő- és munkaerő-megtakarítás; hektárköltség csökkenése.",
+    "chapter_num": 17
+  },
+  {
+    "type": "essay",
+    "question": "Fejtse ki, hogyan jelenik meg a kockázatkezelés a precíziós mezőgazdaság gazdasági értékelésében.",
+    "explanation": "Kulcspontok: időjárási, piaci, kártevő- és szabályozási kockázatok; dokumentáció mint jogi védelem; hozamstabilizálás; pontosabb hozambecslés; hitelképesség javulása; jövedelemingadozás csökkentése.",
+    "chapter_num": 17
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be, miért lehet félrevezető egy precíziós beruházás értékelése, ha csak a közvetlen hatásokat vesszük figyelembe.",
+    "explanation": "Kulcspontok: közvetlen és közvetett hatások különbsége; rejtett költségek és hasznok; ismétlődő díjak; karbantartás; adatkezelés; humán tőke; üzemeltetési előnyök.",
+    "chapter_num": 17
+  },
+  {
+    "type": "essay",
+    "question": "Részletezze a precíziós mezőgazdasági technológiák fő költségkategóriáit egy költség-haszon elemzésben.",
+    "explanation": "Kulcspontok: kezdeti beruházási költség; hardver; ismétlődő költségek; előfizetések; szoftver; adatgyűjtés; karbantartás és javítás; humán tőke és képzés.",
+    "chapter_num": 17
+  },
+  {
+    "type": "essay",
+    "question": "Értelmezze a humán tőke szerepét a precíziós mezőgazdaság megtérülésében példákkal.",
+    "explanation": "Kulcspontok: tanulási idő; adatértelmezés; döntéstámogatás; szakértelem hiányának költsége; kihasználatlan technológia; menedzsmentminőség jelentősége.",
+    "chapter_num": 17
+  },
+  {
+    "type": "essay",
+    "question": "Elemezze, hogyan javíthatják az automatizált kormányzási rendszerek a gazdaság jövedelmezőségét akkor is, ha nem változtatják meg közvetlenül az inputadagokat.",
+    "explanation": "Kulcspontok: átfedés és kihagyás csökkentése; munkaszélesség jobb kihasználása; kisebb kezelői fáradtság; hosszabb munkavégzés; hektárköltség csökkenése; időkritikus műveletek jobb szervezése.",
+    "chapter_num": 17
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be, milyen típusú hasznokat kell figyelembe venni a precíziós technológiák gazdasági értékelésekor.",
+    "explanation": "Kulcspontok: inputmegtakarítás; hozamnövekedés; minőségjavulás; prémium ár; üzemeltetési előnyök; munkaerő- és időmegtakarítás; kockázatcsökkentés; esetleges környezeti hasznok.",
+    "chapter_num": 17
+  },
+  {
+    "type": "essay",
+    "question": "Fejtse ki, miért nem az a fő kérdés egyre több gazdaság számára, hogy érdemes-e bevezetni a precíziós mezőgazdaságot, hanem az, hogy melyik technológiát vezessék be először.",
+    "explanation": "Kulcspontok: javuló gazdaságossági tendencia; technológiák eltérő megtérülése; gazdaságspecifikus feltételek; prioritások felállítása; fokozatos bevezetés logikája.",
+    "chapter_num": 17
+  },
+  {
+    "type": "essay",
+    "question": "Készítsen rövid érvelést arról, hogy egy hozammonitor önmagában miért nem garantál gazdasági hasznot.",
+    "explanation": "Kulcspontok: adat önmagában nem érték; feldolgozás és értelmezés szükségessége; döntéssé alakítás; idő- és szakértelemigény; kihasználatlanság mint költség.",
+    "chapter_num": 17
+  }
+]

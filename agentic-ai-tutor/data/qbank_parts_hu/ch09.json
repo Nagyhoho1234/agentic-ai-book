@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "Mi a precíziós vízgazdálkodás alapelve a hagyományos öntözéssel szemben?",
+    "options": [
+      "A) Minden táblarészre azonos mennyiségű vizet juttatni",
+      "B) Csak a legszárazabb években öntözni",
+      "C) A megfelelő mennyiségű vizet a megfelelő helyre és időben kijuttatni",
+      "D) Az öntözést teljesen kiváltani tápanyag-utánpótlással"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet szerint a precíziós megközelítés lényege, hogy nem egyformán öntöz mindenhová, hanem hely- és időspecifikusan adagolja a vizet.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "Miért tekinthető a mezőgazdaság a vízgazdálkodás szempontjából kiemelt ágazatnak?",
+    "options": [
+      "A) Mert a globális édesvíz-kivétel mintegy 70%-át használja fel",
+      "B) Mert csak csapadékvízből gazdálkodik",
+      "C) Mert kevesebb vizet használ, mint az ipar és a háztartások együtt",
+      "D) Mert az öntözés nem igényel energiát"
+    ],
+    "correct": "A",
+    "explanation": "A szöveg szerint a mezőgazdaság a Föld legnagyobb édesvíz-fogyasztója, globálisan az összes édesvíz-kivétel körülbelül 70%-ával.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik veszteség NEM szerepel a felszíni öntözés vízveszteségei között a szövegben?",
+    "options": [
+      "A) Párolgás",
+      "B) Felszíni lefolyás",
+      "C) Mélyszivárgás a gyökérzóna alá",
+      "D) Fotoszintetikus lebontás"
+    ],
+    "correct": "D",
+    "explanation": "A felszíni öntözésnél említett fő veszteségek a párolgás, a felszíni lefolyás és a mélyszivárgás; fotoszintetikus lebontásról nincs szó.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a túlöntözés egyik közvetlen talajfizikai következménye?",
+    "options": [
+      "A) A gyökerek jobb oxigénellátása",
+      "B) Pangó vizes állapot és oxigénhiány a gyökérzónában",
+      "C) A talajtextúra azonnali javulása",
+      "D) A szikesedés teljes megszűnése"
+    ],
+    "correct": "B",
+    "explanation": "A túlöntözés telített talajt és pangó vizes állapotot okozhat, ami megfosztja a gyökereket az oxigéntől.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik állítás írja le helyesen a szikesedés mezőgazdasági hatását a fejezet alapján?",
+    "options": [
+      "A) Növeli a rizs és a kukorica terméshozamát",
+      "B) Nem befolyásolja a tápanyagfelvételt",
+      "C) 10-25%-os terméscsökkenést okozhat érzékeny fajoknál",
+      "D) Csak erdészeti területeken jelent problémát"
+    ],
+    "correct": "C",
+    "explanation": "A szöveg szerint a szikesedés az érzékeny fajok, például a rizs és a kukorica hozamát 10-25%-kal csökkentheti.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "Mikor különösen pusztító a vízstressz a növények számára?",
+    "options": [
+      "A) Csírázás után közvetlenül minden esetben",
+      "B) A virágzás és a szemtelítődés idején",
+      "C) Csak a betakarítás után",
+      "D) Kizárólag téli nyugalmi állapotban"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet kiemeli, hogy a virágzás és a szemtelítődés kritikus időszakok, amikor a vízhiány közvetlen terméskiesést okozhat.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelent gazdasági szempontból az, ha a kiszivattyúzott víz nem jut el a növény által hasznosítható zónába?",
+    "options": [
+      "A) Csak környezeti probléma, gazdasági nem",
+      "B) A termelési költségek csökkenését",
+      "C) Kidobott pénzt a víz és az energia oldaláról is",
+      "D) A talaj automatikus javulását"
+    ],
+    "correct": "C",
+    "explanation": "A szöveg hangsúlyozza, hogy minden kiszivattyúzott, de a növény által nem hasznosított köbméter víz pénzügyi veszteség.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "Milyen vízhatékonysági tartományt érhetnek el az intelligens öntözési rendszerek a fejezet szerint?",
+    "options": [
+      "A) 20-35%",
+      "B) 40-55%",
+      "C) 60-70%",
+      "D) 80-95%"
+    ],
+    "correct": "D",
+    "explanation": "A fejezet szerint az érzékelőket, automatizálást és adatelemzést integráló intelligens rendszerek rutinszerűen 80-95%-os vízhatékonyságot érnek el.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "Mit ír le a talaj–növény–légkör kontinuum (SPAC) fogalma?",
+    "options": [
+      "A) A tápanyagok körforgását a talajban",
+      "B) A víz folyamatos útját a talajtól a légkörig",
+      "C) A talajművelési rendszerek osztályozását",
+      "D) A csapadékmérés módszereit"
+    ],
+    "correct": "B",
+    "explanation": "A SPAC a víz útját írja le a talajból a gyökereken és a növényen át a légkörbe.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "Mi hajtja a víz mozgását a SPAC-rendszerben?",
+    "options": [
+      "A) Kizárólag a gravitáció",
+      "B) A vízpotenciál-különbségek",
+      "C) Csak a gyökérnyomás",
+      "D) A talaj pH-ja"
+    ],
+    "correct": "B",
+    "explanation": "A víz a rendszerben a vízpotenciál különbségei miatt mozog a magasabb potenciálú helyről az alacsonyabb felé.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik talajtípusra jellemző, hogy a víz gyorsan elszivárog belőle a nagy pórusok miatt?",
+    "options": [
+      "A) Homokos talaj",
+      "B) Agyagos talaj",
+      "C) Tőzegtalaj",
+      "D) Szikes talaj minden esetben"
+    ],
+    "correct": "A",
+    "explanation": "A homokos talajok nagy pórusai miatt a gravitáció hatására a víz gyorsan eltávozik.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelent a teljes hasznosítható vízkészlet (TAW)?",
+    "options": [
+      "A) A talaj teljes pórustérfogata",
+      "B) A szántóföldi vízkapacitás és a hervadáspont közötti különbség",
+      "C) Az éves csapadék és öntözés összege",
+      "D) A növény napi vízfogyasztása"
+    ],
+    "correct": "B",
+    "explanation": "A TAW definíció szerint a szántóföldi vízkapacitás és a hervadáspont közötti vízmennyiség, amely a növény számára elérhető.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "Globálisan a mezőgazdaság az összes édesvíz-kivétel mintegy 70 százalékát adja.",
+    "correct_answer": true,
+    "explanation": "A fejezet ezt egyértelműen megadja, és hangsúlyozza a mezőgazdaság domináns vízfelhasználását.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "Az arid és szemiarid régiókban a mezőgazdaság édesvíz-felhasználási aránya jellemzően alacsonyabb, mint a globális átlag.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint ezekben a régiókban az arány meghaladhatja a 90 százalékot.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "A hagyományos felszíni öntözés során a kijuttatott víz 30-60 százaléka elveszhet.",
+    "correct_answer": true,
+    "explanation": "A fejezet ezt a veszteségi tartományt adja meg párolgás, lefolyás és mélyszivárgás miatt.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "A hagyományos sprinkler rendszerek rendszerint 90 százalék feletti vízhatékonyságot érnek el.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint ezek ritkán érnek el 70 százalék feletti vízhatékonyságot.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "A túlöntözés hozzájárulhat a másodlagos szikesedés kialakulásához.",
+    "correct_answer": true,
+    "explanation": "A fejezet szerint a túlöntözés elősegíti a szikesedést és a másodlagos szikesedést.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "A szikesedés kizárólag a talaj fizikai szerkezetét érinti, a növény tápanyagfelvételét nem.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint a szikesedés gátolja a tápanyagfelvételt és megzavarja a talaj mikrobiológiai közösségeit is.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "Az öntözési többlet nitrogént is kilúgozhat a talajvízbe.",
+    "correct_answer": true,
+    "explanation": "A fejezet külön kiemeli, hogy a felesleges öntözés értékes tápanyagokat, különösen nitrogént mos ki.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "Az alulöntözés csak kisebb minőségromlást okoz, de a hozamot általában nem befolyásolja jelentősen.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint a vízérzékeny fajoknál a hozam akár 40 százalékkal vagy annál is többel csökkenhet.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "A víz és a szivattyúzási energia az öntözéses rendszerek össztermelési költségének 15-25 százalékát teheti ki.",
+    "correct_answer": true,
+    "explanation": "Ez a gazdasági arány szerepel a fejezetben.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "A precíziós öntözés célja a hozam csökkentése a víztakarékosság érdekében.",
+    "correct_answer": false,
+    "explanation": "Éppen ellenkezőleg: a cél a pazarlás csökkentése mellett a hozam megtartása vagy növelése.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "A víz a SPAC-rendszerben mindig az alacsonyabb vízpotenciál felé mozog.",
+    "correct_answer": true,
+    "explanation": "A víz a magasabb potenciálú, nedvesebb helyről az alacsonyabb potenciálú, szárazabb hely felé halad.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "Az agyagos talajokban a víz általában könnyebben felvehető a növények számára, mint a homokos talajokban.",
+    "correct_answer": false,
+    "explanation": "Az agyagos talajokban a víz erősebben kötött, ezért a növények nehezebben tudják felvenni.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "A szántóföldi vízkapacitás a teljes átnedvesítés után azonnal, gravitációs elvezetődés nélkül alakul ki.",
+    "correct_answer": false,
+    "explanation": "A szántóföldi vízkapacitás jellemzően egy-két nappal a teljes átnedvesítés után, a gravitációs elvezetődés megszűnésével áll be.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "A teljes hasznosítható vízkészlet nagysága jelentősen függ a talajtextúrától.",
+    "correct_answer": true,
+    "explanation": "A fejezet példákkal mutatja be, hogy a homokos és az agyagos vályog talajok TAW-értékei nagyon eltérőek.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "A legtöbb kultúrnövény csak a hervadáspont elérésekor kezd vízstresszt mutatni.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint a növények többsége már jóval a hervadáspont előtt vízstresszt szenved.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "Globálisan a mezőgazdaság az összes édesvíz-kivétel mintegy _____ százalékát adja.",
+    "correct_answer": "70",
+    "explanation": "A fejezet szerint a mezőgazdaság részesedése körülbelül 70%.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az arid és szemiarid régiókban a mezőgazdasági édesvíz-felhasználás aránya meghaladhatja a _____ százalékot.",
+    "correct_answer": "90",
+    "explanation": "Ezekben a régiókban a mezőgazdaság vízhasználata különösen domináns.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "A felszíni öntözési módok a kijuttatott víz _____-60 százalékát elveszíthetik.",
+    "correct_answer": "30",
+    "explanation": "A megadott veszteségi tartomány 30-60%.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "A hagyományos sprinkler rendszerek ritkán érnek el _____ százalék feletti vízhatékonyságot.",
+    "correct_answer": "70",
+    "explanation": "A fejezet ezt a határt említi a hagyományos sprinkler rendszereknél.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "A másodlagos szikesedés világszerte az öntözött területek mintegy _____ százalékát érinti.",
+    "correct_answer": "20",
+    "explanation": "A szöveg ezt a globális arányt adja meg.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "A szikesedés évente becslések szerint _____ millió hektár szántóterületet degradál.",
+    "correct_answer": "1,5",
+    "explanation": "A fejezetben szereplő becslés szerint évente 1,5 millió hektár érintett.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "A vízérzékeny fajoknál, például a búzánál, az alulöntözés a hozamot akár _____ százalékkal vagy annál is többel csökkentheti.",
+    "correct_answer": "40",
+    "explanation": "A kritikus növekedési fázisokban fellépő vízhiány súlyos termésveszteséget okozhat.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "A víz és a szivattyúzási energia az öntözéses rendszerek össztermelési költségének _____-25 százalékát teheti ki.",
+    "correct_answer": "15",
+    "explanation": "A fejezet 15-25%-os költséghányadot említ.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az intelligens öntözési rendszerek rutinszerűen _____-95 százalékos vízhatékonyságot érnek el.",
+    "correct_answer": "80",
+    "explanation": "A precíziós rendszerek jellemző hatékonysági tartománya 80-95%.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "A talaj–növény–légkör kontinuum rövidítése: _____.",
+    "correct_answer": "SPAC",
+    "explanation": "A fejezet a Soil-Plant-Atmosphere Continuum rövidítéseként használja a SPAC kifejezést.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "A szántóföldi vízkapacitás és a hervadáspont különbsége a teljes hasznosítható vízkészlet, azaz a _____.",
+    "correct_answer": "TAW",
+    "explanation": "A TAW a Total Available Water rövidítése.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "A megengedhető vízkészlet-csökkenés angol rövidítése: _____.",
+    "correct_answer": "MAD",
+    "explanation": "A Management Allowable Depletion rövidítése a MAD.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "A legtöbb szántóföldi kultúránál a MAD a TAW körülbelül _____-60 százaléka.",
+    "correct_answer": "50",
+    "explanation": "A fejezet szerint a legtöbb szántóföldi kultúránál a megengedhető kimerülés 50-60%.",
+    "chapter_num": 9
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, miért tekinthető a víz a mezőgazdaság leginkább korlátozó tényezőjének, és hogyan erősíti ezt a problémát az éghajlatváltozás.",
+    "explanation": "Kulcspontok: a mezőgazdaság nagy vízigénye; globális 70%-os édesvíz-kivétel; vízszűkösség terjedése; csapadékmintázatok változása; időzítés fontossága; a vízhiány közvetlen hatása a hozamra.",
+    "chapter_num": 9
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a hagyományos és a precíziós öntözés logikáját a vízfelhasználás hatékonysága szempontjából.",
+    "explanation": "Kulcspontok: egységes vs. helyspecifikus kijuttatás; pazarlási források; 40-70% vs. 80-95% hatékonyság; érzékelők, automatizálás, adatelemzés szerepe; hozam és víztakarékosság kapcsolata.",
+    "chapter_num": 9
+  },
+  {
+    "type": "essay",
+    "question": "Elemezze a túlöntözés agronómiai és környezeti következményeit a fejezet alapján.",
+    "explanation": "Kulcspontok: pangó vizes állapot; oxigénhiány a gyökérzónában; szikesedés és másodlagos szikesedés; tápanyag-kilúgzás, különösen nitrogén; talajvízszennyezés; terméscsökkenés és talajdegradáció.",
+    "chapter_num": 9
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be, miért lehet az alulöntözés különösen káros a kritikus fenológiai fázisokban.",
+    "explanation": "Kulcspontok: virágzás és szemtelítődés vízigénye; rövid vízhiányok aránytalanul nagy termésvesztesége; vízérzékeny fajok példája; időzítés jelentősége az öntözési döntésekben.",
+    "chapter_num": 9
+  },
+  {
+    "type": "essay",
+    "question": "Fejtse ki, hogyan kapcsolódik össze a vízgazdálkodás és a gazdaságosság az öntözéses termelésben.",
+    "explanation": "Kulcspontok: víz és energia mint költségtényező; 15-25%-os költséghányad; a nem hasznosuló víz mint közvetlen pénzügyi veszteség; hatékonyságjavítás mint gazdasági szükségszerűség.",
+    "chapter_num": 9
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el a talaj–növény–légkör kontinuum (SPAC) fogalmát, és mutassa be, mi hajtja a víz mozgását ebben a rendszerben.",
+    "explanation": "Kulcspontok: folytonos útvonal a talajtól a légkörig; gyökér, szár, levél szerepe; vízpotenciál fogalma; mozgás a magasabbtól az alacsonyabb potenciál felé.",
+    "chapter_num": 9
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a homokos és az agyagos talajok vízgazdálkodási tulajdonságait, és értelmezze ezek jelentőségét az öntözés tervezésében.",
+    "explanation": "Kulcspontok: pórusméret-különbségek; gyors elszivárgás homokban; erős vízkötés agyagban; növényi felvehetőség; eltérő öntözési gyakoriság és adagok.",
+    "chapter_num": 9
+  },
+  {
+    "type": "essay",
+    "question": "Értelmezze a szántóföldi vízkapacitás, a hervadáspont és a teljes hasznosítható vízkészlet kapcsolatát.",
+    "explanation": "Kulcspontok: szántóföldi vízkapacitás definíciója; hervadáspont definíciója; TAW mint különbség; miért fontos ez a növény számára elérhető víz meghatározásában.",
+    "chapter_num": 9
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be a megengedhető vízkészlet-csökkenés (MAD) gyakorlati jelentőségét az öntözési döntéshozatalban.",
+    "explanation": "Kulcspontok: MAD mint öntözési küszöb; kapcsolat a TAW-val; tipikus 50-60%, illetve érzékeny kultúráknál alacsonyabb értékek; stressz megelőzése és pazarlás csökkentése.",
+    "chapter_num": 9
+  },
+  {
+    "type": "essay",
+    "question": "Egy gazdaság célja, hogy a talajnedvességet a szántóföldi vízkapacitás és a MAD-küszöb között tartsa. Magyarázza el, miért előnyös ez agronómiai és vízgazdálkodási szempontból.",
+    "explanation": "Kulcspontok: optimális nedvesség és levegőzöttség; vízstressz elkerülése; túlöntözés megelőzése; jobb gyökérműködés; nagyobb hatékonyság és stabilabb termés.",
+    "chapter_num": 9
+  }
+]

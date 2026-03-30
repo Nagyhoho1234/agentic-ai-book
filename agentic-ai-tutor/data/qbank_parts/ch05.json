@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "According to Section 5.1, why is moving from RGB to multispectral or hyperspectral imaging considered a qualitative leap rather than just a quantitative one?",
+    "options": [
+      "A) Because it mainly improves image brightness",
+      "B) Because it allows access to diagnostically different wavelength information that RGB collapses",
+      "C) Because it always increases spatial resolution",
+      "D) Because it removes the need for calibration"
+    ],
+    "correct": "B",
+    "explanation": "Section 5.1 explains that many-band imaging reveals distinct spectral features tied to pigments, water, structure, and minerals, enabling tasks such as separating nitrogen deficiency from drought stress that RGB alone generally cannot do.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "In Section 5.1, which spectral region is described as having very high reflectance due to leaf mesophyll structure?",
+    "options": [
+      "A) Ultraviolet",
+      "B) Blue visible region",
+      "C) Near-infrared",
+      "D) Thermal infrared"
+    ],
+    "correct": "C",
+    "explanation": "The chapter states that mesophyll cell structure produces very high reflectance in the near-infrared (roughly 700-1100 nm).",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Which statement best captures the distinction made in Section 5.2 between multispectral and hyperspectral sensors?",
+    "options": [
+      "A) Multispectral sensors use contiguous narrow bands, while hyperspectral sensors use a few broad bands",
+      "B) Multispectral sensors record a small number of discrete broad bands, while hyperspectral sensors record many narrow contiguous bands",
+      "C) Multispectral sensors only work on drones, while hyperspectral sensors only work in laboratories",
+      "D) There is no meaningful technical distinction between the two"
+    ],
+    "correct": "B",
+    "explanation": "Section 5.2 defines multispectral sensing as a small number of discrete, relatively broad bands and hyperspectral sensing as many tens or hundreds of narrow, contiguous bands.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Why are multispectral systems often preferred in operational precision agriculture workflows, as discussed in Section 5.2.1?",
+    "options": [
+      "A) They always detect more subtle absorption features than hyperspectral systems",
+      "B) They are less expensive, easier to operate, and sufficient when key wavelengths are already known",
+      "C) They eliminate the need for vegetation indices",
+      "D) They provide continuous spectral coverage from 400 to 2500 nm"
+    ],
+    "correct": "B",
+    "explanation": "Section 5.2.1 notes that multispectral systems are cheaper, generate smaller data volumes, and work well when diagnostically important wavelengths are already established, such as for NDVI.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Which example from Section 5.2 is given as a multispectral platform with five bands centered near 450, 560, 650, 730, and 840 nm?",
+    "options": [
+      "A) Sentinel-2",
+      "B) ASD FieldSpec",
+      "C) DJI Phantom 4 Multispectral",
+      "D) ZY1-02D AHSI"
+    ],
+    "correct": "C",
+    "explanation": "The chapter specifically names the DJI Phantom 4 Multispectral as carrying five multispectral sensors at those approximate center wavelengths.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "What is the main advantage of hyperspectral imaging highlighted in Section 5.2.1?",
+    "options": [
+      "A) Minimal data storage requirements",
+      "B) Greater diagnostic power from fine spectral features",
+      "C) Guaranteed lower cost per hectare",
+      "D) Simpler analysis pipelines"
+    ],
+    "correct": "B",
+    "explanation": "Hyperspectral imaging is described as excelling when fine spectral features are diagnostic, such as subtle absorptions from minerals or pigments.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "According to Section 5.3.1, what causes the sharp rise around 700 nm in a healthy green leaf spectrum?",
+    "options": [
+      "A) Thermal emission peak",
+      "B) Red edge transition",
+      "C) Iron oxide absorption",
+      "D) Surface roughness effect"
+    ],
+    "correct": "B",
+    "explanation": "The chapter identifies the sharp rise around 700 nm as the red edge, a characteristic feature of healthy vegetation spectra.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Which factor is NOT listed in Section 5.3.1 as shaping soil spectral signatures?",
+    "options": [
+      "A) Mineralogy",
+      "B) Moisture",
+      "C) Texture",
+      "D) Stomatal density"
+    ],
+    "correct": "D",
+    "explanation": "Soil spectral signatures are described as depending on mineralogy, organic matter, moisture, texture, and surface roughness. Stomatal density is a plant trait, not a soil property listed here.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "According to Section 5.1, chlorophyll absorbs strongly near which pair of wavelengths?",
+    "options": [
+      "A) 550 nm and 700 nm",
+      "B) 680 nm and 450 nm",
+      "C) 840 nm and 970 nm",
+      "D) 1450 nm and 1950 nm"
+    ],
+    "correct": "B",
+    "explanation": "The chapter states that chlorophyll absorbs strongly near 680 nm and 450 nm, while reflecting near 550 nm.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "What is the most appropriate use of hyperspectral data in relation to multispectral system design, based on Section 5.2.1?",
+    "options": [
+      "A) To replace all multispectral systems in farm operations",
+      "B) To identify informative wavelengths that can later guide multispectral band selection and index design",
+      "C) To avoid using vegetation indices altogether",
+      "D) To improve only spatial resolution"
+    ],
+    "correct": "B",
+    "explanation": "The text says hyperspectral data are often used in research to find the most informative wavelengths, which then inform multispectral system and index design for operational use.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Which platform in Section 5.2 is described as offering thirteen bands from the visible to the shortwave infrared with 10 to 60 m spatial resolution?",
+    "options": [
+      "A) Sentinel-2",
+      "B) DJI Phantom 4 Multispectral",
+      "C) ASD FieldSpec",
+      "D) AHSI only in laboratory mode"
+    ],
+    "correct": "A",
+    "explanation": "Sentinel-2 is identified as having thirteen bands spanning visible to SWIR, with spatial resolutions ranging from 10 to 60 metres.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Based on Section 5.3.1, what trend was reported for soil reflectance as total nitrogen content increases?",
+    "options": [
+      "A) It generally increases across all wavelengths",
+      "B) It remains unchanged",
+      "C) It generally decreases",
+      "D) It becomes independent of moisture"
+    ],
+    "correct": "C",
+    "explanation": "The chapter notes that studies using ZY1-02D hyperspectral imagery found soil reflectance generally decreases as total nitrogen content increases.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Section 5.1 states that RGB cameras can be useful in agriculture, but they compress spectral information into only three broad channels.",
+    "correct_answer": true,
+    "explanation": "The chapter acknowledges useful RGB applications while emphasizing that RGB collapses much richer spectral information into three numbers per pixel.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Healthy vegetation appears green mainly because chlorophyll reflects strongly near 680 nm.",
+    "correct_answer": false,
+    "explanation": "The text says chlorophyll absorbs strongly near 680 nm and 450 nm, while reflecting near 550 nm, which contributes to the green appearance.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Near-infrared reflectance from leaves is largely linked to mesophyll cell structure.",
+    "correct_answer": true,
+    "explanation": "Section 5.1 directly attributes high NIR reflectance to leaf mesophyll structure.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Water absorption features are described in the chapter as creating distinctive dips near 970, 1200, 1450, and 1950 nm.",
+    "correct_answer": true,
+    "explanation": "These wavelengths are explicitly listed in Section 5.1 as water-related absorption features.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A hyperspectral sensor usually records fewer bands than a multispectral sensor, but each band is wider.",
+    "correct_answer": false,
+    "explanation": "The opposite is true: hyperspectral sensors record many more bands, and those bands are narrow and contiguous.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Section 5.2 presents Sentinel-2 as an example of a satellite platform with bands extending into the shortwave infrared.",
+    "correct_answer": true,
+    "explanation": "Sentinel-2 is described as offering thirteen bands spanning the visible to SWIR.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "According to Section 5.2.1, NDVI requires only a red and a near-infrared band.",
+    "correct_answer": true,
+    "explanation": "The chapter uses NDVI as an example of an index that can be computed from just red and NIR bands.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Hyperspectral systems are generally simpler to operate and produce smaller data volumes than multispectral systems.",
+    "correct_answer": false,
+    "explanation": "Section 5.2.1 says the opposite: hyperspectral systems are more complex and generate much larger data volumes.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter argues that multispectral and hyperspectral approaches are always competing and rarely complementary.",
+    "correct_answer": false,
+    "explanation": "It explicitly says the two approaches are complementary in practice.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A spectral signature is the characteristic pattern of reflectance of a material across the electromagnetic spectrum.",
+    "correct_answer": true,
+    "explanation": "This is the definition given in Section 5.3.1.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A healthy green leaf typically shows a sharp decline at the red edge around 700 nm.",
+    "correct_answer": false,
+    "explanation": "The chapter describes a sharp rise at the red edge around 700 nm, not a decline.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Soil spectral signatures can be influenced by organic matter content and surface roughness.",
+    "correct_answer": true,
+    "explanation": "Both are explicitly listed among the factors shaping soil spectra in Section 5.3.1.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Iron oxides are associated only with absorption features in the thermal infrared, according to the chapter.",
+    "correct_answer": false,
+    "explanation": "The text links iron oxides mainly to visible wavelengths around 450-550 nm and often a broad feature in the 850-950 nm region.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Studies cited in Section 5.3.1 reported prominent soil absorption features in the 1100-1400 nm and 1750-2000 nm ranges.",
+    "correct_answer": true,
+    "explanation": "These ranges are specifically mentioned as prominent absorption regions related largely to OH-bearing minerals and bound water.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A spectral library is described as a curated reference collection of spectra measured under controlled conditions.",
+    "correct_answer": true,
+    "explanation": "Section 5.3.2 defines a spectral library in exactly this way.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ index is calculated as (NIR-Red)/(NIR+Red).",
+    "correct_answer": "NDVI",
+    "explanation": "Section 5.2.1 mentions the Normalised Difference Vegetation Index as requiring only red and near-infrared bands.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Conventional cameras typically record three broad channels: red, green, and _____.",
+    "correct_answer": "blue",
+    "explanation": "Section 5.1 identifies RGB as red, green, and blue.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Chlorophyll reflects near _____ nm, which helps make healthy vegetation appear green.",
+    "correct_answer": "550",
+    "explanation": "The chapter states that chlorophyll reflects near 550 nm.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "The near-infrared region is given approximately as _____ to _____ nm.",
+    "correct_answer": "700 to 1100",
+    "explanation": "Section 5.1 defines NIR roughly as 700-1100 nm.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Water absorption creates a distinctive dip near _____ nm in the near-infrared.",
+    "correct_answer": "970",
+    "explanation": "One of the listed water absorption features is near 970 nm.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A hyperspectral sensor records many narrow, _____ spectral bands.",
+    "correct_answer": "contiguous",
+    "explanation": "Section 5.2 emphasizes that hyperspectral bands are narrow and contiguous.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "The DJI Phantom 4 Multispectral includes a band centered near _____ nm that is described as red edge.",
+    "correct_answer": "730",
+    "explanation": "The five-band example includes a red-edge band at 730 nm.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Sentinel-2 offers _____ bands spanning the visible to shortwave infrared.",
+    "correct_answer": "thirteen",
+    "explanation": "Section 5.2 states that Sentinel-2 has thirteen bands.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "The ZY1-02D satellite carries the Advanced Hyperspectral _____ (AHSI).",
+    "correct_answer": "Imager",
+    "explanation": "The instrument name given is Advanced Hyperspectral Imager.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A healthy green leaf typically shows a sharp rise at the _____ edge around 700 nm.",
+    "correct_answer": "red",
+    "explanation": "Section 5.3.1 describes this feature as the red edge.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Soil reflectance generally _____ as total nitrogen content increases, according to studies cited in Section 5.3.1.",
+    "correct_answer": "decreases",
+    "explanation": "The chapter reports a general decrease in soil reflectance with increasing total nitrogen.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A curated collection of reference spectra measured under controlled conditions is called a spectral _____.",
+    "correct_answer": "library",
+    "explanation": "Section 5.3.2 defines a spectral library as such a collection.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hyperspectral imaging is especially useful when fine spectral _____ are diagnostically important.",
+    "correct_answer": "features",
+    "explanation": "Section 5.2.1 says hyperspectral imaging excels where fine spectral features are diagnostic.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Using Sections 5.1 and 5.2, explain why RGB imagery can support some agricultural tasks but is often insufficient for diagnosing crop stress causes.",
+    "explanation": "Key points: RGB can identify visible patterns such as lodging, planting extent, and rough canopy vigour; RGB compresses rich spectral behavior into three broad channels; many stressors may look similar in visible color; multispectral/hyperspectral data capture pigment, water, structural, and mineral-related information across more wavelengths; this added spectral detail can help distinguish causes such as nitrogen deficiency versus drought.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Compare multispectral and hyperspectral imaging in terms of band structure, data volume, cost, and typical agricultural use cases. Refer to Section 5.2.",
+    "explanation": "Key points: multispectral uses a few discrete broader bands; hyperspectral uses many narrow contiguous bands; multispectral usually has lower cost, smaller data volumes, and easier operation; hyperspectral has higher complexity and cost but greater diagnostic power; operational workflows often use multispectral; research and detailed material discrimination often use hyperspectral.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Section 5.2.1 describes multispectral and hyperspectral systems as complementary. Explain this complementarity with an example workflow.",
+    "explanation": "Key points: hyperspectral research can identify the most informative wavelengths for a problem; those wavelengths can then guide multispectral sensor design or vegetation index development; multispectral systems can then be deployed operationally at lower cost and complexity; example could include identifying bands for nutrient stress detection and then building a practical field workflow.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Describe the main components of a healthy leaf spectral signature as presented in Section 5.3.1 and explain what plant properties influence each part.",
+    "explanation": "Key points: low visible reflectance due to pigments; small peak near 550 nm; sharp red-edge rise around 700 nm; high NIR plateau linked to cellular/mesophyll structure; SWIR water absorption troughs linked to water content; pigments listed include chlorophyll, carotenoids, anthocyanins.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "How do soil properties influence spectral signatures according to Section 5.3.1? Discuss at least four factors and their spectral effects.",
+    "explanation": "Key points: mineralogy creates specific absorption features; moisture causes water absorptions near 1450 and 1950 nm; organic matter lowers overall reflectance with broad absorption; iron oxides affect visible and sometimes 850-950 nm region; clay minerals influence bands near 1400, 1900, and 2200 nm; texture and roughness also affect reflectance behavior.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Explain why near-infrared reflectance is especially informative for vegetation analysis, based on Section 5.1.",
+    "explanation": "Key points: NIR is strongly affected by mesophyll structure; healthy canopies often show high NIR reflectance; NIR is not visible to the human eye but contains information about plant health and canopy density; combining NIR with red enables indices like NDVI.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the trade-offs a farm manager should consider when choosing between a multispectral drone system and hyperspectral sensing for crop monitoring.",
+    "explanation": "Key points: budget, ease of operation, data storage and processing demands, known versus unknown spectral targets, required diagnostic precision, operational scale, and whether the goal is routine monitoring or detailed research/diagnosis; multispectral may be sufficient for established indices; hyperspectral may be justified for subtle or complex discrimination tasks.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "What is a spectral library, and how can it support agricultural remote sensing analysis? Base your answer on Section 5.3.2 and the surrounding discussion of spectral signatures.",
+    "explanation": "Key points: spectral library is a curated reference database of spectra measured under controlled conditions; supports identification, comparison, classification, and model development; helps match unknown field spectra to known materials or conditions; useful for crops, soils, minerals, and stress diagnostics.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "The chapter notes that soil reflectance generally decreases as total nitrogen increases. Explain how such a relationship could be useful in precision agriculture, while also noting why interpretation may still be complex.",
+    "explanation": "Key points: potential for mapping soil fertility variability and guiding management zones or fertilizer decisions; hyperspectral data can reveal nitrogen-related patterns; interpretation remains complex because soil spectra are also influenced by moisture, mineralogy, organic matter, texture, and surface roughness.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Imagine you are designing a study to distinguish drought stress from nitrogen deficiency in wheat. Using ideas from Sections 5.1-5.3, explain why additional spectral bands beyond RGB would matter and what spectral features you would pay attention to.",
+    "explanation": "Key points: RGB may not separate visually similar stress symptoms; red, red-edge, NIR, and water-sensitive bands can reveal differences in pigments, structure, and water content; hyperspectral data may help identify subtle diagnostic features; spectral libraries and known signatures could support interpretation and model building.",
+    "chapter_num": 5
+  }
+]

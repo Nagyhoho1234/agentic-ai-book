@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "Miért jelent minőségi ugrást az RGB-ről a több sávos képalkotásra való áttérés a mezőgazdaságban?",
+    "options": [
+      "A) Mert a képek automatikusan nagyobb térbeli felbontásúak lesznek",
+      "B) Mert lehetővé válik különböző stresszhatások és biokémiai jellemzők megbízhatóbb elkülönítése",
+      "C) Mert az RGB-kamerák nem használhatók drónokon",
+      "D) Mert a több sáv mindig kevesebb adatot eredményez"
+    ],
+    "correct": "B",
+    "explanation": "A szöveg szerint a több sáv nemcsak több adatot jelent, hanem olyan finom spektrális különbségek megfigyelését is, amelyekkel például a nitrogénhiány és az aszálystressz elkülöníthető.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik hullámhossz környékén ver vissza erősebben a klorofill, ezért látjuk a növényzetet zöldnek?",
+    "options": [
+      "A) 450 nm",
+      "B) 550 nm",
+      "C) 680 nm",
+      "D) 970 nm"
+    ],
+    "correct": "B",
+    "explanation": "A klorofill 450 nm és 680 nm környékén erősen elnyel, míg 550 nm közelében jobban visszaveri a fényt.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi jellemzi legjobban a közeli infravörös (NIR) tartomány mezőgazdasági jelentőségét?",
+    "options": [
+      "A) Az emberi szem ezt érzékeli a legjobban",
+      "B) Főként csak talajásványok vizsgálatára alkalmas",
+      "C) Gazdag információt hordoz a növényegészségről és a lombsűrűségről",
+      "D) Kizárólag vízelnyelési sávokat tartalmaz"
+    ],
+    "correct": "C",
+    "explanation": "A szöveg kiemeli, hogy a levél mezofill sejtszerkezete miatt a NIR-ben magas a reflektancia, ami sok információt ad a növény állapotáról.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik állítás írja le helyesen a multispektrális szenzort?",
+    "options": [
+      "A) Több száz keskeny, folytonos sávban mér",
+      "B) Kevés számú, viszonylag széles sávban rögzíti a reflektanciát",
+      "C) Csak az RGB-tartományban működik",
+      "D) Kizárólag laboratóriumban használható"
+    ],
+    "correct": "B",
+    "explanation": "A multispektrális szenzor kevés, de célzottan kiválasztott, viszonylag széles sávot használ.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik példa szerepel a szövegben multispektrális drónplatformként?",
+    "options": [
+      "A) ASD FieldSpec",
+      "B) ZY1-02D AHSI",
+      "C) DJI Phantom 4 Multispectral",
+      "D) Sentinel-1"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet konkrét példaként említi a DJI Phantom 4 Multispectral rendszert.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a hiperspektrális rendszerek egyik fő hátránya a multispektrális rendszerekhez képest?",
+    "options": [
+      "A) Nem képesek növények vizsgálatára",
+      "B) Kisebb diagnosztikai erőt adnak",
+      "C) Nagyságrendekkel nagyobb adatmennyiséget és bonyolultabb elemzést igényelnek",
+      "D) Nem mérnek a látható tartományban"
+    ],
+    "correct": "C",
+    "explanation": "A hiperspektrális rendszerek előnye a részletesség, de ez nagyobb adatmennyiséggel, költséggel és magas dimenzionalitással jár.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik feladathoz elegendő tipikusan egy vörös és egy közeli infravörös sáv?",
+    "options": [
+      "A) Talajásványok finom elnyelési sajátosságainak teljes feltárása",
+      "B) NDVI kiszámítása",
+      "C) Közeli rokonságú növényfajok részletes elkülönítése minden esetben",
+      "D) Minden levélpigment koncentrációjának pontos becslése"
+    ],
+    "correct": "B",
+    "explanation": "Az NDVI számításához a szöveg szerint mindössze egy vörös és egy NIR sáv szükséges.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mikor különösen előnyös a hiperspektrális képalkotás használata?",
+    "options": [
+      "A) Ha csak minimális adatmennyiséget akarunk tárolni",
+      "B) Ha a finom spektrális jellemzők meghatározók",
+      "C) Ha kizárólag emberi vizuális megjelenítés a cél",
+      "D) Ha nincs szükség spektrális felbontásra"
+    ],
+    "correct": "B",
+    "explanation": "A hiperspektrális rendszerek ott jeleskednek, ahol a keskeny sávokban megjelenő finom spektrális eltérések fontosak.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mit nevezünk spektrális aláírásnak?",
+    "options": [
+      "A) Egy kép térbeli felbontását",
+      "B) Egy anyag jellegzetes reflektanciamintázatát különböző hullámhosszakon",
+      "C) A szenzor gyártójának azonosítóját",
+      "D) A drón repülési útvonalát"
+    ],
+    "correct": "B",
+    "explanation": "A spektrális aláírás az anyag hullámhosszfüggő reflektanciamintázata.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik tényező NEM szerepel a szövegben a talaj spektrális jelét befolyásoló tényezőként?",
+    "options": [
+      "A) Ásványos összetétel",
+      "B) Szervesanyag-tartalom",
+      "C) Nedvesség",
+      "D) Levegő hőmérséklete 2 méteren"
+    ],
+    "correct": "D",
+    "explanation": "A szöveg a talaj spektrális jelét az ásványossággal, szervesanyaggal, nedvességgel, textúrával és felszíni érdességgel kapcsolja össze, nem a 2 méteres levegőhőmérséklettel.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik hullámhossz-tartományhoz kapcsolódik a red edge meredek emelkedése a növények spektrumában?",
+    "options": [
+      "A) 400 nm körül",
+      "B) 550 nm körül",
+      "C) 700 nm körül",
+      "D) 1950 nm körül"
+    ],
+    "correct": "C",
+    "explanation": "A szöveg szerint az egészséges zöld levél spektrumában 700 nm körül jelenik meg a red edge meredek emelkedése.",
+    "chapter_num": 5
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a hiperspektrális adatok egyik gyakorlati szerepe a precíziós mezőgazdaságban?",
+    "options": [
+      "A) Kiváltják az összes multispektrális rendszert",
+      "B) Segítenek azonosítani a leginformatívabb hullámhosszakat a későbbi multispektrális tervezéshez",
+      "C) Csak dekoratív színezett képek készítésére használják őket",
+      "D) Csak talajnedvesség mérésére alkalmasak"
+    ],
+    "correct": "B",
+    "explanation": "A szöveg hangsúlyozza, hogy a hiperspektrális kutatások gyakran a leginformatívabb hullámhosszak kiválasztását szolgálják, ami a multispektrális rendszerek tervezését támogatja.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Az emberi szem által érzékelt három RGB-csatorna teljes mértékben lefedi azt az információt, amely a növények spektrális viselkedésében jelen van.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint az RGB csak durva összefoglalása az elektromágneses spektrumnak, és sok fontos információ rejtve marad.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A klorofill erősen elnyeli a vörös és a kék tartomány egy részét.",
+    "correct_answer": true,
+    "explanation": "A fejezet szerint a klorofill 680 nm és 450 nm közelében erősen elnyel.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A levél mezofill sejtszerkezete a közeli infravörös tartományban magas reflektanciát eredményez.",
+    "correct_answer": true,
+    "explanation": "Ez a NIR-tartomány egyik kulcsfontosságú növényélettani sajátossága a szöveg alapján.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A vízelnyelési sávok a szöveg szerint 970 nm, 1200 nm, 1450 nm és 1950 nm körül jelennek meg.",
+    "correct_answer": true,
+    "explanation": "Ezeket a hullámhosszakat a fejezet konkrétan felsorolja.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A multispektrális szenzorok mindig több sávot rögzítenek, mint a hiperspektrális szenzorok.",
+    "correct_answer": false,
+    "explanation": "Éppen fordítva: a hiperspektrális szenzorok sok tíz vagy több száz keskeny sávot mérnek.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A Sentinel-2 a szöveg szerint tizenhárom sávot kínál a láthatótól a rövidhullámú infravörösig.",
+    "correct_answer": true,
+    "explanation": "A fejezet ezt példaként említi a multispektrális műholdplatformokra.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A hiperspektrális rendszerek egyik előnye, hogy kisebb adatmennyiséget termelnek, mint a multispektrális rendszerek.",
+    "correct_answer": false,
+    "explanation": "A hiperspektrális rendszerek sokkal nagyobb adatmennyiséget termelnek.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Az NDVI kiszámításához a szöveg szerint elegendő egy vörös és egy közeli infravörös sáv.",
+    "correct_answer": true,
+    "explanation": "Ez a multispektrális rendszerek gyakorlati előnyének egyik példája.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A hiperspektrális képalkotás különösen hasznos lehet közeli rokonságú növényfajok elkülönítésében.",
+    "correct_answer": true,
+    "explanation": "A szöveg ezt a hiperspektrális rendszerek egyik tipikus alkalmazásaként említi.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A spektrális aláírás fogalma kizárólag növényekre alkalmazható, talajokra nem.",
+    "correct_answer": false,
+    "explanation": "A szöveg világosan jelzi, hogy mind a növényeknek, mind a talajoknak lehet jellegzetes spektrális aláírása.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "Az egészséges zöld levél spektrumában a látható tartományban általában alacsony reflektancia figyelhető meg, egy kisebb csúccsal 550 nm közelében.",
+    "correct_answer": true,
+    "explanation": "Ez a növényi spektrális jellegzetesség klasszikus mintázata, amelyet a fejezet is leír.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A talaj reflektanciája a szöveg szerint általában csökken a hullámhosszal a látható és közeli infravörös tartományban.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint a talaj reflektanciája általában növekszik a hullámhosszal ebben a tartományban.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A vas-oxidokhoz kapcsolódó talajelnyelési jellemzők 480 nm és 900 nm közelében jelenhetnek meg.",
+    "correct_answer": true,
+    "explanation": "A fejezet ezeket a hullámhosszakat említi a vas-oxidok spektrális hatásaként.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A szerves anyag a talajban széles sávú elnyelést okozhat, amely csökkenti az össz-reflektanciát.",
+    "correct_answer": true,
+    "explanation": "Ez a szövegben szereplő talajspektroszkópiai megállapítás.",
+    "chapter_num": 5
+  },
+  {
+    "type": "true_false",
+    "question": "A hiperspektrális adatokat a gyakorlatban soha nem használják multispektrális rendszerek tervezésének támogatására.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint éppen gyakori, hogy hiperspektrális kutatások alapján választják ki a leginformatívabb hullámhosszakat.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A hagyományos kamerák három széles csatornában rögzítik a világot: vörös, zöld és _____.",
+    "correct_answer": "kék",
+    "explanation": "Az RGB rövidítés a vörös, zöld és kék csatornákat jelenti.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A klorofill 550 nm körül inkább visszaveri a fényt, ezért a növényzet _____ színűnek látszik.",
+    "correct_answer": "zöld",
+    "explanation": "A zöld tartományban nagyobb visszaverés miatt látjuk a növényeket zöldnek.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A közeli infravörös rövidítése: _____.",
+    "correct_answer": "NIR",
+    "explanation": "A szöveg a közeli infravöröst NIR-ként jelöli.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A NIR tartomány a szöveg szerint nagyjából _____ és _____ nm közé esik.",
+    "correct_answer": "700–1100",
+    "explanation": "A fejezet a közeli infravörös tartományt nagyjából 700–1100 nm közé helyezi.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A vízelnyelési sávok egyik jellegzetes hullámhossza _____ nm körül található.",
+    "correct_answer": "1450",
+    "explanation": "A szöveg több vízelnyelési sávot felsorol, köztük az 1450 nm körülit is.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Egy multispektrális kamera tipikusan _____–_____ gondosan kiválasztott sávot rögzít.",
+    "correct_answer": "öt–tizenkét",
+    "explanation": "A fejezet ezt a tipikus sávszámot adja meg a multispektrális rendszerekre.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A hiperspektrális szenzor több száz keskeny, folytonos csatornában rögzíti a spektrális _____.",
+    "correct_answer": "reflektanciát",
+    "explanation": "A hiperspektrális rendszerek minden pixelhez részletes reflektanciaspektrumot adnak.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DJI Phantom 4 Multispectral egyik sávja a _____ edge, amelynek középső hullámhossza 730 nm.",
+    "correct_answer": "red",
+    "explanation": "A szöveg a 730 nm-es sávot red edge sávként nevezi meg.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Sentinel-2 a szöveg szerint _____ sávot kínál.",
+    "correct_answer": "tizenhárom",
+    "explanation": "A fejezet a Sentinel-2-t 13 sávos platformként írja le.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A normalizált differenciál vegetációs index rövidítése _____.",
+    "correct_answer": "NDVI",
+    "explanation": "Az NDVI a mezőgazdaságban széles körben használt vegetációs index.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Minden anyag jellegzetes reflektanciamintázatát különböző hullámhosszokon spektrális _____ vagy spektrális aláírásnak nevezzük.",
+    "correct_answer": "jellegzetességnek",
+    "explanation": "A szöveg a spektrális jellegzetesség és spektrális aláírás kifejezéseket szinonimaként használja.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az egészséges zöld levél spektrumában 700 nm körül meredek emelkedés figyelhető meg, ezt _____ edge-nek nevezik.",
+    "correct_answer": "red",
+    "explanation": "A 700 nm körüli gyors reflektancianövekedés a red edge jelenség.",
+    "chapter_num": 5
+  },
+  {
+    "type": "fill_blank",
+    "question": "A talaj spektrális jelét többek között az ásványos összetétel, a szervesanyag-tartalom, a nedvesség, a textúra és a felszíni _____ befolyásolja.",
+    "correct_answer": "érdesség",
+    "explanation": "A felszíni érdesség a talaj reflektanciáját alakító tényezők egyike a szöveg szerint.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, miért korlátozott az RGB-képalkotás a precíziós mezőgazdaságban, és hogyan nyújt többletinformációt a multi- illetve hiperspektrális képalkotás.",
+    "explanation": "Kulcspontok: RGB csak három széles sáv; a spektrum sok információja elveszik; különböző hullámhosszak eltérő növényi és talajjellemzőket hordoznak; multispektrális célzott sávokkal javítja a diagnosztikát; hiperspektrális közel folytonos spektrumot ad, ami finom különbségek elkülönítését teszi lehetővé.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a multispektrális és a hiperspektrális rendszereket a sávszám, az adatmennyiség, a költség és a tipikus alkalmazások szempontjából.",
+    "explanation": "Kulcspontok: multispektrális = kevés, szélesebb sáv; kisebb adatmennyiség, olcsóbb, könnyebb feldolgozás; hiperspektrális = sok keskeny, folytonos sáv; nagy adatmennyiség, drágább, bonyolultabb elemzés; alkalmazások különbségei.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Fejtse ki, hogyan kapcsolódik a klorofill, a levél sejtszerkezete és a víztartalom a növények spektrális aláírásához.",
+    "explanation": "Kulcspontok: klorofillelnyelés a kék és vörös tartományban; zöld visszaverés; red edge; mezofill okozta magas NIR-reflektancia; vízelnyelési sávok a NIR/SWIR tartományban.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be, milyen kompromisszumokat kell mérlegelni, amikor egy gazdaság számára multispektrális vagy hiperspektrális rendszert választanak.",
+    "explanation": "Kulcspontok: költség, kezelhetőség, adatmennyiség, elemzési komplexitás, diagnosztikai igény, ismert vagy ismeretlen spektrális jellemzők, operatív használhatóság.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, miért lehet a hiperspektrális képalkotás alkalmasabb a nitrogénhiány és az aszálystressz elkülönítésére, mint az RGB-képalkotás.",
+    "explanation": "Kulcspontok: finom spektrális különbségek; több releváns hullámhossz; pigmentek, víztartalom és szerkezeti változások eltérő spektrális hatásai; RGB túl durva összegzés.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Írja le, milyen spektrális jellemzők alapján azonosítható egy egészséges zöld levél reflektanciaspektruma.",
+    "explanation": "Kulcspontok: alacsony látható reflektancia; kis csúcs 550 nm körül; meredek red edge 700 nm körül; magas NIR-plató; vízelnyelési mélyedések a hosszabb hullámhosszakon.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Elemezze, milyen tényezők alakítják a talaj spektrális jelét, és ezek hogyan nehezíthetik vagy segíthetik a talajállapot értelmezését.",
+    "explanation": "Kulcspontok: ásványos összetétel, szervesanyag-tartalom, nedvesség, textúra, felszíni érdesség; specifikus elnyelési sávok; több tényező együttes hatása; interpretációs kihívások.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be, hogyan használhatók a hiperspektrális kutatási eredmények operatív multispektrális rendszerek fejlesztésére.",
+    "explanation": "Kulcspontok: leginformatívabb hullámhosszak azonosítása; sávkiválasztás; vegetációs indexek tervezése; kutatásból gyakorlatba történő átültetés.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Értelmezze a spektrális könyvtárak szerepét a növények és talajok azonosításában vagy állapotbecslésében.",
+    "explanation": "Kulcspontok: referencia-spektrumok gyűjteménye; összehasonlítás ismeretlen mintákkal; osztályozás, becslés, diagnosztika; növényi és talajbeli változatosság kezelése.",
+    "chapter_num": 5
+  },
+  {
+    "type": "essay",
+    "question": "Adjon példát arra, hogy egy adott mezőgazdasági feladatnál mikor lenne elegendő a multispektrális rendszer, és mikor indokolt a hiperspektrális megközelítés.",
+    "explanation": "Kulcspontok: NDVI és általános állapotfelmérés multispektrálissal; finom pigment-, ásvány- vagy stresszkülönbségekhez hiperspektrális; döntés a cél és erőforrások alapján.",
+    "chapter_num": 5
+  }
+]

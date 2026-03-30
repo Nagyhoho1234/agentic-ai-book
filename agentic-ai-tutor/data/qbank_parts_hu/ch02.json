@@ -1,0 +1,421 @@
+[
+  {
+    "type": "mcq",
+    "question": "Miért tekinthető a tábla homogén egységként való kezelése „kényelmes fikciónak” a fejezet szerint?",
+    "options": [
+      "A) Mert a táblák mérete folyamatosan változik",
+      "B) Mert még a látszólag egyöntetű táblákban is folyamatosan változnak a talajtulajdonságok, a nedvesség, a domborzat és a biológiai aktivitás",
+      "C) Mert minden táblán azonos a talajtextúra",
+      "D) Mert a gazdálkodók nem használnak talajmintavételt"
+    ],
+    "correct": "B",
+    "explanation": "A szöveg hangsúlyozza, hogy a valóságban egy tábla belsejében is jelentős térbeli változékonyság van, ezért az egységes kezelés félrevezető lehet.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik tényező NEM szerepel Hans Jenny öt klasszikus talajképző tényezője között a szöveg alapján?",
+    "options": [
+      "A) Anyakőzet",
+      "B) Domborzat",
+      "C) Gépesítettség szintje",
+      "D) Idő"
+    ],
+    "correct": "C",
+    "explanation": "A felsorolt öt tényező: anyakőzet, domborzat, éghajlat, biológiai tevékenység és idő. A gépesítettség nem klasszikus talajképző tényező.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "Hogyan járul hozzá a domborzat a táblán belüli változékonysághoz?",
+    "options": [
+      "A) Kizárólag a talaj pH-jának növelésével",
+      "B) A víz áramlásának, a talajszemcsék átrendeződésének és a besugárzás mennyiségének befolyásolásával",
+      "C) Csak a vetőmag minőségének módosításával",
+      "D) A textúra gyors megváltoztatásával"
+    ],
+    "correct": "B",
+    "explanation": "A domborzat a vízmozgáson, az erózión/lerakódáson és a napsugárzás eltérő mennyiségén keresztül alakítja a termőhelyi különbségeket.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "Mi volt a visszahúzódó jégtakarók egyik fontos hatása a talajokra a példában említett területeken?",
+    "options": [
+      "A) Teljesen egységes talajokat hoztak létre",
+      "B) Csökkentették az összes talaj vízvisszatartását azonos szintre",
+      "C) Mozaikos talajtani örökséget hagytak hátra különböző lerakott anyagokkal",
+      "D) Megszüntették a domborzati különbségeket"
+    ],
+    "correct": "C",
+    "explanation": "Az olvadékvíz eltérő körülmények között homokot, vályogot vagy agyagot rakott le, ami mozaikos talajviszonyokat eredményezett.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "Mit mutatott a Missouri állambeli tábla példája az erózióval kapcsolatban?",
+    "options": [
+      "A) Az erózió egyenletesen növelte a feltalaj vastagságát",
+      "B) Az erózió átlagosan 17 cm talajt távolított el, és növelte a feltalaj vastagságának változékonyságát",
+      "C) Az erózió csak a mélyedésekben csökkentette a hozamot",
+      "D) Az erózió nem befolyásolta a hozamokat"
+    ],
+    "correct": "B",
+    "explanation": "A példa szerint 1999-re átlagosan 17 cm talaj veszett el, és a legvékonyabb feltalajú helyeken voltak a legalacsonyabb hozamok.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelent a talajkémiai „emlékhatás” a szövegben?",
+    "options": [
+      "A) A talaj mindig visszaáll eredeti állapotába egy év alatt",
+      "B) A korábbi eltérő művelés nyomai évtizedekig fennmaradhatnak a talaj kémiai tulajdonságaiban",
+      "C) A talaj csak a természetes tényezőkre reagál",
+      "D) A műtrágyázás hatása legfeljebb néhány napig mérhető"
+    ],
+    "correct": "B",
+    "explanation": "A korábbi parcellahatárokhoz igazodó pH-, foszfor- és káliumkülönbségek sokáig fennmaradhatnak.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "Miért nehezítheti meg a sávos műtrágyázás a talajmintavételt?",
+    "options": [
+      "A) Mert teljesen megszünteti a tápanyagokat",
+      "B) Mert évekig fennmaradó, keskeny sávokba rendezett tápanyag-eloszlást hagy maga után",
+      "C) Mert csak homoktalajon alkalmazható",
+      "D) Mert csökkenti a talaj szervesanyag-tartalmát nullára"
+    ],
+    "correct": "B",
+    "explanation": "A sávos kijuttatás nem egyenletes eloszlást eredményez, így a mintavétel könnyen torzulhat, ha nem veszi figyelembe ezt a mintázatot.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "Miért növelheti a táblák összevonása a változékonyságot?",
+    "options": [
+      "A) Mert a nagyobb tábla automatikusan jobb vízelvezetésű lesz",
+      "B) Mert az összevont terület az eredeti kisebb parcellák eltérő tulajdonságait egyesíti",
+      "C) Mert az összevonás megszünteti a talajképző tényezőket",
+      "D) Mert csökkenti a domborzati hatásokat"
+    ],
+    "correct": "B",
+    "explanation": "Az eredetileg külön kezelhető kisebb egységek eltérései egy nagy táblában összeadódnak, ami nagyobb belső heterogenitást eredményez.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik állítás írja le legjobban a talaj textúráját?",
+    "options": [
+      "A) A talaj pH-jának és sótartalmának együttese",
+      "B) A homok-, iszap- és agyagfrakció aránya",
+      "C) A talaj színe és hőmérséklete",
+      "D) A talajban élő szervezetek száma"
+    ],
+    "correct": "B",
+    "explanation": "A textúra a szemcseösszetételt jelenti, vagyis a homok, iszap és agyag arányát.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "Miért tekinthető a textúra az egyik legállandóbb talajtulajdonságnak?",
+    "options": [
+      "A) Mert gyorsan változik minden csapadék után",
+      "B) Mert agrotechnikai eszközökkel gyakorlati időtávon nem változtatható meg",
+      "C) Mert kizárólag a trágyázás határozza meg",
+      "D) Mert csak a növényfaj befolyásolja"
+    ],
+    "correct": "B",
+    "explanation": "A szöveg szerint a textúra a pH-val vagy tápanyagszinttel ellentétben nem módosítható érdemben gyakorlati időtávon.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik tulajdonság jellemző leginkább a homoktalajra a szöveg alapján?",
+    "options": [
+      "A) Sok vizet és tápanyagot tart vissza",
+      "B) Lassú felmelegedés és rossz vízelvezetés",
+      "C) Gyors vízelvezetés és könnyű megmunkálhatóság",
+      "D) Téglaszerű keménység minden körülmények között"
+    ],
+    "correct": "C",
+    "explanation": "A homoktalaj nagy pórusai miatt gyorsan elvezeti a vizet, hamar felmelegszik és könnyen művelhető, de kevés vizet és tápanyagot tart vissza.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik állítás igaz leginkább az agyagtalajra?",
+    "options": [
+      "A) Gyorsan melegszik fel és kiváló a vízelvezetése",
+      "B) Apró szemcséi miatt erősen visszatartja a vizet és a tápanyagokat, de gyenge a vízelvezetése",
+      "C) Nem képes tápanyagokat megkötni",
+      "D) Mindig könnyen megmunkálható"
+    ],
+    "correct": "B",
+    "explanation": "Az agyagtalaj kis szemcséi és töltéssel rendelkező felülete miatt sok vizet és tápanyagot tart vissza, ugyanakkor rosszabb a vízelvezetése és nehezebb a művelése.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "A fejezet szerint a táblán belüli különbségek véletlenszerű kellemetlenségek, amelyeknek nincs alapvető jelentőségük a gazdálkodásban.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint ezek a különbségek a mezőgazdaság alapvető sajátosságai, és megértésük kulcsfontosságú a helyspecifikus kezeléshez.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "A precíziós szemlélet egyik alapja, hogy a táblát eltérő igényű kezelési zónák mozaikjaként értelmezzük.",
+    "correct_answer": true,
+    "explanation": "A fejezet záró gondolata éppen ez a szemléletváltás.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "A geológiai folyamatok, az éghajlat, a vízmozgás, a biológiai tevékenység és az emberi beavatkozás egyenletesen hatnak a térben.",
+    "correct_answer": false,
+    "explanation": "A változékonyság éppen azért alakul ki, mert ezek a hatások nem egyenletesek térben.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "Hans Jenny öt klasszikus talajképző tényezője között szerepel az idő.",
+    "correct_answer": true,
+    "explanation": "Az idő a felsorolt öt tényező egyike.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "A domborzat csak hegyvidéki területeken fontos, sík tájakon nincs jelentősége.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint még néhány centiméteres szintkülönbség is jelentős hatással lehet a vízelvezetésre és más folyamatokra.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "A visszahúzódó jégtakarók által formált területeken egyetlen táblán belül is többféle kiinduló kőzetanyagból kialakult talaj fordulhat elő.",
+    "correct_answer": true,
+    "explanation": "A mozaikos lerakódások miatt ez gyakori lehet.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "Az idő mint talajképző tényező arra utal, hogy a talajok rövid idő alatt, néhány év alatt nyerik el végső tulajdonságaikat.",
+    "correct_answer": false,
+    "explanation": "A szöveg évezredes, sőt évmilliós folyamatokról beszél.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "A modern gazdálkodás előtti állapothoz képest a Missouri példában az erózió csökkentette a feltalaj vastagságának változékonyságát.",
+    "correct_answer": false,
+    "explanation": "Éppen ellenkezőleg: a változékonyság jelentősen megnőtt.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "Ahol a feltalaj a legvékonyabb volt a vizsgált táblán, ott a hozamok is alacsonyabbak voltak.",
+    "correct_answer": true,
+    "explanation": "A példa ezt egyértelműen kimondja.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "A korábbi kisebb parcellák határai a talaj pH-, foszfor- és káliumtérképein is felismerhetők lehetnek.",
+    "correct_answer": true,
+    "explanation": "Ez a talajkémiai emlékhatás egyik példája.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "A régi gazdasági udvarok és állattartó telepek környékén általában alacsonyabb a foszfor- és szervesanyag-tartalom.",
+    "correct_answer": false,
+    "explanation": "A koncentrált trágyakijuttatás miatt ezek az értékek inkább emelkedettek.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "Az egyenetlen műtrágyaszórás a haladás irányában magas és alacsony tápanyag-ellátottságú sávokat hozhat létre.",
+    "correct_answer": true,
+    "explanation": "Az átfedések, kihagyások és gépegyenetlenségek ilyen mintázatot okozhatnak.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "A táblák összevonása mindig csökkenti a belső heterogenitást, mert nagyobb lesz az átlagos terület.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint az összevonás gyakran növeli a kezelendő változékonyságot.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "A talaj a növények számára csak mechanikai rögzítő közeg, víz- és tápanyagforrásként nem jelentős.",
+    "correct_answer": false,
+    "explanation": "A talaj a gyökerek rögzítése mellett a víz- és tápanyagfelvétel alapvető közege is.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "A homoktalaj általában gyorsabban melegszik fel tavasszal, mint az agyagtalaj.",
+    "correct_answer": true,
+    "explanation": "A szöveg ezt a homoktalaj egyik jellemző előnyeként említi.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "Az iszap a szöveg szerint a homok és az agyag közötti átmenetet képviseli, és hozzájárul a növény számára hozzáférhető vízkészlethez.",
+    "correct_answer": true,
+    "explanation": "Ez az iszapfrakció szerepének rövid összefoglalása.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "A helyspecifikus kezelés első lépése a táblán belüli _____ megértése.",
+    "correct_answer": "különbségek",
+    "explanation": "A fejezet eleje szerint a táblán belüli különbségek megértése alapozza meg a helyspecifikus gazdálkodást.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hans Jenny az öt klasszikus _____ tényezőt írta le 1941-ben.",
+    "correct_answer": "talajképző",
+    "explanation": "A szöveg az öt klasszikus talajképző tényezőre hivatkozik.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az alapkőzet a geológiai _____ pont.",
+    "correct_answer": "kiinduló",
+    "explanation": "A fejezet szó szerint így fogalmaz: az alapkőzet a geológiai kiindulópont.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "A domborzat a víz áramlásán, a talajszemcsék átrendeződésén és a felszínre jutó _____ mennyiségén keresztül okoz változatosságot.",
+    "correct_answer": "napsugárzás",
+    "explanation": "A domborzat a besugárzás eltérésein keresztül is hat a termőhelyre.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "Még néhány centiméteres szintkülönbség is megváltoztathatja a vízelvezetést, a nitrogén körforgását és a _____ felhalmozódást.",
+    "correct_answer": "só",
+    "explanation": "A szöveg a sófelhalmozódást is a mikrodomborzat által befolyásolt tényezők közé sorolja.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az idő mint talajképző tényező azt fejezi ki, hogy a talajok évezredek, sőt évmilliók _____ eredményei.",
+    "correct_answer": "folyamatainak",
+    "explanation": "A talajok hosszú távú mállási, eróziós, lerakódási és biológiai folyamatok eredményei.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "A tizenkilencedik században feltört prérik esetében a szél- és vízerózió a dombtetőkről és felső lejtőkről a _____ távolította el.",
+    "correct_answer": "feltalajt",
+    "explanation": "A szöveg szerint az erózió ezeket a részeket fosztotta meg a feltalajtól.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Missouri állambeli példában az erózió átlagosan _____ centiméter talajt távolított el.",
+    "correct_answer": "tizenhét",
+    "explanation": "A konkrét érték a fejezetben 17 cm.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "A korábbi eltérő művelés nyomán évtizedekig fennmaradó talajkémiai jelenséget _____ hatásnak nevezik.",
+    "correct_answer": "emlék",
+    "explanation": "A szöveg „emlékhatásként” hivatkozik erre a jelenségre.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "A talaj textúrája a homok-, iszap- és _____ frakció arányát jelenti.",
+    "correct_answer": "agyag",
+    "explanation": "A textúra három alapfrakció arányából áll.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "A textúra a pH-val vagy a tápanyagszinttel ellentétben gyakorlati időtávon nem változtatható meg _____ eszközökkel.",
+    "correct_answer": "agrotechnikai",
+    "explanation": "A fejezet ezt a textúra egyik alapvető sajátosságaként emeli ki.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "A homoktalaj nagyobb szemcséi között nagy _____ találhatók.",
+    "correct_answer": "pórusok",
+    "explanation": "Ezek a nagy pórusok magyarázzák a gyors vízelvezetést.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az agyagtalaj apró szemcséi szorosan összetapadnak, ezért a vízelvezetése _____ lehet.",
+    "correct_answer": "gyenge",
+    "explanation": "Az agyagtalaj sok vizet visszatart, de rosszabbul vezeti el a felesleges vizet.",
+    "chapter_num": 2
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, miért problémás a szántóföldet homogén egységként kezelni, és hogyan vezet ez a felismerés a helyspecifikus gazdálkodás szemléletéhez.",
+    "explanation": "Kulcspontok: táblán belüli talaj-, nedvesség-, domborzati és biológiai különbségek; ezek nem véletlenszerűek; a természetes és emberi eredetű változékonyság felismerése; kezelési zónák kialakításának indokoltsága.",
+    "chapter_num": 2
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be az öt klasszikus talajképző tényező szerepét, és értelmezze, hogyan okozhatnak rövid távolságon belül is jelentős különbségeket egy táblán belül.",
+    "explanation": "Kulcspontok: anyakőzet, domborzat, éghajlat, biológiai tevékenység, idő; ezek térbeli eltérései; talajtulajdonságokra gyakorolt hatás; helyspecifikus következmények.",
+    "chapter_num": 2
+  },
+  {
+    "type": "essay",
+    "question": "Elemezze a domborzat szerepét a termőhelyi különbségek kialakulásában még látszólag sík területeken is.",
+    "explanation": "Kulcspontok: mikrodomborzat; vízelvezetés; nitrogén körforgás; sófelhalmozódás; besugárzás; néhány centiméteres szintkülönbség jelentősége.",
+    "chapter_num": 2
+  },
+  {
+    "type": "essay",
+    "question": "Fejtse ki, hogyan alakíthatta a jégkorszaki eljegesedés a mai táblák talajainak mozaikosságát.",
+    "explanation": "Kulcspontok: visszahúzódó jégtakarók; olvadékvíz eltérő sebessége; homok, vályog, agyag lerakódása; eltérő textúra, vízelvezetés és tápanyag-ellátottság.",
+    "chapter_num": 2
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be, hogyan növelheti az emberi tevékenység a táblán belüli változékonyságot történeti és mai példákon keresztül.",
+    "explanation": "Kulcspontok: prérifeltörés és erózió; korábbi parcellák emlékhatása; trágyakoncentráció régi udvaroknál; egyenetlen műtrágyaszórás; sávos műtrágyázás; táblák összevonása.",
+    "chapter_num": 2
+  },
+  {
+    "type": "essay",
+    "question": "Értelmezze a Missouri állambeli eróziós példát abból a szempontból, hogy a talajállapot és a hozam hogyan kapcsolódik össze.",
+    "explanation": "Kulcspontok: feltalaj-vastagság korábbi egyenletessége; 17 cm átlagos talajveszteség; növekvő változékonyság; vékony feltalaj és alacsony hozam kapcsolata.",
+    "chapter_num": 2
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el a talajkémiai emlékhatás jelentőségét a mintavétel és a tápanyag-gazdálkodás tervezésében.",
+    "explanation": "Kulcspontok: korábbi művelési egységek nyomai; pH-, P-, K-ugrások; múltbeli kezelések felismerése; mintavételi stratégia és zónaképzés következményei.",
+    "chapter_num": 2
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a homoktalaj és az agyagtalaj termesztési szempontból fontos tulajdonságait, és vonjon le gyakorlati következtetéseket a kezelésükre nézve.",
+    "explanation": "Kulcspontok: szemcseméret, pórusok, vízelvezetés, felmelegedés, megmunkálhatóság, víz- és tápanyag-visszatartás; eltérő kockázatok és kezelési igények.",
+    "chapter_num": 2
+  },
+  {
+    "type": "essay",
+    "question": "Miért tekinthető a talaj textúrája stratégiai jelentőségű, ugyanakkor nehezen befolyásolható tulajdonságnak a precíziós mezőgazdaságban?",
+    "explanation": "Kulcspontok: textúra mint alapvető, stabil tulajdonság; gyakorlati időtávon nem módosítható; sok más folyamatot meghatároz; zónák lehatárolásában fontos.",
+    "chapter_num": 2
+  },
+  {
+    "type": "essay",
+    "question": "Fejtse ki, hogyan válhat a korábban kezelhető sokféleség egy nagy összevont táblában kezelhetetlen heterogenitássá, ha egységes gazdálkodási gyakorlatot alkalmaznak.",
+    "explanation": "Kulcspontok: eredeti kisebb parcellák eltérései; sövények, kerítések, árkok eltávolítása; belső variáció összeadódása; egységes kezelés korlátai; helyspecifikus megoldások szükségessége.",
+    "chapter_num": 2
+  }
+]

@@ -1,0 +1,421 @@
+[
+  {
+    "type": "mcq",
+    "question": "Mi a változó dózisú technológia (VRT) legfontosabb célja a fejezet szerint?",
+    "options": [
+      "A) A gépek munkasebességének állandó szinten tartása",
+      "B) A tábla minden pontján azonos adag kijuttatása",
+      "C) A kijuttatott inputok mennyiségének a helyi viszonyokhoz igazítása",
+      "D) A talajmintavétel teljes kiváltása"
+    ],
+    "correct": "C",
+    "explanation": "A VRT lényege, hogy a vetőmagot, műtrágyát, növényvédő szert vagy öntözővizet a tábla térbeli változékonyságához igazodva, változó mennyiségben juttassák ki.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "Mi volt az egységes, tábla szintű kijuttatás egyik fő problémája?",
+    "options": [
+      "A) Túl bonyolult adatfeldolgozást igényelt",
+      "B) Egyszerre aluldozírozhatta a jó és túladagolhatta a gyenge termőképességű részeket",
+      "C) Nem volt alkalmazható műtrágyára",
+      "D) Csak öntözésnél működött"
+    ],
+    "correct": "B",
+    "explanation": "Az egységes adag nem tud alkalmazkodni a táblán belüli különbségekhez, ezért a termékenyebb részeken kevés, a gyengébb részeken túl sok input kerülhet kijuttatásra.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "Az alábbiak közül melyik NEM tartozik a VRA gyakorlati megvalósításához szükséges három elem közé?",
+    "options": [
+      "A) Térbeli információ a változékonyságról",
+      "B) Agronómiai döntési szabály",
+      "C) Menet közben szabályozható kijuttató berendezés",
+      "D) Kizárólag kézi vezérlésű gépkezelés"
+    ],
+    "correct": "D",
+    "explanation": "A fejezet három alapfeltételt említ: információ, döntési szabály és olyan berendezés, amely elektronikusan vezérelve menet közben változtatja az adagot.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "Miért korlátozottabb egy tányéros műtrágyaszóró térbeli felbontása, mint egy modern vetőgépé?",
+    "options": [
+      "A) Mert nem használ GNSS-t",
+      "B) Mert széles és átfedő szórási mintázata van",
+      "C) Mert csak folyékony anyagokat tud kijuttatni",
+      "D) Mert nem lehet hozzá vezérlőt csatlakoztatni"
+    ],
+    "correct": "B",
+    "explanation": "A tányéros műtrágyaszóró széles, átfedő szórásképe miatt csak durvább, például 30 méter vagy annál nagyobb felbontásnál tud érdemben dózist váltani.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "Mi jellemzi leginkább a térképalapú VRT-t?",
+    "options": [
+      "A) A döntés teljes egészében a kijuttatás pillanatában történik szenzorok alapján",
+      "B) Az összes adatgyűjtés és döntéshozatal a terepi művelet előtt történik",
+      "C) Nem használható GNSS-vevővel",
+      "D) Csak gyomirtásra alkalmazható"
+    ],
+    "correct": "B",
+    "explanation": "A térképalapú megközelítésben az adatok összegyűjtése, elemzése és a dózisok meghatározása a kijuttatás előtt történik, majd tervtérképet töltenek a vezérlőbe.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik adatforrás szerepel a fejezetben lehetséges bemeneti rétegként térképalapú VRT esetén?",
+    "options": [
+      "A) Rácspontos mintavételből interpolált talajtápanyag-térkép",
+      "B) Csak kézzel rajzolt papírtérkép",
+      "C) Kizárólag meteorológiai előrejelzés",
+      "D) Csak a gépkezelő becslése"
+    ],
+    "correct": "A",
+    "explanation": "A fejezet példaként említi a rácspontos mintavételből interpolált talajtápanyag-térképet, továbbá hozamtérképet, műholdas indexet és ECa-felmérést is.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a térképalapú VRT egyik előnye?",
+    "options": [
+      "A) Nem függ az alapadatok minőségétől",
+      "B) Lehetővé teszi több adatforrás integrálását és a terv előzetes felülvizsgálatát",
+      "C) Mindig jobban reagál a pillanatnyi állapotra, mint a szenzoralapú rendszer",
+      "D) Nem igényel semmilyen szaktudást"
+    ],
+    "correct": "B",
+    "explanation": "A térképalapú megközelítés egyik fő előnye, hogy többféle adatréteg integrálható, és a kezelési térkép a kijuttatás előtt ellenőrizhető.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a térképalapú VRT egyik hátránya a fejezet szerint?",
+    "options": [
+      "A) Nem lehet dokumentálni a kijuttatást",
+      "B) A feltételek megváltozhatnak az adatgyűjtés és a kijuttatás között",
+      "C) Nem használható műtrágyázásra",
+      "D) Nem működik zónák kijelölésével"
+    ],
+    "correct": "B",
+    "explanation": "A térképalapú rendszer hátránya, hogy az alapul szolgáló adatok elavulhatnak; például a szezon előtti minták nem tükrözik a későbbi mineralizációt.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "Mi jellemzi leginkább a szenzoralapú VRT-t?",
+    "options": [
+      "A) Előre elkészített tervtérkép nélkül, valós idejű mérések alapján számít adagot",
+      "B) Kizárólag múlt évi hozamtérképekre épül",
+      "C) Nem használ algoritmust",
+      "D) Csak álló helyzetben működik"
+    ],
+    "correct": "A",
+    "explanation": "A szenzoralapú VRT során a gépre szerelt szenzorok menet közben mérnek, a vezérlő algoritmusa pedig valós időben számítja a kívánt dózist.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik példa szerepel a fejezetben szenzoralapú VRT alkalmazására?",
+    "options": [
+      "A) Kézi gyomfelvételezés papíron",
+      "B) Optikai növényállomány-szenzorok nitrogénmenedzsmenthez",
+      "C) Csak laboratóriumi talajvizsgálat",
+      "D) Traktorabroncsnyomás-szabályozás"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet a tenyészidőszak alatti nitrogénmenedzsmentben használt optikai növényállomány-szenzorokat említi tipikus kereskedelmi példaként.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "Mit mérnek jellemzően az optikai növényállomány-szenzorok a fejezet szerint?",
+    "options": [
+      "A) A talaj pH-ját vörös és kék tartományban",
+      "B) A növényállomány spektrális visszaverődését a vörös és közeli infravörös tartományban",
+      "C) A levegő páratartalmát ultraibolya tartományban",
+      "D) A gyökérmélységet akusztikus hullámokkal"
+    ],
+    "correct": "B",
+    "explanation": "A szenzorok a növényállomány spektrális visszaverődését mérik, jellemzően a vörös és a közeli infravörös tartományban, majd ebből vegetációs indexet számítanak.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "Miért lehet gazdaságilag indokolt a VRA alkalmazása?",
+    "options": [
+      "A) Mert mindenhol maximalizálja az inputfelhasználást",
+      "B) Mert megszünteti az agronómiai döntések szükségességét",
+      "C) Mert a ráfordításokat a kisebb megtérülésű helyekről a nagyobb megtérülésű helyekre irányítja át",
+      "D) Mert kizárólag a gépköltségeket növeli"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet szerint a VRA gazdasági előnye, hogy az inputokat oda irányítja, ahol azok nagyobb hozamnövekedést és jobb hatékonyságot eredményeznek.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "A fejezet szerint a szántóföldek egyetlen táblán belül is jelentős talaj- és termékenységbeli változatosságot mutathatnak.",
+    "correct_answer": true,
+    "explanation": "A szöveg hangsúlyozza, hogy egy táblán belül rövid távolságon belül is nagy különbségek lehetnek talajtextúrában, szervesanyag-tartalomban és tápanyagkészletekben.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "A VRT kizárólag műtrágya kijuttatására használható technológia.",
+    "correct_answer": false,
+    "explanation": "A fejezet szerint a VRT vetőmag, műtrágya, növényvédő szer és öntözővíz változó dózisú kijuttatására is alkalmazható.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "Az egységes kijuttatás egyszerűsége miatt minden esetben gazdaságilag és környezetileg optimális megoldás.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint az egységes adag gyakran rontja a jövedelmezőséget és növeli a környezeti károsodás kockázatát.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "A VRA lényege, hogy a tábla különböző pontjai eltérő adagokat kaphatnak a helyi feltételek alapján.",
+    "correct_answer": true,
+    "explanation": "Ez a változó dózisú kijuttatás alapelve: a dózis térben differenciált, nem egységes.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "A VRA környezeti előnyei közé tartozhat a kilúgozódás és a felszíni lefolyás csökkentése.",
+    "correct_answer": true,
+    "explanation": "A felesleges kijuttatás mérséklése csökkentheti a kilúgozódást, lefolyást, illékony veszteségeket és a célon kívüli mozgást.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "A VRA megvalósításához nincs szükség agronómiai döntési szabályra, elegendő a pozíció ismerete.",
+    "correct_answer": false,
+    "explanation": "A fejezet egyértelműen megnevezi az agronómiai döntési szabályt mint a három szükséges elem egyikét.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "A gép pozíciójának ismerete fontos, mert a vezérlő ennek alapján rendeli hozzá az adott helyhez tartozó dózist.",
+    "correct_answer": true,
+    "explanation": "A vezérlőnek tudnia kell, hol jár a gép, hogy az adott pozícióhoz tartozó előírt adagot alkalmazza.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "Egy modern, egyedi soregység-meghajtással rendelkező vetőgép finomabb térbeli felbontásban tud dózist váltani, mint egy tányéros műtrágyaszóró.",
+    "correct_answer": true,
+    "explanation": "A vetőgép sorról sorra, gyorsan képes változtatni a dózist, míg a tányéros szóró széles, átfedő mintázata korlátozza a felbontást.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "A térképalapú VRT-ben a döntések többsége a kijuttatás előtt megszületik.",
+    "correct_answer": true,
+    "explanation": "A térképalapú rendszer lényege az előzetes adatgyűjtés, elemzés és tervkészítés.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "A térképalapú VRT egyik előnye, hogy nincs szükség semmilyen adatforrás integrálására.",
+    "correct_answer": false,
+    "explanation": "Éppen ellenkezőleg: egyik előnye, hogy többféle adatforrást lehet egyesíteni a döntéshez.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "A kijuttatási tervtérkép betölthető például USB-meghajtón, memóriakártyán vagy vezeték nélküli kapcsolaton keresztül.",
+    "correct_answer": true,
+    "explanation": "A fejezet ezeket konkrét adatátviteli lehetőségként említi.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "A térképalapú megközelítés teljesen kiküszöböli annak kockázatát, hogy a feltételek megváltozzanak a mintavétel és a kijuttatás között.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint ez kifejezett hátrány: a körülmények időközben megváltozhatnak.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "A szenzoralapú VRT egyik előnye az azonnali reagálás képessége.",
+    "correct_answer": true,
+    "explanation": "A szenzoralapú rendszer valós idejű mérések alapján számítja a dózist, ezért képes a pillanatnyi állapotokra reagálni.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "Az optikai növényállomány-szenzorok által számított NDVI a növényi biomasszával és a nitrogénfelvétellel is összefügghet.",
+    "correct_answer": true,
+    "explanation": "A fejezet szerint az NDVI korrelál a biomasszával és a nitrogénfelvétellel, ezért használható nitrogénajánlásokhoz.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "A szenzoralapú VRT-ben a szenzoradatokat a vezérlőn futó algoritmus dolgozza fel, amely valós időben számítja ki a kívánt adagot.",
+    "correct_answer": true,
+    "explanation": "Ez a szenzoralapú működés alapfolyamata a fejezet szerint.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "A fejezet szerint a térképalapú és a szenzoralapú VRT a gyakorlatban soha nem kombinálható egymással.",
+    "correct_answer": false,
+    "explanation": "A szöveg kifejezetten megjegyzi, hogy sok modern rendszer a két megközelítést kombinálja.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "A változó dózisú technológia közismert rövidítése: _____.",
+    "correct_answer": "VRT",
+    "explanation": "A fejezet a variable rate technology rövidítéseként a VRT-t használja.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "A változó dózisú kijuttatás angol megfelelőjének rövidítése: _____.",
+    "correct_answer": "VRA",
+    "explanation": "A szöveg a variable rate application kifejezést VRA-ként jelöli.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "A VRA megvalósításához szükséges egyik elem a kezelt tényező térbeli _____ ismerete.",
+    "correct_answer": "változékonyságáról",
+    "explanation": "A fejezet szerint információ kell a kezelt tényező térbeli változékonyságáról.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "A térképalapú VRT-ben a gép pozícióját jellemzően _____-vevő szolgáltatja.",
+    "correct_answer": "GNSS",
+    "explanation": "A terepi művelet során a gépen lévő GNSS-vevő folyamatosan jelenti a gép pozícióját.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "A térképalapú megközelítésben az adatrétegeket gyakran _____ szoftverbe töltik be.",
+    "correct_answer": "GIS",
+    "explanation": "A fejezet szerint az adatrétegeket térinformatikai, azaz GIS szoftverben elemzik.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "A talaj-elektromos vezetőképesség rövidítése a szövegben: _____.",
+    "correct_answer": "ECa",
+    "explanation": "A fejezet a talaj-elektromos vezetőképességet ECa-ként említi.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az optikai növényállomány-szenzorok gyakran a vörös és a közeli _____ tartományban mérik a visszaverődést.",
+    "correct_answer": "infravörös",
+    "explanation": "A szenzorok jellemzően a vörös és a közeli infravörös tartományban dolgoznak.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "A normalizált differenciál vegetációs index rövidítése: _____.",
+    "correct_answer": "NDVI",
+    "explanation": "A fejezet az NDVI-t említi példaként a számított vegetációs indexek között.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az NDVI a növényi biomasszával és a nitrogén_____ is korrelálhat.",
+    "correct_answer": "felvétellel",
+    "explanation": "A szöveg szerint az NDVI összefügg a biomasszával és a nitrogénfelvétellel.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "A szenzoralapú VRT egyik előnye az _____, vagyis hogy a rendszer azonnal reagálhat a mért állapotra.",
+    "correct_answer": "azonnaliság",
+    "explanation": "A fejezet a szenzoralapú megközelítés előnyei között említi az azonnaliságot.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "A széles és átfedő szórási mintázat miatt a tányéros műtrágyaszóró általában csak _____ méter vagy annál nagyobb felbontásnál tud érdemben adagot váltani.",
+    "correct_answer": "30",
+    "explanation": "A szöveg konkrétan 30 métert vagy annál nagyobb felbontást említ.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "A szórófejenkénti gyors szabályozást lehetővé tevő permetezőtechnológia rövidítése: _____.",
+    "correct_answer": "PWM",
+    "explanation": "A fejezet impulzusszélesség-modulált, azaz PWM permetezőt említ.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "A kijuttatási tervtérkép a gép vezérlőjébe betölthető például USB-meghajtón, memóriakártyán vagy _____ kapcsolaton keresztül.",
+    "correct_answer": "vezeték nélküli",
+    "explanation": "A szöveg ezeket az adatátviteli módokat sorolja fel.",
+    "chapter_num": 11
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, miért nem megfelelő sok esetben az egységes, tábla szintű kijuttatás, és hogyan ad erre választ a változó dózisú kijuttatás.",
+    "explanation": "Kulcspontok: táblán belüli heterogenitás; eltérő talajtextúra, szervesanyag-tartalom, tápanyagkészlet és terméspotenciál; egységes adag alul- és túladagolást okozhat; gazdasági veszteség és környezeti kockázat; VRA helyspecifikus dózisokkal javítja a hatékonyságot.",
+    "chapter_num": 11
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be a VRA megvalósításához szükséges három alapvető elemet, és írja le, hogyan kapcsolódnak egymáshoz a gyakorlatban.",
+    "explanation": "Kulcspontok: 1) térbeli információ a változékonyságról; 2) agronómiai döntési szabály/algoritmus/szakértői megítélés; 3) elektronikusan vezérelt, menet közben szabályozható kijuttató berendezés; adatból ajánlás, ajánlásból gépi végrehajtás.",
+    "chapter_num": 11
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a térképalapú és a szenzoralapú VRT megközelítést előnyök, hátrányok és tipikus alkalmazási helyzetek szerint.",
+    "explanation": "Kulcspontok: térképalapú = előzetes adatgyűjtés, több adatforrás integrálása, felülvizsgálható terv, de időigényes és az adatok elavulhatnak; szenzoralapú = valós idejű reagálás, nincs külön térképkészítés, de a szenzor és algoritmus minősége kritikus; kombinált rendszerek szerepe.",
+    "chapter_num": 11
+  },
+  {
+    "type": "essay",
+    "question": "Fejtse ki, hogyan javíthatja a VRA a gazdasági hatékonyságot egy heterogén táblán.",
+    "explanation": "Kulcspontok: inputok átcsoportosítása alacsony megtérülésű helyekről magas megtérülésű helyekre; csökkenő és növekvő hozam fogalma; jobb összhatékonyság; ráfordítás-megtakarítás és hozamnövelés együttes lehetősége.",
+    "chapter_num": 11
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be a VRA környezeti előnyeit, és magyarázza el, milyen mechanizmusokon keresztül csökkenhet a környezetterhelés.",
+    "explanation": "Kulcspontok: felesleges kijuttatás csökkentése; kisebb kilúgozódás, felszíni lefolyás, illékony veszteség; vegyszerek célon kívüli mozgásának mérséklése; vízelvezető sávok és természetes élőhelyek védelme.",
+    "chapter_num": 11
+  },
+  {
+    "type": "essay",
+    "question": "Írja le a térképalapú VRT tipikus munkafolyamatát az adatgyűjtéstől a terepi kijuttatásig.",
+    "explanation": "Kulcspontok: adatrétegek gyűjtése (talajmintavétel, hozamtérkép, műholdas index, ECa); GIS elemzés; kezelési zónák kijelölése; dózisok hozzárendelése; tervtérkép exportálása; betöltés vezérlőbe; GNSS-alapú helymeghatározás; beavatkozó szervek vezérlése.",
+    "chapter_num": 11
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, miért nem elegendő önmagában egy jó minőségű adatforrás a sikeres VRT-hez.",
+    "explanation": "Kulcspontok: az adatot értelmezni kell; szükség van megfelelő agronómiai modellre vagy döntési szabályra; a végrehajtó berendezés felbontása és reakcióképessége is számít; hibák bármelyik láncszemben ronthatják az eredményt.",
+    "chapter_num": 11
+  },
+  {
+    "type": "essay",
+    "question": "Elemezze, hogyan befolyásolja a berendezés műszaki kialakítása a VRA térbeli felbontását és gyakorlati hasznosságát.",
+    "explanation": "Kulcspontok: tányéros műtrágyaszóró széles, átfedő mintázata; vetőgép egyedi soregység-meghajtása; PWM permetező szórófejenkénti szabályozása; a kezelhető változékonyság léptéke; költség és várható haszon kapcsolata.",
+    "chapter_num": 11
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be, hogyan használhatók az optikai növényállomány-szenzorok a tenyészidőszak alatti nitrogénmenedzsmentben.",
+    "explanation": "Kulcspontok: spektrális visszaverődés mérése vörös és közeli infravörös tartományban; NDVI számítása; kapcsolat biomasszával és nitrogénfelvétellel; algoritmusból nitrogénadag; valós idejű szabályozás.",
+    "chapter_num": 11
+  },
+  {
+    "type": "essay",
+    "question": "Értelmezze azt az állítást, hogy a VRT a precíziós mezőgazdaság filozófiáját fizikai cselekvéssé alakítja a terepen.",
+    "explanation": "Kulcspontok: precíziós mezőgazdaság mint a térbeli és időbeli változékonyság kezelésének szemlélete; VRT mint végrehajtási mechanizmus; adatból döntés, döntésből helyspecifikus kijuttatás; kapcsolat a digitális információ és a fizikai beavatkozás között.",
+    "chapter_num": 11
+  }
+]

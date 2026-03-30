@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "According to Section 2.1, why is treating a field as a single homogeneous unit considered misleading?",
+    "options": [
+      "A) Because crop varieties always differ within a field",
+      "B) Because within-field variation in soil, moisture, elevation, and biology is inherent",
+      "C) Because machinery cannot operate on large fields",
+      "D) Because fertilizer prices vary by location"
+    ],
+    "correct": "B",
+    "explanation": "Section 2.1 explains that fields contain a continuum of variation in soil properties, moisture, elevation, and biological activity, so uniform treatment ignores real spatial differences.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "In Section 2.1.1, which set correctly lists Hans Jenny's five classical soil-forming factors?",
+    "options": [
+      "A) Texture, structure, pH, salinity, and drainage",
+      "B) Rainfall, fertilizer, tillage, weeds, and crop rotation",
+      "C) Parent material, topography, climate, biological activity, and time",
+      "D) Sand, silt, clay, organic matter, and nitrogen"
+    ],
+    "correct": "C",
+    "explanation": "Section 2.1.1 explicitly identifies parent material, topography, climate, biological activity, and time as the five soil-forming factors.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "How does topography most directly contribute to within-field variability, according to Section 2.1.1?",
+    "options": [
+      "A) By changing seed genetics across the field",
+      "B) By controlling water flow, soil redistribution, and solar radiation exposure",
+      "C) By preventing all nutrient movement",
+      "D) By making soil texture easy to change through management"
+    ],
+    "correct": "B",
+    "explanation": "Section 2.1.1 states that topography affects water movement, redistribution of soil particles, and solar radiation, all of which influence crop production.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "What lesson does the Missouri ninety-acre field study in Section 2.1.2 illustrate?",
+    "options": [
+      "A) Uniform tillage eliminates erosion effects over time",
+      "B) Erosion can increase topsoil-depth variability and reduce yields where topsoil is thinnest",
+      "C) Topsoil depth has no relationship to yield",
+      "D) Human activity affects only pH, not soil depth"
+    ],
+    "correct": "B",
+    "explanation": "The study showed that erosion removed an average of 17 cm of soil and greatly increased variability in topsoil depth; the thinnest topsoil areas had the lowest yields.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "What is meant by the 'memory effect' described in Section 2.1.2?",
+    "options": [
+      "A) Crops genetically remember previous seasons",
+      "B) Soil chemistry can retain evidence of past field boundaries and management for decades",
+      "C) Soil texture changes rapidly after one fertilizer application",
+      "D) Satellite images can reconstruct all historic yields automatically"
+    ],
+    "correct": "B",
+    "explanation": "Section 2.1.2 explains that former management units can leave long-lasting patterns in pH, phosphorus, and potassium aligned with historic boundaries.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "Which practice is described as creating strips of high and low nutrient availability in the direction of travel?",
+    "options": [
+      "A) Uniform rainfall",
+      "B) Uneven fertilizer or manure spreading",
+      "C) Natural weathering of bedrock",
+      "D) Crop pollination"
+    ],
+    "correct": "B",
+    "explanation": "Section 2.1.2 notes that overlapping passes, gaps, or inconsistent spreader performance create striping in nutrient availability.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "Why can enlarging fields increase management difficulty, according to Section 2.1.2?",
+    "options": [
+      "A) Larger fields always have less variability",
+      "B) Removing boundaries merges previously manageable units into a more heterogeneous whole",
+      "C) Larger machinery reduces nutrient demand",
+      "D) Field enlargement eliminates topographic effects"
+    ],
+    "correct": "B",
+    "explanation": "The chapter states that when smaller fields are merged, their combined variability becomes harder to manage uniformly.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "Which soil property in Section 2.2.1 is described as the most permanent and not practically changeable by management?",
+    "options": [
+      "A) pH",
+      "B) Organic matter",
+      "C) Texture",
+      "D) Nutrient level"
+    ],
+    "correct": "C",
+    "explanation": "Section 2.2.1 emphasizes that soil texture, unlike pH or nutrient levels, cannot be changed within any practical time frame.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "Which combination best describes sandy soil in Section 2.2.1?",
+    "options": [
+      "A) Slow draining, high nutrient retention, slow warming",
+      "B) Quick draining, fast spring warming, low water and nutrient holding",
+      "C) Brick-hard only when frozen, otherwise ideal",
+      "D) High cation exchange due to tiny particles"
+    ],
+    "correct": "B",
+    "explanation": "Sandy soils have large particles and wide pores, so they drain quickly, warm fast, and hold relatively little water and nutrients.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "How is clay soil characterized in Section 2.2.1?",
+    "options": [
+      "A) It drains quickly and warms rapidly",
+      "B) It cannot retain nutrients",
+      "C) It holds water tenaciously, drains poorly, and may become waterlogged or brick-hard",
+      "D) It is composed mainly of large particles"
+    ],
+    "correct": "C",
+    "explanation": "The chapter contrasts clay with sand: clay has tiny particles, poor drainage, strong water retention, and difficult physical behavior depending on moisture.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "What role does silt play in soil, according to Section 2.2.1?",
+    "options": [
+      "A) It prevents all root growth",
+      "B) It contributes to the soil's ability to hold plant-available water",
+      "C) It makes texture easy to alter by management",
+      "D) It always causes salinity"
+    ],
+    "correct": "B",
+    "explanation": "Section 2.2.1 states that silt lies between sand and clay and contributes to plant-available water holding.",
+    "chapter_num": 2
+  },
+  {
+    "type": "mcq",
+    "question": "What example is used in Section 2.2.1 to show how texture can vary regionally and within fields?",
+    "options": [
+      "A) Volcanic ash over limestone in Spain",
+      "B) Loess over glacial till in parts of the American Corn Belt",
+      "C) Coral sand over peat in tropical islands",
+      "D) Desert dunes over basalt in Australia"
+    ],
+    "correct": "B",
+    "explanation": "The text describes wind-deposited silt (loess) over glacial till in the Corn Belt, with thickness varying from eastern Iowa into Illinois and Indiana.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "Section 2.1 argues that differences within a field are random annoyances with little management significance.",
+    "correct_answer": false,
+    "explanation": "The chapter says these differences are fundamental realities of agriculture and the basis for precise management.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "According to Section 2.1, understanding field variability is a first step toward managing land precisely rather than uniformly.",
+    "correct_answer": true,
+    "explanation": "This idea is stated directly in the chapter introduction.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "Section 2.1.1 presents geology, climate, water movement, biological processes, and human activity as forces that do not operate uniformly across space.",
+    "correct_answer": true,
+    "explanation": "The section explains that these uneven forces create within-field variation.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "Hans Jenny identified four classical soil-forming factors in 1941.",
+    "correct_answer": false,
+    "explanation": "He identified five: parent material, topography, climate, biological activity, and time.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "In glaciated regions, meltwater can leave behind sands, loams, and heavy clays in a patchy pattern.",
+    "correct_answer": true,
+    "explanation": "Section 2.1.1 uses this as an example of parent-material-driven variability.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "Even in apparently flat landscapes, tiny elevation differences can affect drainage, nitrogen cycling, and salt accumulation.",
+    "correct_answer": true,
+    "explanation": "The Red River Valley example shows that differences of an inch or less can matter.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "Time is described as unimportant in soil formation because management quickly overrides long-term history.",
+    "correct_answer": false,
+    "explanation": "The chapter describes time as a major soil-forming factor reflecting long histories of weathering, erosion, deposition, and biological transformation.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "Section 2.1.2 suggests that human activity can amplify natural variability.",
+    "correct_answer": true,
+    "explanation": "The section explicitly states that human activity has amplified variability, sometimes dramatically.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "The Missouri field study found that erosion increased topsoil depth uniformly across the field.",
+    "correct_answer": false,
+    "explanation": "Erosion removed soil on average and increased variability; it did not make depth more uniform.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "Historic field boundaries may still be visible in modern soil chemistry maps.",
+    "correct_answer": true,
+    "explanation": "The 'memory effect' is described as abrupt changes in pH, phosphorus, and potassium aligned with former boundaries.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "Banded fertilizer applications can complicate soil sampling for many years afterward.",
+    "correct_answer": true,
+    "explanation": "Section 2.1.2 says this legacy persists and affects sampling interpretation.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "Removing hedgerows, fences, and ditches always reduces within-field variability.",
+    "correct_answer": false,
+    "explanation": "The chapter argues that enlarging fields often increases the heterogeneity that must be managed within a single unit.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "Section 2.2 describes soil as the medium from which crops draw water and nutrients.",
+    "correct_answer": true,
+    "explanation": "This is part of the chapter's definition of soil's agricultural role.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "Soil texture can usually be changed quickly through management, unlike pH.",
+    "correct_answer": false,
+    "explanation": "The opposite is stated: texture is highly permanent, while pH can be altered by management.",
+    "chapter_num": 2
+  },
+  {
+    "type": "true_false",
+    "question": "Clay soils are described as draining poorly and sometimes becoming waterlogged.",
+    "correct_answer": true,
+    "explanation": "Section 2.2.1 gives this as a key characteristic of clay soils.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "According to Section 2.1.1, Hans Jenny identified _____ classical soil-forming factors in 1941.",
+    "correct_answer": "five",
+    "explanation": "The chapter names five factors: parent material, topography, climate, biological activity, and time.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "The geological starting point for soil development is called the _____ _____.",
+    "correct_answer": "parent material",
+    "explanation": "Section 2.1.1 defines parent material as the geological starting point.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "In glaciated regions, fast-moving meltwater deposited _____, while still water produced heavy clays.",
+    "correct_answer": "sands",
+    "explanation": "The text contrasts sands from fast-moving meltwater with heavy clays from ponded water.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "Topography affects the redistribution of soil particles and the flow of _____.",
+    "correct_answer": "water",
+    "explanation": "Section 2.1.1 emphasizes water flow as a major topographic control.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the Red River Valley example, elevation differences of an _____ or less can alter drainage patterns.",
+    "correct_answer": "inch",
+    "explanation": "The chapter notes that even an inch or less in elevation can matter in very flat landscapes.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "Section 2.1.2 reports that erosion had removed an average of _____ centimetres of soil from the Missouri field.",
+    "correct_answer": "seventeen",
+    "explanation": "The study found an average loss of 17 cm of soil.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "Historic management can leave abrupt changes in pH, phosphorus, and _____ aligned with old field boundaries.",
+    "correct_answer": "potassium",
+    "explanation": "These three soil chemistry indicators are specifically mentioned in the memory effect example.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "Uneven fertilizer or manure spreading can create _____ of high and low nutrient availability running in the direction of travel.",
+    "correct_answer": "strips",
+    "explanation": "The chapter describes striping caused by overlaps, gaps, or inconsistent spreader performance.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "Soil texture refers to the relative proportions of sand, silt, and _____ particles.",
+    "correct_answer": "clay",
+    "explanation": "Section 2.2.1 defines texture using these three particle-size fractions.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "A sandy soil has wide _____ spaces between its particles.",
+    "correct_answer": "pore",
+    "explanation": "Large particles in sandy soils create wide pore spaces.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "A clay soil retains nutrients on its charged _____.",
+    "correct_answer": "surfaces",
+    "explanation": "The chapter explains that clay's charged surfaces help retain nutrients.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "Most agricultural soils are classified into textural classes such as sandy loam, silt loam, and _____ loam.",
+    "correct_answer": "clay",
+    "explanation": "Clay loam is one of the examples listed in Section 2.2.1.",
+    "chapter_num": 2
+  },
+  {
+    "type": "fill_blank",
+    "question": "In parts of the American Corn Belt, a mantle of wind-deposited silt called _____ overlies glacial till.",
+    "correct_answer": "loess",
+    "explanation": "The text uses loess over glacial till as a key example of texture variation.",
+    "chapter_num": 2
+  },
+  {
+    "type": "essay",
+    "question": "Using Sections 2.1 and 2.1.1, explain why within-field variability should be expected even in fields that appear uniform from the road.",
+    "explanation": "Key points: apparent uniformity is misleading; fields vary in soil properties, moisture, elevation, and biological activity; variability arises because geology, climate, water movement, biology, and time act unevenly across space; parent material and topography can differ over short distances; even tiny elevation changes can alter crop-relevant conditions.",
+    "chapter_num": 2
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how parent material and topography interact to influence crop performance within a single field.",
+    "explanation": "Key points: parent material affects texture, drainage, nutrient profile, and water-holding capacity; topography controls water flow, erosion/deposition, and solar radiation; together they create zones with contrasting rooting conditions, moisture status, and fertility; implications for variable management.",
+    "chapter_num": 2
+  },
+  {
+    "type": "essay",
+    "question": "Section 2.1.2 describes human-induced variability. Explain how cultivation history can reshape both the soil and the management challenges of a field.",
+    "explanation": "Key points: ploughing and removal of perennial cover increased erosion; hilltops lost topsoil while hollows accumulated it; topsoil depth variability increased; yields declined where topsoil was thinnest; past management leaves persistent chemical patterns; field history must be considered in precision agriculture.",
+    "chapter_num": 2
+  },
+  {
+    "type": "essay",
+    "question": "Analyze the significance of the Missouri ninety-acre field example for precision agriculture decision-making.",
+    "explanation": "Key points: erosion changed the field over time; average soil loss was substantial; variability in topsoil depth increased; yield penalties occurred in eroded zones; uniform management would ignore these differences; supports zone-based or site-specific management.",
+    "chapter_num": 2
+  },
+  {
+    "type": "essay",
+    "question": "Explain the 'memory effect' in soils and discuss why it matters when interpreting soil sampling maps.",
+    "explanation": "Key points: former field boundaries and past management can leave long-lasting patterns in pH, phosphorus, potassium, and organic matter; abrupt transitions may reflect history rather than current visible features; sampling and recommendations should account for legacy effects.",
+    "chapter_num": 2
+  },
+  {
+    "type": "essay",
+    "question": "Why can uneven fertilizer or manure application create long-term challenges for soil testing and nutrient management?",
+    "explanation": "Key points: overlaps, skips, and inconsistent spread patterns create striping; nutrient availability becomes spatially patterned; banded applications create concentrated zones; soil samples may misrepresent field averages if placement is not considered; precision sampling design becomes important.",
+    "chapter_num": 2
+  },
+  {
+    "type": "essay",
+    "question": "Section 2.1.2 argues that enlarging fields can increase heterogeneity under uniform management. Explain this paradox.",
+    "explanation": "Key points: smaller fields may once have been relatively uniform management units; removing boundaries merges distinct soils and histories; larger machinery encourages uniform treatment; internal variability becomes harder to manage; precision agriculture helps recover subfield management.",
+    "chapter_num": 2
+  },
+  {
+    "type": "essay",
+    "question": "Compare sandy and clay soils in terms of water, nutrients, workability, and crop-management implications.",
+    "explanation": "Key points: sandy soils have large particles, rapid drainage, fast warming, easy tillage, but low water and nutrient retention; clay soils have tiny particles, stronger nutrient retention, poor drainage, slow warming, risk of waterlogging or hardness; management strategies should differ by texture.",
+    "chapter_num": 2
+  },
+  {
+    "type": "essay",
+    "question": "Why is soil texture especially important in precision agriculture, even though it cannot be changed practically by management?",
+    "explanation": "Key points: texture is permanent and strongly controls water holding, drainage, nutrient retention, and workability; because it is stable, it is a useful basis for defining management zones; other variable inputs should be adjusted in light of texture-driven potential and limitations.",
+    "chapter_num": 2
+  },
+  {
+    "type": "essay",
+    "question": "Using Section 2.2.1, explain how regional deposits such as loess over glacial till can create important within-field differences.",
+    "explanation": "Key points: thickness of loess influences whether surface or underlying material dominates soil properties; where loess is thick, it determines texture and related behavior; where it is thin, glacial till has more influence; this creates spatial differences in water-holding capacity, drainage, and crop response.",
+    "chapter_num": 2
+  }
+]

@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "According to Section 20.1, which Hungarian region is most associated with large-scale flat arable farming but also chronic inland excess water problems (*belvíz*)?",
+    "options": [
+      "A) Transdanubia",
+      "B) Northern Uplands",
+      "C) Great Hungarian Plain (Alföld)",
+      "D) Tokaj hills"
+    ],
+    "correct": "C",
+    "explanation": "Section 20.1 describes the Great Hungarian Plain as an immense flatland ideal for mechanised farming, but also prone to drainage problems and *belvíz*.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "In Section 20.1, what is identified as a major agricultural consequence of the nearly level terrain of the Great Hungarian Plain?",
+    "options": [
+      "A) Severe soil erosion from steep slopes",
+      "B) Minimal suitability for mechanisation",
+      "C) Chronic drainage and temporary water accumulation issues",
+      "D) Permanent irrigation surplus in all seasons"
+    ],
+    "correct": "C",
+    "explanation": "The chapter explains that the Plain's flatness helps mechanisation but also contributes to poor drainage and temporary inland excess water.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "Which factor in Section 20.2 is presented as a key trigger for the modern phase of precision agriculture adoption in Hungary?",
+    "options": [
+      "A) Full resolution of land restitution by 1995",
+      "B) Widespread availability of RTK correction networks in the mid-2010s",
+      "C) Elimination of all small farms",
+      "D) Immediate post-1990 access to Western electronics"
+    ],
+    "correct": "B",
+    "explanation": "Section 20.2 states that the modern phase can be dated roughly to the mid-2010s, when RTK correction networks became widely available.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "Why did precision agriculture adoption in Hungary lag behind Western Europe and North America, according to Section 20.2?",
+    "options": [
+      "A) Hungary lacked fertile soils",
+      "B) Farmers rejected mechanisation entirely",
+      "C) Historical restrictions, post-socialist transition, and fragmented land ownership delayed modernisation",
+      "D) The country prohibited GPS use in agriculture"
+    ],
+    "correct": "C",
+    "explanation": "The chapter cites COCOM restrictions, the transition after 1989-1990, and fragmented ownership from restitution and privatisation as major causes of delay.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "According to Section 20.2, what level of positional accuracy does RTK correction provide?",
+    "options": [
+      "A) 10-20 centimetres",
+      "B) 1-2 centimetres",
+      "C) 0.5-1 metres",
+      "D) 5-10 metres"
+    ],
+    "correct": "B",
+    "explanation": "The text states that the correction signal provides positional accuracy of 1-2 centimetres.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "Which of the following is NOT listed in Section 20.2 as a principal barrier to precision agriculture adoption in Hungary?",
+    "options": [
+      "A) High upfront costs",
+      "B) Fragmented land ownership",
+      "C) Lack of trained personnel",
+      "D) Excessive availability of rural broadband"
+    ],
+    "correct": "D",
+    "explanation": "The chapter mentions unreliable rural broadband as a barrier, not excessive availability.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "What does the 2020 agricultural census cited in Section 20.2 suggest about Hungary's readiness for digital agriculture?",
+    "options": [
+      "A) Most farmers have advanced formal training",
+      "B) Educational limitations are a major obstacle to technology adoption",
+      "C) Formal education has no effect on digital adoption",
+      "D) Nearly all farmers already use farm management software"
+    ],
+    "correct": "B",
+    "explanation": "With 61.3% having no formal agricultural education and only 9.1% holding higher-education degrees, the chapter highlights education as a major adoption barrier.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "According to Section 20.1, which area has become an early entry point for site-specific management through precision viticulture?",
+    "options": [
+      "A) The central Great Plain only",
+      "B) Transdanubia",
+      "C) The Tisza floodplain exclusively",
+      "D) Budapest metropolitan fringe"
+    ],
+    "correct": "B",
+    "explanation": "Section 20.1 notes that precision viticulture has become one of the first entry points for site-specific management in Transdanubia.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "In the Northern Uplands, which agricultural sector is described as driving early experimentation with drone-based canopy mapping and variable-rate spraying?",
+    "options": [
+      "A) Dairy farming",
+      "B) Wheat monoculture",
+      "C) Tokaj wine production",
+      "D) Sugar beet processing"
+    ],
+    "correct": "C",
+    "explanation": "The Tokaj wine region is specifically mentioned as driving early experimentation with drone-based canopy mapping and variable-rate spraying.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "What broader lesson does the 2022 drought illustrate in the chapter?",
+    "options": [
+      "A) Precision agriculture matters only for vineyards",
+      "B) Water variability is a central reason precision water management is urgent",
+      "C) Hungary no longer needs maize production",
+      "D) Flat land eliminates climate risk"
+    ],
+    "correct": "B",
+    "explanation": "The extreme drought and collapse in maize yields underscored the urgency of precision water management.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "How does farm structure in Hungary affect precision agriculture adoption, according to Section 20.1?",
+    "options": [
+      "A) Smallholders dominate all cultivated land, making scale irrelevant",
+      "B) A polarised structure means larger farms are better positioned to absorb technology costs",
+      "C) Farm size has no relationship to adoption",
+      "D) Only vineyards can use precision tools economically"
+    ],
+    "correct": "B",
+    "explanation": "The chapter states that the technology's cost structure favours scale, so the dual structure of large operations and many smallholders strongly shapes adoption.",
+    "chapter_num": 20
+  },
+  {
+    "type": "mcq",
+    "question": "What is the main role of KITE Zrt.'s PGR system as described in Section 20.2?",
+    "options": [
+      "A) It replaces all farm machinery with autonomous robots",
+      "B) It stores only weather forecasts without field data",
+      "C) It integrates machine data, decision-support processing, and farmer recommendations",
+      "D) It functions solely as a subsidy application portal"
+    ],
+    "correct": "C",
+    "explanation": "The PGR system is described as an integrated IT platform that collects machine data, processes it through decision-support algorithms, and returns actionable recommendations.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "Section 20.1 states that Hungary lies in the heart of the Carpathian Basin.",
+    "correct_answer": true,
+    "explanation": "The opening paragraph explicitly places Hungary in the heart of the Carpathian Basin.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "The Great Hungarian Plain is mainly a mountainous region with steep slopes that hinder mechanisation.",
+    "correct_answer": false,
+    "explanation": "The chapter describes it as one of Europe's largest continuous flatlands, highly suitable for mechanised farming.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "The term *belvíz* refers to temporary inland excess water accumulation on poorly drained land.",
+    "correct_answer": true,
+    "explanation": "Section 20.1 defines *belvíz* in exactly this way.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "Transdanubia is agriculturally more varied than the Great Plain and includes important wine regions.",
+    "correct_answer": true,
+    "explanation": "The text highlights Transdanubia's rolling hills, varied soils, and wine regions such as Villany, Szekszard, and Balaton.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "The Tokaj wine region is described as a UNESCO World Heritage Site.",
+    "correct_answer": true,
+    "explanation": "Section 20.1 explicitly identifies Tokaj as a UNESCO World Heritage Site.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "Hungary's climate is described as maritime, with mild winters and little annual variability.",
+    "correct_answer": false,
+    "explanation": "The chapter describes Hungary's climate as continental, with warm to hot summers, cold winters, and significant variability.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "Mean annual precipitation is generally lower on the central Plain than in western Transdanubia.",
+    "correct_answer": true,
+    "explanation": "The text gives about 500 mm on the central Plain and 700-800 mm in western Transdanubia.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "The 2022 drought had little effect on maize yields in Hungary.",
+    "correct_answer": false,
+    "explanation": "The chapter says Hungary recorded its lowest maize yields in decades during the 2022 growing season.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "Hungary has about 5.3 million hectares of agricultural area, of which roughly 4.5 million hectares are cultivated arable land.",
+    "correct_answer": true,
+    "explanation": "These figures are given in Section 20.1.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "Hungarian farm structure is described as polarised between a small number of large operations and many smallholders.",
+    "correct_answer": true,
+    "explanation": "The chapter explicitly characterises farm structure in this way.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "During the socialist period, Hungarian farms had unrestricted access to Western electronics and computing equipment.",
+    "correct_answer": false,
+    "explanation": "Section 20.2 states that the COCOM regime severely restricted such exports to Eastern Bloc countries.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "After 1989-1990, Hungary's main immediate agricultural priority was rapid precision technology adoption rather than land restitution and privatisation.",
+    "correct_answer": false,
+    "explanation": "The chapter says the immediate priority was land restitution and privatisation, not technological modernisation.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "By 2023, Hungary's RTK infrastructure served around 3,000 agricultural machines.",
+    "correct_answer": true,
+    "explanation": "This figure appears in Section 20.2.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "According to the K&H Bank survey cited in Section 20.2, most firms treated digital transformation as a core strategic issue.",
+    "correct_answer": false,
+    "explanation": "Only 7 percent treated digital transformation as a core strategic issue.",
+    "chapter_num": 20
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter suggests that conservative knowledge traditions in farming can slow digital adoption even when technologies offer clear returns.",
+    "correct_answer": true,
+    "explanation": "It emphasizes word-of-mouth and practical demonstration traditions as part of a conservative culture that slows adoption.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary is situated in the heart of the _____ Basin. [Section 20.1]",
+    "correct_answer": "Carpathian",
+    "explanation": "The chapter opens by locating Hungary in the Carpathian Basin.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "The largest agricultural region of Hungary is the Great Hungarian Plain, also called the _____. [Section 20.1]",
+    "correct_answer": "Alföld",
+    "explanation": "The text gives the Hungarian name Alföld for the Great Hungarian Plain.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Hungarian term for inland excess water on poorly drained land is _____. [Section 20.1]",
+    "correct_answer": "belvíz",
+    "explanation": "Section 20.1 defines *belvíz* as temporary water accumulation on poorly drained land.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "To the west of the Danube, the geologically varied region is called _____. [Section 20.1]",
+    "correct_answer": "Transdanubia",
+    "explanation": "The chapter identifies Transdanubia as the region west of the Danube.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Tokaj wine region is identified as a _____ World Heritage Site. [Section 20.1]",
+    "correct_answer": "UNESCO",
+    "explanation": "Tokaj is described as a UNESCO World Heritage Site.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "Mean annual precipitation on the central Plain is about _____ mm. [Section 20.1]",
+    "correct_answer": "500",
+    "explanation": "The chapter states that the central Plain receives about 500 mm annually.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary's climate is described as _____. [Section 20.1]",
+    "correct_answer": "continental",
+    "explanation": "Section 20.1 characterises Hungary's climate as continental.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "Hungary's total agricultural area is approximately _____ million hectares. [Section 20.1]",
+    "correct_answer": "5.3",
+    "explanation": "The text gives approximately 5.3 million hectares as the total agricultural area.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "About _____ million hectares of Hungary are cultivated arable land. [Section 20.1]",
+    "correct_answer": "4.5",
+    "explanation": "The chapter states that about 4.5 million hectares are cultivated arable land.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "The modern phase of Hungarian precision agriculture began roughly in the mid-_____s, when RTK networks became widely available. [Section 20.2]",
+    "correct_answer": "2010",
+    "explanation": "The text dates the modern phase roughly to the mid-2010s.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "RTK stands for Real Time _____. [Section 20.2]",
+    "correct_answer": "Kinematic",
+    "explanation": "RTK is expanded in the chapter as Real Time Kinematic.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "By 2023, Hungary's RTK infrastructure covered some _____ million hectares. [Section 20.2]",
+    "correct_answer": "1.2",
+    "explanation": "Section 20.2 states that RTK infrastructure covered about 1.2 million hectares.",
+    "chapter_num": 20
+  },
+  {
+    "type": "fill_blank",
+    "question": "KITE Zrt., based in Nadudvar, developed the _____ (Precision Farming System). [Section 20.2]",
+    "correct_answer": "PGR",
+    "explanation": "The chapter identifies KITE's integrated IT platform as the PGR system.",
+    "chapter_num": 20
+  },
+  {
+    "type": "essay",
+    "question": "Using Section 20.1, explain how Hungary's physical geography creates both opportunities and constraints for precision agriculture.",
+    "explanation": "Key points: contrast the flat, mechanisation-friendly Great Plain with its drainage and *belvíz* problems; discuss Transdanubia's varied soils and suitability for precision viticulture; mention the Northern Uplands and Tokaj as examples of specialised, terrain-influenced adoption; connect climate variability to the need for site-specific management.",
+    "chapter_num": 20
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why the Great Hungarian Plain is described as both a blessing and a curse for agriculture.",
+    "explanation": "Key points: blessing because flat terrain supports large-scale mechanised farming with low energy loss to slopes; curse because poor drainage, shallow groundwater, saturated or frozen soils, and excess precipitation can create *belvíz*; explain why these conditions make precision water and drainage management important.",
+    "chapter_num": 20
+  },
+  {
+    "type": "essay",
+    "question": "Analyze how Hungary's post-socialist transition shaped the timing and pattern of precision agriculture adoption. [Section 20.2]",
+    "explanation": "Key points: mention COCOM restrictions during socialism, lack of access to Western technology, post-1989 focus on land restitution and privatisation, voucher-driven fragmentation, ownership confusion, and delayed stabilisation of farm structures; explain how these factors caused Hungary to adopt later than Western regions.",
+    "chapter_num": 20
+  },
+  {
+    "type": "essay",
+    "question": "Evaluate the significance of RTK infrastructure in accelerating precision agriculture in Hungary. [Section 20.2]",
+    "explanation": "Key points: explain that RTK availability in the mid-2010s marked the modern phase; include 1-2 cm accuracy, support for auto-steering, controlled traffic, and section control; note scale of adoption by 2023 and why infrastructure can unlock broader digital farming practices.",
+    "chapter_num": 20
+  },
+  {
+    "type": "essay",
+    "question": "Why does the chapter argue that the barriers to precision agriculture in Hungary are not only technical or financial, but also cultural and educational?",
+    "explanation": "Key points: discuss high upfront costs and broadband issues, but emphasize conservative farming culture, intergenerational knowledge transfer, lack of trained personnel, and low levels of formal agricultural education; explain why these factors affect willingness and ability to use digital tools.",
+    "chapter_num": 20
+  },
+  {
+    "type": "essay",
+    "question": "Interpret the K&H Bank survey findings in terms of Hungary's digital transformation readiness in agriculture. [Section 20.2]",
+    "explanation": "Key points: use figures such as 12% leading innovators, 7 out of 10 cautious firms, only 7% treating digital transformation as a core strategic issue, 37% engaging with it among other priorities, and 17% average reinvestment; discuss what these imply about cautious but growing adoption.",
+    "chapter_num": 20
+  },
+  {
+    "type": "essay",
+    "question": "Explain how farm structure in Hungary influences who benefits most from precision agriculture technologies. [Section 20.1]",
+    "explanation": "Key points: describe the polarised structure of a few large operations and many smallholders; explain why technology cost structures favour scale; discuss how large farms may adopt more easily while smallholders face higher relative barriers.",
+    "chapter_num": 20
+  },
+  {
+    "type": "essay",
+    "question": "Using the 2022 drought example, discuss why climate variability strengthens the case for precision agriculture in Hungary. [Section 20.1]",
+    "explanation": "Key points: mention highly variable precipitation, extreme drought in 2022, collapse in maize yields, and the exposure of water-management weaknesses; connect these to precision irrigation, drainage, monitoring, and adaptive decision-making.",
+    "chapter_num": 20
+  },
+  {
+    "type": "essay",
+    "question": "Describe the role of viticulture as an entry point for precision agriculture in Hungary.",
+    "explanation": "Key points: discuss Transdanubian wine regions and Tokaj; explain why high-value perennial crops often justify earlier adoption of site-specific tools; mention drone-based canopy mapping and variable-rate spraying as examples.",
+    "chapter_num": 20
+  },
+  {
+    "type": "essay",
+    "question": "Assess the importance of integrated service providers such as KITE Zrt. in the Hungarian precision agriculture ecosystem. [Section 20.2]",
+    "explanation": "Key points: explain KITE's role as a leading agricultural integrator; describe the PGR system's collection of machine data, algorithmic processing, and recommendation output; discuss why integrators can reduce complexity and support adoption at scale, especially in regions like the Great Plain.",
+    "chapter_num": 20
+  }
+]

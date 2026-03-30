@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "According to Section 6.1.1, what most clearly distinguishes proximal sensing from remote sensing?",
+    "options": [
+      "A) Proximal sensing only measures soil, while remote sensing only measures crops",
+      "B) Proximal sensing uses instruments placed within about two metres of the target",
+      "C) Proximal sensing always requires stationary instruments",
+      "D) Proximal sensing only works at night"
+    ],
+    "correct": "B",
+    "explanation": "Section 6.1.1 defines proximal sensing as measurement with instruments placed within approximately two metres of the target, unlike remote sensing from satellites, aircraft, or drones.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Which deployment mode is best suited for capturing hour-by-hour changes in field conditions over a season?",
+    "options": [
+      "A) On-the-go sensing",
+      "B) Stop-and-go sensing",
+      "C) Stationary sensing",
+      "D) Satellite sensing"
+    ],
+    "correct": "C",
+    "explanation": "Section 6.1.2 explains that stationary sensors excel at capturing temporal dynamics such as hourly or daily changes.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Why do on-the-go proximal sensing systems often provide more detailed spatial maps than traditional grid soil sampling?",
+    "options": [
+      "A) They directly measure every agronomic property",
+      "B) They usually operate only in uniform soils",
+      "C) They can collect thousands of readings per hectare",
+      "D) They eliminate the need for calibration"
+    ],
+    "correct": "C",
+    "explanation": "Section 6.1.1 contrasts one-hectare grid sampling, which gives one observation per 10,000 m², with on-the-go sensors that can record thousands of readings per hectare.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Which of the following is an example of a stop-and-go proximal sensing system?",
+    "options": [
+      "A) A cone penetrometer used at predetermined points",
+      "B) A GreenSeeker mounted on a sprayer moving continuously",
+      "C) A wireless weather station left in the field",
+      "D) A satellite multispectral camera"
+    ],
+    "correct": "A",
+    "explanation": "Section 6.1.2 identifies a cone penetrometer pushed vertically into the soil at predetermined positions as a classic stop-and-go system.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "What is the main advantage of active proximal sensors over passive ones?",
+    "options": [
+      "A) They measure only one soil property at a time",
+      "B) They are more affected by cloud cover",
+      "C) They provide more consistent readings because they supply their own energy",
+      "D) They do not require any interpretation"
+    ],
+    "correct": "C",
+    "explanation": "Section 6.1.3 states that active sensors generate their own energy and are generally more consistent and repeatable because they are less affected by ambient conditions.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Why can passive crop canopy sensors produce variable readings across days?",
+    "options": [
+      "A) They rely on reflected sunlight",
+      "B) They emit their own modulated light pulses",
+      "C) They measure only soil temperature",
+      "D) They are always buried in the soil"
+    ],
+    "correct": "A",
+    "explanation": "Section 6.1.3 notes that passive canopy sensors depend on ambient sunlight, so cloud cover, sun angle, and haze affect readings.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "What does an electrical conductivity sensor directly measure?",
+    "options": [
+      "A) Clay percentage only",
+      "B) Soil pH",
+      "C) The soil's ability to conduct electrical charge",
+      "D) Organic matter concentration directly"
+    ],
+    "correct": "C",
+    "explanation": "Section 6.1.4 emphasizes that conductivity sensors do not directly measure clay or other agronomic properties; they measure the ability of soil to conduct electrical charge.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Why is calibration essential when using most proximal sensors?",
+    "options": [
+      "A) Because sensors always fail without daily replacement",
+      "B) Because sensor signals often infer agronomic properties indirectly and relationships can be site-specific",
+      "C) Because calibration removes all spatial variability",
+      "D) Because active sensors cannot work in daylight"
+    ],
+    "correct": "B",
+    "explanation": "Section 6.1.4 explains that many proximal sensors measure indirect signals, and the relationship to agronomic properties may vary by site, season, or soil condition.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "According to Section 6.2.1, why has apparent electrical conductivity (ECa) mapping been widely adopted?",
+    "options": [
+      "A) It directly measures yield potential",
+      "B) It integrates several important soil properties into one easily measured signal",
+      "C) It is unaffected by soil moisture",
+      "D) It replaces all soil sampling"
+    ],
+    "correct": "B",
+    "explanation": "Section 6.2.1 states that ECa integrates effects of clay, moisture, salinity, cation exchange capacity, porosity, and organic matter into a single practical measurement.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "A field zone with consistently high ECa is most likely associated with which condition?",
+    "options": [
+      "A) Extremely uniform nitrogen supply only",
+      "B) Sandy or very well-drained soil only",
+      "C) Heavier clay soils or saline conditions",
+      "D) Complete absence of soil water"
+    ],
+    "correct": "C",
+    "explanation": "Section 6.2.1 notes that high ECa zones often correspond to heavier clay soils or saline conditions.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Why is field-measured conductivity called 'apparent' conductivity?",
+    "options": [
+      "A) Because it is estimated from satellite images",
+      "B) Because it reflects the bulk behaviour of a complex soil mixture rather than a single phase",
+      "C) Because it is visible to the eye",
+      "D) Because it only applies to dry soils"
+    ],
+    "correct": "B",
+    "explanation": "Section 6.2.1 explains that apparent conductivity reflects the combined behaviour of solids, water with dissolved ions, and air, not any single component alone.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "In the Veris 3100 approach described in Section 6.2.2, how is ECa measured?",
+    "options": [
+      "A) By detecting natural gamma radiation",
+      "B) By reflecting sunlight from the canopy",
+      "C) By injecting electrical current into the soil through metal electrodes in contact with the ground",
+      "D) By measuring rainfall with a weather station"
+    ],
+    "correct": "C",
+    "explanation": "Section 6.2.2 describes galvanic contact methods such as the Veris 3100, which inject current directly into the soil through metal electrodes.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Proximal sensing generally involves instruments placed within approximately two metres of the target. [Section 6.1.1]",
+    "correct_answer": true,
+    "explanation": "This is the definition given in Section 6.1.1.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "In-field sensors always refer only to moving sensors mounted on tractors. [Section 6.1.1]",
+    "correct_answer": false,
+    "explanation": "Section 6.1.1 says in-field sensors also include stationary devices such as weather stations, soil moisture probes, and wireless sensor networks.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Traditional grid soil sampling usually produces more observations per hectare than on-the-go conductivity sensing. [Section 6.1.1]",
+    "correct_answer": false,
+    "explanation": "The chapter states that grid sampling yields relatively few data points, while on-the-go sensors can record thousands of readings per hectare.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "On-the-go systems are well suited to creating detailed maps of soil or crop variability. [Section 6.1.2]",
+    "correct_answer": true,
+    "explanation": "Section 6.1.2 explicitly states this.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Stop-and-go systems trade measurement detail for maximum mapping speed. [Section 6.1.2]",
+    "correct_answer": false,
+    "explanation": "The opposite is true: they sacrifice mapping speed for greater measurement detail.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Stationary sensors are better for temporal monitoring than for dense spatial mapping. [Section 6.1.2]",
+    "correct_answer": true,
+    "explanation": "Section 6.1.2 says stationary sensors excel at capturing how conditions change over time.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Passive sensors supply their own measurement energy. [Section 6.1.3]",
+    "correct_answer": false,
+    "explanation": "Passive sensors rely on ambient energy sources such as sunlight or natural radioactive decay.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "The GreenSeeker is described as an active sensor because it emits its own red and near-infrared light. [Section 6.1.3]",
+    "correct_answer": true,
+    "explanation": "Section 6.1.3 gives GreenSeeker as an example of an active sensor.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Active sensors are generally less affected by ambient conditions than passive sensors. [Section 6.1.3]",
+    "correct_answer": true,
+    "explanation": "The chapter states that active sensors usually provide more consistent, repeatable readings for this reason.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Most proximal sensors directly measure the exact agronomic property of interest without inference. [Section 6.1.4]",
+    "correct_answer": false,
+    "explanation": "Section 6.1.4 emphasizes that most sensors measure indirect signals from which agronomic properties are inferred.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A near-infrared spectrometer directly measures soil organic matter concentration without any calibration model. [Section 6.1.4]",
+    "correct_answer": false,
+    "explanation": "It measures light absorption at specific wavelengths, and organic matter is inferred through calibration models.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Calibration often involves traditional soil sampling at selected locations to ground-truth sensor data. [Section 6.1.4]",
+    "correct_answer": true,
+    "explanation": "This is stated directly in Section 6.1.4.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Apparent electrical conductivity (ECa) is useful because it reflects several soil properties at once. [Section 6.2.1]",
+    "correct_answer": true,
+    "explanation": "Section 6.2.1 says ECa integrates effects of multiple soil properties into one signal.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Low ECa areas may indicate sandy textures or well-drained positions. [Section 6.2.1]",
+    "correct_answer": true,
+    "explanation": "This interpretation is given in Section 6.2.1.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Electrical current in soil flows primarily through the air-filled pore spaces. [Section 6.2.1]",
+    "correct_answer": false,
+    "explanation": "The chapter explains that current flows primarily through the liquid phase containing dissolved ions.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Proximal sensing refers to measurement with instruments placed within approximately _____ metres of the target. [Section 6.1.1]",
+    "correct_answer": "two",
+    "explanation": "Section 6.1.1 defines proximal sensing as occurring within approximately two metres of the target.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A grid sample at one-hectare density yields one observation per _____ square metres. [Section 6.1.1]",
+    "correct_answer": "10,000",
+    "explanation": "The chapter uses this figure to show how sparse traditional sampling can be.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Sensors that collect measurements continuously while a vehicle travels across the field are called _____ systems. [Section 6.1.2]",
+    "correct_answer": "on-the-go",
+    "explanation": "Section 6.1.2 defines on-the-go systems this way.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A cone penetrometer used at predetermined positions is an example of a _____-and-go system. [Section 6.1.2]",
+    "correct_answer": "stop",
+    "explanation": "The chapter identifies this as a classic stop-and-go example.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Weather stations and soil moisture probes left in place for a season are _____ sensors. [Section 6.1.2]",
+    "correct_answer": "stationary",
+    "explanation": "Section 6.1.2 classifies fixed-position monitoring devices as stationary sensors.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Sensors that rely on ambient energy sources such as sunlight are called _____ sensors. [Section 6.1.3]",
+    "correct_answer": "passive",
+    "explanation": "Passive sensors use ambient energy rather than supplying their own.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "The GreenSeeker emits red and near-_____ light as part of its active sensing method. [Section 6.1.3]",
+    "correct_answer": "infrared",
+    "explanation": "Section 6.1.3 describes GreenSeeker as emitting red and near-infrared light.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Electromagnetic induction instruments such as the EM38 generate a primary magnetic field through a transmitter _____. [Section 6.1.3]",
+    "correct_answer": "coil",
+    "explanation": "The chapter explains that the transmitter coil creates the primary magnetic field.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "An electrical conductivity sensor does not directly measure clay content; it measures the ability of the soil to conduct an electrical _____. [Section 6.1.4]",
+    "correct_answer": "charge",
+    "explanation": "This distinction is central to interpreting proximal sensor data correctly.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Proper _____ remains essential because sensor-property relationships can be site-specific. [Section 6.1.4]",
+    "correct_answer": "calibration",
+    "explanation": "Section 6.1.4 stresses calibration to avoid misleading interpretations.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Among proximal soil sensors, those measuring apparent soil electrical conductivity have achieved the widest _____. [Section 6.2.1]",
+    "correct_answer": "adoption",
+    "explanation": "Section 6.2.1 states that ECa sensors have achieved the widest adoption in precision agriculture.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Field-measured conductivity is termed apparent conductivity because it reflects the bulk behaviour of a complex soil _____. [Section 6.2.1]",
+    "correct_answer": "mixture",
+    "explanation": "The chapter explains that apparent conductivity reflects the combined behaviour of soil phases.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Veris 3100 measures ECa using a _____ contact method with metal electrodes touching the soil. [Section 6.2.2]",
+    "correct_answer": "galvanic",
+    "explanation": "Section 6.2.2 introduces the Veris 3100 as a galvanic contact system.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Explain why proximal sensing is valuable in fields that appear uniform at first glance. Use examples from Sections 6.1.1 and 6.2.1.",
+    "explanation": "Key points: fields contain strong spatial variability in pH, nitrogen, clay, organic matter, salinity, and moisture; conventional whole-field management ignores this variability; proximal sensors provide dense, high-resolution measurements; ECa mapping can reveal stable soil patterns useful for management zones.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Compare on-the-go, stop-and-go, and stationary proximal sensing systems. When would each be most appropriate? [Section 6.1.2]",
+    "explanation": "Key points: on-the-go systems maximize spatial data density and mapping efficiency; stop-and-go systems provide more detailed point measurements such as compaction profiles; stationary systems capture temporal dynamics over time; appropriate choice depends on whether the goal is spatial mapping, depth profiling, or time-series monitoring.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the difference between active and passive proximal sensors and explain how this difference affects data quality and operating conditions. [Section 6.1.3]",
+    "explanation": "Key points: passive sensors rely on ambient energy like sunlight or natural radiation; active sensors emit their own energy; passive readings can vary with cloud cover, sun angle, and haze; active sensors are generally more consistent and can often operate day or night.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Why is it risky to interpret proximal sensor readings as direct measurements of agronomic properties? [Section 6.1.4]",
+    "explanation": "Key points: many sensors measure indirect physical signals rather than the agronomic variable itself; conductivity reflects multiple factors at once; NIR spectra require calibration models; relationships can be site-specific and season-dependent; poor calibration can lead to misleading management decisions.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Describe how apparent electrical conductivity (ECa) can support management zone delineation even though it is not a direct map of a single soil property. [Section 6.2.1]",
+    "explanation": "Key points: ECa integrates effects of clay, moisture, salinity, CEC, porosity, and organic matter; resulting patterns often correspond to meaningful soil differences; these patterns are often temporally stable; management zones can be based on stable spatial structure rather than one isolated property.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "A farmer wants to monitor both within-field soil variability and daily changes in water status. Propose a sensing strategy using the sensor categories in this chapter. [Sections 6.1.2, 6.2.1]",
+    "explanation": "Key points: combine on-the-go mapping such as ECa sensing for spatial variability with stationary soil moisture probes or weather stations for temporal monitoring; explain why one system alone would not capture both dimensions well.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Explain the physical basis of soil electrical conductivity in terms of the soil's three phases. [Section 6.2.1]",
+    "explanation": "Key points: soil consists of solid particles and organic matter, liquid water with dissolved ions, and air; current flows mainly through the liquid phase; conductivity increases with moisture, dissolved salts, and clay because clay retains water and cations.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "How can the same ECa map be interpreted differently depending on field conditions, and why does that matter for management? [Sections 6.1.4, 6.2.1]",
+    "explanation": "Key points: high or low ECa may result from multiple interacting factors such as clay, salinity, moisture, or drainage; interpretation requires local knowledge and calibration; wrong assumptions could lead to inappropriate variable-rate management.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Evaluate the strengths and limitations of replacing dense grid soil sampling with proximal sensing. [Sections 6.1.1, 6.1.4]",
+    "explanation": "Key points: strengths include far higher data density, better spatial pattern detection, and operational efficiency; limitations include indirect measurement, need for calibration, and possible site-specific relationships; best practice often combines sensing with targeted sampling.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Describe how the Veris 3100 illustrates the broader principle that proximal sensors can be integrated into field operations for practical decision support. [Section 6.2.2 and chapter context]",
+    "explanation": "Key points: Veris 3100 is a commercial galvanic contact instrument used in the field; it measures ECa on the go through direct soil contact; illustrates how sensors can be mounted or towed during field travel to generate actionable spatial maps for precision agriculture.",
+    "chapter_num": 6
+  }
+]

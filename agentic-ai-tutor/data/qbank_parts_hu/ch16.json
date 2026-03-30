@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "Mi a döntéstámogató rendszer (DSS) elsődleges szerepe a precíziós mezőgazdaságban?",
+    "options": [
+      "A) A gazdálkodó teljes kiváltása automatizált döntésekkel",
+      "B) Az adatok helyspecifikus, végrehajtható ajánlásokká alakítása",
+      "C) Kizárólag a gépek üzemanyag-fogyasztásának csökkentése",
+      "D) Csak a hozamtérképek archiválása"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet szerint a DSS feladata az adatáradatból végrehajtható, helyspecifikus ajánlások előállítása.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik állítás írja le legjobban a DSS és a teljesen automatizált rendszer közötti különbséget?",
+    "options": [
+      "A) A DSS mindig emberi beavatkozás nélkül működik",
+      "B) Az automatizált rendszer csak időjárási adatokat használ",
+      "C) A DSS tájékoztatja a gazdálkodót, de a végső döntés emberi kézben marad",
+      "D) Nincs érdemi különbség a kettő között"
+    ],
+    "correct": "C",
+    "explanation": "A szöveg hangsúlyozza, hogy a DSS nem helyettesíti a gazdálkodót, hanem támogatja a döntését.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "Miért vált különösen fontossá a DSS a modern mezőgazdaságban?",
+    "options": [
+      "A) Mert megszűnt a tapasztalati tudás jelentősége",
+      "B) Mert ma már az információhiány a fő probléma",
+      "C) Mert az adatokban gazdag környezetben az információt időben cselekvéssé kell alakítani",
+      "D) Mert a műholdképek teljesen kiváltják a terepi megfigyelést"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet szerint a kihívás ma nem az információhiány, hanem az információ időben történő, helyspecifikus cselekvéssé alakítása.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "Az alábbiak közül melyik NEM tartozik a DSS négy pillére közé a szöveg alapján?",
+    "options": [
+      "A) Adatgyűjtés",
+      "B) Adatkezelés",
+      "C) Elemzés és modellezés",
+      "D) Teljes automatizálás"
+    ],
+    "correct": "D",
+    "explanation": "A négy pillér: adatgyűjtés, adatkezelés, elemzés és modellezés, valamint az ajánlás közvetítése.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "Miért kulcsfontosságúak a georeferált adatok a térben explicit DSS-ekben?",
+    "options": [
+      "A) Mert csak ezek tárolhatók felhőben",
+      "B) Mert ismert helyhez kapcsolják az információt, így helyspecifikus térképek készíthetők",
+      "C) Mert kizárólag ezek származhatnak műholdról",
+      "D) Mert nem tartalmaznak mérési hibát"
+    ],
+    "correct": "B",
+    "explanation": "A georeferált adatok teszik lehetővé, hogy a számhalmazból helyspecifikus gazdálkodást támogató térkép készüljön.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelent az interoperabilitás problémája a precíziós mezőgazdasági adatkezelésben?",
+    "options": [
+      "A) A szenzorok túl nagy térbeli felbontását",
+      "B) A különböző rendszerek nehézkes adatcseréjét",
+      "C) A hozamtérképek túl alacsony pontosságát",
+      "D) A GNSS-jelek időszakos kiesését"
+    ],
+    "correct": "B",
+    "explanation": "Az interoperabilitás a különböző gyártóktól származó rendszerek adatcserére való képességét jelenti.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik szervezetet vagy eszközt említi a szöveg az adatkompatibilitási problémák kezelésére?",
+    "options": [
+      "A) FAOSTAT és Copernicus",
+      "B) AgGateway és ADAPT",
+      "C) ISOXML és MODIS",
+      "D) DSSAT és APSIM"
+    ],
+    "correct": "B",
+    "explanation": "A szöveg konkrétan az AgGateway konzorciumot és az ADAPT eszközt említi.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a többéves hozamelemzés egyik fő célja a DSS-ben?",
+    "options": [
+      "A) A gépek motorterhelésének valós idejű szabályozása",
+      "B) A következetesen magas, alacsony vagy instabil termelékenységű területek azonosítása",
+      "C) A vetőmag csírázóképességének laboratóriumi mérése",
+      "D) A talajminták kémiai tartósítása"
+    ],
+    "correct": "B",
+    "explanation": "A standardizált hozamtérképek egymásra vetítésével stabilan eltérő termelékenységű zónák azonosíthatók.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik példa mutatja legjobban, hogy a DSS ajánlásának közvetítési formája miért fontos?",
+    "options": [
+      "A) Mert minden ajánlást csak nyomtatott formában lehet használni",
+      "B) Mert a túl későn vagy túl bonyolultan érkező ajánlást valószínűleg nem alkalmazzák",
+      "C) Mert a gazdálkodók kizárólag szöveges riasztásokat fogadnak el",
+      "D) Mert a kijuttatási térképek nem tölthetők be terminálokba"
+    ],
+    "correct": "B",
+    "explanation": "A szöveg szerint az időzítés, az érthetőség és a mögöttes logika kommunikálása alapvető az elfogadáshoz.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik állítás tükrözi legjobban a jó DSS-tervezés elvét?",
+    "options": [
+      "A) A rendszer legyen fekete doboz, hogy a felhasználó ne lássa a részleteket",
+      "B) A rendszer csak egyetlen optimális választ adjon bizonytalanság nélkül",
+      "C) A rendszer mutasson alternatívákat, kompromisszumokat és bizonytalanságot",
+      "D) A rendszer kizárólag múltbeli adatokra épüljön"
+    ],
+    "correct": "C",
+    "explanation": "A legjobb DSS-ek átláthatóak, alternatívákat mutatnak be, és közlik a bizonytalanságot.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik adatforrás tartozik az adatgyűjtés pilléréhez a fejezet alapján?",
+    "options": [
+      "A) Hozammonitorok és agrometeorológiai állomások",
+      "B) Csak pénzügyi könyvelési adatok",
+      "C) Kizárólag laboratóriumi genetikai vizsgálatok",
+      "D) Csak kézi jegyzetek georeferálás nélkül"
+    ],
+    "correct": "A",
+    "explanation": "Az adatgyűjtéshez a szöveg szerint többek között hozammonitorok, talajminták, távérzékelés és agrometeorológiai állomások tartoznak.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "Miért kell az elemzési módszereket a meghozandó döntéshez igazítani?",
+    "options": [
+      "A) Mert minden mezőgazdasági döntés ugyanazt az elemzést igényli",
+      "B) Mert más elemzési keret kell például a változó dózisú vetéshez, mint a jövő keddi N-fejtrágyázáshoz",
+      "C) Mert az elemzés csak akkor működik, ha nincs térbeli adat",
+      "D) Mert a modellezés kizárólag kutatási célra használható"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet kiemeli, hogy a döntés típusa meghatározza a megfelelő elemzési és modellezési megközelítést.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "A fejezet szerint a modern mezőgazdaság fő problémája továbbra is az információhiány.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint ma inkább az a kihívás, hogy a sok adatot időben cselekvéssé alakítsák.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "A DSS a precíziós mezőgazdaságban segíti a térbeli és időbeli változékonyság vizsgálatát.",
+    "correct_answer": true,
+    "explanation": "A rendszer lehetővé teszi az állományfejlődés és a hozam térbeli-időbeli változékonyságának elemzését.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "A szaktanácsadási kiadványok és műtrágya-ajánlási táblázatok a múltban is döntéstámogató eszközként szolgáltak.",
+    "correct_answer": true,
+    "explanation": "A fejezet szerint ezek már több mint egy évszázada DSS-jellegű eszközök.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "A DSS célja, hogy minden esetben automatikusan végrehajtsa a beavatkozást emberi felügyelet nélkül.",
+    "correct_answer": false,
+    "explanation": "A DSS tájékoztat, de a végső döntés az emberi kezelő kezében marad.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "A gazdálkodó helyismerete, például egy korábbi árvíz emléke, olyan tényező lehet, amit egy algoritmus nem feltétlenül tud teljesen reprodukálni.",
+    "correct_answer": true,
+    "explanation": "A szöveg ezt példaként említi az emberi döntéshozó szerepének indoklására.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "Az adatgyűjtés pillérébe tartozhatnak a műholdas és drónos távérzékelési adatok is.",
+    "correct_answer": true,
+    "explanation": "A fejezet ezeket kifejezetten felsorolja az adatforrások között.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "Minden adatforrás azonos formátummal, felbontással és hibaszerkezettel rendelkezik.",
+    "correct_answer": false,
+    "explanation": "A szöveg hangsúlyozza, hogy minden adatforrásnak saját felbontása, hibája és formátuma van.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "A georeferált adatok ismert helyhez kapcsolt információk.",
+    "correct_answer": true,
+    "explanation": "Ez a georeferált adatok definíciója a fejezetben.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "Az adatkezelés csak az adatok egyszeri összegyűjtését jelenti, archiválásra nincs szükség.",
+    "correct_answer": false,
+    "explanation": "Az adatokat össze kell gyűjteni, archiválni és visszakereshetően tárolni kell.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "A táblaszintű adatbázis segíthet a jövedelmezőség változékonyságának megértésében is.",
+    "correct_answer": true,
+    "explanation": "A felsorolt célok között a jövedelmezőség változékonyságának megértése is szerepel.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "Az interoperabilitás azt jelenti, hogy a különböző gyártók rendszerei könnyen tudnak adatot cserélni.",
+    "correct_answer": true,
+    "explanation": "Ez az interoperabilitás lényege a szövegben.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "A szöveg szerint az interoperabilitás problémája már teljesen megoldott a mezőgazdaságban.",
+    "correct_answer": false,
+    "explanation": "A fejlődés egyenetlen, és a zökkenőmentes adatcsere még nem általános.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "Az elemzés és modellezés fázisában a nyers adatokból megértés születik.",
+    "correct_answer": true,
+    "explanation": "A fejezet pontosan így írja le ezt a pillért.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "A változó dózisú vetés és a nitrogén-fejtrágyázás döntése ugyanazt az elemzési keretet igényli.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint eltérő döntésekhez eltérő elemzési keret szükséges.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "Egy túl későn érkező vagy túl bonyolultan megjelenített ajánlást kisebb eséllyel alkalmaznak a gyakorlatban.",
+    "correct_answer": true,
+    "explanation": "A közvetítés minősége és időszerűsége meghatározza az ajánlás használhatóságát.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "A döntéstámogató rendszer rövidítése: _____.",
+    "correct_answer": "DSS",
+    "explanation": "A fejezet a döntéstámogató rendszert DSS-ként rövidíti.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DSS szellemi hidat képez az adatok és a végül elkészülő kezelési _____ között.",
+    "correct_answer": "előírás",
+    "explanation": "A szöveg szerint az adatok és a kezelési előírás között teremt kapcsolatot.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "A precíziós mezőgazdasági DSS négy pillére közül az egyik az adatgyűjtés, a másik az adatkezelés, a harmadik az elemzés és modellezés, a negyedik pedig az ajánlás _____.",
+    "correct_answer": "közvetítése",
+    "explanation": "A fejezet ezt nevezi meg a negyedik pillérként.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ismert helyhez kapcsolt információkat _____ adatoknak nevezzük.",
+    "correct_answer": "georeferált",
+    "explanation": "A georeferált adatok helyhez kötött információt jelentenek.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "A különböző gyártóktól származó rendszerek adatcserére való képességét _____ nevezzük.",
+    "correct_answer": "interoperabilitásnak",
+    "explanation": "Ez a fogalom írja le a rendszerek közötti kompatibilis adatcserét.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az adatkompatibilitási problémák kezelésére említett iparági konzorcium neve _____.",
+    "correct_answer": "AgGateway",
+    "explanation": "A szöveg az AgGateway-t említi példaként.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az Ag Data Application Programming Toolkit rövid neve _____.",
+    "correct_answer": "ADAPT",
+    "explanation": "A fejezet ezt a nyílt forráskódú eszközt említi.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "A több tenyészidőszak standardizált hozamtérképeinek egymásra vetítését többéves _____ nevezzük.",
+    "correct_answer": "hozamelemzésnek",
+    "explanation": "Ez az egyik alapvető elemzési módszer a stabil termelékenységi mintázatok feltárására.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "A mechanisztikus növénynövekedési modellek többek között a fotoszintézist, légzést, tápanyagfelvételt, vízháztartást és a _____ előrehaladást szimulálják.",
+    "correct_answer": "fenológiai",
+    "explanation": "A fejezet a fenológiai előrehaladást is a szimulált folyamatok közé sorolja.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "Egy modern kombájn hozammonitorral és _____-szel felszerelve georeferált megfigyelések ezreit generálhatja.",
+    "correct_answer": "GNSS",
+    "explanation": "A szöveg a hozammonitor és GNSS kombinációját említi.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DSS feladata, hogy az adatáradatból végrehajtható _____ szűrjön ki.",
+    "correct_answer": "ajánlásokat",
+    "explanation": "A rendszer célja a nyers adatokból cselekvést támogató ajánlások készítése.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "A DSS nem helyettesíti a gazdálkodót, hanem _____ őt.",
+    "correct_answer": "tájékoztatja",
+    "explanation": "A fejezet egyértelműen így fogalmazza meg a DSS szerepét.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "A legjobb DSS-ek nem fekete dobozként működnek, hanem _____ eszközként.",
+    "correct_answer": "átlátható",
+    "explanation": "A jó döntéstámogató rendszerek átláthatóak, és bemutatják a kompromisszumokat is.",
+    "chapter_num": 16
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, miért vált a döntéstámogató rendszerek használata különösen fontossá a modern mezőgazdaságban!",
+    "explanation": "Kulcspontok: az információhiány helyett adatbőség; helyspecifikus és időben történő döntések szükségessége; erőforrásszűkösség; a tapasztalati tudás továbbra is értékes, de önmagában nem elég a nagy mennyiségű adat feldolgozásához.",
+    "chapter_num": 16
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be, hogyan képez hidat a DSS a nyers adatok és a gyakorlati beavatkozások között!",
+    "explanation": "Kulcspontok: adatforrások összekapcsolása; térbeli-időbeli változékonyság elemzése; kezelési előírások kialakítása; kijuttatási térkép vagy más cselekvési forma; végrehajtható ajánlás.",
+    "chapter_num": 16
+  },
+  {
+    "type": "essay",
+    "question": "Fejtse ki, miért nem célszerű a DSS-t a gazdálkodó teljes helyettesítőjeként értelmezni!",
+    "explanation": "Kulcspontok: emberi helyismeret szerepe; nem formalizálható tudás; kockázattűrés, helyi előzmények, szomszédos területek hatásai; a DSS támogató és nem kizárólagos döntéshozó eszköz.",
+    "chapter_num": 16
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a precíziós mezőgazdasági DSS négy pillérét, és magyarázza el, hogyan függnek össze egymással!",
+    "explanation": "Kulcspontok: adatgyűjtés, adatkezelés, elemzés és modellezés, ajánlás közvetítése; bármelyik gyengesége rontja a teljes rendszer hatékonyságát; folyamatlogika a szenzortól a döntésig.",
+    "chapter_num": 16
+  },
+  {
+    "type": "essay",
+    "question": "Elemezze, miért központi jelentőségűek a georeferált adatok a helyspecifikus gazdálkodásban!",
+    "explanation": "Kulcspontok: helyhez kötött információ; térképezhetőség; tábla heterogenitásának feltárása; differenciált beavatkozás alapja; kapcsolat a GNSS-szel és a térbeli adatrétegekkel.",
+    "chapter_num": 16
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be az adatkezelés szerepét egy precíziós gazdálkodási DSS-ben!",
+    "explanation": "Kulcspontok: adatgyűjtésen túl archiválás, tárolás, visszakereshetőség; táblaszintű adatbázis; különböző adatrétegek integrálása; termelékenység, tápanyag-ellátottság, talajtulajdonságok és jövedelmezőség értelmezése.",
+    "chapter_num": 16
+  },
+  {
+    "type": "essay",
+    "question": "Fejtse ki az interoperabilitás problémáját, és értékelje, hogyan korlátozhatja a DSS-ek gyakorlati hasznát!",
+    "explanation": "Kulcspontok: eltérő gyártói, szabadalmaztatott formátumok; nehézkes adatcsere; AgGateway és ADAPT mint válaszok; a zökkenőmentes adatáramlás hiánya csökkenti a döntéstámogatás teljes potenciálját.",
+    "chapter_num": 16
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze egy többéves hozamelemzés és egy rövid távú nitrogén-fejtrágyázási döntés elemzési igényeit!",
+    "explanation": "Kulcspontok: eltérő időlépték; eltérő adatigény; stabil zónák vs. aktuális állapot; döntéshez igazított elemzési keret; stratégiai és taktikai döntések különbsége.",
+    "chapter_num": 16
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, miért fontos az ajánlás közvetítésének formája és időzítése a DSS sikerességében!",
+    "explanation": "Kulcspontok: használhatóság; időben érkező információ; érthető formátum; mögöttes logika kommunikálása; példák: kijuttatási térkép, táblagépes nézet, szöveges riasztás, nyomtatott jelentés.",
+    "chapter_num": 16
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse, hogyan járulhatnak hozzá a mechanisztikus növénynövekedési modellek a döntéstámogatáshoz!",
+    "explanation": "Kulcspontok: biofizikai folyamatok szimulációja; talaj, időjárás és menedzsment kölcsönhatásai; növényi reakciók előrejelzése; DSS-be ágyazható elemzőeszközök; gyakorlati döntések támogatása.",
+    "chapter_num": 16
+  }
+]

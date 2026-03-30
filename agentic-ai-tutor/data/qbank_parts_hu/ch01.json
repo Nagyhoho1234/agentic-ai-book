@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "Miért állítja a fejezet, hogy a mezőgazdaságnak változnia kell?",
+    "options": [
+      "A) Mert a gépesítés teljesen megszűnik a közeljövőben",
+      "B) Mert a népességnövekedés, az erőforrás-korlátok és a környezeti károk együtt új megközelítést követelnek",
+      "C) Mert a világon már nincs szükség több élelmiszerre",
+      "D) Mert a termőföldek mindenütt gyorsan növekednek"
+    ],
+    "correct": "B",
+    "explanation": "A szöveg szerint a népesség növekedése, a szántóterületek zsugorodása, a vízhiány, az éghajlatváltozás és az ipari mezőgazdaság környezeti költségei együtt teszik szükségessé a változást.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik állítás ragadja meg legjobban a precíziós mezőgazdaság lényegét a fejezet alapján?",
+    "options": [
+      "A) Egyetlen új gép használata minden táblán",
+      "B) A teljes gazdaság egységes kezelése a költségek csökkentésére",
+      "C) Gazdálkodási filozófia, amely megfigyelésre, elemzésre és célzott beavatkozásra épül",
+      "D) Kizárólag öntözéstechnikai fejlesztések összessége"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet hangsúlyozza, hogy a precíziós mezőgazdaság nem egyetlen technológia, hanem filozófia: figyeld meg gondosan, elemezd szigorúan, cselekedj célzottan.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "A FAO becslése szerint mennyivel kell növekednie a globális élelmiszer-termelésnek 2050-re a 2012-es szinthez képest?",
+    "options": [
+      "A) Körülbelül 20%-kal",
+      "B) Körülbelül 40%-kal",
+      "C) Legalább 60%-kal",
+      "D) Több mint 120%-kal"
+    ],
+    "correct": "C",
+    "explanation": "A szöveg szerint a FAO becslése alapján legalább 60%-os növekedés szükséges 2050-re.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "Miért növeli a változó étrend a növényi mezőgazdaságra nehezedő nyomást?",
+    "options": [
+      "A) Mert a feldolgozott élelmiszerekhez kevesebb mezőgazdasági input kell",
+      "B) Mert az állati termékek előállításához több takarmánygabona szükséges",
+      "C) Mert a húsfogyasztás csökkenti a gabonakeresletet",
+      "D) Mert a gyümölcsök és zöldségek nem igényelnek termőföldet"
+    ],
+    "correct": "B",
+    "explanation": "Az állati termékek, különösen a hús előállításához több kilogramm takarmánygabona szükséges, ezért az étrendi átalakulás a növénytermesztésre is nagyobb nyomást helyez.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelez az, hogy a Föld szárazföldi felszínének csak körülbelül 11%-a áll ténylegesen szántóföldi művelés alatt?",
+    "options": [
+      "A) A mezőgazdaság korlátlanul terjeszkedhet",
+      "B) A termelés növelését nem lehet egyszerűen új területek bevonására alapozni",
+      "C) A legelők fontosabbak, mint a szántók",
+      "D) Az öntözés mindenhol megoldja a földhiányt"
+    ],
+    "correct": "B",
+    "explanation": "A korlátozott szántóterület azt mutatja, hogy a jövőbeli termelésnövelés nem támaszkodhat fenntarthatóan pusztán területbővítésre.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "Mekkora részt képvisel a mezőgazdaság a globális édesvízkivételekből a fejezet szerint?",
+    "options": [
+      "A) Körülbelül 20%",
+      "B) Körülbelül 40%",
+      "C) Körülbelül 55%",
+      "D) Körülbelül 70%"
+    ],
+    "correct": "D",
+    "explanation": "A szöveg szerint a mezőgazdaság a globális édesvízkivételek mintegy 70%-áért felelős.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "Miért nem tekinthető fenntartható útnak az agrárexpanzió bizonyos dél-amerikai régiókban?",
+    "options": [
+      "A) Mert ott nincs elegendő csapadék",
+      "B) Mert az gyakran trópusi erdők és őshonos ökoszisztémák rovására történik",
+      "C) Mert a gazdák nem akarnak új területeket művelni",
+      "D) Mert a gépesítés ott tilos"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet szerint a terjeszkedés sokszor erdők és őshonos ökoszisztémák feláldozásával jár, ami káros a szénkörforgásra és a biodiverzitásra.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "Mi volt a huszadik századi mezőgazdasági forradalom egyik fő eredménye 1961 és 1999 között?",
+    "options": [
+      "A) A fő gabonanövények globális termelése megfeleződött",
+      "B) A fő gabonanövények globális termelése megduplázódott jelentős új terület bevonása nélkül",
+      "C) A műtrágyahasználat teljesen megszűnt",
+      "D) A világ minden régiója felhagyott az öntözéssel"
+    ],
+    "correct": "B",
+    "explanation": "A szöveg szerint a fő gabonanövények globális termelése megduplázódott, nagyrészt új területek számottevő bevonása nélkül.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik következmény kapcsolódik közvetlenül az egységes, nagy adagú nitrogén- és foszforműtrágyázáshoz?",
+    "options": [
+      "A) Talajképződés felgyorsulása",
+      "B) Tápanyag-kimosódás és eutrofizáció",
+      "C) A biodiverzitás automatikus növekedése",
+      "D) A vízfelhasználás megszűnése"
+    ],
+    "correct": "B",
+    "explanation": "A nagy adagú, egységes műtrágyázás tápanyag-kimosódáshoz vezethet, ami eutrofizációt és oxigénhiányos zónákat okoz.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelent a fejezetben említett „fenntartható intenzifikáció”?",
+    "options": [
+      "A) Több termelés kizárólag több műtrágyával",
+      "B) Kevesebb termelés kisebb környezeti hatással",
+      "C) Több termelés az ökológiai lábnyom egyidejű csökkentésével",
+      "D) Csak az ökológiai gazdálkodás támogatását"
+    ],
+    "correct": "C",
+    "explanation": "A fogalom lényege, hogy a mezőgazdaság úgy termeljen többet, hogy közben csökkenti környezeti terhelését.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik példa szerepel a fejezetben a túlhasznált víztartó rétegekre?",
+    "options": [
+      "A) Amazonas-medence",
+      "B) Ogallala-víztartó",
+      "C) Balaton-medence",
+      "D) Kongó-medence"
+    ],
+    "correct": "B",
+    "explanation": "A szöveg konkrétan említi az Ogallala-víztartót, az Indo-Gangeszi-medencét és az Észak-kínai Alföldet.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "Mit mutat a precíziós mezőgazdaság szemlélete a tábla kezeléséről?",
+    "options": [
+      "A) A tábla minden része azonos igényű",
+      "B) Csak a táblák közötti különbségek számítanak",
+      "C) Még néhány négyzetméteren belül is lehet eltérő szükséglet és potenciál",
+      "D) A helyi adottságok figyelembevétele csökkenti a termelést"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet hangsúlyozza, hogy nemcsak a táblák között, hanem a táblán belül is jelentős változékonyság lehet.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "A fejezet szerint a mezőgazdaság előtt álló fő kérdés már nem az, hogy kell-e változni, hanem az, hogy hogyan.",
+    "correct_answer": true,
+    "explanation": "Ez a fejezet egyik központi állítása.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "A precíziós mezőgazdaságot a szöveg egyetlen, minden problémát megoldó technológiaként mutatja be.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint nem csodaszerről vagy egyetlen technológiáról, hanem gazdálkodási filozófiáról van szó.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "Az ENSZ előrejelzése szerint a világ népessége 2050-re megközelítőleg 9,7 milliárdra nőhet.",
+    "correct_answer": true,
+    "explanation": "A fejezet ezt a számot adja meg.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "A FAO szerint 2050-re elegendő lenne a 2012-es élelmiszer-termelési szint fenntartása.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint legalább 60%-os növekedésre lesz szükség.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "A változó étrendi szokások hatása elhanyagolható a népességnövekedéshez képest.",
+    "correct_answer": false,
+    "explanation": "A fejezet szerint az étrendi átalakulás a puszta népességnövekedésnél is nagyobb nyomást gyakorolhat a rendszerre.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "Kínában a húsfogyasztás 1978 és 2008 között mintegy nyolcszorosára nőtt.",
+    "correct_answer": true,
+    "explanation": "Ez konkrét példaként szerepel a szövegben.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "A Föld szárazföldi felszínének több mint 75%-a alkalmas öntözés nélküli szántóföldi növénytermesztésre.",
+    "correct_answer": false,
+    "explanation": "A szöveg ennek ellenkezőjét állítja: több mint 75% alkalmatlan erre.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "A mezőgazdasági jellegű területek közé a fejezet szerint a szántóföldek, ültetvények és legelők is beletartoznak.",
+    "correct_answer": true,
+    "explanation": "A szöveg így határozza meg a mezőgazdasági jellegű területeket.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "A mezőgazdaság a globális édesvízkivételek kisebb részéért felel, mint az ipar.",
+    "correct_answer": false,
+    "explanation": "A fejezet szerint a mezőgazdaság mintegy 70%-ot tesz ki, tehát nagyon jelentős felhasználó.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "Az éghajlatváltozás a fejezet szerint a csapadékeloszlás átrendeződésével is jár.",
+    "correct_answer": true,
+    "explanation": "A szöveg ezt kifejezetten említi.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "A zöld forradalom kizárólag új területek művelésbe vonásával növelte a termelést.",
+    "correct_answer": false,
+    "explanation": "A termelésnövekedés főként javított fajtákból, műtrágyázásból, növényvédelemből, öntözésből és gépesítésből származott.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "A széles körben kijuttatott növényvédő szerek hozzájárulhatnak a gyom- és rovarpopulációk rezisztenciájának kialakulásához.",
+    "correct_answer": true,
+    "explanation": "Ez a fejezetben felsorolt környezeti és agronómiai következmények egyike.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "Az intenzív talajművelés javítja a talajszerkezetet és növeli a szervesanyag-tartalmat.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint épp ellenkezőleg: rontja a talajszerkezetet és csökkenti a szervesanyag-tartalmat.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "A precíziós mezőgazdaság szerepe a fejezet szerint fontos lehet a műtrágyázás hatékonyságának növelésében.",
+    "correct_answer": true,
+    "explanation": "David Tilman idézete ezt hangsúlyozza.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "A gazdálkodók csak a modern korban ismerték fel először, hogy a táj különböző részei eltérő kezelést igényelnek.",
+    "correct_answer": false,
+    "explanation": "A fejezet szerint ez a felismerés egyidős a mezőgazdasággal, és már az ókorban is jelen volt.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ENSZ előrejelzése szerint a világ népessége 2050-re megközelítőleg _____ milliárdra nő.",
+    "correct_answer": "9,7",
+    "explanation": "A fejezetben szereplő becslés 9,7 milliárd.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "A FAO szerint a globális élelmiszer-termelésnek 2050-re legalább _____ százalékkal kell növekednie a 2012-es szinthez képest.",
+    "correct_answer": "60",
+    "explanation": "A szöveg legalább 60%-os növekedést említ.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "A precíziós mezőgazdaság alapelve a fejezet szerint: figyeld meg gondosan, elemezd szigorúan, cselekedj _____.",
+    "correct_answer": "célzottan",
+    "explanation": "Ez a filozófia tömör megfogalmazása a szövegben.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "Kínában a húsfogyasztás 1978 és 2008 között mintegy _____szorosára nőtt.",
+    "correct_answer": "nyolc",
+    "explanation": "A fejezet ezt a példát használja az étrendi átalakulás szemléltetésére.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az egy főre jutó napi kalóriabevitel 1961-ben körülbelül _____ kilokalória volt globális átlagban.",
+    "correct_answer": "2250",
+    "explanation": "A szöveg ezt az értéket adja meg 1961-re.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "2007-re a globális átlagos egy főre jutó napi kalóriabevitel mintegy _____ kilokalóriára emelkedett.",
+    "correct_answer": "2750",
+    "explanation": "Ez a fejezetben szereplő 2007-es érték.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "2050-re a globális átlagos egy főre jutó napi kalóriabevitel várhatóan körülbelül _____ kilokalória lesz.",
+    "correct_answer": "3070",
+    "explanation": "A szöveg ezt a várható értéket közli.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Föld szárazföldi felszínének több mint _____ százaléka alkalmatlan az öntözés nélküli szántóföldi növénytermesztésre.",
+    "correct_answer": "75",
+    "explanation": "A fejezet szerint több mint 75% alkalmatlan.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "A Föld szárazföldi felszínének mindössze körülbelül _____ százaléka áll ténylegesen szántóföldi művelés alatt.",
+    "correct_answer": "11",
+    "explanation": "A szöveg szerint ez körülbelül 11%.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "A mezőgazdaság a globális édesvízkivételek mintegy _____ százalékáért felelős.",
+    "correct_answer": "70",
+    "explanation": "A fejezet ezt az arányt említi.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "A fő gabonanövények globális termelése 1961 és 1999 között _____.",
+    "correct_answer": "megduplázódott",
+    "explanation": "Ez a zöld forradalom egyik fő eredménye volt.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "A túlzott tápanyagterhelés következményeként kialakuló vízminőségi probléma neve: _____.",
+    "correct_answer": "eutrofizáció",
+    "explanation": "A nitrogén- és foszforkimosódás eutrofizációhoz vezethet.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "A több termelés és kisebb ökológiai lábnyom együttes célját a fejezet _____ intenzifikációnak nevezi.",
+    "correct_answer": "fenntartható",
+    "explanation": "A szövegben a „fenntartható intenzifikáció” kifejezés szerepel.",
+    "chapter_num": 1
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, miért nem elegendő a hagyományos „mindenből többet, ugyanúgy” megközelítés a jövő mezőgazdaságában.",
+    "explanation": "Kulcspontok: népességnövekedés és étrendi változás miatti keresletnövekedés; föld- és vízkorlátok; környezeti károk (kimosódás, eutrofizáció, rezisztencia, erózió, szikesedés); a múlt módszereinek egyszerű felnagyítása nem fenntartható.",
+    "chapter_num": 1
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be, hogyan kapcsolódik össze a népességnövekedés és a változó étrend az agrárrendszerekre nehezedő nyomás fokozódásában.",
+    "explanation": "Kulcspontok: több ember ellátása; magasabb jövedelmek miatti étrendi átalakulás; több állati termék fogyasztása; takarmányigény növekedése; kalóriabevitel emelkedése; összetett, egymást erősítő keresleti nyomás.",
+    "chapter_num": 1
+  },
+  {
+    "type": "essay",
+    "question": "Fejtse ki, miért tekinthető a precíziós mezőgazdaság gazdálkodási filozófiának, nem pedig pusztán technológiának.",
+    "explanation": "Kulcspontok: megfigyelés–elemzés–célzott cselekvés; helyspecifikus döntéshozatal; tábla belüli változékonyság felismerése; ráfordítások helyi adottságokhoz igazítása; termelékenység és fenntarthatóság együttes célja.",
+    "chapter_num": 1
+  },
+  {
+    "type": "essay",
+    "question": "Elemezze a földterületi korlátok szerepét abban, hogy miért válik szükségessé a termelés hatékonyságának javítása.",
+    "explanation": "Kulcspontok: korlátozott alkalmas területek; szántóföldi terület alacsony aránya; urbanizáció és iparosodás; Ázsiában telített földhasználat; terjeszkedés ökológiai költségei; ezért a meglévő területeken kell okosabban termelni.",
+    "chapter_num": 1
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be a vízkészletek szűkösségének jelentőségét a mezőgazdaság jövője szempontjából.",
+    "explanation": "Kulcspontok: mezőgazdaság magas vízfelhasználása; öntözés domináns szerepe; túlhasznált víztartók; éghajlatváltozás és csapadékeloszlás; aszály, árvíz, belvíz; minden csepp víz hatékonyabb felhasználásának szükségessége.",
+    "chapter_num": 1
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a zöld forradalom kettős örökségét a fejezet alapján.",
+    "explanation": "Kulcspontok: termelés jelentős növekedése, éhezés csökkentése; javított fajták, műtrágya, növényvédelem, öntözés, gépesítés; ugyanakkor környezeti költségek: kimosódás, holt zónák, rezisztencia, erózió, szervesanyag-csökkenés, szikesedés.",
+    "chapter_num": 1
+  },
+  {
+    "type": "essay",
+    "question": "Értelmezze a „fenntartható intenzifikáció” fogalmát, és kapcsolja össze a precíziós mezőgazdasággal.",
+    "explanation": "Kulcspontok: több termelés kisebb ökológiai lábnyommal; ráfordítások hatékonyságának növelése; helyspecifikus kezelés; inputok csökkentése ott, ahol nem szükségesek; környezetterhelés mérséklése; hosszú távú fenntarthatóság.",
+    "chapter_num": 1
+  },
+  {
+    "type": "essay",
+    "question": "Fejtse ki, milyen környezeti következményei lehetnek az egységes, nagy adagú inputkijuttatásnak.",
+    "explanation": "Kulcspontok: nitrogén- és foszforkimosódás; eutrofizáció és oxigénhiányos zónák; növényvédő szerek nem célzott hatásai; rezisztencia; talajromlás; víz- és ökoszisztéma-terhelés; a helyspecifikus kezelés előnyei.",
+    "chapter_num": 1
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, hogyan támasztja alá a fejezet, hogy a táblán belüli változékonyság kezelése gazdasági és környezeti előnyökkel járhat.",
+    "explanation": "Kulcspontok: nem minden hektár egyforma; eltérő szükséglet és potenciál; ráfordítások helyi igazítása; kevesebb erőforrás-felhasználás; nagyobb vagy stabilabb termés; kisebb veszteség és környezetterhelés.",
+    "chapter_num": 1
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be, milyen történeti folytonosságot jelez a fejezet a precíziós mezőgazdaság és az ősi gazdálkodási gyakorlatok között.",
+    "explanation": "Kulcspontok: a változékonyság felismerése nem új; ókori római példák; talaj, domborzat, kitettség szerinti döntések; a modern precíziós mezőgazdaság ezt a régi felismerést emeli új szintre adatokkal és célzott beavatkozásokkal.",
+    "chapter_num": 1
+  }
+]

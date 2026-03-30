@@ -1,0 +1,421 @@
+[
+  {
+    "type": "mcq",
+    "question": "According to Section 3.1.1, what was the main strength of traditional farmer observation?",
+    "options": [
+      "A) It automatically generated georeferenced maps",
+      "B) It provided rich pattern recognition based on experience",
+      "C) It eliminated the need for written records",
+      "D) It worked equally well at any farm scale"
+    ],
+    "correct": "B",
+    "explanation": "Section 3.1.1 describes traditional observation as a form of analog data science that was strong in pattern recognition, though limited by human perception and memory.",
+    "chapter_num": 3
+  },
+  {
+    "type": "mcq",
+    "question": "In Section 3.1.2, what made the early 1990s a turning point for practical precision agriculture?",
+    "options": [
+      "A) The disappearance of handwritten farm records",
+      "B) The replacement of tractors by drones",
+      "C) The wider civilian availability of GPS and the practical use of GIS in agriculture",
+      "D) Universal adoption of AI-based crop models"
+    ],
+    "correct": "C",
+    "explanation": "Section 3.1.2 identifies wider access to GPS receivers and the movement of GIS into practical agriculture as key drivers of the transition.",
+    "chapter_num": 3
+  },
+  {
+    "type": "mcq",
+    "question": "What is the main management advantage of linking yield monitor data with GNSS positions?",
+    "options": [
+      "A) It allows farmers to average all field performance into one value",
+      "B) It shows precisely where yield outcomes occurred within a field",
+      "C) It removes the need for harvesters",
+      "D) It guarantees a fixed yield increase every season"
+    ],
+    "correct": "B",
+    "explanation": "Section 3.1.2 emphasizes that farmers could know not just what happened, but where it happened, enabling site-specific management.",
+    "chapter_num": 3
+  },
+  {
+    "type": "mcq",
+    "question": "Why does the chapter argue that intuition alone is no longer sufficient for modern agriculture?",
+    "options": [
+      "A) Because farmers no longer observe fields directly",
+      "B) Because all farms are now fully automated",
+      "C) Because converging pressures such as population growth, climate uncertainty, and costly inputs require better decision support",
+      "D) Because environmental regulation has disappeared"
+    ],
+    "correct": "C",
+    "explanation": "The chapter introduction states that population growth, unpredictable climate, finite inputs, and tighter regulation create pressures that intuition alone cannot resolve.",
+    "chapter_num": 3
+  },
+  {
+    "type": "mcq",
+    "question": "According to Section 3.1.3, what turns a yield map from decoration into a management tool?",
+    "options": [
+      "A) Printing it in color",
+      "B) Feeding it into a system that informs decisions such as seeding-rate adjustment",
+      "C) Hanging it in the farmhouse office",
+      "D) Comparing it only with last year's rainfall"
+    ],
+    "correct": "B",
+    "explanation": "Section 3.1.3 states that data gains value when it enables decisions, such as using a yield map to adjust next season's seeding rate.",
+    "chapter_num": 3
+  },
+  {
+    "type": "mcq",
+    "question": "Which statement best reflects the chapter's treatment of reported benefits from precision management?",
+    "options": [
+      "A) Benefits are always uniform across crops and fields",
+      "B) Yield gains are guaranteed to be 30 percent or more",
+      "C) Outcomes can improve yields and reduce inputs, but results vary widely by context",
+      "D) Precision management only reduces labor, not inputs"
+    ],
+    "correct": "C",
+    "explanation": "Section 3.1.3 stresses that benefits are real but variable, depending on crop, field conditions, technology, and management.",
+    "chapter_num": 3
+  },
+  {
+    "type": "mcq",
+    "question": "What is identified as perhaps the single most consequential change that data brings to agriculture?",
+    "options": [
+      "A) A shift from local markets to global markets",
+      "B) A shift from reaction to anticipation",
+      "C) A shift from machinery to manual labor",
+      "D) A shift from crops to livestock"
+    ],
+    "correct": "B",
+    "explanation": "Section 3.1.3 explicitly says the move from reactive to proactive, anticipatory farming is perhaps the most consequential change.",
+    "chapter_num": 3
+  },
+  {
+    "type": "mcq",
+    "question": "In Section 3.2.1, which of the following is an example of vector data?",
+    "options": [
+      "A) A thermal image",
+      "B) An elevation raster",
+      "C) A field boundary polygon",
+      "D) A satellite pixel grid"
+    ],
+    "correct": "C",
+    "explanation": "Section 3.2.1 explains that vector data includes points, lines, and polygons; a field boundary is given as a polygon example.",
+    "chapter_num": 3
+  },
+  {
+    "type": "mcq",
+    "question": "How does raster data differ from vector data in Section 3.2.1?",
+    "options": [
+      "A) Raster uses points, lines, and polygons, while vector uses pixels",
+      "B) Raster represents space as a grid of cells, while vector represents discrete features",
+      "C) Raster cannot be georeferenced, while vector can",
+      "D) Raster is only used outside agriculture"
+    ],
+    "correct": "B",
+    "explanation": "Section 3.2.1 defines raster data as a grid of cells or pixels and vector data as points, lines, and polygons.",
+    "chapter_num": 3
+  },
+  {
+    "type": "mcq",
+    "question": "What is the critical property of spatial data highlighted in Section 3.2.1?",
+    "options": [
+      "A) Compression",
+      "B) Color depth",
+      "C) Georeferencing",
+      "D) Manual entry"
+    ],
+    "correct": "C",
+    "explanation": "Section 3.2.1 states that the critical property of spatial data is georeferencing, meaning each data point has a known coordinate.",
+    "chapter_num": 3
+  },
+  {
+    "type": "mcq",
+    "question": "Which technology combination is described as enabling farmers to treat different parts of a field differently?",
+    "options": [
+      "A) GPS, GIS, and variable-rate application equipment",
+      "B) Ledger books, rainfall gauges, and hand tools",
+      "C) Drones, livestock tags, and irrigation pumps only",
+      "D) Weather forecasts, market prices, and grain bins"
+    ],
+    "correct": "A",
+    "explanation": "Section 3.1.2 identifies the convergence of GPS, GIS, and variable-rate application equipment as foundational to precision agriculture.",
+    "chapter_num": 3
+  },
+  {
+    "type": "mcq",
+    "question": "What broader ambition is associated with the term 'digital agriculture' in Section 3.1.2?",
+    "options": [
+      "A) Replacing all farmers with robots",
+      "B) Mapping variability only once per season",
+      "C) Building decision systems that learn from data and recommend actions",
+      "D) Restricting data use to research institutions"
+    ],
+    "correct": "C",
+    "explanation": "Section 3.1.2 says digital agriculture signals a broader ambition: systems that learn from data and recommend actions, not just map variability.",
+    "chapter_num": 3
+  },
+  {
+    "type": "true_false",
+    "question": "Section 3.1.1 presents traditional farmer observation as useless before digital sensors were invented.",
+    "correct_answer": false,
+    "explanation": "The section says farmers were effective data collectors long before sensors, using observation and experience.",
+    "chapter_num": 3
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter argues that a changing climate can reduce the reliability of historical weather patterns as guides for decision-making.",
+    "correct_answer": true,
+    "explanation": "Section 3.1.1 states that changing climate means historical weather patterns may no longer be reliable guides.",
+    "chapter_num": 3
+  },
+  {
+    "type": "true_false",
+    "question": "According to Section 3.1.2, yield monitors allowed farmers to know what happened in a field but not where it happened.",
+    "correct_answer": false,
+    "explanation": "The section emphasizes that with GNSS-linked measurements, farmers could know precisely where events occurred.",
+    "chapter_num": 3
+  },
+  {
+    "type": "true_false",
+    "question": "Grid soil sampling can reveal nutrient variability across a field better than averaging the field into a single value.",
+    "correct_answer": true,
+    "explanation": "Section 3.1.2 contrasts mapped grid sampling with reducing the field to one average number.",
+    "chapter_num": 3
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter claims that precision agriculture always produces a universal 10 to 30 percent yield increase.",
+    "correct_answer": false,
+    "explanation": "Section 3.1.3 explicitly says reported gains are often more modest than a universal 10 to 30 percent increase and vary widely.",
+    "chapter_num": 3
+  },
+  {
+    "type": "true_false",
+    "question": "Documented trials cited in Section 3.1.3 report that AI-enabled weed detection and precision spraying can substantially reduce herbicide use.",
+    "correct_answer": true,
+    "explanation": "The text notes reductions often in the range of roughly 40 to 60 percent, depending on conditions and systems.",
+    "chapter_num": 3
+  },
+  {
+    "type": "true_false",
+    "question": "Smart irrigation systems informed by real-time soil moisture data have shown water savings in some studies and farm deployments.",
+    "correct_answer": true,
+    "explanation": "Section 3.1.3 states that such systems have cut water use in many studies and deployments, though results vary.",
+    "chapter_num": 3
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter describes data as valuable mainly because collecting it is an end in itself.",
+    "correct_answer": false,
+    "explanation": "The chapter says the value of data lies in the decisions it enables, not in the data itself.",
+    "chapter_num": 3
+  },
+  {
+    "type": "true_false",
+    "question": "Predictive models can help identify nitrogen deficiency before visible yellowing appears.",
+    "correct_answer": true,
+    "explanation": "Section 3.1.3 gives this as an example of proactive management enabled by data.",
+    "chapter_num": 3
+  },
+  {
+    "type": "true_false",
+    "question": "Drone-based imaging and machine learning are described as tools that can help detect pest outbreaks at early stages.",
+    "correct_answer": true,
+    "explanation": "Section 3.1.3 uses this example to illustrate earlier detection and targeted intervention.",
+    "chapter_num": 3
+  },
+  {
+    "type": "true_false",
+    "question": "Raster data in agriculture is represented only as points, lines, and polygons.",
+    "correct_answer": false,
+    "explanation": "Section 3.2.1 says raster data is represented as a grid of cells or pixels; points, lines, and polygons are vector forms.",
+    "chapter_num": 3
+  },
+  {
+    "type": "true_false",
+    "question": "A tile drainage line is an example of vector data.",
+    "correct_answer": true,
+    "explanation": "Section 3.2.1 specifically gives a tile drainage line as an example of a vector line feature.",
+    "chapter_num": 3
+  },
+  {
+    "type": "true_false",
+    "question": "Georeferencing means that each spatial data point has a known coordinate.",
+    "correct_answer": true,
+    "explanation": "Section 3.2.1 identifies this as the critical property of spatial data.",
+    "chapter_num": 3
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter suggests that environmental regulation is loosening, reducing the need for better farm data.",
+    "correct_answer": false,
+    "explanation": "The introduction says environmental regulation is tightening, which increases the importance of better decisions.",
+    "chapter_num": 3
+  },
+  {
+    "type": "true_false",
+    "question": "According to the chapter, smartphones became standard tools for checking weather, markets, and field conditions by the 2010s.",
+    "correct_answer": true,
+    "explanation": "Section 3.1.2 mentions smartphones as standard tools in that period.",
+    "chapter_num": 3
+  },
+  {
+    "type": "fill_blank",
+    "question": "According to the chapter introduction, the global population is projected to reach about _____ billion by 2050.",
+    "correct_answer": "9.7",
+    "explanation": "The introduction states that the global population is projected to reach about 9.7 billion by 2050.",
+    "chapter_num": 3
+  },
+  {
+    "type": "fill_blank",
+    "question": "Section 3.1.2 explains that the transition to digital data collection accelerated in the early _____s.",
+    "correct_answer": "1990",
+    "explanation": "The text identifies the early 1990s as the period when GPS and GIS became more practical for agriculture.",
+    "chapter_num": 3
+  },
+  {
+    "type": "fill_blank",
+    "question": "Yield monitors mounted on combine harvesters could record grain flow frequently, with each measurement associated with a _____ position.",
+    "correct_answer": "GNSS",
+    "explanation": "Section 3.1.2 states that yield measurements were associated with a GNSS position.",
+    "chapter_num": 3
+  },
+  {
+    "type": "fill_blank",
+    "question": "Taking soil samples on a grid allows nutrient values to be _____ across a field rather than averaged into a single number.",
+    "correct_answer": "mapped",
+    "explanation": "Section 3.1.2 explains that grid soil sampling enables nutrient values to be mapped across the field.",
+    "chapter_num": 3
+  },
+  {
+    "type": "fill_blank",
+    "question": "The convergence of GPS, GIS, and variable-rate application equipment marked the birth of _____ agriculture as a practical discipline.",
+    "correct_answer": "precision",
+    "explanation": "Section 3.1.2 directly describes this as the birth of precision agriculture.",
+    "chapter_num": 3
+  },
+  {
+    "type": "fill_blank",
+    "question": "By the 2010s, many tractors and harvesters were offered with _____ systems that could transmit data wirelessly.",
+    "correct_answer": "telematics",
+    "explanation": "Section 3.1.2 notes the spread of telematics systems on farm machinery.",
+    "chapter_num": 3
+  },
+  {
+    "type": "fill_blank",
+    "question": "The phrase 'digital agriculture' signaled an ambition to build decision systems that could learn from data and recommend _____.",
+    "correct_answer": "actions",
+    "explanation": "Section 3.1.2 says digital agriculture involves systems that learn from data and recommend actions.",
+    "chapter_num": 3
+  },
+  {
+    "type": "fill_blank",
+    "question": "Section 3.1.3 states that the value of data does not reside in the data itself but in the _____ it enables.",
+    "correct_answer": "decisions",
+    "explanation": "The section explicitly says data's value lies in the decisions it enables.",
+    "chapter_num": 3
+  },
+  {
+    "type": "fill_blank",
+    "question": "AI-enabled weed detection and precision spraying have reduced _____ use substantially in documented trials.",
+    "correct_answer": "herbicide",
+    "explanation": "Section 3.1.3 discusses substantial herbicide-use reductions from these technologies.",
+    "chapter_num": 3
+  },
+  {
+    "type": "fill_blank",
+    "question": "Smart irrigation systems informed by real-time soil moisture data have cut _____ use in many studies and farm deployments.",
+    "correct_answer": "water",
+    "explanation": "The chapter notes that smart irrigation can reduce water use.",
+    "chapter_num": 3
+  },
+  {
+    "type": "fill_blank",
+    "question": "The chapter describes the shift from reaction to _____ as perhaps the single most consequential change data brings to agriculture.",
+    "correct_answer": "anticipation",
+    "explanation": "Section 3.1.3 uses this exact contrast to describe the deeper significance of data.",
+    "chapter_num": 3
+  },
+  {
+    "type": "fill_blank",
+    "question": "In Section 3.2.1, raster data represents the landscape as a grid of cells or _____.",
+    "correct_answer": "pixels",
+    "explanation": "Raster data is defined as a grid of cells or pixels.",
+    "chapter_num": 3
+  },
+  {
+    "type": "fill_blank",
+    "question": "Vector data represents geographic features as points, lines, and _____.",
+    "correct_answer": "polygons",
+    "explanation": "Section 3.2.1 defines vector data using these three feature types.",
+    "chapter_num": 3
+  },
+  {
+    "type": "fill_blank",
+    "question": "The critical property of spatial data is _____, meaning each data point has a known coordinate.",
+    "correct_answer": "georeferencing",
+    "explanation": "Section 3.2.1 identifies georeferencing as the key property of spatial data.",
+    "chapter_num": 3
+  },
+  {
+    "type": "essay",
+    "question": "Using Sections 3.1.1 and 3.1.2, explain how farming moved from observation-based management to precision agriculture. What problems did digital tools solve that traditional observation could not?",
+    "explanation": "Key points: traditional observation was valuable and experience-rich; limits included human perception, memory, and inability to monitor every part of large farms; changing climate reduced reliability of historical patterns; GPS and GIS enabled location-specific knowledge; yield monitors, grid soil sampling, and variable-rate application allowed site-specific management.",
+    "chapter_num": 3
+  },
+  {
+    "type": "essay",
+    "question": "Section 3.1.3 argues that data itself is not the goal. Explain this idea with examples from the chapter.",
+    "explanation": "Key points: data matters because it improves decisions; a yield map alone is decorative, but when used to adjust seeding rate it becomes actionable; predictive nitrogen management and early pest detection show how data supports timely intervention; emphasis on decision quality rather than data accumulation.",
+    "chapter_num": 3
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why the chapter presents modern agriculture as especially dependent on data under current global conditions.",
+    "explanation": "Key points: population growth toward 9.7 billion by 2050; more food from less land; climate unpredictability; finite and expensive fertilizer, water, and energy; tightening environmental regulation; data as raw material for better decisions across the value chain.",
+    "chapter_num": 3
+  },
+  {
+    "type": "essay",
+    "question": "Compare reactive and proactive farming as described in Section 3.1.3. Why is this shift important for profitability and sustainability?",
+    "explanation": "Key points: reactive farming responds after visible symptoms or damage; proactive farming uses predictive models and early detection; earlier interventions reduce yield loss and unnecessary inputs; supports economic efficiency and lowers environmental harm.",
+    "chapter_num": 3
+  },
+  {
+    "type": "essay",
+    "question": "Evaluate the chapter's treatment of technology benefits. Why does it avoid presenting precision agriculture as a source of guaranteed uniform gains?",
+    "explanation": "Key points: benefits are documented but context-dependent; yield and input outcomes vary by crop, field conditions, technology, and management; chapter cautions against oversimplified universal claims; encourages evidence-based, situation-specific adoption.",
+    "chapter_num": 3
+  },
+  {
+    "type": "essay",
+    "question": "Explain how georeferencing underpins the usefulness of spatial data in precision agriculture.",
+    "explanation": "Key points: spatial data must be tied to known coordinates; georeferencing allows comparison and layering of yield, soil, imagery, and field boundaries; enables site-specific diagnosis and treatment; without location, management actions cannot be targeted effectively.",
+    "chapter_num": 3
+  },
+  {
+    "type": "essay",
+    "question": "Using Section 3.2.1, compare raster and vector data and discuss how each might support different agricultural decisions.",
+    "explanation": "Key points: raster = grids/pixels, useful for imagery, elevation, thermal patterns; vector = points, lines, polygons, useful for soil sample locations, drainage lines, field boundaries; both managed in GIS; different structures support different analyses and operational uses.",
+    "chapter_num": 3
+  },
+  {
+    "type": "essay",
+    "question": "How did connected machinery and cloud-based platforms expand the role of agricultural data beyond earlier GPS/GIS mapping?",
+    "explanation": "Key points: earlier systems emphasized spatial variability; later telematics and cloud systems added temporal variability and near-real-time feedback; wireless transmission enabled continuous data flow; decision systems could become more dynamic and integrated across operations.",
+    "chapter_num": 3
+  },
+  {
+    "type": "essay",
+    "question": "The chapter describes farmers as data collectors even before digital technology. Analyze this claim and explain both its strengths and limitations.",
+    "explanation": "Key points: farmers observed sky, soil, crop color, plant emergence, and outcomes; this was effective experiential knowledge and pattern recognition; limitations included scale, memory, subjectivity, and inability to capture continuous or precise measurements; digital systems extend rather than erase observational knowledge.",
+    "chapter_num": 3
+  },
+  {
+    "type": "essay",
+    "question": "Apply the chapter's ideas to a hypothetical farm with uneven soils and rising input costs. Propose how data-driven management could improve decisions.",
+    "explanation": "Key points: use georeferenced soil sampling, yield monitoring, GIS mapping, and variable-rate application; identify within-field variability; allocate fertilizer and seed according to need; use telematics and possibly soil moisture sensing for ongoing adjustments; expected benefits include better input efficiency, reduced waste, and more targeted management rather than blanket treatment.",
+    "chapter_num": 3
+  }
+]

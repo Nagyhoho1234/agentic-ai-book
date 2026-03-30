@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "Mi különbözteti meg leginkább a közeli érzékelést a távérzékeléstől a fejezet alapján?",
+    "options": [
+      "A) Csak laboratóriumban használható műszereket alkalmaz",
+      "B) A mérések mindig emberi mintavétellel történnek",
+      "C) Az érzékelő a célponttól körülbelül két méteren belül helyezkedik el",
+      "D) Kizárólag műholdas adatokkal dolgozik"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet szerint a közeli érzékelés lényege, hogy a műszert a célponttól körülbelül két méteren belül helyezik el, szemben a távérzékeléssel, ahol a mérési távolság jóval nagyobb.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a közeli érzékelők egyik legfontosabb előnye a hagyományos rácshálós talajmintavétellel szemben?",
+    "options": [
+      "A) Nem igényel semmilyen kalibrációt",
+      "B) Sokkal nagyobb térbeli adatsűrűséget biztosít",
+      "C) Közvetlenül minden agronómiai tulajdonságot mér",
+      "D) Csak időbeli változásokat képes kimutatni"
+    ],
+    "correct": "B",
+    "explanation": "A szöveg kiemeli, hogy például egy menet közbeni ECa-érzékelő hektáronként több ezer mérést rögzíthet, így a térbeli mintázatokat sokkal részletesebben tárja fel.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik példa illik legjobban a stop-and-go rendszerre?",
+    "options": [
+      "A) Folyamatosan működő traktorra szerelt reflektanciaérzékelő",
+      "B) Egy teljes szezonra telepített talajnedvesség-szonda",
+      "C) Előre kijelölt pontokon megállva használt kúpos penetrométer",
+      "D) Műholdra szerelt multispektrális kamera"
+    ],
+    "correct": "C",
+    "explanation": "A stop-and-go rendszerek lényege, hogy a jármű a mérési pontokon megáll. A fejezet klasszikus példaként a talajba nyomott kúpos penetrométert említi.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mi jellemzi leginkább a helyhez kötött érzékelőket?",
+    "options": [
+      "A) Kiválóan mutatják a térbeli mintázatokat nagy felbontásban",
+      "B) Elsősorban az időbeli dinamikát ragadják meg",
+      "C) Csak nappal használhatók",
+      "D) Mindig aktív érzékelők"
+    ],
+    "correct": "B",
+    "explanation": "A helyhez kötött érzékelők, mint a talajnedvesség-szondák vagy meteorológiai állomások, főként azt mutatják meg, hogyan változnak a körülmények időben.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Miért előnyös egy aktív növényállomány-érzékelő, például a GreenSeeker használata?",
+    "options": [
+      "A) Mert kizárólag természetes napfényt használ",
+      "B) Mert nincs szükség saját energiaforrásra",
+      "C) Mert működését kevésbé befolyásolják a fényviszonyok",
+      "D) Mert közvetlenül a talaj pH-ját méri"
+    ],
+    "correct": "C",
+    "explanation": "Az aktív érzékelők saját megvilágítást használnak, ezért felhős időben vagy akár éjjel is működhetnek, és kevésbé függnek a környezeti fényviszonyoktól.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik állítás fejezi ki helyesen, mit mér valójában egy elektromos vezetőképesség-érzékelő?",
+    "options": [
+      "A) Közvetlenül az agyagtartalmat",
+      "B) Közvetlenül a nitrogénellátottságot",
+      "C) A talaj elektromos vezetőképességét, amelyet több tényező befolyásol",
+      "D) Kizárólag a talaj hőmérsékletét"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet hangsúlyozza, hogy az érzékelő nem közvetlenül az agyagtartalmat vagy más agronómiai tulajdonságot méri, hanem az elektromos vezetőképességet, amely több tényező eredője.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Miért nélkülözhetetlen a kalibráció a közeli érzékelésben?",
+    "options": [
+      "A) Mert nélküle az érzékelő nem képes adatot rögzíteni",
+      "B) Mert az érzékelőjel és a vizsgált tulajdonság kapcsolata helyfüggő lehet",
+      "C) Mert csak így válik az érzékelő aktívvá",
+      "D) Mert a GPS-jelek csak kalibráció után használhatók"
+    ],
+    "correct": "B",
+    "explanation": "A szöveg szerint az érzékelőjel és a tényleges talajtulajdonság közötti kapcsolat helytől, évszaktól és állapottól függhet, ezért helyszíni hitelesítés szükséges.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Miért tekinthető az ECa agronómiailag értékes jelnek, noha nem egyetlen talajtulajdonságot ábrázol?",
+    "options": [
+      "A) Mert kizárólag a sótartalmat mutatja",
+      "B) Mert több fontos talajtényező hatását integrálja egyetlen mérésbe",
+      "C) Mert csak laboratóriumban mérhető",
+      "D) Mert időben gyorsan és véletlenszerűen változik"
+    ],
+    "correct": "B",
+    "explanation": "Az ECa egyetlen jelben több fontos tulajdonság, például az agyagtartalom, nedvesség és sótartalom hatását egyesíti, ezért jól feltárja a talaj térbeli szerkezetét.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mire utalhatnak gyakran a magas ECa-jú zónák?",
+    "options": [
+      "A) Homokos talajra és jó vízelvezetésre",
+      "B) Kötöttebb, agyagosabb vagy szikesebb viszonyokra",
+      "C) Kizárólag magas nitrogénszintre",
+      "D) Csak alacsony szervesanyag-tartalomra"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet szerint a magas ECa-jú területek gyakran kötöttebb, agyagos talajokhoz vagy szikes/sós viszonyokhoz kapcsolódnak.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Mire utalhatnak gyakran az alacsony ECa-jú területek?",
+    "options": [
+      "A) Homokosabb textúrára vagy jobb vízelvezetésre",
+      "B) Minden esetben magas agyagtartalomra",
+      "C) Kizárólag magas sótartalomra",
+      "D) Csak tömörödött altalajra"
+    ],
+    "correct": "A",
+    "explanation": "A szöveg alapján az alacsony ECa-jú zónák gyakran homokosabb talajtextúrára vagy jó vízelvezetésű fekvésre utalnak.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Miért alkalmasak az ECa-térképek kezelési zónák kijelölésére?",
+    "options": [
+      "A) Mert teljesen függetlenek minden környezeti tényezőtől",
+      "B) Mert időben stabil térbeli mintázatokat mutathatnak",
+      "C) Mert közvetlen terméshozamtérképek",
+      "D) Mert csak egyetlen szezonban használhatók"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet szerint az ECa mintázatai gyakran időben stabilak, ezért jó alapot adnak a kezelési zónák lehatárolásához.",
+    "chapter_num": 6
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik példa passzív érzékelő a fejezet alapján?",
+    "options": [
+      "A) GreenSeeker",
+      "B) EM38",
+      "C) Visszavert napfényt mérő növényállomány-érzékelő",
+      "D) Modulált fényt kibocsátó reflektanciaszenzor"
+    ],
+    "correct": "C",
+    "explanation": "A passzív érzékelők a környezetből származó energiát használják. Ilyen a visszavert napfényt mérő növényállomány-érzékelő.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A közeli érzékelésnél a műszert jellemzően a célponttól körülbelül két méteren belül helyezik el.",
+    "correct_answer": true,
+    "explanation": "Ez a fejezetben megadott alapdefiníció.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A helyben telepített érzékelők fogalma szűkebb, mint a közeli érzékelésé, mert nem tartalmaz meteorológiai állomásokat.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint ez tágabb fogalom, és magában foglalja a meteorológiai állomásokat, talajnedvesség-szondákat és szenzorhálózatokat is.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A talaj pH-ja egyetlen táblán belül is jelentősen változhat.",
+    "correct_answer": true,
+    "explanation": "A fejezet példaként említi, hogy a pH akár két egységgel is eltérhet egy táblán belül.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az egyhektáros rácshálós mintavétel 100 négyzetméterenként ad egy megfigyelést.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint egy hektár 10 000 négyzetméter, így egy megfigyelés 10 000 négyzetméterenként jut.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A menet közbeni rendszerek folyamatosan gyűjtik az adatokat, miközben a jármű halad a táblán.",
+    "correct_answer": true,
+    "explanation": "Ez a menet közbeni rendszerek alapvető jellemzője.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A stop-and-go rendszerek fő előnye, hogy a lehető legnagyobb térképezési sebességet biztosítják.",
+    "correct_answer": false,
+    "explanation": "Ezek a rendszerek éppen a sebességet áldozzák fel a részletesebb mérés érdekében.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A helyhez kötött érzékelők elsősorban a térbeli mintázatok nagy felbontású feltárására szolgálnak.",
+    "correct_answer": false,
+    "explanation": "A fejezet szerint fő előnyük az időbeli dinamika követése, nem a térbeli mintázatok részletes feltárása.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A passzív érzékelők működését befolyásolhatja a felhőzet és a napmagasság.",
+    "correct_answer": true,
+    "explanation": "A visszavert napfényt használó passzív érzékelőknél ez kifejezetten fontos tényező.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A GreenSeeker azért tekinthető aktív érzékelőnek, mert saját fényimpulzusokat bocsát ki.",
+    "correct_answer": true,
+    "explanation": "A fejezet szerint modulált vörös és közeli infravörös impulzusokat bocsát ki.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az aktív érzékelők általában jobban függenek a környezeti feltételektől, mint a passzívak.",
+    "correct_answer": false,
+    "explanation": "Éppen ellenkezőleg: általában kevésbé függenek a környezeti feltételektől, ezért reprodukálhatóbb eredményeket adnak.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az elektromos vezetőképesség-érzékelő közvetlenül az agyagtartalmat méri.",
+    "correct_answer": false,
+    "explanation": "A szenzor az elektromos vezetőképességet méri, amelyet többek között az agyagtartalom is befolyásol.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A közeli infravörös spektrométerek esetében a szervesanyag-tartalom becslése kalibrációs modelleken alapulhat.",
+    "correct_answer": true,
+    "explanation": "A fejezet szerint a műszer a fényelnyelést méri, és ebből kalibrációs modellek segítségével következtetnek a szervesanyag-tartalomra.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A megfelelő kalibráció hiányában az érzékelőadatok félrevezetők lehetnek.",
+    "correct_answer": true,
+    "explanation": "Ez a fejezet egyik központi figyelmeztetése.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "Az ECa egyetlen, kizárólag a talajnedvességet tükröző jel.",
+    "correct_answer": false,
+    "explanation": "Az ECa több talajtulajdonság együttes hatását integrálja, nem csak a nedvességet.",
+    "chapter_num": 6
+  },
+  {
+    "type": "true_false",
+    "question": "A magas ECa-jú területek gyakran kötöttebb vagy szikesebb talajviszonyokra utalnak.",
+    "correct_answer": true,
+    "explanation": "A fejezet ezt tipikus értelmezésként említi.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Közeli érzékelésnek nevezzük a mérést, ha a műszert a célponttól körülbelül _____ méteren belül helyezik el.",
+    "correct_answer": "két",
+    "explanation": "A definíció szerint a közeli érzékelés határa nagyjából két méter.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A műholdakra, repülőgépekre vagy drónokra szerelt érzékelők alkalmazása a _____ kategóriájába tartozik.",
+    "correct_answer": "távérzékelés",
+    "explanation": "A fejezet a közeli érzékelést ettől különíti el.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az egy hektáros mintavételi rácsháló egy megfigyelést ad _____ négyzetméterenként.",
+    "correct_answer": "10 000",
+    "explanation": "Egy hektár 10 000 m², ezért ilyen sűrűségnél ennyi területre jut egy adatpont.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A folyamatosan haladó járműről végzett adatgyűjtést _____ közbeni rendszernek nevezik.",
+    "correct_answer": "menet",
+    "explanation": "A szöveg a 'menet közbeni' kifejezést használja.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az előre meghatározott pontokon megálló mérési mód neve: _____-and-go.",
+    "correct_answer": "stop",
+    "explanation": "A fejezet ezt az angol eredetű kifejezést használja.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A teljes tenyészidőszakra a táblán hagyott érzékelők egyik tipikus példája a talajnedvesség-_____.",
+    "correct_answer": "szonda",
+    "explanation": "A helyhez kötött érzékelők között a talajnedvesség-szondák szerepelnek.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A környezetből származó energiát használó érzékelőket _____ érzékelőknek nevezzük.",
+    "correct_answer": "passzív",
+    "explanation": "Ilyenek például a visszavert napfényt mérő szenzorok.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A saját energiával működő érzékelőket _____ érzékelőknek nevezzük.",
+    "correct_answer": "aktív",
+    "explanation": "A GreenSeeker és az elektromágneses indukciós műszerek ilyenek.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GreenSeeker modulált vörös és közeli _____ impulzusokat bocsát ki.",
+    "correct_answer": "infravörös",
+    "explanation": "A fejezet szerint vörös és közeli infravörös tartományban működik.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az EM38 egy _____ indukciós műszer.",
+    "correct_answer": "elektromágneses",
+    "explanation": "A szöveg így nevezi ezt az eszközcsoportot.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az elektromos vezetőképesség-érzékelő nem az agyagtartalmat, hanem a talaj _____ vezetőképességét méri.",
+    "correct_answer": "elektromos",
+    "explanation": "Ez a közvetlenül mért fizikai jel.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "A látszólagos elektromos vezetőképesség rövidítése: _____.",
+    "correct_answer": "ECa",
+    "explanation": "A fejezet ezt a rövidítést használja.",
+    "chapter_num": 6
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az ECa-térképek gyakran jó alapot adnak a kezelési _____ kijelöléséhez.",
+    "correct_answer": "zónák",
+    "explanation": "A térben stabil mintázatok miatt ezek a térképek kezelési zónák lehatárolására használhatók.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, miért fontosak a közeli érzékelők a táblán belüli változékonyság kezelésében a hagyományos mintavételhez képest.",
+    "explanation": "Kulcspontok: a táblák nem homogének; pH, nitrogén, agyag, szervesanyag és sótartalom térben változik; a hagyományos mintavétel ritka és drága; a közeli érzékelők nagy sűrűségű adatokat adnak; finom mintázatokat tárnak fel; támogatják a precízebb döntéshozatalt.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a menet közbeni, a stop-and-go és a helyhez kötött érzékelési módokat, és írja le, milyen problémákra melyik a legalkalmasabb.",
+    "explanation": "Kulcspontok: menet közbeni = nagy térbeli fedettség és részletes térképezés; stop-and-go = lassabb, de pontonként részletesebb mérés; helyhez kötött = időbeli dinamika követése; példák: ECa-szánkó, penetrométer, talajnedvesség-szonda/meteorológiai állomás.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Fejtse ki az aktív és passzív érzékelők közötti különbséget, és értékelje, hogy ez miért fontos a gyakorlati használat során.",
+    "explanation": "Kulcspontok: passzív = környezeti energia, érzékeny fényviszonyokra; aktív = saját energiaforrás, stabilabb mérés; példák: napfényt mérő szenzorok, gamma-érzékelők, GreenSeeker, EM38; következmények: reprodukálhatóság, napszak- és időjárásfüggés.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, miért félrevezető azt feltételezni, hogy egy közeli érzékelő közvetlenül egy agronómiai tulajdonságot mér.",
+    "explanation": "Kulcspontok: a szenzorok gyakran közvetett fizikai jelet mérnek; ECa több tényező eredője; NIR a fényelnyelést méri; az agronómiai értelmezés modelleken és kalibráción alapul; hely- és időfüggő kapcsolatok.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be a kalibráció szerepét a proximális érzékelésben, és írja le, mi történhet kalibráció nélkül.",
+    "explanation": "Kulcspontok: kiválasztott pontokon hagyományos mintavétel; helyszíni hitelesítés; érzékelőjel és valós tulajdonság kapcsolata változó; kalibráció nélkül hibás következtetések, rossz zónalehatárolás és téves beavatkozások.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Értelmezze, hogy miért lehet az ECa-térkép agronómiailag hasznos akkor is, ha nem egyetlen talajtulajdonság térképe.",
+    "explanation": "Kulcspontok: integrált jel; agyag, nedvesség, sótartalom, CEC, porozitás, szervesanyag hatása; a talaj térbeli szerkezetének feltárása; kezelési zónák kijelölése; döntéstámogatás több művelethez.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Elemezze, hogyan kellene értelmezni egy táblán belül megjelenő magas és alacsony ECa-zónákat, és milyen további vizsgálatok lehetnek indokoltak.",
+    "explanation": "Kulcspontok: magas ECa = gyakran kötöttebb/agyarosabb vagy szikesebb területek; alacsony ECa = homokosabb vagy jobb vízelvezetésű részek; az értelmezés nem egyértelmű; szükséges lehet talajmintavétel, helyszíni bejárás, kiegészítő adatok.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Írja le, miért különösen fontos a térbeli felbontás a precíziós mezőgazdaságban, és hogyan járulnak ehhez hozzá a közeli érzékelők.",
+    "explanation": "Kulcspontok: a talaj és növényzet finom léptékben változik; ritka mintavétel elsimítja a mintázatokat; közeli érzékelők sok adatpontot adnak; részletes térképek készíthetők; differenciált kezelés alapja.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be egy olyan döntési folyamat logikáját, amelyben a gazdálkodó közeli érzékelőadatokat és hagyományos mintavételt együtt használ.",
+    "explanation": "Kulcspontok: szenzoros előtérképezés; mintázatok azonosítása; reprezentatív pontok kiválasztása; labor- vagy helyszíni referenciaadatok; kalibráció; zónák kialakítása; menedzsmentdöntések.",
+    "chapter_num": 6
+  },
+  {
+    "type": "essay",
+    "question": "Értékelje, hogy a fejezet alapján miért nevezhetők ezek a technológiák a precíziós gazdálkodás 'érzékelői idegrendszerének'.",
+    "explanation": "Kulcspontok: többféle szenzor együttműködése; talaj- és növényállapot folyamatos vagy sűrű megfigyelése; térbeli és időbeli információk összekapcsolása; döntéstámogatás; célzott beavatkozások lehetővé tétele.",
+    "chapter_num": 6
+  }
+]

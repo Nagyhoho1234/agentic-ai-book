@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "According to Section 7.1, why is accurate positioning foundational to precision agriculture?",
+    "options": [
+      "A) It mainly reduces fuel consumption during transport",
+      "B) It allows field operations and data layers to be tied to exact locations for site-specific management",
+      "C) It replaces the need for agronomic knowledge",
+      "D) It eliminates all variability within a field"
+    ],
+    "correct": "B",
+    "explanation": "Section 7.1 emphasizes that precision agriculture depends on knowing exactly where operations and observations occur so inputs, maps, and historical data can be aligned spatially.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "In the fertilizer application example in Section 7.1, what is a direct consequence of overlap between passes?",
+    "options": [
+      "A) Reduced satellite visibility",
+      "B) Lower machine speed",
+      "C) Double application of nitrogen in some areas",
+      "D) Improved repeatability"
+    ],
+    "correct": "C",
+    "explanation": "The chapter states that overlap causes some areas to receive a double dose of nitrogen, increasing cost and runoff risk.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "What is the main reason a prescription map becomes ineffective without reliable positioning?",
+    "options": [
+      "A) The map cannot store application rates",
+      "B) The applicator cannot distinguish management zones in real time",
+      "C) Satellites cannot transmit ephemeris data",
+      "D) Soil sampling becomes unnecessary"
+    ],
+    "correct": "B",
+    "explanation": "Section 7.1 explains that site-specific management only works if the machine can identify its exact location relative to prescription zones while operating.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "According to Section 7.2.1, what information does each GNSS satellite continuously broadcast?",
+    "options": [
+      "A) Soil moisture and weather forecasts",
+      "B) Engine control commands and steering angles",
+      "C) Ephemeris and a timing code",
+      "D) Field boundaries and prescription maps"
+    ],
+    "correct": "C",
+    "explanation": "The text states that each satellite broadcasts ephemeris, describing orbital position, and a timing code used for ranging.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "Why can a timing error of just one thousandth of a second create a very large distance error in GNSS ranging?",
+    "options": [
+      "A) Because satellites orbit too slowly",
+      "B) Because radio waves travel at the speed of light",
+      "C) Because receivers average all signals",
+      "D) Because ephemeris data are updated only once per day"
+    ],
+    "correct": "B",
+    "explanation": "Section 7.2.1 notes that radio waves travel at about 299,792 km/s, so even tiny timing errors translate into huge range errors.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "What is the primary purpose of using a fourth satellite in GNSS positioning?",
+    "options": [
+      "A) To measure soil elevation",
+      "B) To correct for receiver clock error",
+      "C) To increase satellite altitude",
+      "D) To eliminate the need for ephemeris"
+    ],
+    "correct": "B",
+    "explanation": "Three satellites can geometrically narrow the position, but a fourth is needed to solve for the receiver's clock error because the receiver clock is less precise than satellite atomic clocks.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "The process of computing position from multiple distance measurements to satellites is called:",
+    "options": [
+      "A) Triangulation",
+      "B) Georeferencing",
+      "C) Trilateration",
+      "D) Interpolation"
+    ],
+    "correct": "C",
+    "explanation": "Section 7.2.1 explicitly names this process trilateration.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "Why do agricultural GNSS receivers often use signals from eight or more satellites when available?",
+    "options": [
+      "A) To reduce the need for guidance software",
+      "B) To improve accuracy and reliability of the position solution",
+      "C) To increase the speed of light",
+      "D) To avoid using timing codes"
+    ],
+    "correct": "B",
+    "explanation": "The chapter explains that although four satellites are necessary for a basic solution, using more visible satellites improves accuracy and reliability.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "According to Section 7.2.2, what was the original GPS constellation design?",
+    "options": [
+      "A) 12 satellites in three orbital planes",
+      "B) 18 satellites in six orbital planes",
+      "C) 24 satellites in six orbital planes",
+      "D) 31 satellites in eight orbital planes"
+    ],
+    "correct": "C",
+    "explanation": "The text states that the original GPS constellation comprised 24 satellites distributed across six orbital planes.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "What was a key design goal of the GPS constellation mentioned in Section 7.2.2?",
+    "options": [
+      "A) To ensure at least four satellites are visible from any point on Earth at any time",
+      "B) To keep all satellites directly above the equator",
+      "C) To complete one orbit every 24 hours",
+      "D) To transmit only on a single frequency"
+    ],
+    "correct": "A",
+    "explanation": "The constellation was designed so that at least four satellites would be visible from any point on Earth's surface at any time.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "Which pair correctly matches GPS frequencies and signal names from Section 7.2.2?",
+    "options": [
+      "A) L1 = 1227.60 MHz, L2 = 1575.42 MHz",
+      "B) L1 = 1575.42 MHz, L2 = 1227.60 MHz",
+      "C) L1 = 1176.45 MHz, L2 = 1575.42 MHz",
+      "D) L1 = 299,792 MHz, L2 = 20,000 MHz"
+    ],
+    "correct": "B",
+    "explanation": "The chapter lists L1 at 1575.42 MHz and L2 at 1227.60 MHz.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "Which statement best captures the chapter's view of positioning in relation to agricultural automation?",
+    "options": [
+      "A) Automation reduces the need for precise positioning",
+      "B) Positioning is useful only for harvesting",
+      "C) Every step toward autonomy demands more precise and reliable positioning",
+      "D) Autonomous systems rely mainly on operator memory"
+    ],
+    "correct": "C",
+    "explanation": "Section 7.1 states that as agriculture moves toward automation and autonomy, positioning must become increasingly precise and reliable.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "Section 7.1 argues that traditional farmer knowledge was precise, objective, and easily transferable to machines.",
+    "correct_answer": false,
+    "explanation": "The text says such knowledge was real but imprecise, subjective, and impossible to share with a machine.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "Accurate positioning helps reduce both overlaps and gaps during field operations.",
+    "correct_answer": true,
+    "explanation": "The chapter uses this as a central example of why position matters in agriculture.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "A five to ten percent overlap across a large field can create substantial unnecessary input costs.",
+    "correct_answer": true,
+    "explanation": "Section 7.1 notes that even modest overlaps of this size can add thousands of dollars in costs per season.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "Variable-rate application only requires knowing how much product to apply, not where the machine is.",
+    "correct_answer": false,
+    "explanation": "The text explicitly states that variable-rate application requires knowing both the rate and the exact location at the moment of delivery.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "Yield maps, soil samples, scouting data, and imagery become more useful when tied to geographic coordinates.",
+    "correct_answer": true,
+    "explanation": "Section 7.1 explains that these layers gain analytical power when they can be overlaid using a consistent spatial reference.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter presents satellite navigation as one optional tool among many, rather than a foundation of precision agriculture.",
+    "correct_answer": false,
+    "explanation": "The text says satellite navigation is the foundation on which nearly everything else is built.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "GNSS positioning is based on measuring angles between satellites and the receiver.",
+    "correct_answer": false,
+    "explanation": "The chapter describes ranging by distance measurements, not angular measurement; this is trilateration, not angle-based triangulation.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "Ephemeris data describe the satellite's orbital position at a given moment.",
+    "correct_answer": true,
+    "explanation": "Section 7.2.1 defines ephemeris in this way.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "Because radio waves travel slowly, timing errors have only minor effects on distance estimates.",
+    "correct_answer": false,
+    "explanation": "Radio waves travel at the speed of light, so even tiny timing errors create large distance errors.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "A single satellite distance measurement places the receiver somewhere on a sphere centered on that satellite.",
+    "correct_answer": true,
+    "explanation": "This is exactly how the chapter introduces the geometry of ranging.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "Three satellite measurements alone are always sufficient because receiver clocks are as precise as satellite atomic clocks.",
+    "correct_answer": false,
+    "explanation": "A fourth satellite is needed to correct for receiver clock error, since receiver clocks are less precise.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "Most agricultural receivers update their position only once per minute.",
+    "correct_answer": false,
+    "explanation": "The text says receivers update several times per second.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "GPS reached full operational capability in 1995.",
+    "correct_answer": true,
+    "explanation": "Section 7.2.2 gives 1995 as the year GPS reached full operational capability.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "Modern GPS commonly operates with around 31 active satellites.",
+    "correct_answer": true,
+    "explanation": "The chapter notes that modern GPS commonly operates with around 31 active satellites, beyond the original 24-satellite design.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "The GPS L5 signal operates at 1176.45 MHz.",
+    "correct_answer": true,
+    "explanation": "Section 7.2.2 identifies L5 at 1176.45 MHz.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "According to Section 7.1, the entire logic of site-specific management depends on accurate, reliable, and _____ positioning.",
+    "correct_answer": "repeatable",
+    "explanation": "The chapter emphasizes repeatable positioning as essential for consistent management across time and space.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "Without accurate positioning, overlap and _____ can occur between field passes.",
+    "correct_answer": "gaps",
+    "explanation": "Section 7.1 contrasts overlap with gaps as two major consequences of imprecise positioning.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "A prescription map is useless if the applicator cannot reliably distinguish between management _____ in real time.",
+    "correct_answer": "zones",
+    "explanation": "The text uses adjacent zones with different nitrogen rates as the example.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "GNSS satellites orbit the Earth at an altitude of roughly _____ kilometers.",
+    "correct_answer": "20000",
+    "explanation": "Section 7.2.1 states an altitude of roughly 20,000 kilometers.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "Each satellite broadcasts its ephemeris and a _____ code.",
+    "correct_answer": "timing",
+    "explanation": "The timing code is used by the receiver to estimate signal travel time and distance.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "Radio waves travel at approximately _____ kilometers per second.",
+    "correct_answer": "299792",
+    "explanation": "The chapter gives the speed of light as approximately 299,792 km/s.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "A timing error of one thousandth of a second would produce a distance error of nearly _____ kilometers.",
+    "correct_answer": "300",
+    "explanation": "Because signals travel at the speed of light, a 0.001-second error corresponds to nearly 300 km.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "The process of determining position from multiple distance measurements is called _____.",
+    "correct_answer": "trilateration",
+    "explanation": "Section 7.2.1 explicitly names this method trilateration.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "A _____ satellite signal is needed to correct for timing errors in the receiver's internal clock.",
+    "correct_answer": "fourth",
+    "explanation": "The fourth satellite allows the receiver to solve for its clock bias.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "GPS was developed by the United States Department of _____ beginning in the 1970s.",
+    "correct_answer": "Defense",
+    "explanation": "Section 7.2.2 identifies the U.S. Department of Defense as the developer of GPS.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "The original GPS constellation comprised _____ satellites distributed across six orbital planes.",
+    "correct_answer": "24",
+    "explanation": "This was the original design described in Section 7.2.2.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "GPS satellites complete an orbit in approximately _____ hours.",
+    "correct_answer": "12",
+    "explanation": "The chapter states that each GPS satellite circles the Earth twice per day, or about every 12 hours.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "The GPS L1 frequency is _____ MHz.",
+    "correct_answer": "1575.42",
+    "explanation": "Section 7.2.2 lists L1 at 1575.42 MHz.",
+    "chapter_num": 7
+  },
+  {
+    "type": "essay",
+    "question": "Using Section 7.1, explain how positioning accuracy affects both economic efficiency and environmental outcomes during field operations.",
+    "explanation": "Key points: discuss overlap and gaps; wasted inputs; double application of nitrogen; risk of nutrient runoff; under-application causing stunted growth; cumulative effects across planting, spraying, and harvesting.",
+    "chapter_num": 7
+  },
+  {
+    "type": "essay",
+    "question": "Explain why accurate positioning is essential for variable-rate application and site-specific management.",
+    "explanation": "Key points: machine must know exact location at moment of delivery; prescription maps depend on correct zone identification; different field areas have different needs; reliable and repeatable positioning underpins practical execution.",
+    "chapter_num": 7
+  },
+  {
+    "type": "essay",
+    "question": "Describe how a consistent spatial reference allows multiple agricultural data layers to generate insight over time.",
+    "explanation": "Key points: yield maps, soil samples, pest scouting, and remote sensing imagery can be overlaid; patterns emerge only when tied to coordinates; examples include compaction from old roads and drainage issues visible in elevation data.",
+    "chapter_num": 7
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the relationship between positioning and agricultural automation as presented in Section 7.1.",
+    "explanation": "Key points: auto-steering, autonomous sprayers, coordinated fleets; each step toward autonomy requires more precise and reliable positioning; positioning is presented as foundational rather than optional.",
+    "chapter_num": 7
+  },
+  {
+    "type": "essay",
+    "question": "Explain the principle of GNSS ranging using the concepts of signal travel time, ephemeris, and timing code.",
+    "explanation": "Key points: satellites broadcast orbital position and timing code; receiver compares generated code with received code; delay gives travel time; multiplying by signal speed gives distance; multiple distances are combined to estimate position.",
+    "chapter_num": 7
+  },
+  {
+    "type": "essay",
+    "question": "Walk through the geometry of GNSS positioning from one satellite measurement to four satellite measurements.",
+    "explanation": "Key points: one range gives a sphere; two ranges intersect in a circle; three ranges reduce possibilities to two points; one point is usually unrealistic; fourth satellite corrects receiver clock error and yields a practical solution.",
+    "chapter_num": 7
+  },
+  {
+    "type": "essay",
+    "question": "Why do small timing errors create large ranging errors in GNSS systems, and what does this imply for receiver design?",
+    "explanation": "Key points: radio waves travel at speed of light; tiny time errors become large distance errors; example of 0.001 s causing nearly 300 km error; need for precise timing and correction of receiver clock bias.",
+    "chapter_num": 7
+  },
+  {
+    "type": "essay",
+    "question": "Compare the role of the receiver clock with the atomic clocks aboard GNSS satellites.",
+    "explanation": "Key points: satellite clocks are highly precise atomic clocks; receiver clocks are less precise; fourth satellite is needed to estimate and correct receiver clock error; this is central to practical GNSS positioning.",
+    "chapter_num": 7
+  },
+  {
+    "type": "essay",
+    "question": "Summarize the key characteristics of the GPS constellation described in Section 7.2.2 and explain why they matter for global coverage.",
+    "explanation": "Key points: developed by U.S. Department of Defense; full operational capability in 1995; original 24 satellites in six orbital planes inclined 55 degrees; about 12-hour orbit; design goal of at least four visible satellites anywhere on Earth.",
+    "chapter_num": 7
+  },
+  {
+    "type": "essay",
+    "question": "Explain why modern agricultural receivers benefit from tracking more satellites than the minimum required for a position fix.",
+    "explanation": "Key points: four satellites are minimum for solving position plus clock error; using eight or more improves accuracy and reliability; more observations strengthen the solution and support real-time guidance needs.",
+    "chapter_num": 7
+  }
+]

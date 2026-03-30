@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "According to Section 16.1, what is the primary role of a decision support system (DSS) in precision agriculture?",
+    "options": [
+      "A) To fully automate all field operations without farmer input",
+      "B) To translate diverse data into timely, site-specific management actions",
+      "C) To replace yield monitors and remote sensing tools",
+      "D) To store only weather data for future use"
+    ],
+    "correct": "B",
+    "explanation": "Section 16.1 describes the DSS as the bridge between collected data and actionable, site-specific management prescriptions.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "Which statement best distinguishes a DSS from a fully automated agricultural system?",
+    "options": [
+      "A) A DSS only works with paper records",
+      "B) A DSS is limited to fertilizer recommendations",
+      "C) A DSS informs the farmer, but the final decision remains with the human operator",
+      "D) A DSS cannot use georeferenced data"
+    ],
+    "correct": "C",
+    "explanation": "Section 16.1 emphasizes that a DSS does not replace the farmer; it supports human decision-making.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "In Section 16.2, which of the following is NOT listed as one of the four pillars of DSS architecture?",
+    "options": [
+      "A) Data acquisition",
+      "B) Data management",
+      "C) Analysis and modeling",
+      "D) Genetic engineering"
+    ],
+    "correct": "D",
+    "explanation": "The four pillars are data acquisition, data management, analysis and modeling, and recommendation delivery.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "Why is georeferenced data considered foundational in a spatially explicit DSS?",
+    "options": [
+      "A) It reduces the need for any sensors",
+      "B) It ties information to exact field locations, enabling map-based management",
+      "C) It guarantees zero measurement error",
+      "D) It eliminates the need for data analysis"
+    ],
+    "correct": "B",
+    "explanation": "Section 16.2 explains that location information transforms numbers into maps that can drive site-specific management.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "What is the main purpose of data management within a DSS?",
+    "options": [
+      "A) To replace analysis with intuition",
+      "B) To ensure data are collected, archived, and retrievable for future use",
+      "C) To prevent any interoperability issues",
+      "D) To generate prescription maps automatically"
+    ],
+    "correct": "B",
+    "explanation": "Section 16.2 notes that effective data management requires data to be collected, archived, and made retrievable.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "Which challenge most directly limits seamless use of data from equipment made by different manufacturers?",
+    "options": [
+      "A) Phenological progression",
+      "B) Interoperability",
+      "C) Photosynthesis",
+      "D) Soil respiration"
+    ],
+    "correct": "B",
+    "explanation": "Section 16.2 identifies interoperability as the challenge of exchanging data across systems without special effort.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "Which example best fits the 'recommendation delivery' pillar described in Section 16.2?",
+    "options": [
+      "A) Collecting ECa survey data",
+      "B) Running a crop growth simulation",
+      "C) Loading a prescription map into a variable-rate controller",
+      "D) Measuring engine load during planting"
+    ],
+    "correct": "C",
+    "explanation": "Recommendation delivery concerns communicating results in an actionable form, such as a prescription map.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "Why must analytical methods in a DSS be matched to the decision at hand?",
+    "options": [
+      "A) Because all farm decisions use the same data and logic",
+      "B) Because different decisions require different analytical frameworks",
+      "C) Because simple methods are always better than complex ones",
+      "D) Because modeling is only useful for irrigation"
+    ],
+    "correct": "B",
+    "explanation": "Section 16.2 states that the analytical approach should fit the specific management decision being made.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "Which of the following is given as an example of contextual knowledge that a farmer contributes beyond algorithmic analysis?",
+    "options": [
+      "A) The exact equations of photosynthesis",
+      "B) A neighbor's drainage tile and past flood memory",
+      "C) Satellite orbital mechanics",
+      "D) Factory calibration settings for all sensors"
+    ],
+    "correct": "B",
+    "explanation": "Section 16.1 highlights local, experience-based knowledge such as drainage and past flooding as something algorithms may miss.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "What is one reason a recommendation from a DSS may fail to be adopted?",
+    "options": [
+      "A) It is delivered too late or in an overly complex format",
+      "B) It includes georeferenced data",
+      "C) It is based on multiple years of yield maps",
+      "D) It uses a tablet display"
+    ],
+    "correct": "A",
+    "explanation": "Section 16.2 notes that recommendations are less likely to be adopted if they arrive too late, are too complex, or lack explanation.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "According to Section 16.3, mechanistic crop growth models simulate which kind of processes?",
+    "options": [
+      "A) Only market pricing and commodity futures",
+      "B) Only machine fuel consumption",
+      "C) Biophysical processes such as photosynthesis, respiration, and water balance",
+      "D) Only pest scouting observations"
+    ],
+    "correct": "C",
+    "explanation": "Section 16.3 describes mechanistic crop growth models as simulating plant and soil biophysical processes.",
+    "chapter_num": 16
+  },
+  {
+    "type": "mcq",
+    "question": "What does DSSAT stand for in Section 16.3?",
+    "options": [
+      "A) Digital System for Soil and Terrain",
+      "B) Decision Support System for Agro-technology Transfer",
+      "C) Data Standardization System for Agricultural Technology",
+      "D) Dynamic Simulation System for Agronomic Trials"
+    ],
+    "correct": "B",
+    "explanation": "Section 16.3 explicitly expands DSSAT as Decision Support System for Agro-technology Transfer.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "Section 16.1 states that modern agriculture suffers mainly from a shortage of information.",
+    "correct_answer": false,
+    "explanation": "The chapter says the challenge is not a shortage of information, but translating information into timely, site-specific action.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "A DSS in precision agriculture helps examine both temporal and spatial variation in crop growth and yield.",
+    "correct_answer": true,
+    "explanation": "Section 16.1 explicitly says a DSS provides the means to examine temporal and spatial variation.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "Traditional tools such as extension bulletins and soil-test-based nutrient plans can be considered earlier forms of decision support tools.",
+    "correct_answer": true,
+    "explanation": "Section 16.1 notes that such tools have served as decision support tools for more than a century.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter argues that the best DSS tools should function as black boxes so farmers are not distracted by details.",
+    "correct_answer": false,
+    "explanation": "Section 16.1 says the best systems are transparent tools, not black boxes.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "Data acquisition includes sources such as yield monitors, soil sampling, remote sensing, and weather stations.",
+    "correct_answer": true,
+    "explanation": "These are all listed in Section 16.2 under data acquisition.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "Georeferenced data are unimportant in a spatially explicit DSS because averages are sufficient.",
+    "correct_answer": false,
+    "explanation": "Section 16.2 stresses that georeferenced data form the backbone of a spatially explicit DSS.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "Data management is described as an often-underappreciated infrastructure that supports the rest of the DSS.",
+    "correct_answer": true,
+    "explanation": "Section 16.2 uses this exact idea in discussing data management.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "Interoperability refers to the ability of systems from different manufacturers to exchange data without special effort by the user.",
+    "correct_answer": true,
+    "explanation": "This is the definition given in Section 16.2.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "AgGateway and ADAPT are mentioned as efforts to address compatibility issues in agricultural data exchange.",
+    "correct_answer": true,
+    "explanation": "Section 16.2 cites both AgGateway and ADAPT in the discussion of interoperability.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter suggests that progress toward seamless data exchange is already complete across the industry.",
+    "correct_answer": false,
+    "explanation": "It states that progress remains uneven and full potential is still constrained.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "Multi-year yield analysis can help identify areas of consistently high, low, or unstable productivity.",
+    "correct_answer": true,
+    "explanation": "Section 16.2 gives this as an example of analysis and modeling.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "A decision about variable-rate seeding requires exactly the same analytical framework as a decision about nitrogen side-dressing next Tuesday.",
+    "correct_answer": false,
+    "explanation": "Section 16.2 explicitly says different decisions require different analytical frameworks.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "Recommendation delivery may include a prescription map, a tablet display, a text alert, or a printed report.",
+    "correct_answer": true,
+    "explanation": "All of these are listed in Section 16.2 as possible delivery formats.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "Mechanistic crop growth models are described as tools that simulate biophysical processes governing plant development.",
+    "correct_answer": true,
+    "explanation": "Section 16.3 defines them in this way.",
+    "chapter_num": 16
+  },
+  {
+    "type": "true_false",
+    "question": "DSSAT is described as a model limited to a single crop species.",
+    "correct_answer": false,
+    "explanation": "Section 16.3 says DSSAT includes models for more than forty crops.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "In Section 16.1, a DSS is described as the intellectual _____ between collected data and management prescriptions.",
+    "correct_answer": "bridge",
+    "explanation": "The text calls the DSS the intellectual bridge between data and action.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "The four pillars of DSS architecture include data acquisition, data management, analysis and modeling, and recommendation _____.",
+    "correct_answer": "delivery",
+    "explanation": "Section 16.2 names recommendation delivery as the fourth pillar.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "Information tied to a known location is called _____ data.",
+    "correct_answer": "georeferenced",
+    "explanation": "Section 16.2 defines georeferenced data as information tied to a known location.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "A persistent challenge in data management discussed in Section 16.2 is _____.",
+    "correct_answer": "interoperability",
+    "explanation": "Interoperability is identified as a major challenge when systems use different formats.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "Industry consortia such as _____ are mentioned as helping address compatibility issues among agricultural data systems.",
+    "correct_answer": "AgGateway",
+    "explanation": "Section 16.2 specifically mentions AgGateway.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "The open-source toolkit ADAPT stands for Ag Data Application Programming _____.",
+    "correct_answer": "Toolkit",
+    "explanation": "Section 16.2 expands ADAPT as the Ag Data Application Programming Toolkit.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "Overlaying several seasons of standardized yield maps is an example of multi-year yield _____.",
+    "correct_answer": "analysis",
+    "explanation": "Section 16.2 uses the phrase multi-year yield analysis.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "A recommendation that arrives too _____ is unlikely to be adopted.",
+    "correct_answer": "late",
+    "explanation": "Section 16.2 notes that timing strongly affects adoption.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "Mechanistic crop growth models simulate biophysical processes such as photosynthesis, respiration, nutrient uptake, water balance, and _____ progression.",
+    "correct_answer": "phenological",
+    "explanation": "Section 16.3 includes phenological progression in the list of simulated processes.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "DSSAT stands for Decision Support System for Agro-technology _____.",
+    "correct_answer": "Transfer",
+    "explanation": "Section 16.3 gives the full name of DSSAT.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "Section 16.3 states that DSSAT models exist for more than _____ crops.",
+    "correct_answer": "forty",
+    "explanation": "The chapter says DSSAT models exist for more than forty crops.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "The final decision in a DSS-supported farming system remains with the human _____.",
+    "correct_answer": "operator",
+    "explanation": "Section 16.1 says the final decision remains with the human operator.",
+    "chapter_num": 16
+  },
+  {
+    "type": "fill_blank",
+    "question": "A modern combine equipped with a yield monitor and a global navigation satellite system generates thousands of _____ observations in a single pass.",
+    "correct_answer": "georeferenced",
+    "explanation": "Section 16.1 describes these observations as georeferenced.",
+    "chapter_num": 16
+  },
+  {
+    "type": "essay",
+    "question": "Using Sections 16.1 and 16.2, explain why a DSS should be viewed as a support tool rather than a replacement for farmer judgment.",
+    "explanation": "Key points: DSS translates data into actionable options; farmer retains final decision authority; human contextual knowledge matters; examples include drainage history, flood memory, and risk tolerance; transparent systems that quantify trade-offs and uncertainty are preferred.",
+    "chapter_num": 16
+  },
+  {
+    "type": "essay",
+    "question": "Describe the four pillars of DSS architecture in Section 16.2 and explain how weakness in any one pillar can reduce the value of the whole system.",
+    "explanation": "Key points: data acquisition, data management, analysis and modeling, recommendation delivery; each pillar depends on the others; poor data quality, weak archiving, inappropriate analysis, or unusable recommendations can all undermine outcomes.",
+    "chapter_num": 16
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the importance of georeferenced data in precision agriculture decision support systems.",
+    "explanation": "Key points: links observations to exact field positions; enables maps and site-specific management; supports layering of yield, soil, imagery, and machine records; transforms isolated measurements into actionable spatial patterns.",
+    "chapter_num": 16
+  },
+  {
+    "type": "essay",
+    "question": "Explain why data management is more than simple storage in a precision agriculture DSS.",
+    "explanation": "Key points: collection, archiving, retrieval, integration of many data layers, support for future reference and on-farm testing, creation of field-level databases for understanding productivity, nutrients, pests, and profitability.",
+    "chapter_num": 16
+  },
+  {
+    "type": "essay",
+    "question": "Analyze how interoperability problems can limit the effectiveness of decision support systems on farms using mixed equipment brands.",
+    "explanation": "Key points: proprietary formats create friction; data exchange requires extra effort; incomplete integration reduces timeliness and usefulness; AgGateway and ADAPT are attempts to improve compatibility; uneven progress constrains DSS potential.",
+    "chapter_num": 16
+  },
+  {
+    "type": "essay",
+    "question": "Why must analysis and modeling methods be matched to the specific management decision being made?",
+    "explanation": "Key points: different decisions have different time horizons, risks, and data needs; variable-rate seeding investment differs from in-season nitrogen side-dress decisions; fit-for-purpose analytics improve relevance and actionability.",
+    "chapter_num": 16
+  },
+  {
+    "type": "essay",
+    "question": "Evaluate the factors that influence whether a DSS recommendation will actually be adopted by a farmer.",
+    "explanation": "Key points: timing, clarity, format, explanation of reasoning, trust, usability in the field, compatibility with equipment and workflow, and perceived value.",
+    "chapter_num": 16
+  },
+  {
+    "type": "essay",
+    "question": "Explain how multi-year yield analysis can contribute to more informed site-specific management decisions.",
+    "explanation": "Key points: identifies stable high- and low-performing zones and unstable areas; supports understanding of temporal variability; can guide seeding, fertility, and profitability decisions when combined with other layers.",
+    "chapter_num": 16
+  },
+  {
+    "type": "essay",
+    "question": "Based on Section 16.3, explain how mechanistic crop growth models function as decision tools in agriculture.",
+    "explanation": "Key points: simulate crop and soil biophysical processes; integrate soil, weather, and management inputs; predict crop responses; support decisions on planting date, cultivar, fertilizer, irrigation, and other management strategies.",
+    "chapter_num": 16
+  },
+  {
+    "type": "essay",
+    "question": "Describe the significance of DSSAT as an example of a crop growth modeling framework within agricultural DSS.",
+    "explanation": "Key points: long-term international development; models for more than forty crops; integrates soil water, carbon, nitrogen, and crop growth; supports simulation of management choices such as planting date, cultivar, fertilizer strategy, and irrigation.",
+    "chapter_num": 16
+  }
+]

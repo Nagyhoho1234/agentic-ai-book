@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "Mi ragadja meg legjobban a mesterséges intelligencia fejezetben adott, gazdálkodóbarát lényegét?",
+    "options": [
+      "A) Előre rögzített szabályok mechanikus végrehajtása minden helyzetben",
+      "B) Olyan számítógépes rendszerek használata, amelyek emberi gondolkodást igénylő feladatokat utánoznak",
+      "C) Kizárólag robotok alkalmazása a szántóföldön",
+      "D) Csak műholdképek automatikus tárolása és archiválása"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet szerint az MI lényege, hogy a számítógépek emberi gondolkodást igénylő feladatokat végezzenek el, például mintázatokat ismerjenek fel és ajánlásokat tegyenek.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "A fejezet szerint miben különbözik leginkább a gépi tanulás a hagyományos, kézzel kódolt szabályrendszerektől?",
+    "options": [
+      "A) A gépi tanulás kizárólag kis adathalmazokon működik",
+      "B) A gépi tanulás nem használ matematikát",
+      "C) A gépi tanulás adatokból tanul mintázatokat, nem minden helyzetre külön szabályt írnak hozzá",
+      "D) A gépi tanulás csak állattenyésztésben használható"
+    ],
+    "correct": "C",
+    "explanation": "A gépi tanulás az MI azon ága, amely adatokból tanul, szemben a kézzel megírt explicit szabályokkal.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik példa illusztrálja legjobban, hogy az MI a gazdálkodó döntését kiegészíti, nem helyettesíti?",
+    "options": [
+      "A) A rendszer automatikusan minden emberi jóváhagyás nélkül kijuttatja a műtrágyát",
+      "B) A drón és az MI megjelöli a nitrogénhiányos foltot, de a végső döntést a gazdálkodó hozza meg",
+      "C) Az MI kizárólag adminisztratív számlázásra szolgál",
+      "D) A modell csak múltbeli adatokat tárol, ajánlást nem ad"
+    ],
+    "correct": "B",
+    "explanation": "A szöveg hangsúlyozza, hogy az MI-eszközök a gazdálkodó ítélőképességét támogatják, nem váltják ki.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik tényező NEM szerepel a 2010-es évekbeli MI-áttörést előidéző három fő fejlesztés között?",
+    "options": [
+      "A) A mezőgazdasági adatok robbanásszerű növekedése",
+      "B) A számítási teljesítmény javulása, különösen a GPU-k révén",
+      "C) A gépi tanulási algoritmusok fejlődése, különösen a deep learning terén",
+      "D) A vegyszerfelhasználás jogszabályi teljes megszüntetése világszerte"
+    ],
+    "correct": "D",
+    "explanation": "A fejezet három tényezőt emel ki: több adat, nagyobb számítási teljesítmény és fejlettebb algoritmusok. A globális vegyszerbetiltás nem szerepel.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik mezőgazdasági feladat tartozik a regresszió kategóriájába?",
+    "options": [
+      "A) Annak eldöntése, hogy egy levél egészséges vagy fertőzött",
+      "B) A gyom és a kultúrnövény megkülönböztetése",
+      "C) A várható hozam előrejelzése tonna/hektárban",
+      "D) A búza és az árpa szétválasztása"
+    ],
+    "correct": "C",
+    "explanation": "A regresszió folytonos értéket jelez előre, például hozamot, talajnedvességet vagy napok számát.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik állítás írja le helyesen a felügyelt tanulást?",
+    "options": [
+      "A) Az algoritmus kizárólag címkézetlen adatokból tanul",
+      "B) Az algoritmust olyan példákon tanítják, ahol a bemenet és a helyes válasz is ismert",
+      "C) Az algoritmus csak valós idejű robotvezérlésre használható",
+      "D) Az algoritmus nem alkalmas képek osztályozására"
+    ],
+    "correct": "B",
+    "explanation": "A felügyelt tanulás lényege a címkézett példákon történő tanítás.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a véletlen erdő egyik fő előnye a fejezet alapján?",
+    "options": [
+      "A) Egyetlen döntési fát használ, ezért mindig teljesen átlátható",
+      "B) Sok döntési fa kombinálásával javítja a pontosságot és a robusztusságot",
+      "C) Nem igényel adatokat a tanításhoz",
+      "D) Csak szöveges adatokon működik"
+    ],
+    "correct": "B",
+    "explanation": "A véletlen erdő több döntési fa előrejelzését aggregálja, ami általában növeli a pontosságot és a robusztusságot.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "Miért voltak a korai szabályalapú szakértői rendszerek gyakran törékenyek?",
+    "options": [
+      "A) Mert kizárólag papíralapon működtek",
+      "B) Mert csak öntözésre, de kártevőkre nem voltak használhatók",
+      "C) Mert szűk feltételek mellett működtek jól, de váratlan helyzetekben könnyen kudarcot vallottak",
+      "D) Mert túl sokféle adatforrást tudtak egyszerre kezelni"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet szerint a korai szakértői rendszerek jól működtek szűk környezetben, de nem általánosítottak jól új helyzetekre.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik algoritmus jellemzője, hogy matematikai határt keres a különböző osztályok elválasztására?",
+    "options": [
+      "A) Döntési fa",
+      "B) Véletlen erdő",
+      "C) Támaszvektor-gép (SVM)",
+      "D) Szakértői rendszer"
+    ],
+    "correct": "C",
+    "explanation": "Az SVM lényege, hogy olyan elválasztó határt találjon, amely a lehető legjobban különíti el az osztályokat.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik példa mutatja leginkább a deep learning jelentőségét a mezőgazdaságban?",
+    "options": [
+      "A) Kézzel írt szabályok alapján öntözési naptár készítése",
+      "B) Képosztályozási feladatokban emberi szintű vagy annál jobb teljesítmény elérése",
+      "C) Csak a táblaméretek nyilvántartása",
+      "D) Traktorok üzemanyag-számláinak könyvelése"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet kiemeli, hogy a deep learning különösen képosztályozásban hozott nagy előrelépést.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik adatforrás szerepel kifejezetten a fejezetben mint az MI számára hasznos bemenet?",
+    "options": [
+      "A) Műholdfelvételek",
+      "B) Csak kézzel írt naplók",
+      "C) Kizárólag telefonhívások hangfelvételei",
+      "D) Csak piaci reklámanyagok"
+    ],
+    "correct": "A",
+    "explanation": "A szöveg több adatforrást említ, például műholdfelvételeket, időjárási rekordokat, talajérzékelőket és címkézett fényképeket.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "Miért fontos a döntési fák értelmezhetősége mezőgazdasági környezetben?",
+    "options": [
+      "A) Mert így a modellnek nincs szüksége tanítóadatra",
+      "B) Mert a gazdálkodó vagy szaktanácsadó követheti, hogyan jutott a rendszer az ajánláshoz",
+      "C) Mert a döntési fa mindig pontosabb, mint minden más módszer",
+      "D) Mert csak így lehet műholdképet feldolgozni"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet szerint a döntési fák előnye, hogy a döntési lánc követhető, ezért könnyebben megérthető a modell ajánlása.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "A fejezet szerint a mesterséges intelligencia egyetlen, jól körülhatárolt technológiát jelent.",
+    "correct_answer": false,
+    "explanation": "Az MI gyűjtőfogalom, amely sokféle megközelítést foglal magában.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "John McCarthy 1956-ban alkotta meg a mesterséges intelligencia kifejezést.",
+    "correct_answer": true,
+    "explanation": "A szöveg ezt egyértelműen megemlíti.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "Alan Turing már 1950-ben felvetette, hogy a gépek képesek lehetnek-e gondolkodni.",
+    "correct_answer": true,
+    "explanation": "A fejezet Turing kérdését az MI történetének fontos előzményeként említi.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "A fejezet szerint az MI a mezőgazdaságban elsősorban a gazdálkodó teljes kiváltására szolgál.",
+    "correct_answer": false,
+    "explanation": "A szöveg hangsúlyozza, hogy az MI a gazdálkodó döntéseit kiegészíti, nem helyettesíti.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "A gépi tanulás olyan megközelítés, amelyben az algoritmusok adatokból tanulnak mintázatokat.",
+    "correct_answer": true,
+    "explanation": "Ez a gépi tanulás alapdefiníciója a fejezetben.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "A felügyelt tanulás címkézett példákon alapul.",
+    "correct_answer": true,
+    "explanation": "A felügyelt tanulásnál a bemenet és a helyes válasz is ismert.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "Az osztályozás mindig folytonos érték előrejelzését jelenti.",
+    "correct_answer": false,
+    "explanation": "Az osztályozás diszkrét kategóriákba sorol, míg a folytonos érték előrejelzése regresszió.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "A várható hozam tonna/hektárban történő becslése regressziós feladat.",
+    "correct_answer": true,
+    "explanation": "A hozam folytonos mennyiség, ezért regresszió.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "A döntési fák egyik előnye, hogy könnyen értelmezhetők.",
+    "correct_answer": true,
+    "explanation": "A fejezet ezt külön kiemeli.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "A véletlen erdő algoritmus egyetlen döntési fát használ, hogy teljesen átlátható maradjon.",
+    "correct_answer": false,
+    "explanation": "A véletlen erdő sok döntési fát kombinál.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "A korai szakértői rendszerek általában jól kezelték az összes előre nem látott helyzetet.",
+    "correct_answer": false,
+    "explanation": "Éppen ellenkezőleg: törékenyek voltak, és új helyzetekben gyakran kudarcot vallottak.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "A GPU-k fejlődése hozzájárult ahhoz, hogy összetett modelleket nagy adathalmazokon lehessen betanítani.",
+    "correct_answer": true,
+    "explanation": "A fejezet ezt a modern MI-korszak egyik kulcstényezőjeként nevezi meg.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "A deep learning fejlődése különösen a képosztályozási feladatokban volt jelentős.",
+    "correct_answer": true,
+    "explanation": "A szöveg szerint ez tette lehetővé az emberi szintű vagy annál jobb teljesítményt bizonyos feladatokban.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "A műholdak, drónok és IoT-eszközök adatainak növekedése csökkentette a gépi tanulás jelentőségét a mezőgazdaságban.",
+    "correct_answer": false,
+    "explanation": "Épp ellenkezőleg: ezek az adatok biztosították a tanuló algoritmusok számára szükséges nyersanyagot.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "A támaszvektor-gépek célja, hogy matematikai határt találjanak az osztályok elválasztására.",
+    "correct_answer": true,
+    "explanation": "Ez az SVM-ek alapelve a fejezet szerint.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "A mesterséges intelligencia kifejezést _____ alkotta meg 1956-ban.",
+    "correct_answer": "John McCarthy",
+    "explanation": "A fejezet szerint John McCarthy amerikai informatikus alkotta meg a kifejezést.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "Alan Turing már _____-ben feltette a kérdést, hogy a gépek képesek-e gondolkodni.",
+    "correct_answer": "1950",
+    "explanation": "A szöveg ezt az évet említi Turing kapcsán.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az adatokból tanuló, nem pedig kézzel kódolt szabályokat követő rendszereket _____ nevezzük.",
+    "correct_answer": "gépi tanulásnak",
+    "explanation": "A fejezet így különíti el a gépi tanulást a szabályalapú rendszerektől.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "A mezőgazdasági MI legelterjedtebben alkalmazott megközelítése a _____ tanulás.",
+    "correct_answer": "felügyelt",
+    "explanation": "A 15.2.1 alfejezet ezt egyértelműen kimondja.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "A felügyelt tanulás során az algoritmust _____ példákon tanítják.",
+    "correct_answer": "címkézett",
+    "explanation": "A felügyelt tanulás alapja, hogy a helyes válasz ismert.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az egészséges vagy beteg kategóriába sorolás _____ feladat.",
+    "correct_answer": "osztályozási",
+    "explanation": "Az osztályozás diszkrét kategóriákba sorol.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "A várható hozam tonna/hektárban történő előrejelzése _____ feladat.",
+    "correct_answer": "regressziós",
+    "explanation": "A regresszió folytonos értéket jelez előre.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az adatokat igen-nem kérdések sorozatán keresztül felosztó algoritmus a _____.",
+    "correct_answer": "döntési fa",
+    "explanation": "A fejezet így írja le a döntési fákat.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "A különböző osztályokat legjobban elválasztó matematikai határt kereső módszer a _____.",
+    "correct_answer": "támaszvektor-gép",
+    "explanation": "Az SVM-ek működésének lényege az elválasztó határ megtalálása.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "A sok döntési fát kombináló és előrejelzéseiket aggregáló algoritmus a _____.",
+    "correct_answer": "véletlen erdő",
+    "explanation": "A random forest több fa eredményét egyesíti.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "A 2010-es évek MI-áttörésében fontos szerepet játszottak a grafikus feldolgozóegységek, azaz a _____.",
+    "correct_answer": "GPU-k",
+    "explanation": "A fejezet külön kiemeli a GPU-k szerepét a számítási teljesítmény növekedésében.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "A képosztályozásban nagy előrelépést hozó megközelítés neve _____.",
+    "correct_answer": "deep learning",
+    "explanation": "A szöveg szerint a deep learning tette lehetővé a kiemelkedő képfeldolgozási teljesítményt.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "A műholdakról, drónokról, terepi érzékelőkből és IoT-eszközökből származó adatok biztosították a tanuló algoritmusok számára a szükséges _____.",
+    "correct_answer": "nyersanyagot",
+    "explanation": "A fejezet ezt a kifejezést használja az adatok szerepére.",
+    "chapter_num": 15
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, hogyan segíti az MI a gazdálkodó döntéshozatalát anélkül, hogy teljesen helyettesítené azt.",
+    "explanation": "Kulcspontok: az MI mint döntéstámogató eszköz; drónok, multispektrális kamerák és érzékelők adatainak feldolgozása; mintázatfelismerés és ajánlások; a végső döntés a gazdálkodó kezében marad; emberi tapasztalat és algoritmikus elemzés kombinációja.",
+    "chapter_num": 15
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a szabályalapú szakértői rendszereket és a gépi tanulási megközelítéseket mezőgazdasági példákon keresztül.",
+    "explanation": "Kulcspontok: explicit szabályok vs adatokból tanulás; korai szakértői rendszerek korlátai; törékenység váratlan helyzetekben; gépi tanulás jobb alkalmazkodóképessége; példák öntözés, kártevővédelem, betegségfelismerés, hozam-előrejelzés.",
+    "chapter_num": 15
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be, miért volt fordulópont a 2010-es évek a mezőgazdasági MI fejlődésében.",
+    "explanation": "Kulcspontok: három tényező együttállása; adatrobbanás műholdakból, drónokból, IoT-ból; GPU-k és számítási teljesítmény; algoritmikus fejlődés, különösen deep learning; laborból a szántóföldre való átmenet.",
+    "chapter_num": 15
+  },
+  {
+    "type": "essay",
+    "question": "Fejtse ki a felügyelt tanulás működését egy növénybetegség-felismerési példán keresztül.",
+    "explanation": "Kulcspontok: címkézett képek; bemenet és helyes válasz; jellemzők megtanulása; modellépítés; új, nem látott képek osztályozása; pontosság és általánosítás jelentősége.",
+    "chapter_num": 15
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el a különbséget az osztályozás és a regresszió között, és adjon mezőgazdasági példákat mindkettőre.",
+    "explanation": "Kulcspontok: diszkrét kategóriák vs folytonos értékek; példák: egészséges/beteg, gyom/kultúrnövény, búza/árpa; példák regresszióra: hozam, talajnedvesség, betakarításig hátralévő napok.",
+    "chapter_num": 15
+  },
+  {
+    "type": "essay",
+    "question": "Értékelje, milyen előnyöket és kompromisszumokat jelent a döntési fák és a véletlen erdők használata mezőgazdasági döntéstámogatásban.",
+    "explanation": "Kulcspontok: döntési fák értelmezhetősége; döntési lánc követhetősége; véletlen erdők nagyobb pontossága és robusztussága; interpretálhatóság részleges elvesztése; gyakorlati választási szempontok.",
+    "chapter_num": 15
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be, hogyan kapcsolódik az emberi agronómusi tapasztalat analógiája a gépi tanulás működéséhez.",
+    "explanation": "Kulcspontok: agronómus mintázatokat ismer fel sok megfigyelés alapján; a gép adatokból tanul; intuíció helyett matematikai algoritmusok; hasonlóság a tapasztalatból való tanulással; különbség a léptékben és sebességben.",
+    "chapter_num": 15
+  },
+  {
+    "type": "essay",
+    "question": "Fejtse ki, miért kulcsfontosságú az adatminőség és az adatforrások sokfélesége a mezőgazdasági MI-rendszerek számára.",
+    "explanation": "Kulcspontok: műholdképek, drónok, talajérzékelők, időjárási rekordok, címkézett fotók; az adatok mint a modellek nyersanyaga; rossz vagy szűk adatok következményei; általánosíthatóság és megbízhatóság.",
+    "chapter_num": 15
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, miért lehet különösen hasznos a deep learning a mezőgazdasági képfeldolgozási feladatokban.",
+    "explanation": "Kulcspontok: összetett vizuális mintázatok felismerése; betegségtünetek, levélképek, képosztályozás; emberi szintű vagy annál jobb teljesítmény lehetősége; nagy adatigény és számítási igény.",
+    "chapter_num": 15
+  },
+  {
+    "type": "essay",
+    "question": "Elemezze, milyen szerepet játszanak a modern érzékelők és platformok abban, hogy az MI a laboratóriumból a szántóföldre került.",
+    "explanation": "Kulcspontok: műholdak, drónok, terepi érzékelők, IoT; folyamatos adatgyűjtés; nagy területek gyors felmérése; valós gyakorlati alkalmazások; döntéstámogatás időben történő biztosítása.",
+    "chapter_num": 15
+  }
+]

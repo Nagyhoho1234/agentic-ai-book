@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "According to the chapter introduction, why is uniform application of inputs such as fertilizer, seed, or water often inefficient within a field?",
+    "options": [
+      "A) Because crop varieties respond identically across all soils",
+      "B) Because within-field soil properties can differ substantially over short distances",
+      "C) Because weather is always more important than soil",
+      "D) Because machinery cannot operate consistently in large fields"
+    ],
+    "correct": "B",
+    "explanation": "The introduction states that points only a few dozen metres apart may differ in clay content, nutrient status, water-holding capacity, or pH, so uniform application over-supplies some areas and under-supplies others.",
+    "chapter_num": 8
+  },
+  {
+    "type": "mcq",
+    "question": "In Section 8.1.1, which of the following is NOT listed as one of Jenny's five soil-forming factors?",
+    "options": [
+      "A) Parent material",
+      "B) Topography",
+      "C) Irrigation method",
+      "D) Time"
+    ],
+    "correct": "C",
+    "explanation": "Section 8.1.1 lists parent material, vegetation, climate, topography, and time as the five soil-forming factors.",
+    "chapter_num": 8
+  },
+  {
+    "type": "mcq",
+    "question": "Why are surface soil properties relatively uniform where loess is deep, such as near the Mississippi River in eastern Iowa?",
+    "options": [
+      "A) Because glacial till is absent everywhere below the loess",
+      "B) Because deep loess dominates the surface soil properties",
+      "C) Because erosion has completely removed all subsoil variation",
+      "D) Because irrigation homogenizes the soil profile"
+    ],
+    "correct": "B",
+    "explanation": "Section 8.1.1 explains that where loess is deep, the loess dominates the surface soil properties, making them relatively uniform.",
+    "chapter_num": 8
+  },
+  {
+    "type": "mcq",
+    "question": "As loess becomes thin moving east into Indiana, what becomes more important in determining soil properties?",
+    "options": [
+      "A) The properties of the underlying glacial till",
+      "B) Daily weather changes only",
+      "C) Fertilizer band placement alone",
+      "D) Crop variety selection"
+    ],
+    "correct": "A",
+    "explanation": "The chapter notes that where loess is less than half a metre thick, the underlying glacial till has a stronger influence on soil properties.",
+    "chapter_num": 8
+  },
+  {
+    "type": "mcq",
+    "question": "Which landscape position is most likely to have a thinner or removed organic-rich A horizon due to erosion over time?",
+    "options": [
+      "A) Depressions and toe-slopes",
+      "B) Valley floors",
+      "C) Hilltops and convex slopes",
+      "D) Wetland margins only"
+    ],
+    "correct": "C",
+    "explanation": "Section 8.1.1 states that hilltops and convex slopes often lose the original A horizon through long-term erosion, exposing subsoil.",
+    "chapter_num": 8
+  },
+  {
+    "type": "mcq",
+    "question": "What combination of conditions is associated with depressions and toe-slopes?",
+    "options": [
+      "A) Less water accumulation, faster decomposition, thinner A horizon",
+      "B) Greater water accumulation, greater plant growth, slower decomposition, thicker A horizon",
+      "C) Lower fertility caused by constant wind erosion only",
+      "D) Uniform pH regardless of hydrology"
+    ],
+    "correct": "B",
+    "explanation": "The chapter explains that depressions and toe-slopes tend to accumulate water, support greater plant growth, experience slower decomposition under reducing conditions, and develop thicker, richer A horizons.",
+    "chapter_num": 8
+  },
+  {
+    "type": "mcq",
+    "question": "In the semi-arid Northern Great Plains, what process has concentrated lime and soluble salts in slight landscape rises?",
+    "options": [
+      "A) Downward leaching during wet winters only",
+      "B) Upward capillary movement during dry summers",
+      "C) Deep ploughing into bedrock",
+      "D) Freeze-thaw mixing of topsoil"
+    ],
+    "correct": "B",
+    "explanation": "Section 8.1.1 attributes salt and lime concentration in landscape bumps to centuries of upward capillary movement during dry summers.",
+    "chapter_num": 8
+  },
+  {
+    "type": "mcq",
+    "question": "According to Section 8.1.1, a rise in elevation of only about 15 centimetres can correspond to which major soil change?",
+    "options": [
+      "A) A change from acidic to strongly alkaline conditions with high calcium carbonate",
+      "B) Complete loss of all clay minerals",
+      "C) Conversion of loam to peat",
+      "D) Elimination of all nutrient variability"
+    ],
+    "correct": "A",
+    "explanation": "The text states that a 15 cm rise can separate a soil with pH 6 from one above pH 7.5 with calcium carbonate levels exceeding 20% by weight.",
+    "chapter_num": 8
+  },
+  {
+    "type": "mcq",
+    "question": "Which statement best captures the long-term effect of erosion described in Section 8.1.2?",
+    "options": [
+      "A) Erosion always improves water-holding capacity",
+      "B) Erosion can create persistent fertility patterns that remain despite decades of fertilisation",
+      "C) Erosion affects only uncultivated land",
+      "D) Erosion removes salinity from all soils permanently"
+    ],
+    "correct": "B",
+    "explanation": "Section 8.1.2 notes that phosphorus and potassium patterns still reflect landscape position in North Dakota fields despite decades of fertilisation.",
+    "chapter_num": 8
+  },
+  {
+    "type": "mcq",
+    "question": "What is a key physical problem in sodic soils?",
+    "options": [
+      "A) Excessive aggregation and rapid drainage",
+      "B) Dispersed clay and destroyed soil structure leading to poor permeability",
+      "C) Permanent nitrogen fixation",
+      "D) Uniformly high organic matter"
+    ],
+    "correct": "B",
+    "explanation": "Section 8.1.3 explains that sodic soils have sodium-dominated exchange complexes, causing clay dispersion, structural collapse, and very poor permeability.",
+    "chapter_num": 8
+  },
+  {
+    "type": "mcq",
+    "question": "Why may saline and sodic patches become more evident during dry periods?",
+    "options": [
+      "A) Because salts concentrate near the soil surface",
+      "B) Because rainfall dissolves all salts instantly",
+      "C) Because crop roots stop interacting with soil",
+      "D) Because topography becomes less important"
+    ],
+    "correct": "A",
+    "explanation": "Section 8.1.3 states that during dry periods salts concentrate near the surface, making salt-affected patches more visible.",
+    "chapter_num": 8
+  },
+  {
+    "type": "mcq",
+    "question": "Which management practice can leave residual enrichment that complicates soil sampling for many subsequent years?",
+    "options": [
+      "A) Random grazing",
+      "B) Banded fertilizer application",
+      "C) Cover cropping only",
+      "D) Reduced traffic farming"
+    ],
+    "correct": "B",
+    "explanation": "Section 8.1.4 explains that phosphorus and potassium placed in concentrated bands can leave residual enrichment that complicates later sampling.",
+    "chapter_num": 8
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter states that soil variability occurs only between fields, not within individual fields.",
+    "correct_answer": false,
+    "explanation": "The introduction emphasizes that soil can vary substantially within fields, even over distances of only a few dozen metres.",
+    "chapter_num": 8
+  },
+  {
+    "type": "true_false",
+    "question": "Understanding where and why soil varies is presented as a first step toward precision agriculture.",
+    "correct_answer": true,
+    "explanation": "The introduction explicitly says that the first step toward precision agriculture is to understand and map soil variation.",
+    "chapter_num": 8
+  },
+  {
+    "type": "true_false",
+    "question": "Section 8.1.1 identifies climate, vegetation, and topography as soil-forming factors.",
+    "correct_answer": true,
+    "explanation": "These are three of the five factors listed in the classic soil-forming framework.",
+    "chapter_num": 8
+  },
+  {
+    "type": "true_false",
+    "question": "Glacial till is described as highly uniform at small spatial scales.",
+    "correct_answer": false,
+    "explanation": "The chapter says glacial till is highly heterogeneous at small spatial scales because of varied meltwater deposition environments.",
+    "chapter_num": 8
+  },
+  {
+    "type": "true_false",
+    "question": "Ancient shoreline processes in the eastern U.S. coastal plains created textural patterns that affect drought susceptibility.",
+    "correct_answer": true,
+    "explanation": "The text notes that swirling sand, silt, and clay patterns directly affect water-holding capacity and drought susceptibility.",
+    "chapter_num": 8
+  },
+  {
+    "type": "true_false",
+    "question": "On hilltops and convex slopes, the A horizon is often thicker and richer than in depressions.",
+    "correct_answer": false,
+    "explanation": "The opposite is stated: erosion thins or removes the A horizon on hilltops and convex slopes, while depressions tend to have thicker, richer A horizons.",
+    "chapter_num": 8
+  },
+  {
+    "type": "true_false",
+    "question": "Micro-climatic differences such as aspect, wind exposure, and frost pockets can contribute to within-field soil variability.",
+    "correct_answer": true,
+    "explanation": "Section 8.1.1 says that although climate often acts at larger scales, micro-climatic differences within a field can matter.",
+    "chapter_num": 8
+  },
+  {
+    "type": "true_false",
+    "question": "Erosion is described as a minor contributor to within-field variability in long-cultivated landscapes.",
+    "correct_answer": false,
+    "explanation": "Section 8.1.2 calls erosion perhaps the single largest reshaper of within-field soil variability in such landscapes.",
+    "chapter_num": 8
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter reports that at least 15 centimetres of topsoil were lost from half of North Dakota cropland during the 1930s dust storms.",
+    "correct_answer": true,
+    "explanation": "This is a specific figure given in Section 8.1.2.",
+    "chapter_num": 8
+  },
+  {
+    "type": "true_false",
+    "question": "Eroded soils are said to crust less readily and hold more water than uneroded soils.",
+    "correct_answer": false,
+    "explanation": "The chapter states that erosion leaves soils that crust more readily and hold less water.",
+    "chapter_num": 8
+  },
+  {
+    "type": "true_false",
+    "question": "Salinity can result from inadequate drainage in irrigated soils.",
+    "correct_answer": true,
+    "explanation": "Section 8.1.3 lists accumulation of salts in irrigated soils with inadequate drainage as one origin of salinity.",
+    "chapter_num": 8
+  },
+  {
+    "type": "true_false",
+    "question": "Sodic soils generally have excellent structure and permeability because sodium stabilizes clay particles.",
+    "correct_answer": false,
+    "explanation": "The text says the opposite: sodium causes clay dispersion, destroys structure, and leads to very poor permeability.",
+    "chapter_num": 8
+  },
+  {
+    "type": "true_false",
+    "question": "The spatial extent of saline and sodic patches can change from year to year with rainfall patterns.",
+    "correct_answer": true,
+    "explanation": "Section 8.1.3 explicitly states that these patches fluctuate in response to rainfall patterns.",
+    "chapter_num": 8
+  },
+  {
+    "type": "true_false",
+    "question": "All systematic soil variability discussed in the chapter is natural rather than human-induced.",
+    "correct_answer": false,
+    "explanation": "Section 8.1.4 focuses on management-induced systematic variability such as uneven fertilizer or manure application.",
+    "chapter_num": 8
+  },
+  {
+    "type": "true_false",
+    "question": "In heavily fertilised regions, management-induced nutrient patterns can overwhelm natural fertility patterns.",
+    "correct_answer": true,
+    "explanation": "The chapter says this can occur in places like the heavily fertilised Corn Belt.",
+    "chapter_num": 8
+  },
+  {
+    "type": "fill_blank",
+    "question": "According to the chapter introduction, two points separated by only a few dozen _____ may differ substantially in soil properties.",
+    "correct_answer": "metres",
+    "explanation": "The introduction emphasizes that important soil differences can occur over very short distances measured in metres.",
+    "chapter_num": 8
+  },
+  {
+    "type": "fill_blank",
+    "question": "The five classic soil-forming factors include parent material, vegetation, climate, topography, and _____.",
+    "correct_answer": "time",
+    "explanation": "Section 8.1.1 cites Jenny's framework, which includes time as the fifth factor.",
+    "chapter_num": 8
+  },
+  {
+    "type": "fill_blank",
+    "question": "In eastern Iowa near the Mississippi River, deep wind-deposited _____ can dominate surface soil properties.",
+    "correct_answer": "loess",
+    "explanation": "The chapter identifies loess as a major parent material influencing soil uniformity where it is deep.",
+    "chapter_num": 8
+  },
+  {
+    "type": "fill_blank",
+    "question": "Where loess is thin in Indiana, the properties of underlying glacial _____ become important.",
+    "correct_answer": "till",
+    "explanation": "Section 8.1.1 explains that thin loess allows the underlying glacial till to influence soil properties.",
+    "chapter_num": 8
+  },
+  {
+    "type": "fill_blank",
+    "question": "On hilltops and convex slopes, erosion may expose subsoil with lower organic matter and less plant-available _____.",
+    "correct_answer": "water",
+    "explanation": "The text states that exposed subsoil in these positions often has less plant-available water.",
+    "chapter_num": 8
+  },
+  {
+    "type": "fill_blank",
+    "question": "In depressions and toe-slopes, the A horizon tends to be thicker and more _____.",
+    "correct_answer": "rich",
+    "explanation": "Section 8.1.1 describes these lower positions as having thicker and richer A horizons.",
+    "chapter_num": 8
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the semi-arid Northern Great Plains, upward _____ movement during dry summers has concentrated lime and soluble salts.",
+    "correct_answer": "capillary",
+    "explanation": "The chapter specifically names upward capillary movement as the process involved.",
+    "chapter_num": 8
+  },
+  {
+    "type": "fill_blank",
+    "question": "A slight rise in elevation of only 15 centimetres can separate a soil with pH 6 from one with pH above _____.",
+    "correct_answer": "7.5",
+    "explanation": "This numeric threshold is given in Section 8.1.1 to illustrate strong topographic effects on soil chemistry.",
+    "chapter_num": 8
+  },
+  {
+    "type": "fill_blank",
+    "question": "Section 8.1.2 describes erosion as perhaps the single largest _____ of within-field soil variability in long-cultivated landscapes.",
+    "correct_answer": "reshaper",
+    "explanation": "The chapter uses the term 'reshaper' to emphasize erosion's major role.",
+    "chapter_num": 8
+  },
+  {
+    "type": "fill_blank",
+    "question": "During the 1930s dust storms, nine million acres in North Dakota were so degraded that they were reclassified as _____.",
+    "correct_answer": "rangeland",
+    "explanation": "This example illustrates the severity of erosion's long-term impacts.",
+    "chapter_num": 8
+  },
+  {
+    "type": "fill_blank",
+    "question": "Sodic soils suffer from dispersed clay, destroyed soil structure, and extremely poor _____.",
+    "correct_answer": "permeability",
+    "explanation": "Section 8.1.3 identifies poor permeability as a key consequence of sodicity.",
+    "chapter_num": 8
+  },
+  {
+    "type": "fill_blank",
+    "question": "Overlapping or gapped passes with a spinner spreader can create alternating strips of high and low _____ concentration.",
+    "correct_answer": "nutrient",
+    "explanation": "Section 8.1.4 explains that uneven spreading creates striping in nutrient concentration.",
+    "chapter_num": 8
+  },
+  {
+    "type": "fill_blank",
+    "question": "Formerly separate fields merged into a larger field may show step-changes in nutrient levels at the old _____.",
+    "correct_answer": "boundaries",
+    "explanation": "The chapter notes that past management histories can leave abrupt differences at former field boundaries.",
+    "chapter_num": 8
+  },
+  {
+    "type": "essay",
+    "question": "Explain why understanding within-field soil variability is essential for precision agriculture. Refer to the chapter introduction.",
+    "explanation": "Key points: soil properties can differ over short distances; uniform input application causes over-supply in some areas and under-supply in others; mapping variability supports better management decisions for fertilizer, seed, and water.",
+    "chapter_num": 8
+  },
+  {
+    "type": "essay",
+    "question": "Using Section 8.1.1, discuss how parent material can create contrasting soil patterns across regions such as eastern Iowa, Indiana, the eastern coastal plains, and western North Dakota.",
+    "explanation": "Key points: deep loess creates relative uniformity; thin loess allows glacial till influence; glacial till is heterogeneous due to varied meltwater deposits; coastal shoreline processes create textural mosaics affecting water-holding capacity; layered sedimentary rocks can produce elevation-related texture differences.",
+    "chapter_num": 8
+  },
+  {
+    "type": "essay",
+    "question": "Compare the effects of topography on soils at hilltops/convex slopes versus depressions/toe-slopes.",
+    "explanation": "Key points: erosion thins or removes A horizon on upper positions; exposed subsoil has lower organic matter, less plant-available water, and sometimes more calcium carbonate; lower positions accumulate water, support more growth, have slower decomposition under reducing conditions, and develop thicker, richer A horizons.",
+    "chapter_num": 8
+  },
+  {
+    "type": "essay",
+    "question": "How can very small elevation differences produce major differences in soil chemistry and crop response in semi-arid landscapes?",
+    "explanation": "Key points: internal water flow and upward capillary movement redistribute soluble materials; slight rises can accumulate lime and salts where evaporation exceeds precipitation; even 15 cm elevation difference can shift pH from about 6 to above 7.5 and increase calcium carbonate strongly; implications for crop stress and management.",
+    "chapter_num": 8
+  },
+  {
+    "type": "essay",
+    "question": "Evaluate the long-term agronomic consequences of erosion described in Section 8.1.2.",
+    "explanation": "Key points: topsoil loss redistributes fertility across landscapes; upper slopes become nutrient-poor and drought-prone while lower areas become more fertile; erosion leaves soils prone to crusting, lower water-holding capacity, and possible iron deficiency chlorosis; historical erosion can leave patterns that persist despite later fertilization.",
+    "chapter_num": 8
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the significance of the North Dakota erosion example for understanding legacy effects in soil management.",
+    "explanation": "Key points: severe 1930s topsoil loss; large land degradation and reclassification to rangeland; phosphorus losses equivalent to many decades of fertilizer application; present-day P and K patterns still reflect erosion history; importance of accounting for legacy effects in precision management.",
+    "chapter_num": 8
+  },
+  {
+    "type": "essay",
+    "question": "Explain the difference between salinity and sodicity and why the distinction matters for management.",
+    "explanation": "Key points: salinity involves salt accumulation from parent material, shallow saline water tables, or irrigation with poor drainage; sodicity involves sodium dominance on the exchange complex; sodicity causes clay dispersion, structural collapse, and poor permeability; management needs differ because physical degradation is especially severe in sodic soils.",
+    "chapter_num": 8
+  },
+  {
+    "type": "essay",
+    "question": "Why do saline and sodic patches vary from year to year, and how should that influence field monitoring?",
+    "explanation": "Key points: rainfall patterns alter salt movement; dry periods concentrate salts near the surface and make patches more visible; wetter periods may leach salts downward if drainage is adequate; monitoring should be repeated and timed with seasonal conditions rather than assumed static.",
+    "chapter_num": 8
+  },
+  {
+    "type": "essay",
+    "question": "Analyze how management practices can create systematic soil variability that may be mistaken for natural patterns.",
+    "explanation": "Key points: uneven fertilizer or manure application creates striping; spinner spreader overlap/gaps and hydraulic pressure issues create directional patterns; merged fields create step-changes at old boundaries; banded fertilizer leaves residual enriched strips; these human-made patterns can persist and complicate interpretation.",
+    "chapter_num": 8
+  },
+  {
+    "type": "essay",
+    "question": "Design a conceptual sampling strategy for a field with both natural topographic variability and historical banded fertilizer application.",
+    "explanation": "Key points: recognize multiple sources of variability; account for topographic positions such as hilltops, slopes, depressions; avoid or explicitly sample fertilizer bands; consider directional management patterns and old field boundaries; use sampling and mapping approaches that distinguish natural from management-induced variation.",
+    "chapter_num": 8
+  }
+]

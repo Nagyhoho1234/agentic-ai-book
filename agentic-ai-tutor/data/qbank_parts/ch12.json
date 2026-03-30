@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "According to Chapter 12, what is the main principle behind precision crop protection? [Sec. 12.1]",
+    "options": [
+      "A) Apply the same pesticide rate across the whole field to ensure full coverage",
+      "B) Treat each part of the field according to its actual pest, weed, or disease need",
+      "C) Replace all chemical control with biological control",
+      "D) Focus only on yield variation rather than pest pressure"
+    ],
+    "correct": "B",
+    "explanation": "Precision crop protection is based on site-specific management: different locations are treated differently depending on actual need rather than using uniform blanket applications.",
+    "chapter_num": 12
+  },
+  {
+    "type": "mcq",
+    "question": "Why are low-lying, humid parts of a field often associated with greater fungal disease risk? [Sec. 12.1]",
+    "options": [
+      "A) They always have lower nutrient availability",
+      "B) Fungi prefer areas with strong wind and rapid drying",
+      "C) They tend to accumulate moisture and support prolonged humidity favorable to pathogen development",
+      "D) They prevent canopy formation"
+    ],
+    "correct": "C",
+    "explanation": "The chapter explains that depressions and foot slopes accumulate water and create humid conditions that favor fungal pathogens.",
+    "chapter_num": 12
+  },
+  {
+    "type": "mcq",
+    "question": "Which field condition is most likely to increase susceptibility of crops to insect attack while being less favorable for fungi requiring prolonged leaf wetness? [Sec. 12.1]",
+    "options": [
+      "A) A sandy knoll that dries quickly",
+      "B) A clay-rich depression that holds water",
+      "C) A low-lying hollow with dense canopy",
+      "D) A sheltered humid corner near a windbreak"
+    ],
+    "correct": "A",
+    "explanation": "A sandy knoll dries quickly, which can stress crops and increase insect susceptibility, while being less suitable for fungi that need extended moisture.",
+    "chapter_num": 12
+  },
+  {
+    "type": "mcq",
+    "question": "What was the significance of the University of Bonn research mentioned in the chapter? [Sec. 12.1]",
+    "options": [
+      "A) It showed that all weed species are randomly distributed",
+      "B) It found blackgrass strongly associated with high clay content and Chenopodium album linked to maize history",
+      "C) It proved fungicides are unnecessary in wheat",
+      "D) It demonstrated that topography has no effect on weeds"
+    ],
+    "correct": "B",
+    "explanation": "The chapter cites research showing blackgrass was associated with high clay content, while Chenopodium album persisted where maize had historically been in the rotation.",
+    "chapter_num": 12
+  },
+  {
+    "type": "mcq",
+    "question": "Why might a uniform fungicide application be inefficient for white mold in soybean? [Sec. 12.1]",
+    "options": [
+      "A) White mold only occurs on hilltops",
+      "B) The disease develops equally in all parts of the field",
+      "C) Dry hilltops may not need treatment while humid hollows may need more focused protection",
+      "D) Fungicides increase white mold in low-yield zones"
+    ],
+    "correct": "C",
+    "explanation": "White mold thrives in cool, humid, dense-canopy environments often found in low-lying areas, so uniform application wastes input on low-risk hilltops.",
+    "chapter_num": 12
+  },
+  {
+    "type": "mcq",
+    "question": "How do growing degree day models help in precision crop protection? [Sec. 12.1]",
+    "options": [
+      "A) They estimate fertilizer demand only",
+      "B) They predict temperature-dependent growth and activity of pests and diseases",
+      "C) They replace the need for scouting entirely",
+      "D) They measure soil pH variation"
+    ],
+    "correct": "B",
+    "explanation": "The chapter notes that many organisms have temperature-dependent growth rates, and growing degree day models help predict their development for better timing of scouting and control.",
+    "chapter_num": 12
+  },
+  {
+    "type": "mcq",
+    "question": "Which example best illustrates the effect of management history on crop health risk? [Sec. 12.1]",
+    "options": [
+      "A) Wind exposure on hilltops",
+      "B) Corn residue serving as Fusarium inoculum for subsequent wheat",
+      "C) Soil warming differences near windbreaks",
+      "D) Aphids arriving on wind currents"
+    ],
+    "correct": "B",
+    "explanation": "Management history includes previous crops and residue distribution; corn residue can harbor Fusarium inoculum that threatens following wheat.",
+    "chapter_num": 12
+  },
+  {
+    "type": "mcq",
+    "question": "Why do some weed patches persist in the same location for years? [Sec. 12.1]",
+    "options": [
+      "A) Weed seeds are always spread evenly by irrigation",
+      "B) Many weed seeds fall close to the parent plant, reinforcing local patches",
+      "C) Farmers always replant weeds unintentionally",
+      "D) Insects transport all weed seeds to field edges"
+    ],
+    "correct": "B",
+    "explanation": "The chapter explains that many weed species produce seeds that fall near the parent plant, creating self-reinforcing patches.",
+    "chapter_num": 12
+  },
+  {
+    "type": "mcq",
+    "question": "Which pest type is described as generally more mobile and therefore more likely to shift spatially from week to week? [Sec. 12.1]",
+    "options": [
+      "A) Soil-borne pathogens such as soybean cyst nematode",
+      "B) Broadleaf weed patches such as velvetleaf",
+      "C) Insect pests such as corn rootworm adults and aphids",
+      "D) Residue-borne fungal inoculum"
+    ],
+    "correct": "C",
+    "explanation": "The chapter contrasts relatively stable weed and soil-borne pathogen patches with more mobile insect pests that can move rapidly.",
+    "chapter_num": 12
+  },
+  {
+    "type": "mcq",
+    "question": "What practical problem results from using a uniform pest management strategy across a spatially variable field? [Sec. 12.1]",
+    "options": [
+      "A) It guarantees maximum efficiency",
+      "B) It over-treats low-pressure areas and may under-treat high-pressure areas",
+      "C) It eliminates the need for field data",
+      "D) It makes pest resistance impossible"
+    ],
+    "correct": "B",
+    "explanation": "Uniform management ignores spatial variability, leading to wasted inputs in low-risk zones and insufficient control in high-risk zones.",
+    "chapter_num": 12
+  },
+  {
+    "type": "mcq",
+    "question": "Which statement best captures the chapter's critique of twentieth-century blanket pesticide use? [Intro]",
+    "options": [
+      "A) It reduced all crop losses to near zero",
+      "B) It was environmentally harmless but economically costly",
+      "C) It was a blunt, uniform response that failed to solve losses sustainably and created environmental and resistance problems",
+      "D) It was mainly used only in orchards"
+    ],
+    "correct": "C",
+    "explanation": "The introduction emphasizes that blanket pesticide use remained common but brought contamination, non-target effects, and resistance without significantly reducing overall pest losses.",
+    "chapter_num": 12
+  },
+  {
+    "type": "mcq",
+    "question": "What role does an automated insect trap play in precision crop protection, according to the chapter? [Intro]",
+    "options": [
+      "A) It sprays insecticide automatically every night",
+      "B) It counts captured insects and uploads data to support treatment decisions",
+      "C) It measures soil compaction",
+      "D) It replaces all human interpretation"
+    ],
+    "correct": "B",
+    "explanation": "The chapter gives the example of an automated trap that counts insects nightly and sends data to a decision support system to determine whether and where treatment is warranted.",
+    "chapter_num": 12
+  },
+  {
+    "type": "true_false",
+    "question": "Precision crop protection assumes that pest and disease pressure is usually uniform across a field. [Sec. 12.1]",
+    "correct_answer": false,
+    "explanation": "The chapter states the opposite: pest and disease pressure is never uniform across a field.",
+    "chapter_num": 12
+  },
+  {
+    "type": "true_false",
+    "question": "Global crop losses to pests, diseases, and weeds are estimated at about 20 to 40 percent of potential production each year. [Intro]",
+    "correct_answer": true,
+    "explanation": "This estimate is given in the introduction to show the scale of the problem.",
+    "chapter_num": 12
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter argues that pesticide residues can contaminate soil and water. [Intro]",
+    "correct_answer": true,
+    "explanation": "Environmental contamination is listed as one of the major costs of blanket chemical applications.",
+    "chapter_num": 12
+  },
+  {
+    "type": "true_false",
+    "question": "The world applies roughly 2.7 million tonnes of pesticides annually, and crop losses to pests have decreased significantly in recent decades. [Intro]",
+    "correct_answer": false,
+    "explanation": "Although about 2.7 million tonnes are applied annually, the chapter says the proportion of crops lost to pests has not decreased significantly.",
+    "chapter_num": 12
+  },
+  {
+    "type": "true_false",
+    "question": "A clay-rich depression that holds water may favor both root rot pathogens and moisture-loving weeds such as barnyardgrass. [Sec. 12.1]",
+    "correct_answer": true,
+    "explanation": "The chapter directly uses this example to illustrate how soil and drainage affect pest and weed distribution.",
+    "chapter_num": 12
+  },
+  {
+    "type": "true_false",
+    "question": "A sandy knoll that dries quickly is usually ideal for fungi that require prolonged leaf wetness. [Sec. 12.1]",
+    "correct_answer": false,
+    "explanation": "Rapid drying makes such areas hostile to fungi that need extended moisture.",
+    "chapter_num": 12
+  },
+  {
+    "type": "true_false",
+    "question": "Topography can influence crop health because hilltops and depressions differ in water, nutrient, and organic debris accumulation. [Sec. 12.1]",
+    "correct_answer": true,
+    "explanation": "The chapter explains that topography amplifies spatial variability through these differences.",
+    "chapter_num": 12
+  },
+  {
+    "type": "true_false",
+    "question": "White mold of soybean is most associated with dry, exposed hilltops. [Sec. 12.1]",
+    "correct_answer": false,
+    "explanation": "White mold thrives in cool, humid, dense-canopy, high-yield environments, often in low-lying parts of the field.",
+    "chapter_num": 12
+  },
+  {
+    "type": "true_false",
+    "question": "Microclimate differences within a field can occur over distances of only a few tens of meters. [Sec. 12.1]",
+    "correct_answer": true,
+    "explanation": "The chapter notes that temperature and humidity can vary significantly over short distances within a field.",
+    "chapter_num": 12
+  },
+  {
+    "type": "true_false",
+    "question": "Seed corn maggots become active at a base temperature of 4 degrees Celsius. [Sec. 12.1]",
+    "correct_answer": true,
+    "explanation": "This specific threshold is given as an example of temperature-dependent pest development.",
+    "chapter_num": 12
+  },
+  {
+    "type": "true_false",
+    "question": "Corn rootworm larvae generally require cooler conditions and emerge earlier than seed corn maggots. [Sec. 12.1]",
+    "correct_answer": false,
+    "explanation": "The chapter says seed corn maggots are an early-season threat in cool soils, whereas corn rootworm larvae require warmer conditions and emerge later.",
+    "chapter_num": 12
+  },
+  {
+    "type": "true_false",
+    "question": "Headlands may accumulate weed seeds because tillage equipment can carry soil and seeds on machinery. [Sec. 12.1]",
+    "correct_answer": true,
+    "explanation": "Management operations at headlands can concentrate weed seeds in these zones.",
+    "chapter_num": 12
+  },
+  {
+    "type": "true_false",
+    "question": "Soil-borne pathogens such as soybean cyst nematode tend to form stable clusters related to soil texture, drainage, and pH. [Sec. 12.1]",
+    "correct_answer": true,
+    "explanation": "The chapter describes these pathogens as relatively stable spatially compared with more mobile insect pests.",
+    "chapter_num": 12
+  },
+  {
+    "type": "true_false",
+    "question": "Studies in Nebraska found that broadleaf weed patches were highly unstable from year to year. [Sec. 12.1]",
+    "correct_answer": false,
+    "explanation": "The studies found the patches were remarkably persistent in location and area over four years.",
+    "chapter_num": 12
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter suggests that site-specific management can reduce unnecessary treatment in weed-free or low-risk zones. [Intro; Sec. 12.1]",
+    "correct_answer": true,
+    "explanation": "A core advantage of precision crop protection is avoiding treatment where it is not needed.",
+    "chapter_num": 12
+  },
+  {
+    "type": "fill_blank",
+    "question": "Global crop losses to pests, diseases, and weeds are estimated at _____ to _____ percent of potential production each year. [Intro]",
+    "correct_answer": "20 to 40",
+    "explanation": "The introduction states that annual losses are about 20 to 40 percent of potential production.",
+    "chapter_num": 12
+  },
+  {
+    "type": "fill_blank",
+    "question": "The world applies roughly _____ million tonnes of pesticides annually. [Intro]",
+    "correct_answer": "2.7",
+    "explanation": "This figure is used to emphasize the scale of pesticide use worldwide.",
+    "chapter_num": 12
+  },
+  {
+    "type": "fill_blank",
+    "question": "Precision crop protection treats each location according to its actual _____. [Intro]",
+    "correct_answer": "need",
+    "explanation": "The chapter contrasts site-specific treatment with treating every square meter identically.",
+    "chapter_num": 12
+  },
+  {
+    "type": "fill_blank",
+    "question": "Weeds often grow in _____ rather than being evenly distributed. [Sec. 12.1]",
+    "correct_answer": "patches",
+    "explanation": "Patchiness is a central concept in spatial variability of crop health.",
+    "chapter_num": 12
+  },
+  {
+    "type": "fill_blank",
+    "question": "A clay-rich depression that holds water can favor root rot pathogens and moisture-loving weeds such as _____. [Sec. 12.1]",
+    "correct_answer": "barnyardgrass",
+    "explanation": "Barnyardgrass is given as the example of a moisture-loving weed species.",
+    "chapter_num": 12
+  },
+  {
+    "type": "fill_blank",
+    "question": "Research at the University of Bonn found blackgrass populations were strongly associated with areas of high _____ content. [Sec. 12.1]",
+    "correct_answer": "clay",
+    "explanation": "The chapter links blackgrass to high clay content zones.",
+    "chapter_num": 12
+  },
+  {
+    "type": "fill_blank",
+    "question": "Chenopodium album persisted for decades in fields that had historically included _____ in the rotation. [Sec. 12.1]",
+    "correct_answer": "maize",
+    "explanation": "The open canopy of maize allowed this weed to set seed prolifically.",
+    "chapter_num": 12
+  },
+  {
+    "type": "fill_blank",
+    "question": "White mold of soybean is caused by _____. [Sec. 12.1]",
+    "correct_answer": "Sclerotinia sclerotiorum",
+    "explanation": "The pathogen name is explicitly given in the chapter.",
+    "chapter_num": 12
+  },
+  {
+    "type": "fill_blank",
+    "question": "Most organisms discussed in crop protection have temperature-dependent growth rates that can be predicted using growing _____ day models. [Sec. 12.1]",
+    "correct_answer": "degree",
+    "explanation": "Growing degree day models are used to predict development timing.",
+    "chapter_num": 12
+  },
+  {
+    "type": "fill_blank",
+    "question": "Seed corn maggots become active at a base temperature of _____ degrees Celsius. [Sec. 12.1]",
+    "correct_answer": "4",
+    "explanation": "This threshold is provided as an example for timing scouting and control.",
+    "chapter_num": 12
+  },
+  {
+    "type": "fill_blank",
+    "question": "Corn residue left on the soil surface can be a source of _____ inoculum that causes head blight in subsequent wheat. [Sec. 12.1]",
+    "correct_answer": "Fusarium",
+    "explanation": "The chapter highlights Fusarium carryover from corn residue to wheat.",
+    "chapter_num": 12
+  },
+  {
+    "type": "fill_blank",
+    "question": "Studies in Nebraska tracked velvetleaf, hemp dogbane, and common sunflower over _____ consecutive years. [Sec. 12.1]",
+    "correct_answer": "four",
+    "explanation": "The persistence study covered four consecutive years.",
+    "chapter_num": 12
+  },
+  {
+    "type": "fill_blank",
+    "question": "Only _____ percent of the sampled area was consistently free of velvetleaf in the Nebraska study. [Sec. 12.1]",
+    "correct_answer": "1",
+    "explanation": "This very low value illustrates how widespread and persistent velvetleaf was in the sampled area.",
+    "chapter_num": 12
+  },
+  {
+    "type": "essay",
+    "question": "Explain why spatial variability is the foundation of precision crop protection. Use examples from soil, topography, microclimate, management history, and pest biology. [Sec. 12.1]",
+    "explanation": "Key points: pest and disease pressure is not uniform; soil texture, organic matter, drainage, and pH create different risk zones; topography affects moisture and nutrient accumulation; microclimate changes temperature and humidity over short distances; management history influences residue, seed banks, and inoculum; pest biology affects whether patterns are stable or mobile; these factors justify site-specific rather than uniform treatment.",
+    "chapter_num": 12
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the limitations of blanket pesticide application and how precision agriculture addresses those limitations. [Intro; Sec. 12.1]",
+    "explanation": "Key points: blanket spraying is a blunt, uniform response; environmental contamination, non-target effects, and resistance are major drawbacks; despite heavy pesticide use, losses remain substantial; precision agriculture uses data to target only where needed, reducing waste and potentially improving control in high-risk zones.",
+    "chapter_num": 12
+  },
+  {
+    "type": "essay",
+    "question": "Analyze how topography can simultaneously influence crop vigor and disease risk within the same field. Include the soybean white mold example. [Sec. 12.1]",
+    "explanation": "Key points: hilltops dry quickly and may show drought stress; foot slopes and depressions accumulate water, nutrients, and debris; these low areas may support vigorous crop growth and dense canopies but also higher humidity and pathogen development; white mold thrives in cool, humid, dense-canopy, high-yield environments, often in low-lying zones.",
+    "chapter_num": 12
+  },
+  {
+    "type": "essay",
+    "question": "How can microclimate and growing degree day models improve the timing of scouting and pest control? [Sec. 12.1]",
+    "explanation": "Key points: temperature and humidity vary within fields; pest development is temperature dependent; growing degree day models predict emergence/activity; knowing which zones warm first helps target scouting and treatment; examples include seed corn maggot and corn rootworm timing.",
+    "chapter_num": 12
+  },
+  {
+    "type": "essay",
+    "question": "Describe how management history can create persistent spatial patterns in weed and disease risk. [Sec. 12.1]",
+    "explanation": "Key points: manure vs synthetic fertilizer affects organic matter and seed banks; headlands accumulate weed seeds from machinery; previous crops and residue influence pathogen carryover; corn residue can increase Fusarium risk in following wheat; these historical effects create zones with recurring problems.",
+    "chapter_num": 12
+  },
+  {
+    "type": "essay",
+    "question": "Compare the spatial behavior of weed patches, insect pests, and soil-borne pathogens, and explain why these differences matter for precision management. [Sec. 12.1]",
+    "explanation": "Key points: many weeds form persistent patches because seeds fall near parent plants; insect pests are often more mobile and shift rapidly; soil-borne pathogens tend to form stable clusters linked to soil conditions; management must match the temporal stability and mobility of each threat.",
+    "chapter_num": 12
+  },
+  {
+    "type": "essay",
+    "question": "Interpret the Nebraska weed patch study and explain what it suggests about long-term site-specific weed management. [Sec. 12.1]",
+    "explanation": "Key points: broadleaf weed patches were remarkably persistent over four years; GIS overlays showed some areas consistently free and others repeatedly infested; persistence supports patch-based herbicide strategies, targeted scouting, and long-term management zoning.",
+    "chapter_num": 12
+  },
+  {
+    "type": "essay",
+    "question": "A farmer notices repeated disease outbreaks in low areas and insect pressure on sandy knolls. Propose a precision crop protection strategy based on the chapter. [Intro; Sec. 12.1]",
+    "explanation": "Key points: map field variability; identify topographic, soil, and microclimate zones; intensify scouting in low humid areas for disease and in sandy stressed areas for insects; use targeted rather than uniform applications; integrate sensor, drone, or trap data where possible; align timing with risk conditions.",
+    "chapter_num": 12
+  },
+  {
+    "type": "essay",
+    "question": "Why does the chapter argue that uniform pest management can both over-treat and under-treat a field at the same time? [Sec. 12.1]",
+    "explanation": "Key points: low-pressure areas receive unnecessary inputs, increasing cost and contamination; high-pressure areas may need more focused or timely control than a uniform rate provides; spatial variability means one rate cannot fit all zones effectively.",
+    "chapter_num": 12
+  },
+  {
+    "type": "essay",
+    "question": "Explain how digital tools such as drones, automated traps, and GIS contribute to crop protection becoming a data-driven discipline. [Intro; Sec. 12.1]",
+    "explanation": "Key points: drones can detect early spectral signatures of disease; automated traps count insects and feed decision support systems; GIS overlays reveal persistent patches and risk zones; together these tools improve detection, timing, targeting, and evaluation of interventions.",
+    "chapter_num": 12
+  }
+]

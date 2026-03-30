@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "According to Section 14.1, which sequence best represents the data lifecycle in precision agriculture?",
+    "options": [
+      "A) Analysis -> collection -> storage -> action -> cleaning",
+      "B) Collection -> transfer and storage -> cleaning and quality control -> analysis and integration -> decision-making and action",
+      "C) Storage -> collection -> decision-making -> integration -> transfer",
+      "D) Collection -> marketing -> cleaning -> planting -> harvest"
+    ],
+    "correct": "B",
+    "explanation": "Section 14.1 describes the lifecycle as beginning with collection, then transfer and storage, followed by cleaning and quality control, then analysis and integration, and finally decision-making and action.",
+    "chapter_num": 14
+  },
+  {
+    "type": "mcq",
+    "question": "What is the main reason raw agricultural data has limited value by itself?",
+    "options": [
+      "A) It is always inaccurate",
+      "B) It cannot be georeferenced",
+      "C) It must be reliably collected, securely stored, cleaned, integrated, and transformed into decisions",
+      "D) It is only useful for researchers"
+    ],
+    "correct": "C",
+    "explanation": "The chapter introduction emphasizes that raw data gains value only after collection, storage, cleaning, integration, and transformation into actionable decisions.",
+    "chapter_num": 14
+  },
+  {
+    "type": "mcq",
+    "question": "In the 1990s example in Section 14.1, how was yield data typically transferred from the combine to the computer?",
+    "options": [
+      "A) Through a cloud API",
+      "B) Via a memory card",
+      "C) Using a drone relay",
+      "D) Through ISOBUS telematics"
+    ],
+    "correct": "B",
+    "explanation": "Section 14.1 notes that a farmer might download yield data from a combine to a desktop computer via a memory card.",
+    "chapter_num": 14
+  },
+  {
+    "type": "mcq",
+    "question": "Which of the following best illustrates why modern agricultural data pipelines are more complex than earlier systems?",
+    "options": [
+      "A) Modern farms no longer use GPS",
+      "B) Data now often comes from many simultaneous machine, sensor, imagery, soil, weather, and market sources",
+      "C) Yield maps are no longer needed",
+      "D) Only one software package is now used for all tasks"
+    ],
+    "correct": "B",
+    "explanation": "Section 14.1 contrasts earlier simple workflows with today's multiple simultaneous data streams from equipment, imagery, soil sampling, weather, and other sources.",
+    "chapter_num": 14
+  },
+  {
+    "type": "mcq",
+    "question": "Which statement best describes georeferenced field data as discussed in Section 14.2?",
+    "options": [
+      "A) Data that is stored only in cloud databases",
+      "B) Information tied to a known location",
+      "C) Data collected only by satellites",
+      "D) Information that has already been cleaned and validated"
+    ],
+    "correct": "B",
+    "explanation": "Section 14.2 defines georeferenced field data as information tied to a known location.",
+    "chapter_num": 14
+  },
+  {
+    "type": "mcq",
+    "question": "Which format is specifically associated in the chapter with LiDAR point clouds?",
+    "options": [
+      "A) GeoTIFF",
+      "B) CSV",
+      "C) LAS",
+      "D) KML"
+    ],
+    "correct": "C",
+    "explanation": "Section 14.2 lists LiDAR point clouds in LAS format.",
+    "chapter_num": 14
+  },
+  {
+    "type": "mcq",
+    "question": "What problem does the lack of a universal data format create in precision agriculture?",
+    "options": [
+      "A) It eliminates the need for calibration",
+      "B) It makes seamless information flow between machines and software difficult",
+      "C) It improves interoperability automatically",
+      "D) It prevents GPS from functioning"
+    ],
+    "correct": "B",
+    "explanation": "Section 14.2 identifies the lack of a universal data format as a major barrier to seamless information flow.",
+    "chapter_num": 14
+  },
+  {
+    "type": "mcq",
+    "question": "What is the primary purpose of ISO 11783 (ISOBUS)?",
+    "options": [
+      "A) To replace GPS satellites",
+      "B) To define a fertilizer recommendation model",
+      "C) To establish a common communication protocol for agricultural equipment",
+      "D) To store all farm data in shapefiles"
+    ],
+    "correct": "C",
+    "explanation": "Section 14.2 explains that ISO 11783, or ISOBUS, establishes a common communication protocol for agricultural equipment.",
+    "chapter_num": 14
+  },
+  {
+    "type": "mcq",
+    "question": "How does ADAPT help address interoperability problems?",
+    "options": [
+      "A) By forcing all manufacturers to use one file format",
+      "B) By serving as an open-source translation layer between different data formats",
+      "C) By replacing yield monitors with cloud sensors",
+      "D) By eliminating the need for farm management software"
+    ],
+    "correct": "B",
+    "explanation": "Section 14.2 describes ADAPT as an open-source framework that converts data between formats and acts as a translation layer.",
+    "chapter_num": 14
+  },
+  {
+    "type": "mcq",
+    "question": "Which factor can affect yield monitor readings according to Section 14.2?",
+    "options": [
+      "A) Grain moisture, slope, and combine dynamics",
+      "B) Only tractor paint color",
+      "C) Satellite orbit height only",
+      "D) Market price forecasts"
+    ],
+    "correct": "A",
+    "explanation": "The text states that yield monitor readings can be affected by grain moisture, slope, and combine dynamics.",
+    "chapter_num": 14
+  },
+  {
+    "type": "mcq",
+    "question": "Why might an NDVI image collected too early be misleading?",
+    "options": [
+      "A) Because NDVI cannot be used in agriculture",
+      "B) Because soil reflectance may dominate before canopy closure",
+      "C) Because GPS signals are unavailable early in the season",
+      "D) Because thermal sensors are required instead"
+    ],
+    "correct": "B",
+    "explanation": "Section 14.2 notes that when the crop canopy is not yet closed, NDVI may be dominated by soil reflectance rather than plant health.",
+    "chapter_num": 14
+  },
+  {
+    "type": "mcq",
+    "question": "Which statement best captures the chapter's view of good data collection practice?",
+    "options": [
+      "A) It begins primarily with buying more software",
+      "B) It depends only on cloud storage capacity",
+      "C) It begins with agronomy and understanding how and when measurements represent reality",
+      "D) It is mainly a legal issue"
+    ],
+    "correct": "C",
+    "explanation": "The chapter states that good data collection practice begins not with software but with agronomy.",
+    "chapter_num": 14
+  },
+  {
+    "type": "true_false",
+    "question": "Section 14.1 presents the data lifecycle as a series of stages through which information passes, with each stage adding value and imposing requirements.",
+    "correct_answer": true,
+    "explanation": "The section explicitly describes the lifecycle this way.",
+    "chapter_num": 14
+  },
+  {
+    "type": "true_false",
+    "question": "After a management decision is implemented, the data lifecycle always ends permanently.",
+    "correct_answer": false,
+    "explanation": "Section 14.1 explains that implementation often generates new data, such as an as-applied map, which feeds into the next cycle.",
+    "chapter_num": 14
+  },
+  {
+    "type": "true_false",
+    "question": "In the 1990s, a precision agriculture workflow might involve one data layer, one piece of software, and one person.",
+    "correct_answer": true,
+    "explanation": "This is the simple historical example given in Section 14.1.",
+    "chapter_num": 14
+  },
+  {
+    "type": "true_false",
+    "question": "Modern planting operations may record multiple machine and agronomic variables at sub-second intervals.",
+    "correct_answer": true,
+    "explanation": "Section 14.1 lists seed population, singulation quality, downforce, ride quality, speed, fuel use, engine load, and GPS position at sub-second intervals.",
+    "chapter_num": 14
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter suggests that data management in modern agriculture requires only hardware, not organizational practices or human expertise.",
+    "correct_answer": false,
+    "explanation": "The text says deliberate infrastructure includes hardware, software, organizational practices, governance policies, and human expertise.",
+    "chapter_num": 14
+  },
+  {
+    "type": "true_false",
+    "question": "Georeferenced field data includes information such as yield monitor output and scouting observations tied to known locations.",
+    "correct_answer": true,
+    "explanation": "Section 14.2 gives these as examples of georeferenced field data.",
+    "chapter_num": 14
+  },
+  {
+    "type": "true_false",
+    "question": "Satellite imagery is typically delivered only as CSV tables.",
+    "correct_answer": false,
+    "explanation": "The chapter states that satellite imagery arrives in GeoTIFF or similar raster formats.",
+    "chapter_num": 14
+  },
+  {
+    "type": "true_false",
+    "question": "Shapefiles are an example of a vector data format mentioned in Section 14.2.",
+    "correct_answer": true,
+    "explanation": "The text explicitly lists shapefiles for vector data.",
+    "chapter_num": 14
+  },
+  {
+    "type": "true_false",
+    "question": "The lack of a universal data format has been one of the most significant barriers to seamless information flow in precision agriculture.",
+    "correct_answer": true,
+    "explanation": "Section 14.2 states this directly.",
+    "chapter_num": 14
+  },
+  {
+    "type": "true_false",
+    "question": "ISOBUS is mainly described as a weather-data standard for remote sensing platforms.",
+    "correct_answer": false,
+    "explanation": "ISOBUS is described as a common communication protocol for agricultural equipment.",
+    "chapter_num": 14
+  },
+  {
+    "type": "true_false",
+    "question": "ADAPT requires manufacturers to abandon their proprietary formats before software can read their data.",
+    "correct_answer": false,
+    "explanation": "The chapter says ADAPT does not require manufacturers to abandon their own formats; it provides a common interface through conversion plug-ins.",
+    "chapter_num": 14
+  },
+  {
+    "type": "true_false",
+    "question": "GPS accuracy affects every georeferenced dataset.",
+    "correct_answer": true,
+    "explanation": "Section 14.2 explicitly notes this.",
+    "chapter_num": 14
+  },
+  {
+    "type": "true_false",
+    "question": "Yield monitors should be calibrated against known weights for reliable data collection.",
+    "correct_answer": true,
+    "explanation": "The text states that yield monitors require careful calibration against known weights.",
+    "chapter_num": 14
+  },
+  {
+    "type": "true_false",
+    "question": "A soil sample taken immediately after fertilizer application will always represent the true nutrient status of the soil.",
+    "correct_answer": false,
+    "explanation": "Section 14.2 warns that timing matters, and such a sample may not represent true nutrient status.",
+    "chapter_num": 14
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter argues that good data collection practice begins with agronomic understanding rather than software alone.",
+    "correct_answer": true,
+    "explanation": "This is stated directly near the end of the provided text.",
+    "chapter_num": 14
+  },
+  {
+    "type": "fill_blank",
+    "question": "The transformation from scattered digital signals to coherent farm management intelligence is called a data _____.",
+    "correct_answer": "pipeline",
+    "explanation": "The chapter defines this transformation as a data pipeline.",
+    "chapter_num": 14
+  },
+  {
+    "type": "fill_blank",
+    "question": "According to Section 14.1, the data lifecycle begins with _____ and ends in decision-making and action.",
+    "correct_answer": "collection",
+    "explanation": "Collection is the first stage named in the lifecycle.",
+    "chapter_num": 14
+  },
+  {
+    "type": "fill_blank",
+    "question": "After implementation, an _____ map may document what was actually done and feed into the next cycle.",
+    "correct_answer": "as-applied",
+    "explanation": "Section 14.1 gives the as-applied map as an example of feedback data.",
+    "chapter_num": 14
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the 1990s example, yield data was downloaded to a desktop computer via a memory _____.",
+    "correct_answer": "card",
+    "explanation": "The chapter specifically mentions transfer via a memory card.",
+    "chapter_num": 14
+  },
+  {
+    "type": "fill_blank",
+    "question": "Agricultural data volumes by the mid-2020s were often described in the _____-to-exabyte range.",
+    "correct_answer": "petabyte",
+    "explanation": "Section 14.1 says totals were often described in the petabyte-to-exabyte range.",
+    "chapter_num": 14
+  },
+  {
+    "type": "fill_blank",
+    "question": "A common communication protocol for agricultural equipment is ISO 11783, also known as _____.",
+    "correct_answer": "ISOBUS",
+    "explanation": "The chapter identifies ISO 11783 as ISOBUS.",
+    "chapter_num": 14
+  },
+  {
+    "type": "fill_blank",
+    "question": "The Agricultural Data Application Programming Toolkit is abbreviated as _____.",
+    "correct_answer": "ADAPT",
+    "explanation": "Section 14.2 introduces ADAPT by name and acronym.",
+    "chapter_num": 14
+  },
+  {
+    "type": "fill_blank",
+    "question": "ADAPT was developed through the non-profit consortium _____.",
+    "correct_answer": "AgGateway",
+    "explanation": "The chapter states that ADAPT was developed through AgGateway.",
+    "chapter_num": 14
+  },
+  {
+    "type": "fill_blank",
+    "question": "Satellite imagery commonly arrives in _____ or similar raster formats.",
+    "correct_answer": "GeoTIFF",
+    "explanation": "GeoTIFF is the raster format named in the text.",
+    "chapter_num": 14
+  },
+  {
+    "type": "fill_blank",
+    "question": "LiDAR point clouds are mentioned as being stored in _____ format.",
+    "correct_answer": "LAS",
+    "explanation": "Section 14.2 lists LAS for LiDAR point clouds.",
+    "chapter_num": 14
+  },
+  {
+    "type": "fill_blank",
+    "question": "Yield monitor readings can be affected by grain moisture, slope, and combine _____.",
+    "correct_answer": "dynamics",
+    "explanation": "These three factors are listed together in the chapter.",
+    "chapter_num": 14
+  },
+  {
+    "type": "fill_blank",
+    "question": "An NDVI image captured before canopy closure may be dominated by soil _____.",
+    "correct_answer": "reflectance",
+    "explanation": "The text warns that soil reflectance may dominate under those conditions.",
+    "chapter_num": 14
+  },
+  {
+    "type": "fill_blank",
+    "question": "Good data collection practice begins not with software but with _____.",
+    "correct_answer": "agronomy",
+    "explanation": "The chapter explicitly makes this point.",
+    "chapter_num": 14
+  },
+  {
+    "type": "essay",
+    "question": "Explain the full data lifecycle in precision agriculture as described in Section 14.1, and discuss why it should be viewed as a repeating cycle rather than a one-time process.",
+    "explanation": "Key points: collection; transfer and storage; cleaning and quality control; analysis and integration; decision-making and action; implementation generates new data such as as-applied maps; iterative improvement over time.",
+    "chapter_num": 14
+  },
+  {
+    "type": "essay",
+    "question": "Compare the relatively simple precision agriculture workflow of the 1990s with the modern data pipeline. What changed, and what new management challenges emerged?",
+    "explanation": "Key points: earlier workflow had fewer layers, one machine, one software package, one user, manual transfer via memory card; modern systems have many simultaneous data streams, cloud platforms, automation, interoperability issues, larger storage and governance needs.",
+    "chapter_num": 14
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why data format diversity is a major challenge in precision agriculture. Use examples from Section 14.2 to illustrate operational consequences.",
+    "explanation": "Key points: proprietary binary files, CSV, spreadsheets, GeoTIFF, shapefiles, KML, LAS, XML, geodatabases; import complexity; mixed-brand machinery; consultants handling many client formats; barrier to seamless data flow.",
+    "chapter_num": 14
+  },
+  {
+    "type": "essay",
+    "question": "Evaluate the role of ISOBUS in improving agricultural data pipelines. What problem does it solve, and what limitations or evolving areas remain?",
+    "explanation": "Key points: ISO 11783 common communication protocol; enables electronic control units on different implements to communicate with tractor terminal; supports single in-cab display; strong role in machine control; data recording and transfer standardization still evolving.",
+    "chapter_num": 14
+  },
+  {
+    "type": "essay",
+    "question": "Explain how ADAPT addresses interoperability without requiring manufacturers to abandon proprietary formats.",
+    "explanation": "Key points: open-source framework; translation layer; conversion plug-ins; common interface for third-party software; supports multiple brands such as John Deere, Case IH, AGCO; practical interoperability strategy.",
+    "chapter_num": 14
+  },
+  {
+    "type": "essay",
+    "question": "Why is calibration essential in precision agriculture data collection? Discuss this using examples from planters, applicators, and yield monitors.",
+    "explanation": "Key points: metering systems must be calibrated so as-planted and as-applied maps reflect reality; yield monitors calibrated against known weights; poor calibration undermines downstream analysis and decisions.",
+    "chapter_num": 14
+  },
+  {
+    "type": "essay",
+    "question": "Analyze how timing influences data quality in precision agriculture. Include examples involving soil sampling and NDVI imagery.",
+    "explanation": "Key points: soil sampling too soon after fertilizer application may misrepresent nutrient status; NDVI before canopy closure may reflect soil more than crop health; timing affects interpretation and management value.",
+    "chapter_num": 14
+  },
+  {
+    "type": "essay",
+    "question": "The chapter states that good data collection practice begins with agronomy rather than software. Explain and defend this statement.",
+    "explanation": "Key points: understanding what is being measured, when it should be measured, and whether it represents biological or field reality; software cannot correct fundamentally poor sampling design or mistimed measurements.",
+    "chapter_num": 14
+  },
+  {
+    "type": "essay",
+    "question": "Describe the kinds of data sources that feed modern precision agriculture pipelines and explain why integrating them can improve management decisions.",
+    "explanation": "Key points: georeferenced field data, remote sensing, machine telematics, weather stations, IoT soil-moisture probes, soil analyses, scouting, topography; integration reveals patterns and supports more informed decisions.",
+    "chapter_num": 14
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why managing modern agricultural data requires more than hardware and software. What organizational and human factors does the chapter highlight?",
+    "explanation": "Key points: organizational practices, data governance policies, human expertise, maintenance of automated/semi-automated pipelines, understanding failure points, ensuring reliability and usability.",
+    "chapter_num": 14
+  }
+]

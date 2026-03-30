@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "According to Section 13.1, why are multi-year yield maps especially valuable for site-specific management?",
+    "options": [
+      "A) They eliminate the need for GNSS correction",
+      "B) They reveal whether variability is stable or unstable across years",
+      "C) They directly measure soil nutrient concentrations",
+      "D) They replace the need for economic analysis"
+    ],
+    "correct": "B",
+    "explanation": "Section 13.1 explains that stacking yield maps across years helps distinguish recurring patterns caused by stable factors from patterns that vary with weather or management, which is central to site-specific management.",
+    "chapter_num": 13
+  },
+  {
+    "type": "mcq",
+    "question": "What is the main limitation of relying only on field-average yield?",
+    "options": [
+      "A) It overestimates grain moisture",
+      "B) It cannot be stored digitally",
+      "C) It hides within-field spatial differences in performance",
+      "D) It requires too much calibration"
+    ],
+    "correct": "C",
+    "explanation": "Section 13.1 states that field-average yield says nothing about which parts of the field are thriving or struggling.",
+    "chapter_num": 13
+  },
+  {
+    "type": "mcq",
+    "question": "In Section 13.2, yield is fundamentally calculated as:",
+    "options": [
+      "A) Grain moisture multiplied by travel speed",
+      "B) Mass of grain harvested divided by harvested area",
+      "C) Header width divided by grain flow rate",
+      "D) GNSS position divided by time delay"
+    ],
+    "correct": "B",
+    "explanation": "The chapter explicitly defines yield as the mass of grain harvested divided by the area from which it was harvested.",
+    "chapter_num": 13
+  },
+  {
+    "type": "mcq",
+    "question": "What is a key role of the in-cab display and data logger described in Section 13.2.1?",
+    "options": [
+      "A) It physically separates grain from chaff",
+      "B) It provides differential correction to satellites",
+      "C) It combines sensor signals into usable data and stores them",
+      "D) It measures soil compaction during harvest"
+    ],
+    "correct": "C",
+    "explanation": "Section 13.2.1 describes the in-cab unit as receiving signals from sensors, converting them into usable data, displaying them, and storing them.",
+    "chapter_num": 13
+  },
+  {
+    "type": "mcq",
+    "question": "Why is GNSS-derived ground speed often preferred over wheel-based speed measurements?",
+    "options": [
+      "A) It is cheaper to install",
+      "B) It is unaffected by wheel slippage",
+      "C) It directly measures grain moisture",
+      "D) It removes the need for header-width entry"
+    ],
+    "correct": "B",
+    "explanation": "Section 13.2.2 notes that GNSS-derived speed is advantageous because wheel slippage in muddy or loose soil does not affect it.",
+    "chapter_num": 13
+  },
+  {
+    "type": "mcq",
+    "question": "Why must machine configuration offsets be entered correctly into the display?",
+    "options": [
+      "A) To increase grain tank capacity",
+      "B) To match each yield reading to the correct field position",
+      "C) To reduce grain moisture content",
+      "D) To calibrate soil pH sensors"
+    ],
+    "correct": "B",
+    "explanation": "Section 13.2.2 explains that the antenna-to-header offset, combined with grain travel delay, determines positional accuracy of yield readings.",
+    "chapter_num": 13
+  },
+  {
+    "type": "mcq",
+    "question": "Which mass flow sensing technology is most common on grain combines?",
+    "options": [
+      "A) Photoelectric sensors",
+      "B) Microwave sensors",
+      "C) Impact plates",
+      "D) Ultrasonic sensors"
+    ],
+    "correct": "C",
+    "explanation": "Section 13.2.3 identifies impact plates as the most common mass flow sensor in grain combines.",
+    "chapter_num": 13
+  },
+  {
+    "type": "mcq",
+    "question": "What physical quantity is measured at an impact plate to estimate grain mass flow?",
+    "options": [
+      "A) Grain color",
+      "B) Force of grain impact",
+      "C) Soil resistance",
+      "D) Header vibration frequency"
+    ],
+    "correct": "B",
+    "explanation": "The impact plate system measures the force generated when grain strikes the plate, using a strain gauge or load cell.",
+    "chapter_num": 13
+  },
+  {
+    "type": "mcq",
+    "question": "Why are optical sensors commonly used for cotton yield monitoring?",
+    "options": [
+      "A) Cotton generates a strong impact signal",
+      "B) Cotton is too wet for GNSS-based mapping",
+      "C) Cotton has low mass per unit volume, making impact plates unreliable",
+      "D) Cotton cannot be harvested with conveyors"
+    ],
+    "correct": "C",
+    "explanation": "Section 13.2.3 explains that cotton has so little mass per unit volume that impact plates do not generate a reliable signal, so optical sensors are standard.",
+    "chapter_num": 13
+  },
+  {
+    "type": "mcq",
+    "question": "Which of the following is an example of a downstream use of yield maps mentioned in Section 13.1?",
+    "options": [
+      "A) Estimating site-specific nutrient removal",
+      "B) Measuring atmospheric humidity",
+      "C) Replacing all field experiments",
+      "D) Determining satellite orbit paths"
+    ],
+    "correct": "A",
+    "explanation": "Section 13.1 lists site-specific nutrient removal estimation as one of the important downstream uses of yield maps.",
+    "chapter_num": 13
+  },
+  {
+    "type": "mcq",
+    "question": "What kind of variability is suggested when a yield pattern appears only in some years but not others?",
+    "options": [
+      "A) Permanent soil texture boundaries only",
+      "B) Weather-dependent or management-dependent causes",
+      "C) GNSS antenna malfunction only",
+      "D) Always random measurement noise"
+    ],
+    "correct": "B",
+    "explanation": "Section 13.1 states that patterns appearing in some years but not others often point to weather-dependent or management-dependent causes.",
+    "chapter_num": 13
+  },
+  {
+    "type": "mcq",
+    "question": "Why has yield monitoring become widely adopted in precision agriculture, according to the chapter?",
+    "options": [
+      "A) It is mainly a replacement for scouting",
+      "B) It provides the foundational data layer for many other precision agriculture decisions",
+      "C) It guarantees uniform yields across a field",
+      "D) It eliminates the need for calibration and cleaning"
+    ],
+    "correct": "B",
+    "explanation": "Section 13.1 concludes that the yield map is the foundational data layer from which much of precision agriculture flows.",
+    "chapter_num": 13
+  },
+  {
+    "type": "true_false",
+    "question": "Section 13.1 states that every management decision in precision agriculture ultimately relates back to yield.",
+    "correct_answer": true,
+    "explanation": "The chapter explicitly says that every management decision in precision agriculture ultimately comes back to yield.",
+    "chapter_num": 13
+  },
+  {
+    "type": "true_false",
+    "question": "A field-average yield value can show which specific parts of a field responded to lime application.",
+    "correct_answer": false,
+    "explanation": "The text emphasizes that a single field-average number cannot reveal spatially specific responses within the field.",
+    "chapter_num": 13
+  },
+  {
+    "type": "true_false",
+    "question": "Recurring yield patterns across multiple years may indicate permanent or semi-permanent causes such as soil type transitions or drainage problems.",
+    "correct_answer": true,
+    "explanation": "Section 13.1 gives these as examples of stable causes revealed by multi-year yield maps.",
+    "chapter_num": 13
+  },
+  {
+    "type": "true_false",
+    "question": "Yield maps are useful only for agronomic analysis and not for economic analysis.",
+    "correct_answer": false,
+    "explanation": "The chapter notes that yield maps also feed into profitability analyses that convert agronomic outcomes into economic ones.",
+    "chapter_num": 13
+  },
+  {
+    "type": "true_false",
+    "question": "A yield monitor is typically a single sensor that directly measures yield without needing other inputs.",
+    "correct_answer": false,
+    "explanation": "Section 13.2 explains that a yield monitor is a system of sensors whose outputs are combined to estimate yield.",
+    "chapter_num": 13
+  },
+  {
+    "type": "true_false",
+    "question": "The in-cab display can record metadata such as header width, load identifiers, and grain variety.",
+    "correct_answer": true,
+    "explanation": "Section 13.2.1 specifically lists these as examples of metadata recorded by the in-cab unit.",
+    "chapter_num": 13
+  },
+  {
+    "type": "true_false",
+    "question": "Differentially corrected GNSS typically improves positional accuracy to within about one to three meters.",
+    "correct_answer": true,
+    "explanation": "Section 13.2.2 gives this typical positional accuracy range.",
+    "chapter_num": 13
+  },
+  {
+    "type": "true_false",
+    "question": "GNSS-derived speed is more affected by wheel slippage than radar or wheel rotation measurements.",
+    "correct_answer": false,
+    "explanation": "The chapter says GNSS-derived speed has the advantage of being unaffected by wheel slippage.",
+    "chapter_num": 13
+  },
+  {
+    "type": "true_false",
+    "question": "If antenna offsets and grain travel delay are ignored, yield readings may be assigned to incorrect field positions.",
+    "correct_answer": true,
+    "explanation": "Section 13.2.2 explains that these factors determine how accurately yield is georeferenced.",
+    "chapter_num": 13
+  },
+  {
+    "type": "true_false",
+    "question": "Impact plate sensors estimate mass flow by measuring the force of grain striking a plate.",
+    "correct_answer": true,
+    "explanation": "This is the core operating principle described for impact plate systems in Section 13.2.3.",
+    "chapter_num": 13
+  },
+  {
+    "type": "true_false",
+    "question": "Impact plates are ideal for cotton because cotton generates a strong impact signal.",
+    "correct_answer": false,
+    "explanation": "The chapter states the opposite: cotton has low mass per unit volume, so impact plates are unreliable for it.",
+    "chapter_num": 13
+  },
+  {
+    "type": "true_false",
+    "question": "Optical sensors estimate flow by monitoring how often a light beam is blocked by material.",
+    "correct_answer": true,
+    "explanation": "Section 13.2.3 explains that the blocked-to-unobstructed time ratio is proportional to material volume flow.",
+    "chapter_num": 13
+  },
+  {
+    "type": "true_false",
+    "question": "Yield maps can serve as the response variable in on-farm strip trials.",
+    "correct_answer": true,
+    "explanation": "Section 13.1 notes that yield maps allow farmers to evaluate treatment effects in their own fields.",
+    "chapter_num": 13
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter presents stable versus unstable variability as a minor detail rather than a conceptual cornerstone of site-specific management.",
+    "correct_answer": false,
+    "explanation": "The text explicitly calls this distinction the conceptual cornerstone of site-specific management.",
+    "chapter_num": 13
+  },
+  {
+    "type": "true_false",
+    "question": "The in-cab display progressively builds a color-coded yield map as the combine moves through the field.",
+    "correct_answer": true,
+    "explanation": "Section 13.2.1 describes this as one of the display's real-time functions.",
+    "chapter_num": 13
+  },
+  {
+    "type": "fill_blank",
+    "question": "According to Section 13.1, without spatially explicit yield data, a farmer knows only the field _____.",
+    "correct_answer": "average",
+    "explanation": "The chapter contrasts field-average yield with spatially explicit yield maps.",
+    "chapter_num": 13
+  },
+  {
+    "type": "fill_blank",
+    "question": "Patterns that recur year after year may indicate permanent or semi-permanent causes such as soil type transitions, compaction layers, drainage problems, or _____-driven moisture stress.",
+    "correct_answer": "elevation",
+    "explanation": "Section 13.1 lists elevation-driven moisture stress among recurring causes of yield patterns.",
+    "chapter_num": 13
+  },
+  {
+    "type": "fill_blank",
+    "question": "The distinction between stable and unstable variability is described as the conceptual cornerstone of site-specific _____.",
+    "correct_answer": "management",
+    "explanation": "This phrase appears directly in Section 13.1.",
+    "chapter_num": 13
+  },
+  {
+    "type": "fill_blank",
+    "question": "Yield maps are used to estimate nutrient removal on a site-specific basis because grain leaving the field carries away nitrogen, phosphorus, potassium, and _____.",
+    "correct_answer": "micronutrients",
+    "explanation": "Section 13.1 includes micronutrients in the list of nutrients removed with harvested grain.",
+    "chapter_num": 13
+  },
+  {
+    "type": "fill_blank",
+    "question": "The fundamental equation in Section 13.2 states that yield equals mass of grain harvested divided by harvested _____.",
+    "correct_answer": "area",
+    "explanation": "Yield is defined as grain mass divided by the area from which it was harvested.",
+    "chapter_num": 13
+  },
+  {
+    "type": "fill_blank",
+    "question": "At the center of the yield monitoring system is the in-cab touchscreen _____ mounted in the combine cab.",
+    "correct_answer": "display",
+    "explanation": "Section 13.2.1 identifies the touchscreen display as the user interface at the center of the system.",
+    "chapter_num": 13
+  },
+  {
+    "type": "fill_blank",
+    "question": "The in-cab unit stores results to a memory card or _____ drive.",
+    "correct_answer": "USB",
+    "explanation": "Section 13.2.1 mentions storage to a memory card or USB drive.",
+    "chapter_num": 13
+  },
+  {
+    "type": "fill_blank",
+    "question": "Every yield data point must be tied to a geographic location provided by a differentially corrected _____ receiver.",
+    "correct_answer": "GNSS",
+    "explanation": "Section 13.2.2 explains that a differentially corrected GNSS receiver provides location.",
+    "chapter_num": 13
+  },
+  {
+    "type": "fill_blank",
+    "question": "Differential correction improves positional accuracy, typically to within one to three _____.",
+    "correct_answer": "meters",
+    "explanation": "The chapter gives one to three meters as the typical corrected accuracy range.",
+    "chapter_num": 13
+  },
+  {
+    "type": "fill_blank",
+    "question": "Proper machine configuration offsets must account for the distance between the GNSS antenna and the combine _____ where grain enters the machine.",
+    "correct_answer": "header",
+    "explanation": "Section 13.2.2 emphasizes the antenna-to-header offset.",
+    "chapter_num": 13
+  },
+  {
+    "type": "fill_blank",
+    "question": "In grain combines, the most common mass flow sensor is the _____ plate.",
+    "correct_answer": "impact",
+    "explanation": "Section 13.2.3 states that impact plates are the most common mass flow sensor in grain combines.",
+    "chapter_num": 13
+  },
+  {
+    "type": "fill_blank",
+    "question": "The force on an impact plate is measured by a strain gauge or _____.",
+    "correct_answer": "load cell",
+    "explanation": "These are the two sensing components named in the description of impact plate systems.",
+    "chapter_num": 13
+  },
+  {
+    "type": "fill_blank",
+    "question": "Optical sensors are the standard technology for cotton yield monitoring because cotton has very little mass per unit _____.",
+    "correct_answer": "volume",
+    "explanation": "The chapter explains that cotton's low mass per unit volume makes impact sensing unreliable.",
+    "chapter_num": 13
+  },
+  {
+    "type": "essay",
+    "question": "Using Section 13.1, explain why yield maps are considered the foundation of precision agriculture rather than just another data layer.",
+    "explanation": "Key points: yield connects to most management decisions; field averages hide spatial variability; yield maps reveal within-field performance; multi-year maps distinguish stable vs unstable variability; yield maps support nutrient removal estimates, management zone delineation, profitability analysis, and on-farm strip trials.",
+    "chapter_num": 13
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how stacking yield maps across several years improves interpretation compared with using a single-year map.",
+    "explanation": "Key points: recurring patterns suggest stable causes such as soil, drainage, compaction, or elevation effects; inconsistent patterns suggest weather- or management-dependent variability; this distinction affects confidence in variable-rate decisions and management zone design.",
+    "chapter_num": 13
+  },
+  {
+    "type": "essay",
+    "question": "Describe the main components of a yield monitoring system and explain how they work together to estimate yield in real time.",
+    "explanation": "Key points: yield monitor is a system, not a single sensor; includes mass flow sensing, moisture measurement if discussed, GNSS positioning, speed input, and in-cab display/data logger; yield is estimated from grain mass and harvested area over time; data are georeferenced and stored continuously.",
+    "chapter_num": 13
+  },
+  {
+    "type": "essay",
+    "question": "Explain why accurate georeferencing in yield monitoring depends on more than just having a GNSS receiver.",
+    "explanation": "Key points: GNSS provides position and often speed, but correct machine offsets must be entered; antenna location differs from header location; grain travel time through the machine creates delay; incorrect offsets or delay settings shift yield points to wrong map positions.",
+    "chapter_num": 13
+  },
+  {
+    "type": "essay",
+    "question": "Compare GNSS-derived speed with alternative speed measurements such as radar or wheel rotation counters in the context of harvest operations.",
+    "explanation": "Key points: GNSS speed is often preferred because it is not affected by wheel slippage; wheel-based methods can be inaccurate in muddy or loose soils; speed accuracy matters because harvested area per unit time depends on it.",
+    "chapter_num": 13
+  },
+  {
+    "type": "essay",
+    "question": "Explain the operating principle of an impact plate mass flow sensor and why it is well suited to grain crops.",
+    "explanation": "Key points: grain is lifted by the clean grain elevator and thrown against a steel plate; impact force measured by strain gauge/load cell; grain velocity estimated from elevator geometry and speed; force plus velocity used to estimate mass flow; grain crops are dense enough to create a measurable signal.",
+    "chapter_num": 13
+  },
+  {
+    "type": "essay",
+    "question": "Why are optical sensors preferred over impact plates for cotton yield monitoring?",
+    "explanation": "Key points: optical sensors estimate volume flow by beam interruption; cotton has low mass per unit volume; impact force from cotton is too weak for reliable impact-plate sensing; sensor choice depends on crop physical properties.",
+    "chapter_num": 13
+  },
+  {
+    "type": "essay",
+    "question": "A farmer sees a low-yield area in one season near a creek but not in other years. How should this pattern be interpreted using the framework from Section 13.1?",
+    "explanation": "Key points: a one-year or inconsistent pattern suggests unstable variability; likely weather-dependent or management-dependent rather than permanent; should be interpreted cautiously before creating long-term management zones or prescriptions.",
+    "chapter_num": 13
+  },
+  {
+    "type": "essay",
+    "question": "How can yield maps be used in on-farm strip trials to improve decision-making compared with relying only on research station results?",
+    "explanation": "Key points: yield maps provide spatially explicit response data within the farmer's own field; treatments such as varieties, fertilizer rates, or tillage can be compared under local conditions; results are more directly relevant to field-specific management and economics.",
+    "chapter_num": 13
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the importance of data logging and metadata entry in the in-cab display for later yield map interpretation.",
+    "explanation": "Key points: in-cab display stores sensor outputs and metadata such as field name, crop type, header width, load IDs, and variety; good metadata improves organization, calibration, traceability, and later interpretation; poor setup can reduce map usefulness even if sensors function properly.",
+    "chapter_num": 13
+  }
+]

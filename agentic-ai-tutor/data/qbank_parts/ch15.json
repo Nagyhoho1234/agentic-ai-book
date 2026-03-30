@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "According to Section 15.1, which statement best captures the chapter’s definition of artificial intelligence?",
+    "options": [
+      "A) A method for replacing farmers with fully autonomous machines",
+      "B) The effort to make computers perform tasks that normally require human thought",
+      "C) A system that only follows fixed rules written by programmers",
+      "D) A type of satellite imaging used in crop monitoring"
+    ],
+    "correct": "B",
+    "explanation": "Section 15.1 defines AI at its core as the effort to make computers perform tasks that would normally require human thought.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "In the farmer analogy from Section 15.1, what is the machine-learning equivalent of an agronomist’s accumulated experience?",
+    "options": [
+      "A) Government policy manuals",
+      "B) Tractor engine settings",
+      "C) Data such as satellite images, weather records, soil sensor readings, and labeled photographs",
+      "D) Only handwritten field notes"
+    ],
+    "correct": "C",
+    "explanation": "The text explains that instead of lived experience, the machine draws on data from sources like satellite images, weather records, soil sensors, and labeled photos.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "Which option best distinguishes machine learning from older expert systems in Section 15.1?",
+    "options": [
+      "A) Machine learning relies on hand-coded rules for every scenario",
+      "B) Machine learning learns from data rather than depending only on explicit rules",
+      "C) Expert systems are always more flexible than machine learning",
+      "D) Machine learning can only be used with drones"
+    ],
+    "correct": "B",
+    "explanation": "Section 15.1 states that machine learning refers to systems that learn from data rather than following hand-coded rules.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "Why were many early agricultural expert systems described as brittle?",
+    "options": [
+      "A) They required glass sensors that broke easily",
+      "B) They only worked offline",
+      "C) They worked in narrow conditions but failed in unanticipated situations",
+      "D) They produced results too slowly for field use"
+    ],
+    "correct": "C",
+    "explanation": "The chapter notes that rule-based expert systems often worked well only within narrow conditions and failed when designers had not anticipated a situation.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "Which combination of developments, according to Section 15.1, triggered the modern era of AI in agriculture in the 2010s?",
+    "options": [
+      "A) More fertilizers, larger tractors, and lower fuel prices",
+      "B) Expansion of agricultural data, improved computing power such as GPUs, and advances in machine-learning algorithms like deep learning",
+      "C) Fewer sensors, less data, and simpler algorithms",
+      "D) A shift from satellites to paper records"
+    ],
+    "correct": "B",
+    "explanation": "Section 15.1 identifies three converging developments: more agricultural data, stronger computing power including GPUs, and algorithmic advances, especially deep learning.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "In Section 15.2, machine learning is described primarily as what?",
+    "options": [
+      "A) A replacement for all agronomic expertise",
+      "B) A subfield of AI in which algorithms learn patterns from data to make predictions or decisions",
+      "C) A method limited to image analysis",
+      "D) A rule-writing technique for extension officers"
+    ],
+    "correct": "B",
+    "explanation": "Section 15.2 defines machine learning as a subfield of AI where algorithms learn patterns from data and use them to make predictions or decisions.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "Which of the following is an example of a classification task from Section 15.2.1?",
+    "options": [
+      "A) Predicting expected yield in tonnes per hectare",
+      "B) Estimating soil moisture percentage",
+      "C) Determining whether a leaf is healthy or infected",
+      "D) Predicting days until harvest"
+    ],
+    "correct": "C",
+    "explanation": "Classification assigns inputs to discrete categories, such as healthy versus diseased.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "Which of the following is an example of a regression task from Section 15.2.1?",
+    "options": [
+      "A) Distinguishing wheat from barley",
+      "B) Identifying weed versus crop",
+      "C) Labeling fruit as ripe or unripe",
+      "D) Predicting expected yield in tonnes per hectare"
+    ],
+    "correct": "D",
+    "explanation": "Regression predicts a continuous numerical value, and expected yield in tonnes per hectare is given as an example.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "According to Section 15.2.1, why might a practitioner choose a decision tree for an agricultural application?",
+    "options": [
+      "A) It always gives the highest accuracy of all models",
+      "B) It is easy to interpret and follow as a chain of decisions",
+      "C) It requires the largest possible dataset",
+      "D) It can only be used for livestock problems"
+    ],
+    "correct": "B",
+    "explanation": "The text emphasizes that decision trees are easy to interpret because users can follow the chain of decisions.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "What is a key advantage of random forests mentioned in Section 15.2.1?",
+    "options": [
+      "A) They avoid using trees altogether",
+      "B) They combine many decision trees to improve accuracy and robustness",
+      "C) They require no data preprocessing",
+      "D) They are always more interpretable than a single decision tree"
+    ],
+    "correct": "B",
+    "explanation": "Random forests aggregate predictions from many decision trees, improving accuracy and robustness.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "According to Section 15.2.1, support vector machines are especially useful when:",
+    "options": [
+      "A) There are very few features compared with observations",
+      "B) Labels are unavailable",
+      "C) The number of features is large relative to the number of observations",
+      "D) Only handwritten rules are available"
+    ],
+    "correct": "C",
+    "explanation": "The chapter notes that SVMs excel when the number of features is large relative to the number of observations, as often occurs in remote sensing.",
+    "chapter_num": 15
+  },
+  {
+    "type": "mcq",
+    "question": "Which statement best summarizes the trade-off associated with neural networks in Section 15.2.1?",
+    "options": [
+      "A) They are simple to interpret but weak on image data",
+      "B) They often achieve high accuracy on image and time-series data but require large datasets and substantial computing resources",
+      "C) They work only for regression tasks",
+      "D) They eliminate the need for training data"
+    ],
+    "correct": "B",
+    "explanation": "The text states that neural networks, especially deep-learning variants, perform very well on image and time-series data but need large training datasets and substantial computing power.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "Section 15.1 states that the term 'artificial intelligence' was coined by John McCarthy in 1956.",
+    "correct_answer": true,
+    "explanation": "The chapter explicitly attributes the term to John McCarthy in 1956.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "According to Section 15.1, Alan Turing first raised the question of whether machines could think in 1980.",
+    "correct_answer": false,
+    "explanation": "The text says Alan Turing asked this question in 1950, not 1980.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter presents AI as a single, uniform technology rather than an umbrella term.",
+    "correct_answer": false,
+    "explanation": "Section 15.1 clearly says AI is not a single technology but an umbrella term covering many approaches.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "Expert systems were especially popular in the 1980s and relied on explicit rules written by human experts.",
+    "correct_answer": true,
+    "explanation": "The chapter identifies expert systems as rule-based systems popular in the 1980s.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "The text argues that AI-powered tools are meant to augment, not replace, the farmer’s judgment.",
+    "correct_answer": true,
+    "explanation": "Section 15.1 explicitly says AI tools are not meant to replace the farmer’s judgment but to augment it.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "A drone with a multispectral camera is described as being slower than human field scouting for large areas.",
+    "correct_answer": false,
+    "explanation": "The chapter says a drone can survey a hundred-hectare field in an hour, highlighting speed and scale beyond human capability.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "The modern rise of AI in agriculture was linked in part to the growth of data from satellites, drones, sensors, and the Internet of Things.",
+    "correct_answer": true,
+    "explanation": "Section 15.1 lists the explosion of agricultural data from these sources as one of the three major enabling developments.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "According to Section 15.1, improvements in GPUs helped make training complex models on large datasets feasible.",
+    "correct_answer": true,
+    "explanation": "The chapter specifically mentions graphics processing units as important to improved computing power.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "Machine learning is described in Section 15.2 as requiring explicit programming for every specific scenario.",
+    "correct_answer": false,
+    "explanation": "The definition says machine learning learns patterns from data without being explicitly programmed for each scenario.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "Section 15.2 groups machine learning methods into supervised, unsupervised, and reinforcement learning.",
+    "correct_answer": true,
+    "explanation": "These are the three broad families named in the text.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "In supervised learning, the algorithm is trained on data where both the input and the correct answer are known.",
+    "correct_answer": true,
+    "explanation": "That is the chapter’s definition of supervised learning.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "Classification in supervised learning predicts continuous numerical values such as soil moisture percentage.",
+    "correct_answer": false,
+    "explanation": "Continuous numerical values are examples of regression, not classification.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "Random forests are described as generally more interpretable than single decision trees.",
+    "correct_answer": false,
+    "explanation": "The chapter says random forests sacrifice some interpretability compared with decision trees.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "Support vector machines are noted as useful in some remote sensing datasets because feature counts can be high relative to observations.",
+    "correct_answer": true,
+    "explanation": "This is stated directly in Section 15.2.1.",
+    "chapter_num": 15
+  },
+  {
+    "type": "true_false",
+    "question": "Unsupervised learning, according to the visible text, works with data that carry no labels.",
+    "correct_answer": true,
+    "explanation": "Section 15.2.2 begins by stating that unsupervised learning works with unlabeled data.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "According to Section 15.1, the term artificial intelligence was coined in _____ by John McCarthy.",
+    "correct_answer": "1956",
+    "explanation": "The chapter states that John McCarthy coined the term in 1956.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "Alan Turing asked in _____ whether machines could truly 'think.'",
+    "correct_answer": "1950",
+    "explanation": "Section 15.1 gives 1950 as the year of Turing’s question.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "AI is described as an _____ term covering many approaches rather than a single technology.",
+    "correct_answer": "umbrella",
+    "explanation": "The text explicitly calls AI an umbrella term.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "Systems that learn from data rather than following hand-coded rules are called _____.",
+    "correct_answer": "machine learning",
+    "explanation": "Section 15.1 defines machine learning in this way.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "Early rule-based systems for pest management or irrigation scheduling are referred to as _____ systems.",
+    "correct_answer": "expert",
+    "explanation": "The chapter calls these early AI tools expert systems.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "A major hardware advance that enabled training of complex models was the use of _____.",
+    "correct_answer": "GPUs",
+    "explanation": "Graphics processing units are named as a key computing advance.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "Machine learning is a subfield of artificial intelligence in which algorithms learn _____ from data.",
+    "correct_answer": "patterns",
+    "explanation": "Section 15.2 says algorithms learn patterns from data.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "The three broad families of machine learning listed in Section 15.2 are supervised, unsupervised, and _____ learning.",
+    "correct_answer": "reinforcement",
+    "explanation": "Reinforcement learning is the third family named.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "In supervised learning, training examples are _____, meaning the correct answer is known.",
+    "correct_answer": "labeled",
+    "explanation": "The chapter defines supervised learning as using labeled examples.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "In supervised learning, assigning inputs to categories such as healthy versus diseased is called _____.",
+    "correct_answer": "classification",
+    "explanation": "Classification deals with discrete categories.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "Predicting a continuous value such as soil moisture percentage is called _____.",
+    "correct_answer": "regression",
+    "explanation": "Regression is used for continuous numerical outputs.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "A model tendency to memorize training data rather than learn generalizable patterns is called _____.",
+    "correct_answer": "overfitting",
+    "explanation": "Section 15.2.1 defines overfitting in these terms.",
+    "chapter_num": 15
+  },
+  {
+    "type": "fill_blank",
+    "question": "Learning methods that work with data carrying no labels are called _____ learning methods.",
+    "correct_answer": "unsupervised",
+    "explanation": "Section 15.2.2 introduces unsupervised learning as working with unlabeled data.",
+    "chapter_num": 15
+  },
+  {
+    "type": "essay",
+    "question": "Using Section 15.1, explain the difference between artificial intelligence in general and machine learning in particular. Why is this distinction important in agriculture?",
+    "explanation": "Key points: AI is the broad umbrella term for making computers perform tasks requiring human thought; machine learning is a branch of AI where systems learn from data rather than relying only on explicit rules; importance in agriculture includes handling complex, variable field conditions and large datasets from sensors, satellites, and images.",
+    "chapter_num": 15
+  },
+  {
+    "type": "essay",
+    "question": "Section 15.1 compares AI to a seasoned agronomist. Explain this analogy and discuss both its strengths and its limitations.",
+    "explanation": "Key points: agronomist uses accumulated experience and pattern recognition; AI uses data and algorithms instead of lived experience and intuition; strength of analogy is accessibility and emphasis on pattern-based judgment; limitation is that AI lacks human context, values, and practical wisdom unless encoded or learned from data.",
+    "chapter_num": 15
+  },
+  {
+    "type": "essay",
+    "question": "Discuss why early expert systems in agriculture were considered brittle and how machine learning addressed some of those weaknesses.",
+    "explanation": "Key points: expert systems depended on hand-coded rules; they worked in narrow, anticipated situations; they struggled with variability and unforeseen cases; machine learning improved adaptability by learning patterns from data; however, machine learning introduces new challenges such as data dependence and interpretability.",
+    "chapter_num": 15
+  },
+  {
+    "type": "essay",
+    "question": "Based on Section 15.1, analyze the three developments that enabled the rapid growth of AI in agriculture during the 2010s.",
+    "explanation": "Key points: explosion of agricultural data from satellites, drones, sensors, IoT; improvements in computing power, especially GPUs; advances in algorithms, especially deep learning; students should explain how these factors reinforced one another.",
+    "chapter_num": 15
+  },
+  {
+    "type": "essay",
+    "question": "Explain how AI can augment rather than replace farmer decision-making, using the drone and nitrogen-deficiency example from Section 15.1.",
+    "explanation": "Key points: AI expands speed, scale, and data depth; drone captures field-wide multispectral information; model identifies emerging problem zones and suggests variable-rate action; farmer still evaluates recommendation and decides whether and how to act.",
+    "chapter_num": 15
+  },
+  {
+    "type": "essay",
+    "question": "In Section 15.2.1, supervised learning is divided into classification and regression. Compare these two task types and provide agricultural examples of each.",
+    "explanation": "Key points: classification predicts discrete categories such as healthy/diseased or weed/crop; regression predicts continuous values such as yield, soil moisture, or days until harvest; students should explain why the output type matters for model design and evaluation.",
+    "chapter_num": 15
+  },
+  {
+    "type": "essay",
+    "question": "Compare decision trees, random forests, support vector machines, and neural networks as tools for agricultural supervised learning.",
+    "explanation": "Key points: decision trees are interpretable; random forests improve accuracy and robustness by combining trees; SVMs are useful when features are numerous relative to observations; neural networks capture complex patterns and excel on image/time-series data but need more data and computing; discuss trade-offs among accuracy, interpretability, and resource needs.",
+    "chapter_num": 15
+  },
+  {
+    "type": "essay",
+    "question": "Why might interpretability matter in agricultural AI systems, and how do decision trees and random forests illustrate this trade-off?",
+    "explanation": "Key points: agricultural decisions affect costs, risk, and trust; users may need to understand why a recommendation was made; decision trees are easier to follow; random forests often improve performance but reduce interpretability; students may connect this to farmer adoption and accountability.",
+    "chapter_num": 15
+  },
+  {
+    "type": "essay",
+    "question": "Section 15.2 describes machine learning as a computational version of learning from experience. Critically evaluate this comparison.",
+    "explanation": "Key points: both involve detecting patterns from past observations; machine learning scales to more data and faster processing; human learning includes tacit knowledge, context, ethics, and causal reasoning not always present in models; comparison is useful but incomplete.",
+    "chapter_num": 15
+  },
+  {
+    "type": "essay",
+    "question": "Using examples from Sections 15.1 and 15.2.1, discuss how the nature of available data influences the choice of AI or machine-learning method in agriculture.",
+    "explanation": "Key points: labeled image datasets support supervised classification; continuous numerical targets support regression; high-dimensional remote sensing data may favor SVMs; large image/time-series datasets may favor neural networks; rule-based systems may be limited when variability is high.",
+    "chapter_num": 15
+  }
+]

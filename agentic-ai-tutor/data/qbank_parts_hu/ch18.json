@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "Mi ragadja meg legjobban a precíziós állattenyésztés (PLF) alapvető célját a fejezet szerint?",
+    "options": [
+      "A) Az állatgondozók teljes kiváltása robotokkal",
+      "B) Az állatok egyedi, folyamatos monitorozásával a menedzsmentdöntések javítása",
+      "C) Kizárólag a takarmányköltségek csökkentése",
+      "D) Csak a nyomon követhetőségi előírások teljesítése"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet szerint a PLF az egyes állatok és környezetük automatikus, folyamatos és valós idejű monitorozása, amely jobb menedzsmentdöntéseket támogat.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "Miért hangsúlyozták a KU Leuven kutatói az egyedi szintű adatok fontosságát?",
+    "options": [
+      "A) Mert az állatok genetikai állománya teljesen azonos",
+      "B) Mert a nyájátlag mindig pontosabban jelzi a problémákat",
+      "C) Mert minden állat komplex, egyedileg eltérő, időben változó és dinamikus rendszer",
+      "D) Mert az egyedi adatok gyűjtése olcsóbb, mint az állományszintű megfigyelés"
+    ],
+    "correct": "C",
+    "explanation": "A CITD-elv szerint minden állat komplex, egyedileg eltérő, időben változó és dinamikus rendszer, ezért az egyedi szintű adatok fontosak.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "Az alábbiak közül melyik NEM szerepel a PLF terjedését ösztönző tényezők között?",
+    "options": [
+      "A) Növekvő állományméret",
+      "B) Szűkösebb és drágább munkaerő",
+      "C) Csökkenő társadalmi elvárások az állatjóléttel kapcsolatban",
+      "D) Teljes nyomon követhetőség iránti igény"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet éppen növekvő társadalmi elvárásokat említ, nem csökkenőket.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik sorrend írja le helyesen a PLF három alaplépését?",
+    "options": [
+      "A) Döntés - adatgyűjtés - algoritmikus értelmezés",
+      "B) Adatgyűjtés - algoritmikus értelmezés - döntéstámogatás vagy beavatkozás",
+      "C) Algoritmikus értelmezés - automatikus beavatkozás - adatarchiválás",
+      "D) Adattisztítás - kézi ellenőrzés - jelentéskészítés"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet szerint először az érzékelők adatot gyűjtenek, majd algoritmusok biológiailag értelmes paraméterekké alakítják, végül a döntéstámogató rendszer riaszt vagy beavatkozik.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a háromtengelyes gyorsulásmérő egyik fő előnye a PLF-ben?",
+    "options": [
+      "A) Közvetlenül méri a bendő pH-ját",
+      "B) Három egymásra merőleges tengely mentén rögzíti a mozgást",
+      "C) Nem igényel semmilyen adatfeldolgozást",
+      "D) Kizárólag kültéri rendszerekben használható"
+    ],
+    "correct": "B",
+    "explanation": "A háromtengelyes gyorsulásmérők három egymásra merőleges tengely mentén mérik a gyorsulást, így részletes mozgásinformációt adnak.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "Miért tömörítik gyakran a gyorsulásmérők nyers jeleit epochákba?",
+    "options": [
+      "A) Mert a nyers adatok biológiailag értelmezhetetlenek és túl nagy mennyiségűek lehetnek",
+      "B) Mert az epochák növelik az érzékelő tömegét",
+      "C) Mert így nincs szükség algoritmusokra",
+      "D) Mert az epochák csak GNSS-adatokkal együtt használhatók"
+    ],
+    "correct": "A",
+    "explanation": "A nagy mintavételi frekvencia hatalmas adatmennyiséget generál, ezért a rendszerek gyakran jellemzőkbe tömörítik a jeleket.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik alkalmazás kapcsolódik történetileg a lábra rögzített érzékelőkhöz a tejiparban?",
+    "options": [
+      "A) Bendőhőmérséklet mérése",
+      "B) Ivarzás felismerése a fokozott mozgás alapján",
+      "C) Ammóniakoncentráció mérése az istállóban",
+      "D) Tej összetételének laboratóriumi elemzése"
+    ],
+    "correct": "B",
+    "explanation": "A lábra rögzített érzékelőket kezdetben egyszerű lépésszámlálóként használták az ivarzással járó megnövekedett aktivitás kimutatására.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "Miért kritikus a füljelzőbe épített érzékelők tömege?",
+    "options": [
+      "A) Mert a nagyobb tömeg javítja a rádiójel terjedését",
+      "B) Mert befolyásolja az állatjólétet és a füljelző megtartását",
+      "C) Mert csak 200 gramm felett működnek pontosan",
+      "D) Mert a könnyű eszközök nem képesek mozgást mérni"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet szerint a legtöbb kereskedelmi eszköz 40 grammnál könnyebb, hogy ne veszélyeztesse az állatjólétet és a füljelző megtartását.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a GNSS/GPS nyomkövetés egyik fő korlátja állatmonitorozásban?",
+    "options": [
+      "A) Nem ad abszolút földrajzi pozíciót",
+      "B) Csak zárt istállókban működik",
+      "C) Viszonylag magas az energiaigénye",
+      "D) Nem használható legeltetési rendszerekben"
+    ],
+    "correct": "C",
+    "explanation": "A GNSS fő korlátja a magasabb energiaigény, ami korlátozza a pozíciómeghatározás gyakoriságát.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik technológia különösen fontos az érzékelőadatok helyes állathoz rendeléséhez rögzített leolvasási pontokon?",
+    "options": [
+      "A) Passzív RFID",
+      "B) Hőkamera",
+      "C) Bendőbolus",
+      "D) Napelemmel működő gyorsulásmérő"
+    ],
+    "correct": "A",
+    "explanation": "A passzív RFID nem ad folyamatos adatot, de lehetővé teszi az egyedi azonosítást például a fejőházban vagy takarmányozóállomáson.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "Mire használhatók az aktív RFID- vagy Bluetooth-alapú közelségnaplózók?",
+    "options": [
+      "A) A bendő pH-jának közvetlen mérésére",
+      "B) Az állatok közötti kontaktusok rögzítésére és a lehetséges betegségátviteli útvonalak feltárására",
+      "C) Az istálló ammóniaszintjének mérésére",
+      "D) A tej zsírtartalmának meghatározására"
+    ],
+    "correct": "B",
+    "explanation": "Ezek a rendszerek rögzítik, amikor két állat meghatározott távolságon belülre kerül, így feltárhatók szociális kapcsolatok és fertőzési útvonalak.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "Miért értékes a bendőbolusokkal mért pH-adat a szarvasmarhatartásban?",
+    "options": [
+      "A) Mert közvetlenül jelzi a tejhozamot",
+      "B) Mert segíthet a szubakut bendőacidózis felismerésében",
+      "C) Mert helyettesíti a GNSS nyomkövetést",
+      "D) Mert kizárólag a testtömeget méri"
+    ],
+    "correct": "B",
+    "explanation": "A bendő pH-jának monitorozása különösen fontos a SARA, vagyis a szubakut bendőacidózis kimutatásában.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "A precíziós állattenyésztés ugyanazt a 'megfelelő input, megfelelő helyen, megfelelő időben' logikát alkalmazza, mint a precíziós növénytermesztés.",
+    "correct_answer": true,
+    "explanation": "A fejezet ezt kifejezetten hangsúlyozza az állattenyésztésre kiterjesztve.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "A PLF célja az emberi ítélőképesség teljes megszüntetése az állattartásban.",
+    "correct_answer": false,
+    "explanation": "A cél nem az emberi döntéshozás helyettesítése, hanem annak felerősítése.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "A KU Leuven kutatói szerint az állatok kezeléséhez elegendőek a nyáj- vagy állományszintű átlagadatok.",
+    "correct_answer": false,
+    "explanation": "Épp ellenkezőleg: az egyedi szintű adatok szükségességét hangsúlyozták.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "A társadalmi elvárások között szerepel a magasabb állatjólét, az alacsonyabb antibiotikum-felhasználás és a teljes nyomon követhetőség.",
+    "correct_answer": true,
+    "explanation": "Mindhárom tényezőt felsorolja a fejezet a PLF iránti igény mozgatórugóiként.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "A PLF-ben az algoritmusok szerepe, hogy a nyers jeleket biológiailag értelmes paraméterekké alakítsák.",
+    "correct_answer": true,
+    "explanation": "Ez a háromlépéses folyamat második eleme.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "A gyorsulásmérők kizárólag egyetlen tengely mentén mérnek mozgást.",
+    "correct_answer": false,
+    "explanation": "A modern rendszerek jellemzően háromtengelyes gyorsulásmérőket használnak.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "A kereskedelmi gyorsulásmérős rendszerek mindig 500 Hz feletti mintavételi frekvenciával működnek.",
+    "correct_answer": false,
+    "explanation": "Bár erre képesek lehetnek, a gyakorlatban sok kereskedelmi rendszer alacsonyabb frekvenciát használ vagy tömöríti az adatot.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "A nyakörvre szerelt érzékelők egyik előnye, hogy nagyobb akkumulátorok és akár napelemek is elhelyezhetők bennük.",
+    "correct_answer": true,
+    "explanation": "A fejezet ezt a nyakörves kialakítás egyik fontos előnyeként említi.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "A 200 grammot meghaladó kutatási füljelzők hosszú távon is problémamentesen használhatók voltak.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint ezeket rövid idő után el kellett távolítani szövetkárosodás miatt.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "A GNSS/GPS rendszerek egyik előnye, hogy lehetővé teszik a tájhasználat térképezését extenzív legeltetési rendszerekben.",
+    "correct_answer": true,
+    "explanation": "Ez a technológia egyik fontos alkalmazása a fejezet szerint.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "A LoRaWAN egy nagy energiaigényű kommunikációs protokoll, ezért ritkán használják állatmonitorozásban.",
+    "correct_answer": false,
+    "explanation": "A fejezet szerint éppen alacsony energiaigényű kommunikációs protokollként használják.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "A passzív RFID-jelzők folyamatos viselkedési adatfolyamot szolgáltatnak az állatról.",
+    "correct_answer": false,
+    "explanation": "A passzív RFID nem folyamatos adatforrás, hanem rögzített leolvasási pontokon azonosít.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "Az aktív RFID- vagy Bluetooth-alapú közelségnaplózók segíthetnek a szociális struktúrák feltárásában.",
+    "correct_answer": true,
+    "explanation": "A kontaktusok rögzítése révén az állatok közötti kapcsolatok elemezhetők.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "A bendőbolusok a reticulumban rögzülnek, és mérhetik a pH-t valamint a hőmérsékletet.",
+    "correct_answer": true,
+    "explanation": "A fejezet ezt részletesen leírja.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "A bendőbolusok kereskedelmi elterjedtsége meghaladja a külső érzékelőkét.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint kereskedelmi elterjedtségük elmarad a külső érzékelőkétől.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "A precíziós állattenyésztés rövidítése: _____.",
+    "correct_answer": "PLF",
+    "explanation": "A precision livestock farming magyar megfelelőjének bevett rövidítése a PLF.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "A KU Leuven kutatói szerint minden állat egy „komplex, egyedileg eltérő, időben változó és dinamikus”, azaz _____ rendszer.",
+    "correct_answer": "CITD",
+    "explanation": "A fejezet a CITD rövidítést használja erre a szemléletre.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "A PLF első lépése az érzékelőkkel történő _____ gyűjtése.",
+    "correct_answer": "adatok",
+    "explanation": "A háromlépéses folyamat első eleme az adatgyűjtés.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "A nyers jeleket biológiailag értelmes paraméterekké _____ alakítják.",
+    "correct_answer": "algoritmusok",
+    "explanation": "A második lépésben algoritmusok értelmezik a nyers szenzorjeleket.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "A gyorsulásmérők jellemzően _____ tengely mentén mérik a gyorsulást.",
+    "correct_answer": "három",
+    "explanation": "A modern állatmonitorozásban háromtengelyes gyorsulásmérők terjedtek el.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "A gyorsulásmérők nyers jeleit gyakran néhány másodperctől néhány percig terjedő _____ alatt számított jellemzőkbe tömörítik.",
+    "correct_answer": "epochák",
+    "explanation": "Az epochák csökkentik az adatmennyiséget és előkészítik az osztályozást.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "A tejiparban a lábra rögzített érzékelőket kezdetben egyszerű _____ használták az ivarzás felismerésére.",
+    "correct_answer": "lépésszámlálóként",
+    "explanation": "A fokozott aktivitás az ivarzás egyik jele, ezt lépésszámlálással követték.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "A legtöbb kereskedelmi füljelzőbe épített érzékelő tömege kevesebb mint _____ gramm.",
+    "correct_answer": "40",
+    "explanation": "Ez a tömeghatár fontos az állatjólét és a füljelző megtartása miatt.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GNSS legismertebb amerikai rendszere a _____.",
+    "correct_answer": "GPS",
+    "explanation": "A fejezet a GPS-t említi a GNSS legismertebb példájaként.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az adatok továbbítására sok GNSS-alapú rendszer alacsony energiaigényű _____ protokollt használ.",
+    "correct_answer": "LoRaWAN",
+    "explanation": "A LoRaWAN hosszú hatótávú, alacsony energiaigényű kommunikációt tesz lehetővé.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "A rádiófrekvenciás azonosító rövidítése: _____.",
+    "correct_answer": "RFID",
+    "explanation": "Az RFID az egyedi állatazonosítás egyik alaptechnológiája.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "A bendőbolusok a recésgyomorban, vagyis a _____ rögzülnek.",
+    "correct_answer": "reticulumban",
+    "explanation": "A fejezet pontosan megnevezi a boluszok rögzülési helyét.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "A bendő pH-jának monitorozása különösen értékes a szubakut bendőacidózis, röviden _____ kimutatásában.",
+    "correct_answer": "SARA",
+    "explanation": "A SARA gyakori anyagcserezavar nagy abrakhányadú takarmányozás esetén.",
+    "chapter_num": 18
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, hogyan kapcsolódik a precíziós állattenyésztés a precíziós mezőgazdaság általános alapelvéhez.",
+    "explanation": "Kulcspontok: a 'megfelelő input, megfelelő helyen, megfelelő időben' elv kiterjesztése az állattenyésztésre; egyedi állatszintű menedzsment; objektív, folyamatos és automatizált adatáramok szerepe; jobb időzítés és célzott beavatkozás.",
+    "chapter_num": 18
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be, miért vált szükségessé a PLF az állattenyésztés szerkezeti átalakulásával párhuzamosan.",
+    "explanation": "Kulcspontok: növekvő állományméret; szűkülő és dráguló munkaerő; az emberi megfigyelés korlátai; növekvő társadalmi elvárások; gazdasági és jóléti szempontok összehangolása.",
+    "chapter_num": 18
+  },
+  {
+    "type": "essay",
+    "question": "Fejtse ki a CITD-szemlélet jelentőségét az állatok monitorozásában és kezelésében.",
+    "explanation": "Kulcspontok: minden állat komplex, egyedileg eltérő, időben változó és dinamikus; az átlagok korlátai; egyedi szintű adatok szükségessége; személyre szabottabb beavatkozások.",
+    "chapter_num": 18
+  },
+  {
+    "type": "essay",
+    "question": "Ismertesse a PLF háromlépéses működési logikáját egy konkrét példán keresztül.",
+    "explanation": "Kulcspontok: adatgyűjtés érzékelőkkel; algoritmikus értelmezés; döntéstámogatás vagy automatikus beavatkozás; példa lehet ivarzásfelismerés, ammóniariasztás vagy szellőztetés módosítása.",
+    "chapter_num": 18
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze az állatra rögzített és az állaton kívüli érzékelők szerepét a PLF-ben.",
+    "explanation": "Kulcspontok: definíciók; példák állatra rögzített érzékelőkre és távoli érzékelőkre; milyen típusú adatokat szolgáltatnak; előnyök és korlátok.",
+    "chapter_num": 18
+  },
+  {
+    "type": "essay",
+    "question": "Értékelje a gyorsulásmérők előnyeit és korlátait az állati viselkedés osztályozásában.",
+    "explanation": "Kulcspontok: széles körű alkalmazás; nagy adatmennyiség; epochák és jellemzők szerepe; viselkedések elkülönítése; energia-, adatkezelési és elhelyezési szempontok.",
+    "chapter_num": 18
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, milyen tervezési kompromisszumok jelennek meg a nyakörvre és a füljelzőre szerelt érzékelők esetében.",
+    "explanation": "Kulcspontok: nyakörv előnyei: nagyobb méret, akkumulátor, akár napelem; füljelző előnyei: ismert felhelyezés; tömegkorlátok; állatjóléti és megtartási szempontok.",
+    "chapter_num": 18
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be a GNSS/GPS nyomkövetés gyakorlati hasznát és energiaellátási korlátait extenzív legeltetési rendszerekben.",
+    "explanation": "Kulcspontok: abszolút pozíció; tájhasználat térképezése; ellés felismerése mozgásmintázatból; terelés optimalizálása; magas energiaigény; ritkább mintavétel; LoRaWAN szerepe.",
+    "chapter_num": 18
+  },
+  {
+    "type": "essay",
+    "question": "Fejtse ki, miért fontos az RFID az állatmonitorozási rendszerekben akkor is, ha nem szolgáltat folyamatos adatot.",
+    "explanation": "Kulcspontok: egyedi azonosítás; rögzített leolvasási pontok; adatkapcsolás más szenzorokkal; nyomon követhetőség; passzív és aktív rendszerek közti különbség.",
+    "chapter_num": 18
+  },
+  {
+    "type": "essay",
+    "question": "Értelmezze a bendőbolusok jelentőségét és korlátait a szarvasmarhák egészségmonitorozásában.",
+    "explanation": "Kulcspontok: lenyelt, reticulumban rögzülő eszközök; pH, hőmérséklet, esetenként gyorsulás mérése; SARA felismerése; hőmérsékleti jel zavaró tényezői; pH-érzékelő korlátozott élettartama; kereskedelmi elterjedtség korlátai.",
+    "chapter_num": 18
+  }
+]

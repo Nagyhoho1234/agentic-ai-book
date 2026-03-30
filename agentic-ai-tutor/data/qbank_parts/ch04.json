@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "According to Section 4.1.1, what does a target's spectral signature describe?",
+    "options": [
+      "A) Its geographic location and elevation",
+      "B) The proportion of energy absorbed, reflected, and transmitted at each wavelength",
+      "C) The total amount of sunlight received in one day",
+      "D) The color visible to the human eye only"
+    ],
+    "correct": "B",
+    "explanation": "Section 4.1.1 defines spectral signature as the wavelength-by-wavelength pattern of absorption, reflection, and transmission.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "In Section 4.1.1, which wavelength range is identified as the visible region?",
+    "options": [
+      "A) 100-400 nm",
+      "B) 400-700 nm",
+      "C) 700-1300 nm",
+      "D) 8000-14000 nm"
+    ],
+    "correct": "B",
+    "explanation": "The chapter states that visible light spans approximately 400 to 700 nm.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "What is the main reason healthy leaves reflect strongly in the near-infrared, according to Section 4.1.2?",
+    "options": [
+      "A) High chlorophyll concentration directly emits NIR",
+      "B) Surface waxes convert red light into NIR",
+      "C) Internal leaf cellular structure scatters NIR photons efficiently",
+      "D) Leaf water absorbs visible light and releases NIR"
+    ],
+    "correct": "C",
+    "explanation": "Section 4.1.2 explains that the spongy mesophyll and air-cell interfaces scatter NIR strongly.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Why does healthy vegetation appear green in the visible spectrum?",
+    "options": [
+      "A) It absorbs green light more than red light",
+      "B) It reflects a small amount of green light while absorbing much of the blue and red",
+      "C) It emits green radiation because of leaf temperature",
+      "D) It transmits only green wavelengths through the canopy"
+    ],
+    "correct": "B",
+    "explanation": "Leaf pigments absorb most blue and red light for photosynthesis, while some green light is reflected.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "What is the 'red edge' described in Section 4.1.2?",
+    "options": [
+      "A) A sharp drop in thermal emission near 14000 nm",
+      "B) A transition where reflectance rises steeply around 700 nm",
+      "C) The boundary between SWIR and thermal infrared",
+      "D) A visible red band used only in aerial photography"
+    ],
+    "correct": "B",
+    "explanation": "The red edge is the steep increase in reflectance at the boundary between visible and NIR wavelengths around 700 nm.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "According to Section 4.1.2, what happens to SWIR reflectance as a leaf loses moisture?",
+    "options": [
+      "A) It decreases because pigments become stronger",
+      "B) It remains unchanged because SWIR is unrelated to water",
+      "C) It increases because less water is available to absorb incoming energy",
+      "D) It becomes identical to thermal emission"
+    ],
+    "correct": "C",
+    "explanation": "Water strongly absorbs in SWIR, so when leaf water declines, reflectance in those regions increases.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "What do thermal-infrared sensors primarily measure in agricultural remote sensing?",
+    "options": [
+      "A) Reflected blue and green light",
+      "B) Heat emitted by surfaces",
+      "C) Soil nutrient concentration directly",
+      "D) Wind speed above the canopy"
+    ],
+    "correct": "B",
+    "explanation": "Section 4.1.1 states that thermal-infrared sensors detect emitted heat rather than reflected sunlight.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Why can canopy temperature help reveal crop water stress before visible symptoms appear?",
+    "options": [
+      "A) Water-stressed crops always become greener first",
+      "B) Closed stomata reduce evaporative cooling, raising canopy temperature",
+      "C) Thermal sensors measure chlorophyll directly",
+      "D) Dry plants reflect less NIR than soil"
+    ],
+    "correct": "B",
+    "explanation": "Section 4.1.2 explains that stressed crops cannot cool themselves effectively through transpiration, so canopy temperature rises.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "According to Section 4.1.3, what gives remote sensing much of its agricultural power beyond ordinary aerial photography?",
+    "options": [
+      "A) The use of black-and-white film at higher altitude",
+      "B) The ability to record invisible wavelength regions such as NIR and SWIR, plus thermal emission",
+      "C) The use of hand-drawn field maps",
+      "D) The fact that all images are collected at night"
+    ],
+    "correct": "B",
+    "explanation": "The chapter emphasizes that multispectral, hyperspectral, and thermal sensing provide information unavailable in standard visible photography.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "Which statement best summarizes the physical basis of many vegetation indices mentioned in Section 4.1.2?",
+    "options": [
+      "A) Strong absorption in green and strong reflection in blue",
+      "B) Strong absorption in red and strong reflection in NIR",
+      "C) Equal reflection across all visible bands",
+      "D) Strong thermal emission and low SWIR absorption"
+    ],
+    "correct": "B",
+    "explanation": "The contrast between red absorption and NIR reflectance is described as the basis for nearly every vegetation index used in agriculture.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "In Section 4.2.1, what was the original name of Landsat 1?",
+    "options": [
+      "A) EOS-1",
+      "B) TerraScan-1",
+      "C) ERTS-1",
+      "D) AgroSat-1"
+    ],
+    "correct": "C",
+    "explanation": "The text states that NASA launched the first Earth Resources Technology Satellite (ERTS-1), later renamed Landsat 1.",
+    "chapter_num": 4
+  },
+  {
+    "type": "mcq",
+    "question": "What was a major significance of the first Landsat mission for agriculture, according to Section 4.2.1?",
+    "options": [
+      "A) It enabled direct fertilizer application from space",
+      "B) It allowed regular monitoring of broad agricultural areas using multispectral data",
+      "C) It replaced all ground scouting immediately",
+      "D) It measured root growth directly from orbit"
+    ],
+    "correct": "B",
+    "explanation": "Section 4.2.1 highlights that Landsat made it possible to monitor agricultural landscapes over broad areas at regular intervals.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Section 4.1.1 states that electromagnetic radiation includes both natural and manufactured sources.",
+    "correct_answer": true,
+    "explanation": "The chapter mentions sunlight and atmospheric radiation as natural sources, and radio towers and radar as manufactured sources.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A photon can only be reflected or absorbed when it encounters a target; transmission is not possible.",
+    "correct_answer": false,
+    "explanation": "Section 4.1.1 states that a photon may be absorbed, reflected, or transmitted.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "The visible spectrum relevant to human vision is approximately 400 to 700 nm.",
+    "correct_answer": true,
+    "explanation": "This range is explicitly given in Section 4.1.1.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Near-infrared wavelengths are visible to the human eye but difficult for sensors to detect.",
+    "correct_answer": false,
+    "explanation": "The chapter says NIR is invisible to humans but highly informative for plant analysis.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Healthy vegetation usually reflects most incoming visible radiation.",
+    "correct_answer": false,
+    "explanation": "Section 4.1.2 says vigorous canopies reflect less than ten percent of incoming visible radiation.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Chlorophyll pigments absorb much of the blue and red light used in photosynthesis.",
+    "correct_answer": true,
+    "explanation": "This is a central point in Section 4.1.2.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "The red edge refers to a steep rise in reflectance near the transition from visible to NIR wavelengths.",
+    "correct_answer": true,
+    "explanation": "The chapter defines the red edge around 700 nm.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "High NIR reflectance in healthy leaves is caused mainly by pigments such as chlorophyll.",
+    "correct_answer": false,
+    "explanation": "The text explains that NIR reflectance is mainly due to internal cellular structure, not pigments.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Leaf water strongly absorbs energy around 1450 nm and 1940 nm.",
+    "correct_answer": true,
+    "explanation": "These wavelengths are specifically identified in Section 4.1.2.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "As leaf moisture declines, SWIR reflectance tends to decrease.",
+    "correct_answer": false,
+    "explanation": "The chapter says SWIR reflectance increases as water content decreases.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Thermal-infrared sensing depends primarily on reflected sunlight rather than emitted radiation.",
+    "correct_answer": false,
+    "explanation": "Thermal sensing measures emitted heat from surfaces.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "A well-watered crop can remain cooler because transpiration provides evaporative cooling.",
+    "correct_answer": true,
+    "explanation": "Section 4.1.2 compares this process to perspiration cooling human skin.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Ordinary visible-light photographs capture all agriculturally relevant spectral information.",
+    "correct_answer": false,
+    "explanation": "Section 4.1.3 emphasizes that much useful information lies in NIR, SWIR, and thermal regions.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Each material tends to have a generally repeatable and diagnostic spectral signature.",
+    "correct_answer": true,
+    "explanation": "This is the core idea of Section 4.1.3.",
+    "chapter_num": 4
+  },
+  {
+    "type": "true_false",
+    "question": "Landsat 1 was launched before 1950.",
+    "correct_answer": false,
+    "explanation": "Section 4.2.1 states that the first mission was launched in 1972.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "In Section 4.1.1, the continuum of energy organized by wavelength is called the electromagnetic _____.",
+    "correct_answer": "spectrum",
+    "explanation": "The chapter refers to this continuum as the electromagnetic spectrum.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "The basic unit of electromagnetic energy is the _____.",
+    "correct_answer": "photon",
+    "explanation": "Section 4.1.1 identifies the photon as the basic unit of electromagnetic energy.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "The visible region spans approximately _____ to _____ nanometers.",
+    "correct_answer": "400 to 700",
+    "explanation": "This wavelength range is given directly in Section 4.1.1.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "The near-infrared region extends from about 700 to _____ nm.",
+    "correct_answer": "1300",
+    "explanation": "Section 4.1.1 gives the NIR range as about 700 to 1300 nm.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "The middle-infrared is also called short-wave _____.",
+    "correct_answer": "infrared",
+    "explanation": "The chapter uses the term short-wave infrared (SWIR).",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Healthy vegetation reflects a small amount of _____ light, which is why it appears green.",
+    "correct_answer": "green",
+    "explanation": "Section 4.1.2 explains that green light is reflected while blue and red are mostly absorbed.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A vigorous crop canopy reflects less than _____ percent of incoming visible radiation.",
+    "correct_answer": "ten",
+    "explanation": "The text states that less than ten percent of visible radiation is reflected.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "The steep increase in reflectance around 700 nm is known as the red _____.",
+    "correct_answer": "edge",
+    "explanation": "This transition is called the red edge.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "In healthy leaves, the spongy _____ tissue helps scatter NIR photons.",
+    "correct_answer": "mesophyll",
+    "explanation": "Section 4.1.2 attributes strong NIR scattering to the spongy mesophyll tissue.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Liquid water in leaf tissue absorbs strongly around 1450 nm and _____ nm.",
+    "correct_answer": "1940",
+    "explanation": "These two wavelengths are highlighted as important water absorption regions.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "A stressed crop with closed _____ cannot cool itself as effectively.",
+    "correct_answer": "stomata",
+    "explanation": "Closed stomata reduce transpiration and therefore evaporative cooling.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "Thermal sensors can detect canopy temperature differences as small as one or two degrees _____.",
+    "correct_answer": "Celsius",
+    "explanation": "The chapter notes that thermal differences of one or two degrees Celsius may be detectable.",
+    "chapter_num": 4
+  },
+  {
+    "type": "fill_blank",
+    "question": "NASA launched the first Earth Resources Technology Satellite, later renamed Landsat 1, in _____.",
+    "correct_answer": "1972",
+    "explanation": "Section 4.2.1 gives 1972 as the launch year.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Using Sections 4.1.1 and 4.1.2, explain why different parts of the electromagnetic spectrum reveal different aspects of crop condition.",
+    "explanation": "Key points: visible wavelengths relate strongly to pigments and photosynthesis; NIR is influenced by internal leaf structure; SWIR is sensitive to water content; thermal infrared reflects emitted heat and plant temperature; each region provides distinct agronomic information.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the importance of the red edge in agricultural remote sensing and how it relates to plant health.",
+    "explanation": "Key points: red edge occurs near 700 nm; marks transition from strong red absorption to strong NIR reflectance; linked to chlorophyll absorption and leaf structure; useful for vegetation indices and detecting crop vigor or stress.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Section 4.1.2 describes both pigment effects and structural effects in leaves. Compare these two mechanisms and explain how they shape spectral reflectance.",
+    "explanation": "Key points: pigments absorb mainly blue and red in visible wavelengths; structure of mesophyll scatters NIR; water absorption dominates parts of SWIR; these mechanisms together create the characteristic vegetation signature.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Why are multispectral, hyperspectral, and thermal sensors generally more useful for precision agriculture than ordinary visible-light photography? Refer to Section 4.1.3.",
+    "explanation": "Key points: visible imagery captures only a narrow spectral range; invisible bands contain information on vigor, water status, and stress; thermal reveals temperature and transpiration effects; broader spectral measurement improves discrimination and management decisions.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Explain how thermal remote sensing can support irrigation management before visual crop stress becomes obvious.",
+    "explanation": "Key points: transpiring crops cool themselves; water stress closes stomata and reduces cooling; canopy temperature rises before visible wilting; thermal maps can identify spatial variability in stress and guide irrigation timing or prioritization.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "A farmer sees two fields that look equally green to the eye. Using concepts from Sections 4.1.2 and 4.1.3, explain how remote sensing might still distinguish important differences between them.",
+    "explanation": "Key points: visible appearance may be similar while NIR, SWIR, or thermal responses differ; one field may have weaker internal structure, lower water content, or higher temperature; spectral signatures can reveal stress not visible in standard color imagery.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Describe the concept of a spectral signature and explain why it is useful for distinguishing vegetation, soil, straw, and water.",
+    "explanation": "Key points: spectral signature is the repeatable pattern of reflectance/absorption/transmission by wavelength; different materials interact with radiation differently; sensors use selected bands to classify materials and infer crop or soil conditions.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Based on Section 4.1.2, explain why SWIR bands are useful for monitoring crop water status.",
+    "explanation": "Key points: leaf water absorbs strongly in SWIR; as moisture declines, reflectance increases; drought, disease, or senescence can alter SWIR response; SWIR therefore helps assess water stress and tissue moisture.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "Summarize the historical significance of the first aerial photograph and the first Landsat mission for the development of remote sensing in agriculture.",
+    "explanation": "Key points: 1858 balloon photograph marked the beginning of aerial observation; Landsat 1 in 1972 enabled repeated broad-area multispectral monitoring from space; together they represent the transition from simple overhead imaging to systematic agricultural remote sensing.",
+    "chapter_num": 4
+  },
+  {
+    "type": "essay",
+    "question": "How does the chapter connect the physics of light-leaf interaction to practical farm decisions such as fertilizer, irrigation, and pest management?",
+    "explanation": "Key points: spectral responses reveal vigor, structure, moisture, and temperature; these indicators can be converted into maps and management zones; remote sensing supports earlier and more spatially targeted interventions.",
+    "chapter_num": 4
+  }
+]

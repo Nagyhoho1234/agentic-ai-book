@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "Miért tekinthető a pontos helymeghatározás a precíziós mezőgazdaság alapjának?",
+    "options": [
+      "A) Mert kiváltja a talajvizsgálatot minden esetben",
+      "B) Mert lehetővé teszi a helyspecifikus kijuttatást, az adatok térbeli összevetését és az automatizálást",
+      "C) Mert csökkenti a műholdak számát, amelyre a vevőnek szüksége van",
+      "D) Mert megszünteti a gépkezelő szerepét minden munkaműveletben"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet szerint a pontos pozíció teszi lehetővé a változó dózisú kijuttatást, az évek közötti adatrétegek összehasonlítását és az automatizált működést is.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "Mi a pontatlan helymeghatározás egyik közvetlen következménye műtrágyaszórás során?",
+    "options": [
+      "A) A műholdjelek teljes elvesztése",
+      "B) A talajminták automatikus torzulása",
+      "C) Átfedések és kihagyott sávok kialakulása",
+      "D) A traktor motorjának túlmelegedése"
+    ],
+    "correct": "C",
+    "explanation": "Pontatlan vezetés esetén a kezelő becslésre hagyatkozik, ami dupla kijuttatást vagy kihagyott területeket okozhat.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "Miért haszontalan egy változó dózisú kijuttatási térkép, ha a gép helyzete nem ismert megbízhatóan valós időben?",
+    "options": [
+      "A) Mert a műtrágya összetétele megváltozik",
+      "B) Mert a gép nem tudja, melyik zónában jár éppen",
+      "C) Mert a térkép csak betakarításkor használható",
+      "D) Mert a GNSS csak éjszaka működik pontosan"
+    ],
+    "correct": "B",
+    "explanation": "A helyspecifikus kijuttatás lényege, hogy a gép a megfelelő helyen a megfelelő dózist adja ki; ehhez tudnia kell, melyik zónában van.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik állítás írja le helyesen a trilateráció lényegét?",
+    "options": [
+      "A) A pozíciót a műholdak sebességéből számítjuk ki",
+      "B) A pozíciót több ismert helyzetű objektumtól mért távolság alapján határozzuk meg",
+      "C) A pozíciót kizárólag domborzati térképekből becsüljük",
+      "D) A pozíciót a gép haladási irányából vezetjük le"
+    ],
+    "correct": "B",
+    "explanation": "A trilateráció során több, ismert pozíciójú műholdtól mért távolságból számítjuk ki a vevő helyzetét.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "Miért szükséges legalább négy műhold jele a gyakorlatban a GNSS-vevő számára?",
+    "options": [
+      "A) Mert három műhold csak a sebességet adja meg",
+      "B) Mert a negyedik műhold a vevő belső órájának hibáját segít korrigálni",
+      "C) Mert négy alatt a műholdak nem sugároznak efemeris-adatot",
+      "D) Mert a mezőgazdasági gépek csak négyesével tudnak adatot fogadni"
+    ],
+    "correct": "B",
+    "explanation": "A negyedik műholdra azért van szükség, mert a vevő órája nem olyan pontos, mint a műholdak atomórái, ezért az időhiba korrekciója nélkül a helyzet nem határozható meg kellő pontossággal.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "Mit tartalmaz a műhold által sugárzott jel a fejezet szerint?",
+    "options": [
+      "A) Csak a műhold sebességét és üzemanyag-szintjét",
+      "B) Efemeris-adatokat és időkódot",
+      "C) Csak a földi referenciaállomások koordinátáit",
+      "D) Vetési és permetezési előírásokat"
+    ],
+    "correct": "B",
+    "explanation": "A műholdjel két alapvető információt hordoz: a műhold pályapozícióját leíró efemeris-adatokat és az időméréshez szükséges időkódot.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "Miért okozhatnak nagyon nagy távolsághibát az apró időmérési hibák?",
+    "options": [
+      "A) Mert a rádióhullámok nagyon lassan terjednek",
+      "B) Mert a rádióhullámok fénysebességgel terjednek",
+      "C) Mert a műholdak folyamatosan állnak a Föld felett",
+      "D) Mert a vevő nem használ matematikai korrekciót"
+    ],
+    "correct": "B",
+    "explanation": "A jel közel fénysebességgel terjed, ezért nagyon kis időeltérés is nagy úthosszhibát jelent.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik példa mutatja legjobban a helymeghatározás szerepét a több év alatt felhalmozott adatok elemzésében?",
+    "options": [
+      "A) A motorolaj-fogyasztás összevetése a gumiabroncs nyomásával",
+      "B) A hozamtérképek, talajminták és távérzékelési adatok egységes koordinátarendszerben való összehasonlítása",
+      "C) A műholdak pályasíkjainak kézi rajzolása",
+      "D) A vetőmagzsákok tömegének nyilvántartása"
+    ],
+    "correct": "B",
+    "explanation": "A fejezet hangsúlyozza, hogy az adatrétegek elemzési ereje abból származik, hogy ugyanahhoz a térbeli referenciához köthetők.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik állítás igaz a GPS-rendszer történetére és felépítésére a szöveg alapján?",
+    "options": [
+      "A) Az 1950-es években készült el teljesen, 12 műholddal",
+      "B) A rendszert az Európai Unió fejlesztette ki, és 2005-ben indult",
+      "C) Az Egyesült Államok Védelmi Minisztériuma fejlesztette, és 1995-ben érte el a teljes műveleti képességet",
+      "D) Kezdetben kizárólag mezőgazdasági célokra tervezték"
+    ],
+    "correct": "C",
+    "explanation": "A fejezet szerint a GPS-t az USA Védelmi Minisztériuma fejlesztette, és 1995-ben vált teljesen működőképessé.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "Miért használ a legtöbb vevő a minimumon felül több műholdat is?",
+    "options": [
+      "A) Hogy csökkentse a számítási igényt",
+      "B) Hogy javítsa a pozíció pontosságát és megbízhatóságát",
+      "C) Hogy ne kelljen efemeris-adatokat fogadnia",
+      "D) Hogy a földi internetkapcsolatot helyettesítse"
+    ],
+    "correct": "B",
+    "explanation": "A gyakorlatban a több látható műhold használata növeli a helymeghatározás robusztusságát és pontosságát.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "Mit jelent a fejezet szerint az, hogy a műholdas navigáció a gazdálkodást „koordinátákra és centiméterekre építő gyakorlattá” alakította?",
+    "options": [
+      "A) A gazdálkodás teljesen megszűnt biológiai folyamat lenni",
+      "B) A döntések szubjektív terepismeret helyett pontos térbeli adatokra támaszkodhatnak",
+      "C) Minden tábla alakja szabályos négyszög lett",
+      "D) A műholdak közvetlenül irányítják a növények növekedését"
+    ],
+    "correct": "B",
+    "explanation": "A szöveg a hagyományos, szubjektív tájékozódást állítja szembe a pontos, megosztható és géppel kezelhető koordinátaalapú megközelítéssel.",
+    "chapter_num": 7
+  },
+  {
+    "type": "mcq",
+    "question": "Melyik frekvenciapár tartozik az eredeti GPS-jelekhez a szöveg alapján?",
+    "options": [
+      "A) 1575,42 MHz és 1227,60 MHz",
+      "B) 1227,60 MHz és 299 792 MHz",
+      "C) 55 MHz és 24 MHz",
+      "D) 1575,42 MHz és 20 000 MHz"
+    ],
+    "correct": "A",
+    "explanation": "A fejezet az L1 és L2 jelekhez rendre az 1575,42 MHz és 1227,60 MHz frekvenciákat rendeli.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "A precíziós mezőgazdaságban a pontos helymeghatározás csak a vetésnél fontos, más műveleteknél kevésbé.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint a pontosság a teljes termelési ciklusban fontos: vetésnél, kijuttatásnál, permetezésnél, betakarításnál és automatizálásnál is.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "Az átfedések műtrágyaszóráskor növelhetik a tápanyag-lemosódás kockázatát.",
+    "correct_answer": true,
+    "explanation": "A dupla adag nemcsak költséges, hanem környezeti kockázatot is jelent.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "A kihagyott sávok azért problémásak, mert ott a növények kevesebb vagy semennyi inputot nem kapnak.",
+    "correct_answer": true,
+    "explanation": "A szöveg szerint a kihagyott területek visszafoghatják a növényfejlődést.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "A helyspecifikus gazdálkodás működhet megbízható helymeghatározás nélkül is, ha a kijuttatási térkép elég részletes.",
+    "correct_answer": false,
+    "explanation": "A térkép önmagában nem elég; a gépnek tudnia kell, hogy éppen melyik zónában van.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "Az egymást követő évek hozamtérképei csak akkor hasonlíthatók össze érdemben, ha közös térbeli referenciához kapcsolódnak.",
+    "correct_answer": true,
+    "explanation": "Az adatrétegek összevethetőségének alapja az egységes koordinátarendszer.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "A műholdas helymeghatározás lényege, hogy a vevő a műholdak színéből következtet a távolságra.",
+    "correct_answer": false,
+    "explanation": "A távolságot az időkódok összehasonlításából és a jel terjedési idejéből számítják.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "A rádióhullámok terjedési sebessége miatt egy ezredmásodpercnyi időhiba is nagyon nagy távolsághibát okozhat.",
+    "correct_answer": true,
+    "explanation": "A fejezet szerint egyetlen ezredmásodpercnyi eltérés közel 300 kilométeres hibát eredményezhet.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "Egyetlen távolságmérés a vevő pontos koordinátáját adja meg.",
+    "correct_answer": false,
+    "explanation": "Egyetlen mérés csak egy gömb felszínére helyezi a vevőt, nem ad egyedi pontot.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "Három műhold mérése után általában két lehetséges pont marad, amelyek közül az egyik rendszerint kizárható.",
+    "correct_answer": true,
+    "explanation": "Ez a trilateráció geometriai következménye, ahogy a szöveg leírja.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "A negyedik műholdra azért van szükség, mert a műholdak órái pontatlanabbak, mint a vevőé.",
+    "correct_answer": false,
+    "explanation": "Épp ellenkezőleg: a műholdakon atomórák vannak, a vevő órája kevésbé pontos.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "A legtöbb mezőgazdasági vevő másodpercenként többször frissíti a pozícióját.",
+    "correct_answer": true,
+    "explanation": "A valós idejű kormányzási és vezérlési feladatok ezt igénylik.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "A GPS eredetileg polgári mezőgazdasági vállalkozások közös fejlesztéseként indult.",
+    "correct_answer": false,
+    "explanation": "A szöveg szerint az Egyesült Államok Védelmi Minisztériuma fejlesztette ki.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "A GPS eredeti rendszere 24 műholdból állt, hat pályasíkon elosztva.",
+    "correct_answer": true,
+    "explanation": "Ez a fejezetben szereplő alapkonstelláció.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "A GPS-rendszert úgy tervezték, hogy a Föld bármely pontjáról mindig legalább négy műhold látható legyen.",
+    "correct_answer": true,
+    "explanation": "Ez biztosítja a folyamatos helymeghatározás lehetőségét.",
+    "chapter_num": 7
+  },
+  {
+    "type": "true_false",
+    "question": "Az L1 és L2 eredeti GPS-jelek frekvenciái 55° és 12 óra.",
+    "correct_answer": false,
+    "explanation": "Az 55° a pályahajlásra, a 12 óra a keringési időre utal; az L1 és L2 frekvenciák MHz-ben vannak megadva.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "A több távolságmérésből történő pozíciószámítás neve _____.",
+    "correct_answer": "trilateráció",
+    "explanation": "A fejezet ezt a geometriai helymeghatározási eljárást trilaterációnak nevezi.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "A műholdak által sugárzott pályapozíciós információk neve _____.",
+    "correct_answer": "efemeris-adatok",
+    "explanation": "Az efemeris-adatok írják le a műhold adott pillanatbeli pályapozícióját.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "A műholdjel másik alapvető összetevője az _____, amelyből a vevő a távolságot számítja.",
+    "correct_answer": "időkód",
+    "explanation": "Az időkód segítségével számítható ki a jel terjedési ideje.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "A rádióhullámok megközelítőleg _____ kilométer/másodperc sebességgel terjednek.",
+    "correct_answer": "299 792",
+    "explanation": "A szöveg ezt az értéket adja meg a fénysebesség közelítő értékeként.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "Egy _____ műhold jele szükséges a vevő belső órájának hibakorrekciójához.",
+    "correct_answer": "negyedik",
+    "explanation": "Három mérés után még kezelni kell az órahibát, ezért kell a negyedik műhold.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "A pontatlan helymeghatározás következménye lehet az átfedés és a _____ sávok kialakulása.",
+    "correct_answer": "kihagyott",
+    "explanation": "A fejezet az átfedéseket és a kihagyott sávokat emeli ki.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "A helyspecifikus gazdálkodás teljes logikája a pontos, megbízható és _____ helymeghatározáson áll vagy bukik.",
+    "correct_answer": "ismételhető",
+    "explanation": "A szöveg ezt a három követelményt együtt hangsúlyozza.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GPS teljes műveleti képességét _____-ben érte el.",
+    "correct_answer": "1995",
+    "explanation": "A fejezet szerint ekkor vált teljesen működőképessé a rendszer.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az eredeti GPS-rendszert _____ műholdból álló alapkonstelláció jellemezte.",
+    "correct_answer": "24",
+    "explanation": "A szöveg a 24 műholdas alapkonstellációt említi.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "A GPS műholdjai hat pályasíkon helyezkedtek el, _____°-os pályahajlással.",
+    "correct_answer": "55",
+    "explanation": "A fejezet ezt az inklinációs értéket adja meg.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "Egy GPS-műhold megközelítőleg _____ óra alatt kerüli meg a Földet.",
+    "correct_answer": "12",
+    "explanation": "A szöveg szerint a műholdak nagyjából 12 órás keringési idejűek.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az eredeti GPS-jelek közül az L1 frekvenciája _____ MHz.",
+    "correct_answer": "1575,42",
+    "explanation": "A fejezet ezt az értéket rendeli az L1 jelhez.",
+    "chapter_num": 7
+  },
+  {
+    "type": "fill_blank",
+    "question": "Az eredeti GPS-jelek közül az L2 frekvenciája _____ MHz.",
+    "correct_answer": "1227,60",
+    "explanation": "A fejezet ezt az értéket rendeli az L2 jelhez.",
+    "chapter_num": 7
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, miért nem tekinthető „mérnöki luxusnak” a centiméteres pontosságú helymeghatározás a mezőgazdaságban.",
+    "explanation": "Kulcspontok: átfedések és kihagyások gazdasági következményei; inputpazarlás és terméskiesés; környezeti kockázatok; a teljes termelési ciklusra gyakorolt hatás.",
+    "chapter_num": 7
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be, hogyan függ össze a változó dózisú kijuttatás és a valós idejű helymeghatározás.",
+    "explanation": "Kulcspontok: zónák szerinti eltérő előírások; a gépnek tudnia kell, hol van a kijuttatás pillanatában; térkép és pozíció összekapcsolása; hibás pozíció esetén hibás dózis.",
+    "chapter_num": 7
+  },
+  {
+    "type": "essay",
+    "question": "Fejtse ki, hogyan segíti a pontos helymeghatározás a több év alatt gyűjtött mezőgazdasági adatok elemzését.",
+    "explanation": "Kulcspontok: hozamtérképek, talajminták, kártevő-felderítés, távérzékelés; közös térbeli referencia; adatrétegek egymásra helyezése; rejtett mintázatok felismerése.",
+    "chapter_num": 7
+  },
+  {
+    "type": "essay",
+    "question": "Írja le a műholdas távolságmérés alapelvét és a trilateráció folyamatát.",
+    "explanation": "Kulcspontok: ismert pozíciójú műholdak; jelterjedési időből számított távolság; egy mérés = gömb, két mérés = kör, három mérés = két pont; negyedik műhold az órahiba miatt.",
+    "chapter_num": 7
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, miért kritikus tényező az időmérés pontossága a GNSS-rendszerekben.",
+    "explanation": "Kulcspontok: rádióhullámok fénysebessége; kis időhiba nagy távolsághibát okoz; ezredmásodperc nagyságrendű eltérés következménye; atomórák és vevőórák különbsége.",
+    "chapter_num": 7
+  },
+  {
+    "type": "essay",
+    "question": "Elemezze, hogyan kapcsolódik a helymeghatározás az automatizálás és autonómia fejlődéséhez a mezőgazdaságban.",
+    "explanation": "Kulcspontok: automatikus kormányzás, célzott kezelés, gépflották koordinációja; minimális emberi beavatkozás; növekvő pontossági és megbízhatósági igény.",
+    "chapter_num": 7
+  },
+  {
+    "type": "essay",
+    "question": "Hasonlítsa össze a hagyományos, tapasztalati tájékozódást a koordinátaalapú precíziós megközelítéssel.",
+    "explanation": "Kulcspontok: helyi tudás értéke; szubjektivitás és korlátozott megoszthatóság; gépi feldolgozhatóság; objektív, ismételhető térbeli referencia.",
+    "chapter_num": 7
+  },
+  {
+    "type": "essay",
+    "question": "Mutassa be a GPS-rendszer főbb jellemzőit a fejezet alapján.",
+    "explanation": "Kulcspontok: fejlesztő szervezet; történeti indulás; teljes műveleti képesség ideje; 24 műholdas alapkonstelláció; hat pályasík; 55° pályahajlás; kb. 12 órás keringési idő.",
+    "chapter_num": 7
+  },
+  {
+    "type": "essay",
+    "question": "Magyarázza el, miért javítja a pozíció pontosságát és megbízhatóságát, ha a vevő a minimumnál több műhold jelét használja.",
+    "explanation": "Kulcspontok: redundancia; kedvezőbb geometria; robusztusabb számítás; megbízhatóbb valós idejű működés mezőgazdasági környezetben.",
+    "chapter_num": 7
+  },
+  {
+    "type": "essay",
+    "question": "Adjon példát arra, hogyan vezethet egy tartósan gyenge hozamú zóna felismerése gyakorlati beavatkozáshoz, ha az adatok pontosan georeferáltak.",
+    "explanation": "Kulcspontok: hozamtérkép és más adatrétegek összevetése; talajtömörödés vagy vízelvezetési probléma azonosítása; célzott beavatkozás; a térbeli referencia szerepe a döntéstámogatásban.",
+    "chapter_num": 7
+  }
+]

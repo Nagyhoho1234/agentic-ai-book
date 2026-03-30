@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "According to Section 17.1, what is the core economic logic behind precision agriculture?",
+    "options": [
+      "A) Uniform treatment maximizes simplicity and therefore profit",
+      "B) Fields are usually uniform enough that average input rates are optimal",
+      "C) If fields are variable, uniform treatment wastes inputs and sacrifices yield",
+      "D) Precision agriculture is profitable mainly because it increases machinery size"
+    ],
+    "correct": "C",
+    "explanation": "Section 17.1 argues that when fields are not uniform, applying uniform treatments leads to overapplication in some zones and underapplication in others, causing waste and lost revenue.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "Which of the following is the best example of an operational efficiency benefit rather than a direct input-saving benefit? [Section 17.1]",
+    "options": [
+      "A) Applying less fertilizer in low-need zones",
+      "B) Reducing overlap between machinery passes using automated guidance",
+      "C) Increasing yield by matching seed rate to soil productivity",
+      "D) Lowering herbicide use through patch spraying"
+    ],
+    "correct": "B",
+    "explanation": "Automated guidance improves efficiency by reducing overlap, extending effective working width, and reducing operator fatigue, rather than directly changing input rates.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "In the chapter's discussion of risk management, precision agriculture should be evaluated not only by average profitability but also by its ability to:",
+    "options": [
+      "A) Increase annual labor requirements",
+      "B) Reduce the variance in farm income over time",
+      "C) Eliminate all weather-related risk",
+      "D) Replace all conventional management knowledge"
+    ],
+    "correct": "B",
+    "explanation": "Section 17.1 notes that PA can reduce income variability, not just raise mean profitability.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "Which cost is most likely to be overlooked in a weak economic evaluation of precision agriculture? [Section 17.2]",
+    "options": [
+      "A) Purchase price of hardware",
+      "B) Fuel cost for tractors",
+      "C) Human capital costs such as learning and data interpretation",
+      "D) The existence of crop prices"
+    ],
+    "correct": "C",
+    "explanation": "The chapter emphasizes that time, training, and skill needed to use and interpret PA technologies are often underestimated.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "A farmer buys a yield monitor but never analyzes the data. Economically, this illustrates which principle? [Section 17.2.1]",
+    "options": [
+      "A) Sunk costs always generate future benefits",
+      "B) Technology creates value automatically once installed",
+      "C) Capital investment without managerial capacity may fail to produce returns",
+      "D) Data collection is more valuable than decision-making"
+    ],
+    "correct": "C",
+    "explanation": "The text explicitly notes that a yield monitor left unused has incurred cost without delivering benefit.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "Which of the following would best fit under 'direct input savings' in Section 17.2.2?",
+    "options": [
+      "A) Better legal protection against misapplication claims",
+      "B) Reduced fertilizer, seed, fuel, or pesticide use",
+      "C) Lower discount rates in NPV calculations",
+      "D) Increased need for software subscriptions"
+    ],
+    "correct": "B",
+    "explanation": "Direct input savings are described as reductions in fertilizer, seed, fuel, and pesticide use.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "Which benefit category in the chapter is described as often underappreciated?",
+    "options": [
+      "A) Product quality improvements",
+      "B) Environmental payments",
+      "C) Operational efficiency improvements",
+      "D) Hardware resale value"
+    ],
+    "correct": "C",
+    "explanation": "Section 17.1 states that operational efficiency benefits are a second category of economic benefit that is often underappreciated.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "Why might environmental benefits still matter economically even if they are not directly monetized? [Section 17.2.2]",
+    "options": [
+      "A) They guarantee higher yields every year",
+      "B) They can reduce regulatory risk and support long-term productivity",
+      "C) They eliminate the need for investment analysis",
+      "D) They make hardware cheaper to purchase"
+    ],
+    "correct": "B",
+    "explanation": "The chapter notes that environmental benefits may have economic value through lower regulatory risk, environmental payments, green premiums, and improved long-term soil health.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "Which of the following is identified as a recurring cost rather than an initial investment cost? [Section 17.2.1]",
+    "options": [
+      "A) Purchase of a variable-rate controller",
+      "B) Purchase of a drone",
+      "C) Annual subscription fee for correction signals or software",
+      "D) Purchase of a yield monitor"
+    ],
+    "correct": "C",
+    "explanation": "Subscription fees for correction services, software licenses, and cloud platforms are recurring costs over the life of the technology.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "According to the chapter introduction, whether precision agriculture pays depends on all of the following EXCEPT:",
+    "options": [
+      "A) The technology in question",
+      "B) The scale of the operation",
+      "C) The management skill of the farmer",
+      "D) The color of the machinery"
+    ],
+    "correct": "D",
+    "explanation": "The introduction lists technology, scale, crop, within-field variability, and management skill as key determinants, not machinery color.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "What is the main purpose of using NPV and IRR in Section 17.2.3?",
+    "options": [
+      "A) To map within-field variability",
+      "B) To compare costs and benefits over the expected life of an investment",
+      "C) To estimate weed density from satellite images",
+      "D) To replace managerial judgment entirely"
+    ],
+    "correct": "B",
+    "explanation": "Section 17.2.3 introduces NPV and IRR as standard tools for evaluating investment profitability over time.",
+    "chapter_num": 17
+  },
+  {
+    "type": "mcq",
+    "question": "Which scenario best illustrates the chapter's idea of capturing yield that would otherwise be lost? [Section 17.1]",
+    "options": [
+      "A) Applying the same seed rate everywhere for convenience",
+      "B) Ignoring poor zones to save time",
+      "C) Matching seed or fertilizer rates to local productive capacity within the field",
+      "D) Buying larger machinery regardless of field variability"
+    ],
+    "correct": "C",
+    "explanation": "The business case centers on matching inputs to local conditions to reduce waste and recover yield lost under uniform management.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "Section 17.1 argues that the long-term survival of a precision agriculture technology depends in part on whether it pays economically.",
+    "correct_answer": true,
+    "explanation": "The chapter opens by stating that regardless of technical elegance or environmental benefits, long-term survival depends on whether the technology pays.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter presents the economics of precision agriculture as a simple yes-or-no question with a universal answer.",
+    "correct_answer": false,
+    "explanation": "The introduction explicitly says the answer is nuanced and depends on multiple factors.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "Uniform fertilizer application on a variable field can result in both wasted inputs and foregone yield.",
+    "correct_answer": true,
+    "explanation": "Overfertilized zones waste input and may cause environmental damage, while underfertilized zones lose yield and revenue.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "Variable-rate seeding is described as adjusting plant population to the productive capacity of different soil zones.",
+    "correct_answer": true,
+    "explanation": "Section 17.1 gives this as a key example of precision management.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "Automated guidance systems mainly create value by increasing fertilizer rates in high-yield zones.",
+    "correct_answer": false,
+    "explanation": "Their main value in the text is operational efficiency: reducing overlap, extending working width, and reducing fatigue.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "Precision agriculture can contribute to risk management by improving documentation and yield estimation.",
+    "correct_answer": true,
+    "explanation": "The chapter notes legal protection from documentation and improved marketing decisions from better pre-harvest yield estimates.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "A proper cost-benefit analysis should include only direct effects such as fertilizer savings and yield increases.",
+    "correct_answer": false,
+    "explanation": "Section 17.2 stresses that indirect costs and benefits must also be included.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "Initial investment costs are the only economically relevant costs of precision agriculture technologies.",
+    "correct_answer": false,
+    "explanation": "Recurring costs, maintenance, data collection, and human capital costs are also important.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "Human capital costs include the time and skill needed to interpret data and turn it into management decisions.",
+    "correct_answer": true,
+    "explanation": "This is explicitly emphasized in Section 17.2.1.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "If a farmer lacks time or expertise to process yield monitor data, the monitor may fail to generate economic benefit.",
+    "correct_answer": true,
+    "explanation": "The chapter gives this exact logic as an example of overlooked costs and unrealized benefits.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "Operational benefits mentioned in Section 17.2.2 include the ability to work in poor visibility conditions.",
+    "correct_answer": true,
+    "explanation": "This is listed among the operational benefits of PA technologies.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "Environmental benefits have no economic relevance unless they are directly paid for in cash.",
+    "correct_answer": false,
+    "explanation": "The text says they may matter through regulatory risk reduction, green premiums, environmental payments, and long-term soil health.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "According to the chapter, precision agriculture can allow a farm to operate more land with the same equipment complement.",
+    "correct_answer": true,
+    "explanation": "This is one of the operational efficiency gains associated with automated guidance and improved field efficiency.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter suggests that precision agriculture eliminates all major sources of farm risk, including weather and prices.",
+    "correct_answer": false,
+    "explanation": "It says farming remains risky, but PA can mitigate some risks rather than eliminate them all.",
+    "chapter_num": 17
+  },
+  {
+    "type": "true_false",
+    "question": "Net Present Value and Internal Rate of Return are introduced as tools for investment analysis over the technology's expected life.",
+    "correct_answer": true,
+    "explanation": "Section 17.2.3 presents NPV and IRR as standard tools once annual costs and benefits are identified.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "According to the chapter introduction, farmers are, above all, _____.",
+    "correct_answer": "businesspeople",
+    "explanation": "The chapter begins by emphasizing that farmers must evaluate technology as businesspeople.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "The fundamental economic argument for precision agriculture is that if a field is not _____, treating it as though it were uniform is wasteful.",
+    "correct_answer": "uniform",
+    "explanation": "Section 17.1 states this directly as the basis of the business case.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "Applying too much input in some zones creates wasted cost and potential _____ damage.",
+    "correct_answer": "environmental",
+    "explanation": "The chapter links overapplication to both wasted input cost and environmental damage.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "Variable-rate seeding adjusts plant population to the productive capacity of different soil _____.",
+    "correct_answer": "zones",
+    "explanation": "This is the wording used in Section 17.1.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "Site-specific herbicide application targets _____ where weeds are present rather than spraying the entire field.",
+    "correct_answer": "patches",
+    "explanation": "The chapter uses weed patches as the example of site-specific herbicide use.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "Automated guidance systems reduce _____ between machinery passes.",
+    "correct_answer": "overlap",
+    "explanation": "Reducing overlap is one of the main efficiency gains described.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "Precision agriculture should be evaluated not only by mean profitability but also by its ability to reduce the _____ of farm income over time.",
+    "correct_answer": "variance",
+    "explanation": "The chapter cites this as an important risk-management perspective.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "The most visible cost category in Section 17.2.1 is the initial _____ cost.",
+    "correct_answer": "investment",
+    "explanation": "Initial investment cost refers to the upfront purchase price of hardware.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "Annual fees for satellite correction signals and software are examples of _____ costs.",
+    "correct_answer": "recurring",
+    "explanation": "These costs continue over the life of the technology rather than occurring only once.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "Learning to operate a new technology and interpret its data are part of _____ capital costs.",
+    "correct_answer": "human",
+    "explanation": "The chapter explicitly highlights human capital costs.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "Improvements in product quality, such as more uniform grain moisture or protein content, can generate _____ prices.",
+    "correct_answer": "premium",
+    "explanation": "Section 17.2.2 notes that quality improvements may earn premium prices.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "Environmental benefits may support long-term _____ health that sustains productivity over decades.",
+    "correct_answer": "soil",
+    "explanation": "The text connects environmental benefits to improved long-term soil health.",
+    "chapter_num": 17
+  },
+  {
+    "type": "fill_blank",
+    "question": "Two standard investment analysis tools named in Section 17.2.3 are NPV and _____.",
+    "correct_answer": "IRR",
+    "explanation": "The chapter identifies Net Present Value and Internal Rate of Return as common tools.",
+    "chapter_num": 17
+  },
+  {
+    "type": "essay",
+    "question": "Using Section 17.1, explain why within-field variability is central to the economic case for precision agriculture.",
+    "explanation": "Key points: uniform treatment on variable fields causes overapplication in some zones and underapplication in others; this creates both wasted input costs and lost yield/revenue; PA creates value by matching inputs to local conditions; examples may include fertilizer, seed, herbicide, and irrigation.",
+    "chapter_num": 17
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the difference between direct input-saving benefits and operational efficiency benefits in precision agriculture. Use examples from Sections 17.1 and 17.2.2.",
+    "explanation": "Key points: direct savings include less fertilizer, seed, fuel, or pesticide; operational efficiency includes reduced overlap and skip, faster operations, less fatigue, ability to work in poor visibility, more land farmed with same equipment; students should distinguish mechanisms of value creation.",
+    "chapter_num": 17
+  },
+  {
+    "type": "essay",
+    "question": "Why does the chapter argue that precision agriculture should be assessed as a risk-management tool as well as a profit-enhancing tool?",
+    "explanation": "Key points: farming faces weather, price, pest, and regulatory risks; PA can improve documentation, stabilize yields through better targeting, improve pre-harvest yield estimates, and reduce income variance over time; evaluation should include both average returns and variability of returns.",
+    "chapter_num": 17
+  },
+  {
+    "type": "essay",
+    "question": "Outline a comprehensive cost-benefit analysis for a farmer considering a new RTK-GNSS guidance system. Refer to Section 17.2.",
+    "explanation": "Key points: include initial hardware purchase; possible RTK correction/base-station costs; recurring subscriptions; maintenance and repair; training and time costs; expected benefits such as reduced overlap, lower fuel use, labor/time savings, ability to work longer hours, improved timeliness, and possible machinery cost reductions; compare over expected life using NPV/IRR.",
+    "chapter_num": 17
+  },
+  {
+    "type": "essay",
+    "question": "Explain why human capital costs can determine whether a precision agriculture investment succeeds or fails.",
+    "explanation": "Key points: technology does not create value automatically; users must learn operation, data interpretation, and decision-making; time and expertise are scarce; unused or poorly used data systems generate cost without benefit; management skill is a major determinant of profitability.",
+    "chapter_num": 17
+  },
+  {
+    "type": "essay",
+    "question": "Evaluate the statement: 'If a precision technology reduces input use, it is automatically profitable.'",
+    "explanation": "Key points: profitability depends on full costs and benefits, not one metric; must consider purchase cost, subscriptions, maintenance, data collection, training, yield effects, quality effects, labor/time savings, and risk impacts; reduced input use alone may not offset total costs.",
+    "chapter_num": 17
+  },
+  {
+    "type": "essay",
+    "question": "How can environmental benefits from precision agriculture have economic value even when they are not directly sold in the market?",
+    "explanation": "Key points: reduced regulatory risk, eligibility for environmental payments, green premiums, avoidance of environmental damage, and better long-term soil health sustaining productivity; students should connect environmental outcomes to financial consequences.",
+    "chapter_num": 17
+  },
+  {
+    "type": "essay",
+    "question": "Compare the economic roles of variable-rate input application and automated guidance systems.",
+    "explanation": "Key points: variable-rate systems mainly create value through better matching of inputs to local need, affecting input use and yield; guidance systems mainly create value through efficiency, reduced overlap, timeliness, and labor/fatigue effects; both may contribute to profitability but through different channels.",
+    "chapter_num": 17
+  },
+  {
+    "type": "essay",
+    "question": "Why is it a mistake to focus only on obvious direct effects when evaluating precision agriculture investments?",
+    "explanation": "Key points: indirect costs and benefits may be equally important; overlooked items include subscriptions, maintenance, data collection, training, management time, labor savings, quality improvements, environmental effects, and risk reduction; incomplete analysis can misstate true profitability.",
+    "chapter_num": 17
+  },
+  {
+    "type": "essay",
+    "question": "The chapter says that for many farms the question is no longer whether to adopt precision agriculture, but which technologies to adopt first. Explain the economic reasoning behind this shift.",
+    "explanation": "Key points: economics have improved steadily over three decades; adoption now depends on matching technologies to farm conditions, scale, crop, variability, and management capacity; not all technologies have equal returns; prioritization should reflect strongest business case and implementation capacity.",
+    "chapter_num": 17
+  }
+]

@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "According to Section 9.1, what is the main goal of precision irrigation compared with traditional irrigation?",
+    "options": [
+      "A) To maximize water application uniformly across the field",
+      "B) To reduce labor by eliminating all irrigation decisions",
+      "C) To deliver the right amount of water in the right place at the right time",
+      "D) To replace all fertilizer inputs with water-based treatments"
+    ],
+    "correct": "C",
+    "explanation": "Section 9.1 emphasizes that precision agriculture seeks to apply exactly the right amount of water, in the right place, at the right time, rather than using uniform irrigation.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "In Section 9.1, agriculture is described as accounting for approximately what share of global freshwater withdrawals?",
+    "options": [
+      "A) 30%",
+      "B) 50%",
+      "C) 70%",
+      "D) 90%"
+    ],
+    "correct": "C",
+    "explanation": "Section 9.1 states that agriculture accounts for about 70 percent of freshwater withdrawals globally.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "Which irrigation method discussed in Section 9.1 is noted for losing 30 to 60 percent of applied water to evaporation, runoff, and deep percolation?",
+    "options": [
+      "A) Surface irrigation such as flood systems",
+      "B) Smart drip irrigation",
+      "C) Subsurface drainage irrigation",
+      "D) Automated fertigation only"
+    ],
+    "correct": "A",
+    "explanation": "Section 9.1 explains that surface irrigation methods, including flood systems, lose 30 to 60 percent of applied water.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "Why is over-irrigation harmful according to Section 9.1?",
+    "options": [
+      "A) It always increases soil oxygen levels",
+      "B) It can cause waterlogging, salinization, and nutrient leaching",
+      "C) It prevents any microbial activity in all soils",
+      "D) It reduces evaporation to zero"
+    ],
+    "correct": "B",
+    "explanation": "Section 9.1 identifies waterlogging, salinization, and nutrient leaching as major consequences of over-irrigation.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "Section 9.1 notes that under-irrigation during which crop stages is especially damaging?",
+    "options": [
+      "A) Germination and root pruning",
+      "B) Flowering and grain filling",
+      "C) Tillering and harvest only",
+      "D) Dormancy and senescence"
+    ],
+    "correct": "B",
+    "explanation": "The chapter states that water stress during flowering and grain filling is especially devastating because plant water demand peaks then.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "What is the soil-plant-atmosphere continuum (SPAC) described in Section 9.2?",
+    "options": [
+      "A) A fertilizer transport model limited to roots",
+      "B) A continuous pathway of water from soil through plants to the atmosphere",
+      "C) A classification system for irrigation pumps",
+      "D) A method for measuring only atmospheric humidity"
+    ],
+    "correct": "B",
+    "explanation": "Section 9.2 defines SPAC as the continuous pathway water follows from soil through roots, stems, leaves, and into the atmosphere.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "According to Section 9.2.1, what primarily determines how water behaves in soil?",
+    "options": [
+      "A) Soil color alone",
+      "B) Soil texture, including proportions of sand, silt, and clay",
+      "C) The crop variety only",
+      "D) The amount of sunlight received"
+    ],
+    "correct": "B",
+    "explanation": "Section 9.2.1 explains that soil texture strongly influences drainage, retention, and plant availability of water.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "Which statement best describes field capacity in Section 9.2.1?",
+    "options": [
+      "A) The point when all soil pores are filled with air",
+      "B) The moisture content after gravitational drainage has ceased",
+      "C) The point where plants can no longer extract water",
+      "D) The total annual rainfall stored in the soil"
+    ],
+    "correct": "B",
+    "explanation": "Field capacity is defined as the amount of water remaining after gravitational drainage has stopped, usually one to two days after wetting.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "What is total available water (TAW) according to Section 9.2.1?",
+    "options": [
+      "A) The difference between annual rainfall and irrigation",
+      "B) The water held only in macropores",
+      "C) The difference between field capacity and permanent wilting point",
+      "D) The amount of water lost to transpiration"
+    ],
+    "correct": "C",
+    "explanation": "Section 9.2.1 defines TAW as the difference between field capacity and the permanent wilting point.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "Why might clay loam soils store more available water per meter than sandy soils, based on Section 9.2.1?",
+    "options": [
+      "A) They contain no pore spaces",
+      "B) They hold water more effectively through smaller pores and capillary forces",
+      "C) They always drain faster than sand",
+      "D) They prevent all evaporation from occurring"
+    ],
+    "correct": "B",
+    "explanation": "Clay loam soils have smaller pores that retain more water, increasing available water storage compared with sandy soils.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "What does management allowable depletion (MAD) represent in Section 9.2.1?",
+    "options": [
+      "A) The total rainfall deficit in a season",
+      "B) The portion of total available water that can be depleted before irrigation is needed",
+      "C) The amount of fertilizer dissolved in irrigation water",
+      "D) The maximum pumping capacity of an irrigation system"
+    ],
+    "correct": "B",
+    "explanation": "Section 9.2.1 states that MAD is the portion of TAW that can be used before irrigation becomes necessary.",
+    "chapter_num": 9
+  },
+  {
+    "type": "mcq",
+    "question": "According to Section 9.2.2, what is the main driving force for upward water movement through the xylem?",
+    "options": [
+      "A) Root pressure alone",
+      "B) Soil compaction",
+      "C) Transpiration from leaf surfaces",
+      "D) Gravity pulling water upward"
+    ],
+    "correct": "C",
+    "explanation": "Section 9.2.2 explains that transpiration creates the tension that pulls water upward through the xylem.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "Section 9.1 states that agriculture is the largest consumer of freshwater on Earth.",
+    "correct_answer": true,
+    "explanation": "The chapter explicitly identifies agriculture as the largest consumer of freshwater globally.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "In arid and semi-arid regions, agriculture may account for more than 90 percent of freshwater withdrawals.",
+    "correct_answer": true,
+    "explanation": "Section 9.1 notes that in such regions, agriculture's share can exceed 90 percent.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "Traditional irrigation methods are described as highly efficient in the chapter.",
+    "correct_answer": false,
+    "explanation": "The text describes traditional irrigation methods as remarkably wasteful.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "Conventional sprinkler systems typically achieve water use efficiencies well above 90 percent.",
+    "correct_answer": false,
+    "explanation": "Section 9.1 says conventional sprinkler systems rarely exceed 70 percent efficiency.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "Over-irrigation can contribute to soil salinization.",
+    "correct_answer": true,
+    "explanation": "The chapter links excess irrigation to salinization of irrigated land.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "Salinization is said to improve nutrient uptake in sensitive crops such as rice and maize.",
+    "correct_answer": false,
+    "explanation": "The text says salinization reduces yields by impairing nutrient uptake and disrupting soil microbial communities.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "Excess irrigation can leach nitrogen into groundwater.",
+    "correct_answer": true,
+    "explanation": "Section 9.1 notes that valuable nutrients, especially nitrogen, can be washed into groundwater.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "Under-irrigation during flowering and grain filling has little effect on yield.",
+    "correct_answer": false,
+    "explanation": "The chapter states that these stages are especially sensitive and even brief deficits can directly reduce yield.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "Water and pumping energy can represent 15 to 25 percent of total farming costs in irrigated systems.",
+    "correct_answer": true,
+    "explanation": "This economic range is given directly in Section 9.1.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "Precision irrigation accepts lower yields as the unavoidable cost of saving water.",
+    "correct_answer": false,
+    "explanation": "The chapter argues that precision irrigation aims to break the tradeoff by eliminating waste rather than reducing supply.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "Smart irrigation systems integrating sensors, automation, and analytics can achieve water use efficiencies of 80 to 95 percent.",
+    "correct_answer": true,
+    "explanation": "Section 9.1 provides this efficiency range for smart irrigation systems.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "Water in the SPAC moves from lower water potential to higher water potential.",
+    "correct_answer": false,
+    "explanation": "Section 9.2 states that water moves from higher potential to lower potential.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "Sandy soils generally drain quickly because they have larger pore spaces.",
+    "correct_answer": true,
+    "explanation": "Section 9.2.1 explains that large pores in sandy soils favor rapid drainage under gravity.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "Permanent wilting point is the moisture content at which gravitational drainage has just ceased.",
+    "correct_answer": false,
+    "explanation": "That definition applies to field capacity, not permanent wilting point.",
+    "chapter_num": 9
+  },
+  {
+    "type": "true_false",
+    "question": "Most crops begin to experience water stress before the permanent wilting point is reached.",
+    "correct_answer": true,
+    "explanation": "Section 9.2.1 explicitly states this, motivating the use of MAD for irrigation management.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "Globally, agriculture accounts for about _____ percent of freshwater withdrawals. (Section 9.1)",
+    "correct_answer": "70",
+    "explanation": "Section 9.1 states that agriculture uses about 70 percent of global freshwater withdrawals.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "Freshwater availability could decline by _____ percent by 2030 due to population growth, urbanization, and changing precipitation patterns. (Section 9.1)",
+    "correct_answer": "40",
+    "explanation": "The chapter projects a possible 40 percent decline in freshwater availability by 2030.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "Surface irrigation methods can lose _____ to _____ percent of applied water to evaporation, runoff, and deep percolation. (Section 9.1)",
+    "correct_answer": "30 to 60",
+    "explanation": "Section 9.1 gives a loss range of 30 to 60 percent for surface irrigation methods.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "Soil salinization affects roughly _____ percent of irrigated land worldwide. (Section 9.1)",
+    "correct_answer": "20",
+    "explanation": "The text states that salinization affects about 20 percent of irrigated land worldwide.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "Sensitive species such as rice and maize may suffer yield reductions of _____ to _____ percent due to salinization. (Section 9.1)",
+    "correct_answer": "10 to 25",
+    "explanation": "Section 9.1 reports yield losses of 10 to 25 percent in sensitive species.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "Excess irrigation can leach up to _____ kilograms of nitrogen per hectare per year into groundwater. (Section 9.1)",
+    "correct_answer": "50",
+    "explanation": "The chapter states that up to 50 kg/ha/year of nitrogen may be leached into groundwater.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "In water-sensitive species such as wheat, yields can decline by _____ percent or more under insufficient water during critical stages. (Section 9.1)",
+    "correct_answer": "40",
+    "explanation": "Section 9.1 notes that yield declines can reach 40 percent or more.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "Water and pumping energy represent about _____ to _____ percent of total farming costs in irrigated systems. (Section 9.1)",
+    "correct_answer": "15 to 25",
+    "explanation": "The chapter gives this cost range directly.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "Smart irrigation systems routinely achieve water use efficiencies of _____ to _____ percent. (Section 9.1)",
+    "correct_answer": "80 to 95",
+    "explanation": "Section 9.1 contrasts smart irrigation efficiency with traditional methods.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____-plant-atmosphere continuum describes the continuous pathway of water from soil through plants to the atmosphere. (Section 9.2)",
+    "correct_answer": "soil",
+    "explanation": "SPAC stands for soil-plant-atmosphere continuum.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "The difference between field capacity and permanent wilting point is called total available _____. (Section 9.2.1)",
+    "correct_answer": "water",
+    "explanation": "Section 9.2.1 defines TAW as total available water.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "For most field crops, management allowable depletion is typically _____ to _____ percent of total available water. (Section 9.2.1)",
+    "correct_answer": "50 to 60",
+    "explanation": "The chapter states that MAD is commonly 50 to 60 percent of TAW for most field crops.",
+    "chapter_num": 9
+  },
+  {
+    "type": "fill_blank",
+    "question": "Water is transported upward through the plant in the _____. (Section 9.2.2)",
+    "correct_answer": "xylem",
+    "explanation": "Section 9.2.2 identifies xylem as the plant's water-conducting system.",
+    "chapter_num": 9
+  },
+  {
+    "type": "essay",
+    "question": "Using Section 9.1, explain why water is described as the most limiting factor in modern agriculture.",
+    "explanation": "Key points: agriculture's dominant share of freshwater withdrawals; increasing water stress globally; projected decline in freshwater availability; inefficiency of traditional irrigation; implications for food production, economics, and sustainability.",
+    "chapter_num": 9
+  },
+  {
+    "type": "essay",
+    "question": "Compare the consequences of over-irrigation and under-irrigation as described in Section 9.1.",
+    "explanation": "Key points: over-irrigation causes waterlogging, salinization, and nutrient leaching; under-irrigation reduces yields, especially during critical growth stages; both waste resources and reduce productivity in different ways.",
+    "chapter_num": 9
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how precision irrigation attempts to break the traditional tradeoff between saving water and maintaining yield. (Section 9.1)",
+    "explanation": "Key points: conventional view assumes less water means lower yield; precision irrigation reduces waste rather than crop supply; uses sensors, automation, and analytics; improves water use efficiency while protecting productivity.",
+    "chapter_num": 9
+  },
+  {
+    "type": "essay",
+    "question": "Explain the concept of the soil-plant-atmosphere continuum (SPAC) and why it matters for irrigation management. (Section 9.2)",
+    "explanation": "Key points: continuous water pathway from soil to atmosphere; movement driven by water potential gradients; irrigation decisions should account for soil, plant, and atmospheric demand together.",
+    "chapter_num": 9
+  },
+  {
+    "type": "essay",
+    "question": "Analyze how soil texture influences irrigation scheduling and water availability in the root zone. (Section 9.2.1)",
+    "explanation": "Key points: sandy soils drain quickly and store less available water; clay soils hold water more tightly; texture affects irrigation frequency, depth, and risk of stress or waste; implications for precision irrigation design.",
+    "chapter_num": 9
+  },
+  {
+    "type": "essay",
+    "question": "Describe field capacity, permanent wilting point, and total available water, and explain how these concepts guide irrigation decisions. (Section 9.2.1)",
+    "explanation": "Key points: define each threshold; TAW as the difference between the two; these values determine how much water soil can store for crops; used to estimate when irrigation should begin.",
+    "chapter_num": 9
+  },
+  {
+    "type": "essay",
+    "question": "Why is management allowable depletion (MAD) a more practical irrigation threshold than waiting until permanent wilting point? (Section 9.2.1)",
+    "explanation": "Key points: crops experience stress before permanent wilting point; MAD provides a preventive threshold; varies by crop type and rooting depth; supports timely irrigation and yield protection.",
+    "chapter_num": 9
+  },
+  {
+    "type": "essay",
+    "question": "Evaluate the economic importance of irrigation efficiency improvements in irrigated farming systems. (Section 9.1)",
+    "explanation": "Key points: water and pumping energy are significant costs; wasted water means wasted money; improved efficiency lowers input costs and may improve profitability; also reduces environmental externalities.",
+    "chapter_num": 9
+  },
+  {
+    "type": "essay",
+    "question": "Explain how transpiration drives water movement through plants and why this process is central to the SPAC concept. (Section 9.2.2)",
+    "explanation": "Key points: evaporation from stomata creates tension; tension pulls water upward through xylem; links atmospheric demand to root water uptake; helps explain why irrigation must consider weather as well as soil moisture.",
+    "chapter_num": 9
+  },
+  {
+    "type": "essay",
+    "question": "A farmer manages both sandy and clay loam fields. Based on Sections 9.2 and 9.2.1, propose how irrigation strategy should differ between them.",
+    "explanation": "Key points: sandy soils need more frequent, smaller irrigations due to rapid drainage and lower water storage; clay loam can store more water and may need less frequent but carefully managed applications; avoid deep percolation in sand and waterlogging in finer soils; use soil-specific thresholds such as TAW and MAD.",
+    "chapter_num": 9
+  }
+]

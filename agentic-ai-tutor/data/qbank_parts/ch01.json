@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "According to Chapter 1, which statement best captures the core idea of precision agriculture?",
+    "options": [
+      "A) It replaces farmer judgment with fully automated machines",
+      "B) It treats all parts of a field identically to simplify management",
+      "C) It matches management inputs to local conditions within a field",
+      "D) It focuses only on increasing yields regardless of environmental effects"
+    ],
+    "correct": "C",
+    "explanation": "Section 1.0 describes precision agriculture as a management philosophy that observes carefully, analyzes rigorously, and acts specifically by recognizing within-field variability.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "What is the main reason changing diets increase pressure on agricultural systems beyond population growth alone?",
+    "options": [
+      "A) Staple grains require more land than animal products",
+      "B) Producing meat requires several kilograms of grain as feed",
+      "C) Fruits and vegetables eliminate the need for irrigation",
+      "D) Processed foods reduce total calorie demand"
+    ],
+    "correct": "B",
+    "explanation": "Section 1.1.1 explains that as diets shift toward animal products, demand for plant agriculture rises because meat production requires multiple kilograms of grain feed per kilogram of meat.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "Which figure is closest to the FAO estimate for how much higher global agricultural production and consumption in 2050 must be compared with 2005/07?",
+    "options": [
+      "A) 20 percent higher",
+      "B) 40 percent higher",
+      "C) 60 percent higher",
+      "D) 100 percent higher"
+    ],
+    "correct": "C",
+    "explanation": "Section 1.1.1 states that production and consumption in 2050 will need to be about 60 percent higher than in 2005/07.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "Which of the following best explains why expanding agriculture into tropical forests is presented as problematic?",
+    "options": [
+      "A) Forest soils are always unsuitable for crops",
+      "B) It reduces mechanization efficiency",
+      "C) It threatens ecosystems important for carbon cycling and biodiversity",
+      "D) It lowers global demand for food"
+    ],
+    "correct": "C",
+    "explanation": "Section 1.1.2 notes that expansion in parts of South America often comes at the expense of tropical forests and native ecosystems critical to carbon cycling and biodiversity.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "What proportion of global freshwater withdrawals is attributed to agricultural irrigation in the chapter?",
+    "options": [
+      "A) About 30 percent",
+      "B) About 50 percent",
+      "C) About 70 percent",
+      "D) About 90 percent"
+    ],
+    "correct": "C",
+    "explanation": "Section 1.1.2 states that agricultural irrigation accounts for roughly 70 percent of global freshwater withdrawals.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "Which example in the chapter is used to illustrate nutrient pollution caused by fertilizer runoff?",
+    "options": [
+      "A) Salinization in the North China Plain",
+      "B) The hypoxic zone at the mouth of the Mississippi River",
+      "C) Soil erosion in colonial America",
+      "D) Flooding in the Indo-Gangetic basin"
+    ],
+    "correct": "B",
+    "explanation": "Section 1.1.3 identifies the seasonal oxygen-depleted 'dead zone' in the Gulf of Mexico at the mouth of the Mississippi River as a notable example.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "Which combination most directly contributed to the twentieth-century doubling of major cereal crop production without major land expansion?",
+    "options": [
+      "A) Reduced irrigation, less mechanization, and lower fertilizer use",
+      "B) Improved crop varieties, more fertilizers and pesticides, expanded irrigation, and mechanization",
+      "C) Elimination of tillage and universal organic farming",
+      "D) Expansion only into tropical forests and grasslands"
+    ],
+    "correct": "B",
+    "explanation": "Section 1.1.3 attributes the production gains largely to improved varieties, increased fertilizer and pesticide use, expanded irrigation, and mechanization.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "What is the chapter's main criticism of a 'more of the same' strategy for future food production?",
+    "options": [
+      "A) It would reduce global calorie supply",
+      "B) It would make all farms dependent on manual labor",
+      "C) It would carry major environmental costs",
+      "D) It would eliminate the need for innovation"
+    ],
+    "correct": "C",
+    "explanation": "Section 1.1.3 argues that simply repeating past intensification methods at larger scale would impose significant environmental costs.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "Why does the chapter describe precision agriculture as a philosophy rather than a single technology?",
+    "options": [
+      "A) Because it rejects data and measurement",
+      "B) Because it is a way of managing variability through observation, analysis, and targeted action",
+      "C) Because it applies only to ancient farming systems",
+      "D) Because it depends on one specific machine"
+    ],
+    "correct": "B",
+    "explanation": "In the chapter introduction, precision agriculture is defined as a management philosophy centered on careful observation, rigorous analysis, and specific action.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "Which historical example best supports the claim that farmers have long managed spatial variability?",
+    "options": [
+      "A) Ancient Roman farmers selected crops according to soil and landscape differences",
+      "B) Twentieth-century farmers always treated every hectare identically",
+      "C) Modern irrigation eliminated all field variability",
+      "D) Mechanization reduced field size to make management easier"
+    ],
+    "correct": "A",
+    "explanation": "Section 1.2.1 notes that ancient Roman writers recognized differences in productivity and selected crops based on soil characteristics, landscape position, and exposure.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "What unintended effect did merging small fields into larger parcels for mechanization have, according to the chapter?",
+    "options": [
+      "A) It eliminated the need for fertilizer",
+      "B) It reduced biodiversity loss everywhere",
+      "C) It increased within-field variability",
+      "D) It made all soils more uniform"
+    ],
+    "correct": "C",
+    "explanation": "Section 1.2.1 explains that larger mechanized parcels were created by merging smaller, relatively uniform fields, which inadvertently increased within-field variability.",
+    "chapter_num": 1
+  },
+  {
+    "type": "mcq",
+    "question": "Which phrase best summarizes the broader goal that precision agriculture helps achieve in Chapter 1?",
+    "options": [
+      "A) Maximum expansion",
+      "B) Sustainable intensification",
+      "C) Complete uniformity",
+      "D) Input maximization"
+    ],
+    "correct": "B",
+    "explanation": "Section 1.1.3 states that agriculture must produce more while reducing environmental footprint, a challenge described as sustainable intensification, with precision agriculture central to it.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "Chapter 1 presents precision agriculture as a single tool that can solve agricultural problems by itself.",
+    "correct_answer": false,
+    "explanation": "The introduction explicitly says precision agriculture is not a single technology or a silver bullet, but a philosophy of management.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter argues that feeding future populations is only a matter of population growth, not diet change.",
+    "correct_answer": false,
+    "explanation": "Section 1.1.1 emphasizes that changing diets, especially increased consumption of animal products, intensify demand beyond population growth alone.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "FAO estimates cited in the chapter suggest that global agricultural production and consumption in 2050 must be about 60 percent higher than in 2005/07.",
+    "correct_answer": true,
+    "explanation": "This figure is given directly in Section 1.1.1.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "According to the chapter, most of Earth's land surface is suitable for rainfed cropping.",
+    "correct_answer": false,
+    "explanation": "Section 1.1.2 states that more than 75 percent of the planet's land surface is unsuitable for rainfed cropping.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "Only about 11 percent of the world's land surface was devoted to arable farming, according to the chapter.",
+    "correct_answer": true,
+    "explanation": "Section 1.1.2 gives this approximate figure.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter describes agricultural expansion into fragile ecosystems as a sustainable long-term path to food security.",
+    "correct_answer": false,
+    "explanation": "Section 1.1.2 explicitly says expansion into fragile ecosystems is not a sustainable path to food security.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "Agricultural irrigation accounts for roughly 70 percent of global freshwater withdrawals.",
+    "correct_answer": true,
+    "explanation": "This is stated in Section 1.1.2.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "The Ogallala, Indo-Gangetic basin, and North China Plain are mentioned as aquifers or regions under water stress.",
+    "correct_answer": true,
+    "explanation": "Section 1.1.2 cites these major food-producing regions as examples where aquifers are being depleted faster than recharge.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "The Green Revolution increased cereal production mainly by bringing vast new land areas into cultivation.",
+    "correct_answer": false,
+    "explanation": "Section 1.1.3 says major cereal production doubled largely without bringing significant new land into cultivation.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "Broad pesticide applications can harm non-target species and contribute to resistance.",
+    "correct_answer": true,
+    "explanation": "Section 1.1.3 identifies both effects as environmental consequences of broad pesticide use.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "Intensive tillage improved soil structure and increased soil organic matter across large areas.",
+    "correct_answer": false,
+    "explanation": "The chapter states the opposite: intensive tillage accelerated erosion, depleted organic matter, and degraded soil structure.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "Salinization and sodicity are described as problems that can render irrigated land unfit for farming.",
+    "correct_answer": true,
+    "explanation": "Section 1.1.3 notes that these processes have rendered once-productive land unfit for farming in many irrigated regions.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter argues that precision agriculture can help lower environmental costs by increasing input-use efficiency.",
+    "correct_answer": true,
+    "explanation": "This idea is reinforced through the Tilman quotation and the discussion of fertilizer-use efficiency in Section 1.1.3.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "Ancient Roman farmers are presented as having no awareness of soil or landscape differences.",
+    "correct_answer": false,
+    "explanation": "Section 1.2.1 says Roman writers recognized productivity differences and selected crops according to soil and landscape characteristics.",
+    "chapter_num": 1
+  },
+  {
+    "type": "true_false",
+    "question": "According to the chapter, early farmers often managed land precisely because they knew small fields intimately.",
+    "correct_answer": true,
+    "explanation": "Section 1.2.1 argues that the earliest farmers were, in a real sense, precision farmers because they knew the characteristics of their small fields well.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "The United Nations projects that the world's population will reach approximately _____ billion by 2050. (Section 1.1.1)",
+    "correct_answer": "9.7",
+    "explanation": "Section 1.1.1 gives an estimate of approximately 9.7 billion by 2050.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "FAO estimates that global agricultural production and consumption in 2050 will need to be about _____ percent higher than in 2005/07. (Section 1.1.1)",
+    "correct_answer": "60",
+    "explanation": "The chapter cites a 60 percent increase requirement.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "In China, meat consumption increased approximately _____fold between 1978 and 2008. (Section 1.1.1)",
+    "correct_answer": "eight",
+    "explanation": "Section 1.1.1 uses this example to show how changing diets increase agricultural demand.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "Global average dietary energy supply per capita rose from about 2,230 kilocalories per day in 1961/63 to about _____ in 2005/07. (Section 1.1.1)",
+    "correct_answer": "2,770",
+    "explanation": "This value is given in the discussion of rising calorie consumption.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "FAO projected global average dietary energy supply per capita to reach roughly _____ kilocalories per day by 2050. (Section 1.1.1)",
+    "correct_answer": "3,070",
+    "explanation": "Section 1.1.1 provides this projected figure.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "More than _____ percent of the planet's land surface is unsuitable for rainfed cropping. (Section 1.1.2)",
+    "correct_answer": "75",
+    "explanation": "Section 1.1.2 emphasizes the limited extent of land suitable for rainfed agriculture.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "Only about _____ percent of the planet's land surface is free of significant physical constraints for rainfed agriculture. (Section 1.1.2)",
+    "correct_answer": "3.5",
+    "explanation": "This small percentage highlights how limited highly suitable land is.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "In 2009, roughly _____ percent of total land area was classified as agricultural. (Section 1.1.2)",
+    "correct_answer": "38",
+    "explanation": "The chapter includes this figure for agricultural land broadly defined.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "Only about _____ percent of the world's land surface was devoted to arable farming. (Section 1.1.2)",
+    "correct_answer": "11",
+    "explanation": "This figure shows how little land is actually used for arable crops.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "Agricultural irrigation accounts for roughly _____ percent of global freshwater withdrawals. (Section 1.1.2)",
+    "correct_answer": "70",
+    "explanation": "Section 1.1.2 identifies irrigation as the dominant user of freshwater withdrawals globally.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "Between 1961 and 1999, global production of major cereal crops _____. (Section 1.1.3)",
+    "correct_answer": "doubled",
+    "explanation": "The chapter uses this fact to illustrate the success of twentieth-century agricultural intensification.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "Nutrient runoff can cause eutrophication and hypoxic '_____ zones' in coastal waters. (Section 1.1.3)",
+    "correct_answer": "dead",
+    "explanation": "The chapter uses the phrase 'dead zones' to describe oxygen-depleted areas caused by nutrient pollution.",
+    "chapter_num": 1
+  },
+  {
+    "type": "fill_blank",
+    "question": "The challenge of producing more food while reducing environmental harm is often called sustainable _____. (Section 1.1.3)",
+    "correct_answer": "intensification",
+    "explanation": "Section 1.1.3 names this broader goal as sustainable intensification.",
+    "chapter_num": 1
+  },
+  {
+    "type": "essay",
+    "question": "Explain why Chapter 1 argues that future food demand cannot be understood by population growth alone. Use examples from Section 1.1.1.",
+    "explanation": "Key points: population is projected to reach about 9.7 billion by 2050 and exceed 10 billion later; changing diets increase demand for animal products, fruits, vegetables, and processed foods; meat production requires several kilograms of grain feed per kilogram of meat; calorie supply per capita has also risen, creating compounding pressure.",
+    "chapter_num": 1
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how land and water constraints strengthen the case for precision agriculture in Section 1.1.2.",
+    "explanation": "Key points: limited land suitable for rainfed cropping; only a small share of land is free of major constraints; arable land is a small fraction of total land surface; farmland is lost to urbanization and development; expansion into forests and fragile ecosystems is unsustainable; irrigation uses about 70 percent of freshwater withdrawals; aquifer depletion and climate variability make efficient water use essential.",
+    "chapter_num": 1
+  },
+  {
+    "type": "essay",
+    "question": "Analyze the environmental trade-offs of twentieth-century agricultural intensification as presented in Section 1.1.3.",
+    "explanation": "Key points: cereal production doubled without major land expansion; gains came from improved varieties, fertilizers, pesticides, irrigation, and mechanization; costs included nutrient runoff, eutrophication, dead zones, pesticide impacts on non-target species, resistance, soil erosion, loss of organic matter, degraded soil structure, salinization, and sodicity.",
+    "chapter_num": 1
+  },
+  {
+    "type": "essay",
+    "question": "How does Chapter 1 define precision agriculture as a management philosophy rather than a single technology?",
+    "explanation": "Key points: precision agriculture is described as observe carefully, analyze rigorously, and act specifically; it recognizes within-field variability; it aims to match inputs to local conditions; it seeks productivity, resource efficiency, environmental protection, and long-term resilience.",
+    "chapter_num": 1
+  },
+  {
+    "type": "essay",
+    "question": "Evaluate the statement that 'the earliest farmers were precision farmers' using evidence from Section 1.2.1.",
+    "explanation": "Key points: ancient farmers managed small fields they knew intimately; Roman writers recognized differences in soil, landscape position, and exposure; crop choice and fertility management were adapted locally; Thomas Jefferson and others used crop rotation and manures based on observed conditions; precision management existed conceptually before modern digital tools.",
+    "chapter_num": 1
+  },
+  {
+    "type": "essay",
+    "question": "Why does the chapter argue that expanding agricultural land is not an adequate long-term solution to food security?",
+    "explanation": "Key points: much land is unsuitable for rainfed cropping; cultivable land is already heavily used in some regions; expansion often occurs at the expense of forests and native ecosystems; this damages biodiversity and carbon cycling; sustainable solutions must improve efficiency on existing farmland.",
+    "chapter_num": 1
+  },
+  {
+    "type": "essay",
+    "question": "Using Chapter 1, explain how precision agriculture can contribute to sustainable intensification.",
+    "explanation": "Key points: sustainable intensification means producing more while reducing environmental footprint; precision agriculture improves efficiency of fertilizer, water, and pesticide use; it targets inputs where needed instead of uniform application; this can reduce runoff, waste, and ecological damage while maintaining or improving productivity.",
+    "chapter_num": 1
+  },
+  {
+    "type": "essay",
+    "question": "Compare the management of small historical fields with modern large mechanized fields, and explain why this comparison matters for precision agriculture.",
+    "explanation": "Key points: historical fields were often smaller and more uniform, allowing tailored management; mechanization encouraged merging into larger parcels; larger fields increased within-field variability being treated uniformly; precision agriculture seeks to recover site-specific management within modern large-scale systems.",
+    "chapter_num": 1
+  },
+  {
+    "type": "essay",
+    "question": "What does the chapter suggest are the risks of continuing a uniform, high-input approach to farming under climate change?",
+    "explanation": "Key points: water becomes scarcer; precipitation patterns become less predictable; drought, flooding, and waterlogging increase; uniform high-rate inputs can worsen inefficiency and environmental harm; site-specific management becomes more important under variable and shifting conditions.",
+    "chapter_num": 1
+  },
+  {
+    "type": "essay",
+    "question": "Synthesize the main argument of Chapter 1: why does precision agriculture matter now more than ever?",
+    "explanation": "Key points: rising population and calorie demand; dietary shifts toward resource-intensive foods; shrinking arable land base; water scarcity and aquifer depletion; climate change; environmental damage from past intensification; need to produce more with fewer resources and lower ecological impact; precision agriculture offers a framework for doing so through targeted, data-informed management.",
+    "chapter_num": 1
+  }
+]

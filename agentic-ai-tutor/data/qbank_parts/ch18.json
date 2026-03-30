@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "According to Section 18.1, what best defines precision livestock farming (PLF)?",
+    "options": [
+      "A) Manual observation of herd-level trends by experienced stockpersons",
+      "B) Automatic, continuous, real-time monitoring of individual animals and their environment to support management decisions",
+      "C) Periodic veterinary inspection focused only on animal disease",
+      "D) Automated feeding systems that operate without farmer input"
+    ],
+    "correct": "B",
+    "explanation": "Section 18.1 defines PLF as automatic, continuous, and real-time monitoring of individual animals and their environment to support better management decisions.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "Why did researchers at KU Leuven emphasize that each animal is a CITD system?",
+    "options": [
+      "A) To argue that herd averages are always sufficient for management",
+      "B) To show that animals should be managed only by genetic category",
+      "C) To highlight that animals differ individually and change over time, requiring individual-level data",
+      "D) To prove that environmental monitoring is unnecessary"
+    ],
+    "correct": "C",
+    "explanation": "Section 18.1 explains CITD as 'complex, individually different, time-varying and dynamic,' supporting the need for individual-level monitoring.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "Which sequence best represents the three-step PLF process described in Section 18.1?",
+    "options": [
+      "A) Breed selection -> feeding plan -> slaughter scheduling",
+      "B) Sensor data collection -> algorithm interpretation -> decision support or automated response",
+      "C) Vaccination -> diagnosis -> traceability reporting",
+      "D) Observation -> intuition -> intervention"
+    ],
+    "correct": "B",
+    "explanation": "The chapter describes PLF as: sensors collect data, algorithms convert signals into meaningful parameters, and decision-support systems present alerts or trigger actions.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "What is the main purpose of PLF according to the chapter?",
+    "options": [
+      "A) To replace all human judgement in livestock management",
+      "B) To maximize sensor deployment regardless of cost",
+      "C) To amplify human judgement through earlier detection and more precise intervention",
+      "D) To focus only on increasing production at the expense of welfare"
+    ],
+    "correct": "C",
+    "explanation": "Section 18.1 states that the goal is not to replace human judgement but to amplify it.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "Which sensor is described in Section 18.2.1 as the most universally applied in modern livestock monitoring?",
+    "options": [
+      "A) RFID tag",
+      "B) Thermal imager",
+      "C) Accelerometer",
+      "D) Rumen bolus"
+    ],
+    "correct": "C",
+    "explanation": "Section 18.2.1 explicitly identifies the accelerometer as arguably the most universally applied sensor in livestock monitoring.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "Why are raw accelerometer signals often summarized into features over epochs?",
+    "options": [
+      "A) Because accelerometers cannot measure along three axes",
+      "B) Because continuous high-frequency data generate enormous volumes that need practical summarization for classification",
+      "C) Because farmers prefer handwritten records",
+      "D) Because epoch-based features eliminate the need for algorithms"
+    ],
+    "correct": "B",
+    "explanation": "Section 18.2.1 notes that triaxial accelerometers can generate enormous data volumes, so commercial systems often summarize signals into features over short time windows.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "Which of the following is a practical advantage of ear-tag accelerometers over collar sensors?",
+    "options": [
+      "A) They always have larger batteries and solar panels",
+      "B) They are more accurate than all other sensor types",
+      "C) Farmers are already familiar with ear-tag deployment",
+      "D) They can weigh over 200 grams without welfare concerns"
+    ],
+    "correct": "C",
+    "explanation": "Section 18.2.1 states that ear tags offer the practical advantage of a deployment mode familiar to most farmers.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "What is a key design constraint for ear-tag sensors mentioned in Section 18.2.1?",
+    "options": [
+      "A) They must be implanted under the skin",
+      "B) They should usually weigh less than 40 grams to avoid welfare and retention problems",
+      "C) They must sample above 500 Hz at all times",
+      "D) They can only be used in dairy cattle"
+    ],
+    "correct": "B",
+    "explanation": "The chapter notes that most commercial ear-tag devices weigh less than 40 grams to avoid compromising welfare or tag retention.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "What is the principal limitation of GNSS/GPS tracking in livestock systems?",
+    "options": [
+      "A) It cannot provide absolute geographic position",
+      "B) It only works indoors",
+      "C) Its relatively high power consumption limits how often position fixes can be taken",
+      "D) It cannot be linked to cloud systems"
+    ],
+    "correct": "C",
+    "explanation": "Section 18.2.2 explains that GNSS has relatively high power consumption, constraining fix frequency.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "Why might LoRaWAN be used with GNSS-based livestock monitoring?",
+    "options": [
+      "A) To increase rumen pH accuracy",
+      "B) To relay field data to the cloud using lower-power communication",
+      "C) To replace RFID at feed stations",
+      "D) To detect coughing in barns"
+    ],
+    "correct": "B",
+    "explanation": "Section 18.2.2 mentions LoRaWAN as a lower-power communication protocol used to relay data from field to cloud.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "What is the main role of passive RFID tags in PLF systems?",
+    "options": [
+      "A) Measuring continuous body temperature",
+      "B) Providing fixed-point identification so sensor data can be linked to the correct animal",
+      "C) Detecting lameness through gait analysis",
+      "D) Monitoring rumen pH continuously"
+    ],
+    "correct": "B",
+    "explanation": "Section 18.2.3 explains that passive RFID enables individual identification at fixed reading points, which is essential for linking data to the right animal.",
+    "chapter_num": 18
+  },
+  {
+    "type": "mcq",
+    "question": "Why is rumen pH monitoring valuable in cattle?",
+    "options": [
+      "A) It directly measures social interactions",
+      "B) It is mainly used to estimate pasture biomass",
+      "C) It helps detect sub-acute ruminal acidosis associated with high-concentrate diets",
+      "D) It replaces all need for external sensors"
+    ],
+    "correct": "C",
+    "explanation": "Section 18.2.4 highlights rumen pH monitoring as particularly valuable for detecting SARA in cattle fed high-concentrate diets.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "Section 18.1 presents PLF as a herd-level approach that does not require individual animal data.",
+    "correct_answer": false,
+    "explanation": "The chapter emphasizes individual-animal monitoring because each animal is treated as a CITD system.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "The growth of PLF is linked partly to larger herds and scarcer, more expensive labour.",
+    "correct_answer": true,
+    "explanation": "Section 18.1 directly connects PLF adoption to structural changes such as larger herds and labour scarcity.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "The chapter argues that PLF is intended to eliminate the need for farmers' judgement.",
+    "correct_answer": false,
+    "explanation": "It explicitly states that PLF is meant to amplify, not replace, human judgement.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "Off-animal sensors include devices such as cameras, microphones, and environmental monitors.",
+    "correct_answer": true,
+    "explanation": "Section 18.2 distinguishes on-animal sensors from off-animal sensors including cameras, microphones, and environmental monitors.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "Triaxial accelerometers measure acceleration along two perpendicular axes.",
+    "correct_answer": false,
+    "explanation": "They measure acceleration along three perpendicular axes.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "Commercial accelerometer systems often summarize raw signals into features calculated over epochs.",
+    "correct_answer": true,
+    "explanation": "Section 18.2.1 explains that features are often calculated over epochs of a few seconds to several minutes.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "Leg-mounted sensors in dairy systems were originally used as simple pedometers for oestrus detection.",
+    "correct_answer": true,
+    "explanation": "The chapter notes that these sensors have been used for over forty years to detect increased stepping activity associated with oestrus.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "Research ear tags weighing over 200 grams were reported as acceptable for long-term use without tissue damage.",
+    "correct_answer": false,
+    "explanation": "The text states that such heavy tags had to be removed after short periods because of tissue damage.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "GNSS tracking is especially useful for mapping landscape utilization in extensive rangeland systems.",
+    "correct_answer": true,
+    "explanation": "Section 18.2.2 lists mapping landscape utilisation and optimizing mustering as uses of GNSS.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "Passive RFID tags provide continuous behavioural data in the same way as accelerometers.",
+    "correct_answer": false,
+    "explanation": "Passive RFID does not provide continuous data; it identifies animals at fixed reading points.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "Active RFID or Bluetooth proximity loggers can help reveal disease transmission pathways.",
+    "correct_answer": true,
+    "explanation": "Section 18.2.3 says contact logging can reveal social structures and potential disease transmission pathways.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "Rumen boluses typically lodge in the reticulum after being swallowed.",
+    "correct_answer": true,
+    "explanation": "Section 18.2.4 states that intra-ruminal bolus sensors lodge in the reticulum.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "Temperature readings from rumen boluses are unaffected by the temperature of ingested feed and water.",
+    "correct_answer": false,
+    "explanation": "The chapter notes that ingested feed and water can influence the temperature signal and must be accounted for analytically.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "Intra-vaginal temperature loggers can be used to trigger calving alerts when expelled during parturition.",
+    "correct_answer": true,
+    "explanation": "Section 18.2.5 explains that their expulsion during calving has been leveraged to trigger parturition alerts.",
+    "chapter_num": 18
+  },
+  {
+    "type": "true_false",
+    "question": "Tympanic sensors have no practical fitting challenges in livestock applications.",
+    "correct_answer": false,
+    "explanation": "The text notes issues with correct fitting and probe displacement.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "Precision livestock farming is defined as the automatic, continuous, and real-time monitoring of individual animals and their environment to support better management _____.",
+    "correct_answer": "decisions",
+    "explanation": "Section 18.1 defines PLF in terms of supporting better management decisions.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "Researchers at KU Leuven described each animal as a _____ system: complex, individually different, time-varying and dynamic.",
+    "correct_answer": "CITD",
+    "explanation": "Section 18.1 introduces the acronym CITD for this concept.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "In the PLF workflow, raw sensor signals are converted by _____ into biologically meaningful parameters.",
+    "correct_answer": "algorithms",
+    "explanation": "Section 18.1 describes algorithms as the step that interprets raw sensor signals.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "The _____ is described as arguably the most universally applied sensor in modern livestock monitoring.",
+    "correct_answer": "accelerometer",
+    "explanation": "Section 18.2.1 identifies the accelerometer in this way.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "Triaxial accelerometers measure acceleration along _____ perpendicular axes.",
+    "correct_answer": "three",
+    "explanation": "By definition and as stated in Section 18.2.1, triaxial means three axes.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "Commercial accelerometer systems often summarize data over short time windows called _____.",
+    "correct_answer": "epochs",
+    "explanation": "Section 18.2.1 uses the term 'epochs' for these summary intervals.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "Most commercial ear-tag accelerometer devices weigh less than _____ grams to avoid welfare or tag-retention problems.",
+    "correct_answer": "40",
+    "explanation": "The chapter gives less than 40 grams as a key design target.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "Research ear tags weighing over _____ grams had to be removed after short periods because of tissue damage.",
+    "correct_answer": "200",
+    "explanation": "Section 18.2.1 cites research tags over 200 grams as problematic.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "The American GPS is the best-known example of a _____ system.",
+    "correct_answer": "GNSS",
+    "explanation": "Section 18.2.2 explains that GPS is part of Global Navigation Satellite Systems.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "A lower-power communication protocol mentioned for relaying livestock location data from field to cloud is _____.",
+    "correct_answer": "LoRaWAN",
+    "explanation": "Section 18.2.2 specifically names LoRaWAN.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "Passive _____ ear tags are mandated in several countries for animal traceability.",
+    "correct_answer": "RFID",
+    "explanation": "Section 18.2.3 discusses RFID ear tags for traceability.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "Rumen pH monitoring is particularly valuable for detecting sub-acute ruminal _____ in cattle fed high-concentrate diets.",
+    "correct_answer": "acidosis",
+    "explanation": "Section 18.2.4 identifies SARA, sub-acute ruminal acidosis, as a key target.",
+    "chapter_num": 18
+  },
+  {
+    "type": "fill_blank",
+    "question": "Intra-ruminal bolus sensors lodge in the animal's _____.",
+    "correct_answer": "reticulum",
+    "explanation": "Section 18.2.4 states that swallowed boluses lodge in the reticulum.",
+    "chapter_num": 18
+  },
+  {
+    "type": "essay",
+    "question": "Using Section 18.1, explain how PLF helps reconcile competing pressures such as labour scarcity, animal welfare expectations, reduced antibiotic use, and affordable food.",
+    "explanation": "Key points: larger herds and scarcer labour make continuous human observation difficult; PLF enables earlier detection of problems, more precise interventions, better documentation and traceability, and potentially improved welfare and efficiency at the same time.",
+    "chapter_num": 18
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the significance of viewing each animal as a CITD system for livestock management and sensor design.",
+    "explanation": "Key points: animals differ individually and change over time; herd averages can miss important variation; sensors and analytics should support individual-level monitoring; management decisions become more targeted and responsive.",
+    "chapter_num": 18
+  },
+  {
+    "type": "essay",
+    "question": "Describe the three-step PLF pipeline from sensing to action, and explain where errors or uncertainties may arise.",
+    "explanation": "Key points: sensors collect raw data; algorithms transform signals into meaningful biological indicators; decision-support systems alert farmers or trigger responses; uncertainty can arise from sensor noise, feature extraction, model misclassification, thresholds, and implementation decisions.",
+    "chapter_num": 18
+  },
+  {
+    "type": "essay",
+    "question": "Compare on-animal and off-animal sensing approaches in PLF, including likely strengths and limitations of each.",
+    "explanation": "Key points: on-animal sensors provide individual-specific continuous data but may face weight, battery, fitting, and welfare constraints; off-animal sensors can monitor groups or environments non-invasively but may struggle with identity linkage and occlusion; complementary use is important.",
+    "chapter_num": 18
+  },
+  {
+    "type": "essay",
+    "question": "Evaluate the trade-offs between collar-borne and ear-tag-borne accelerometers for commercial livestock monitoring.",
+    "explanation": "Key points: collars can carry heavier devices, larger batteries, and solar panels; ear tags are familiar and practical for farmers; ear tags face strict weight constraints; design must balance data richness, battery life, welfare, retention, and ease of deployment.",
+    "chapter_num": 18
+  },
+  {
+    "type": "essay",
+    "question": "Explain why accelerometer data are often converted into features over epochs rather than analyzed only as raw high-frequency streams.",
+    "explanation": "Key points: raw triaxial data can be extremely large; summarizing into features such as energy or entropy makes classification more practical; epochs reduce storage and transmission burdens while preserving behavioural information; however, summarization may lose some detail.",
+    "chapter_num": 18
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the value and limitations of GNSS/GPS tracking for livestock in extensive systems.",
+    "explanation": "Key points: provides absolute position, supports mapping landscape use, movement analysis, calving detection, and mustering; limitations include high power consumption and reduced fix frequency; communication and battery strategies such as LoRaWAN are important.",
+    "chapter_num": 18
+  },
+  {
+    "type": "essay",
+    "question": "How does RFID contribute to PLF even though passive RFID does not provide continuous monitoring?",
+    "explanation": "Key points: RFID enables reliable animal identification at fixed points such as parlours, weighbridges, and feed stations; this is essential for linking measurements to the correct animal; active RFID and Bluetooth can extend functionality to proximity and contact analysis.",
+    "chapter_num": 18
+  },
+  {
+    "type": "essay",
+    "question": "Assess the potential of rumen boluses as a PLF technology, considering both scientific value and barriers to adoption.",
+    "explanation": "Key points: can measure rumen pH, temperature, and acceleration from inside the animal; useful for detecting SARA and monitoring internal conditions; limitations include sensor lifespan, analytical complications from ingested feed/water effects, and lower commercial uptake than external sensors.",
+    "chapter_num": 18
+  },
+  {
+    "type": "essay",
+    "question": "Compare different temperature-related sensing approaches mentioned in Section 18.2.4-18.2.5 for detecting health or calving events.",
+    "explanation": "Key points: rumen boluses estimate internal temperature but are influenced by feed and water; intra-vaginal loggers can reliably measure core temperature and trigger calving alerts when expelled; tympanic sensors can provide body temperature data but face fitting and displacement challenges; suitability depends on application and deployment duration.",
+    "chapter_num": 18
+  }
+]

@@ -1,0 +1,414 @@
+[
+  {
+    "type": "mcq",
+    "question": "According to Chapter 11, what is the main purpose of Variable Rate Technology (VRT)?",
+    "options": [
+      "A) To apply the same input rate more accurately across an entire field",
+      "B) To respond to within-field variability by changing input rates as the machine moves",
+      "C) To eliminate the need for agronomic decision making",
+      "D) To replace all field scouting with satellite imagery"
+    ],
+    "correct": "B",
+    "explanation": "Section 11.1 defines VRT as the hardware, software, and decision rules that allow inputs such as seed, fertilizer, pesticides, and water to be applied at rates that change continuously in response to field variability.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "Why does uniform field-wide application often reduce both profit and environmental performance?",
+    "options": [
+      "A) Because it always increases labor requirements",
+      "B) Because it under-applies in low-potential areas and over-applies in high-potential areas",
+      "C) Because it under-applies in productive areas and over-applies in less productive areas",
+      "D) Because it prevents the use of GNSS receivers"
+    ],
+    "correct": "C",
+    "explanation": "Section 11.1 explains that uniform management inherently under-applies inputs in the most productive parts of a field and over-applies them in the least productive parts.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "Which of the following is NOT one of the three practical requirements of variable rate application described in Section 11.1?",
+    "options": [
+      "A) Spatial information about the factor being managed",
+      "B) An agronomic decision rule that converts information into rates",
+      "C) Equipment capable of changing rate on the fly",
+      "D) A requirement that all decisions be made from satellite imagery only"
+    ],
+    "correct": "D",
+    "explanation": "Section 11.1 lists three requirements: spatial information, a decision rule, and equipment that can vary rates during operation. It does not require satellite imagery specifically.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "Which application system in Chapter 11 is described as having relatively coarse meaningful rate-change resolution, often around 30 metres or more?",
+    "options": [
+      "A) Individual row-unit electric planter",
+      "B) Pulse-width-modulated sprayer",
+      "C) Spinner-disc dry fertilizer spreader",
+      "D) Optical crop-canopy sensor"
+    ],
+    "correct": "C",
+    "explanation": "Section 11.1 notes that a spinner-disc dry fertilizer spreader, because of its wide and overlapping throw pattern, may only change rates meaningfully at resolutions of 30 metres or more.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "What is the key distinction between map-based VRT and sensor-based VRT?",
+    "options": [
+      "A) Map-based systems use no electronics, while sensor-based systems do",
+      "B) Map-based systems rely on pre-made prescriptions, while sensor-based systems compute rates in real time",
+      "C) Map-based systems are only for fertilizer, while sensor-based systems are only for pesticides",
+      "D) Sensor-based systems do not require any agronomic algorithm"
+    ],
+    "correct": "B",
+    "explanation": "Section 11.2 contrasts pre-made prescription maps with real-time sensing and control on the applicator.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "In a map-based VRT workflow, what does the controller do during field operation?",
+    "options": [
+      "A) It estimates soil texture visually",
+      "B) It creates management zones from scratch",
+      "C) It uses GNSS position to look up the prescribed rate and command actuators",
+      "D) It replaces the need for any prior data collection"
+    ],
+    "correct": "C",
+    "explanation": "Section 11.2.1 explains that during operation, the GNSS receiver reports position, the controller looks up the prescribed rate for that location, and sends commands to the actuators.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "Which of the following is an advantage of map-based VRT identified in Chapter 11?",
+    "options": [
+      "A) It automatically accounts for all in-season changes without new data",
+      "B) It allows integration of multiple data sources and human review before application",
+      "C) It removes the need for GIS software",
+      "D) It guarantees that prescriptions are always correct"
+    ],
+    "correct": "B",
+    "explanation": "Section 11.2.1 highlights integration of many data sources, careful human review, and documented plans as advantages of map-based VRT.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "Which of the following is a disadvantage of map-based VRT?",
+    "options": [
+      "A) It cannot use yield maps",
+      "B) It requires no expertise",
+      "C) It may fail to reflect conditions that change between data collection and application",
+      "D) It cannot be used with GNSS"
+    ],
+    "correct": "C",
+    "explanation": "Section 11.2.1 states that conditions may change between the time data are collected and the time the application is made, limiting the prescription's relevance.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "Why is sensor-based VRT especially well suited to in-season nitrogen management?",
+    "options": [
+      "A) Because nitrogen status changes rapidly and is hard to predict from pre-season soil samples alone",
+      "B) Because nitrogen never leaches or volatilises",
+      "C) Because canopy sensors directly measure soil nitrate concentration",
+      "D) Because map-based systems cannot apply nitrogen"
+    ],
+    "correct": "A",
+    "explanation": "Section 11.2.2 explains that crop nitrogen status changes rapidly during the growing season and is difficult to predict from pre-season soil samples alone.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "Optical crop-canopy sensors used in sensor-based VRT typically measure reflectance in which wavelengths?",
+    "options": [
+      "A) Blue and green",
+      "B) Red and near-infrared",
+      "C) Ultraviolet and thermal infrared only",
+      "D) Microwave and radar bands"
+    ],
+    "correct": "B",
+    "explanation": "Section 11.2.2 states that these sensors typically measure spectral reflectance in the red and near-infrared wavelengths.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "What does NDVI primarily help estimate in the context of sensor-based nitrogen management?",
+    "options": [
+      "A) Tractor engine load",
+      "B) Crop biomass and nitrogen uptake",
+      "C) Soil pH directly",
+      "D) Rainfall intensity"
+    ],
+    "correct": "B",
+    "explanation": "Section 11.2.2 notes that NDVI is correlated with crop biomass and nitrogen uptake, which can then be translated into a fertilizer rate.",
+    "chapter_num": 11
+  },
+  {
+    "type": "mcq",
+    "question": "Which statement best captures the economic logic of variable rate application?",
+    "options": [
+      "A) It increases input use everywhere to maximize yield",
+      "B) It shifts inputs away from areas of increasing returns toward areas of diminishing returns",
+      "C) It redirects inputs from areas of diminishing returns to areas of increasing returns",
+      "D) It eliminates all uncertainty in crop production"
+    ],
+    "correct": "C",
+    "explanation": "Section 11.1 states that VRA improves efficiency by redirecting inputs from locations where they produce diminishing returns to locations where they produce increasing returns.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "Chapter 11 presents VRT as the mechanism that turns the philosophy of precision agriculture into physical action in the field.",
+    "correct_answer": true,
+    "explanation": "In the chapter introduction, precision agriculture is described as the philosophy of managing variability, while VRT is the mechanism that implements that philosophy on the ground.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "Uniform application is considered ideal in Chapter 11 because most fields are naturally homogeneous.",
+    "correct_answer": false,
+    "explanation": "The chapter begins by emphasizing that fields are not uniform; soil texture, organic matter, and nutrient reserves can vary substantially within a single parcel.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "Variable rate application requires some form of spatial information about the factor being managed.",
+    "correct_answer": true,
+    "explanation": "Section 11.1 lists spatial information as the first of the three practical requirements for VRA.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "A decision rule in VRA can be an algorithm, a model, or expert judgement.",
+    "correct_answer": true,
+    "explanation": "Section 11.1 explicitly states that the agronomic decision rule may take any of these forms.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "All VRA equipment can respond meaningfully at sub-metre resolution.",
+    "correct_answer": false,
+    "explanation": "Section 11.1 explains that spatial resolution depends on the equipment; some systems, such as spinner-disc spreaders, are much coarser.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "Map-based VRT performs all information gathering, analysis, and decision making before the machine enters the field.",
+    "correct_answer": true,
+    "explanation": "Section 11.2.1 defines map-based VRT in exactly these terms.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "In map-based VRT, the controller determines rates without needing to know machine position.",
+    "correct_answer": false,
+    "explanation": "Section 11.2.1 states that a GNSS receiver continuously reports position so the controller can look up the prescribed rate for that location.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "One advantage of map-based VRT is that it creates a documented plan that can later be compared with the as-applied map.",
+    "correct_answer": true,
+    "explanation": "Section 11.2.1 identifies this documentation and comparison as a benefit of the map-based approach.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "Map-based prescriptions always remain accurate even when field conditions change after data collection.",
+    "correct_answer": false,
+    "explanation": "Section 11.2.1 specifically warns that conditions may change between data collection and application.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "Sensor-based VRT computes desired rates in real time from measurements taken on the applicator.",
+    "correct_answer": true,
+    "explanation": "Section 11.2.2 describes sensors mounted on the machine feeding data into an algorithm that calculates rates in real time.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "Optical canopy sensors used for nitrogen management typically rely on crop reflectance in the red and near-infrared bands.",
+    "correct_answer": true,
+    "explanation": "Section 11.2.2 states this directly.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "NDVI is described as being unrelated to crop biomass and nitrogen uptake.",
+    "correct_answer": false,
+    "explanation": "The chapter states that NDVI is correlated with crop biomass and nitrogen uptake.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "Sensor-based VRT eliminates the need for any algorithm because the sensor directly sets the rate mechanically.",
+    "correct_answer": false,
+    "explanation": "Section 11.2.2 explains that sensor data feed into an algorithm running on the controller, which computes the desired rate.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "The environmental argument for VRA includes reducing leaching, runoff, volatilisation, and off-target movement of chemicals.",
+    "correct_answer": true,
+    "explanation": "Section 11.1 lists these as environmental benefits of reducing unnecessary applications.",
+    "chapter_num": 11
+  },
+  {
+    "type": "true_false",
+    "question": "According to Chapter 11, many modern VRT systems combine map-based and sensor-based approaches.",
+    "correct_answer": true,
+    "explanation": "Section 11.2 notes that although the two approaches are conceptually distinct, many modern systems combine both.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "Variable Rate Technology is commonly abbreviated as _____.",
+    "correct_answer": "VRT",
+    "explanation": "The chapter introduction states that Variable Rate Technology is commonly abbreviated VRT.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "Variable rate application replaces a single field-wide rate with a spatially explicit set of _____ matched to local conditions.",
+    "correct_answer": "rates",
+    "explanation": "Section 11.1 explains that VRA uses a spatially explicit set of rates for specific locations within the field.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "One source of spatial information for VRA mentioned in Section 11.1 is _____ maps from the previous harvest.",
+    "correct_answer": "yield",
+    "explanation": "Yield maps are listed as one possible source of information about spatial variability.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "The second practical requirement of VRA is an agronomic decision _____ that converts information into recommended rates.",
+    "correct_answer": "rule",
+    "explanation": "Section 11.1 identifies an agronomic decision rule as the second requirement.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "A spinner-disc dry fertilizer spreader may only change rates meaningfully at resolutions of _____ metres or more.",
+    "correct_answer": "30",
+    "explanation": "Section 11.1 gives 30 metres or more as the approximate meaningful resolution for this type of spreader.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "A modern planter with individual row-unit electric drives can change seeding rate within a fraction of a _____.",
+    "correct_answer": "second",
+    "explanation": "Section 11.1 uses this phrase to describe the responsiveness of modern planters.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "In map-based VRT, data layers are commonly loaded into _____ software for analysis and prescription creation.",
+    "correct_answer": "GIS",
+    "explanation": "Section 11.2.1 states that data layers are loaded into geographic information system (GIS) software.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "During map-based application, a _____ receiver continuously reports the machine's position.",
+    "correct_answer": "GNSS",
+    "explanation": "Section 11.2.1 explains that GNSS position is used to retrieve the correct prescribed rate.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "The map-based approach may be limited because conditions can change between data collection and _____ time.",
+    "correct_answer": "application",
+    "explanation": "Section 11.2.1 notes that prescriptions may become less accurate if conditions change before application.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "In sensor-based VRT, sensors mounted on the machine take continuous measurements as the machine moves through the _____.",
+    "correct_answer": "field",
+    "explanation": "Section 11.2.2 describes this real-time sensing process.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "Optical crop-canopy sensors often calculate a vegetation index such as _____.",
+    "correct_answer": "NDVI",
+    "explanation": "Section 11.2.2 names NDVI as a common vegetation index used in sensor-based nitrogen management.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "The NDVI index is calculated from reflectance in the red and _____ wavelengths.",
+    "correct_answer": "near-infrared",
+    "explanation": "Section 11.2.2 states that canopy sensors typically use red and near-infrared reflectance.",
+    "chapter_num": 11
+  },
+  {
+    "type": "fill_blank",
+    "question": "The environmental rationale for VRA includes reducing unnecessary applications and thereby lowering _____ into waterways and natural habitats.",
+    "correct_answer": "off-target movement of chemicals",
+    "explanation": "Section 11.1 includes off-target movement of chemicals among the environmental harms reduced by VRA.",
+    "chapter_num": 11
+  },
+  {
+    "type": "essay",
+    "question": "Explain why Chapter 11 argues that uniform application is often inefficient in non-uniform fields. Use both economic and environmental reasoning from Section 11.1.",
+    "explanation": "Key points: fields vary in soil texture, organic matter, nutrient reserves, and yield potential; a single rate under-applies in productive areas and over-applies in poor areas; economically, VRA redirects inputs from diminishing-return areas to increasing-return areas; environmentally, reducing unnecessary application lowers leaching, runoff, volatilisation, and off-target movement.",
+    "chapter_num": 11
+  },
+  {
+    "type": "essay",
+    "question": "Describe the three practical requirements for successful variable rate application identified in Section 11.1, and explain why each is necessary.",
+    "explanation": "Key points: (1) spatial information about variability, from sources such as soil sampling, yield maps, remote sensing, or on-the-go sensors; (2) an agronomic decision rule that converts information into recommended rates; (3) equipment and electronic control capable of changing rates on the fly using position information. Students should explain how missing any one of these breaks the VRA process.",
+    "chapter_num": 11
+  },
+  {
+    "type": "essay",
+    "question": "Compare the spatial resolution capabilities of different VRA equipment described in Section 11.1 and discuss why economically worthwhile resolution depends on more than technical capability.",
+    "explanation": "Key points: spinner-disc spreaders have coarse effective resolution due to wide overlapping throw; planters with electric row drives can respond very quickly; PWM sprayers can adjust at nozzle level and potentially sub-metre scale; worthwhile resolution depends on the spatial structure of variability, technology cost, and input price, not only engineering precision.",
+    "chapter_num": 11
+  },
+  {
+    "type": "essay",
+    "question": "Outline the workflow of a map-based VRT system from raw data to in-field application, as described in Section 11.2.1.",
+    "explanation": "Key points: collect data layers such as soil nutrient maps, yield maps, satellite vegetation indices, or ECa surveys; load into GIS; delineate management zones; assign rates using models or experience; export prescription map; transfer to controller via USB, memory card, or wireless; GNSS provides position during operation; controller retrieves prescribed rate and commands actuators.",
+    "chapter_num": 11
+  },
+  {
+    "type": "essay",
+    "question": "Evaluate the strengths and weaknesses of map-based VRT for nutrient management.",
+    "explanation": "Key points: strengths include integration of many data sources, human review before application, and documented plans for later comparison with as-applied maps; weaknesses include labor and expertise required for map creation, dependence on data quality and agronomic models, and inability to fully account for changing in-season conditions such as mineralisation after warm, wet weather.",
+    "chapter_num": 11
+  },
+  {
+    "type": "essay",
+    "question": "Explain how sensor-based VRT works in real time and why it can be especially useful for in-season nitrogen decisions.",
+    "explanation": "Key points: sensors mounted on the applicator collect continuous measurements; data feed into a controller algorithm; algorithm computes desired rate instantly; actuators adjust application on the fly; particularly useful for nitrogen because crop N status changes rapidly and is hard to predict from pre-season soil samples alone.",
+    "chapter_num": 11
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the role of NDVI in sensor-based nitrogen management and explain what kind of crop information it is intended to represent.",
+    "explanation": "Key points: optical canopy sensors measure red and near-infrared reflectance; NDVI is calculated from these signals; NDVI is correlated with crop biomass and nitrogen uptake; algorithms use this relationship to estimate nitrogen need and convert sensor readings into fertilizer rates.",
+    "chapter_num": 11
+  },
+  {
+    "type": "essay",
+    "question": "A farmer has strong historical yield maps and soil sampling data but expects weather conditions to change rapidly after planting. Based on Chapter 11, discuss whether a map-based, sensor-based, or combined VRT approach would be most appropriate.",
+    "explanation": "Key points: map-based approach is useful for integrating historical layers and planning; sensor-based approach is better at responding to current conditions; combined systems may capture both stable spatial patterns and changing in-season crop status; answer should weigh data availability, timing, and management objective.",
+    "chapter_num": 11
+  },
+  {
+    "type": "essay",
+    "question": "Why does Chapter 11 emphasize that VRT is not just hardware but also software and agronomic decision rules?",
+    "explanation": "Key points: hardware alone only changes rates mechanically; software and control systems interpret location and sensor/map inputs; agronomic rules determine what rate should be applied at each location; effective VRT requires integration of sensing, analysis, and actuation.",
+    "chapter_num": 11
+  },
+  {
+    "type": "essay",
+    "question": "Using examples from Sections 11.1 and 11.2, explain how the quality and timing of data influence the success of variable rate application.",
+    "explanation": "Key points: VRA depends on accurate spatial information; poor soil sampling, weak yield maps, or flawed models lead to poor prescriptions; map-based systems can become outdated if field conditions change; sensor-based systems improve immediacy but still depend on valid algorithms and reliable sensors; data quality and timing both affect agronomic and economic outcomes.",
+    "chapter_num": 11
+  }
+]

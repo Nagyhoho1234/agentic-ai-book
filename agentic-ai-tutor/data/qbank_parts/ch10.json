@@ -1,0 +1,421 @@
+[
+  {
+    "type": "mcq",
+    "question": "According to Chapter 10, what is the central premise of nutrient management in precision agriculture?",
+    "options": [
+      "A) Apply the same fertilizer rate across the whole field",
+      "B) Maximize nitrogen use regardless of location",
+      "C) Apply the right nutrient, at the right rate, in the right place, at the right time",
+      "D) Focus only on the cheapest fertilizer source"
+    ],
+    "correct": "C",
+    "explanation": "Chapter 10 states that the central premise is the 'right nutrient, right rate, right place, right time' approach.",
+    "chapter_num": 10
+  },
+  {
+    "type": "mcq",
+    "question": "Why is a single uniform fertilizer rate often inefficient within a field? [Section 10.1]",
+    "options": [
+      "A) Because all soils have identical nutrient needs",
+      "B) Because nutrient requirements can vary sharply over short distances",
+      "C) Because fertilizer spreaders cannot operate uniformly",
+      "D) Because crops only use nutrients in depressions"
+    ],
+    "correct": "B",
+    "explanation": "The chapter emphasizes that nutrient demand can change dramatically within a few dozen metres, making uniform application both economically and environmentally inefficient.",
+    "chapter_num": 10
+  },
+  {
+    "type": "mcq",
+    "question": "Which factor is described as arguably the single most powerful driver of within-field nutrient variation? [Section 10.1.2]",
+    "options": [
+      "A) Vegetation",
+      "B) Parent material",
+      "C) Topography",
+      "D) Time"
+    ],
+    "correct": "C",
+    "explanation": "Section 10.1.2 explicitly identifies topography as arguably the most powerful driver because it controls water movement, erosion, and organic matter accumulation.",
+    "chapter_num": 10
+  },
+  {
+    "type": "mcq",
+    "question": "In humid environments with long-term water erosion, which landscape positions typically have lower nutrient availability? [Section 10.1.2]",
+    "options": [
+      "A) Toe-slopes and depressions",
+      "B) Eroded hilltops and shoulder positions",
+      "C) Floodplains only",
+      "D) Areas with thick loess deposits"
+    ],
+    "correct": "B",
+    "explanation": "Hilltops and shoulder positions often lose topsoil through erosion, reducing nutrient availability compared with depositional lower areas.",
+    "chapter_num": 10
+  },
+  {
+    "type": "mcq",
+    "question": "What mainly explains persistent lower phosphorus and potassium levels on hilltops compared with depressions in some regions? [Section 10.1.2]",
+    "options": [
+      "A) Greater microbial fixation on hilltops",
+      "B) Historical erosion losses of topsoil and nutrients",
+      "C) Excess denitrification on hilltops",
+      "D) Uniform fertilizer application"
+    ],
+    "correct": "B",
+    "explanation": "The text explains that historic erosion, including severe losses such as those during the Dust Bowl, removed nutrient-rich topsoil from uplands.",
+    "chapter_num": 10
+  },
+  {
+    "type": "mcq",
+    "question": "How does topography influence nitrogen dynamics in depressions with heavy-textured soils and shallow water tables? [Section 10.1.2]",
+    "options": [
+      "A) Nitrogen is always conserved as nitrate",
+      "B) Denitrification can remove nitrogen as gas",
+      "C) Phosphorus becomes highly mobile",
+      "D) Potassium leaches rapidly below the root zone"
+    ],
+    "correct": "B",
+    "explanation": "In wet, oxygen-limited depressions, denitrification can convert nitrogen to gaseous forms, reducing residual nitrate.",
+    "chapter_num": 10
+  },
+  {
+    "type": "mcq",
+    "question": "Why can depressions in eastern North Dakota be very low in residual nitrate after a wet season? [Section 10.1.2]",
+    "options": [
+      "A) Because nitrate is fixed by clay minerals",
+      "B) Because denitrification is active under wet conditions",
+      "C) Because phosphorus displaces nitrate",
+      "D) Because crops cannot access nitrogen there"
+    ],
+    "correct": "B",
+    "explanation": "The chapter notes that in eastern North Dakota, wet conditions in depressions promote denitrification, leaving low residual nitrate.",
+    "chapter_num": 10
+  },
+  {
+    "type": "mcq",
+    "question": "What can elevation differences of just fifteen centimetres create in parts of the Red River Valley? [Section 10.1.2]",
+    "options": [
+      "A) Uniform pH across the field",
+      "B) Sharp contrasts in soil pH",
+      "C) Complete loss of potassium",
+      "D) Elimination of iron deficiency"
+    ],
+    "correct": "B",
+    "explanation": "Very small elevation differences can alter water movement and carbonate redistribution, producing strong pH contrasts.",
+    "chapter_num": 10
+  },
+  {
+    "type": "mcq",
+    "question": "Which nutrients are described as essentially remaining where they are placed, making management-induced patterns persist for years? [Section 10.1.3]",
+    "options": [
+      "A) Nitrogen and sulphate",
+      "B) Carbon and oxygen",
+      "C) Phosphorus and potassium",
+      "D) Chloride and nitrate"
+    ],
+    "correct": "C",
+    "explanation": "Phosphorus and potassium are relatively immobile, so over- and under-application patterns can remain visible for many years.",
+    "chapter_num": 10
+  },
+  {
+    "type": "mcq",
+    "question": "What kind of field pattern can poorly calibrated spinner-type broadcast applicators create? [Section 10.1.3]",
+    "options": [
+      "A) Circular zones of equal fertility",
+      "B) Parallel strips of over- and under-fertilized soil",
+      "C) Random nutrient removal spots",
+      "D) Permanent salinity only in corners"
+    ],
+    "correct": "B",
+    "explanation": "The chapter states that inconsistent overlap and poor calibration can leave parallel strips running the length of the field.",
+    "chapter_num": 10
+  },
+  {
+    "type": "mcq",
+    "question": "Which statement best describes saline versus sodic soils? [Section 10.1.4]",
+    "options": [
+      "A) Saline soils mainly improve water uptake, while sodic soils improve structure",
+      "B) Saline soils impede water uptake and nutrient use, while sodic soils disrupt soil structure",
+      "C) Both affect only micronutrients and not crop growth",
+      "D) Both are fixed permanently and do not change with rainfall"
+    ],
+    "correct": "B",
+    "explanation": "Salinity reduces crop productivity by affecting water uptake and nutrient utilization, whereas sodicity damages soil structure, infiltration, and root penetration.",
+    "chapter_num": 10
+  },
+  {
+    "type": "mcq",
+    "question": "Of the seventeen essential plant elements, how many are mineral nutrients absorbed primarily from the soil? [Section 10.2]",
+    "options": [
+      "A) 10",
+      "B) 12",
+      "C) 14",
+      "D) 17"
+    ],
+    "correct": "C",
+    "explanation": "Plants require 17 elements total; carbon, hydrogen, and oxygen come from air and water, leaving 14 mineral nutrients mainly supplied by soil.",
+    "chapter_num": 10
+  },
+  {
+    "type": "true_false",
+    "question": "Precision nutrient management is intended to reduce both economic waste and environmental losses caused by mismatched fertilizer application.",
+    "correct_answer": true,
+    "explanation": "The introduction highlights wasted money, depressed yields, and nutrient losses to water and air when rates do not match local needs.",
+    "chapter_num": 10
+  },
+  {
+    "type": "true_false",
+    "question": "Within-field nutrient needs usually change only over very large distances, such as several kilometres.",
+    "correct_answer": false,
+    "explanation": "The chapter says nutrient needs can change over astonishingly short distances, sometimes within a few dozen metres.",
+    "chapter_num": 10
+  },
+  {
+    "type": "true_false",
+    "question": "Parent material differences can influence soil texture, water-holding capacity, and inherent fertility within a single field. [Section 10.1.1]",
+    "correct_answer": true,
+    "explanation": "Section 10.1.1 directly links parent material differences to these soil properties.",
+    "chapter_num": 10
+  },
+  {
+    "type": "true_false",
+    "question": "In eastern Iowa, loess may be much thicker than in parts of Indiana. [Section 10.1.1]",
+    "correct_answer": true,
+    "explanation": "The text contrasts loess depths of up to 30 metres near the Mississippi River in eastern Iowa with only 30 to 45 centimetres further east in Indiana.",
+    "chapter_num": 10
+  },
+  {
+    "type": "true_false",
+    "question": "Topography has little effect on water movement and erosion patterns within fields. [Section 10.1.2]",
+    "correct_answer": false,
+    "explanation": "The chapter identifies topography as a major control on water movement, erosion, and other nutrient-related processes.",
+    "chapter_num": 10
+  },
+  {
+    "type": "true_false",
+    "question": "Depositional areas often have lower nutrient availability than eroded uplands in humid environments. [Section 10.1.2]",
+    "correct_answer": false,
+    "explanation": "The opposite is generally true: eroded uplands tend to be lower in nutrients, while depositional areas accumulate them.",
+    "chapter_num": 10
+  },
+  {
+    "type": "true_false",
+    "question": "Historical erosion losses can still dominate present-day fertility patterns despite decades of fertilizer application. [Section 10.1.2]",
+    "correct_answer": true,
+    "explanation": "The chapter explicitly states that these historical losses still strongly shape current phosphorus and potassium patterns.",
+    "chapter_num": 10
+  },
+  {
+    "type": "true_false",
+    "question": "In sandy soils on higher landscape positions, nitrate is prone to leaching into deeper soil layers. [Section 10.1.2]",
+    "correct_answer": true,
+    "explanation": "This is one of the examples given for how topography and texture influence nitrogen dynamics.",
+    "chapter_num": 10
+  },
+  {
+    "type": "true_false",
+    "question": "Depressions in western North Dakota always have very low residual nitrate because denitrification is common there. [Section 10.1.2]",
+    "correct_answer": false,
+    "explanation": "The chapter says depressions in the drier western part of the state often accumulate nitrate because denitrification conditions are rarely met.",
+    "chapter_num": 10
+  },
+  {
+    "type": "true_false",
+    "question": "Small differences in elevation can influence soil pH and micronutrient availability. [Section 10.1.2]",
+    "correct_answer": true,
+    "explanation": "The Red River Valley example shows that even 15 cm of elevation difference can create pH contrasts that affect micronutrients such as iron.",
+    "chapter_num": 10
+  },
+  {
+    "type": "true_false",
+    "question": "Poorly calibrated fertilizer application equipment can create systematic nutrient patterns unrelated to natural soil variation. [Section 10.1.3]",
+    "correct_answer": true,
+    "explanation": "Management-induced variability can overlay or even overwhelm natural variation.",
+    "chapter_num": 10
+  },
+  {
+    "type": "true_false",
+    "question": "Nitrogen is described as less mobile than phosphorus and potassium. [Section 10.1.3]",
+    "correct_answer": false,
+    "explanation": "The text states the opposite: nitrogen is mobile, while phosphorus and potassium remain essentially where they are placed.",
+    "chapter_num": 10
+  },
+  {
+    "type": "true_false",
+    "question": "Former field boundaries may remain visible in soil test maps long after fences are removed. [Section 10.1.3]",
+    "correct_answer": true,
+    "explanation": "Different historical management and fertilization practices can leave persistent patterns.",
+    "chapter_num": 10
+  },
+  {
+    "type": "true_false",
+    "question": "Saline and sodic areas are always spatially fixed and do not change with rainfall patterns. [Section 10.1.4]",
+    "correct_answer": false,
+    "explanation": "The chapter notes that salt-affected areas can expand and contract with rainfall, making them a moving target.",
+    "chapter_num": 10
+  },
+  {
+    "type": "true_false",
+    "question": "Carbon, hydrogen, and oxygen are obtained from air and water rather than primarily from soil. [Section 10.2]",
+    "correct_answer": true,
+    "explanation": "Section 10.2 distinguishes these three from the 14 mineral nutrients absorbed mainly from the soil.",
+    "chapter_num": 10
+  },
+  {
+    "type": "true_false",
+    "question": "Nitrogen, phosphorus, and potassium are the primary macronutrients and are often the most limiting to crop growth. [Section 10.2.1]",
+    "correct_answer": true,
+    "explanation": "The chapter identifies N, P, and K as the primary macronutrients required in the largest quantities.",
+    "chapter_num": 10
+  },
+  {
+    "type": "fill_blank",
+    "question": "Precision nutrient management aims to apply the right nutrient, at the right rate, in the right place, at the right _____.",
+    "correct_answer": "time",
+    "explanation": "This is the chapter's central principle for nutrient management.",
+    "chapter_num": 10
+  },
+  {
+    "type": "fill_blank",
+    "question": "A hilltop that lost its topsoil may be deficient in _____, while a downslope depression may already have enough.",
+    "correct_answer": "phosphorus",
+    "explanation": "The opening example specifically mentions phosphorus deficiency on eroded hilltops.",
+    "chapter_num": 10
+  },
+  {
+    "type": "fill_blank",
+    "question": "The five classical soil-forming factors include parent material, vegetation, climate, topography, and _____. [Section 10.1.1]",
+    "correct_answer": "time",
+    "explanation": "These five factors are listed as the foundation of nutrient variability.",
+    "chapter_num": 10
+  },
+  {
+    "type": "fill_blank",
+    "question": "Loess is described as wind-deposited _____. [Section 10.1.1]",
+    "correct_answer": "silt",
+    "explanation": "The chapter defines loess as wind-deposited silt.",
+    "chapter_num": 10
+  },
+  {
+    "type": "fill_blank",
+    "question": "Topography controls water movement, erosion patterns, organic matter accumulation, and a host of _____ processes. [Section 10.1.2]",
+    "correct_answer": "chemical",
+    "explanation": "The text says these processes help determine nutrient availability.",
+    "chapter_num": 10
+  },
+  {
+    "type": "fill_blank",
+    "question": "In humid environments, nutrients eroded from uplands are often deposited in toe-slope positions and _____. [Section 10.1.2]",
+    "correct_answer": "depressions",
+    "explanation": "These lower landscape positions are typical depositional areas.",
+    "chapter_num": 10
+  },
+  {
+    "type": "fill_blank",
+    "question": "During the 1930s Dust Bowl in North Dakota, an average of at least _____ centimetres of topsoil was lost from half of the cropland. [Section 10.1.2]",
+    "correct_answer": "fifteen",
+    "explanation": "The chapter gives this figure to illustrate the scale of historical erosion.",
+    "chapter_num": 10
+  },
+  {
+    "type": "fill_blank",
+    "question": "In wet, oxygen-limited depressions, _____ can remove nitrogen as gas. [Section 10.1.2]",
+    "correct_answer": "denitrification",
+    "explanation": "This process is a key pathway of nitrogen loss in saturated soils.",
+    "chapter_num": 10
+  },
+  {
+    "type": "fill_blank",
+    "question": "Internal water flow can redistribute soluble nutrients such as sulphate and _____. [Section 10.1.2]",
+    "correct_answer": "chloride",
+    "explanation": "Both are named as soluble nutrients moved through the landscape.",
+    "chapter_num": 10
+  },
+  {
+    "type": "fill_blank",
+    "question": "In parts of the Red River Valley, limestone-enriched bumps may have a soil pH of 7.5 to _____. [Section 10.1.2]",
+    "correct_answer": "7.8",
+    "explanation": "The chapter contrasts these alkaline spots with nearby leached depressions at pH 6.",
+    "chapter_num": 10
+  },
+  {
+    "type": "fill_blank",
+    "question": "Poorly calibrated spinner-type broadcast applicators can leave parallel strips of over- and under-_____ soil. [Section 10.1.3]",
+    "correct_answer": "fertilized",
+    "explanation": "This is a classic example of management-induced variability.",
+    "chapter_num": 10
+  },
+  {
+    "type": "fill_blank",
+    "question": "Unlike nitrogen, phosphorus and potassium are relatively _____ and tend to remain where they are placed. [Section 10.1.3]",
+    "correct_answer": "immobile",
+    "explanation": "Their low mobility explains why management patterns can persist for years.",
+    "chapter_num": 10
+  },
+  {
+    "type": "fill_blank",
+    "question": "Plants require _____ essential elements for normal growth and development. [Section 10.2]",
+    "correct_answer": "seventeen",
+    "explanation": "The chapter states that 17 elements are essential.",
+    "chapter_num": 10
+  },
+  {
+    "type": "essay",
+    "question": "Explain why uniform fertilizer application can create both economic and environmental problems in a field with strong spatial nutrient variability. [Introduction]",
+    "explanation": "Key points: nutrient needs can vary over short distances; uniform rates overfertilize some zones and underfertilize others; overapplication wastes money and increases nutrient losses to water and air; underapplication can depress yields; precision management seeks to match inputs to local needs.",
+    "chapter_num": 10
+  },
+  {
+    "type": "essay",
+    "question": "Discuss how soil-forming factors and parent material contribute to within-field nutrient variability. [Section 10.1.1]",
+    "explanation": "Key points: five soil-forming factors create baseline variability; parent material affects texture, water-holding capacity, and inherent fertility; examples include varying loess depth over glacial till and contrasting sands in coastal plains; these differences influence nutrient availability and crop response.",
+    "chapter_num": 10
+  },
+  {
+    "type": "essay",
+    "question": "Analyze how topography shapes nutrient patterns across a field in humid regions. [Section 10.1.2]",
+    "explanation": "Key points: topography drives erosion and deposition; hilltops and shoulders lose topsoil and nutrients; toe-slopes and depressions accumulate eroded material; organic matter and moisture patterns also vary; resulting fertility differences often justify site-specific nutrient management.",
+    "chapter_num": 10
+  },
+  {
+    "type": "essay",
+    "question": "Compare the effects of topography on phosphorus/potassium patterns versus nitrogen dynamics. [Sections 10.1.2-10.1.3]",
+    "explanation": "Key points: P and K patterns often reflect long-term erosion and deposition and remain persistent because these nutrients are relatively immobile; nitrogen is more mobile and responds to annual moisture conditions; upland sandy areas may lose nitrate by leaching, while wet depressions may lose N by denitrification.",
+    "chapter_num": 10
+  },
+  {
+    "type": "essay",
+    "question": "Use the North Dakota examples to explain why the same landscape position may behave differently in different climates or years. [Section 10.1.2]",
+    "explanation": "Key points: eastern North Dakota depressions after wet seasons often have low residual nitrate due to denitrification; western North Dakota depressions may accumulate nitrate because conditions are drier and denitrification is less common; climate, texture, and annual wetness interact with topography.",
+    "chapter_num": 10
+  },
+  {
+    "type": "essay",
+    "question": "Explain how very small elevation differences can lead to major management implications for soil pH and micronutrients. [Section 10.1.2]",
+    "explanation": "Key points: internal water flow redistributes calcium carbonate; even 15 cm elevation differences can create pH contrasts; pH affects micronutrient availability, especially iron; management may require site-specific lime or sulphur applications.",
+    "chapter_num": 10
+  },
+  {
+    "type": "essay",
+    "question": "Describe how past management can create systematic nutrient variability that persists for years. [Section 10.1.3]",
+    "explanation": "Key points: poor calibration and overlap in broadcast application create strips; banded fertilizer creates concentrated nutrient lines; former field boundaries reflect different histories; immobile nutrients like P and K preserve these patterns over long periods.",
+    "chapter_num": 10
+  },
+  {
+    "type": "essay",
+    "question": "Why do immobile nutrients often require a different precision management strategy than nitrogen? [Section 10.1.3]",
+    "explanation": "Key points: P and K remain near where applied, so historical over- and under-application persist; correction may require long-term site-specific plans; nitrogen is mobile and influenced by yearly weather and biological processes, so management must be more dynamic.",
+    "chapter_num": 10
+  },
+  {
+    "type": "essay",
+    "question": "Discuss the agronomic significance of salinity and sodicity as sources of within-field variability. [Section 10.1.4]",
+    "explanation": "Key points: salinity impedes water uptake and nutrient utilization; sodicity disrupts soil structure, infiltration, and root penetration; affected areas may shift with rainfall and shallow water tables; monitoring is important because salt-affected zones are dynamic and can strongly reduce productivity.",
+    "chapter_num": 10
+  },
+  {
+    "type": "essay",
+    "question": "Summarize the distinction between essential elements obtained from air and water and those managed as soil-supplied mineral nutrients. [Section 10.2]",
+    "explanation": "Key points: plants require 17 essential elements; carbon, hydrogen, and oxygen come from air and water; the remaining 14 are mineral nutrients absorbed mainly from soil; nutrient management focuses on these 14, especially the primary macronutrients N, P, and K.",
+    "chapter_num": 10
+  }
+]
