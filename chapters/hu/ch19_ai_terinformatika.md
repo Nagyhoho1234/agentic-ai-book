@@ -1,107 +1,113 @@
-# 19. fejezet — AI a terinformatikaban
+# 19. fejezet — AI a térinformatikában
 
-> **Fejezet-informacio**
-> - **Kinek szol:** Terinformatikusoknak, kornyezetkutatoknak es GIS-felhasznaloknak
-> - **Eloismeretek:** 1-4. fejezet (AI alapok); a 5. es 9. fejezet ajanlott
+> **Fejezet-információ**
+> - **Kinek szól:** Terinformatikusoknak, környezetkutatóknak és GIS-felhasználóknak
+> - **Előismeretek:** 1-4. fejezet (AI alapok); a 5. és 9. fejezet ajánlott
 > - **Amit megtanulsz:**
->   - AI-alapu muholdkep-feldolgozas es felszinboritas-osztalyozas
->   - Autonom GIS rendszerek: termeszetes nyelvu terinformatikai elemzes
->   - Magyar terinformatikai kontextus (EOV, Corine, Natura 2000)
-> - **Szukseges eszkozok:** Browser + terminal + Python (QGIS + Google Earth Engine)
-> - **Kapcsolodo fejezetek:** 5. fejezet (kodolas), 10. fejezet (digitalis ikrek), 17. fejezet (mezogazdasag), 18. fejezet (hidroinformatika)
+>   - AI-alapú műholdkép-feldolgozás és felszínborítás-osztályozás
+>   - Autonóm GIS rendszerek: természetes nyelvű térinformatikai elemzés
+>   - Magyar térinformatikai kontextus (EOV, Corine, Natura 2000)
+> - **Szükséges eszközök:** Böngésző + terminál + Python (QGIS + Google Earth Engine)
+> - **Kapcsolódó fejezetek:** 5. fejezet (kódolás), 10. fejezet (digitális ikrek), 17. fejezet (mezőgazdaság), 18. fejezet (hidroinformatika)
 
 ---
 
-## Nyito jelenet: Amikor a terkep "megtanul" gondolkodni
+## Nyitó jelenet: Amikor a térkép "megtanul" gondolkodni
 
-Kepzeld el a kovetkezo helyzetet. Szabo Anna kornyezetinformatikus vagy a Debreceni Egyetemen. A feladatod: felmerni, hogyan valtoztak a Tisza arteri elohelyek az elmult ot evben, milyen felszinboritasi valtozasok tortentek a Natura 2000 teruletek kornyeken, es hogy a varosias beruhazasok veszelyeztetik-e a vedett zonak pufferzoinajat. Ehhez szukseged van Sentinel-2 muholdfelvetelekre, Corine Land Cover adatokra, Natura 2000 poligonokra, Magyar EOV koordinatarendszerben levo parcellahatarokra es hidrografiai adatokra. Raadasul az eredmenyeket ossze kell vetned a vonatkozo jogszabalyokkal, es egy szakmai riportban kell osszefoglalnod.
+Képzeld el a következő helyzetet. Szabó Anna környezetinformatikus vagy a Debreceni Egyetemen. A feladatod: felmérni, hogyan változtak a Tisza ártéri élőhelyek az elmúlt öt évben, milyen felszínborítási változások történtek a Natura 2000 területek környékén, és hogy a városias beruházások veszélyeztetik-e a védett zonak pufferzónáját. Ehhez szükséged van Sentinel-2 műholdfelvételekre, Corine Land Cover adatokra, Natura 2000 poligonokra, Magyar EOV koordináta-rendszerben levo parcellahatárokra és hidrográfiai adatokra. Ráadásul az eredmenyeket ossze kell vetned a vonatkozo jogszabalyokkal, és egy szakmai riportban kell osszefoglalnod.
 
-Harom evvel ezelott ez a feladat harom honapnyi munka lett volna: adatok letoltese kulonbozo portalokrol, koordinata-rendszer harmonizacio, raszteres es vektoros adatok osszemetszese QGIS-ben, vizualis interpretacio, statisztikai osszesites Excelben, vegul a riport megirasa. Ma -- 2026-ban -- a munkafolyamat gyokeresen mas. Leirod a feladatot termeszetes nyelven egy AI agensnek, amely automatikusan megkeresi a relevanns muholdfelveteleket a STAC katalogusbol, letolti es elofeldolgozza a rasztereket, elvegzi a felszinboritas-osztályozast egy foundation modellel, kiszamitja a zonalis statisztikat a Natura 2000 poligonokra, osszeveti az eredmenyeket a jogszabalyi adatbazissal (RAG), es generäl egy terkepes riportot -- mindezt egyetlen del alatti munkaval.
+Harom evvel ezelott ez a feladat harom honapnyi munka lett volna: adatok letöltése különböző portalokrol, koordináta-rendszer harmonizacio, raszteres és vektoros adatok osszemetszese QGIS-ben, vizualis interpretacio, statisztikai összesítés Excelben, vegul a riport megírása. Ma -- 2026-ban -- a munkafolyamat gyökeresen mas. Leírod a feladatot természetes nyelven egy AI ágensnek, amely automatikusan megkeresi a releváns műholdfelveteleket a STAC katalógusból, letolti és előfeldolgozza a rasztereket, elvegzi a felszínborítás-osztályozást egy foundation modellel, kiszámítja a zonális statisztikat a Natura 2000 poligonokra, osszeveti az eredmenyeket a jogszabályi adatbázissal (RAG), és generál egy térképes riportot -- mindezt egyetlen dél alatti munkaval.
 
-Ez nem science fiction. Ez az **AI-alapu terinformatika** vilagaa, es ebben a fejezetben vegigvezetlek rajta: az adatfeldolgozastol a kodgenerälason at az autonom terinformatikai rendszerekig.
+Ez nem science fiction. Ez az **AI-alapú térinformatika** világa, és ebben a fejezetben végigvezetlek rajta: az adatfeldolgozástól a kódgeneráláson at az autonóm térinformatikai rendszerekig.
 
 ---
 
-## 19.1 Hogyan alakitja at az AI a terinformatika minden szegmenset?
+## 19.1 Hogyan alakitja at az AI a térinformatika minden szegmenset?
 
-A terinformatika -- vagy geoinformatika -- az a tudomanyterulet, amely a foldi terben elhelyezkedo jelensegek digitalis rogzitesevel, modellezeseivel, elemzesevel es kommunikaciojaaval foglalkozik. A modern terinformatika harom oszlopon nyugszik: a **helyzeti komponens** (hol), az **attributum komponens** (mi) es az **idobeli komponens** (mikor). Az AI mindharom oszlopot forradalmasitja.
+> **🖼️ Ábra: Az AI-GIS konvergencia négy hajtóereje — adatrobbanás, számítási kapacitás, AI-modellek, LLM-ek**
+> *Four converging arrows diagram, each representing a driving force of AI-GIS convergence, meeting at a central "Autonomous GIS" hub, modern tech illustration*
 
-### 19.1.1 Az AI-GIS konvergencia hajtoeröi
+A térinformatika -- vagy geoinformatika -- az a tudományterület, amely a foldi terben elhelyezkedo jelenségek digitális rögzítésével, modellezéseivel, elemzésevel és kommunikációjával foglalkozik. A modern térinformatika három oszlopon nyugszik: a **helyzeti komponens** (hol), az **attribútum komponens** (mi) és az **időbeli komponens** (mikor). Az AI mindhárom oszlopot forradalmasítja.
 
-Negy paarhuzamos trend talaalkozik napjainkban:
+### 19.1.1 Az AI-GIS konvergencia hajtóerői
 
-1. **Adatrobbanaans**: A Copernicus-program Sentinel muholdjainak napi adattermelese meghaladja a 12 terabajtot. A Planet Labs napi rendszeresseggel keszit 3--5 meteres felbontasu felveteleket a Fold teljes felszinerol. Az IoT-haálozatok -- meteorologiai allomäsok, vizszintmerok, legszennyezetteg-merok -- szinten napi milliardnyi merest generalnak. Ezt az adatmennyiseget emberi erovel mar lehetetlen feldolgozni.
+Négy párhuzamos trend találkozik napjainkban:
 
-2. **Szamitasi kapacitas**: A felhoalapu platformok (Google Earth Engine, Microsoft Planetary Computer, Copernicus Data Space Ecosystem) petabajtnyi adatot es gyakorlatilag korlätlan szamitasi kapacitast tesznek elerhetove egy bongeszöbol. Az "adat a szamitashoz megy" paradigma atadta helyet a "szamitas az adathoz megy" elvnek.
+1. **Adatrobbanás**: A Copernicus-program Sentinel műholdjainak napi adattermelése meghaladja a 12 terabajtot. A Planet Labs napi rendszerességgel keszit 3--5 méteres felbontású felveteleket a Fold teljes felszínéről. Az IoT-hálózatok -- meteorológiai állomások, vízszintmerok, légszennyezettség-mérők -- szintén napi milliardnyi mérést generálnak. Ezt az adatmennyiséget emberi erővel mar lehetetlen feldolgozni.
 
-3. **AI modellek erettsege**: A konvolucios neuralis halozatok (CNN), a transzformer architekturak es a geospatial foundation modellek (Prithvi, Clay, SatCLIP) elertek azt a szintet, ahol a muholdkep-osztälyozas, a valtozasdetektalas es a terbeli predikciio pontossaga meghaladja az emberi vizualis interpretacioet.
+2. **Szamitasi kapacitas**: A felhőalapú platformok (Google Earth Engine, Microsoft Planetary Computer, Copernicus Data Space Ecosystem) petabájtnyi adatot és gyakorlatilag korlátlan számítási kapacitast tesznek elérhetővé egy böngészőből. Az "adat a szamitashoz megy" paradigma átadta helyet a "szamitas az adathoz megy" elvnek.
 
-4. **Nagy nyelvi modellek (LLM)**: A GPT-4, Claude, Gemini es tarsaik kepesek PostGIS SQL-t irni, Python GIS-szkripteket generalni, muholdkepeket ertelmezni es komplex elemzesi terveket kesziteni -- termineszetes nyelvű utasitasbol kiindulva.
+3. **AI modellek érettsége**: A konvolúciós neurális hálózatok (CNN), a transzformer architektúrák és a geospatial foundation modellek (Prithvi, Clay, SatCLIP) elérték azt a szintet, ahol a műholdkép-osztályozás, a változásdetektálás és a térbeli predikció pontossága meghaladja az emberi vizuális interpretációét.
 
-Ezek a trendek egyuttesen hozzak letre azt, amit **autonom GIS-nek** (Autonomous GIS) nevez a szakirodalom: olyan rendszert, amelyben az AI nem passziv eszkoze, hanem aktiv partnere a terinformatikusnak. Ebben a fejezetben vegigjarjuk ezt a teljes spektrumot, es megallapitjuk, hogy a konyvunk korabbi fejezeteiböl tanultak -- az AI agensektol (11. fejezet) a RAG rendszerekig (9. fejezet), a kodolasi asszisztensektöl (5. fejezet) a digitalis ikrekig (10. fejezet) -- hogyan alkalmazhatoek a terinformatikaban.
+4. **Nagy nyelvi modellek (LLM)**: A GPT-4, Claude, Gemini és tarsaik képesek PostGIS SQL-t irni, Python GIS-szkripteket generálni, műholdkepeket értelmezni és komplex elemzési terveket kesziteni -- természetes nyelvű utasításból kiindulva.
 
-### 19.1.2 A fejezet terkepe
+Ezek a trendek együttesen hozzák létre azt, amit **autonóm GIS-nek** (Autonomous GIS) nevez a szakirodalom: olyan rendszert, amelyben az AI nem passziv eszkoze, hanem aktiv partnere a térinformatikusnak. Ebben a fejezetben végigjárjuk ezt a teljes spektrumot, és megállapítjuk, hogy a könyvünk korábbi fejezeteiből tanultak -- az AI ágensektől (11. fejezet) a RAG rendszerekig (9. fejezet), a kódolási asszisztensektől (5. fejezet) a digitális ikrekig (10. fejezet) -- hogyan alkalmazhatóek a térinformatikában.
 
-A fejezet felcpitese a kovetkezo logikaat koveti:
+### 19.1.2 A fejezet térképe
+
+A fejezet felépítése a következő logikát követi:
 
 | Alfejezet | Tema | Kapcsolodas a konyvhoz |
 |-----------|------|----------------------|
-| 19.2 | AI a terbelien adatfeldolgozasban | 4--5. fejezet (adatelemzes, kodolas) |
-| 19.3 | AI kodolasi asszisztensek GIS-hez | 5. fejezet (kodolasi asszisztensek) |
-| 19.4 | Gepi tanulas terbeli predikciohoz | 6. fejezet (matematikai modellezes) |
-| 19.5 | Vizualis programozas GIS munkafolyamatokhoz | 8. fejezet (vizualis programozas) |
-| 19.6 | RAG terinformatikai tudashoz | 9. fejezet (RAG) |
-| 19.7 | 3D GIS es terbeli digitalis ikrek | 10. fejezet (digitalis ikrek) |
-| 19.8 | Autonom GIS | 11--12. fejezet (agensek) |
-| 19.9 | Big data es felhoalapu GIS | 14. fejezet (AI labor) |
-| 19.10 | Magyar terinformatikai kontextus | -- |
+| 19.2 | AI a térbeli adatfeldolgozásban | 4--5. fejezet (adatelemzés, kódolás) |
+| 19.3 | AI kódolási asszisztensek GIS-hez | 5. fejezet (kódolási asszisztensek) |
+| 19.4 | Gepi tanulas térbeli predikcióhoz | 6. fejezet (matematikai modellezés) |
+| 19.5 | Vizualis programozas GIS munkafolyamatokhoz | 8. fejezet (vizuális programozás) |
+| 19.6 | RAG térinformatikai tudashoz | 9. fejezet (RAG) |
+| 19.7 | 3D GIS és térbeli digitális ikrek | 10. fejezet (digitális ikrek) |
+| 19.8 | Autonóm GIS | 11--12. fejezet (ágensek) |
+| 19.9 | Big data és felhőalapú GIS | 14. fejezet (AI labor) |
+| 19.10 | Magyar térinformatikai kontextus | -- |
 | 19.11 | Gyakorlati feladatok | -- |
 
 ---
 
-## 19.2 AI a terbeli adatfeldolgozasban
+## 19.2 AI a térbeli adatfeldolgozásban
 
-A terinformatika legidoigenresebb, leginkabb "munka-jellegu" feladatai az adatfeldolgozashoz kotodnek: muholdkepek eloofeldolgozasa, LiDAR pontfelhok osztälyozasa, vektoros adatok tisztitasa, koordinata-transzformaciok. Ezek pontosan azok a feladatok, ahol az AI -- akár kep-alapu melytanulaskent, akär kodgenerlako LLM-kent -- a legnagyobb hatast fejti ki.
+> **🖼️ Ábra: Műholdkép-feldolgozási lánc AI-val — a nyers felvételtől a kész térképig**
+> *Processing chain showing satellite image transformation: raw image → atmospheric correction → cloud masking → classification → thematic map, with AI icons at key steps*
 
-### 19.2.1 Muholdkep-feldolgozas AI-val
+A térinformatika legidőigényesebb, leginkabb "munka-jellegű" feladatai az adatfeldolgozáshoz kötődnek: műholdkepek előfeldolgozása, LiDAR pontfelhők osztályozása, vektoros adatok tisztítása, koordináta-transzformációk. Ezek pontosan azok a feladatok, ahol az AI -- akár kep-alapu mélytanulásként, akár kódgeneráló LLM-kent -- a legnagyobb hatást fejti ki.
 
-A hagyomanyos muholdkep-feldolgozasi lanc a kovetkezo lepesekbol all: (1) letoltes, (2) legkori korrekcioo (atmoszferikus korrekcioo: a nyers reflektancia aatalakitasa felszini reflektanciaava), (3) geometriai korrekciio, (4) felhomaszkoolas, (5) mozaikolais es (6) kompozitkeszites. Ezeknek a lepeseknek a tobbsege ma mar automatizalt: a Sentinel-2 Level-2A (L2A) termek mar legkorilag korrigallt es geometriailag pontos felszini reflektanciat tartalmaz.
+### 19.2.1 Muholdkep-feldolgozás AI-val
 
-Az AI ezen felul harom ponton lep be:
+A hagyományos műholdkép-feldolgozási lanc a következő lépésekből áll: (1) letöltés, (2) légköri korrekció (atmoszférikus korrekció: a nyers reflektancia átalakítása felszíni reflektanciává), (3) geometriai korrekció, (4) felhőmaszkolás, (5) mozaikolás és (6) kompozitkészítés. Ezeknek a lépéseknek a többsége ma mar automatizált: a Sentinel-2 Level-2A (L2A) termek mar legkorilag korrigált és geometriailag pontos felszini reflektanciat tartalmaz.
 
-**Felhodetektalas es felhomaszkoolas**: A hagyomanyos kuszobertekk-alapu felhodetektalas (mint a Sentinel-2 SCL savja) gyökran hibazik: a havat felhönak, a magas albedoju varosi feluleteket felhönek, a vekony cirrus-felhot pedig atlatszónak osztalyozza. A CNN-alapu felhodetektalas -- peldaul az S2Cloudless (Sentinel Hub) -- 95%+ pontossaggal osztälyozza a felhöpixeleket, es a Sentinel Hub platformon automatikusan alkalmazodik.
+Az AI ezen felul három ponton lep be:
 
-**Muholdfelvetelek szuperfelbontas-javitasa** (super-resolution): AI modellek kepesek a 20 meteres felbontasu Sentinel-2 savokat 10 meteres felbontasra javitani, vagy akär 2,5 meteres "szintetikus" felbontast generalini. Ez nem varazslat -- a modell a 10 meteres savokbol es a 20 meteres savok kozotti osszefuggesekbol tanulja meg a felbontas-javitast. A kornyezeti alkalmazasokban ez akkor hasznos, ha a 10 meteres felbontaas nem elegendo (peldaul varosi zoldfeluletek reszletes terkepezese), de kereskelmi nagyfelbontasu felvetelek nem elerheroek.
+**Felhodetektalas és felhőmaszkolás**: A hagyományos küszöbérték-alapú felhodetektalas (mint a Sentinel-2 SCL savja) gyakran hibázik: a havat felhőnek, a magas albedójú varosi felületeket felhönek, a vékony cirrus-felhőt pedig átlátszónak osztályozza. A CNN-alapú felhodetektalas -- például az S2Cloudless (Sentinel Hub) -- 95%+ pontossaggal osztályozza a felhőpixeleket, és a Sentinel Hub platformon automatikusan alkalmazódik.
 
-**Idosor-kompozitak intelligens eloallitasa**: A hagyomanyos median-kompozit az egyes pixelek egesz eves felveteleinek medianjabol szaamoloodik. Az AI-alapu megkozelites -- peldaul a Temporal Attention Encoder -- a felhos idoopontokat automatikusan alacsony sullyal kezeli, es a "legjobb pixelt" választja a vizualis minoseg es a tematikus pontossag alapjan.
+**Muholdfelvetelek szuperfelbontás-javítása** (super-resolution): AI modellek kepesek a 20 méteres felbontású Sentinel-2 savokat 10 méteres felbontásra javítani, vagy akár 2,5 méteres "szintetikus" felbontást generálni. Ez nem varázslat -- a modell a 10 méteres sávokból és a 20 méteres savok kozotti összefüggésekből tanulja meg a felbontás-javítást. A környezeti alkalmazásokban ez akkor hasznos, ha a 10 méteres felbontás nem elegendő (például varosi zoldfelületek részletes térképezese), de kereskedelmi nagyfelbontású felvetelek nem elérhetőek.
 
-> **Kapcsolodas a 4. fejezethez**: Ahogyan a 4. fejezetben (Adatelemzes kod nelkul) lattad, az AI-val vegzett adattisztitas es -elofeldolgozas dontoen csökkenti a rutinmunka mennyiseget. A teriinformatikaban ez megsokszorozodik: egyetlen Sentinel-2 jelenet 13 savbol, 109 millio pixelbol all, es egy orszagnyi elemzeshez evente tobb szaz jelenet feldolgozasa szuukseges.
+**Idősor-kompozitok intelligens előállítása**: A hagyományos medián-kompozit az egyes pixelek egész éves felvételeinek mediánjából számolódik. Az AI-alapú megközelítés -- például a Temporal Attention Encoder -- a felhős időpontokat automatikusan alacsony súllyal kezeli, és a "legjobb pixelt" választja a vizuális minőség és a tematikus pontosság alapján.
 
-### 19.2.2 LiDAR pontfelhö-feldolgozas
+> **Kapcsolodas a 4. fejezethez**: Ahogyan a 4. fejezetben (Adatelemzés kod nélkül) láttad, az AI-val vegzett adattisztítás és -előfeldolgozás döntően csökkenti a rutinmunka mennyiségét. A térinformatikában ez megsokszorozódik: egyetlen Sentinel-2 jelenet 13 sávból, 109 millio pixelből áll, és egy országnyi elemzéshez évente több száz jelenet feldolgozása szükséges.
 
-A lejzeres letapogatäs (LiDAR) suru haromdimenzios pontfelhoket allit elo, amelyekbol digitalis domborzatmodellek (DTM), digitalis felszinmodellek (DSM) es haromdimenzios epuletmodellek szarmaztathaatok. A nyers pontfelhö feldolgozasänak legidoigenryesebb lepeese az **osztälyozas**: minden pontrol eldonteni, hogy talajpont, vegetacio, epulet, vezetek vagy egyeb objektum.
+### 19.2.2 LiDAR pontfelhö-feldolgozás
 
-A hagyomanyo szuroalgoritmusok (progressziv morfologiai szuros, csucshelyesiites) jol mukodnek sik terepen, de meredek domboldalon, suuru varosias kornyezetben vagy osszetett vegetacio mellett gyakran hibaznak. A **deep learning-alapu pontfelhö-osztälyozas** -- peldaul a PointNet++ vagy a RandLA-Net -- kozvetlenul a 3D pontokon dolgozik, es automatikusan tanulja meg a termeszetes es epitett kornyezet terbeli mintazatait.
+A léjzeres letapogatás (LiDAR) sűrű háromdimenziós pontfelhőket allit elo, amelyekbol digitalis domborzatmodellek (DTM), digitalis felszínmodellek (DSM) és háromdimenziós épületmodellek származtathatóak. A nyers pontfelhö feldolgozásának legidőigényesebb lépése az **osztályozás**: minden pontrol eldönteni, hogy talajpont, vegetáció, épület, vezeték vagy egyéb objektum.
 
-A magyar LIDAR500 program -- amely az egesz orszag legifeelveteeles LiDAR-felmereset celozza -- tobb tiz terabäjtnyi pontfelhoet eredmenyez. Ennek a hatalmas adattomegnek a feldolgozasa AI nelkul eveket venne igenyebe; a melytanulasi modellekkel a munka henapokra csokkentheto.
+A hagyomanyo szűrőalgoritmusok (progresszív morfológiai szűrős, csúcshelyesítés) jol működnek sík terepen, de meredek domboldalon, sűrű városias környezetben vagy összetett vegetáció mellett gyakran hibáznak. A **deep learning-alapú pontfelhö-osztályozás** -- például a PointNet++ vagy a RandLA-Net -- közvetlenül a 3D pontokon dolgozik, és automatikusan tanulja meg a természetes és épített környezet térbeli mintázatait.
 
-### 19.2.3 Vektoros adatok es koordinata-transzformaciok
+A magyar LIDAR500 program -- amely az egész ország légi felvételes LiDAR-felmérését célozza -- tobb tiz terabájtnyi pontfelhőt eredményez. Ennek a hatalmas adattömegnek a feldolgozása AI nélkül éveket venne igénybe; a mélytanulási modellekkel a munka hónapokra csökkenthető.
 
-A vektoros adatok -- pontok, vonalak, poligonok -- tisztitasa es harmonizalasa szinten idoigenyes feladat. A tipikus probelimak: onmetszo poligonok (topologiai hibak), elteero koordinata-rendszerek (az EOV-ban levo kataszteri adatok es a WGS 84-ben levo GPS-merresek osszeveteese), hianyos attributumok es eltero osztälyozasi schemak.
+### 19.2.3 Vektoros adatok és koordináta-transzformációk
 
-Az AI itt elsösorban **kodgeneralocskent** segit: a feladat leirasaabol automatikusan general GeoPandas- vagy PostGIS-kodot a koordinata-transzformaciohoz, a topologiai javitashoz es az attributum-harmonizaciohoz. Errol reszletesen a 19.3 alfejezetben lesz szo.
+A vektoros adatok -- pontok, vonalak, poligonok -- tisztítása és harmonizálása szintén időigényes feladat. A tipikus problémák: önmetsző poligonok (topológiai hibák), eltérő koordináta-rendszerek (az EOV-ban levo kataszteri adatok és a WGS 84-ben levo GPS-mérések összevetése), hiányos attribútumok és eltérő osztályozási sémák.
 
-> **Az EOV koordinata-rendszer felismerese**: A magyar geoinformatikaban az EOV (Egyseges Orszagos Vetuleti rendszer, EPSG:23700) a leggyakoribb vetuleti rendszer. Az EOV koordinatak felismerese **ertek-tartomany** alapjan lehetseges: a Northing ertekek 0 es 400 000 kozott, az Easting ertekek 400 000 es 1 000 000 kozott mozognak. Fontos: a fejlec-cimkek gyakran felrevezetoek (a "X" mezo tartalmazhatja a Northingot vagy az Eastinget is) -- mindig az ertektartomany az iranyadoo.
+Az AI itt elsősorban **kódgenerálóként** segit: a feladat leírásából automatikusan generál GeoPandas- vagy PostGIS-kodot a koordináta-transzformációhoz, a topológiai javításhoz és az attribútum-harmonizációhoz. Errol részletesen a 19.3 alfejezetben lesz szó.
+
+> **Az EOV koordináta-rendszer felismerése**: A magyar geoinformatikaban az EOV (Egységes Országos Vetületi rendszer, EPSG:23700) a leggyakoribb vetületi rendszer. Az EOV koordináták felismerése **érték-tartomány** alapján lehetséges: a Northing értékek 0 és 400 000 kozott, az Easting értékek 400 000 és 1 000 000 kozott mozognak. Fontos: a fejléc-címkék gyakran félrevezetőek (a "X" mezo tartalmazhatja a Northingot vagy az Eastinget is) -- mindig az értéktartomány az irányadó.
 
 ---
 
-## 19.3 AI kodolasi asszisztensek GIS-hez
+## 19.3 AI kódolási asszisztensek GIS-hez
 
-Az 5. fejezetben megtanultad, hogyan hasznalhatod az AI kodolasi asszisztenseket (Claude, ChatGPT, GitHub Copilot, Cursor) Python-szkriptek irasaahoz -- programozasi tapasztalat nelkul is. A terinformatikaban ez a kepesseg kulonosenn hatalmmas, mert a GIS-munka nagy resze automatizalhato Python-nel, de a GIS-Python okoszisztema (ArcPy, QGIS Processing, GeoPandas, rasterio, xarray) rendkivul szerteagazo es osszetett.
+Az 5. fejezetben megtanultad, hogyan használhatod az AI kódolási asszisztenseket (Claude, ChatGPT, GitHub Copilot, Cursor) Python-szkriptek írásához -- programozási tapasztalat nélkül is. A térinformatikában ez a képesség különösenn hatalmas, mert a GIS-munka nagy resze automatizálható Python-nel, de a GIS-Python okoszisztema (ArcPy, QGIS Processing, GeoPandas, rasterio, xarray) rendkívül szerteágazó és összetett.
 
-### 19.3.1 Python GIS-szkriptek generaalasa
+### 19.3.1 Python GIS-szkriptek generálása
 
-Az LLM-ek a GIS-Python ökoszisztemaat jol ismerik, mert a tanito szovegekben boven talalhato GeoPandas, rasterio es PostGIS dokumentacio. A tipikus felhasznalasi mintak:
+Az LLM-ek a GIS-Python ökoszisztémát jol ismerik, mert a tanító szövegekben bőven található GeoPandas, rasterio és PostGIS dokumentáció. A tipikus felhasználási mintak:
 
 **Vektoros muveletek GeoPandas-szal:**
 
@@ -112,7 +118,7 @@ Debrecenre, keszitsek 500 meteres puffert, es mentsem el uj
 GeoPackage-kent EOV vetuleetben (EPSG:23700)."
 ```
 
-Az AI altal generalt kod tipikusan:
+Az AI által generált kod tipikusan:
 
 ```python
 import geopandas as gpd
@@ -176,9 +182,9 @@ with rasterio.open("B04.tif") as red_src, \
         dst.write(ndvi.astype(np.float32), 1)
 ```
 
-### 19.3.2 ArcPy es QGIS Processing
+### 19.3.2 ArcPy és QGIS Processing
 
-Ha ArcGIS Pro kornyezetben dolgozol, az ArcPy az automatizalas eszkoze. Az LLM-ek az ArcPy-t is ismerik:
+Ha ArcGIS Pro környezetben dolgozol, az ArcPy az automatizalas eszkoze. Az LLM-ek az ArcPy-t is ismerik:
 
 ```
 Prompt: "ArcPy-val futtasd le a Spatial Join muveleteet
@@ -186,7 +192,7 @@ az 'epuletek' es a 'arvizkockazat' retegek kozott, es
 szamold ki, hany epulet esik magas kockazatu teruuletre."
 ```
 
-QGIS Processing eseteen a `processing.run()` fuggvenyhivasok generalasa szinten jol mukodik:
+QGIS Processing eseteen a `processing.run()` fuggvenyhivasok generálasa szintén jol mukodik:
 
 ```
 Prompt: "QGIS Processing-gel keszits domborzat-arnyekolast
@@ -206,9 +212,9 @@ processing.run("native:hillshade", {
 })
 ```
 
-### 19.3.3 PostGIS terbeli lekerdezesek
+### 19.3.3 PostGIS térbeli lekerdezesek
 
-Az AI kodolasi asszisztensek a PostGIS terbeli SQL-t is megbiizhatoan generaljak. Ez kulonosen ertekes, mert a PostGIS fuggvenykonyvtar rendkivul kiterjedt (tobb szaz terbeli fuggveny), es a helyes hasznalat mellyrehatö terbeli gondolkodast igenyel.
+Az AI kódolási asszisztensek a PostGIS térbeli SQL-t is megbiizhatoan generáljak. Ez különösen ertekes, mert a PostGIS fuggvenykonyvtar rendkívül kiterjedt (több száz térbeli fuggveny), és a helyes használat mellyrehatö térbeli gondolkodast igenyel.
 
 ```
 Prompt: "Ird meg PostGIS SQL-ben: hany hektar szantoterulet
@@ -225,272 +231,275 @@ WHERE m.nev = 'Hajdu-Bihar'
   AND f.clc_kod IN ('211', '212', '213');
 ```
 
-> **Tipikus hibaforrasok**: Az LLM-ek a GIS-kodgeneeralasnaal a kovetkezo hibakat kovetik el leggyakrabban: (1) **CRS-hiba** -- EOV helyett WGS 84-et felteteleznek, mert az a leggyakoribb a tanitoszovegekben (az esetek 25--35%-aban); (2) **szemantikai hiba** -- rossz oszlopnevet vagy osztalykodot hasznalnak; (3) **topologiai hiba** -- nem kezelik az onmetszo poligonokat (ST_MakeValid hianya). A 12. fejezetben tanult validaacios lepesek (onselfcheck, iterativ javitas) itt kulonosenn fontosak.
+> **Tipikus hibaforrasok**: Az LLM-ek a GIS-kodgeneeralasnaal a következő hibakat követik el leggyakrabban: (1) **CRS-hiba** -- EOV helyett WGS 84-et felteteleznek, mert az a leggyakoribb a tanitoszovegekben (az esetek 25--35%-aban); (2) **szemantikai hiba** -- rossz oszlopnevet vagy osztalykodot használnak; (3) **topológiai hiba** -- nem kezelik az önmetsző poligonokat (ST_MakeValid hianya). A 12. fejezetben tanult validaacios lépések (onselfcheck, iteratív javitas) itt különösenn fontosak.
 
 ---
 
-## 19.4 Gepi tanulas terbeli predikciohoz
+## 19.4 Gepi tanulas térbeli predikcióhoz
 
-A 6. fejezetben (Matematikai modellezes) megismerkedsz a gepi tanulas alapjaival. A terinformatikaban a gepi tanulas harom fo feladattipusban jelenik meg: felszinboritas-osztälyozas, geostatisztikai modellezes es terbeli interpolacio.
+A 6. fejezetben (Matematikai modellezés) megismerkedsz a gepi tanulas alapjaival. A térinformatikában a gepi tanulas harom fo feladattipusban jelenik meg: felszínborítás-osztályozás, geostatisztikai modellezés és térbeli interpoláció.
 
-### 19.4.1 Felszinboritas-osztälyozas
+### 19.4.1 Felszinboritas-osztályozás
 
-A felszinboritas-osztälyozas a taverzekeles "Hello World" feladata: muholdfelvetelbol automatikusan meghataarozni, hogy a Fold felszinenn hol van erdoo, mezogazdasagi terulet, vizfelulet, epitett terulet stb. Az elmult evtizedek fejlodese:
+A felszínborítás-osztályozás a távérzékelés "Hello World" feladata: műholdfelvetelbol automatikusan meghataarozni, hogy a Fold felszinenn hol van erdoo, mezőgazdasági terület, vizfelület, epitett terület stb. Az elmult evtizedek fejlődése:
 
 | Korszak | Modszer | Tipikus pontossag | Jellemzo |
 |---------|---------|-------------------|----------|
 | 1970--1990 | Maximum Likelihood | 70--80% | Normalis eloszlas feltevezes |
-| 2000--2015 | Random Forest | 80--90% | Nem feltetelaz eloszlast, sok jellemzo |
-| 2015--2020 | U-Net (CNN) | 85--95% | Automatikus jellemzoetanulas |
+| 2000--2015 | Random Forest | 80--90% | Nem feltetelaz eloszlast, sok jellemző |
+| 2015--2020 | U-Net (CNN) | 85--95% | Automatikus jellemzőetanulas |
 | 2020-- | Foundation modellek (Prithvi, Clay) | 90--97% | Elotanitott, keves cimkezeiett adat kell |
 
-A **U-Net** architektura -- amelyet a 6. fejezetben az encoder-decoder halozatok kozott emlitettunk -- a terbeli szegmentalas (szemantikus szegmentalas) alapeszkoze: minden pixelt osztalyhoz rendel, figyelembe veve a terbeli kontextust. A U-Net kulcsinnovacioja az atugrasi kapcsolat (skip connection), amely a reszletes terbeli informaciot kozvetiti az alacsony szintu retegekbol a magas szintu retegekbe.
+A **U-Net** architektura -- amelyet a 6. fejezetben az encoder-decoder halozatok kozott emlitettunk -- a térbeli szegmentalas (szemantikus szegmentalas) alapeszkoze: minden pixelt osztalyhoz rendel, figyelembe veve a térbeli kontextust. A U-Net kulcsinnovacioja az atugrasi kapcsolat (skip connection), amely a részletes térbeli információt kozvetiti az alacsony szintű retegekbol a magas szintű retegekbe.
 
-A legujabb fejlemeny a **geospatial foundation modellek**: a Prithvi (NASA/IBM, 2023) es a Clay (Radiant Earth, 2024) hatalmas mennyisegu cimkezetlen muholdkepen elotanitott modellek, amelyeket keves cimkezett mintaval finomhangolhatunk specifikus feladatokra. Ez a transfer learning paradigma -- amelyet a 6. fejezetben taargyaltunk -- a taverzekelesben kulonosen hatekony, mert a cimkezett tanitoadat eloallitaasa rendkivul draaga es iodoigenyes.
+A legujabb fejlemeny a **geospatial foundation modellek**: a Prithvi (NASA/IBM, 2023) és a Clay (Radiant Earth, 2024) hatalmas mennyisegu cimkezetlen műholdkepen elotanitott modellek, amelyeket keves cimkezett mintaval finomhangolhatunk specifikus feladatokra. Ez a transfer learning paradigma -- amelyet a 6. fejezetben taargyaltunk -- a távérzékelésben különösen hatekony, mert a cimkezett tanitoadat eloallitaasa rendkívül draaga és iodoigenyes.
 
-### 19.4.2 Geostatisztikai modellezes es terbeli interpolacio
+### 19.4.2 Geostatisztikai modellezés és térbeli interpoláció
 
-A geostatisztika a terben mintazott adatok statisztikai elemzesenek es az optimalis terbeli interpolacionak a modszertana. Az alapelv Tobler elso foldrajzi torvenye: *"Minden mindennel osszefugg, de a kozelebbi dolgok jobban osszefuggenek, mint a tavoliak."*
+A geostatisztika a terben mintazott adatok statisztikai elemzésenek és az optimalis térbeli interpolációnak a módszertana. Az alapelv Tobler első foldrajzi torvenye: *"Minden mindennel osszefugg, de a kozelebbi dolgok jobban osszefuggenek, mint a távoliak."*
 
 A klasszikus geostatisztikai munkafolyamat:
 
 1. **Variogram-szamitas**: Megvizsgaaljuk, hogyan no az erttekkülonbsegek varianciaja a mintapontok kozotti tavolsag fuggvenyeben
 2. **Variogram-modell illesztese**: Szferikus, exponencialis vagy Gauss-modellt illesztunk
-3. **Kriging**: Az illesztett variogram alapjan optimalis, minimalis varianciaju linearis becslest vegzunk a mintapontoek kozotti teruletekre
+3. **Kriging**: Az illesztett variogram alapján optimalis, minimalis varianciaju linearis becslest vegzunk a mintapontoek kozotti területekre
 
-A variogram harom kulcsparametere:
-- **Roghatas (nugget)**: A mikro-skaläju valtozekonysag es a meresi hiba
+A variogram harom kulcsparamétere:
+- **Roghatas (nugget)**: A mikro-skaläju valtozekonysag és a mérési hiba
 - **Teto (sill)**: A teljes variancia
-- **Hatotavossag (range)**: Az a tavolsag, amelyen belul a pontok teerben korrelältak
+- **Hatotavossag (range)**: Az a tavolsag, amelyen belül a pontok teerben korrelältak
 
 Az **AI belepesi pontja** a geostatisztikaba tobbfele:
 
-**Automatikus variogram-illesztes**: Az LLM-ek kepesek Python-kodot generalni a variogram szamitasahoz es illesztsehez (a `scikit-gstat` vagy `pykrige` konyvtarakkal), beleertve a modellszelekcios es a cross-validacios leepeseket is.
+**Automatikus variogram-illesztes**: Az LLM-ek kepesek Python-kodot generálni a variogram szamitasahoz és illesztsehez (a `scikit-gstat` vagy `pykrige` konyvtarakkal), beleertve a modellszelekcios és a cross-validációs leepeseket is.
 
-**Hibrid modellek**: A Random Forest Kriging (RFK) es a Gradient Boosting + Kriging hibrid modszerek a nem-terbeli prediktorok (domborzat, talaj, klimaado) es a terbeli autokorrelacioo elonyeit egyszerre hasznossitjak. Peldaul a Duna-Tisza kozi talajvizszint predikciojahoz: a Random Forest a domborzatbol, a meteorologiai adatokbol es a talaj tipus obol becsuli a talajvizszintet, majd a kriging a reziduumok (maradekok) terbeli korrelaciojat modelleezi.
+**Hibrid modellek**: A Random Forest Kriging (RFK) és a Gradient Boosting + Kriging hibrid módszerek a nem-térbeli prediktorok (domborzat, talaj, klimaado) és a térbeli autokorrelacioo előnyeit egyszerre hasznossitjak. Peldaul a Duna-Tisza kozi talajvízszint predikciójahoz: a Random Forest a domborzatbol, a meteorológiai adatokbol és a talaj tipus obol becsuli a talajvízszintet, majd a kriging a reziduumok (maradekok) térbeli korrelaciojat modelleezi.
 
-**Deep learning-alapu terbeli interpolacio**: A graf neuralis halozatok (GNN) a mintaveli pontokat grafkent kezelik, es a message passing mechanizmussal a szomszedos pontok informaciojat integraljaak. Ez kulonosen hatekony szbalytalan mintaveteeli elrendezeseknel, ahol a klasszikus kriging kuszobertekekre es lag-beallitasokra erzekeny.
+**Deep learning-alapu térbeli interpoláció**: A graf neurális hálózatok (GNN) a mintaveli pontokat grafkent kezelik, és a message passing mechanizmussal a szomszedos pontok információjat integraljaak. Ez különösen hatekony szbalytalan mintaveteeli elrendezeseknel, ahol a klasszikus kriging kuszobértékekre és lag-beállításokra erzekeny.
 
-### 19.4.3 Peldaa: Talajvizszint-becslees a Duna-Tisza kozen
+### 19.4.3 Peldaa: Talajvízszint-becslees a Duna-Tisza kozen
 
-Vegyuk a Duna-Tisza kozi homokhaatsag talajvizszint-becsleset -- egy klasszikus magyar geoinformatikai pelda. A monitoring kutak szama nehany szaz, de a terulet tobb ezer negyzetkilometerss. A feladat: megbizhato terkepet kesziteni a kutak kozotti teruletekre.
+Vegyuk a Duna-Tisza kozi homokhaatsag talajvízszint-becsleset -- egy klasszikus magyar geoinformatikai pelda. A monitoring kutak szama nehany szaz, de a terület tobb ezer negyzetkilometerss. A feladat: megbizhato térképet kesziteni a kutak kozotti területekre.
 
-**Hagyomanyos megkozelites**: Ordinary kriging a kutadatokra. A hatotavolsag tipikusan 8--15 km, ami meghataarozza a monitoring-halozat szuukseges suruseget.
+**Hagyomanyos megközelítés**: Ordinary kriging a kutadatokra. A hatotavolsag tipikusan 8--15 km, ami meghataarozza a monitoring-halozat szükséges sűrűseget.
 
-**AI-tamogatott megkozelites**:
+**AI-támogatott megközelítés**:
 
-1. A Random Forest prediktorai: Copernicus DEM domborzati valtozoi (lejtoszog, topografiai nedvessegindex), Sentinel-2-bol szarmaztatott vegetacios indexek (az aktiv vegetacio a felszinkoozeli talajviz jelenletere utal), talajterkep, meteorologiai adatok
-2. Az RF predikcioja a determinisztikus komponens
-3. A kriging a reziduumokra: a maradek terbeli mintazat modellezeese
-4. Eredmeny: 100 meteres felbontäsu talajvizszint-terkep, amely a hagyomanyos kriginggel szemben 15--25%-kal alacsonyabb becsleesi hibaval rendelkezik
+1. A Random Forest prediktorai: Copernicus DEM domborzati valtozoi (lejtoszog, topografiai nedvessegindex), Sentinel-2-bol szarmaztatott vegetációs indexek (az aktiv vegetáció a felszinkoozeli talajvíz jelenletere utal), talajtérkép, meteorológiai adatok
+2. Az RF predikciója a determinisztikus komponens
+3. A kriging a reziduumokra: a maradek térbeli mintazat modellezeese
+4. Eredmeny: 100 méteres felbontäsu talajvízszint-térkép, amely a hagyományos kriginggel szemben 15--25%-kal alacsonyabb becsleesi hibaval rendelkezik
 
-> **Kapcsolodas a 6. fejezethez**: A hibrid modellezes logikaja megegyezik a 6. fejezetben tanult ensemble megkozelitessel: tobb modell kombinälasa jobb eredmenyt ad, mint barmelyik modell onmagaban.
+> **Kapcsolodas a 6. fejezethez**: A hibrid modellezés logikaja megegyezik a 6. fejezetben tanult ensemble megközelítéssel: tobb modell kombinälasa jobb eredményt ad, mint barmelyik modell onmagaban.
 
 ---
 
 ## 19.5 Vizualis programozas GIS munkafolyamatokhoz
 
-A 8. fejezetben (Vizualis programozas) megismerkedtel a KNIME-val es az n8n-nel -- ket vizualis munkafolyamat-szerkesztovel, amelyekkel kod nelkul epithetrol osszetett adatfeldolgozasi lancokat. A terinformatikaban mindket eszkoz rendkivul hatekony.
+A 8. fejezetben (Vizualis programozas) megismerkedtel a KNIME-val és az n8n-nel -- ket vizualis munkafolyamat-szerkesztovel, amelyekkel kod nélkül epithetrol összetett adatfeldolgozási lancokat. A térinformatikában mindket eszkoz rendkívül hatekony.
 
-### 19.5.1 KNIME terbeli adatelemzeshez
+### 19.5.1 KNIME térbeli adatelemzéshez
 
-A KNIME Analytics Platform a Geospatial Analytics Extension reveln terbeli adatokat is kezel. A tipikus felhasznalasi mintak:
+A KNIME Analytics Platform a Geospatial Analytics Extension reveln térbeli adatokat is kezel. A tipikus felhasználási mintak:
 
-**Terbeli adatok beolvasasa es vizualizacioja**: A KNIME GeoPackage, Shapefile, GeoJSON es CSV (koordinatakkal) formasatumokat olvas, es a beepitett Geospatial View nodeokkal interaktiv terkepeeket jelenjet meg.
+**Térbeli adatok beolvasasa és vizualizációja**: A KNIME GeoPackage, Shapefile, GeoJSON és CSV (koordinátakkal) formasatumokat olvas, és a beepitett Geospatial View nodeokkal interaktív térképeeket jelenjet meg.
 
 **Geostatisztikai munkafolyamat KNIME-ban**:
 1. *GeoFile Reader* node: monitoring kutadatok beolvasasa
-2. *Row Filter*: idoszaki szures (pl. 2025. oktober)
+2. *Row Filter*: időszaki szures (pl. 2025. oktober)
 3. *Math Formula*: elooszamitasok
-4. *Python Script* node: variogram szamitas es kriging a `pykrige` konyvtarral
-5. *Geospatial View*: az eredmeny-terkep megjelenitese
+4. *Python Script* node: variogram szamitas és kriging a `pykrige` konyvtarral
+5. *Geospatial View*: az eredmeny-térkép megjelenitese
 6. *GeoFile Writer*: eredmeny mentese GeoPackage-kent
 
-A KNIME elonye a GIS-munkaban, hogy a munkafolyamat **vizuaalaisan dokumentalt es reprodukalhato** -- a 8. fejezetben tanult elonyok itt kulonoesen fontosak, mert a terbeli elemzesek reprodukalhatosaga a tudomanyos kutatasban alapkoveteelmeny.
+A KNIME előnye a GIS-munkaban, hogy a munkafolyamat **vizuaalaisan dokumentalt és reprodukalhato** -- a 8. fejezetben tanult előnyok itt kulonoesen fontosak, mert a térbeli elemzések reprodukálhatósága a tudományos kutatasban alapkoveteelmeny.
 
-### 19.5.2 n8n automatizalt terkepkesziteshez
+### 19.5.2 n8n automatizált térképkesziteshez
 
-Az n8n -- a 8. fejezetben megismert automatizaaciios platform -- a terkepkeszites automatizalasaara hasznalhato:
+Az n8n -- a 8. fejezetben megismert automatizaaciios platform -- a térképkeszites automatizalasaara hasznalhato:
 
-**Automatizalt havi NDVI-terkep munkafolyamat**:
+**Automatizalt havi NDVI-térkép munkafolyamat**:
 1. *Schedule Trigger*: minden honap 5-en elindul
 2. *HTTP Request* node: STAC API lekerdeses a Sentinel-2 felvetelekert (az elozo honap, felhoboritals < 20%)
 3. *Code* node: NDVI szamitas Python-ban (rasterio)
-4. *Code* node: terkep generalas Matplotlib-tel
-5. *Email Send* node: a terkep elküldese a kutatocsoportnak
+4. *Code* node: térkép generálas Matplotlib-tel
+5. *Email Send* node: a térkép elküldese a kutatócsoportnak
 6. *Webhook* node: riasztas, ha az NDVI anomalisan alacsony (aszalyjel)
 
-Ez a munkafolyamat egyszer letrehozva honaprol honapra automatikusan fut -- a kutatos emberi beavatkozas nelkul kap friss vegetacios terkeeppeket.
+Ez a munkafolyamat egyszer letrehozva honaprol honapra automatikusan fut -- a kutatos emberi beavatkozas nélkül kap friss vegetációs terkeeppeket.
 
-> **Kapcsolodas a 8. fejezethez**: A 8. fejezet reszletesen bevezeti a KNIME es n8n hasznaalataat. Ha meg nem olvastad, erdemes visszalapozni -- az ott tanultak kozvetlenul alkalmazhatoek a GIS munkafolyamatokra.
+> **Kapcsolodas a 8. fejezethez**: A 8. fejezet részletesen bevezeti a KNIME és n8n hasznaalataat. Ha meg nem olvastad, érdemes visszalapozni -- az ott tanultak közvetlenül alkalmazhatóek a GIS munkafolyamatokra.
 
 ---
 
-## 19.6 RAG terinformatikai tudashoz
+## 19.6 RAG térinformatikai tudashoz
 
-A 9. fejezetben (RAG -- Tanitsuk meg az AI-t a sajaat adatainkra) megtanultad, hogyan epitsz Retrieval-Augmented Generation rendszert, amely a sajat dokumentumaidbol keres ki relevanss informaciot, es az LLM ezek alapjan valaszol. A terinformatikaban a RAG harom kiemelt alkalmazasi teruulettel rendelkezik.
+A 9. fejezetben (RAG -- Tanitsuk meg az AI-t a sajaat adatainkra) megtanultad, hogyan epitsz Retrieval-Augmented Generation rendszert, amely a saját dokumentumaidbol keres ki relevanss információt, és az LLM ezek alapján valaszol. A térinformatikában a RAG harom kiemelt alkalmazási teruulettel rendelkezik.
 
-### 19.6.1 Chatbot terbeli adatbazisok felett
+### 19.6.1 Chatbot térbeli adatbázisok felett
 
-Kepzeld el, hogy egy PostGIS adatbaazisban tobb szaz terbeli reteg van: felszinboritas, hidrografia, talaj, domborzat, koezigazgatasi hatarok, Natura 2000 teruuuletek, MePAR parcellak. A RAG-rendszer lehetove teszi, hogy **termeszetes nyelven kerdezz** errol az adatbaaziisrol:
+Képzeld el, hogy egy PostGIS adatbaazisban több száz térbeli reteg van: felszínborítás, hidrografia, talaj, domborzat, koezigazgatasi hatarok, Natura 2000 teruuuletek, MePAR parcellak. A RAG-rendszer lehetővé teszi, hogy **természetes nyelven kerdezz** errol az adatbaaziisrol:
 
-- "Mekkora terulet szantoo Hajdu-Bihar megyeben a Natura 2000 teruletekeen belul?"
-- "Melyik telepulesek vannak 5 km-en belul a Tisza arvizi nagyvizi medreetol?"
-- "Hogyan valtoozott a Hortobagyi Nemzeti Park felszinboritasa 2018 es 2024 kozott?"
+- "Mekkora terület szantoo Hajdu-Bihar megyében a Natura 2000 területekeen belül?"
+- "Melyik települések vannak 5 km-en belül a Tisza arvizi nagyvizi medreetol?"
+- "Hogyan valtoozott a Hortobagyi Nemzeti Park felszínborítása 2018 és 2024 kozott?"
 
-A rendszer a kerdesbol PostGIS SQL-t generaal, vegrehajta az adatbaazison, es az eredmenyt szovegesen osszefoglalja. A **terbeli RAG** speciaalitaasa, hogy a relevancia nemcsak szoveges, hanem **terbeli** is: egy Balatonra vonatkozo kerdes a Balaton kornyeki dokumentumokat is relevansnak tekinti, meg ha a "Balaton" szo expliciten nem is szerepel bennuk.
+A rendszer a kerdesbol PostGIS SQL-t generaal, vegrehajta az adatbaazison, és az eredményt szovegesen osszefoglalja. A **térbeli RAG** speciaalitaasa, hogy a relevancia nemcsak szoveges, hanem **terbeli** is: egy Balatonra vonatkozo kerdes a Balaton kornyeki dokumentumokat is relevansnak tekinti, meg ha a "Balaton" szo expliciten nem is szerepel bennuk.
 
 A megvaalositas technikai vallaza:
-- **pgvector + PostGIS** egyazon adatbazisban: a pgvector a szoveges embedding-eket, a PostGIS a geometriakat indexeli, es egyetlen SQL-lekerdezesben kombinalhato a szemantikus es a terbeli kereses
-- **Few-shot learning**: nehany pelda-lekerdezez az LLM kontextusaban javitja a generalt SQL minosseget
-- **Self-correction**: ha a generalt SQL hibat dob vagy ertelmetleg eredmenyt ad, a hibaüzenet visszaadodik az LLM-nek, amely javitott verziiot generaal
+- **pgvector + PostGIS** egyazon adatbázisban: a pgvector a szoveges embedding-eket, a PostGIS a geometriakat indexeli, és egyetlen SQL-lekerdezesben kombinalhato a szemantikus és a térbeli kereses
+- **Few-shot learning**: nehany pelda-lekerdezez az LLM kontextusaban javitja a generált SQL minosseget
+- **Self-correction**: ha a generált SQL hibat dob vagy ertelmetleg eredményt ad, a hibaüzenet visszaadodik az LLM-nek, amely javitott verziiot generaal
 
-### 19.6.2 Metaadat-kataloguusok es az INSPIRE iranyelvv
+### 19.6.2 Metaadat-kataloguusok és az INSPIRE iranyelvv
 
-Az EU INSPIRE iranyyelve (2007/2/EK) megkooveteli a tagallamoktol a terbeli adatok interoperabilis metaadatokkal valo ellaataasat es haaaloozati szolgaltatasokon (WMS, WFS, ATOM) keresztuli hozzaaferhetooseget. A gyakorlatban a metaadatok gyakran hianyosak vagy pontatlanok -- ez a "metaadat-hezag".
+Az EU INSPIRE iranyyelve (2007/2/EK) megkooveteli a tagallamoktol a térbeli adatok interoperabilis metaadatokkal valo ellaataasat és haaaloozati szolgaltatasokon (WMS, WFS, ATOM) keresztuli hozzaaferhetooseget. A gyakorlatban a metaadatok gyakran hiányosak vagy pontatlanok -- ez a "metaadat-hezag".
 
 A RAG itt ket modon segit:
-1. **Metaadat-generalas**: A multimodaalis LLM-ek (amelyekre a 2. fejezetben hivatkoztunk) kepesek egy terbeli adatreteg tartalmaat automatikusan leirni: a reteg temaja, a terbeli kiterjedese, az attributumok jellege, a feltetelezett koordinata-rendszer
-2. **INSPIRE-kompatibilis kereses**: A RAG rendszer az INSPIRE metaadat-kataloogus felett mukodoö chatbot-kent szolgal: a kutato termeszetes nyelven kerdez ("Van-e 10 meteres felbontaasu feelszyinboritas-terkep Magyarorszagra 2024-bol?"), es a rendszer az INSPIRE Discovery Service-bol keresi ki a valaszt
+1. **Metaadat-generálas**: A multimodaalis LLM-ek (amelyekre a 2. fejezetben hivatkoztunk) kepesek egy térbeli adatreteg tartalmaat automatikusan leirni: a reteg temaja, a térbeli kiterjedese, az attribútumok jellege, a feltetelezett koordináta-rendszer
+2. **INSPIRE-kompatibilis kereses**: A RAG rendszer az INSPIRE metaadat-kataloogus felett mukodoö chatbot-kent szolgal: a kutato természetes nyelven kerdez ("Van-e 10 méteres felbontásu feelszyinboritas-térkép Magyarországra 2024-bol?"), és a rendszer az INSPIRE Discovery Service-bol keresi ki a valaszt
 
-### 19.6.3 Jogszabalyi tudasbaazis terbeli kontextusban
+### 19.6.3 Jogszabalyi tudasbaazis térbeli kontextusban
 
-A kornyezetvedelmii hataasvizsgalatoknan es terulet-rendezesi tervek keszitesekor a terbeli elemzes es a jogi hatter osszekötese kritikus. Peldaul: "Milyen korlatozasok vonatkoznak egy tervezett naapelempark helyszinere, ha az egy Natura 2000 terulet 500 meteres pufferzoonajaba esik?"
+A környezetvedelmii hataasvizsgálatoknan és terület-rendezesi tervek készítésekor a térbeli elemzés és a jogi hatter osszekötese kritikus. Peldaul: "Milyen korlatozasok vonatkoznak egy tervezett naapelempark helyszinere, ha az egy Natura 2000 terület 500 méteres pufferzoonajaba esik?"
 
-A **terbeli RAG** a kovetkezo lepeseket hajtja vegre:
+A **térbeli RAG** a következő lepeseket hajtja vegre:
 1. A tervezett helyszin geometriajjanak betöltese
-2. 500 meteres puffer generalasa
+2. 500 méteres puffer generálasa
 3. Metszees a Natura 2000 retteggel -- van-e atfedes?
-4. Ha igen: a RAG komponens megkeresi a relevaaans jogszabalyokat (275/2004. Korm. rendelet, a teruletre vonatkozo kezelesi terv)
-5. Az LLM osszefoglalja az eredmenyt: "A tervezett helyszin a Hortobaagyi Nemzeti Park (HUDI30001) 500 meteres pufferzoonajaba esik. A 275/2004. Korm. rendelet alapjan..."
+4. Ha igen: a RAG komponens megkeresi a relevaaans jogszabalyokat (275/2004. Korm. rendelet, a területre vonatkozo kezelesi terv)
+5. Az LLM osszefoglalja az eredményt: "A tervezett helyszin a Hortobaagyi Nemzeti Park (HUDI30001) 500 méteres pufferzoonajaba esik. A 275/2004. Korm. rendelet alapján..."
 
-> **Kapcsolodas a 9. fejezethez**: Ez a pelda a 9. fejezet RAG architekturajanak terbeli kiteerjeszteese. A kulonbseg: a retriever nemcsak szoveges hasonlosag, hanem **terbeli kozelseg** alapjan is keres.
+> **Kapcsolodas a 9. fejezethez**: Ez a pelda a 9. fejezet RAG architektúrájanak térbeli kitérjeszteese. A kulonbseg: a retriever nemcsak szoveges hasonlosag, hanem **térbeli kozelseg** alapján is keres.
 
 ---
 
-## 19.7 3D GIS es terbeli digitalis ikrek
+## 19.7 3D GIS és térbeli digitális ikrek
 
-A 10. fejezetben (Digitalis ikrek) megtanultad, hogy a digitalis iker egy fizikai rendszer virtuallis, valoos ideju, ketiranyuu adataaramlas altal szinkronizalt masaa. A terinformatikaban ez a koncepció a **terbeli digitalis ikerben** (spatial digital twin) öllt testet: egy varos, egy vizgyujto, egy erdoterulet haromdimenzios, szenzor-szinkronizalt virtuallis modellje.
+A 10. fejezetben (Digitális ikrek) megtanultad, hogy a digitalis iker egy fizikai rendszer virtuallis, valoos ideju, ketiranyuu adataaramlas által szinkronizalt masaa. A térinformatikában ez a koncepció a **térbeli digitális ikerben** (spatial digital twin) öllt testet: egy varos, egy vízgyűjtő, egy erdoterület háromdimenziós, szenzor-szinkronizalt virtuallis modellje.
 
 ### 19.7.1 3D adatmodellek
 
-A haromdimenzios terinformatika alapvetoen öt adatmodellel dolgozik:
+A háromdimenziós térinformatika alapvetoen öt adatmodellel dolgozik:
 
 | Modell | Leiras | Alkalmazas |
 |--------|--------|------------|
 | **Voxel** | 3D racs (a raszter 3D megfeleloje) | Geologia, szennyezes, meteorologia |
-| **Mesh** | Haromszoghalos felszin | Vizualizacio, FEM szimulacio |
+| **Mesh** | Haromszoghalos felszin | Vizualizacio, FEM szimuláció |
 | **Oktafa** (octree) | Adaptiv 3D racs | Pontfelho-tarolas, LOD |
 | **B-rep** | Hataarolo felszinek | CAD, BIM |
 | **CSG** | Primitiv testek + Boole-muveletek | Parametrikus tervezes |
 
-A **CityGML** (OGC szabvaany) a varosi 3D modellek szemaantikus adatmodellje, öt reszletessegi szinttel (LOD):
-- **LoD0**: Regionalis modell (2.5D felszin + 2D alapterulet)
-- **LoD1**: Tomb-modell (extrudalt alapterulet, lapos teto)
-- **LoD2**: Tetomodell (tetogeometria, fal/teto/talaj szemantika) -- a legtöbb varosi digitalis iker ezen a szinten mukodik
+A **CityGML** (OGC szabvaany) a varosi 3D modellek szemaantikus adatmodellje, öt részletessegi szinttel (LOD):
+- **LoD0**: Regionalis modell (2.5D felszin + 2D alapterület)
+- **LoD1**: Tomb-modell (extrudalt alapterület, lapos teto)
+- **LoD2**: Tetomodell (tetogeometria, fal/teto/talaj szemantika) -- a legtöbb varosi digitalis iker ezen a szintén mukodik
 - **LoD3**: Architekturalis modell (homlokzati reszletek)
-- **LoD4**: Belso terek (szobak, folyosok) -- BIM-GIS integracio
+- **LoD4**: Belso terek (szobak, folyosok) -- BIM-GIS integráció
 
-A **3D Tiles** (Cesium, OGC szabvaany) a nagy terbeli adathalmazok webes streamingjeenek formátuma, amelyet a CesiumJS es a Google Maps 3D Tiles API hasznaal.
+A **3D Tiles** (Cesium, OGC szabvaany) a nagy térbeli adathalmazok webes streamingjeenek formátuma, amelyet a CesiumJS és a Google Maps 3D Tiles API hasznaal.
 
-### 19.7.2 Varosi digitalis ikrek
+### 19.7.2 Varosi digitális ikrek
 
-A varosi digitalis iker egy varos haromdimenzios, szenzor-szinkronizalt modellje, amely a kovetkezo retegeket integralja:
+A varosi digitalis iker egy varos háromdimenziós, szenzor-szinkronizalt modellje, amely a következő retegeket integralja:
 
 - **Epuletgeometria**: LoD2 vagy LoD3 CityGML modell, LiDAR-bol vagy fotogrammetriabol szaarmaztatva
-- **Szenzor-adatok**: meteorologiai allomäsok, legosiineneseg-merok, forgalomszaamlalook, energiafogyasztas -- valoos idejuu adataaramlaassal
-- **Szimulaacioos modellek**: hosziget-szimulacio, zaj-terjedes, arvizi modell, energetikai modell
-- **AI reteg**: anomalia-detektalas a szenzor-adatokon, prediktiv karbantartas az infrastrukturan, optimalizacioos javaslatok
+- **Szenzor-adatok**: meteorológiai állomások, legosiineneseg-merok, forgalomszaamlalook, energiafogyasztas -- valoos idejuu adataaramlaassal
+- **Szimulaacioos modellek**: hosziget-szimuláció, zaj-terjedes, arvizi modell, energetikai modell
+- **AI reteg**: anomalia-detektalas a szenzor-adatokon, prediktiv karbantartas az infrastruktúran, optimalizációos javaslatok
 
-Pelda: **Budapest hosziget-szimulacio**. A 3D epuletmodellbol (LoD2), a felszinboritas-retegbol, a meteorologiai adatokbol es az utcaszinti homerseklet-meresekbol a digitalis iker szimulaalja a varosi hosziget hatasaat. Az AI reteg azonositja a legkritikusabb teruleteket (ahol a nyari ejszakai homerseklet 5+ fokkal meghaladja a kulvarosi erteket), es javaslatot tesz a beavatkoozasra: zoldfellueelet-fejlesztes, albedo-novelö tetofeluletek, vizfeluletek.
+Példa: **Budapest hosziget-szimuláció**. A 3D épületmodellbol (LoD2), a felszínborítás-retegbol, a meteorológiai adatokbol és az utcaszinti homerseklet-meresekbol a digitalis iker szimulaalja a varosi hosziget hatasaat. Az AI reteg azonositja a legkritikusabb területeket (ahol a nyari éjszakai homerseklet 5+ fokkal meghaladja a kulvarosi erteket), és javaslatot tesz a beavatkoozasra: zoldfellueelet-fejlesztes, albedo-novelö tetofelületek, vizfelületek.
 
-### 19.7.3 Infrastruktura-monitoring
+### 19.7.3 Infrastruktúra-monitoring
 
-A digitalis ikrek az infrastruktura-monitoringban is kulcsszerepuek. Egy hid, egy gaatrendszer vagy egy csatornahalozat digitalis ikre a szerkezeti allapotot szenzor-adatokbol (gyorsulasmero, szintezo, homerseklet) valoos ideeben kooveti, es az AI prediktiv karbantarttaasi modellekkel jeleezi eloroe a beavatkozasi igenyt.
+A digitális ikrek az infrastruktúra-monitoringban is kulcsszerepuek. Egy hid, egy gaatrendszer vagy egy csatornahalozat digitalis ikre a szerkezeti allapotot szenzor-adatokbol (gyorsulasmero, szintezo, homerseklet) valoos ideeben kooveti, és az AI prediktiv karbantarttaasi modellekkel jeleezi eloroe a beavatkozasi igenyt.
 
-A **BIM-GIS integracio** a kulcs: az epitmeny BIM modellje (IFC formaatumban) a reszletes szerkezeti adatokat, a GIS a kornyyezeti kontextust (domborzat, talaj, vizrajz, szeiszmikus kockazat) szolgaltatja. A ket modell osszekapesolaasa lehetove teszi, hogy az infrastruktura allapotaat a terbeli kornyezetteel egyutt vizsgaaljuk.
+A **BIM-GIS integráció** a kulcs: az epitmeny BIM modellje (IFC formaatumban) a részletes szerkezeti adatokat, a GIS a kornyyezeti kontextust (domborzat, talaj, vizrajz, szeiszmikus kockazat) szolgaltatja. A ket modell osszekapesolaasa lehetővé teszi, hogy az infrastruktúra allapotaat a térbeli környezetteel egyutt vizsgaaljuk.
 
-> **Kapcsolodas a 10. fejezethez**: A 10. fejezet altalanos ertelemben targyaalja a digitalis ikreket. A terbeli digitalis iker ezeknek egy specifikus, de rendkivul fontos alkalmazasa, ahol a haromdimenzios geometria es a foldrajzi kontextus a meghataarozo.
+> **Kapcsolodas a 10. fejezethez**: A 10. fejezet általános ertelemben targyaalja a digitális ikreket. A térbeli digitális iker ezeknek egy specifikus, de rendkívül fontos alkalmazása, ahol a háromdimenziós geometria és a foldrajzi kontextus a meghataarozo.
 
 ---
 
-## 19.8 Autonom GIS: AI agensek a terinformatikaban
+## 19.8 Autonóm GIS: AI ágensek a térinformatikában
 
-A 11. fejezetben (Az AI agensek megertese) es a 12. fejezetben (AI agensek epitese) megtanultad, mi az AI agens, hogyan mukodik a ReAct ciklus, es hogyan epithetrol tobbagenses rendszereeket. Az **autonom GIS** (Autonomous GIS) ezeknek az elveknek a terinformatikai alkalmazasa -- es egyben a terinformatika legforradalmib fejlemenye.
+> **🖼️ Ábra: Autonóm GIS — természetes nyelvű utasítás térinformatikai elemzéssé alakítva**
+> *Illustration showing a text prompt on the left transforming into a GIS map analysis on the right, with an AI agent in the middle orchestrating the process, futuristic hologram style*
 
-### 19.8.1 Mi az autonom GIS?
+A 11. fejezetben (Az AI ágensek megértése) és a 12. fejezetben (AI ágensek építése) megtanultad, mi az AI ágens, hogyan működik a ReAct ciklus, és hogyan epithetrol tobbagenses rendszereeket. Az **autonóm GIS** (Autonomous GIS) ezeknek az elveknek a térinformatikai alkalmazása -- és egyben a térinformatika legforradalmib fejlemenye.
 
-A terinformatika tortenete soran a felhasznalo es a rendszer viszonya fokozatosan alakult at:
+### 19.8.1 Mi az autonóm GIS?
 
-| Korszak | Paradigma | A felhasznalo szerepe |
+A térinformatika tortenete soran a felhasználó és a rendszer viszonya fokozatosan alakult at:
+
+| Korszak | Paradigma | A felhasználó szerepe |
 |---------|-----------|---------------------|
 | 1960--1990 | Nagygeepes GIS | Programozo |
-| 1990--2010 | Asztali GIS (ArcGIS, QGIS) | Szakerto felhasznalo |
+| 1990--2010 | Asztali GIS (ArcGIS, QGIS) | Szakerto felhasználó |
 | 2010--2020 | Felhoalapu GIS (GEE) | Szkriptiiro |
-| 2020--2025 | AI-tamogatott GIS | Prompt-fogalmazo |
-| 2025-- | **Autonom GIS** | **Feladat-meghataarozo** |
+| 2020--2025 | AI-támogatott GIS | Prompt-fogalmazo |
+| 2025-- | **Autonóm GIS** | **Feladat-meghataarozo** |
 
-Az autonom GIS-ben a felhasznalo **nem azt mondja, hogyan** (nyisd meg ezt a reteget, alkalmazz puffert, vegezz join-t), hanem **azt mondja, mit** akar (melyik telepulesek vannak 500 meteren belul az arvizveeszelyes teruletektol?) -- es a rendszer maga tervezi meg es hajtja vegre az elemzest.
+Az autonóm GIS-ben a felhasználó **nem azt mondja, hogyan** (nyisd meg ezt a reteget, alkalmazz puffert, vegezz join-t), hanem **azt mondja, mit** akar (melyik települések vannak 500 meteren belül az arvizveeszelyes területektol?) -- és a rendszer maga tervezi meg és hajtja vegre az elemzést.
 
-### 19.8.2 Az autonom GIS szintjei
+### 19.8.2 Az autonóm GIS szintjei
 
-A jarmuipari autonom vezetes analogiajaara epitvee ot szint kulonboztetheto meg:
+A jarmuipari autonóm vezetes analogiajaara epitvee ot szint kulonboztetheto meg:
 
 | Szint | Megnevezes | Leiras | Pelda |
 |-------|-----------|--------|-------|
-| 0 | Nincs automatizalas | Minden muveletet kezzel vegez a felhasznalo | Hagyomanyos asztali GIS |
-| 1 | Asszisztens automatizaalas | Az AI egyszeruu muveleteket vegez utasitasra | Siri/Alexa szintu GIS-parancsok |
-| 2 | Resszleges automatizaalas | Az AI tobb muveletet lancolva hajt vegre, emberi felugyeletteel | AI-kodgenerallas QGIS-ben |
-| 3 | Felteteles automatizaalas | Az AI tervet keszit, a felhasznalo jovahagyja, az AI vegrehajt | Plan-and-Execute agens |
-| 4 | Magas szintu automatizaalas | Az AI onalloan vegez osszetett elemzeseket, emberi ellenoorzes az eredmenyen | ReAct agens GIS eszkozokkel |
-| 5 | Teljes automatizaalas | Az AI onalloan tervez, vegrehajt, ellenoriiz, iteraal | Jovoobeli cel |
+| 0 | Nincs automatizalas | Minden muveletet kezzel vegez a felhasználó | Hagyomanyos asztali GIS |
+| 1 | Asszisztens automatizaalas | Az AI egyszerűu muveleteket vegez utasitasra | Siri/Alexa szintű GIS-parancsok |
+| 2 | Resszleges automatizaalas | Az AI tobb muveletet lancolva hajt vegre, emberi felügyeletteel | AI-kodgenerállas QGIS-ben |
+| 3 | Felteteles automatizaalas | Az AI tervet keszit, a felhasználó jovahagyja, az AI vegrehajt | Plan-and-Execute ágens |
+| 4 | Magas szintű automatizaalas | Az AI önállóan vegez összetett elemzéseket, emberi ellenoorzes az eredmenyen | ReAct ágens GIS eszközökkel |
+| 5 | Teljes automatizaalas | Az AI önállóan tervez, vegrehajt, ellenoriiz, iteraal | Jovoobeli cél |
 
-A 2026-os gyakorlatban a 2--3. szint a realis: az AI nagyon hateekonyan kodot generäl es elemzesi terveket keszit, de az eredmenyek **emberi validäciot igenyeelnek** -- kulonosen a CRS-kezeeles, a topologiai muhveletekk es a szemantikai ertelmeezes teruleten.
+A 2026-os gyakorlatban a 2--3. szint a realis: az AI nagyon hateekonyan kodot generál és elemzési terveket keszit, de az eredmenyek **emberi validäciot igenyeelnek** -- különösen a CRS-kezeeles, a topológiai muhveletekk és a szemantikai ertelmeezes területen.
 
-### 19.8.3 A ReAct ciklus a terinformatikaban
+### 19.8.3 A ReAct ciklus a térinformatikában
 
-A 11. fejezetben megismert ReAct (Reasoning + Acting) keretrendszer a terinformatikaban a kovetkezokeeppen mukodik. Vegyunk egy konkret peldat:
+A 11. fejezetben megismert ReAct (Reasoning + Acting) keretrendszer a térinformatikában a következőkeeppen mukodik. Vegyunk egy konkrét peldat:
 
-**Felhasznaloi kerdes**: "Melyik Natura 2000 teruleteken nott a beepitettseg 2020 ota?"
+**Felhasználói kerdes**: "Melyik Natura 2000 területeken nott a beepitettseg 2020 ota?"
 
-**1. Gondolat** (Reasoning): "Szuuksegem van a Natura 2000 terurletek poligonjaira es ket idopontra vonatkozo felszinboritas-adatokra. A beepitettseg-noovekedeshez ki kell szamolnom a beepitett terulet aranyat minden Natura 2000 poligonon belul 2020-ban es 2024-ben."
+**1. Gondolat** (Reasoning): "Szuuksegem van a Natura 2000 terurletek poligonjaira és ket idopontra vonatkozo felszínborítás-adatokra. A beepitettseg-noovekedeshez ki kell szamolnom a beepitett terület aranyat minden Natura 2000 poligonon belül 2020-ban és 2024-ben."
 
-**2. Cselekves** (Acting): STAC API lekerdezes az ESA WorldCover 2020 es 2024 raszterekre, Natura 2000 reteg letoltese.
+**2. Cselekves** (Acting): STAC API lekerdezes az ESA WorldCover 2020 és 2024 raszterekre, Natura 2000 reteg letöltése.
 
 **3. Megfigyelees** (Observation): "A STAC API visszaadta a rasztereket. A Natura 2000 reteg letoltheto GeoPackage formaaatumban."
 
 **4. Gondolat**: "Zonalis statisztikat kell szamolnom: a beepitett pixel-araany minden Natura 2000 poligonra, mindkeet evre. A retegeket kozos CRS-be kell hoznom."
 
-**5. Cselekves**: Python-kod generaalasa (rasterio + GeoPandas + rasterstats), vegrehajtaas.
+**5. Cselekves**: Python-kod generálása (rasterio + GeoPandas + rasterstats), vegrehajtaas.
 
-**6. Megfigyelees**: "Az eredmeny egy tablazat: beepitett_arany_2020 es beepitett_arany_2024 minden teruletre. 12 teruleten nott."
+**6. Megfigyelees**: "Az eredmeny egy tablazat: beepitett_arany_2020 és beepitett_arany_2024 minden területre. 12 területen nott."
 
-**7. Gondolat**: "Ellenoorzom: a beepitett arany ertekei 0 es 1 kozott vannak-e? A 12 terulet szaama realis-e Magyarorszaag kb. 480 Natura 2000 teruletere? Igen, konzisztens."
+**7. Gondolat**: "Ellenoorzom: a beepitett arany ertekei 0 és 1 kozott vannak-e? A 12 terület szaama realis-e Magyarorszaag kb. 480 Natura 2000 területere? Igen, konzisztens."
 
-**8. Cselekves**: Eredmeny prezentaalaasa: terkep + tablazat + szoveges osszefoglalo.
+**8. Cselekves**: Eredmeny prezentaalaasa: térkép + tablazat + szoveges összefoglaló.
 
 ### 19.8.4 Tobbagenses GIS-architektura
 
-A 11. fejezetben tanult tobbagenses rendszerek a GIS-ben kulonoosen hatekonykak, mert a terbeli elemzes tobb markánsan eltero szakkompetenciat igenyel:
+A 11. fejezetben tanult tobbagenses rendszerek a GIS-ben kulonoosen hatekonykak, mert a térbeli elemzés tobb markánsan eltérő szakkompetenciat igenyel:
 
-- **Adat-keresoo agens**: Ismeri a STAC katalogusokat, WFS szolgaltatasokat, PostGIS adatbazisokat. Ha a felhasznalo "erdooboritast" ker, o donti el: ESA WorldCover, Corine Land Cover vagy Sentinel-2-alapu egyedi osztälyozas?
-- **GIS-analizator agens**: SQL-t es Python-kodot ir, kezeli a CRS-t, a topologiat es a geometriai muveleteket
+- **Adat-keresoo agens**: Ismeri a STAC katalogusokat, WFS szolgaltatasokat, PostGIS adatbázisokat. Ha a felhasználó "erdooboritast" ker, o donti el: ESA WorldCover, Corine Land Cover vagy Sentinel-2-alapu egyedi osztályozás?
+- **GIS-analizator agens**: SQL-t és Python-kodot ir, kezeli a CRS-t, a topologiat és a geometriai muveleteket
 - **Kartografus agens**: Az eredmeny vizualizaciiojaert felel -- szinvalasztas, szimbolizacio, jelmagyarazat, terkeepleptek
-- **Kritikus agens**: Az eredmenyt erttekeli: ellenoorzi a statisztikai konzisztenciat, a CRS-helyesseeget, a topologiai errvenyesseget
+- **Kritikus agens**: Az eredményt erttekeli: ellenoorzi a statisztikai konzisztenciat, a CRS-helyesseeget, a topológiai errvenyesseget
 
-A negy agens uzeneteeken keresztul kommunikaal, es iteralhat: ha a Kritikus agens CRS-hibbat talal, visszakuldi a feladatot a GIS-analizator agensnek.
+A négy ágens uzeneteeken keresztul kommunikaal, és iterálhat: ha a Kritikus ágens CRS-hibbat talal, visszakuldi a feladatot a GIS-analizator ágensnek.
 
-> **Kapcsolodas a 11--12. fejezethez**: Az agensek epiteesenek technikai reszletei a 12. fejezetben talalhaatok. Itt a GIS-specifikus eszkozvalasztast es az eszkoztar kialakitasat emeljuk ki -- a terinformatikaban tipikusan 15--30 eszkoz (STAC kereses, puffereeles, zonalis statisztika, terkepgeneralas stb.) az optimalis.
+> **Kapcsolodas a 11--12. fejezethez**: Az ágensek építésenek technikai reszletei a 12. fejezetben talalhaatok. Itt a GIS-specifikus eszkozvalasztast és az eszköztar kialakitasat emeljuk ki -- a térinformatikában tipikusan 15--30 eszkoz (STAC kereses, puffereeles, zonális statisztika, térképgenerálas stb.) az optimalis.
 
 ---
 
-## 19.9 Big data es felhoalapu GIS AI-val
+## 19.9 Big data és felhőalapú GIS AI-val
 
-A 14. fejezetben (AI labor) megismerkedtel a felhoalapu szamitasi kornyezetekkel. A terinformatikaban a felhoalapu platformok a petabajtos muuholdfelveetel-archivumok feldolgozasaahoz nelkülözhetetlenek.
+A 14. fejezetben (AI labor) megismerkedtel a felhőalapú számítási környezetekkel. A térinformatikában a felhőalapú platformok a petabajtos muuholdfelveetel-archivumok feldolgozásaahoz nelkülözhetetlenek.
 
 ### 19.9.1 Google Earth Engine (GEE)
 
-A Google Earth Engine a terinformatika "nagy durrantasa" volt 2010-ben: petabajtnyi muholdfelvetelt es szamitasi kapacitast tett elerhetove egyetlen boengeeszobol. A GEE Python API-val (a `ee` konyvtaaronn keresztul) planetaris lepteeku elemzeseket futtathatsz nehany sor koddal:
+A Google Earth Engine a térinformatika "nagy durrantasa" volt 2010-ben: petabájtnyi műholdfelvetelt és számítási kapacitast tett elérhetővé egyetlen boengeeszobol. A GEE Python API-val (a `ee` konyvtaaronn keresztul) planetaris lepteeku elemzéseket futtathatsz nehany sor koddal:
 
 ```python
 import ee
@@ -515,198 +524,198 @@ task = ee.batch.Export.image.toDrive(
 task.start()
 ```
 
-Az AI itt ket szinten segit:
-1. **Kodgeneralas**: Az LLM a természetes nyelvu leiraasbol GEE Python-kodot generäl
-2. **Eredmennyertelmezees**: Az LLM az exportalt NDVI-terkeep statistikait elemzi es szovegesen osszefoglalja
+Az AI itt ket szintén segit:
+1. **Kodgenerálas**: Az LLM a természetes nyelvu leiraasbol GEE Python-kodot generál
+2. **Eredmennyertelmezees**: Az LLM az exportalt NDVI-terkeep statistikait elemzi és szovegesen osszefoglalja
 
-### 19.9.2 Microsoft Planetary Computer es Copernicus Data Space
+### 19.9.2 Microsoft Planetary Computer és Copernicus Data Space
 
-A **Planetary Computer** a nyilt STAC szabvanyra epit, es a felhonativ formatumokat (Cloud Optimized GeoTIFF, Zarr, GeoParquet) tamogatja. A **Copernicus Data Space Ecosystem** az EU Copernicus-program teljes adatarchivumaht teszi elerhetove, openEO API-val.
+A **Planetary Computer** a nyilt STAC szabvanyra epit, és a felhonativ formatumokat (Cloud Optimized GeoTIFF, Zarr, GeoParquet) tamogatja. A **Copernicus Data Space Ecosystem** az EU Copernicus-program teljes adatarchivumaht teszi elérhetővé, openEO API-val.
 
-A lenyegi kulonbseg a GEE-vel szemben: nagyobb szabadsaag az eszkozvalaaasztaasban (tetszoleges Python kornyezet hasznalhato, nem csak a GEE API), es a STAC szabvany alkalmazaaasa, amely az adatkereeseest szabvaanyositja.
+A lenyegi különbség a GEE-vel szemben: nagyobb szabadsaag az eszkozvalaaasztaasban (tetszoleges Python környezet hasznalhato, nem csak a GEE API), és a STAC szabvany alkalmazaaasa, amely az adatkereeseest szabvaanyositja.
 
 ### 19.9.3 Felhonatihv formatumok
 
-A felhoalapu terinformatika nem egyszeerusen azt jelenti, hogy a regi formatumokat felhoszerverre masoljuk. A felhonativ formatumok kifejezetten a halozati hozzaaferesre lettek optimalizalva:
+A felhőalapú térinformatika nem egyszeerusen azt jelenti, hogy a régi formatumokat felhőszerverre masoljuk. A felhonativ formatumok kifejezetten a halozati hozzaaferesre lettek optimalizalva:
 
 | Formatuum | Tipus | Lenyeg |
 |-----------|-------|--------|
 | **Cloud Optimized GeoTIFF (COG)** | Raszter | Csempeezett, piramisos GeoTIFF; HTTP range request-ekkel szelektiven olvashaato |
-| **Zarr** | Tobbdimenzios tömb | Chunked array formatumm idosorokhoz es 3D adatokhoz |
+| **Zarr** | Tobbdimenzios tömb | Chunked array formatumm idősorokhoz és 3D adatokhoz |
 | **GeoParquet** | Vektor | Oszlop-orientalt, gyors szureesu vektoros formatuum |
-| **STAC** | Metaadat | JSON-alapu ter-ido metaadat-szabvaany es keresesi protokoll |
+| **STAC** | Metaadat | JSON-alapu ter-ido metaadat-szabvaany és keresesi protokoll |
 
-> **Kapcsolodas a 14. fejezethez**: A 14. fejezet reszletesen taaargyalja a felhoalapu munkakornyezeteket. A terinformatikaban a felhoalapu platformok azert kulonosen fontosak, mert az adatmennyiseg (petabajtok) fizikailag leehetetlenne teszi a lokalis feldolgozast.
+> **Kapcsolodas a 14. fejezethez**: A 14. fejezet részletesen taaargyalja a felhőalapú munkakörnyezeteket. A térinformatikában a felhőalapú platformok azert különösen fontosak, mert az adatmennyiseg (petabajtok) fizikailag leehetetlenne teszi a lokalis feldolgozást.
 
 ---
 
-## 19.10 Magyar terinformatikai kontextus
+## 19.10 Magyar térinformatikai kontextus
 
-A terinformatika Magyarorszagon gazdag hagyomanyokkal es sajatos intezmenyi, technologiai kereetrendszerrel rendelkezik. Ebben az alfejezetben osszefoglaljuk azokat a magyar specifikus elemeket, amelyeket az AI-alaapuu terinformatikai munkaban ismerni kell.
+A térinformatika Magyarországon gazdag hagyomanyokkal és sajatos intézményi, technológiai kereetrendszerrel rendelkezik. Ebben az alfejezetben osszefoglaljuk azokat a magyar specifikus elemeket, amelyeket az AI-alaapuu térinformatikai munkaban ismerni kell.
 
 ### 19.10.1 Intezmenyi hatter
 
-**Lechner Tudaskoozpont** (korrabban FOMI -- Foldmeresugyi es Taverzekeelesi Intezet): A magyar allaami terinformatika kozponti intezmenye. A Lechner Kozpont kezeli az orszagos geoodeziai alaphaalozatot, a kataszteri nyilvanntartast, a topograafiai terkepezestt es a mmuholdfelvetelek hazai forgalmazasat.
+**Lechner Tudaskoozpont** (korrabban FOMI -- Foldmeresugyi és Taverzekeelesi Intezet): A magyar allaami térinformatika kozponti intezmenye. A Lechner Kozpont kezeli az országos geoodeziai alaphaalozatot, a kataszteri nyilvanntartast, a topograafiai térképezestt és a mműholdfelvetelek hazai forgalmazasat.
 
-**MePAR** (Mezogazdasagi Parcella Azonosito Rendszer): Az Europai Unio Kozos Agrarppolitikajanak (KAP) tamogatasi rendszereehez kapcsolodo parcella-nyilvantartas. A MePAR referencia-parcellakat tartalmaz, amelyeekeet muholdfelvetelekbol frissitenek -- ez az egyik elso magyar operativ alkalmazasa a taverzzekelesnek a kozigazgaatasban. Az AI-alapu felszinboritas-osztälyozas a MePAR frissiteseet draamaian felgyorsithatja.
+**MePAR** (Mezogazdasagi Parcella Azonosito Rendszer): Az Europai Unio Kozos Agrarppolitikajanak (KAP) tamogatasi rendszereehez kapcsolodo parcella-nyilvantartas. A MePAR referencia-parcellakat tartalmaz, amelyeekeet műholdfelvetelekbol frissitenek -- ez az egyik első magyar operativ alkalmazása a taverzzekelesnek a kozigazgaatasban. Az AI-alapú felszínborítás-osztályozás a MePAR frissiteseet draamaian felgyorsithatja.
 
-**Nemzeti Teriiinformaacios Infrastruktura** (NTI): Az INSPIRE iranyelvv magyar megvaalositaasa. Az NTI celjaa a magyar terbeli adatok interoperaabiilis, szabbvaanyos hozzaaferhetosegenek biztositaasa.
+**Nemzeti Teriiinformaacios Infrastruktúra** (NTI): Az INSPIRE iranyelvv magyar megvaalositaasa. Az NTI celjaa a magyar térbeli adatok interoperaabiilis, szabbvaanyos hozzaaferhetosegenek biztositaasa.
 
-### 19.10.2 Az EOV koordinata-rendszer
+### 19.10.2 Az EOV koordináta-rendszer
 
-Az **Egyseges Orszagos Vetuleti rendszer** (EOV, EPSG:23700) a magyar teriinformatika alap-vetuleti rendszere. Ismertetoje:
+Az **Egységes Országos Vetületi rendszer** (EOV, EPSG:23700) a magyar teriinformatika alap-vetületi rendszere. Ismertetoje:
 
-- **Vetuleti tipus**: Ferdetengelyu Mercator (oblique Mercator)
+- **Vetületi tipus**: Ferdetengelyu Mercator (oblique Mercator)
 - **Datum**: HD72 (Hungarian Datum 1972)
 - **Kozeppont**: Gellert-hegy (47d 06' 35.36" N, 19d 02' 54.96" E)
-- **Ertektartomanyok**:
+- **Ertektartományok**:
   - Northing (Y): 0 -- 400 000 meter
   - Easting (X): 400 000 -- 1 000 000 meter
 
-**Fontos**: A fejlec-cimkek gyakran felrevezetoek! Sok adatfajlban az "X" oszlop az Easting-et, az "Y" az Northing-ot tartalmazza -- de elofordul az ellenkezoje is. Az ertektartomany-alapu azonositas a megbizhato modszer:
-- Ha egy ertek 0 es 400 000 kozott van: **Northing**
-- Ha egy ertek 400 000 es 1 000 000 kozott van: **Easting**
+**Fontos**: A fejléc-címkék gyakran félrevezetőek! Sok adatfajlban az "X" oszlop az Easting-et, az "Y" az Northing-ot tartalmazza -- de előfordul az ellenkezoje is. Az értéktartomány-alapu azonositas a megbizhato módszer:
+- Ha egy érték 0 és 400 000 kozott van: **Northing**
+- Ha egy érték 400 000 és 1 000 000 kozott van: **Easting**
 
-Az AI kodgeneralo eszkozooket is erre kell "megtanitani" -- a prompt-ban mindig erdemes megadni: "A koordinatak EOV-ban vannak (EPSG:23700), a Northing 0--400k, az Easting 400k--1M."
+Az AI kodgenerálo eszkozooket is erre kell "megtanitani" -- a prompt-ban mindig érdemes megadni: "A koordinátak EOV-ban vannak (EPSG:23700), a Northing 0--400k, az Easting 400k--1M."
 
-### 19.10.3 Magyar terbeli adatforrasok
+### 19.10.3 Magyar térbeli adatforrások
 
 | Adatforras | Tipus | Hozzaaferes |
 |------------|-------|-------------|
 | Lechner ortofotok | Legifelvetel (0.2--0.4 m) | Korlatozottan nyilt |
 | Copernicus DEM (GLO-30) | Domborzatmodelll (30 m) | Nyilt |
 | Sentinel-2 | Muholdfelveetel (10 m) | Nyilt (Copernicus) |
-| OpenStreetMap | Vektoros kozossegi terkep | Nyilt |
+| OpenStreetMap | Vektoros kozossegi térkép | Nyilt |
 | MePAR | Mezogazdasagi parcellak | Korlatozottan nyilt |
 | CORINE Land Cover | Felszinboritas | Nyilt (EEA) |
 | LIDAR500 | LiDAR pontfelho | Korlatozottan nyilt |
-| e-kataszter | Tulajdoni adatbazis | Korlatozott |
+| e-kataszter | Tulajdoni adatbázis | Korlatozott |
 
 ### 19.10.4 Debreceni GIS-kutatas
 
-A Debreceni Egyetem szaamos terinformatikai kutatoocsoporttal rendelkezik:
+A Debreceni Egyetem szaamos térinformatikai kutatoocsoporttal rendelkezik:
 
-- **Kornyezetgazdaalkodasi es Kornyezetpoolitikai Intezet**: Terbeli kornyezeti modellezes, vizgyujto-szintu elemzesek, talajviz-monitoring
-- **Termanat Laboratorium**: Taverzekeelesi adatfeldolgoezaas, vegetaacio-monitoring, precizios mezogazdasag
-- **Informatikai Kar**: Geoinformatikai szoftveerfejlesztes, terbeli adatbaazisok, webes terkepszolgaltatasok
+- **Környezetgazdálkodási és Környezetpolitikai Intézet**: Térbeli környezeti modellezés, vízgyűjtő-szintű elemzések, talajvíz-monitoring
+- **Termanat Laboratórium**: Távérzékelési adatfeldolgozás, vegetáció-monitoring, precíziós mezőgazdaság
+- **Informatikai Kar**: Geoinformatikai szoftverfejlesztés, térbeli adatbázisok, webes térképszolgáltatások
 
-A debreceni kutataaas kiemelt temateruleetei: az Alföld talajvizszint-valtoozaasainak monitoringja, a Hortobagyi Nemzeti Park vegetaciojaanak taverrzekeleesi elemzese, es a precizios mezogazdasagi alkalmazaaasok az Alföld agrarterlulletein.
+A debreceni kutatás kiemelt tématerületei: az Alföld talajvízszint-változásainak monitoringja, a Hortobágyi Nemzeti Park vegetációjának távérzékelési elemzése, és a precíziós mezőgazdasági alkalmazások az Alföld agrárterületein.
 
 ---
 
 ## 19.11 Gyakorlati feladatok
 
-### 19.11.1 Feladat: NDVI-terkep keszitese AI-val
+### 19.11.1 Feladat: NDVI-térkép készítése AI-val
 
-**Cel**: Sentinel-2 felvetelbol NDVI (Normalized Difference Vegetation Index) terkepet kesziteni egy valasztott magyar teruletre.
+**Cél**: Sentinel-2 felvételből NDVI (Normalized Difference Vegetation Index) térképet készíteni egy választott magyar területre.
 
-**Eszkozok**: Claude vagy ChatGPT + Python (rasterio, matplotlib)
+**Eszközök**: Claude vagy ChatGPT + Python (rasterio, matplotlib)
 
-**Lepesek**:
-1. Valassz egy teruletet (pl. Hortobaagy, Balaton-felvidek, Budapest agglomeraacioo)
-2. Kerjedd az AI-t, hogy irjon Python-kodot a kovetkezo feladatokra:
-   - Sentinel-2 L2A adatok letoltese a Copernicus Data Space-bol (vagy hasznalj egy mar letoltott minta-allomaaanyt)
-   - B04 (voros) es B08 (NIR) savok beolvasaasa
-   - NDVI szamitas: $NDVI = (NIR - Red) / (NIR + Red)$
-   - Felhomaszkolas az SCL sav alapjan
-   - Az eredmeny vizualizacioja matplotlib-tel
-   - Mentes Cloud Optimized GeoTIFF-kent
-3. Futtasd a kodot, es ertelmezd az eredmenyt: hol magas az NDVI (suiru vegetacio), hol alacsony (epitett terület, vizfelullet)?
+**Lépések**:
+1. Válassz egy területet (pl. Hortobágy, Balaton-felvidék, Budapest agglomeráció)
+2. Kérd meg az AI-t, hogy írjon Python-kódot a következő feladatokra:
+   - Sentinel-2 L2A adatok letöltése a Copernicus Data Space-ből (vagy használj egy már letöltött minta-állományt)
+   - B04 (vörös) és B08 (NIR) sávok beolvasása
+   - NDVI számítás: $NDVI = (NIR - Red) / (NIR + Red)$
+   - Felhőmaszkolás az SCL sáv alapján
+   - Az eredmény vizualizációja matplotlib-tel
+   - Mentés Cloud Optimized GeoTIFF-ként
+3. Futtasd a kódot, és értelmezd az eredményt: hol magas az NDVI (sűrű vegetáció), hol alacsony (épített terület, vízfelület)?
 
-**Bonusz**: Keszits ket idopont (pl. 2020 juulius es 2024 julius) NDVI-terkepeeet, es szamitsd ki a kulonbseget -- hol valtozott a vegetacioo?
+**Bónusz**: Készíts két időpont (pl. 2020 július és 2024 július) NDVI-térképét, és számítsd ki a különbséget -- hol változott a vegetáció?
 
-### 19.11.2 Feladat: Terbeli lekerdezees termeszetes nyelven
+### 19.11.2 Feladat: Térbeli lekérdezés természetes nyelven
 
-**Cel**: Termeszetes nyelvu kerdesekbol PostGIS SQL-t generaaltatni.
+**Cél**: Természetes nyelvű kérdésekből PostGIS SQL-t generáltatni.
 
-**Eszkozok**: Claude vagy ChatGPT
+**Eszközök**: Claude vagy ChatGPT
 
-**Lepesek**:
-1. Definiald a kovetkezo adatbazis-semat az AI szamara:
+**Lépések**:
+1. Definiáld a következő adatbázis-sémát az AI számára:
    ```
-   Tablak:
+   Táblák:
    - telepulesek (nev TEXT, lakos INTEGER, geom GEOMETRY, SRID 23700)
    - vizfolyasok (nev TEXT, tipus TEXT, geom GEOMETRY, SRID 23700)
    - natura2000 (terulet_nev TEXT, kod TEXT, geom GEOMETRY, SRID 23700)
    ```
-2. Tedd fel a kovetkezo kerdeseket, es kerd az AI-t SQL-re forditasra:
-   - "Melyik telepulesek vannak 10 km-en belul a Tiszatol?"
-   - "Mekkora a Natura 2000 teruletek osszes kiterjedese Hajdu-Bihar megyeben hektarban?"
-   - "Melyik a legkoozelebbi telepules a Hortobagyi Nemzeti Parkhoz, es milyen tavolsagra van?"
-3. Ellenorizd a generalt SQL-t: helyes-e a CRS (EPSG:23700)? Hasznaalja-e az ST_Transform-ot, ha szukkseges? A teruletszamitas m2-ben joon, es elosztja-e 10000-rel a hektarhoz?
+2. Tedd fel a következő kérdéseket, és kérd az AI-t SQL-re fordításra:
+   - "Melyik települések vannak 10 km-en belül a Tiszától?"
+   - "Mekkora a Natura 2000 területek összes kiterjedése Hajdú-Bihar megyében hektárban?"
+   - "Melyik a legközelebbi település a Hortobágyi Nemzeti Parkhoz, és milyen távolságra van?"
+3. Ellenőrizd a generált SQL-t: helyes-e a CRS (EPSG:23700)? Használja-e az ST_Transform-ot, ha szükséges? A területszámítás m2-ben jön, és elosztja-e 10000-rel a hektárhoz?
 
-### 19.11.3 Feladat: Automatizalt terkepkeszites n8n-nel
+### 19.11.3 Feladat: Automatizált térképkészítés n8n-nel
 
-**Cel**: n8n munkafolyamatot epiteni, amely automatikusan havi terkeeppet generaal.
+**Cél**: n8n munkafolyamatot építeni, amely automatikusan havi térképet generál.
 
-**Eszkozok**: n8n (telepitett vagy felhoalapu) + Python
+**Eszközök**: n8n (telepített vagy felhőalapú) + Python
 
-**Lepesek**:
-1. Hozz letre egy n8n munkafolyamatot a kovetkezo node-okkal:
-   - *Schedule Trigger*: minden honap elsejen
-   - *HTTP Request*: STAC API lekerdezes a Sentinel-2 felvetelekert
-   - *Code* (Python): NDVI szamitas es terkep generalas
-   - *Email*: az eredmeny elkuldese
-2. Teszteld a munkafolyamatot manuaalisan (a Schedule Trigger helyett Manual Trigger-rel)
-3. Dokumentald a munkafolyamatot -- mentsd el, es exportald JSON-kent
+**Lépések**:
+1. Hozz létre egy n8n munkafolyamatot a következő node-okkal:
+   - *Schedule Trigger*: minden hónap elsején
+   - *HTTP Request*: STAC API lekérdezés a Sentinel-2 felvételekért
+   - *Code* (Python): NDVI számítás és térkép generálás
+   - *Email*: az eredmény elküldése
+2. Teszteld a munkafolyamatot manuálisan (a Schedule Trigger helyett Manual Trigger-rel)
+3. Dokumentáld a munkafolyamatot -- mentsd el, és exportáld JSON-ként
 
-### 19.11.4 Feladat: Kriging Python-ban AI segitseggel
+### 19.11.4 Feladat: Kriging Python-ban AI segítséggel
 
-**Cel**: Terbeli interpolaciot vegezni pontszeru adatokbol.
+**Cél**: Térbeli interpolációt végezni pontszerű adatokból.
 
-**Eszkozok**: Claude vagy ChatGPT + Python (pykrige, matplotlib)
+**Eszközök**: Claude vagy ChatGPT + Python (pykrige, matplotlib)
 
-**Lepesek**:
-1. Keszits egy minta-adathalmazt: 20 fiktiv monitoring kut EOV koordinatakkal (Northing: 200000--260000, Easting: 700000--760000) es talajvizszint-ertekekkel (80--90 m aB. -- ahol "aB." = a Balti-tenger felett)
-2. Kerd az AI-t, hogy irjon Python-kodot a kovetkezo feladatokra:
-   - Empirikus variogram szamitasa es abrazolasa
-   - Szferikus variogram-modell illesztese
-   - Ordinary kriging futtatasa a `pykrige` konyvtarral
-   - A kriging-eredmeny (becsolt ertek es kriging-variancia) vizualizacioja ket terkepen
-3. Ertelmezd az eredmenyt: hol nagy a kriging-variancia (= hol bizonytalan a becsles)? Hova erdemes uj monitoring kutat telepiteni?
+**Lépések**:
+1. Készíts egy minta-adathalmazt: 20 fiktív monitoring kút EOV koordinátákkal (Northing: 200000--260000, Easting: 700000--760000) és talajvízszint-értékekkel (80--90 m aB. -- ahol "aB." = a Balti-tenger felett)
+2. Kérd az AI-t, hogy írjon Python-kódot a következő feladatokra:
+   - Empirikus variogram számítása és ábrázolása
+   - Szférikus variogram-modell illesztése
+   - Ordinary kriging futtatása a `pykrige` könyvtárral
+   - A kriging-eredmény (becsült érték és kriging-variancia) vizualizációja két térképen
+3. Értelmezd az eredményt: hol nagy a kriging-variancia (= hol bizonytalan a becslés)? Hova érdemes új monitoring kutat telepíteni?
 
-### 19.11.5 Feladat: AI agens terbeli elemzeshez
+### 19.11.5 Feladat: AI ágens térbeli elemzéshez
 
-**Cel**: Egy egyszeru AI agenst epiteni, amely terbeli kerdesre terbeli elemzessel valaszol.
+**Cél**: Egy egyszerű AI ágenst építeni, amely térbeli kérdésre térbeli elemzéssel válaszol.
 
-**Eszkozok**: Claude API (lasd 12. fejezet) + GeoPandas
+**Eszközök**: Claude API (lásd 12. fejezet) + GeoPandas
 
-**Lepesek**:
-1. Definiaalj 3--4 "eszkoozt" (Python fuggvenyt), amelyet az agens hasznaalhat:
-   - `load_layer(path)`: GeoPackage reteg betoltese
-   - `buffer(gdf, distance)`: puffer generalasa
-   - `spatial_join(gdf1, gdf2)`: terbeli join
-   - `calculate_area(gdf)`: teruletszamitas hektarban
-2. A 12. fejezetben tanult mintara epitvee keszits egy egyszeruu ReAct agenst, amely:
-   - Megkapja a felhasznalo kerdeset (pl. "Hány epulet esik a Tisza 1 km-es puffeerzonajaaba?")
-   - Gondolkodik: milyen retegekre van szuuukseg, milyen muveleteket kell vegezni
-   - Cselekszik: meghivja a megfeleloo eszkozoket
-   - Megfigyel: ellenorzi az eredmenyt
-   - Valaszol
-3. Teszteld a rendszert tobbfele kerdessel, es dokumentald a sikeres es sikertelen eseteket
+**Lépések**:
+1. Definiálj 3--4 "eszközt" (Python függvényt), amelyet az ágens használhat:
+   - `load_layer(path)`: GeoPackage réteg betöltése
+   - `buffer(gdf, distance)`: puffer generálása
+   - `spatial_join(gdf1, gdf2)`: térbeli join
+   - `calculate_area(gdf)`: területszámítás hektárban
+2. A 12. fejezetben tanult mintára építve készíts egy egyszerű ReAct ágenst, amely:
+   - Megkapja a felhasználó kérdését (pl. "Hány épület esik a Tisza 1 km-es pufferzónájába?")
+   - Gondolkodik: milyen rétegekre van szükség, milyen műveleteket kell végezni
+   - Cselekszik: meghívja a megfelelő eszközöket
+   - Megfigyel: ellenőrzi az eredményt
+   - Válaszol
+3. Teszteld a rendszert többféle kérdéssel, és dokumentáld a sikeres és sikertelen eseteket
 
 ---
 
 ## Összefoglalás
 
-Ebben a fejezetben vegigjarttuk, hogyan hatja at az AI a terinformatika minden szegmenseeet:
+Ebben a fejezetben végigjártuk, hogyan hatja át az AI a térinformatika minden szegmensét:
 
-- **Adatfeldolgozas** (19.2): A muholdkep-feldolgozas, a LiDAR-osztälyozas es a vektoros adattisztitas az AI altal nagyseagrendekkel felgyorsul
-- **Kodgeneralas** (19.3): Az LLM-ek meggbiizhatoan generalnak ArcPy, QGIS Processing, GeoPandas, rasterio es PostGIS kodot -- a terinformatikus termeszetes nyelven fogalmazza meg a feladatot
-- **Terbeli predikcioo** (19.4): A CNN-ek, a foundation modellek es a hibrid geostatisztikai modellek a felszinboritas-osztälyozastol a talajvizszint-becslesig forradalmasitjak a terbeli predikciot
-- **Vizualis programozas** (19.5): A KNIME es az n8n a GIS-munkafolyamatokat vizualisan dokumentalttaa es automatizalttta teszik
-- **Terbeli RAG** (19.6): A terbeli adatbazisok, metaadat-katalosgusok es jogszabalyi tudasbaazisok felett termeszetes nyelvu kerdesfelteves valik lehetovvee
-- **3D GIS es digitalis ikrek** (19.7): A varosi es infrastrukturalis digitalis ikrek a kliimaadaptacio es a prediktiv karbantaartas eszkozei
-- **Autonom GIS** (19.8): Az AI agensek a termeszetes nyelvu utasitasbol kinndulva onalloan tervezik es hajtjak vegre a terbeli elemzest
-- **Felhoalapu GIS** (19.9): A Google Earth Engine, a Planetary Computer es a Copernicus Data Space a petabajtos adatarchivumok AI-alapu feldolgozaasat teszik lehetove
-- **Magyar kontextus** (19.10): Az EOV koordinata-rendszer, a Lechner Kozpont, a MePAR es a magyar terbeli adatinfrastruktura a hazai alkalmazasok kerete
+- **Adatfeldolgozás** (19.2): A műholdkép-feldolgozás, a LiDAR-osztályozás és a vektoros adattisztítás az AI által nagyságrendekkel felgyorsul
+- **Kódgenerálás** (19.3): Az LLM-ek megbízhatóan generálnak ArcPy, QGIS Processing, GeoPandas, rasterio és PostGIS kódot -- a térinformatikus természetes nyelven fogalmazza meg a feladatot
+- **Térbeli predikció** (19.4): A CNN-ek, a foundation modellek és a hibrid geostatisztikai modellek a felszínborítás-osztályozástól a talajvízszint-becslésig forradalmasítják a térbeli predikciót
+- **Vizuális programozás** (19.5): A KNIME és az n8n a GIS-munkafolyamatokat vizuálisan dokumentálttá és automatizálttá teszik
+- **Térbeli RAG** (19.6): A térbeli adatbázisok, metaadat-katalógusok és jogszabályi tudásbázisok felett természetes nyelvű kérdésfeltevés válik lehetővé
+- **3D GIS és digitális ikrek** (19.7): A városi és infrastrukturális digitális ikrek a klímaadaptáció és a prediktív karbantartás eszközei
+- **Autonóm GIS** (19.8): Az AI ágensek a természetes nyelvű utasításból kiindulva önállóan tervezik és hajtják végre a térbeli elemzést
+- **Felhőalapú GIS** (19.9): A Google Earth Engine, a Planetary Computer és a Copernicus Data Space a petabájtos adatarchívumok AI-alapú feldolgozását teszik lehetővé
+- **Magyar kontextus** (19.10): Az EOV koordináta-rendszer, a Lechner Központ, a MePAR és a magyar térbeli adatinfrastruktúra a hazai alkalmazások kerete
 
-A terinformatika nem oncellu technologia -- a kornyezeti problemak megertesenek es kezeeleesenek egyik leghateekonyabb eszkozrendszere. Az AI ezt az eszkozrendszert tiz-szazszoros hatekonyeaggal erositi meg: amit korabban honapokig tartott, az ma napok alatti elvegeezheto. A kulcs azonban valtoozatlan: a terbeli gondolkodas, a kornyezeti szaktudas es az eredmenyek kritikus ertekeleese megmarad az ember feladataanak. Az AI nem helyettesiti a terinformatikust -- de az AI-t hasznaalo terinformatikus mar most hateekonyabb, mint a nelkuule dolgozo.
+A térinformatika nem öncélú technológia -- a környezeti problémák megértésének és kezelésének egyik leghatékonyabb eszközrendszere. Az AI ezt az eszközrendszert tíz-százszoros hatékonysággal erősíti meg: amit korábban hónapokig tartott, az ma napok alatt elvégezhető. A kulcs azonban változatlan: a térbeli gondolkodás, a környezeti szaktudás és az eredmények kritikus értékelése megmarad az ember feladatának. Az AI nem helyettesíti a térinformatikust -- de az AI-t használó térinformatikus már most hatékonyabb, mint a nélküle dolgozó.
 
 ---
 
-> **Ajanlott kovetkezo lepesek**:
-> - Ha a kodgeneralast szeretned melyiteni: teerj vissza az **5. fejezethez**
-> - Ha az agensek epiteese erdekel: a **12. fejezet** reszletes utmutaast nyuujt
-> - Ha a RAG rendszert szeretned kiprobalni sajat terbeli adataiddal: a **9. fejezet** lepesrol lepesre bevezet
-> - Ha a felhoalapu munkaakornyezetekrool szeretnel tobbet tudni: a **14. fejezet** a kiindulaspont
+> **Ajánlott következő lépések**:
+> - Ha a kódgenerálást szeretnéd mélyíteni: térj vissza az **5. fejezethez**
+> - Ha az ágensek építése érdekel: a **12. fejezet** részletes útmutatást nyújt
+> - Ha a RAG rendszert szeretnéd kipróbálni saját térbeli adataiddal: a **9. fejezet** lépésről lépésre bevezet
+> - Ha a felhőalapú munkakörnyezetekről szeretnél többet tudni: a **14. fejezet** a kiindulópont

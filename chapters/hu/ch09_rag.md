@@ -1,18 +1,22 @@
 # 9. fejezet: RAG --- Tanítsuk meg az AI-t a saját adatainkra
 
-> **Fejezet-informacio**
-> - **Kinek szol:** Kutatoknak, akik a sajat dokumentumaikra, cikkeikre es adataikra epitenenek AI chatbotot
-> - **Eloismeretek:** 2. fejezet (promptolas), 5. fejezet (ajanlott a kodolasi reszekhez)
+> **Fejezet-információ**
+> - **Kinek szól:** Kutatóknak, akik a saját dokumentumaikra, cikkeikre és adataikra építenének AI chatbotot
+> - **Előismeretek:** 2. fejezet (promptolás), 5. fejezet (ajánlott a kódolási részekhez)
 > - **Amit megtanulsz:**
->   - Mi a RAG (Retrieval-Augmented Generation) es miben kulonbozik a fine-tuningtol
->   - A RAG pipeline lepesrol lepesre: dokumentumbetoltes, chunking, embedding, visszakereses
->   - Sajat tudasbazis epitese es kiertékelese
-> - **Szukseges eszkozok:** Browser + terminal + Python
-> - **Kapcsolodo fejezetek:** 2. fejezet (LLM mukodese), 7. fejezet (pipeline-ok), 13. fejezet (eszkozok keszitese)
+>   - Mi a RAG (Retrieval-Augmented Generation) és miben különbözik a fine-tuningtól
+>   - A RAG pipeline lépésről lépésre: dokumentumbetöltés, chunking, embedding, visszakeresés
+>   - Saját tudásbázis építése és kiértékelése
+> - **Szükséges eszközök:** Böngésző + terminál + Python
+> - **Kapcsolódó fejezetek:** 2. fejezet (LLM működése), 7. fejezet (pipeline-ok), 13. fejezet (eszközök készítése)
 
 ---
 
 ## 9.1 Amikor a ChatGPT nem ismeri a kutatásodat
+
+> **🖼️ Ábra: A RAG-pipeline lépései**
+> *Vízszintes folyamatábra: Dokumentumok → Chunking (darabolás) → Embedding (vektorizálás) → Vektor-adatbázis → Keresés (retrieval) → LLM válaszgenerálás. Minden lépésnél rövid magyarázat.*
+
 
 Képzeld el a következő jelenetet. Kati, harmadéves PhD-hallgató a Debreceni Egyetem Kémiai Intézetében, éjjel kettőkor ül a laptopja előtt. A disszertációja a Tisza vízgyűjtő területéről származó üledékminták nehézfém-speciációjáról szól --- egy rendkívül specifikus téma, amelyhez öt éve gyűjt adatokat. Beírja a ChatGPT-be:
 
@@ -65,7 +69,7 @@ A **fine-tuning (finomhangolás)** ezzel szemben magát a modellt változtatja m
 
 ---
 
-> **Ne csinalld!**
+> **Ne csináld!**
 > Ne tedd be a teljes PDF-et valtoztatas nelkul a RAG tudaasbazisba. A fejlecek, lablecek, hivatkozaslistak es kepoldalak mind "zajkent" kerulnek be, es az LLM ezekbol is "tudast" generaal. Kulonosen veszelyes a hivatkozaslista bennhagyasa: az AI onnan "levezethet" nem letezo allitasokat. Mindig tisztitsd es strukturald a dokumentumokat a betoltes elott.
 
 ## 9.3 A RAG architektúra lépésről lépésre
@@ -680,6 +684,10 @@ Ez ellentmond annak a széles körben elterjedt tévhitnek, hogy a fine-tuning-h
 
 ## 9.7 Összefoglalás: a tudásgazdagítás döntési fája
 
+> **🖼️ Ábra: RAG vs. Fine-tuning vs. Prompt Engineering döntési fa**
+> *Döntési fa: "Van saját dokumentumgyűjteményed?" → "Változik-e gyakran?" → "Mekkora a költségvetésed?" Leveleken: RAG, Fine-tuning, Prompt Engineering, és azok kombinációi.*
+
+
 Amikor az általános LLM nem elég, és a saját adataidra van szükséged, a következő döntési fát kövesd:
 
 ```
@@ -713,6 +721,10 @@ A feladat: az LLM a saját adataimból válaszoljon
 ---
 
 ## 9.8 Kulcsfogalmak összefoglalása
+
+> **🖼️ Ábra: A RAG-rendszer komponensei és azok kapcsolatai**
+> *Rendszer-architektúra diagram: Felhasználói kérdés → Retriever → Vektor-adatbázis → Releváns chunk-ok → LLM → Válasz (forrás-hivatkozásokkal). Feedback-hurok jelölve.*
+
 
 | Fogalom | Definíció |
 |---------|-----------|

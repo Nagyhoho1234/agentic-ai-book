@@ -1,18 +1,22 @@
 # 5. fejezet: AI kódolási asszisztensek — Kód írása programozás nélkül
 
-> **Fejezet-informacio**
-> - **Kinek szol:** Kutatoknak, akik ismetlodo adatfeldolgozasi feladatokat szeretnenek automatizalni
-> - **Eloismeretek:** 2. fejezet (promptolas), 4. fejezet (ajanlott)
+> **Fejezet-információ**
+> - **Kinek szól:** Kutatóknak, akik ismétlődő adatfeldolgozási feladatokat szeretnének automatizálni
+> - **Előismeretek:** 2. fejezet (promptolás), 4. fejezet (ajánlott)
 > - **Amit megtanulsz:**
->   - Hogyan generaltass kodot AI-val termeszetes nyelvu utasitasokkal
->   - A "rendezo" mentalitas: te mondod meg mit, az AI irja a kodot
->   - Python, Git es futtato kornyezetek alapfogalmai nem-programozoknak
-> - **Szukseges eszkozok:** Browser + terminal (Python telepitese szukseges)
-> - **Kapcsolodo fejezetek:** 4. fejezet (no-code elemzes), 7. fejezet (pipeline-ok), 8. fejezet (vizualis programozas)
+>   - Hogyan generáltass kódot AI-val természetes nyelvű utasításokkal
+>   - A "rendező" mentalitás: te mondod meg mit, az AI írja a kódot
+>   - Python, Git és futtató környezetek alapfogalmai nem-programozóknak
+> - **Szükséges eszközök:** Böngésző + terminál (Python telepítése szükséges)
+> - **Kapcsolódó fejezetek:** 4. fejezet (no-code elemzés), 7. fejezet (pipeline-ok), 8. fejezet (vizuális programozás)
 
 ---
 
 ## 5.1 Az 500 CSV-fájl problémája
+
+> **🖼️ Ábra: A "rendező" mentalitás — te mondod meg mit, az AI írja a kódot**
+> *Kétpaneles illusztráció: Bal oldalon egy kutató természetes nyelven ír utasítást; jobb oldalon az AI-asszisztens Python-kódot generál. Közöttük egy nyíl "természetes nyelv → kód" felirattal.*
+
 
 Képzeld el a következő helyzetet.
 
@@ -73,7 +77,7 @@ A szaktudás a tiéd — te tudod, hogy a vízszint nem lehet negatív, hogy a p
 
 ---
 
-> **Ne csinalld!**
+> **Ne csináld!**
 > Ne futtass le vakon az AI altal generalt kodot anelkul, hogy legalabb atnezned, mit csinal. Nem kell minden sort ertened, de nezd meg: milyen fajlokat olvas/ir, torol-e valamit, kuld-e adatot a halozatra. Egy rosszul fogalmazott prompt eredmenyekeppen az AI generalhat olyan kodot, amely felulirja a meglevo adatfajljaidat vagy tobbe teszi oket olvashatatlanná.
 
 ## 5.3 Alapfogalmak — amit tudnod kell, mielőtt elkezdjük
@@ -1015,6 +1019,10 @@ A scikit-learn a "beléptető" a gépi tanulás világába. Nem a legújabb deep
 
 ### Összefoglaló táblázat
 
+> **🖼️ Ábra: Python tudományos ökoszisztéma — a legfontosabb csomagok és kapcsolataik**
+> *Hálózati diagram: központban a Python logó, körülötte a pandas, numpy, matplotlib, scipy, scikit-learn csomagok, nyilak mutatják a tipikus adatáramlást közöttük.*
+
+
 | Könyvtár | Fő felhasználás | Mikor kérd az AI-tól |
 |----------|----------------|---------------------|
 | **NumPy** | Numerikus számítások, tömbök | Matematikai műveletek, mátrixok |
@@ -1062,6 +1070,10 @@ Emlékszel a Git-re? Az AI kódolási asszisztensek mellett a Git duplán fontos
 ---
 
 ## 5.13 Összefoglalás: a paradigmaváltás térképe
+
+> **🖼️ Ábra: A kódolási paradigmaváltás — hagyományos vs. AI-támogatott fejlesztés**
+> *Előtte/utána összehasonlítás: bal oldalon a hagyományos kódolás (kézikönyv olvasás → kódírás → hibakeresés → Stack Overflow), jobb oldalon az AI-támogatott (feladat leírás → AI-generált kód → ellenőrzés → iteráció).*
+
 
 Ebben a fejezetben megtanultad, hogy:
 

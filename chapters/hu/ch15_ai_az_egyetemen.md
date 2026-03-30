@@ -1,14 +1,14 @@
-# AI az egyetemen -- Oktatás, tanulás és intézményi átalakulás
+# 15. fejezet — AI az egyetemen: Oktatás, tanulás és intézményi átalakulás
 
-> **Fejezet-informacio**
-> - **Kinek szol:** Oktatoknak, dekanoknak, tanszekvezetoknek es intezmenyi donteeshozoknak
-> - **Eloismeretek:** 1. fejezet (AI alapok); a 14. fejezet (AI labor) hasznos, de nem kotelezo
+> **Fejezet-információ**
+> - **Kinek szól:** Oktatóknak, dékánoknak, tanszékvezetőknek és intézményi döntéshozóknak
+> - **Előismeretek:** 1. fejezet (AI alapok); a 14. fejezet (AI labor) hasznos, de nem kötelező
 > - **Amit megtanulsz:**
->   - Negy egyetemi esettanulmany (UF, ASU, UTokyo, tuBIT) konkret tanulsagokkal
->   - Az AI-kurzusok otszintu taxonomiaja (Use-AI, Know-AI, Build-AI, Ethical-AI, Enable-AI)
->   - Hogyan epitsd fel az AI-integracios strategiat a Debreceni Egyetemen
-> - **Szukseges eszkozok:** Browser only
-> - **Kapcsolodo fejezetek:** 14. fejezet (AI labor), 16. fejezet (etika), 1. fejezet (motivacio)
+>   - Négy egyetemi esettanulmány (UF, ASU, UTokyo, tuBIT) konkrét tanulságokkal
+>   - Az AI-kurzusok ötszintű taxonómiája (Use-AI, Know-AI, Build-AI, Ethical-AI, Enable-AI)
+>   - Hogyan építsd fel az AI-integrációs stratégiát a Debreceni Egyetemen
+> - **Szükséges eszközök:** Csak böngésző
+> - **Kapcsolódó fejezetek:** 14. fejezet (AI labor), 16. fejezet (etika), 1. fejezet (motiváció)
 
 > *"A tanítás igazi célja nem az információátadás, hanem a gondolkodás meggyújtása. Az AI ezt a lángot nem oltja el -- felerősíti."*
 
@@ -23,6 +23,9 @@ Ez a fejezet a könyv egyik legfontosabb része, mert összekapcsolja az elméle
 ---
 
 ## 15.1 Egyetemi esettanulmányok -- Ki hogyan csinálja?
+
+> **🖼️ Ábra: Négy egyetem AI-stratégiája — UF, ASU, UTokyo, tuBIT**
+> *Four university campus illustrations arranged in a grid, each with a flag and key AI initiative icon, colorful academic illustration style*
 
 Az AI intézményi integrációjára nincs egyetlen recept. Az alábbiakban négy radikálisan különböző, de egyformán sikeres megközelítést mutatunk be -- mindegyikből konkrét tanulságokkal a Debreceni Egyetem számára.
 
@@ -128,7 +131,7 @@ A kurzus **30 órás**, **ingyenes**, **nincs előfeltétele** (sem programozás
 5. Neurális hálózatok
 6. Hatás (társadalmi következmények)
 
-Minden gyakorlat három nehézségi szinten elérhető (kezdő, haladó, mester). A kurzus filozófiája radikálisan különbözik a szokásos online AI-kurzusoktól: **nem AI-mérnököket akar képezni, hanem tájékozott állampolgárokat**, akik képesek részt venni az AI-ról szóló demokratikus vitákban.
+Minden gyakorlat három nehézségi szintén elérhető (kezdő, haladó, mester). A kurzus filozófiája radikálisan különbözik a szokásos online AI-kurzusoktól: **nem AI-mérnököket akar képezni, hanem tájékozott állampolgárokat**, akik képesek részt venni az AI-ról szóló demokratikus vitákban.
 
 #### Az EU-s terjeszkedés
 
@@ -290,6 +293,9 @@ Nem kell választanod: a négy modell kiegészíti egymást, és a fejezet vég�
 
 ## 15.2 AI az oktatásban és témavezetésben
 
+> **🖼️ Ábra: AI az oktatásban — a hallgató, az oktató és az AI háromszöge**
+> *Triangle diagram showing the relationship between student, instructor, and AI assistant, with arrows indicating feedback loops, modern educational design*
+
 ### 15.2.1 Kurzuselőkészítés AI-val
 
 Az Anthropic-Northeastern kutatás egyértelműen mutatja: az oktatók leggyakoribb AI-felhasználása (57%) a **tananyagfejlesztés**. Ez nem meglepő -- a kurzuselőkészítés az oktatás legtöbb időt felemésztő, de legkevésbé látványos része.
@@ -399,7 +405,7 @@ A SARPS hat stratégiát tartalmaz, amelyek mindegyike az AI által nehezen kiv�
 **Hogyan működik**: Kapcsold az értékelést személyes tapasztalatokhoz, helyi kontextusokhoz, aktuális eseményekhez vagy egyedi adatkészletekhez.
 
 **Példák**:
-- Helyi szervezetek, közösségek vagy esettanulmányok elemzése
+- Helyi szervezeték, közösségek vagy esettanulmányok elemzése
 - A kurzustartalom összekapcsolása személyes vagy szakmai tapasztalattal
 - Egyedi, az oktató által biztosított adatkészletek használata
 - Erősen specifikus, aktuális kontextusba helyezett feladatok
@@ -693,6 +699,9 @@ Az EUA figyelmeztet: az etikai dimenzió az egyetlen állandó egy gyorsan vált
 
 ## 15.4 Útiterv a Debreceni Egyetem számára
 
+> **🖼️ Ábra: AI-integrációs útiterv a Debreceni Egyetem számára — három fázis**
+> *Roadmap timeline showing three phases of AI integration at a Hungarian university: pilot projects, scaling, and institutional transformation, with campus illustration in background, clean infographic style*
+
 ### 15.4.1 Amink van: A jelenlegi helyzet
 
 A Debreceni Egyetem **nem a nulláról indul**. A jelenlegi AI-kapacitásokat rendszerezve:
@@ -929,7 +938,7 @@ A Komondor szuperszámítógép, az NVIDIA és Microsoft partnerségek, a Járm�
 
 - Khan, S. (2024). *Brave New Words: How AI Will Revolutionize Education (and Why That's a Good Thing)*. Viking.
 - Mollick, E. (2024). *Co-Intelligence: Living and Working with AI*. Portfolio/Penguin.
-- EUA Task-and-Finish Group on AI (2026). Training. In: *Adopting AI in Higher Education*, Chapter 3.
+- EUA Task-and-Finish Group on AI (2026). Training. In: *Adopting AI in Higher Education*, 3. fejezet.
 
 ### Változásmenedzsment
 

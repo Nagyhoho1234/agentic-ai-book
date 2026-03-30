@@ -1,16 +1,20 @@
 # 4. fejezet: AI-vel végzett adatelemzés — Kódolás nélkül
 
-> **Fejezet-informacio**
-> - **Kinek szol:** Nem-programozo kutatoknak, akik tablazatos adatokkal dolgoznak
-> - **Eloismeretek:** 2. fejezet (promptolas)
+> **Fejezet-információ**
+> - **Kinek szól:** Nem-programozó kutatóknak, akik táblázatos adatokkal dolgoznak
+> - **Előismeretek:** 2. fejezet (promptolás)
 > - **Amit megtanulsz:**
->   - Adatfajlok feltoltese es felfedezo elemzese chat-feluleten
->   - Statisztikai elemzesek es vizualizaciok termeszetes nyelven
->   - Az AI-alapu adatelemzes korlatai es mikor kell kodolasra valtani
-> - **Szukseges eszkozok:** Browser only
-> - **Kapcsolodo fejezetek:** 5. fejezet (kodolasi asszisztensek), 7. fejezet (pipeline-ok), 8. fejezet (vizualis programozas)
+>   - Adatfájlok feltöltése és felfedező elemzése chat-felületen
+>   - Statisztikai elemzések és vizualizációk természetes nyelven
+>   - Az AI-alapú adatelemzés korlátai és mikor kell kódolásra váltani
+> - **Szükséges eszközök:** Csak böngésző
+> - **Kapcsolódó fejezetek:** 5. fejezet (kódolási asszisztensek), 7. fejezet (pipeline-ok), 8. fejezet (vizuális programozás)
 
 ## Nyitó jelenet: Tízezer sor, egy délután
+
+> **🖼️ Ábra: No-code adatelemzés munkafolyamata**
+> *Háromoszlopos ábra: Bal oldal — Excel/CSV fájl feltöltése; Közép — AI chat-felület természetes nyelvű utasítással; Jobb oldal — diagramok és statisztikai eredmények. Nyilak mutatják az adatáramlást.*
+
 
 Képzeld el a következő helyzetet. Hétfő reggel, és a kezedben van egy Excel-fájl 10 000 sorral. A sorok egy kétéves klinikai vizsgálat betegadatait tartalmazzák: demográfiai változók, laboreredmények, kezelési csoportok, időpontok. A főnököd azt kéri, hogy szerdára legyen egy előzetes elemzés a csoportértekezletre. Régebben ilyenkor vagy SPSS-t indítottál volna (ha van rá licensz), vagy megkértél volna egy statisztikus kollégát, vagy napokat töltöttél volna Excel pivot-táblákkal és kézi képletekkel.
 
@@ -48,7 +52,7 @@ Mielőtt feltöltöd a fájlt, végezz el néhány egyszerű ellenőrzést:
 - **Egységes formátum.** Ha a dátumok hol "2024.01.15", hol "01/15/2024" formátumban vannak, az AI megbirkózik vele, de lassítja és bizonytalanabbá teszi az elemzést.
 - **Érzékeny adatok.** Ha betegadatokkal dolgozol, gondolj a GDPR-ra. Anonimizálj a feltöltés előtt (lásd 14. fejezet).
 
-> **Ne csinalld!**
+> **Ne csináld!**
 > Ne tolts fel erzekeny vagy szemelyesitett betegadatokat, hallgatoi adatokat vagy vallalati uuzleti adatokat kozvetlenul egy felhobe alapu AI chatbotba (ChatGPT, Claude, Gemini) anonimizalas nelkul. A GDPR es az egyetemi adatvedelmi szabalyzatok ezt tiltjak. Eloszor mindig taavolitsd el a szemelyazonositora alkalmas mezoket (nev, TAJ-szam, belepesi azonosito).
 
 **2. lépés: Töltsd fel és ismerkedj**
@@ -663,6 +667,10 @@ Nem kell mindegyik szintre eljutnod — válaszd azt, amelyik a te kutatási ig�
 
 ## 4.8 Gyakorlati összefoglaló: 10 tipp a hatékony no-code elemzéshez
 
+> **🖼️ Ábra: A no-code elemzés 10 aranyszabálya**
+> *Infografika: 10 számozott tipp ikon-szerűen elrendezve (2x5 rács), mindegyik mellett egy rövid kulcsszó és egy kis illusztráció.*
+
+
 1. **Mindig CSV-vel kezdj,** ha teheted. Az Excel-formátum meglepetéseket okozhat (rejtett munkalapok, egyesített cellák, formátumhibák).
 
 2. **Az első kérés legyen az áttekintés.** Mielőtt bármilyen elemzést kérnél, kérd az adatok összefoglalóját. Ezzel elkerülöd, hogy rossz oszlopon futtass tesztet.
@@ -687,47 +695,51 @@ Nem kell mindegyik szintre eljutnod — válaszd azt, amelyik a te kutatási ig�
 
 ## Olvasási útvonalak
 
+> **🖼️ Ábra: Olvasási útvonalak a könyvben — szakterület szerinti térképek**
+> *Folyamatábra, amely a különböző kutatói profilokhoz (társadalomtudós, laborbiológus, informatikus, vezető, oktató) ajánlott fejezet-sorrendet mutatja színkódolt útvonalakként.*
+
+
 Ez a fejezet a könyv első nagy elágazási pontja. Attól függően, hogy milyen típusú kutató vagy, innen különböző utakon haladhatsz tovább:
 
 ### Társadalomtudós
 *Szociológia, pszichológia, közgazdaságtan, pedagógia, politikatudomány*
 
-**Ch 1 → Ch 2 → Ch 3 → Ch 4** → **Ch 8** (vizuális programozás: KNIME/Orange) → **Ch 9** (saját adatbázisok, RAG) → **Ch 15** (oktatás) → **Ch 16** (etika)
+**1. fejezet → 2. fejezet → 3. fejezet → 4. fejezet** → **8. fejezet** (vizuális programozás: KNIME/Orange) → **9. fejezet** (saját adatbázisok, RAG) → **15. fejezet** (oktatás) → **16. fejezet** (etika)
 
 Miért ez az út? A társadalomtudósoknak a kérdőíves adatelemzés, a statisztikai tesztek és a vizuális programozás lefedi a legtöbb igényt. Nem szükséges kódot írni — a 8. fejezet vizuális eszközei elég erősek.
 
 ### Laborbiológus
 *Molekuláris biológia, biokémia, mikrobiológia, genetika, ökológia*
 
-**Ch 1 → Ch 2 → Ch 3 → Ch 4 → Ch 5** (AI-támogatott kódolás) → **Ch 7** (automatizált pipeline-ok) → **Ch 9** (saját adatbázisok) → **Ch 12** (szakma-specifikus eszközök) → **Ch 15** (oktatás) → **Ch 16** (etika)
+**1. fejezet → 2. fejezet → 3. fejezet → 4. fejezet → 5. fejezet** (AI-támogatott kódolás) → **7. fejezet** (automatizált pipeline-ok) → **9. fejezet** (saját adatbázisok) → **12. fejezet** (szakma-specifikus eszközök) → **15. fejezet** (oktatás) → **16. fejezet** (etika)
 
 Miért ez az út? A labormunkában gyakran kell szkripteket írni (képfeldolgozás, szekvencia-elemzés, batch-futtatás), és az automatizálás nagy időmegtakarítást jelent. Az 5. fejezet megtanít AI segítségével kódot írni.
 
 ### Számítógépes vagy fizikai tudós
 *Fizika, kémia, informatika, matematika, mérnöki tudományok*
 
-**Ch 1 → Ch 2 → Ch 3 → Ch 4 → Ch 5 → Ch 6** (haladó kódolás) → **Ch 7** (pipeline-ok) → **Ch 9** (RAG) → **Ch 10** (szimulációk, digitális ikrek) → **Ch 11-12** (ágensek, multi-agent rendszerek) → **Ch 15** → **Ch 16**
+**1. fejezet → 2. fejezet → 3. fejezet → 4. fejezet → 5. fejezet → 6. fejezet** (haladó kódolás) → **7. fejezet** (pipeline-ok) → **9. fejezet** (RAG) → **10. fejezet** (szimulációk, digitális ikrek) → **11. fejezet-12** (ágensek, multi-agent rendszerek) → **15. fejezet** → **16. fejezet**
 
 Miért ez az út? A teljes technikai mélység kell: kódolás, ágensek, automatizálás, szimulációk. Ez a leghosszabb, de a legteljesebb út.
 
 ### Labor- vagy csoportvezető
 *Kutatócsoport-vezetők, tanszékvezetők, intézetvezetők*
 
-**Ch 1 → Ch 2 → Ch 3 → Ch 4** → **Ch 14** (szervezeti bevezetés, stratégia) → **Ch 15** (oktatás) → **Ch 16** (etika, szabályozás)
+**1. fejezet → 2. fejezet → 3. fejezet → 4. fejezet** → **14. fejezet** (szervezeti bevezetés, stratégia) → **15. fejezet** (oktatás) → **16. fejezet** (etika, szabályozás)
 
 Miért ez az út? A vezetőknek nem kell mélyen érteniük a technikai részleteket. Az első 4 fejezet megadja a személyes használat alapjait, a 14. fejezet pedig a csapat- és intézményszintű stratégiát.
 
 ### Oktatásközpontú kutató
 *Oktatók, tantervfejlesztők, oktatási innovátorok*
 
-**Ch 1 → Ch 2 → Ch 3 → Ch 4** → **Ch 15** (AI az oktatásban) → **Ch 16** (etika, plágium, vizsgaintegritás)
+**1. fejezet → 2. fejezet → 3. fejezet → 4. fejezet** → **15. fejezet** (AI az oktatásban) → **16. fejezet** (etika, plágium, vizsgaintegritás)
 
-Miért ez az út? Az oktatók számára a személyes AI-használat (Ch 1-4) és az oktatási alkalmazások (Ch 15) a legfontosabbak, az etikai kérdésekkel (Ch 16) kiegészítve.
+Miért ez az út? Az oktatók számára a személyes AI-használat (1. fejezet-4) és az oktatási alkalmazások (15. fejezet) a legfontosabbak, az etikai kérdésekkel (16. fejezet) kiegészítve.
 
 ### Teljes út
 *Ha mindent meg akarsz ismerni*
 
-**Ch 1 → Ch 2 → Ch 3 → Ch 4 → Ch 5 → Ch 6 → Ch 7 → Ch 8 → Ch 9 → Ch 10 → Ch 11 → Ch 12 → Ch 13 → Ch 14 → Ch 15 → Ch 16**
+**1. fejezet → 2. fejezet → 3. fejezet → 4. fejezet → 5. fejezet → 6. fejezet → 7. fejezet → 8. fejezet → 9. fejezet → 10. fejezet → 11. fejezet → 12. fejezet → 13. fejezet → 14. fejezet → 15. fejezet → 16. fejezet**
 
 Minden fejezet sorrendben. Ez a legalaposabb, de a leghosszabb út — kb. 30-40 óra olvasás és gyakorlás.
 

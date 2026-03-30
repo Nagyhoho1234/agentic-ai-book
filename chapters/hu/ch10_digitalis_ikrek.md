@@ -1,18 +1,22 @@
 # 10. fejezet — Digitális ikrek: Valós rendszerek virtuális másolatai
 
-> **Fejezet-informacio**
-> - **Kinek szol:** Mernokoknek, kornyezetkutatoknak es termeszettudosoknak, akik valos rendszerek virtualis modelljeit szeretnek epiteni
-> - **Eloismeretek:** 6. fejezet (szimulacio), 7. fejezet (pipeline-ok)
+> **Fejezet-információ**
+> - **Kinek szól:** Mérnököknek, környezetkutatóknak és természettudósoknak, akik valós rendszerek virtuális modelljeit szeretnék építeni
+> - **Előismeretek:** 6. fejezet (szimuláció), 7. fejezet (pipeline-ok)
 > - **Amit megtanulsz:**
->   - Mi a digitalis iker es miben tobb egy egyszeru szimulacional
->   - A digitalis ikrek architekturaja es az otdimenzios modell
->   - Gyakorlati peldak: gyartosor, vizgyujto, klimamodellezes
-> - **Szukseges eszkozok:** Browser + terminal + Python
-> - **Kapcsolodo fejezetek:** 6. fejezet (modellezes), 11. fejezet (agensek), 14. fejezet (AI labor)
+>   - Mi a digitális iker és miben több egy egyszerű szimulációnál
+>   - A digitális ikrek architektúrája és az ötdimenziós modell
+>   - Gyakorlati példák: gyártósor, vízgyűjtő, klímamodellezés
+> - **Szükséges eszközök:** Böngésző + terminál + Python
+> - **Kapcsolódó fejezetek:** 6. fejezet (modellezés), 11. fejezet (ágensek), 14. fejezet (AI labor)
 
 ---
 
 ## Nyitó jelenet: Amikor a gyár „megjelenik" a képernyőn
+
+> **🖼️ Ábra: A digitális iker ötdimeziós modellje**
+> *Pentagram/ötszög-diagram az 5 dimenzióval: Fizikai entitás, Virtuális modell, Kapcsolat (IoT), Adatok, Szolgáltatások. Középen "Digitális Iker" felirat, nyilak mutatják a kétirányú adatáramlást.*
+
 
 Képzeld el a következő helyzetet. Egy vegyészmérnök a Debreceni Egyetem Műszaki Karán végzett, és most egy nagyvállalat gyártósorán dolgozik. Minden reggel bejön, ellenőrzi a hőmérséklet- és nyomásmérőket, átnézi az előző napi logokat, és ha valami gyanúsat lát, riasztja a karbantartó csapatot. A legtöbb nap nyugodt. De időnként — előjelzés nélkül — leáll egy kompresszor, megugrik egy reaktor hőmérséklete, vagy egyszerűen romlik a termék minősége anélkül, hogy bárki megértené, miért.
 
@@ -62,7 +66,7 @@ A szakirodalom egy ötdimenziós keretrendszert javasol a digitális ikrek leír
 
 Ha bármelyik dimenzió hiányzik vagy gyenge, a digitális iker nem tölti be a szerepét. Gondolj erre úgy, mint egy ötlábú székre: ha az egyik láb rövid, az egész billeng.
 
-> **Ne csinalld!**
+> **Ne csináld!**
 > Ne nevezd "digitalis ikernek" azt, ami valojaban csak egy egyszeru dashboard vagy szimulacio. A digitalis iker lenyege a **ketiranyuu adataramlas**: a fizikai rendszer adatai frissitik a modellt, ES a modell visszahat a fizikai rendszerre. Ha csak egyiranyuan figyeled a szenzorokat (fizikai → virtualis), az digitalis arnyek — hasznos, de mas kategoria. Az inflalt terminologia alarassa a munkaad hitelességét.
 
 ### Miért fontos ez a tudósoknak?
@@ -534,6 +538,10 @@ Debrecen egyedülálló kombinációval rendelkezik a digitális iker fejleszté
 
 ## Hogyan kezdj hozzá?
 
+> **🖼️ Ábra: A digitális iker érettségi szintjei**
+> *Lépcsős diagram: 1. Leíró modell → 2. Szimulációs modell → 3. Élő digitális iker (IoT-kapcsolat) → 4. Autonóm digitális iker (AI-döntéshozatal). Minden szintnél példa és szükséges technológia.*
+
+
 Ha felkeltette az érdeklődésedet a digitális ikrek világa, íme egy pragmatikus terv:
 
 ### Ha kutató vagy és először hallasz a témáról:
@@ -572,6 +580,10 @@ Ha felkeltette az érdeklődésedet a digitális ikrek világa, íme egy pragmat
 ---
 
 ## Összefoglalás
+
+> **🖼️ Ábra: Digitális ikrek alkalmazási területei a tudományban**
+> *Kördiagram vagy térkép: Gyártás, Vízgazdálkodás, Klímamodellezés, Városmenedzsment, Precíziós mezőgazdaság — mindegyik szektor egy-egy ikonnal és rövid példával.*
+
 
 A digitális ikrek nem jövőbeli ígéretek — már ma működnek gyárakban, energiahálózatokban, klímamodellekben és kórházakban. Ami új és áttörő, az az AI és a gépi tanulás integrációja, amely lehetővé teszi, hogy ezek a virtuális másolatok ne csak tükrözzék, hanem *előre jelezzék* és *optimalizálják* a fizikai rendszerek működését.
 

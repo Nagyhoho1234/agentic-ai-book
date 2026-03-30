@@ -1,14 +1,14 @@
-# Az AI forradalom a tudományos kutatásban
+# 1. fejezet: Az AI forradalom a tudományos kutatásban
 
-> **Fejezet-informacio**
-> - **Kinek szol:** Minden kutatonak, oktatonak es egyetemi dolgozonak, aki meg nem hasznalja aktivan az AI-t
-> - **Eloismeretek:** Nincs
+> **Fejezet-információ**
+> - **Kinek szól:** Minden kutatónak, oktatónak és egyetemi dolgozónak, aki meg nem használja aktívan az AI-t
+> - **Előismeretek:** Nincs
 > - **Amit megtanulsz:**
->   - Miert szamit az AI altalanos celu technologianak a tudomanyban
->   - Az AI ot szintje a chatbottol az autonom felfedezesig
->   - Hogyan illeszkedik a Debreceni Egyetem az AI-forradalom kontextusaba
-> - **Szukseges eszkozok:** Browser only
-> - **Kapcsolodo fejezetek:** 2. fejezet (tarsalgasi AI), 16. fejezet (etika), Eloszo
+>   - Miért számít az AI általános célú technológiának a tudományban
+>   - Az AI öt szintje a chatbottól az autonóm felfedezésig
+>   - Hogyan illeszkedik a Debreceni Egyetem az AI-forradalom kontextusába
+> - **Szükséges eszközök:** Csak böngésző
+> - **Kapcsolódó fejezetek:** 2. fejezet (társalgási AI), 16. fejezet (etika), Előszó
 
 > *"Az AI nem varázslat, hanem egy eszköz -- de olyan eszköz, amely mindent megváltoztat."*
 
@@ -52,6 +52,10 @@ A lényeg: **az AI nem opcionális**. Nem az a kérdés, hogy a te szakterülete
 
 ## Az AI spektruma: a chatbottól az autonóm felfedezésig
 
+> **🖼️ Ábra: Az AI öt szintje — a chatbottól az autonóm felfedezésig**
+> *Piramis-diagram, amely az OpenAI öt szintjét mutatja: 1. Beszélgetés, 2. Gondolkodás, 3. Eszközhasználat, 4. Autonóm ágensek, 5. Szervezetek. Minden szinten egy-egy tudományos példa ikonnal.*
+
+
 Az AI nem egyetlen dolog. A legfontosabb, amit meg kell értened: **az AI egy spektrum**, amely a legegyszerűbb interakciótól az autonóm tudományos felfedezésig terjed. Az OpenAI öt szintű keretrendszere, amelyet a könyv végig használni fog, segít eligazodni ezen a spektrumon.
 
 ### 1. szint: Beszélgetés (Chatbots)
@@ -92,7 +96,7 @@ Teljes kutatócsoportnyi kapacitás: több AI ágens együttműködik, felosztj�
 >
 > *Forrás: gis 21.1 „Miért nehéz a térbeli gondolkodás a nagy nyelvi modellek számára?"*
 
-> **Ne csinalld!**
+> **Ne csináld!**
 > Ne kezdd az AI-t azonnal a 4-5. szinten hasznalni (agensek, autonom rendszerek) anelkul, hogy az 1-2. szintet (chat, gondolkodas) alaposan megismerted volna. A leggyakoribb hiba, hogy a kutato "mindent automatizalna", mikozben meg az egyszeru promptolasat sem sajatitotta el. Epitsd fel fokozatosan a tudasodat -- a konyv fejezetsorrendje pontosan ezt a logikus utat koveti.
 
 ---
@@ -155,6 +159,10 @@ A rendszer különösen értékes olyan kutatók számára, akik nem génszerkes
 
 ## Lassul-e a tudomány?
 
+> **🖼️ Ábra: A tudományos disruptivitás csökkenése (1945–2020)**
+> *Vonaldiagram, amely a CD-index csökkenő trendjét mutatja az évtizedek során, Park et al. (2023) adatai alapján. Az x tengelyen az évek, az y tengelyen a disruptivitási index.*
+
+
 Az előző rész az AI ígéretéről szólt. Most nézzük meg, **miért van szükség erre az ígéretre** -- miért olyan sürgős, hogy a tudomány új eszközöket találjon.
 
 ### A csökkenő disruptivitás
@@ -215,6 +223,10 @@ Mit jelent ez a gyakorlatban? **Ne az alapján ítéld meg az AI-t, amit ma nem 
 ---
 
 ## A debreceni kontextus
+
+> **🖼️ Ábra: A Debreceni Egyetem AI-ökoszisztémája**
+> *Infografika: a Debreceni Egyetem épülete középen, körülötte a Komondor szuperszámítógép, a Járműipari és MI Koordinációs Intézet, az ipari partnerek (BMW, Deutsche Telekom) és a kutatócsoportok hálózata.*
+
 
 Eddig globális trendekről beszéltünk. Most nézzük meg, mit jelent mindez **konkrétan, itt Debrecenben**, a Debreceni Egyetem 14 karán, a mintegy 30 000 magyar és közel 8000 nemzetközi hallgató számára.
 

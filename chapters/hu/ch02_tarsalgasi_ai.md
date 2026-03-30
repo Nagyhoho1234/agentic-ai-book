@@ -1,14 +1,14 @@
 # 2. fejezet: Társalgási AI — Az első kutatási partnered
 
-> **Fejezet-informacio**
-> - **Kinek szol:** Kutatoknak, oktatoknak es hallgatoknak, akik elkezdenenek AI chatbotokat hasznalni a munkahoz
-> - **Eloismeretek:** 1. fejezet (ajanlott, de nem kotelezo)
+> **Fejezet-információ**
+> - **Kinek szól:** Kutatóknak, oktatóknak és hallgatóknak, akik elkezdenének AI chatbotokat használni a munkához
+> - **Előismeretek:** 1. fejezet (ajánlott, de nem kötelező)
 > - **Amit megtanulsz:**
->   - Hogyan mukodik egy nagy nyelvi modell (tokenek, kontextusablak, hallucianció)
->   - A negy nagy platform (Claude, ChatGPT, Gemini, Copilot) osszehasonlitasa
->   - Hatekony promptolasi technikak es mintak tudomanyos munkara
-> - **Szukseges eszkozok:** Browser only
-> - **Kapcsolodo fejezetek:** 1. fejezet (AI alapok), 3. fejezet (tudomanyos iras), 16. fejezet (etika)
+>   - Hogyan működik egy nagy nyelvi modell (tokenek, kontextusablak, hallucináció)
+>   - A négy nagy platform (Claude, ChatGPT, Gemini, Copilot) összehasonlítása
+>   - Hatékony promptolási technikák és minták tudományos munkára
+> - **Szükséges eszközök:** Csak böngésző
+> - **Kapcsolódó fejezetek:** 1. fejezet (AI alapok), 3. fejezet (tudományos írás), 16. fejezet (etika)
 
 > *„A helyes kérdés feltevése gyakran fontosabb, mint a válasz megtalálása."*
 > — Albert Einstein (gyakran idézett parafrázis)
@@ -36,6 +36,10 @@ Mielőtt bármit kérnél egy AI-tól, érdemes megérteni, mi történik a moto
 
 ### 2.2.1 Token — a nyelv legkisebb építőköve
 
+> **🖼️ Ábra: Tokenizáció szemléltetése magyar és angol nyelven**
+> *Összehasonlító ábra: a "hidrogeológiai vizsgálat" és "hydrogeological survey" szavak tokenekre bontása, színes dobozokkal jelölve az egyes tokeneket és azok számát.*
+
+
 > **Definíció: Token** — Az a legkisebb egység, amelyre a nyelvi modell a szöveget felbontja. Egy token lehet egy teljes szó, egy szótöredék, egy írásjel vagy akár egy szóköz. A magyar „hidrogeológiai" szó például több tokenre bomlik (pl. „hidro", „geo", „lógiai"), míg az angol „the" egyetlen token. A modellek a tokenekhez számokat rendelnek, és ezekkel a számokkal dolgoznak — amikor válaszolnak, a számokból állítják vissza az emberi szöveget.
 
 Miért fontos ez neked? Mert a modellek *tokenben* számolnak, nem szavakban. Amikor egy platformon azt olvasod, hogy „200K kontextusablak", az 200 000 tokent jelent — ami nagyjából 150 000 angol szó, de magyarul kevesebb, mert a magyar nyelv agglutináló szerkezete miatt egy-egy szó több tokent igényel.
@@ -49,6 +53,10 @@ Amikor beírod: „A víz forráspontja tengerszinten..." — a modell nem „tu
 Ez a különbségtétel kritikus. Ahogy Narayanan és Kapoor fogalmaz: az LLM-ek nem hazudnak — mert a hazugsághoz tudni kellene az igazságot. Ehelyett egyszerűen közömbösek az igazság iránt. Harry Frankfurt filozófus terminológiájával élve: *bullshit generátorok* — nem az a céljuk, hogy igazat mondjanak, hanem az, hogy meggyőzően hangozzanak.
 
 ### 2.2.3 Kontextusablak — az AI „munkamemóriája"
+
+> **🖼️ Ábra: Kontextusablak-méretek összehasonlítása (2024–2026)**
+> *Vízszintes oszlopdiagram, amely a különböző modellek kontextusablak-méreteit mutatja: GPT-4 (8K–128K), Claude (200K–1M), Gemini (1M–2M). Mellette egy könyv-ikon, amely jelzi, hány oldalnái szöveget jelent.*
+
 
 > **Definíció: Kontextusablak (context window)** — Az a maximális tokenszám, amelyet a modell egyetlen interakció során „lát" — beleértve a te kérdésedet, a korábbi üzeneteket és a modell saját válaszait. Ami kívül esik a kontextusablakon, azt a modell szó szerint nem látja, nem emlékszik rá.
 
@@ -72,12 +80,16 @@ A hallucinációk nem ritka hibák — a modell működési elvének közvetlen 
 
 A hallucináció legveszélyesebb formája az, amelyik *majdnem* igaz. Ha a modell teljesen értelmetlen dolgot mond, észreveszed. De ha a válasz 95%-ban korrekt, és a maradék 5% finoman hibás — az a tudományos munkában katasztrofális lehet.
 
-> **Ne csinalld!**
+> **Ne csináld!**
 > Soha ne illeszd be kozvetlenul egy AI-valaszt tudomanyos kéziratba vagy palyazatba az irodalmi hivatkozasok egyenkenti ellenorzese nelkul. Az LLM-ek rendszeresen generälnak nem letezo cikkeket, hamis DOI-kat es kitalalt szerzokat. Egyetlen leleplezo hamis hivatkozas a kéziratodban a biralok szemeben az egesz munka hitelességet alarassa.
 
 ---
 
 ## 2.3 A platformok tája 2026-ban
+
+> **🖼️ Ábra: A négy nagy AI-platform összehasonlító táblázata**
+> *Négy oszlopos összehasonlító infografika: Claude, ChatGPT, Gemini, Copilot — árak, kontextusablak, erősségek, tudományos felhasználási terület ikonokkal.*
+
 
 2026 márciusában négy nagy, általánosan elérhető AI-platform versenyez a kutatók figyelméért. Mindegyiknek vannak erősségei és korlátai. Az alábbi táblázat a legfontosabb jellemzőket foglalja össze:
 

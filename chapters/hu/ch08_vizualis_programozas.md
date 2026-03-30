@@ -1,16 +1,20 @@
 # 8. fejezet: Vizuális programozás és munkafolyamat-tervezés
 
-> **Fejezet-informacio**
-> - **Kinek szol:** Vizualisan gondolkodo kutatoknak, akik kod nelkul szeretnenek automatizalni
-> - **Eloismeretek:** 4. fejezet (adatelemzes); a 7. fejezet hasznos, de nem kotelezo
+> **Fejezet-információ**
+> - **Kinek szól:** Vizuálisan gondolkodó kutatóknak, akik kód nélkül szeretnének automatizálni
+> - **Előismeretek:** 4. fejezet (adatelemzés); a 7. fejezet hasznos, de nem kötelező
 > - **Amit megtanulsz:**
->   - Node-alapu vizualis programozas alapfogalmai
->   - n8n, KNIME, LangFlow es Node-RED eszkozok hasznalata
->   - Mikor valaszd a vizualis megkozelitest es mikor a hagyomanyos kodolast
-> - **Szukseges eszkozok:** Browser + terminal (n8n/KNIME telepites)
-> - **Kapcsolodo fejezetek:** 5. fejezet (kodolas), 7. fejezet (pipeline-ok), 12. fejezet (agensek epitese)
+>   - Node-alapú vizuális programozás alapfogalmai
+>   - n8n, KNIME, LangFlow és Node-RED eszközök használata
+>   - Mikor válaszd a vizuális megközelítést és mikor a hagyományos kódolást
+> - **Szükséges eszközök:** Böngésző + terminál (n8n/KNIME telepítés)
+> - **Kapcsolódó fejezetek:** 5. fejezet (kódolás), 7. fejezet (pipeline-ok), 12. fejezet (ágensek építése)
 
 ## Amikor a folyamatábra maga a program
+
+> **🖼️ Ábra: Kódalapú vs. vizuális programozás összehasonlítása**
+> *Kétpaneles ábra: Bal oldalon Python-kód egy pipeline-hoz; jobb oldalon ugyanaz a pipeline vizuális node-okkal (n8n vagy KNIME stílusban). Középen "=" jel, jelezve, hogy ugyanaz az eredmény.*
+
 
 Képzeld el Katalint, egy ökológust a Debreceni Egyetem Természettudományi Karán. Katalin remekül ért a statisztikához, a kísérlettervezéshez és az adatértelmezéshez. Amikor megtervez egy kísérletet, mindig folyamatábrát rajzol: mi történik először, milyen döntési pontok vannak, hová kerülnek az adatok, hogyan lesz belőlük eredmény. A folyamatábrái precízek, logikusak, követhetők.
 
@@ -48,7 +52,7 @@ Természetesen a vizuális programozás sem mindenható. Ha egyedi algoritmusoka
 
 ---
 
-> **Ne csinalld!**
+> **Ne csináld!**
 > Ne epitts bonyolult, sok node-bol allo munkafolyamatot egybol. Kezdd ket-harom node-dal (pl. fajl beolvasas → szures → kimenet), es csak akkor bovitsd, ha ez mukodik. A vizualis feluleten konnyu "lego-szenvedely"-be esni, es egy attekinthetetlen, 50 node-os szornyeteget epiteni, amelyet senki — beleertve teged harom honap mulva — nem fog megerteni.
 
 ## Node-alapú szerkesztők: az alapkoncepció
@@ -489,6 +493,10 @@ Az Orange kisebb, könnyebb és fókuszáltabb. Ha a KNIME egy teljes értékű 
 
 ## Döntési útmutató: vizuális vagy kódalapú megközelítés?
 
+> **🖼️ Ábra: Döntési fa — vizuális vagy kódalapú megközelítés?**
+> *Döntési fa: "Hány lépésből áll?" → "Kell-e egyedi logika?" → "Mennyire fontos a reprodukálhatóság?" Leveleken: "Vizuális", "Kódalapú", "Kombinált".*
+
+
 Most, hogy ismered a főbb vizuális eszközöket, jogosan merül fel a kérdés: mikor használj vizuális eszközt, és mikor hagyományos kódolást?
 
 ### Válaszd a vizuális megközelítést, ha...
@@ -566,6 +574,10 @@ Egyetlen eszköz sem tudja mindezt egyedül. De együtt, vizuálisan összekapcs
 ---
 
 ## Összefoglaló: az eszközök áttekintése
+
+> **🖼️ Ábra: Vizuális programozási eszközök összehasonlítása**
+> *Négyoszlopos összehasonlító táblázat/infografika: n8n, KNIME, LangFlow, Node-RED — jellemzők, erősségek, célcsoport, tipikus kutatási felhasználás.*
+
 
 | Eszköz | Fő felhasználás | Erősség | Típikus felhasználó |
 |--------|-----------------|---------|---------------------|

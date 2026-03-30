@@ -1,14 +1,14 @@
-# Az AI-val felszerelt kutatólabor
+# 14. fejezet — Az AI-val felszerelt kutatólabor
 
-> **Fejezet-informacio**
-> - **Kinek szol:** Laborvezetoknek, csoportvezetoknek es szenior kutatoknak
-> - **Eloismeretek:** 1-2. fejezet (AI alapok); a 5-13. fejezetek ismerete elony, de nem kotelezo
+> **Fejezet-információ**
+> - **Kinek szól:** Laborvezetőknek, csoportvezetőknek és szenior kutatóknak
+> - **Előismeretek:** 1-2. fejezet (AI alapok); a 5-13. fejezetek ismerete előny, de nem kötelező
 > - **Amit megtanulsz:**
->   - A 2026-os tudomanyos AI stack architekturaja (interaktiv, automatizalasi, kapcsolati reteg)
->   - Koltsegvetes, adatbiztonsag es csapaton beluli bevezetes strategiai
->   - Gyakorlati utiterv egy kutatocsoport AI-integraciojahoz
-> - **Szukseges eszkozok:** Browser only (strategiai fejezet)
-> - **Kapcsolodo fejezetek:** 7. fejezet (pipeline-ok), 12. fejezet (agensek), 15. fejezet (egyetemi szint)
+>   - A 2026-os tudományos AI stack architektúrája (interaktív, automatizálási, kapcsolati réteg)
+>   - Költségvetés, adatbiztonság és csapaton belüli bevezetés stratégiái
+>   - Gyakorlati útiterv egy kutatócsoport AI-integrációjához
+> - **Szükséges eszközök:** Csak böngésző (stratégiai fejezet)
+> - **Kapcsolódó fejezetek:** 7. fejezet (pipeline-ok), 12. fejezet (ágensek), 15. fejezet (egyetemi szint)
 
 > *"A stratégia nélküli AI-adoptáció olyan, mint a GPS nélküli hajózás -- lehet, hogy haladunk, de nem biztos, hogy a jó irányba."*
 
@@ -16,11 +16,14 @@ Képzeld el a következő jelenetet. Hétfő reggel, csoportértekezlet. Te vagy
 
 Leülsz az asztalhoz, és elkezdesz gondolkodni. A doktoranduszaid már használják a ChatGPT-t irodalomkutatásra -- ki többet, ki kevesebbet, ki tudja, mennyire megbízhatóan. Az egyik posztdokod a múlt héten megkérdezte, használhatna-e Claude Code-ot az adatfeldolgozó szkriptek írásához. A szenior kutatód szkeptikus: "Az AI nem érti a fizikát." A technikusod lelkes: "Automatizáljunk mindent!" Te pedig ott ülsz a kettő között, és pontosan érzed, hogy a válasz valahol középen van -- de hol pontosan?
 
-Ez a fejezet neked szól. Nem az egyéni kutatónak, aki egy chatbotot használ (az a Ch 2 volt), nem az ágensépítőnek (Ch 12), és nem az egyetemi vezetőnek, aki intézményi stratégiát tervez (Ch 15). Ez a fejezet a **kutatólabor szintjén** mutatja meg, hogyan építs fel egy működő, biztonságos, költséghatékony és fenntartható AI-infrastruktúrát a csoportod számára.
+Ez a fejezet neked szól. Nem az egyéni kutatónak, aki egy chatbotot használ (az a 2. fejezet volt), nem az ágensépítőnek (12. fejezet), és nem az egyetemi vezetőnek, aki intézményi stratégiát tervez (15. fejezet). Ez a fejezet a **kutatólabor szintjén** mutatja meg, hogyan építs fel egy működő, biztonságos, költséghatékony és fenntartható AI-infrastruktúrát a csoportod számára.
 
 ---
 
 ## A 2026-os tudományos AI stack: mi hova való
+
+> **🖼️ Ábra: A 2026-os tudományos AI stack — interaktív, automatizálási és kapcsolati réteg**
+> *Three-layer pyramid diagram of a scientific AI stack, bottom layer labeled interactive tools, middle layer automation, top layer connectivity, modern isometric style with lab equipment icons*
 
 Az előző fejezetekben egyenként ismerted meg az eszközöket. Most lássuk, hogyan illeszkednek egymáshoz -- hogyan alkot egy működő egészet az, ami eddig különálló daraboknak tűnt.
 
@@ -73,21 +76,21 @@ Az előző fejezetekben egyenként ismerted meg az eszközöket. Most lássuk, h
 
 Ez az a réteg, ahol te, a kutató közvetlenül dolgozol az AI-val. Két alapvető használati mód létezik:
 
-- **Társalgási AI** (Claude, ChatGPT, Gemini): irodalomkutatás, szövegírás, ötletelés, fordítás, összefoglalás. Erről szólt a Ch 2.
-- **Kódolási asszisztensek** (Claude Code, Cursor): Python/R szkriptek írása, debugolás, adatfeldolgozás, vizualizáció. Erről szólt a Ch 5.
-- **Egyenletfelfedezés** (PySR): szimbolikus regresszió -- az AI nem csak illeszti az adataidat, hanem értelmezhető matematikai egyenletet talál. Erről szólt a Ch 6.
+- **Társalgási AI** (Claude, ChatGPT, Gemini): irodalomkutatás, szövegírás, ötletelés, fordítás, összefoglalás. Erről szólt a 2. fejezet.
+- **Kódolási asszisztensek** (Claude Code, Cursor): Python/R szkriptek írása, debugolás, adatfeldolgozás, vizualizáció. Erről szólt a 5. fejezet.
+- **Egyenletfelfedezés** (PySR): szimbolikus regresszió -- az AI nem csak illeszti az adataidat, hanem értelmezhető matematikai egyenletet talál. Erről szólt a 6. fejezet.
 
 **Automatizálási réteg: ami nélkül nem működik**
 
 Amikor egy feladat nem egy kérdés-válasz, hanem többlépéses, összetett munkafolyamat, átlépsz az automatizálási rétegbe:
 
-- **AI ágensek** (CrewAI, LangGraph): önálló "gondolkodó" programok, amelyek terveznek, döntéseket hoznak, eszközöket használnak. Többlépéses tudományos feladatokhoz ideálisak -- pl. "keress releváns cikkeket, szűrd le az elmúlt 3 évre, készíts összefoglalót, azonosítsd a kutatási réseket." Erről szólt a Ch 12.
-- **Vizuális automatizálás** (n8n, LangFlow): drag-and-drop workflow-k, amelyekkel kód nélkül építhetsz automatizálásokat. Ha minden héten ugyanazt az adatfeldolgozást végzed, ez a megoldás. Erről szólt a Ch 8.
-- **Adat-pipeline-ok** (Dagster, Nextflow): megbízható, ütemezett, reprodukálható adatfeldolgozási láncok. Ha a laborod napi vagy heti rendszerességgel kap műszeres adatokat, ezek biztosítják, hogy minden adat automatikusan feldolgozásra kerüljön. Erről szólt a Ch 7.
+- **AI ágensek** (CrewAI, LangGraph): önálló "gondolkodó" programok, amelyek terveznek, döntéseket hoznak, eszközöket használnak. Többlépéses tudományos feladatokhoz ideálisak -- pl. "keress releváns cikkeket, szűrd le az elmúlt 3 évre, készíts összefoglalót, azonosítsd a kutatási réseket." Erről szólt a 12. fejezet.
+- **Vizuális automatizálás** (n8n, LangFlow): drag-and-drop workflow-k, amelyekkel kód nélkül építhetsz automatizálásokat. Ha minden héten ugyanazt az adatfeldolgozást végzed, ez a megoldás. Erről szólt a 8. fejezet.
+- **Adat-pipeline-ok** (Dagster, Nextflow): megbízható, ütemezett, reprodukálható adatfeldolgozási láncok. Ha a laborod napi vagy heti rendszerességgel kap műszeres adatokat, ezek biztosítják, hogy minden adat automatikusan feldolgozásra kerüljön. Erről szólt a 7. fejezet.
 
 **Kapcsolati réteg: az MCP mint univerzális csatlakozó**
 
-Az **MCP** (Model Context Protocol) az a szabvány, amely lehetővé teszi, hogy az AI eszközeid közvetlenül kommunikáljanak az adatforrásaiddal: adatbázisokkal, fájlrendszerekkel, műszerekkel, API-kkal. Gondolj rá úgy, mint az USB-re: egységes csatlakozó, amely bármit összeköt bármivel. Erről szólt a Ch 9.
+Az **MCP** (Model Context Protocol) az a szabvány, amely lehetővé teszi, hogy az AI eszközeid közvetlenül kommunikáljanak az adatforrásaiddal: adatbázisokkal, fájlrendszerekkel, műszerekkel, API-kkal. Gondolj rá úgy, mint az USB-re: egységes csatlakozó, amely bármit összeköt bármivel. Erről szólt a 9. fejezet.
 
 **Számítási réteg: hol futnak a dolgok**
 
@@ -104,7 +107,7 @@ Nem kell az egészet bevezetned egyszerre. Gondolkodj úgy, mint egy lépcsőn:
 | Többlépéses, ismétlődő munkafolyamat | Építs ágenst vagy workflow-t | Automatizálási |
 | Napi/heti rendszeres adatfeldolgozás | Használj pipeline-t | Automatizálási |
 | Az AI-nak hozzá kell férnie az adataidhoz | Konfiguráld az MCP-t | Kapcsolati |
-| Nagy számítási igény (GPU, HPC) | Lépj feljebb a számítási szinten | Számítási |
+| Nagy számítási igény (GPU, HPC) | Lépj feljebb a számítási szintén | Számítási |
 
 > **🌾 Szakterületi példa: FMIS — farmirányítási információs rendszerek**
 >
@@ -115,6 +118,9 @@ Nem kell az egészet bevezetned egyszerre. Gondolkodj úgy, mint egy lépcsőn:
 ---
 
 ## Költségmenedzsment: a nullától a szuperszámítógépig
+
+> **🖼️ Ábra: AI-költségvetés egy tízfős kutatócsoportnak — havi bontás**
+> *Bar chart infographic showing monthly AI costs breakdown for a research group: API costs, compute, storage, licenses, with Hungarian labels, clean business style*
 
 Az AI-eszközök használata pénzbe kerül -- de nem feltétlenül sokba. A kulcs a **fokozatos skálázás**: kezdj az ingyenes szinten, és csak akkor lépj tovább, ha valóban szükséges.
 
@@ -272,6 +278,9 @@ A feladatod...
 
 ## Adatbiztonság és adatvédelem
 
+> **🖼️ Ábra: Adatbiztonsági döntési fa — mikor használható felhőalapú AI, mikor kell helyi megoldás?**
+> *Decision tree flowchart with security icons, showing when to use cloud AI vs local AI based on data sensitivity, clean infographic style*
+
 Ez a fejezet legkritikusabb szakasza. Az AI használata a kutatásban szükségszerűen azt jelenti, hogy adatokat osztasz meg AI-rendszerekkel -- és ez komoly biztonsági és jogi kérdéseket vet fel.
 
 ### Mit szabad felhőbe küldeni, mit nem
@@ -319,7 +328,7 @@ A kutatási kontextusban a GDPR különösen fontos, mert a legtöbb tudományos
 
 **Mikor vonatkozik rád a GDPR?**
 
-Ha a kutatásod bármilyen **személyes adatot** kezel -- beleértve a neveket, e-mail-címeket, helyadatokat, egészségügyi adatokat, genetikai adatokat, biometrikus adatokat, vagy bármilyen más információt, amelyből egy természetes személy azonosítható --, a GDPR szabályai alkalmazandók.
+Ha a kutatásod bármilyen **személyes adatot** kezel -- beleértve a néveket, e-mail-címeket, helyadatokat, egészségügyi adatokat, genetikai adatokat, biometrikus adatokat, vagy bármilyen más információt, amelyből egy természetes személy azonosítható --, a GDPR szabályai alkalmazandók.
 
 **A GDPR és az AI-eszközök metszéspontja:**
 
@@ -392,7 +401,7 @@ Mielőtt bármit vásárolnál, válaszold meg ezeket a kérdéseket:
 
 **1. A probléma határozza meg az eszközt, nem fordítva**
 
-A WEF (World Economic Forum) AI-beszerzési keretrendszere hangsúlyozza: "A szervezeteknek először meg kell határozniuk az üzleti céljaikat, majd ezekhez kell kötniük az AI-képességeket -- nem fordítva." Kutatási kontextusban: először fogalmazd meg, milyen kutatási kérdést akarsz megválaszolni, és csak utána keresd az AI-eszközt.
+A WEF (World Economic Forum) AI-beszerzési keretrendszere hangsúlyozza: "A szervezetéknek először meg kell határozniuk az üzleti céljaikat, majd ezekhez kell kötniük az AI-képességeket -- nem fordítva." Kutatási kontextusban: először fogalmazd meg, milyen kutatási kérdést akarsz megválaszolni, és csak utána keresd az AI-eszközt.
 
 Kérdezd meg: **Megoldható-e ez AI nélkül is?** Sok egyetemi folyamat egyszerűbb automatizálással vagy javított munkafolyamatokkal is megoldható.
 
@@ -693,9 +702,9 @@ Az EUA jelentése óva int: "Előrehozott lenne olyan stratégiákat fejleszteni
 
 ## Etikai szempontok
 
-Az AI-val felszerelt kutatólabor működtetése számos etikai kérdést vet fel: az AI-generált szöveg jelölésétől a szerzőségi kérdéseken át a torzítás kezeléséig. Ezeket a kérdéseket részletesen a **Ch 16** tárgyalja -- itt csak annyit jegyzünk meg, hogy az etikai keretrendszer nem utólagos kiegészítés, hanem az AI-stratégia szerves része kell legyen. Ahogy a WEF keretrendszere fogalmaz: az etika nem a beszerzési folyamat végén lévő jelölőnégyzet, hanem az alap, amelyre minden más pillér épül.
+Az AI-val felszerelt kutatólabor működtetése számos etikai kérdést vet fel: az AI-generált szöveg jelölésétől a szerzőségi kérdéseken át a torzítás kezeléséig. Ezeket a kérdéseket részletesen a **16. fejezet** tárgyalja -- itt csak annyit jegyzünk meg, hogy az etikai keretrendszer nem utólagos kiegészítés, hanem az AI-stratégia szerves része kell legyen. Ahogy a WEF keretrendszere fogalmaz: az etika nem a beszerzési folyamat végén lévő jelölőnégyzet, hanem az alap, amelyre minden más pillér épül.
 
-> **Lásd Ch 16** -- Az AI-etika a tudományos kutatásban: szerzőség, torzítás, felelősség és az AI-használat átlátható dokumentálása.
+> **Lásd 16. fejezet** -- Az AI-etika a tudományos kutatásban: szerzőség, torzítás, felelősség és az AI-használat átlátható dokumentálása.
 
 ---
 

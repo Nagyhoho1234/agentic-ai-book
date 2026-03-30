@@ -1,18 +1,21 @@
 # 16. fejezet — Etika, reprodukálhatóság és az AI jövője a tudományban
 
-> **Fejezet-informacio**
-> - **Kinek szol:** Minden kutatonak, oktatonak es hallgatonak — ez a fejezet nem opcionalis
-> - **Eloismeretek:** 1-2. fejezet (ajanlott); barmelyik masik fejezet utan olvashato
+> **Fejezet-információ**
+> - **Kinek szól:** Minden kutatónak, oktatónak és hallgatónak — ez a fejezet nem opcionális
+> - **Előismeretek:** 1-2. fejezet (ajánlott); bármelyik másik fejezet után olvasható
 > - **Amit megtanulsz:**
->   - Hamis hivatkozasok, kepmanipulacio es szintetikus adatok felismerese
->   - Tudomanyos integritas es reprodukalhatosag biztositasa AI hasznalat mellett
->   - AI-hasznalati nyilatkozatok es intezmenyi szabalyzatok keszitese
-> - **Szukseges eszkozok:** Browser only
-> - **Kapcsolodo fejezetek:** 2. fejezet (hallucianció), 3. fejezet (tudomanyos iras), 15. fejezet (egyetemi strategia)
+>   - Hamis hivatkozások, képmanipuláció és szintetikus adatok felismerése
+>   - Tudományos integritás és reprodukálhatóság biztosítása AI használat mellett
+>   - AI-használati nyilatkozatok és intézményi szabályzatok készítése
+> - **Szükséges eszközök:** Csak böngésző
+> - **Kapcsolódó fejezetek:** 2. fejezet (hallucináció), 3. fejezet (tudományos írás), 15. fejezet (egyetemi stratégia)
 
 ---
 
 ## Nyitó jelenet: A nem létező hivatkozás
+
+> **🖼️ Ábra: A hamis hivatkozás problémája — amikor az AI meggyőzően hazudik**
+> *Illustration of a researcher looking confused at a paper with highlighted fake references, a magnifying glass revealing they do not exist, dramatic lighting style*
 
 Képzeld el a következő jelenetet. Egy fiatal posztdoktor az MTA Ökológiai Kutatóközpontjában dolgozik, és épp a klímaváltozás biodiverzitásra gyakorolt hatásáról ír egy összefoglaló cikket. A határidő szorít, és a bevezetésben szüksége lenne egy meggyőző hivatkozásra arról, hogy az elmúlt két évtizedben hogyan változott a rovarbiomassza Közép-Európában. Megkéri a nyelvi modellt: „Keress egy peer-reviewed hivatkozást a közép-európai rovarbiomassza csökkenéséről 2000 és 2020 között."
 
@@ -20,7 +23,7 @@ A modell azonnal válaszol. Megad egy szerzőt (Hallmann, V.C. et al.), egy foly
 
 Két hónappal később a bíráló visszaírja: „A 7. hivatkozás nem létezik. A megadott DOI egy oceanográfiai tanulmányra mutat. Hallmann et al. 2019 ilyen címmel nem jelent meg."
 
-Ez nem kitalált történet — pontosabban: a hivatkozás volt kitalált. Az LLM nem hazudott (nincs szándéka), és nem is tévedett (nincs tudása, amit téveszthetne). Egyszerűen azt tette, amire tervezték: generált egy statisztikailag valószínű szósorozatot, amely úgy *nézett ki*, mint egy tudományos hivatkozás. A filozófus Harry Frankfurt fogalmát használva: ez nem hazugság volt, hanem **bullshit** — tartalom, amelyet annak létrehozója a valósággal szemben teljes közömbösséggel állított elő.
+Ez nem kitalált történet — pontosabban: a hivatkozás volt kitalált. Az LLM nem hazudott (nincs szándéka), és nem is tévédett (nincs tudása, amit téveszthetne). Egyszerűen azt tette, amire tervezték: generált egy statisztikailag valószínű szósorozatot, amely úgy *nézett ki*, mint egy tudományos hivatkozás. A filozófus Harry Frankfurt fogalmát használva: ez nem hazugság volt, hanem **bullshit** — tartalom, amelyet annak létrehozója a valósággal szemben teljes közömbösséggel állított elő.
 
 Ez a fejezet arról szól, hogy mit jelent tudósnak lenni egy olyan korban, amikor a leghatékonyabb íróeszközünk képtelen megkülönböztetni az igazat a hamistól. Arról, hogyan őrizzük meg a kutatási integritást, hogyan navigáljunk az etikai kérdések között, hogyan biztosítsuk a reprodukálhatóságot, és hogyan gondolkodjunk felelősen a jövőről.
 
@@ -38,7 +41,7 @@ A jelenség jól dokumentált. 2023-ban egy New York-i ügyvéd, Steven Schwartz
 
 1. **Mindig ellenőrizd a DOI-t.** Másold be a `https://doi.org/` után a megadott számot — ha 404-es hibát kapsz, vagy más cikkre mutat, a hivatkozás hamis.
 2. **Keress rá a címre** a Google Scholarban, a Scopusban vagy a Web of Science-ben. Ha a pontos cím nem létezik, a hivatkozás nagy valószínűséggel generált.
-3. **Ellenőrizd a szerzőt és a folyóiratot.** Az LLM gyakran valódi szerzőneveket társít nem létező cikkekhez — egy olyan területen publikáló kutató nevét használja, amelyen a hivatkozás releváns lenne.
+3. **Ellenőrizd a szerzőt és a folyóiratot.** Az LLM gyakran valódi szerzőnéveket társít nem létező cikkekhez — egy olyan területen publikáló kutató nevét használja, amelyen a hivatkozás releváns lenne.
 4. **Figyelj a túl kerek állításokra.** Ha egy hivatkozás pontosan azt mondja, amit hallani akarsz, pontosan a megfelelő formában — gyanakodj. A valódi tudomány ritkán ilyen kényelmes.
 
 ### AI-generált képmanipuláció és forensics
@@ -272,6 +275,9 @@ A COPE, amely a kiadói etika legfőbb nemzetközi testülete, 2023-ban adott ki
 
 ## 16.3 Reprodukálhatóság az AI korában
 
+> **🖼️ Ábra: A reprodukálhatóság hat pillére AI-alapú kutatásban**
+> *Six pillars supporting a temple labeled "Reprodukálható tudomány", each pillar with an icon: data, code, model, prompt, environment, documentation, classical architecture style*
+
 ### A kihívás: nem-determinisztikus kimenetek
 
 A tudományos reprodukálhatóság (reproducibility) azt jelenti, hogy egy másik kutató, azonos módszereket és adatokat használva, azonos eredményre jut. Az AI-eszközök esetében ez alapvető kihívásba ütközik: **a nyelvi modellek nem-determinisztikusak.** Azonos prompt, azonos modell, azonos beállítások mellett is eltérő outputot kaphatunk.
@@ -319,7 +325,7 @@ Ajánlott sablon, amelyet a Methods szekcióban használhatsz:
 
 > **AI-Assisted Methods**
 >
-> [Rövid leírás a felhasználás céljáról]. We used [modell neve, verziószám] (API: [verzió], [szolgáltató]) with the following parameters: temperature = [X], top_p = [X], max_tokens = [X], seed = [X, ha alkalmazható].
+> [Rövid leírás a felhasználás céljáról]. We used [modell neve, verziószám] (API: [verzió], [szolgáltató]) with the following paraméters: temperature = [X], top_p = [X], max_tokens = [X], seed = [X, ha alkalmazható].
 >
 > The prompts used for [feladat leírása] are provided in full in Supplementary Material [szám/link]. All AI-generated outputs were [reviewed/edited/validated] by [szerző neve(i)] using [validálási módszer: cross-reference with literature, manual calculation, experimental verification, stb.].
 >
@@ -435,6 +441,9 @@ Ez a keretrendszer nem univerzális — a tiéd. A lényeg: legyen tudatos, legy
 ---
 
 ## 16.5 Merre tart mindez?
+
+> **🖼️ Ábra: Az AI jövője a tudományban — lehetőségek és kockázatok mérlege**
+> *Balance scale illustration with opportunities (discovery, efficiency, collaboration) on one side and risks (bias, hallucination, dependency) on the other, golden scale on dark background*
 
 ### Mollick négy forgatókönyve
 

@@ -1,18 +1,22 @@
-# 6. fejezet: AI-tamogatott matematikai modellezes es szimulacio
+# 6. fejezet: AI-támogatott matematikai modellezés és szimuláció
 
-> **Fejezet-informacio**
-> - **Kinek szol:** Termeszettudosoknak es mernokoknek, akik matematikai modellekkel es szimulacciokkal dolgoznak
-> - **Eloismeretek:** 5. fejezet (kodolasi asszisztensek)
+> **Fejezet-információ**
+> - **Kinek szól:** Természettudósoknak és mérnököknek, akik matematikai modellekkel és szimulációkkal dolgoznak
+> - **Előismeretek:** 5. fejezet (kódolási asszisztensek)
 > - **Amit megtanulsz:**
->   - Kutatasi kerdesbol matematikai modell keszitese AI segitsegevel
->   - Szimbolikus szamitasok (SymPy) es numerikus szimulacio AI-val
->   - Automatikus kalibracio es egyenletfelfedezes (PySR)
-> - **Szukseges eszkozok:** Browser + terminal + Python
-> - **Kapcsolodo fejezetek:** 5. fejezet (kodolas), 7. fejezet (pipeline-ok), 10. fejezet (digitalis ikrek)
+>   - Kutatási kérdésből matematikai modell készítése AI segítségével
+>   - Szimbolikus számítások (SymPy) és numerikus szimuláció AI-val
+>   - Automatikus kalibráció és egyenletfelfedezés (PySR)
+> - **Szükséges eszközök:** Böngésző + terminál + Python
+> - **Kapcsolódó fejezetek:** 5. fejezet (kódolás), 7. fejezet (pipeline-ok), 10. fejezet (digitális ikrek)
 
-## Bevezetes: Amikor az egyenletek elnek akarnak kelni
+## Bevezetés: Amikor az egyenletek élni akarnak kelni
 
-Kepzeld el a kovetkezo helyzetet. Kovacs Marta kornyezetkutato a Debreceni Egyetem Kornyezettudomanyi Tanszeken dolgozik. Evek ota vizsgalja a Hortobagy vizhaztartasat: hogyan szivarog a csapadek a talajba, hogyan valtozik a talajvizszint az evszakokkal, hogyan hat a klimavaltozas a szikes tavak vizutanpotlasara. A terepnaplo tele van meresekkel, a fuzeteben ott vannak a differencialeqyenletek -- de papirrol nem fut szimulacio.
+> **🖼️ Ábra: A matematikai modellezés AI-támogatott munkafolyamata**
+> *Körkörös diagram: Kutatási kérdés → Matematikai modell → Implementáció (AI-val) → Szimuláció → Kalibráció → Validáció → Új kérdések. Az AI szerepe minden lépésnél jelölve.*
+
+
+Képzeld el a következő helyzetet. Kovács Márta környezetkutató a Debreceni Egyetem Környezettudományi Tanszékén dolgozik. Évek óta vizsgálja a Hortobágy vízháztartását: hogyan szivárog a csapadék a talajba, hogyan változik a talajvízszint az évszakokkal, hogyan hat a klímaváltozás a szikes tavak vízutánpótlására. A terepnapló tele van mérésekkel, a füzetében ott vannak a differenciálegyenletek -- de papírról nem fut szimuláció.
 
 Marta ismeri a fizikai torvenyeket. Tudja, hogy a Darcy-torveny leirja a vizaramlast porszos kozegben, hogy a Richards-egyenlet megadja a telitetlen zona vizmozgasat. De nincs ideje megtanulni a numerikus modszereket a nullarol, es nem akar honapokat tolteni azzal, hogy Python kodot debuggoljon.
 
@@ -77,9 +81,9 @@ Ez a beszelgetes par masodperc alatt megadta neked azt, amihez egyebkent szakkon
 1. Kerd az AI-t, hogy *vezesse le* az egyenletet, ne csak irja oda
 2. Kerd meg, hogy **adjon meg forrasokat** (konyv, cikk) ahol ez az egyenlet szarmazik
 3. Ellenorizd a dimenziot: mindket oldal egysege megegyezik-e?
-4. Probald ki hatareseteteken: ha $R = 0$ es $ET = 0$, tenyleg allando marad-e $h$?
+4. Próbáld ki határeseteken: ha $R = 0$ es $ET = 0$, tényleg állandó marad-e $h$?
 
-> **Ne csinalld!**
+> **Ne csináld!**
 > Ne fogadd el az AI altal javasolt egyenletet vagy modellt a dimenziok (mereteqysegek) ellenorzese nelkul. Az LLM-ek gyakran generalnak fizikailag helyes kinezettu, de dimenzionalisan inkonzisztens egyenleteket — peldaul baloldalon [m/s], jobboldalon [m]. Ha nem ellenorzod, a szimulacio "fuut", de az eredmenyek ertelmetlenek lesznek.
 
 ### Prompt-minta: Modell-kereses
@@ -1088,7 +1092,11 @@ Kerlek:
 
 ---
 
-## Osszefoglalas es tovabblepés
+## Összefoglalás és továbblépés
+
+> **🖼️ Ábra: A fejezet modellezési technikáinak döntési fája**
+> *Döntési fa: "Milyen típusú a problémád?" → Analitikus megoldás (SymPy) / Numerikus szimuláció (SciPy) / Kalibráció (scipy.optimize) / Érzékenységvizsgálat (SALib) / Egyenletfelfedezés (PySR). Minden ágon példa-probléma.*
+
 
 Ebben a fejezetben megismerted, hogyan hasznalhatod az AI-t a teljes matematikai modellezesi folyamatban:
 
@@ -1103,7 +1111,11 @@ A kovetkezo fejezetben (7. fejezet: Adat-pipeline-ok és automatizálás) megtan
 
 ---
 
-## Hasznos csomagok es forrasok
+## Hasznos csomagok és források
+
+> **🖼️ Ábra: A tudományos Python-csomagok kapcsolati térképe modellezéshez**
+> *Hálózati diagram: SymPy, SciPy, NumPy, Matplotlib, SALib, PySR, Mesa, DeepXDE csomagok és azok tipikus felhasználási területei, összekötő vonalakkal.*
+
 
 | Csomag | Cel | Telepites |
 |--------|-----|-----------|

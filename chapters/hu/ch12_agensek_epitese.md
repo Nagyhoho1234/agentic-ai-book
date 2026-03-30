@@ -1,14 +1,14 @@
 # 12. fejezet: AI ágensek építése kutatáshoz
 
-> **Fejezet-informacio**
-> - **Kinek szol:** Kutatoknak es technikai munkatarsaknak, akik sajat AI agenseket szeretnenek epiteni
-> - **Eloismeretek:** 11. fejezet (agensek megertese), 5. fejezet (kodolasi asszisztensek)
+> **Fejezet-információ**
+> - **Kinek szól:** Kutatóknak és technikai munkatársaknak, akik saját AI ágenseket szeretnének építeni
+> - **Előismeretek:** 11. fejezet (ágensek megértése), 5. fejezet (kódolási asszisztensek)
 > - **Amit megtanulsz:**
->   - CrewAI, LangGraph, OpenAI Agents SDK es Claude Code agensek osszehasonlitasa
->   - Gyakorlati agensepites lepesrol lepesre (irodalomfigyelotol az adatelemzoig)
->   - Biztonsag, emberi felugyelet es hibakezelés agensekben
-> - **Szukseges eszkozok:** Terminal + Python
-> - **Kapcsolodo fejezetek:** 11. fejezet (elmelet), 13. fejezet (eszkozok keszitese), 9. fejezet (RAG)
+>   - CrewAI, LangGraph, OpenAI Agents SDK és Claude Code ágensek összehasonlítása
+>   - Gyakorlati ágensépítés lépésről lépésre (irodalomfigyelőtől az adatelemzőig)
+>   - Biztonság, emberi felügyelet és hibakezelés ágensekben
+> - **Szükséges eszközök:** Terminál + Python
+> - **Kapcsolódó fejezetek:** 11. fejezet (elmélet), 13. fejezet (eszközök készítése), 9. fejezet (RAG)
 
 ---
 
@@ -27,6 +27,9 @@ Ez a fejezet arról szól, hogyan építhetsz ilyen ágenseket --- és ennél so
 ---
 
 ## 12.2 Ágenskeretrendszerek tudósoknak --- az összehasonlítás
+
+> **🖼️ Ábra: A négy fő ágenskeretrendszer összehasonlítása — CrewAI, LangGraph, AutoGen, Claude Agent SDK**
+> *Four colored panels comparing agent frameworks, each with an icon and key characteristics, modern flat design infographic*
 
 Az elmúlt két évben robbanásszerűen nőtt az ágens-keretrendszerek száma. Ez egyszerre jó hír (van választék) és rossz hír (nehéz eligazodni). Ebben a szekcióban összehasonlítjuk a négy legfontosabb keretrendszert, amelyek tudományos munkához a legalkalmasabbak, és segítünk kiválasztani, melyik illik hozzád.
 
@@ -292,7 +295,7 @@ Ez az egyetlen hely a könyvben, ahol a négy keretrendszert egymás mellé tess
 | **Tanulási görbe** | Alacsony | Közepes--magas | Közepes | Alacsony--közepes |
 | **Rugalmasság** | Közepes | Nagyon magas | Magas | Közepes |
 | **Kódfuttatás** | Korlátozott | Egyedi node-okkal | Beépített (Docker) | Computer use |
-| **Multi-agent** | Natív (Crew) | Egyedi gráfokkal | Natív (GroupChat) | Egyedi megoldással |
+| **Multi-ágens** | Natív (Crew) | Egyedi gráfokkal | Natív (GroupChat) | Egyedi megoldással |
 | **MCP támogatás** | Plugin-nal | Plugin-nal | Plugin-nal | Natív |
 | **Állapotkezelés** | Automatikus | Explicit StateGraph | Üzenet-alapú | Kontextusablak |
 | **Vizualizáció** | Korlátozott | Gráf-vizualizáció | Beszélgetés-log | Extended thinking |
@@ -327,6 +330,9 @@ Ez az egyetlen hely a könyvben, ahol a négy keretrendszert egymás mellé tess
 
 ## 12.3 Első kutatási ágensek építése
 
+> **🖼️ Ábra: Irodalomkutató ágens-csapat munkafolyamata — keresés, olvasás, szintézis**
+> *Three AI agent avatars in a research lab setting, one searching papers, one reading, one writing a synthesis, watercolor illustration style*
+
 Most jön a lényeg. Három komplett, működő ágens-rendszert építünk, amelyek valódi kutatási problémákat oldanak meg. Mindegyiknél lépésről lépésre haladunk, és a kód minden sorát megmagyarázom.
 
 ### 12.3.1 Irodalomkutató ágens-csapat (CrewAI)
@@ -360,7 +366,7 @@ OPENAI_API_KEY=sk-a-te-kulcsod-ide
 SERPER_API_KEY=a-te-serper-kulcsod  # Google kereséshez
 ```
 
-> **Megjegyzés:** A Serper API (serper.dev) ingyenes szinten 2500 keresést ad havonta --- egy heti irodalomkutatáshoz ez bőven elég. Alternatívaként használhatod a `DuckDuckGoSearchRun` eszközt is, ami teljesen ingyenes.
+> **Megjegyzés:** A Serper API (serper.dev) ingyenes szintén 2500 keresést ad havonta --- egy heti irodalomkutatáshoz ez bőven elég. Alternatívaként használhatod a `DuckDuckGoSearchRun` eszközt is, ami teljesen ingyenes.
 
 #### 2. lépés: Az ágensek definiálása
 
@@ -1161,6 +1167,9 @@ Ez a szerver két eszközt biztosít: mérési adatok lekérdezését és mintai
 ---
 
 ## 12.6 Végponttól végpontig: ágentikus kutatási munkafolyamat
+
+> **🖼️ Ábra: Teljes kutatási ciklus ágensekkel — a hipotézistől a publikációig**
+> *Circular workflow diagram showing four phases: hypothesis generation, data processing, analysis, and report writing, with AI agent icons at each phase, blueprint style*
 
 Most, hogy ismered az egyes építőelemeket, nézzük meg, hogyan állnak össze egy **teljes kutatási ciklusban**. Az alábbi munkafolyamat bemutatja, hogyan támogathatják az ágensek a kutatás minden fázisát --- a hipotézistől a publikációig.
 

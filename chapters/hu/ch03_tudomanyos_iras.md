@@ -1,14 +1,14 @@
 # 3. fejezet: AI a tudományos írásban és kommunikációban
 
-> **Fejezet-informacio**
-> - **Kinek szol:** Kutatoknak es hallgatoknak, akik angol nyelvu cikkeket, palyazatokat vagy disszertaciot irnak
-> - **Eloismeretek:** 2. fejezet (promptolasi alapok)
+> **Fejezet-információ**
+> - **Kinek szól:** Kutatóknak és hallgatóknak, akik angol nyelvű cikkeket, pályázatokat vagy disszertációt írnak
+> - **Előismeretek:** 2. fejezet (promptolási alapok)
 > - **Amit megtanulsz:**
->   - AI-val tamogatott irodalomattekintes es reskutatas
->   - Kezirat szerkesztese, stilisztikai csiszolasa es lektoralasa AI-val
->   - Biraloi valaszok es tudomanyos kommunikacio keszitese
-> - **Szukseges eszkozok:** Browser only
-> - **Kapcsolodo fejezetek:** 2. fejezet (promptolas), 16. fejezet (etika es szerzoi integritas)
+>   - AI-val támogatott irodalomáttekintés és réskutatás
+>   - Kézirat szerkesztése, stilisztikai csiszolása és lektorálása AI-val
+>   - Bírálói válaszok és tudományos kommunikáció készítése
+> - **Szükséges eszközök:** Csak böngésző
+> - **Kapcsolódó fejezetek:** 2. fejezet (promptolás), 16. fejezet (etika és szerzői integritás)
 
 ## Nyitó jelenet: Hajnali három, és a határidő holnap van
 
@@ -29,6 +29,10 @@ Naponta több mint 4000 új orvos-biológiai cikk jelenik meg. A természettudom
 Az AI nem helyettesíti a kritikus olvasást, de drámaian felgyorsítja az előszűrést: segít megtalálni a releváns cikkeket, összefoglalni a tartalmakat, kiemelni a kulcsmegállapításokat, és ami a legértékesebb — feltárni a diszciplínák közötti kapcsolatokat.
 
 ### Cikkek összefoglalása
+
+> **🖼️ Ábra: A progresszív promptolás munkafolyamata irodalomfeldolgozáshoz**
+> *Tölcsér-diagram: általános kérdés → szűkítő kérdés → specifikus részlet. Minden lépésnél egy példa-prompt és az AI válaszának vázlata.*
+
 
 A legkézenfekvőbb felhasználás: feltöltesz egy PDF-et, és kérsz egy összefoglalót. De az eredmény minősége drámaian függ a prompt minőségétől. Íme egy hatékony megközelítés:
 
@@ -60,7 +64,7 @@ Amikor sok cikket kell gyorsan áttekintened, az AI „szkennelő" képessége k
 
 Az LLM képes a „skimming and scanning" stratégiát alkalmazni — gyorsan azonosítja a főbb pontokat (skimming), majd konkrét adatokat keres (scanning). Ahogy Han és szerzőtársai (2024) megállapították, ez a képesség különösen hasznos az irodalomáttekintés szűrési fázisában, amikor 50-100 cikk relevanciáját kell eldöntened.
 
-> **Ne csinalld!**
+> **Ne csináld!**
 > Ne engedd, hogy az AI irja meg a keziratod erdemben uj reszet (bevezetes, targyalas, konkluzio) a te kozremeukodésed nelkul. Az AI remek szerkeszto, stilisztikai tanaacsado es osszefoglalo — de ha a gondolatmenetet is o irja, az a te tudomanyos hangod eltuneseet jelenti, es a biralok ezt eszik meg fogjak. Hasznald szerkesztesre, ne szerzosegre.
 
 ### Kutatási rések azonosítása
@@ -403,6 +407,10 @@ Az AI a szűkített változatban 40 kérdést generált 8 szekcióban, beleértv
 
 ## 3.9 A hivatkozás-hallucináció problémája
 
+> **🖼️ Ábra: Hallucináció-felismerés ellenőrzőlistája**
+> *Folyamatábra: AI-hivatkozás → DOI ellenőrzés → Google Scholar keresés → Szerző-ellenőrzés. Piros és zöld ikonokkal jelölve a hamis és valós hivatkozásokat.*
+
+
 ### Mi a probléma?
 
 Az LLM-ek egyik legjól dokumentált és legveszélyesebb korlátja a hivatkozás-hallucináció: a modell meggyőzően formázott, létezőnek *tűnő*, de valójában *kitalált* hivatkozásokat generál. Ez nem „hiba" a szó hagyományos értelmében — ez az LLM működésének fundamentális következménye. A modell nem „tud" dolgokat — valószínűségi alapon generálja a következő tokent, és egy hivatkozás formailag hasonlít egy másik hivatkozásra.
@@ -463,6 +471,10 @@ A Zotero, Mendeley vagy EndNote rendszerekbe csak manuálisan ellenőrzött hiva
 ---
 
 ## 3.10 Összefoglalás: a tudós marad a pilóta
+
+> **🖼️ Ábra: Az AI szerepe a tudományos írás különböző fázisaiban**
+> *Horizontális folyamatábra: Irodalomkutatás → Vázlat → Írás → Szerkesztés → Bírálói válasz. Minden fázisnál jelölve, hol segíthet az AI (zöld) és hol kell emberi kontroll (piros).*
+
 
 Ez a fejezet a tudományos írás és kommunikáció teljes spektrumát átfogta: az irodalomáttekintéstől a kéziratíráson, a bírálói válaszokon és a pályázatokon át a tudománynépszerűsítésig és a kísérlettervezésig. Minden területen ugyanaz a minta rajzolódik ki:
 

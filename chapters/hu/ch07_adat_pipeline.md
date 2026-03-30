@@ -1,16 +1,20 @@
 # 7. fejezet: Adat-pipeline-ok és automatizálás
 
-> **Fejezet-informacio**
-> - **Kinek szol:** Kutatoknak, akik ismetlodo adatfeldolgozasi munkafolyamatokat szeretnenek egyszer megirni es utana automatikusan futtatni
-> - **Eloismeretek:** 5. fejezet (kodolasi asszisztensek)
+> **Fejezet-információ**
+> - **Kinek szól:** Kutatóknak, akik ismétlődő adatfeldolgozási munkafolyamatokat szeretnének egyszer megírni és utána automatikusan futtatni
+> - **Előismeretek:** 5. fejezet (kódolási asszisztensek)
 > - **Amit megtanulsz:**
->   - A pipeline koncepcio ot szakasza (bevitel, tisztitas, transzformacio, elemzes, kimenet)
->   - Automatizalasi lehetosegek azonositasa a sajat munkafolyamatodban
->   - Pipeline-epites Python-nal es Dagster-rel AI segitsegevel
-> - **Szukseges eszkozok:** Terminal + Python
-> - **Kapcsolodo fejezetek:** 5. fejezet (kodolas), 8. fejezet (vizualis programozas), 14. fejezet (AI labor)
+>   - A pipeline koncepció öt szakasza (bevitel, tisztítás, transzformáció, elemzés, kimenet)
+>   - Automatizálási lehetőségek azonosítása a saját munkafolyamatodban
+>   - Pipeline-építés Python-nal és Dagster-rel AI segítségével
+> - **Szükséges eszközök:** Terminál + Python
+> - **Kapcsolódó fejezetek:** 5. fejezet (kódolás), 8. fejezet (vizuális programozás), 14. fejezet (AI labor)
 
 ## Minden reggel ugyanaz a tizenöt lépés
+
+> **🖼️ Ábra: A pipeline koncepció — öt szakasz**
+> *Vízszintes folyamatábra: Bevitel → Tisztítás → Transzformáció → Elemzés → Kimenet. Minden szakasznál egy-egy ikon és rövid leírás, nyilak mutatják az adatáramlást.*
+
 
 Képzeld el Annát, aki a Debreceni Egyetem Meteorológiai Tanszékén dolgozik. Minden munkanapja ugyanúgy kezdődik. Reggel fél nyolckor bejelentkezik a gépére, és elindítja azt a tizenöt lépést, amit az elmúlt két évben minden egyes nap elvégzett:
 
@@ -81,7 +85,7 @@ Ha így bontod fel a saját munkafolyamatodat, azonnal láthatóvá válik, hol 
 
 ---
 
-> **Ne csinalld!**
+> **Ne csináld!**
 > Ne automatizald a pipeline-t mindaddig, amig a munkafolyamatot kézzel legalabb egyszer vegig nem csinaltad es nem dokumentaltad. Ha nem erted pontosan, mit csinal az egyes lepes, az automatizalas nem gyorsitja, hanem elrejti a hibakat. Elso lepes: ird le a folyamatot lepesrol lepesre. Masodik lepes: automatizald.
 
 ## Automatizálási lehetőségek azonosítása
@@ -140,7 +144,7 @@ A leggyakoribb eset: adatfájlok érkeznek valamilyen megosztott mappából, FTP
 - **DICOM**: orvosi képalkotó adatok.
 - **Egyedi szövegformátumok**: régi műszerek gyakran saját, dokumentálatlan formátumban exportálnak.
 
-**Tipp:** Ha az AI kódolási asszisztensed (Ch 5) segítségével írsz beolvasó scriptet, mindig add meg a pontos formátumot. Például: *"Írj egy Python scriptet, ami beolvassa ezt a CSV-t, ahol a szeparátor pontosvessző, a tizedesjel vessző, és a dátum formátum ÉÉÉÉ.HH.NN."*
+**Tipp:** Ha az AI kódolási asszisztensed (5. fejezet) segítségével írsz beolvasó scriptet, mindig add meg a pontos formátumot. Például: *"Írj egy Python scriptet, ami beolvassa ezt a CSV-t, ahol a szeparátor pontosvessző, a tizedesjel vessző, és a dátum formátum ÉÉÉÉ.HH.NN."*
 
 ### Adatbázisok
 
@@ -166,7 +170,7 @@ Az API-t az 5. fejezetben definiáltuk: egy gép számára készült felület, a
 | OpenWeatherMap | Meteorológia | Aktuális és előrejelzett időjárási adatok |
 | OMSZ API | Magyar meteorológia | Magyar állomásadatok |
 
-A NASA CMR különösen érdekes példa: a NASA LLM Cookbook-ja bemutatja, hogyan lehet természetes nyelvű kéréseket CMR API-lekérdezésekké alakítani. Például: *"Keress Landsat 8 műholdas felvételeket a Hortobágy felett 2025 júliusából"* --- ezt egy LLM-alapú ágens automatikusan lefordítja a megfelelő CMR API-hívásra, beleértve a földrajzi koordinátákat és az időszűrőt. Bár ez már az ágensek területe (Ch 11-12), az alapkoncepció --- hogy programból kérdezel le adatot, nem kézzel böngészel weboldalakat --- a pipeline-ok sarokköve.
+A NASA CMR különösen érdekes példa: a NASA LLM Cookbook-ja bemutatja, hogyan lehet természetes nyelvű kéréseket CMR API-lekérdezésekké alakítani. Például: *"Keress Landsat 8 műholdas felvételeket a Hortobágy felett 2025 júliusából"* --- ezt egy LLM-alapú ágens automatikusan lefordítja a megfelelő CMR API-hívásra, beleértve a földrajzi koordinátákat és az időszűrőt. Bár ez már az ágensek területe (11. fejezet-12), az alapkoncepció --- hogy programból kérdezel le adatot, nem kézzel böngészel weboldalakat --- a pipeline-ok sarokköve.
 
 ### Szenzorok és IoT
 
@@ -473,7 +477,7 @@ Ha több pipeline-od fut párhuzamosan, érdemes egy egyszerű webes dashboardot
 - Melyik sikerült, melyik nem?
 - Hogyan alakul az adatminőség az elmúlt 30 napban?
 
-Ez már a haladóbb kategória, de az AI asszisztenssel egy egyszerű Streamlit dashboard (Ch 13) néhány perc alatt összerakható.
+Ez már a haladóbb kategória, de az AI asszisztenssel egy egyszerű Streamlit dashboard (13. fejezet) néhány perc alatt összerakható.
 
 ---
 
@@ -641,6 +645,10 @@ Ha a pipeline-od teljesen Python-alapú, egyetlen gépen fut, és nem bioinforma
 
 ## Reprodukálhatóság: hogy a pipeline holnap is ugyanazt csinálja
 
+> **🖼️ Ábra: A reprodukálhatóság négy pillére**
+> *Négy oszlopos ábra: 1. Virtuális környezet (Python venv), 2. Dokumentáció (README), 3. Verziókezelés (Git), 4. Konténerizáció (Docker). Minden pillérnél rövid leírás és ikon.*
+
+
 A tudományos kutatás egyik legfontosabb alapelve a reprodukálhatóság: ha valaki más (vagy te magad egy év múlva) megismétli az elemzésedet, ugyanarra az eredményre kell jutnia. A pipeline-ok ebben hatalmas segítséget nyújtanak --- de csak akkor, ha tudatosan kezeled a környezetet, a dokumentációt és a függőségeket.
 
 ### A "működik a gépemen" probléma
@@ -746,6 +754,10 @@ Legalább egy e-mail riasztás, ha a pipeline hibával áll meg.
 
 ## Debreceni esettanulmány: a Tisza vízminőségi monitorozása
 
+> **🖼️ Ábra: A Tisza vízminőségi monitoring-pipeline architektúrája**
+> *Rendszer-architektúra diagram: Szenzorok (IoT) → Adatgyűjtés → Tisztítás és validálás → Adatbázis → Elemzés és riasztás → Dashboard. Dagster logo az orchestráció jelölésére.*
+
+
 A Debreceni Egyetem Környezettudományi Tanszékén egy kutatócsoport a Tisza vízminőségét monitorozza. Négy mérőállomásról érkeznek 15 perces adatok: vízhőmérséklet, pH, vezetőképesség, oldott oxigén, zavarosság. A nyers adatok egy helyi szerverre töltődnek fel FTP-n.
 
 **A régi munkafolyamat (manuális):**
@@ -781,7 +793,7 @@ A Debreceni Egyetem Környezettudományi Tanszékén egy kutatócsoport a Tisza 
 - A **reprodukálhatóság** alapfeltétele: verziókezelés (Git), környezetrögzítés (`requirements.txt`), és dokumentáció.
 - A nyers adatot **soha ne módosítsd** --- mindig őrizd meg az eredeti verziót.
 
-> A következő fejezetben (Ch 8) a vizuális programozás és a no-code automatizálás felé lépünk tovább: az n8n, KNIME és más eszközökkel olyan munkafolyamatokat építhetsz, amelyekhez egyáltalán nem kell kódot írnod.
+> A következő fejezetben (8. fejezet) a vizuális programozás és a no-code automatizálás felé lépünk tovább: az n8n, KNIME és más eszközökkel olyan munkafolyamatokat építhetsz, amelyekhez egyáltalán nem kell kódot írnod.
 
 ---
 

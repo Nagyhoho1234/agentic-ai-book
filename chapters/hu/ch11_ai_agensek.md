@@ -1,14 +1,14 @@
 # 11. fejezet — Az AI ágensek megértése
 
-> **Fejezet-informacio**
-> - **Kinek szol:** Kutatoknak, akik meg szeretnek erteni, mi az AI agens es hogyan mukodik
-> - **Eloismeretek:** 1-2. fejezet (AI alapok, promptolas); a 5. es 7. fejezet hasznos hatterismeret
+> **Fejezet-információ**
+> - **Kinek szól:** Kutatóknak, akik meg szeretnék érteni, mi az AI ágens és hogyan működik
+> - **Előismeretek:** 1-2. fejezet (AI alapok, promptolás); a 5. és 7. fejezet hasznos háttérismeret
 > - **Amit megtanulsz:**
->   - Mi az AI agens es miben kulonbozik egy chatbottol
->   - A ReACT ciklus, az eszkozhasznalat es az MCP protokoll
->   - Multi-agent rendszerek es az emberi felugyelet szerepe
-> - **Szukseges eszkozok:** Browser only (az elmelet megerteseehez)
-> - **Kapcsolodo fejezetek:** 12. fejezet (agensek epitese), 13. fejezet (eszkozok), 14. fejezet (AI labor)
+>   - Mi az AI ágens és miben különbözik egy chatbottól
+>   - A ReACT ciklus, az eszközhasználat és az MCP protokoll
+>   - Multi-ágens rendszerek és az emberi felügyelet szerepe
+> - **Szükséges eszközök:** Csak böngésző (az elmélet megértéséhez)
+> - **Kapcsolódó fejezetek:** 12. fejezet (ágensek építése), 13. fejezet (eszközök), 14. fejezet (AI labor)
 
 ---
 
@@ -29,6 +29,9 @@ Ez a fejezet arról szól, hogy mi az AI ágens, hogyan működik, milyen archit
 ---
 
 ## Az eszközöktől az ágensekig: az autonómia spektruma
+
+> **🖼️ Ábra: Az autonómia öt szintje — az egyszerű chatbottól az autonóm ágensig**
+> *A futuristic infographic showing five ascending levels of AI autonomy, from a simple chatbox at level 1 to a fully autonomous multi-agent system at level 5, clean vector style, blue-purple gradient*
 
 ### Az öt szint
 
@@ -54,7 +57,7 @@ A különbség nem fokozati, hanem minőségi. Amikor átléped a 2. és 3. szin
 
 Gondolj erre úgy, mint egy autó vezetési automatizáltsági szintjeire. A SAE-skálán a 0. szint a teljesen kézi vezetés, az 5. szint a teljesen önálló sofőr nélküli autó. A két végpont között vannak olyan szintek, ahol az ember és a gép megosztja a felelősséget — és pontosan ez a helyzet az AI-rendszereknél is.
 
-A legtöbb tudós jelenleg az 1–2. szinten használja az AI-t: chatbotként, gondolkodási partnerként. Az ágensek a 3. szintet képviselik, és ebben a könyvben arra készítünk fel, hogy ezt a szintet magabiztosan, biztonságosan és hatékonyan használd.
+A legtöbb tudós jelenleg az 1–2. szintén használja az AI-t: chatbotként, gondolkodási partnerként. Az ágensek a 3. szintet képviselik, és ebben a könyvben arra készítünk fel, hogy ezt a szintet magabiztosan, biztonságosan és hatékonyan használd.
 
 ---
 
@@ -117,6 +120,9 @@ Nem minden AI-rendszer, amelyik „csinál valamit", ágens. Egy egyszerű szkri
 ---
 
 ## A hétréteges ágens-architektúra
+
+> **🖼️ Ábra: A hétréteges ágens-architektúra referenciakerete**
+> *Layered architecture diagram with seven horizontal layers labeled in Hungarian, from Foundation Models at the bottom to Agent Ecosystem at the top, each layer a different pastel color, isometric 3D style*
 
 ### A referenciakeret
 
@@ -224,7 +230,7 @@ Az ökoszisztéma-réteg legfontosabb fejleménye 2025-ben az MCP (Model Context
 
 ### Mit jelent ez a gyakorlatban?
 
-Nem kell mind a hét réteget magadnak felépítened. A legtöbb kutató a **3. rétegen** (keretrendszer) dolgozik, az **1–2. réteget** (modell, adatok) szolgáltatásként használja, a **4. réteget** (infrastruktúra) a felhőszolgáltató biztosítja, az **5. réteget** (kiértékelés) a keretrendszer beépítve hozza, és a **6–7. réteget** (biztonság, ökoszisztéma) intézményi szinten kezelik.
+Nem kell mind a hét réteget magadnak felépítened. A legtöbb kutató a **3. rétegen** (keretrendszer) dolgozik, az **1–2. réteget** (modell, adatok) szolgáltatásként használja, a **4. réteget** (infrastruktúra) a felhőszolgáltató biztosítja, az **5. réteget** (kiértékelés) a keretrendszer beépítve hozza, és a **6–7. réteget** (biztonság, ökoszisztéma) intézményi szintén kezelik.
 
 A hétréteges modell értéke abban áll, hogy ha valami nem működik, meg tudod állapítani, **melyik rétegben** van a probléma. Ha az ágens rossz válaszokat ad, az alapmodell a gyanús (1. réteg). Ha nem találja meg a releváns irodalmat, az adatréteg a gyenge (2. réteg). Ha elakad egy döntésnél, a keretrendszer logikáját kell vizsgálni (3. réteg).
 
@@ -354,6 +360,9 @@ Figyeld meg, hogyan hozta meg az ágens a döntéseket **önállóan**: kiválas
 
 ## MCP: Model Context Protocol — univerzális csatlakozó az AI és a világ között
 
+> **🖼️ Ábra: Az MCP mint univerzális csatlakozó — az AI ágens és a külső eszközök kapcsolata**
+> *Diagram showing an AI agent in the center connected via standardized MCP protocol adapters to databases, file systems, APIs, and lab instruments, clean technical illustration style*
+
 ### A probléma
 
 Amikor az ágensek eszközöket akarnak használni — adatbázist keresni, fájlt letölteni, API-t hívni —, minden eszközhöz külön integrációt kell írni. Ha 10 AI-platformod és 10 eszközöd van, az 10 × 10 = 100 egyedi integráció. Ez nem skálázható.
@@ -364,7 +373,7 @@ Az **MCP** (Model Context Protocol) egy nyílt szabvány, amelyet az Anthropic f
 
 Az MCP három alapkérdésre válaszol:
 
-1. **Mit olvashatok?** (Resources — erőforrások): dokumentumok, logok, adatbázisok, konfigurációk
+1. **Mit olvashatók?** (Resources — erőforrások): dokumentumok, logok, adatbázisok, konfigurációk
 2. **Mit csinálhatok?** (Tools — eszközök): konkrét műveletek egyértelmű bemenettel és kimenettel (issue létrehozása, keresés, fájlírás)
 3. **Hogyan beszélgetünk biztonságosan?** (Transport — szállítás): szabványos kérések hitelesítéssel, időtúllépéssel és hibakezeléssel
 
@@ -422,7 +431,7 @@ Míg az MCP az ágens-eszköz kommunikáció szabványa, az **A2A** (Agent-to-Ag
 
 ### Hogyan működik az A2A?
 
-Az A2A protokoll lehetővé teszi, hogy különböző keretrendszerekkel, különböző szolgáltatóknál, különböző szervezetekben futó ágensek szabványos módon kommunikáljanak egymással. Az A2A három kulcsfogalomra épül:
+Az A2A protokoll lehetővé teszi, hogy különböző keretrendszerekkel, különböző szolgáltatóknál, különböző szervezetékben futó ágensek szabványos módon kommunikáljanak egymással. Az A2A három kulcsfogalomra épül:
 
 1. **Agent Card** (ágenskártya): egy JSON-dokumentum, amely leírja az ágens képességeit, elérhetőségét és hitelesítési követelményeit — gyakorlatilag az ágens „névjegykártyája"
 2. **Task** (feladat): a kommunikáció alapegysége — az egyik ágens feladatot ad a másiknak, amely állapotfrissítéseket küld vissza
@@ -490,7 +499,7 @@ Amikor több ágens dolgozik együtt, elkerülhetetlenül konfliktusok keletkezn
 - **Meggyőződés-konfliktus**: az ágensek inkonzisztens információk alapján dolgoznak
 - **Terv-konfliktus**: az ágensek tervei interferálnak egymással
 
-A konfliktusokat három szinten lehet kezelni:
+A konfliktusokat három szintén lehet kezelni:
 
 1. **Megelőzés**: gondos erőforrás-allokáció, egyértelmű hatáskörök, koordinációs protokollok
 2. **Tárgyalás**: az ágensek maguk oldják meg az ellentétet licitálási vagy kompromisszumos mechanizmusokkal

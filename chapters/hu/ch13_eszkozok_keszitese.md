@@ -1,18 +1,21 @@
 # 13. fejezet — Saját programok és eszközök készítése
 
-> **Fejezet-informacio**
-> - **Kinek szol:** Kutatoknak, akik meglevo szkriptjeiket webalkalmazassa vagy AI-eszkozze szeretnek alakitani
-> - **Eloismeretek:** 5. fejezet (kodolasi asszisztensek), 11. fejezet (ajanlott)
+> **Fejezet-információ**
+> - **Kinek szól:** Kutatóknak, akik meglévő szkriptjeiket webalkalmazássá vagy AI-eszközzé szeretnek alakítani
+> - **Előismeretek:** 5. fejezet (kódolási asszisztensek), 11. fejezet (ajánlott)
 > - **Amit megtanulsz:**
->   - Streamlit es Gradio: Python szkriptbol webalkalmazas percek alatt
->   - MCP-szerverek epitese: tedd az adataidat AI-elerhetove
->   - Mikor erdemes sajat eszkozt epiteni es mikor nem
-> - **Szukseges eszkozok:** Terminal + Python
-> - **Kapcsolodo fejezetek:** 5. fejezet (kodolas), 9. fejezet (RAG), 12. fejezet (agensek)
+>   - Streamlit és Gradio: Python szkriptből webalkalmazás percek alatt
+>   - MCP-szerverek építése: tedd az adataidat AI-elérhetővé
+>   - Mikor érdemes saját eszközt építeni és mikor nem
+> - **Szükséges eszközök:** Terminál + Python
+> - **Kapcsolódó fejezetek:** 5. fejezet (kódolás), 9. fejezet (RAG), 12. fejezet (ágensek)
 
 ---
 
 ## 13.1 Nyitó jelenet: Amikor az elemzés zseniális, de senki nem tudja használni
+
+> **🖼️ Ábra: A kutató dilemmája — zseniális elemzés, de senki nem tudja használni**
+> *Split illustration: left side shows complex code on a terminal, right side shows a confused colleague trying to use it, humorous scientific cartoon style*
 
 Képzeld el a következő helyzetet.
 
@@ -76,6 +79,9 @@ Ha csúszkákkal, legördülő menükkel akarod vezérelni az elemzést → Grad
 ---
 
 ## 13.3 Streamlit: Python-szkriptből webalkalmazás 10 perc alatt
+
+> **🖼️ Ábra: Streamlit webalkalmazás felépítése — az adatoktól a felhasználói felületig**
+> *Layered diagram showing data flow from CSV/database through Python processing to a Streamlit web interface with charts and controls, clean tech illustration*
 
 ### Mi az a Streamlit?
 
@@ -465,7 +471,7 @@ https://your-username-data-explorer-01-data-explorer-abc123.streamlit.app
 
 Ezt a linket bárki megnyithatja a világon. Ingyenes, korlátlan ideig fut, és a GitHub-repó frissítésekor automatikusan újratelepíti magát.
 
-**Korlátai:** Az alkalmazás publikus (bárki láthatja). Az ingyenes szinten korlátozott az erőforrás (1 GB RAM, lassú CPU). Ha érzékeny adatokkal dolgozol, használd a helyi hálózatos megoldást vagy a Streamlit Teams fizetős verzióját.
+**Korlátai:** Az alkalmazás publikus (bárki láthatja). Az ingyenes szintén korlátozott az erőforrás (1 GB RAM, lassú CPU). Ha érzékeny adatokkal dolgozol, használd a helyi hálózatos megoldást vagy a Streamlit Teams fizetős verzióját.
 
 #### 3. módszer: Egyetemi/intézeti szerver
 
@@ -485,6 +491,9 @@ Egy lépéssel tovább mehetsz, ha az intézeti IT-vel kérsz egy aldomain-t (pl
 ---
 
 ## 13.4 Gradio: Interaktív felületek modellekhez és egyenletekhez
+
+> **🖼️ Ábra: Gradio felület tudományos modellhez — interaktív csúszkák és valós idejű eredmények**
+> *Screenshot-style illustration of a scientific Gradio interface with sliders, input fields, and a real-time plot output, modern UI design*
 
 ### Mi a Gradio, és mikor válaszd a Streamlit helyett?
 
@@ -1083,7 +1092,7 @@ git branch -M main
 git push -u origin main
 ```
 
-Kész. A repó publikus URL-jét (`https://github.com/felhasznalonev/my-data-explorer`) elküldheted a kollégáidnak, beírhatsz a cikkedbe, vagy csatolhatsz a konferencia-előadásodhoz.
+Kész. A repó publikus URL-jét (`https://github.com/felhasználónev/my-data-explorer`) elküldheted a kollégáidnak, beírhatsz a cikkedbe, vagy csatolhatsz a konferencia-előadásodhoz.
 
 ### A megosztás teljes menete — összefoglalás
 

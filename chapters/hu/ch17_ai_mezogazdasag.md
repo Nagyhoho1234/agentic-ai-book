@@ -1,18 +1,18 @@
 # 17. fejezet: AI a precíziós mezőgazdaságban
 
-> **Fejezet-informacio**
-> - **Kinek szol:** Agrarkutatoknak, gazdalkodoknak es mezogazdasagi szaktanaacsadoknak
-> - **Eloismeretek:** 1-4. fejezet (AI alapok, adatelemzes); a 5-12. fejezet hasznos, de nem kotelezo
+> **Fejezet-információ**
+> - **Kinek szól:** Agrárkutatóknak, gazdálkodóknak és mezőgazdasági szaktanácsadóknak
+> - **Előismeretek:** 1-4. fejezet (AI alapok, adatelemzés); a 5-12. fejezet hasznos, de nem kötelező
 > - **Amit megtanulsz:**
->   - Az AI helye a precizios gazdalkodas ciklusaban (adatgyujtestol a donteshozatalig)
->   - Muholdkepes novenyfigyelés, hozam-elorejelzes es ontözesoptimalizalas
->   - Digitalis ikrek es agensek mezogazdasagi alkalmazasai
-> - **Szukseges eszkozok:** Browser + terminal + Python (a gyakorlati peldaakhoz)
-> - **Kapcsolodo fejezetek:** 7. fejezet (pipeline-ok), 10. fejezet (digitalis ikrek), 19. fejezet (terinformatika)
+>   - Az AI helye a precíziós gazdálkodás ciklusában (adatgyűjtéstől a döntéshozatalig)
+>   - Műholdképes növényfigyelés, hozam-előrejelzés és öntözésoptimalizálás
+>   - Digitális ikrek és ágensek mezőgazdasági alkalmazásai
+> - **Szükséges eszközök:** Böngésző + terminál + Python (a gyakorlati példákhoz)
+> - **Kapcsolódó fejezetek:** 7. fejezet (pipeline-ok), 10. fejezet (digitális ikrek), 19. fejezet (térinformatika)
 
 ## Amikor a tábla beszélni kezd
 
-Gábor a Hajdúságban gazdálkodik, hatszáz hektáron kukoricát és búzát termeszt. Minden májusban drónnal repüli végig a tábláit, a Sentinel-2 műhold ötnaponta küld friss NDVI-térképet, a talajnedvesség-szenzorjai óránként jelentenek, az agrometeorológiai állomása pedig percenként rögzíti a hőmérsékletet, a páratartalmat és a szélsebességet. Gábornak nem az adathiány a problémája --- hanem az adatbőség. Egy átlagos tenyészidőszakban a gazdasága több terabájtnyi adatot termel: műholdfelvételek, drónos multispektrális képek, hozamtérképek, talajvizsgálati eredmények, gépi telematikai adatok, időjárási idősorok. Ezek az adatok különböző formátumokban, különböző platformokon, különböző koordináta-rendszerekben érkeznek. Gábor tudja, hogy aranyat ér bennük --- de nincs ideje és kapacitása, hogy minden reggel tizenöt különböző szoftvert nyisson meg, és kézzel rakja össze a képet.
+Gábor a Hajdúságban gazdálkodik, hatszáz hektáron kukoricát és búzát termeszt. Minden májusban drónnal repüli végig a tábláit, a Sentinel-2 műhold ötnaponta küld friss NDVI-térképet, a talajnedvesség-szenzorjai óránként jelentenek, az agrometeorológiai állomása pedig percenként rögzíti a hőmérsékletet, a páratartalmat és a szélsebességet. Gábornak nem az adathiány a problémája --- hanem az adatbőség. Egy átlagos tenyészidőszakban a gazdasága több terabájtnyi adatot termel: műholdfelvételek, drónos multispektrális képek, hozamtérképek, talajvízsgálati eredmények, gépi telematikai adatok, időjárási idősorok. Ezek az adatok különböző formátumokban, különböző platformokon, különböző koordináta-rendszerekben érkeznek. Gábor tudja, hogy aranyat ér bennük --- de nincs ideje és kapacitása, hogy minden reggel tizenöt különböző szoftvert nyisson meg, és kézzel rakja össze a képet.
 
 Ez a fejezet arról szól, hogyan változtatja meg a mesterséges intelligencia a precíziós mezőgazdaság minden lépését --- az adatgyűjtéstől a döntéshozatalig, a talajtérképezéstől az autonóm öntözésig. A korábbi fejezetekben megismert AI-eszközöket --- a prompttervezést, az adatelemzést, a kódolási asszisztenseket, a pipeline-okat, a RAG-rendszereket, a digitális ikreket és az ágens-architektúrákat --- most a mezőgazdaság kontextusában alkalmazzuk. Ha eddig laboratóriumi adatokkal vagy klímamodellekkel dolgoztál, itt meglátod, hogyan működnek ugyanezek a módszerek, amikor a labor a szántóföld, a minta a talaj, és a kísérlet egy egész tenyészidőszak.
 
@@ -21,6 +21,9 @@ Ez a fejezet arról szól, hogyan változtatja meg a mesterséges intelligencia 
 ---
 
 ## 17.1 Az AI a precíziós gazdálkodás ciklusában
+
+> **🖼️ Ábra: A precíziós gazdálkodás AI-ciklusa — adatgyűjtéstől a döntéshozatalig**
+> *Circular infographic showing the precision agriculture cycle with AI at each step: data collection (satellite, drone, sensor), processing, analysis, decision, execution, monitoring, farm landscape background*
 
 A precíziós mezőgazdaság egy ismétlődő ciklust követ: **adatgyűjtés** → **adatfeldolgozás** → **elemzés és értelmezés** → **döntéshozatal** → **végrehajtás** → **monitoring** → és újra adatgyűjtés. Ez a ciklus nem újdonság --- a precíziós mezőgazdaság alapszövege az 1990-es évek óta így írja le a folyamatot. Ami új, az a mesterséges intelligencia belépése a ciklus minden egyes pontjába.
 
@@ -103,13 +106,13 @@ Dátum        | NDVI átlag | NDVI szórás
 
 A 2. fejezetben részletezett prompttervezési elvek alapján a modell azonnal észreveszi, hogy a május 1-jei érték gyanúsan alacsony (és a szórás is magas), ami felhőzetre vagy részleges felhőborításra utal. Javaslatot tesz időbeli interpolációra vagy az adott felvétel kihagyására.
 
-**3. Automatikus anomáliadetekció.** Ahogy a 4. fejezetben megtanultad a statisztikai kiugró értékek keresését, ugyanezt alkalmazhatod a műholdfelvételek idősoraira. Ha az NDVI egy táblarészen hirtelen 0,3-mal esik két felvétel között, de a szomszédos táblákon nem változik, az nem a műhold hibája --- az lehet kártevő, belvíz, vagy jégkár.
+**3. Automatikus anomáliadetekció.** Ahogy a 4. fejezetben megtanultad a statisztikai kiugró értékek keresését, ugyanezt alkalmazhatód a műholdfelvételek idősoraira. Ha az NDVI egy táblarészen hirtelen 0,3-mal esik két felvétel között, de a szomszédos táblákon nem változik, az nem a műhold hibája --- az lehet kártevő, belvíz, vagy jégkár.
 
 ### Szenzor-hálózatok és IoT
 
 A modern precíziós gazdaság IoT-szenzorjai --- talajnedvesség, talajhőmérséklet, levélnedvesség, EC-szondák --- folyamatos adatáramot termelnek. Egy átlagos gazdaság tucatnyi, egy nagyüzem akár több száz szenzorcsomóponttal is rendelkezhet. Ezek az adatok jellemzően LoRaWAN vagy NB-IoT hálózaton keresztül jutnak el egy felhőplatformra vagy helyi szerverre.
 
-Az AI három szinten segít:
+Az AI három szintén segít:
 
 - **Edge-szintű szűrés:** Egy kis ML-modell közvetlenül a szenzor-csomóponton fut, és kiszűri a nyilvánvalóan hibás méréseket (negatív talajnedvesség, 80 °C-os talajhőmérséklet) még az adattovábbítás előtt. Ez csökkenti a rádióforgalmat és az adattárolási igényt.
 - **Idősor-anomáliadetekció:** Egy LSTM-modell megtanulja a normális napi talajnedvesség-mintázatot (reggeli csúcs, délutáni száradás), és riaszt, ha a minta eltér --- ami szenzor-meghibásodást vagy valós mezőgazdasági eseményt (belvíz, csőtörés) jelezhet.
@@ -136,6 +139,9 @@ Ez nem fantázia --- ez egy n8n vagy Apache Airflow workflow, amelyet a 8. fejez
 ---
 
 ## 17.3 AI-asszisztált növényállomány-monitoring
+
+> **🖼️ Ábra: Műholdas növényfigyelés — NDVI térkép az Alföldön**
+> *Satellite view of the Hungarian Great Plain with NDVI color overlay (red-yellow-green), showing crop health variation across parcels, realistic remote sensing visualization*
 
 ### NDVI-térképek értelmezése LLM-ekkel
 
@@ -183,7 +189,7 @@ Ahogy a 4. fejezetben megtanultad, az adatelemzés első lépése mindig a felt�
 
 A legértékesebb információ nem egyetlen felvételből, hanem az idősorból jön. A kukorica NDVI-görbéje jellegzetes alakot követ: alacsony értékek a vetés után, meredek emelkedés a vegetatív növekedés során, csúcs a címerhányás körül, majd fokozatos csökkenés az érés során. Ha egy táblarész görbéje eltér a többitől --- későbbi emelkedés, alacsonyabb csúcs, korábbi visszaesés --- az probléma jele.
 
-Ahogy a 4. fejezetben megismerted a trendvizsgálati módszereket, itt ugyanazokat az eszközöket alkalmazhatod. Egy Claude Code prompttal akár kóddal is generáltathatsz:
+Ahogy a 4. fejezetben megismerted a trendvizsgálati módszereket, itt ugyanazokat az eszközöket alkalmazhatód. Egy Claude Code prompttal akár kóddal is generáltathatsz:
 
 ```
 Írj Python-szkriptet, amely beolvassa a Sentinel-2 NDVI idősorom CSV-jét
@@ -322,6 +328,9 @@ Adj hozzá docstringet és unit-teszteket 3 ismert bemeneti-kimeneti párral.
 
 ## 17.6 Vizuális programozás a mezőgazdasági munkafolyamatokhoz
 
+> **🖼️ Ábra: Digitális iker egy magyar búzatáblához — valós idejű szimulációs felület**
+> *Split-screen showing a real wheat field on the left and its digital twin simulation on the right with sensor data overlays, futuristic agricultural tech style*
+
 Ahogy a 8. fejezetben megismerted, a vizuális programozási eszközök --- n8n, KNIME, Node-RED --- lehetővé teszik komplex munkafolyamatok összeállítását programozás nélkül, drag-and-drop módon. A mezőgazdaság tele van olyan feladatokkal, amelyekre ezek az eszközök ideálisak.
 
 ### n8n: időjárási riasztások
@@ -380,7 +389,7 @@ Ahogy a 9. fejezetben részletesen tárgyaltuk, a Retrieval-Augmented Generation
 
 Képzeld el, hogy Gábor az elmúlt öt évben a következő dokumentumokat halmozta fel:
 
-- 47 talajvizsgálati jegyzőkönyv (PDF, különböző laboratóriumoktól)
+- 47 talajvízsgálati jegyzőkönyv (PDF, különböző laboratóriumoktól)
 - 5 éves hozamtérkép-adatsor (CSV-k és shapefile-ok összefoglalóival)
 - 230 időjárási nap összefoglalója (saját feljegyzések)
 - 15 szaktanácsadói jelentés (Word és PDF)
@@ -413,9 +422,9 @@ A válasz pontosan hivatkozik a forrás-dokumentumra és a releváns bekezdésre
 
 ### Szaktudás-aggregáció: a „chatbot a farmról"
 
-A legambiciózusabb alkalmazás: egy RAG-rendszer, amely az összes fenti adatforrást egyesíti --- talajvizsgálatok, hozamadatok, időjárás, szaktanácsadói vélemények, szabályozás --- és egyetlen felületen teszi elérhetővé. Ez nem pusztán keresőmotor; az LLM képes összekapcsolni különböző dokumentumokból származó információkat:
+A legambiciózusabb alkalmazás: egy RAG-rendszer, amely az összes fenti adatforrást egyesíti --- talajvízsgálatok, hozamadatok, időjárás, szaktanácsadói vélemények, szabályozás --- és egyetlen felületen teszi elérhetővé. Ez nem pusztán keresőmotor; az LLM képes összekapcsolni különböző dokumentumokból származó információkat:
 
-> „Tavaly a 3-as táblán alacsony volt a hozam. A talajvizsgálat magas pH-t mutatott (8.1). A szaktanácsadó foszforhiányt diagnosztizált. Az időjárás aszályos volt májusban. Ezek közül mi a legvalószínűbb fő ok, és mit tegyek az idén?"
+> „Tavaly a 3-as táblán alacsony volt a hozam. A talajvízsgálat magas pH-t mutatott (8.1). A szaktanácsadó foszforhiányt diagnosztizált. Az időjárás aszályos volt májusban. Ezek közül mi a legvalószínűbb fő ok, és mit tegyek az idén?"
 
 ---
 
@@ -675,7 +684,7 @@ A magyar precíziós mezőgazdaság előtt álló legnagyobb lehetőségek:
 
 3. Tesztelj 10 kérdéssel, amelyek:
    - Egyetlen dokumentumból megválaszolhatók (pl. „Mekkora volt a 3-as tábla pH-ja?")
-   - Több dokumentum összekapcsolását igénylik (pl. „A talajvizsgálat alapján van-e kockázata a nitrát-kimosódásnak a 2-es táblán, figyelembe véve az éves csapadékot?")
+   - Több dokumentum összekapcsolását igénylik (pl. „A talajvízsgálat alapján van-e kockázata a nitrát-kimosódásnak a 2-es táblán, figyelembe véve az éves csapadékot?")
    - A rendszer korlátait tesztelik (pl. „Milyen fajta kukoricát vetek jövőre?" --- ahol a dokumentumokban nincs erről szó)
 
 4. Dokumentáld: hány kérdésre adott helyes választ? Hol hallucrinált?
