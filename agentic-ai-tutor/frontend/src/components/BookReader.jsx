@@ -13,19 +13,31 @@ const LS_LAST_CHAPTER = 'agenticai-tutor-last-chapter';
 const LS_LAST_SCROLL = 'agenticai-tutor-last-scroll';
 
 // Process React children to turn chapter references into clickable spans.
-// Handles: "Chapter 6", "Ch. 3", "Chapters 3 and 24"
+// Handles: "1. fejezet", "fejezet 3", "Chapter 6", "Ch. 3"
 function processChapterRefs(children, onChapterChange) {
   if (!children) return children;
   if (typeof children === 'string') {
     const clickableRanges = [];
 
-    // Match "Chapter N" or "chapter N" or "Chapters N"
-    const directRe = /[Cc]hapters?\s+(\d+)/g;
+    // Match "N. fejezet" (Hungarian format)
+    const fejezetRe = /(\d+)\.\s*fejezet/gi;
     let m;
+    while ((m = fejezetRe.exec(children)) !== null) {
+      const chapNum = parseInt(m[1], 10);
+      if (chapNum >= 1 && chapNum <= 19) {
+        clickableRanges.push({ start: m.index, end: m.index + m[0].length, chapNum });
+      }
+    }
+
+    // Match "Chapter N" or "chapter N" (English fallback)
+    const directRe = /[Cc]hapters?\s+(\d+)/g;
     while ((m = directRe.exec(children)) !== null) {
       const chapNum = parseInt(m[1], 10);
-      if (chapNum >= 1 && chapNum <= 20) {
-        clickableRanges.push({ start: m.index, end: m.index + m[0].length, chapNum });
+      if (chapNum >= 1 && chapNum <= 19) {
+        const alreadyCovered = clickableRanges.some((r) => r.start <= m.index && r.end > m.index);
+        if (!alreadyCovered) {
+          clickableRanges.push({ start: m.index, end: m.index + m[0].length, chapNum });
+        }
       }
     }
 
@@ -33,7 +45,7 @@ function processChapterRefs(children, onChapterChange) {
     const chRe = /Ch\.?\s*(\d+)/g;
     while ((m = chRe.exec(children)) !== null) {
       const chapNum = parseInt(m[1], 10);
-      if (chapNum < 1 || chapNum > 20) continue;
+      if (chapNum < 1 || chapNum > 19) continue;
       const alreadyCovered = clickableRanges.some((r) => r.start <= m.index && r.end > m.index);
       if (!alreadyCovered) {
         clickableRanges.push({ start: m.index, end: m.index + m[0].length, chapNum });
@@ -66,7 +78,7 @@ function processChapterRefs(children, onChapterChange) {
           style={{ color: 'var(--accent)', cursor: 'pointer', borderBottom: '1px dashed var(--accent)' }}
           onMouseEnter={(e) => { e.target.style.textDecoration = 'underline'; }}
           onMouseLeave={(e) => { e.target.style.textDecoration = 'none'; }}
-          title={`Go to Chapter ${range.chapNum}`}
+          title={`Ugrás a ${range.chapNum}. fejezethez`}
         >
           {text}
         </span>

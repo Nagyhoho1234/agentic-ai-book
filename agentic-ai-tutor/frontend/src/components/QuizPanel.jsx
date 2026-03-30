@@ -181,7 +181,7 @@ export default function QuizPanel({ sessionId, lang, onQuizResults, onShowResult
       const markColor = (isEssay ? (r.score >= 50) : r.correct) ? '#16a34a' : '#dc2626';
       const userAns = answers[q.id] || (lng === 'hu' ? '(nem válaszolt)' : '(skipped)');
       const correctAns = !isEssay && r.correct_answer ? r.correct_answer : '';
-      const chRef = q.chapter_num ? `Ch. ${q.chapter_num}` : '';
+      const chRef = q.chapter_num ? `${q.chapter_num}. fejezet` : '';
       return `<tr>
         <td style="padding:6px;border:1px solid #ddd;text-align:center;width:28px;color:${markColor};font-weight:bold">${mark}</td>
         <td style="padding:6px;border:1px solid #ddd">

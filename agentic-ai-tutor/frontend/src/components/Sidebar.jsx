@@ -57,7 +57,7 @@ export default function Sidebar({ onChapterOpen, onScrollToSection, activeChapte
       <div className="w-72 h-full flex flex-col">
         <div className="p-4 border-b flex items-center justify-between" style={{ borderColor: 'var(--border)' }}>
           <h2 className="font-semibold text-sm uppercase tracking-wide" style={{ color: 'var(--text-secondary)' }}>
-            {lang === 'hu' ? 'Fejezetek' : 'Chapters'}
+            {lang === 'hu' ? 'Fejezetek' : 'Fejezetek'}
           </h2>
           <button onClick={onToggle} className="text-lg cursor-pointer" style={{ color: 'var(--text-secondary)' }}>
             &times;
